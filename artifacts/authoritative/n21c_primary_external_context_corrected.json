@@ -1,0 +1,96 @@
+{
+  "phase": "N21_section_c_primary_external_context",
+  "git_commit": "534da7af653407d764d3636e34fca3db1b068817",
+  "git_branch": "acs-jcim-finalization",
+  "n6_source": "artifacts/corrective01_pretrained_element_embedding/n6_external_transfer_corrected.json",
+  "n6_rerun": false,
+  "cohort": "strict",
+  "n": 204,
+  "naive_baseline_definition": "constant prediction = OBELiX 449-row development-population mean/median log10(sigma_RT/S cm^-1), evaluated once against the strict external cohort's already-frozen true values -- never the external cohort's own mean/median.",
+  "dev_population_mean_y": -4.818214388496422,
+  "dev_population_median_y": -4.084072788302884,
+  "mean_baseline_mae": 1.6701053422889702,
+  "median_baseline_mae": 1.7429232851058165,
+  "per_model": {
+    "ridge": {
+      "n": 204,
+      "mae": 1.3819534011084926,
+      "rmse": 1.8643938662369612,
+      "r2": 0.27765704449651507,
+      "pearson_r": 0.6048569357741713,
+      "spearman_rho": 0.5839503398415474,
+      "mae_skill_vs_mean_baseline": 0.17253518917887523,
+      "mae_skill_vs_median_baseline": 0.20710600809685586
+    },
+    "random_forest": {
+      "n": 204,
+      "mae": 1.2861310710168572,
+      "rmse": 1.8561905615208385,
+      "r2": 0.28399965611625533,
+      "pearson_r": 0.6111288308449448,
+      "spearman_rho": 0.6748835250412358,
+      "mae_skill_vs_mean_baseline": 0.22991021078098905,
+      "mae_skill_vs_median_baseline": 0.2620839471206138
+    },
+    "extra_trees": {
+      "n": 204,
+      "mae": 1.2021821244387565,
+      "rmse": 1.7786889625921611,
+      "r2": 0.34254182312970893,
+      "pearson_r": 0.6465040935194497,
+      "spearman_rho": 0.6996266863772732,
+      "mae_skill_vs_mean_baseline": 0.2801758703489323,
+      "mae_skill_vs_median_baseline": 0.31024954757789613
+    },
+    "xgboost": {
+      "n": 204,
+      "mae": 1.3492430698048163,
+      "rmse": 1.9684800142270538,
+      "r2": 0.1947511180931002,
+      "pearson_r": 0.5763658479689283,
+      "spearman_rho": 0.661756292279267,
+      "mae_skill_vs_mean_baseline": 0.19212097845540366,
+      "mae_skill_vs_median_baseline": 0.22587351874015438
+    },
+    "catboost": {
+      "n": 204,
+      "mae": 1.291649414159711,
+      "rmse": 1.8841460797119443,
+      "r2": 0.26227032541896256,
+      "pearson_r": 0.5953458607080797,
+      "spearman_rho": 0.6740151481458589,
+      "mae_skill_vs_mean_baseline": 0.22660602211508696,
+      "mae_skill_vs_median_baseline": 0.2589178048181895
+    },
+    "shallow_mlp": {
+      "n": 204,
+      "mae": 1.483064467296068,
+      "rmse": 2.0064184446701865,
+      "r2": 0.16341295695335634,
+      "pearson_r": 0.5939133721100264,
+      "spearman_rho": 0.595667102063514,
+      "mae_skill_vs_mean_baseline": 0.11199345948834138,
+      "mae_skill_vs_median_baseline": 0.14909366351943132
+    },
+    "pretrained_element_embedding": {
+      "n": 204,
+      "mae": 1.7163215138198815,
+      "rmse": 2.416800879432588,
+      "r2": -0.21380759736379717,
+      "pearson_r": 0.3830691065075194,
+      "spearman_rho": 0.39290803000871727,
+      "mae_skill_vs_mean_baseline": -0.027672608643697583,
+      "mae_skill_vs_median_baseline": 0.015262732165701731
+    },
+    "composition_attention": {
+      "n": 204,
+      "mae": 1.2823679106846348,
+      "rmse": 1.816308020900898,
+      "r2": 0.31443740739459913,
+      "pearson_r": 0.6029733289905098,
+      "spearman_rho": 0.6345462847049893,
+      "mae_skill_vs_mean_baseline": 0.23216345806841154,
+      "mae_skill_vs_median_baseline": 0.26424305553598726
+    }
+  }
+}

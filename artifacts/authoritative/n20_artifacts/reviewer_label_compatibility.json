@@ -1,0 +1,1488 @@
+{
+  "n20_part": "C_cross_database_label_compatibility",
+  "git_commit": "534da7af653407d764d3636e34fca3db1b068817",
+  "obelix_metadata_fields": {
+    "conductivity_type": "OBELiX's primary column 'Ionic conductivity (S cm-1)' is an author-curated 'best available' value; a separate 'IC (Total)'/'IC (Bulk)' split exists but is populated for <5% of rows (29/599 and 28/599 respectively), so the primary column cannot be verified row-by-row as uniformly bulk or total conductivity.",
+    "temperature_field": "None -- OBELiX has no explicit per-row temperature column; the dataset is curated by its own authors as room-temperature values, not independently re-verified per row here.",
+    "measurement_protocol_field": "None.",
+    "units": "S cm^-1 (matches Hargreaves; no unit harmonization needed).",
+    "aggregation_across_measurements": "One reported value per OBELiX row; no explicit multi-measurement aggregation field."
+  },
+  "hargreaves_metadata_fields": {
+    "conductivity_type": "No bulk/total/grain-boundary field at all.",
+    "temperature_field": "'temperature' (degrees C), per-row, range 5-873 C in the raw file; this project's RT window is [15,35] C (fixed pre-analysis, reports/npj/n1_external_data_audit.md).",
+    "measurement_protocol_field": "None beyond 'source' (literature DOI).",
+    "units": "S cm^-1 (matches OBELiX).",
+    "aggregation_across_measurements": "This project's own N2 pipeline aggregates repeated RT-window rows of the same reduced formula to their MEDIAN log10(conductivity) (hargreaves_cohort.AGGREGATION_RULE); the raw Hargreaves file itself has no aggregation field, most repeats are Arrhenius-series multi-temperature measurements of the same sample."
+  },
+  "compatibility_gap_finding": "Neither database's headline scalar target is a verified, uniform bulk-vs-total quantity: OBELiX's primary column mixes an unlabeled majority with a <5% Total/Bulk-flagged minority, and Hargreaves has no bulk/total field whatsoever. Both report S/cm and both are treated by this project as 'a single, author-reported conductivity value' rather than a verified bulk value -- this is a genuine label-definition compatibility gap that predates and is independent of any modeling choice.",
+  "paired_formula_calibration_audit": {
+    "n_paired_formulas": 200,
+    "reduced_formulas": [
+      "Ba0.1Li6.5La2.9Zr1.4Ta0.6O12",
+      "Ba0.5Sr0.5Li6La2Ta2O12",
+      "Ba1.25Li6.25La1.75Ta2O12",
+      "BaLi6La2Nb2O12",
+      "BaLi6La2Ta2O12",
+      "K0.25Li5.5La2.75Nb2O12",
+      "Li0.25La0.25Ta1O3",
+      "Li0.25Nd0.25Ta1O3",
+      "Li0.29La0.57Ti1O3",
+      "Li0.33La0.56Ti0.96Al0.04O2.96F0.04",
+      "Li0.34La0.51Ti1O2.94",
+      "Li0.34Nd0.55Ti1O3",
+      "Li0.36La0.55Ti1O3",
+      "Li0.38Sm0.52Ti1O2.97",
+      "Li0.5La0.5Ti1O3",
+      "Li1.15Ti1.85Fe0.15P3O12",
+      "Li1.15Y0.15Zr1.85P3O12",
+      "Li1.1Al0.1Ge1.9P3O12",
+      "Li1.1Hf1.9Fe0.1P3O12",
+      "Li1.1Hf1.9In0.1P3O12",
+      "Li1.1Hf1.9Sc0.1P3O12",
+      "Li1.1Lu0.1Hf1.9P3O12",
+      "Li1.1Sc0.1Ti1.9P3O12",
+      "Li1.1Ti1.9Al0.1P3O12",
+      "Li1.2Hf1.8In0.2P3O12",
+      "Li1.2La0.2Ti1.8P3O12",
+      "Li1.2Lu0.2Hf1.8P3O12",
+      "Li1.2Sc0.2Ti1.8P3O12",
+      "Li1.2Ta0.9Al1.1P3O12",
+      "Li1.2Ti1.8Cr0.2P3O12",
+      "Li1.2Ti1.8Fe0.2P3O12",
+      "Li1.2Ti1.8In0.2P3O12",
+      "Li1.3Al0.3Ge1.7P3O12",
+      "Li1.3Hf1.7Cr0.3P3O12",
+      "Li1.3Hf1.7Fe0.3P3O12",
+      "Li1.3Hf1.7In0.3P3O12",
+      "Li1.3Hf1.7Sc0.3P3O12",
+      "Li1.3La0.3Ti1.7P3O12",
+      "Li1.3Lu0.3Hf1.7P3O12",
+      "Li1.3Sc0.1Ti1.7Al0.2P3O12",
+      "Li1.3Sc0.2Ti1.7Al0.1P3O12",
+      "Li1.3Sc0.3Ti1.7P3O12",
+      "Li1.3Ti1.7Al0.3P3O12",
+      "Li1.3Ti1.7Cr0.3P3O12",
+      "Li1.3Y0.15Ti1.7Al0.15P3O12",
+      "Li1.3Y0.1Ti1.7Al0.2P3O12",
+      "Li1.3Y0.2Ti1.7Al0.1P3O12",
+      "Li1.3Y0.3Hf1.7P3O12",
+      "Li1.4Al0.4Ge1.6P3O12",
+      "Li1.4Hf1.6In0.4P3O12",
+      "Li1.4La0.4Ti1.6P3O12",
+      "Li1.4Lu0.4Hf1.6P3O12",
+      "Li1.4Sc0.4Ti1.6P3O12",
+      "Li1.4Ti1.6Al0.4P3O12",
+      "Li1.4Ti1.6Cr0.4P3O12",
+      "Li1.4Ti1.6Fe0.4P3O12",
+      "Li1.4Ti1.6In0.4P3O12",
+      "Li1.4Y0.4Hf1.6P3O12",
+      "Li1.5Al0.5Ge1.5P3O12",
+      "Li1.5La0.5Ti1.5P3O12",
+      "Li1.5Ti1.5Al0.5P3O12",
+      "Li1.5Ti1.5Cr0.5P3O12",
+      "Li1.5Ti1.5Fe0.5P3O12",
+      "Li1.5Ti1.5In0.5P3O12",
+      "Li1.6Al0.6Ge1.4P3O12",
+      "Li1.6Ti0.6Al0.6Ge0.8P3O12",
+      "Li1.7Al0.7Ge1.3P3O12",
+      "Li1.8Ti1.2Cr0.8P3O12",
+      "Li10.35Si1.35P1.65S12",
+      "Li10Ge(PS6)2",
+      "Li10Si(PS6)2",
+      "Li10Si0.05Ge0.95P2S12",
+      "Li10Sn(PS6)2",
+      "Li1Zr0.2Ti1.8P3O12",
+      "Li1Zr1.8Ti0.2P3O12",
+      "Li1Zr1.9Ti0.1P3O12",
+      "Li2.88P1N0.14O3.73",
+      "Li2HBrO",
+      "Li2HfIn(PO4)3",
+      "Li2PS3",
+      "Li2SiS3",
+      "Li2SnS3",
+      "Li2TiCr(PO4)3",
+      "Li2TiFe(PO4)3",
+      "Li2TiIn(PO4)3",
+      "Li2ZrCr(PO4)3",
+      "Li2ZrFe(PO4)3",
+      "Li2ZrIn(PO4)3",
+      "Li3.25Ge0.25P0.75S4",
+      "Li3.2Ge0.2P0.8O4",
+      "Li3.2Ge0.2P0.8S4",
+      "Li3.2V0.8Ge0.2O4",
+      "Li3.35Ge0.35P0.65S4",
+      "Li3.4Ge0.4P0.6O4",
+      "Li3.4Si0.4P0.6S4",
+      "Li3.4V0.6Ge0.4O4",
+      "Li3.6Ge0.6P0.4O4",
+      "Li3.6Si0.6P0.4S4",
+      "Li3.6V0.4Ge0.6O4",
+      "Li3.75Si0.75P0.25O4",
+      "Li3.8Ge0.8P0.2O4",
+      "Li3.8V0.2Ge0.8O4",
+      "Li3AlS3",
+      "Li3BrO",
+      "Li3ClO",
+      "Li3Cr(MoO4)3",
+      "Li3Fe(MoO4)3",
+      "Li3N",
+      "Li3P",
+      "Li3PO4",
+      "Li3PS4",
+      "Li3V0.2P0.8O4",
+      "Li3V0.4P0.6O4",
+      "Li3V0.6P0.4O4",
+      "Li3V0.8P0.2O4",
+      "Li3VO4",
+      "Li4.25Al0.25Si0.75O4",
+      "Li4.4Al0.4Ge0.6S4",
+      "Li4.4Al0.4Sn0.6S4",
+      "Li4.8Al0.8Si0.2S4",
+      "Li4Al0.33Si0.33P0.33O4",
+      "Li4B7ClO12",
+      "Li4GeO4",
+      "Li4GeS4",
+      "Li4Nd3SbTeO12",
+      "Li4PS4I",
+      "Li4SiS4",
+      "Li4SnS4",
+      "Li5.4La3Y0.75Nb1.8O12",
+      "Li5.5La3Nb1.75In0.25O12",
+      "Li5AlS4",
+      "Li5B2P(H2S)4",
+      "Li5La3(BiO6)2",
+      "Li5La3(SbO6)2",
+      "Li5La3Nb2O12",
+      "Li5La3Ta2O12",
+      "Li5Nd3(SbO6)2",
+      "Li6.05Si0.05P0.95S5Br1",
+      "Li6.25La3Zr2Ga0.25O12",
+      "Li6.25Si0.25P0.75S5Br1",
+      "Li6.2La3Zr1.2Sb0.8O12",
+      "Li6.2La3Zr1.2Ta0.8O12",
+      "Li6.2Si0.2P0.8S5Br1",
+      "Li6.35Si0.35P0.65S5Br1",
+      "Li6.3Si0.3P0.7S5Br1",
+      "Li6.4La3Zr1.4Sb0.6O12",
+      "Li6.4La3Zr1.4Ta0.6O12",
+      "Li6.4La3Zr2Al0.19O11.8",
+      "Li6.5La3Y0.75Nb1.25O12",
+      "Li6.5La3Zr1.5Ta0.5O12",
+      "Li6.5La3Zr1.75Te0.25O12",
+      "Li6.5Si0.5P0.5S5Br1",
+      "Li6.6La2.5Y0.5Zr1.6Ta0.4O12",
+      "Li6.6La2.75Y0.25Zr1.6Ta0.4O12",
+      "Li6.6La2.875Y0.125Zr1.6Ta0.4O12",
+      "Li6.6La3Zr1.6Sb0.4O12",
+      "Li6.6La3Zr1.6Ta0.4O12",
+      "Li6.75La3Zr1.75Nb0.25O12",
+      "Li6.75La3Zr1.75Ta0.25O12",
+      "Li6.75La3Zr1.875Te0.125O12",
+      "Li6.7La3Zr1.7Ta0.3O12",
+      "Li6.8La3Zr1.8Sb0.2O12",
+      "Li6.8La3Zr1.8Ta0.2O12",
+      "Li6Br3N",
+      "Li6CaLa2Nb2O12",
+      "Li6CaLa2Ta2O12",
+      "Li6La3Y0.5Nb1.5O12",
+      "Li6La3ZrSbO12",
+      "Li6La3ZrTaO12",
+      "Li6PClO5",
+      "Li6PS5Br",
+      "Li6PS5Cl",
+      "Li6PS5I",
+      "Li6Si(ClO2)2",
+      "Li7.06La3Y0.06Zr1.94O12",
+      "Li7Ge3PS12",
+      "Li7La3Hf2O12",
+      "Li7La3Ta2O13",
+      "Li7La3Zr1.89Al0.15O12",
+      "Li7La3Zr2O12",
+      "Li7P3S11",
+      "Li9.54Si1.74P1.44S11.7Cl0.3",
+      "Li9.6P3S12",
+      "Li9.81Sn0.81P2.19S12",
+      "LiAlH4",
+      "LiAlSb(PO4)3",
+      "LiCrSb(PO4)3",
+      "LiFeSb(PO4)3",
+      "LiGe2(PO4)3",
+      "LiHf2(PO4)3",
+      "LiTa2PO8",
+      "LiTaAl(PO4)3",
+      "LiTi2(PO4)3",
+      "LiZr2(PO4)3",
+      "Sr0.15Li0.15La0.51Ti1O3",
+      "Sr0.25Li0.25La0.41Ti1O3",
+      "Sr0.5Li0.5Ta0.75Cr0.25O3",
+      "Sr0.5Li0.5Ta0.75Fe0.25O3",
+      "SrLi6La2Nb2O12",
+      "SrLi6La2Ta2O12"
+    ],
+    "mean_absolute_discrepancy": 0.28973146941338923,
+    "median_absolute_discrepancy": 0.002332859821856381,
+    "rmse": 0.6943350492347502,
+    "spearman_rho": 0.9218729843006784,
+    "pearson_r": 0.9561527663132412,
+    "median_signed_difference_hargreaves_minus_obelix": 4.6374237783197714e-11,
+    "mean_signed_difference_hargreaves_minus_obelix": 0.044945309700636746,
+    "n_pairs_absolute_discrepancy_over_1_log10": 20,
+    "n_pairs_absolute_discrepancy_over_2_log10": 8,
+    "mae_bootstrap_ci": {
+      "point": 0.28973146941338923,
+      "ci_low": 0.20573161466126316,
+      "ci_high": 0.3847513422162584,
+      "ci_level": 0.95,
+      "n_boot": 2000,
+      "n_finite": 2000,
+      "seed": 20260921
+    },
+    "spearman_bootstrap_ci": {
+      "point": 0.9218729843006784,
+      "ci_low": 0.8674581070322872,
+      "ci_high": 0.9585290768907255,
+      "ci_level": 0.95,
+      "n_boot": 2000,
+      "n_finite": 2000,
+      "seed": 20260921
+    },
+    "obelix_side_meta": {
+      "obelix_raw_rows": 599,
+      "n_censored_excluded": 37,
+      "n_exact_formulas": 468,
+      "n_formulas_with_within_obelix_spread_over_1_log10_s_cm": 19
+    },
+    "hargreaves_side_meta": {
+      "Ba0.1Li6.5La2.9Zr1.4Ta0.6O12": {
+        "n_source_rows": 1,
+        "overlap_classification": [
+          "EXACT_COMPOSITION_AND_DOI_MATCH"
+        ]
+      },
+      "Ba0.5Sr0.5Li6La2Ta2O12": {
+        "n_source_rows": 2,
+        "overlap_classification": [
+          "COMPOSITION_ONLY_MATCH"
+        ]
+      },
+      "Ba1.25Li6.25La1.75Ta2O12": {
+        "n_source_rows": 2,
+        "overlap_classification": [
+          "EXACT_COMPOSITION_AND_DOI_MATCH"
+        ]
+      },
+      "BaLi6La2Nb2O12": {
+        "n_source_rows": 1,
+        "overlap_classification": [
+          "EXACT_COMPOSITION_AND_DOI_MATCH"
+        ]
+      },
+      "BaLi6La2Ta2O12": {
+        "n_source_rows": 4,
+        "overlap_classification": [
+          "COMPOSITION_ONLY_MATCH",
+          "EXACT_COMPOSITION_AND_DOI_MATCH"
+        ]
+      },
+      "K0.25Li5.5La2.75Nb2O12": {
+        "n_source_rows": 1,
+        "overlap_classification": [
+          "EXACT_COMPOSITION_AND_DOI_MATCH"
+        ]
+      },
+      "Li0.25La0.25Ta1O3": {
+        "n_source_rows": 1,
+        "overlap_classification": [
+          "EXACT_COMPOSITION_AND_DOI_MATCH"
+        ]
+      },
+      "Li0.25Nd0.25Ta1O3": {
+        "n_source_rows": 1,
+        "overlap_classification": [
+          "EXACT_COMPOSITION_AND_DOI_MATCH"
+        ]
+      },
+      "Li0.29La0.57Ti1O3": {
+        "n_source_rows": 1,
+        "overlap_classification": [
+          "EXACT_COMPOSITION_AND_DOI_MATCH"
+        ]
+      },
+      "Li0.33La0.56Ti0.96Al0.04O2.96F0.04": {
+        "n_source_rows": 1,
+        "overlap_classification": [
+          "EXACT_COMPOSITION_AND_DOI_MATCH"
+        ]
+      },
+      "Li0.34La0.51Ti1O2.94": {
+        "n_source_rows": 1,
+        "overlap_classification": [
+          "COMPOSITION_ONLY_MATCH"
+        ]
+      },
+      "Li0.34Nd0.55Ti1O3": {
+        "n_source_rows": 1,
+        "overlap_classification": [
+          "EXACT_COMPOSITION_AND_DOI_MATCH"
+        ]
+      },
+      "Li0.36La0.55Ti1O3": {
+        "n_source_rows": 1,
+        "overlap_classification": [
+          "COMPOSITION_ONLY_MATCH"
+        ]
+      },
+      "Li0.38Sm0.52Ti1O2.97": {
+        "n_source_rows": 1,
+        "overlap_classification": [
+          "EXACT_COMPOSITION_AND_DOI_MATCH"
+        ]
+      },
+      "Li0.5La0.5Ti1O3": {
+        "n_source_rows": 4,
+        "overlap_classification": [
+          "COMPOSITION_ONLY_MATCH"
+        ]
+      },
+      "Li1.15Ti1.85Fe0.15P3O12": {
+        "n_source_rows": 1,
+        "overlap_classification": [
+          "EXACT_COMPOSITION_AND_DOI_MATCH"
+        ]
+      },
+      "Li1.15Y0.15Zr1.85P3O12": {
+        "n_source_rows": 1,
+        "overlap_classification": [
+          "EXACT_COMPOSITION_AND_DOI_MATCH"
+        ]
+      },
+      "Li1.1Al0.1Ge1.9P3O12": {
+        "n_source_rows": 1,
+        "overlap_classification": [
+          "EXACT_COMPOSITION_AND_DOI_MATCH"
+        ]
+      },
+      "Li1.1Hf1.9Fe0.1P3O12": {
+        "n_source_rows": 1,
+        "overlap_classification": [
+          "EXACT_COMPOSITION_AND_DOI_MATCH"
+        ]
+      },
+      "Li1.1Hf1.9In0.1P3O12": {
+        "n_source_rows": 1,
+        "overlap_classification": [
+          "EXACT_COMPOSITION_AND_DOI_MATCH"
+        ]
+      },
+      "Li1.1Hf1.9Sc0.1P3O12": {
+        "n_source_rows": 1,
+        "overlap_classification": [
+          "EXACT_COMPOSITION_AND_DOI_MATCH"
+        ]
+      },
+      "Li1.1Lu0.1Hf1.9P3O12": {
+        "n_source_rows": 1,
+        "overlap_classification": [
+          "EXACT_COMPOSITION_AND_DOI_MATCH"
+        ]
+      },
+      "Li1.1Sc0.1Ti1.9P3O12": {
+        "n_source_rows": 1,
+        "overlap_classification": [
+          "EXACT_COMPOSITION_AND_DOI_MATCH"
+        ]
+      },
+      "Li1.1Ti1.9Al0.1P3O12": {
+        "n_source_rows": 1,
+        "overlap_classification": [
+          "EXACT_COMPOSITION_AND_DOI_MATCH"
+        ]
+      },
+      "Li1.2Hf1.8In0.2P3O12": {
+        "n_source_rows": 1,
+        "overlap_classification": [
+          "COMPOSITION_ONLY_MATCH"
+        ]
+      },
+      "Li1.2La0.2Ti1.8P3O12": {
+        "n_source_rows": 1,
+        "overlap_classification": [
+          "EXACT_COMPOSITION_AND_DOI_MATCH"
+        ]
+      },
+      "Li1.2Lu0.2Hf1.8P3O12": {
+        "n_source_rows": 1,
+        "overlap_classification": [
+          "EXACT_COMPOSITION_AND_DOI_MATCH"
+        ]
+      },
+      "Li1.2Sc0.2Ti1.8P3O12": {
+        "n_source_rows": 2,
+        "overlap_classification": [
+          "EXACT_COMPOSITION_AND_DOI_MATCH"
+        ]
+      },
+      "Li1.2Ta0.9Al1.1P3O12": {
+        "n_source_rows": 1,
+        "overlap_classification": [
+          "EXACT_COMPOSITION_AND_DOI_MATCH"
+        ]
+      },
+      "Li1.2Ti1.8Cr0.2P3O12": {
+        "n_source_rows": 1,
+        "overlap_classification": [
+          "EXACT_COMPOSITION_AND_DOI_MATCH"
+        ]
+      },
+      "Li1.2Ti1.8Fe0.2P3O12": {
+        "n_source_rows": 1,
+        "overlap_classification": [
+          "EXACT_COMPOSITION_AND_DOI_MATCH"
+        ]
+      },
+      "Li1.2Ti1.8In0.2P3O12": {
+        "n_source_rows": 1,
+        "overlap_classification": [
+          "EXACT_COMPOSITION_AND_DOI_MATCH"
+        ]
+      },
+      "Li1.3Al0.3Ge1.7P3O12": {
+        "n_source_rows": 1,
+        "overlap_classification": [
+          "EXACT_COMPOSITION_AND_DOI_MATCH"
+        ]
+      },
+      "Li1.3Hf1.7Cr0.3P3O12": {
+        "n_source_rows": 1,
+        "overlap_classification": [
+          "EXACT_COMPOSITION_AND_DOI_MATCH"
+        ]
+      },
+      "Li1.3Hf1.7Fe0.3P3O12": {
+        "n_source_rows": 1,
+        "overlap_classification": [
+          "EXACT_COMPOSITION_AND_DOI_MATCH"
+        ]
+      },
+      "Li1.3Hf1.7In0.3P3O12": {
+        "n_source_rows": 2,
+        "overlap_classification": [
+          "EXACT_COMPOSITION_AND_DOI_MATCH"
+        ]
+      },
+      "Li1.3Hf1.7Sc0.3P3O12": {
+        "n_source_rows": 1,
+        "overlap_classification": [
+          "EXACT_COMPOSITION_AND_DOI_MATCH"
+        ]
+      },
+      "Li1.3La0.3Ti1.7P3O12": {
+        "n_source_rows": 1,
+        "overlap_classification": [
+          "EXACT_COMPOSITION_AND_DOI_MATCH"
+        ]
+      },
+      "Li1.3Lu0.3Hf1.7P3O12": {
+        "n_source_rows": 1,
+        "overlap_classification": [
+          "EXACT_COMPOSITION_AND_DOI_MATCH"
+        ]
+      },
+      "Li1.3Sc0.1Ti1.7Al0.2P3O12": {
+        "n_source_rows": 1,
+        "overlap_classification": [
+          "EXACT_COMPOSITION_AND_DOI_MATCH"
+        ]
+      },
+      "Li1.3Sc0.2Ti1.7Al0.1P3O12": {
+        "n_source_rows": 1,
+        "overlap_classification": [
+          "EXACT_COMPOSITION_AND_DOI_MATCH"
+        ]
+      },
+      "Li1.3Sc0.3Ti1.7P3O12": {
+        "n_source_rows": 2,
+        "overlap_classification": [
+          "EXACT_COMPOSITION_AND_DOI_MATCH"
+        ]
+      },
+      "Li1.3Ti1.7Al0.3P3O12": {
+        "n_source_rows": 6,
+        "overlap_classification": [
+          "COMPOSITION_ONLY_MATCH",
+          "EXACT_COMPOSITION_AND_DOI_MATCH"
+        ]
+      },
+      "Li1.3Ti1.7Cr0.3P3O12": {
+        "n_source_rows": 1,
+        "overlap_classification": [
+          "EXACT_COMPOSITION_AND_DOI_MATCH"
+        ]
+      },
+      "Li1.3Y0.15Ti1.7Al0.15P3O12": {
+        "n_source_rows": 1,
+        "overlap_classification": [
+          "EXACT_COMPOSITION_AND_DOI_MATCH"
+        ]
+      },
+      "Li1.3Y0.1Ti1.7Al0.2P3O12": {
+        "n_source_rows": 1,
+        "overlap_classification": [
+          "EXACT_COMPOSITION_AND_DOI_MATCH"
+        ]
+      },
+      "Li1.3Y0.2Ti1.7Al0.1P3O12": {
+        "n_source_rows": 1,
+        "overlap_classification": [
+          "EXACT_COMPOSITION_AND_DOI_MATCH"
+        ]
+      },
+      "Li1.3Y0.3Hf1.7P3O12": {
+        "n_source_rows": 1,
+        "overlap_classification": [
+          "EXACT_COMPOSITION_AND_DOI_MATCH"
+        ]
+      },
+      "Li1.4Al0.4Ge1.6P3O12": {
+        "n_source_rows": 1,
+        "overlap_classification": [
+          "COMPOSITION_ONLY_MATCH"
+        ]
+      },
+      "Li1.4Hf1.6In0.4P3O12": {
+        "n_source_rows": 1,
+        "overlap_classification": [
+          "EXACT_COMPOSITION_AND_DOI_MATCH"
+        ]
+      },
+      "Li1.4La0.4Ti1.6P3O12": {
+        "n_source_rows": 1,
+        "overlap_classification": [
+          "COMPOSITION_ONLY_MATCH"
+        ]
+      },
+      "Li1.4Lu0.4Hf1.6P3O12": {
+        "n_source_rows": 1,
+        "overlap_classification": [
+          "EXACT_COMPOSITION_AND_DOI_MATCH"
+        ]
+      },
+      "Li1.4Sc0.4Ti1.6P3O12": {
+        "n_source_rows": 1,
+        "overlap_classification": [
+          "EXACT_COMPOSITION_AND_DOI_MATCH"
+        ]
+      },
+      "Li1.4Ti1.6Al0.4P3O12": {
+        "n_source_rows": 2,
+        "overlap_classification": [
+          "COMPOSITION_ONLY_MATCH",
+          "EXACT_COMPOSITION_AND_DOI_MATCH"
+        ]
+      },
+      "Li1.4Ti1.6Cr0.4P3O12": {
+        "n_source_rows": 1,
+        "overlap_classification": [
+          "EXACT_COMPOSITION_AND_DOI_MATCH"
+        ]
+      },
+      "Li1.4Ti1.6Fe0.4P3O12": {
+        "n_source_rows": 1,
+        "overlap_classification": [
+          "EXACT_COMPOSITION_AND_DOI_MATCH"
+        ]
+      },
+      "Li1.4Ti1.6In0.4P3O12": {
+        "n_source_rows": 2,
+        "overlap_classification": [
+          "COMPOSITION_ONLY_MATCH",
+          "EXACT_COMPOSITION_AND_DOI_MATCH"
+        ]
+      },
+      "Li1.4Y0.4Hf1.6P3O12": {
+        "n_source_rows": 1,
+        "overlap_classification": [
+          "EXACT_COMPOSITION_AND_DOI_MATCH"
+        ]
+      },
+      "Li1.5Al0.5Ge1.5P3O12": {
+        "n_source_rows": 5,
+        "overlap_classification": [
+          "COMPOSITION_ONLY_MATCH",
+          "EXACT_COMPOSITION_AND_DOI_MATCH"
+        ]
+      },
+      "Li1.5La0.5Ti1.5P3O12": {
+        "n_source_rows": 1,
+        "overlap_classification": [
+          "COMPOSITION_ONLY_MATCH"
+        ]
+      },
+      "Li1.5Ti1.5Al0.5P3O12": {
+        "n_source_rows": 1,
+        "overlap_classification": [
+          "EXACT_COMPOSITION_AND_DOI_MATCH"
+        ]
+      },
+      "Li1.5Ti1.5Cr0.5P3O12": {
+        "n_source_rows": 1,
+        "overlap_classification": [
+          "EXACT_COMPOSITION_AND_DOI_MATCH"
+        ]
+      },
+      "Li1.5Ti1.5Fe0.5P3O12": {
+        "n_source_rows": 1,
+        "overlap_classification": [
+          "EXACT_COMPOSITION_AND_DOI_MATCH"
+        ]
+      },
+      "Li1.5Ti1.5In0.5P3O12": {
+        "n_source_rows": 1,
+        "overlap_classification": [
+          "EXACT_COMPOSITION_AND_DOI_MATCH"
+        ]
+      },
+      "Li1.6Al0.6Ge1.4P3O12": {
+        "n_source_rows": 2,
+        "overlap_classification": [
+          "COMPOSITION_ONLY_MATCH",
+          "EXACT_COMPOSITION_AND_DOI_MATCH"
+        ]
+      },
+      "Li1.6Ti0.6Al0.6Ge0.8P3O12": {
+        "n_source_rows": 1,
+        "overlap_classification": [
+          "EXACT_COMPOSITION_AND_DOI_MATCH"
+        ]
+      },
+      "Li1.7Al0.7Ge1.3P3O12": {
+        "n_source_rows": 1,
+        "overlap_classification": [
+          "COMPOSITION_ONLY_MATCH"
+        ]
+      },
+      "Li1.8Ti1.2Cr0.8P3O12": {
+        "n_source_rows": 1,
+        "overlap_classification": [
+          "EXACT_COMPOSITION_AND_DOI_MATCH"
+        ]
+      },
+      "Li10.35Si1.35P1.65S12": {
+        "n_source_rows": 1,
+        "overlap_classification": [
+          "EXACT_COMPOSITION_AND_DOI_MATCH"
+        ]
+      },
+      "Li10Ge(PS6)2": {
+        "n_source_rows": 2,
+        "overlap_classification": [
+          "COMPOSITION_ONLY_MATCH",
+          "EXACT_COMPOSITION_AND_DOI_MATCH"
+        ]
+      },
+      "Li10Si(PS6)2": {
+        "n_source_rows": 1,
+        "overlap_classification": [
+          "EXACT_COMPOSITION_AND_DOI_MATCH"
+        ]
+      },
+      "Li10Si0.05Ge0.95P2S12": {
+        "n_source_rows": 1,
+        "overlap_classification": [
+          "EXACT_COMPOSITION_AND_DOI_MATCH"
+        ]
+      },
+      "Li10Sn(PS6)2": {
+        "n_source_rows": 1,
+        "overlap_classification": [
+          "EXACT_COMPOSITION_AND_DOI_MATCH"
+        ]
+      },
+      "Li1Zr0.2Ti1.8P3O12": {
+        "n_source_rows": 1,
+        "overlap_classification": [
+          "EXACT_COMPOSITION_AND_DOI_MATCH"
+        ]
+      },
+      "Li1Zr1.8Ti0.2P3O12": {
+        "n_source_rows": 1,
+        "overlap_classification": [
+          "EXACT_COMPOSITION_AND_DOI_MATCH"
+        ]
+      },
+      "Li1Zr1.9Ti0.1P3O12": {
+        "n_source_rows": 1,
+        "overlap_classification": [
+          "EXACT_COMPOSITION_AND_DOI_MATCH"
+        ]
+      },
+      "Li2.88P1N0.14O3.73": {
+        "n_source_rows": 1,
+        "overlap_classification": [
+          "EXACT_COMPOSITION_AND_DOI_MATCH"
+        ]
+      },
+      "Li2HBrO": {
+        "n_source_rows": 1,
+        "overlap_classification": [
+          "COMPOSITION_ONLY_MATCH"
+        ]
+      },
+      "Li2HfIn(PO4)3": {
+        "n_source_rows": 1,
+        "overlap_classification": [
+          "EXACT_COMPOSITION_AND_DOI_MATCH"
+        ]
+      },
+      "Li2PS3": {
+        "n_source_rows": 2,
+        "overlap_classification": [
+          "EXACT_COMPOSITION_AND_DOI_MATCH"
+        ]
+      },
+      "Li2SiS3": {
+        "n_source_rows": 1,
+        "overlap_classification": [
+          "EXACT_COMPOSITION_AND_DOI_MATCH"
+        ]
+      },
+      "Li2SnS3": {
+        "n_source_rows": 1,
+        "overlap_classification": [
+          "EXACT_COMPOSITION_AND_DOI_MATCH"
+        ]
+      },
+      "Li2TiCr(PO4)3": {
+        "n_source_rows": 1,
+        "overlap_classification": [
+          "EXACT_COMPOSITION_AND_DOI_MATCH"
+        ]
+      },
+      "Li2TiFe(PO4)3": {
+        "n_source_rows": 1,
+        "overlap_classification": [
+          "EXACT_COMPOSITION_AND_DOI_MATCH"
+        ]
+      },
+      "Li2TiIn(PO4)3": {
+        "n_source_rows": 1,
+        "overlap_classification": [
+          "EXACT_COMPOSITION_AND_DOI_MATCH"
+        ]
+      },
+      "Li2ZrCr(PO4)3": {
+        "n_source_rows": 1,
+        "overlap_classification": [
+          "EXACT_COMPOSITION_AND_DOI_MATCH"
+        ]
+      },
+      "Li2ZrFe(PO4)3": {
+        "n_source_rows": 1,
+        "overlap_classification": [
+          "EXACT_COMPOSITION_AND_DOI_MATCH"
+        ]
+      },
+      "Li2ZrIn(PO4)3": {
+        "n_source_rows": 1,
+        "overlap_classification": [
+          "EXACT_COMPOSITION_AND_DOI_MATCH"
+        ]
+      },
+      "Li3.25Ge0.25P0.75S4": {
+        "n_source_rows": 2,
+        "overlap_classification": [
+          "COMPOSITION_ONLY_MATCH",
+          "EXACT_COMPOSITION_AND_DOI_MATCH"
+        ]
+      },
+      "Li3.2Ge0.2P0.8O4": {
+        "n_source_rows": 1,
+        "overlap_classification": [
+          "EXACT_COMPOSITION_AND_DOI_MATCH"
+        ]
+      },
+      "Li3.2Ge0.2P0.8S4": {
+        "n_source_rows": 1,
+        "overlap_classification": [
+          "EXACT_COMPOSITION_AND_DOI_MATCH"
+        ]
+      },
+      "Li3.2V0.8Ge0.2O4": {
+        "n_source_rows": 1,
+        "overlap_classification": [
+          "EXACT_COMPOSITION_AND_DOI_MATCH"
+        ]
+      },
+      "Li3.35Ge0.35P0.65S4": {
+        "n_source_rows": 1,
+        "overlap_classification": [
+          "EXACT_COMPOSITION_AND_DOI_MATCH"
+        ]
+      },
+      "Li3.4Ge0.4P0.6O4": {
+        "n_source_rows": 1,
+        "overlap_classification": [
+          "EXACT_COMPOSITION_AND_DOI_MATCH"
+        ]
+      },
+      "Li3.4Si0.4P0.6S4": {
+        "n_source_rows": 1,
+        "overlap_classification": [
+          "EXACT_COMPOSITION_AND_DOI_MATCH"
+        ]
+      },
+      "Li3.4V0.6Ge0.4O4": {
+        "n_source_rows": 1,
+        "overlap_classification": [
+          "EXACT_COMPOSITION_AND_DOI_MATCH"
+        ]
+      },
+      "Li3.6Ge0.6P0.4O4": {
+        "n_source_rows": 1,
+        "overlap_classification": [
+          "EXACT_COMPOSITION_AND_DOI_MATCH"
+        ]
+      },
+      "Li3.6Si0.6P0.4S4": {
+        "n_source_rows": 1,
+        "overlap_classification": [
+          "EXACT_COMPOSITION_AND_DOI_MATCH"
+        ]
+      },
+      "Li3.6V0.4Ge0.6O4": {
+        "n_source_rows": 1,
+        "overlap_classification": [
+          "EXACT_COMPOSITION_AND_DOI_MATCH"
+        ]
+      },
+      "Li3.75Si0.75P0.25O4": {
+        "n_source_rows": 1,
+        "overlap_classification": [
+          "EXACT_COMPOSITION_AND_DOI_MATCH"
+        ]
+      },
+      "Li3.8Ge0.8P0.2O4": {
+        "n_source_rows": 1,
+        "overlap_classification": [
+          "EXACT_COMPOSITION_AND_DOI_MATCH"
+        ]
+      },
+      "Li3.8V0.2Ge0.8O4": {
+        "n_source_rows": 1,
+        "overlap_classification": [
+          "EXACT_COMPOSITION_AND_DOI_MATCH"
+        ]
+      },
+      "Li3AlS3": {
+        "n_source_rows": 1,
+        "overlap_classification": [
+          "EXACT_COMPOSITION_AND_DOI_MATCH"
+        ]
+      },
+      "Li3BrO": {
+        "n_source_rows": 1,
+        "overlap_classification": [
+          "EXACT_COMPOSITION_AND_DOI_MATCH"
+        ]
+      },
+      "Li3ClO": {
+        "n_source_rows": 1,
+        "overlap_classification": [
+          "COMPOSITION_ONLY_MATCH"
+        ]
+      },
+      "Li3Cr(MoO4)3": {
+        "n_source_rows": 1,
+        "overlap_classification": [
+          "EXACT_COMPOSITION_AND_DOI_MATCH"
+        ]
+      },
+      "Li3Fe(MoO4)3": {
+        "n_source_rows": 1,
+        "overlap_classification": [
+          "EXACT_COMPOSITION_AND_DOI_MATCH"
+        ]
+      },
+      "Li3N": {
+        "n_source_rows": 1,
+        "overlap_classification": [
+          "EXACT_COMPOSITION_AND_DOI_MATCH"
+        ]
+      },
+      "Li3P": {
+        "n_source_rows": 1,
+        "overlap_classification": [
+          "EXACT_COMPOSITION_AND_DOI_MATCH"
+        ]
+      },
+      "Li3PO4": {
+        "n_source_rows": 1,
+        "overlap_classification": [
+          "EXACT_COMPOSITION_AND_DOI_MATCH"
+        ]
+      },
+      "Li3PS4": {
+        "n_source_rows": 1,
+        "overlap_classification": [
+          "EXACT_COMPOSITION_AND_DOI_MATCH"
+        ]
+      },
+      "Li3V0.2P0.8O4": {
+        "n_source_rows": 1,
+        "overlap_classification": [
+          "EXACT_COMPOSITION_AND_DOI_MATCH"
+        ]
+      },
+      "Li3V0.4P0.6O4": {
+        "n_source_rows": 1,
+        "overlap_classification": [
+          "EXACT_COMPOSITION_AND_DOI_MATCH"
+        ]
+      },
+      "Li3V0.6P0.4O4": {
+        "n_source_rows": 1,
+        "overlap_classification": [
+          "EXACT_COMPOSITION_AND_DOI_MATCH"
+        ]
+      },
+      "Li3V0.8P0.2O4": {
+        "n_source_rows": 1,
+        "overlap_classification": [
+          "EXACT_COMPOSITION_AND_DOI_MATCH"
+        ]
+      },
+      "Li3VO4": {
+        "n_source_rows": 2,
+        "overlap_classification": [
+          "COMPOSITION_ONLY_MATCH",
+          "EXACT_COMPOSITION_AND_DOI_MATCH"
+        ]
+      },
+      "Li4.25Al0.25Si0.75O4": {
+        "n_source_rows": 1,
+        "overlap_classification": [
+          "EXACT_COMPOSITION_AND_DOI_MATCH"
+        ]
+      },
+      "Li4.4Al0.4Ge0.6S4": {
+        "n_source_rows": 1,
+        "overlap_classification": [
+          "EXACT_COMPOSITION_AND_DOI_MATCH"
+        ]
+      },
+      "Li4.4Al0.4Sn0.6S4": {
+        "n_source_rows": 1,
+        "overlap_classification": [
+          "EXACT_COMPOSITION_AND_DOI_MATCH"
+        ]
+      },
+      "Li4.8Al0.8Si0.2S4": {
+        "n_source_rows": 1,
+        "overlap_classification": [
+          "EXACT_COMPOSITION_AND_DOI_MATCH"
+        ]
+      },
+      "Li4Al0.33Si0.33P0.33O4": {
+        "n_source_rows": 1,
+        "overlap_classification": [
+          "EXACT_COMPOSITION_AND_DOI_MATCH"
+        ]
+      },
+      "Li4B7ClO12": {
+        "n_source_rows": 1,
+        "overlap_classification": [
+          "EXACT_COMPOSITION_AND_DOI_MATCH"
+        ]
+      },
+      "Li4GeO4": {
+        "n_source_rows": 2,
+        "overlap_classification": [
+          "COMPOSITION_ONLY_MATCH",
+          "EXACT_COMPOSITION_AND_DOI_MATCH"
+        ]
+      },
+      "Li4GeS4": {
+        "n_source_rows": 1,
+        "overlap_classification": [
+          "EXACT_COMPOSITION_AND_DOI_MATCH"
+        ]
+      },
+      "Li4Nd3SbTeO12": {
+        "n_source_rows": 1,
+        "overlap_classification": [
+          "EXACT_COMPOSITION_AND_DOI_MATCH"
+        ]
+      },
+      "Li4PS4I": {
+        "n_source_rows": 1,
+        "overlap_classification": [
+          "EXACT_COMPOSITION_AND_DOI_MATCH"
+        ]
+      },
+      "Li4SiS4": {
+        "n_source_rows": 1,
+        "overlap_classification": [
+          "EXACT_COMPOSITION_AND_DOI_MATCH"
+        ]
+      },
+      "Li4SnS4": {
+        "n_source_rows": 1,
+        "overlap_classification": [
+          "EXACT_COMPOSITION_AND_DOI_MATCH"
+        ]
+      },
+      "Li5.4La3Y0.75Nb1.8O12": {
+        "n_source_rows": 1,
+        "overlap_classification": [
+          "EXACT_COMPOSITION_AND_DOI_MATCH"
+        ]
+      },
+      "Li5.5La3Nb1.75In0.25O12": {
+        "n_source_rows": 1,
+        "overlap_classification": [
+          "EXACT_COMPOSITION_AND_DOI_MATCH"
+        ]
+      },
+      "Li5AlS4": {
+        "n_source_rows": 1,
+        "overlap_classification": [
+          "EXACT_COMPOSITION_AND_DOI_MATCH"
+        ]
+      },
+      "Li5B2P(H2S)4": {
+        "n_source_rows": 1,
+        "overlap_classification": [
+          "EXACT_COMPOSITION_AND_DOI_MATCH"
+        ]
+      },
+      "Li5La3(BiO6)2": {
+        "n_source_rows": 1,
+        "overlap_classification": [
+          "EXACT_COMPOSITION_AND_DOI_MATCH"
+        ]
+      },
+      "Li5La3(SbO6)2": {
+        "n_source_rows": 1,
+        "overlap_classification": [
+          "EXACT_COMPOSITION_AND_DOI_MATCH"
+        ]
+      },
+      "Li5La3Nb2O12": {
+        "n_source_rows": 1,
+        "overlap_classification": [
+          "COMPOSITION_ONLY_MATCH"
+        ]
+      },
+      "Li5La3Ta2O12": {
+        "n_source_rows": 4,
+        "overlap_classification": [
+          "COMPOSITION_ONLY_MATCH",
+          "EXACT_COMPOSITION_AND_DOI_MATCH"
+        ]
+      },
+      "Li5Nd3(SbO6)2": {
+        "n_source_rows": 1,
+        "overlap_classification": [
+          "COMPOSITION_ONLY_MATCH"
+        ]
+      },
+      "Li6.05Si0.05P0.95S5Br1": {
+        "n_source_rows": 1,
+        "overlap_classification": [
+          "EXACT_COMPOSITION_AND_DOI_MATCH"
+        ]
+      },
+      "Li6.25La3Zr2Ga0.25O12": {
+        "n_source_rows": 1,
+        "overlap_classification": [
+          "EXACT_COMPOSITION_AND_DOI_MATCH"
+        ]
+      },
+      "Li6.25Si0.25P0.75S5Br1": {
+        "n_source_rows": 1,
+        "overlap_classification": [
+          "EXACT_COMPOSITION_AND_DOI_MATCH"
+        ]
+      },
+      "Li6.2La3Zr1.2Sb0.8O12": {
+        "n_source_rows": 1,
+        "overlap_classification": [
+          "EXACT_COMPOSITION_AND_DOI_MATCH"
+        ]
+      },
+      "Li6.2La3Zr1.2Ta0.8O12": {
+        "n_source_rows": 1,
+        "overlap_classification": [
+          "EXACT_COMPOSITION_AND_DOI_MATCH"
+        ]
+      },
+      "Li6.2Si0.2P0.8S5Br1": {
+        "n_source_rows": 1,
+        "overlap_classification": [
+          "EXACT_COMPOSITION_AND_DOI_MATCH"
+        ]
+      },
+      "Li6.35Si0.35P0.65S5Br1": {
+        "n_source_rows": 1,
+        "overlap_classification": [
+          "EXACT_COMPOSITION_AND_DOI_MATCH"
+        ]
+      },
+      "Li6.3Si0.3P0.7S5Br1": {
+        "n_source_rows": 1,
+        "overlap_classification": [
+          "EXACT_COMPOSITION_AND_DOI_MATCH"
+        ]
+      },
+      "Li6.4La3Zr1.4Sb0.6O12": {
+        "n_source_rows": 1,
+        "overlap_classification": [
+          "EXACT_COMPOSITION_AND_DOI_MATCH"
+        ]
+      },
+      "Li6.4La3Zr1.4Ta0.6O12": {
+        "n_source_rows": 1,
+        "overlap_classification": [
+          "EXACT_COMPOSITION_AND_DOI_MATCH"
+        ]
+      },
+      "Li6.4La3Zr2Al0.19O11.8": {
+        "n_source_rows": 1,
+        "overlap_classification": [
+          "EXACT_COMPOSITION_AND_DOI_MATCH"
+        ]
+      },
+      "Li6.5La3Y0.75Nb1.25O12": {
+        "n_source_rows": 1,
+        "overlap_classification": [
+          "EXACT_COMPOSITION_AND_DOI_MATCH"
+        ]
+      },
+      "Li6.5La3Zr1.5Ta0.5O12": {
+        "n_source_rows": 2,
+        "overlap_classification": [
+          "EXACT_COMPOSITION_AND_DOI_MATCH"
+        ]
+      },
+      "Li6.5La3Zr1.75Te0.25O12": {
+        "n_source_rows": 1,
+        "overlap_classification": [
+          "EXACT_COMPOSITION_AND_DOI_MATCH"
+        ]
+      },
+      "Li6.5Si0.5P0.5S5Br1": {
+        "n_source_rows": 1,
+        "overlap_classification": [
+          "EXACT_COMPOSITION_AND_DOI_MATCH"
+        ]
+      },
+      "Li6.6La2.5Y0.5Zr1.6Ta0.4O12": {
+        "n_source_rows": 1,
+        "overlap_classification": [
+          "EXACT_COMPOSITION_AND_DOI_MATCH"
+        ]
+      },
+      "Li6.6La2.75Y0.25Zr1.6Ta0.4O12": {
+        "n_source_rows": 1,
+        "overlap_classification": [
+          "EXACT_COMPOSITION_AND_DOI_MATCH"
+        ]
+      },
+      "Li6.6La2.875Y0.125Zr1.6Ta0.4O12": {
+        "n_source_rows": 1,
+        "overlap_classification": [
+          "EXACT_COMPOSITION_AND_DOI_MATCH"
+        ]
+      },
+      "Li6.6La3Zr1.6Sb0.4O12": {
+        "n_source_rows": 1,
+        "overlap_classification": [
+          "EXACT_COMPOSITION_AND_DOI_MATCH"
+        ]
+      },
+      "Li6.6La3Zr1.6Ta0.4O12": {
+        "n_source_rows": 1,
+        "overlap_classification": [
+          "EXACT_COMPOSITION_AND_DOI_MATCH"
+        ]
+      },
+      "Li6.75La3Zr1.75Nb0.25O12": {
+        "n_source_rows": 1,
+        "overlap_classification": [
+          "EXACT_COMPOSITION_AND_DOI_MATCH"
+        ]
+      },
+      "Li6.75La3Zr1.75Ta0.25O12": {
+        "n_source_rows": 2,
+        "overlap_classification": [
+          "EXACT_COMPOSITION_AND_DOI_MATCH"
+        ]
+      },
+      "Li6.75La3Zr1.875Te0.125O12": {
+        "n_source_rows": 1,
+        "overlap_classification": [
+          "EXACT_COMPOSITION_AND_DOI_MATCH"
+        ]
+      },
+      "Li6.7La3Zr1.7Ta0.3O12": {
+        "n_source_rows": 1,
+        "overlap_classification": [
+          "COMPOSITION_ONLY_MATCH"
+        ]
+      },
+      "Li6.8La3Zr1.8Sb0.2O12": {
+        "n_source_rows": 1,
+        "overlap_classification": [
+          "EXACT_COMPOSITION_AND_DOI_MATCH"
+        ]
+      },
+      "Li6.8La3Zr1.8Ta0.2O12": {
+        "n_source_rows": 1,
+        "overlap_classification": [
+          "EXACT_COMPOSITION_AND_DOI_MATCH"
+        ]
+      },
+      "Li6Br3N": {
+        "n_source_rows": 1,
+        "overlap_classification": [
+          "COMPOSITION_ONLY_MATCH"
+        ]
+      },
+      "Li6CaLa2Nb2O12": {
+        "n_source_rows": 2,
+        "overlap_classification": [
+          "EXACT_COMPOSITION_AND_DOI_MATCH"
+        ]
+      },
+      "Li6CaLa2Ta2O12": {
+        "n_source_rows": 1,
+        "overlap_classification": [
+          "EXACT_COMPOSITION_AND_DOI_MATCH"
+        ]
+      },
+      "Li6La3Y0.5Nb1.5O12": {
+        "n_source_rows": 1,
+        "overlap_classification": [
+          "EXACT_COMPOSITION_AND_DOI_MATCH"
+        ]
+      },
+      "Li6La3ZrSbO12": {
+        "n_source_rows": 1,
+        "overlap_classification": [
+          "EXACT_COMPOSITION_AND_DOI_MATCH"
+        ]
+      },
+      "Li6La3ZrTaO12": {
+        "n_source_rows": 1,
+        "overlap_classification": [
+          "EXACT_COMPOSITION_AND_DOI_MATCH"
+        ]
+      },
+      "Li6PClO5": {
+        "n_source_rows": 1,
+        "overlap_classification": [
+          "EXACT_COMPOSITION_AND_DOI_MATCH"
+        ]
+      },
+      "Li6PS5Br": {
+        "n_source_rows": 2,
+        "overlap_classification": [
+          "COMPOSITION_ONLY_MATCH",
+          "EXACT_COMPOSITION_AND_DOI_MATCH"
+        ]
+      },
+      "Li6PS5Cl": {
+        "n_source_rows": 2,
+        "overlap_classification": [
+          "EXACT_COMPOSITION_AND_DOI_MATCH"
+        ]
+      },
+      "Li6PS5I": {
+        "n_source_rows": 1,
+        "overlap_classification": [
+          "COMPOSITION_ONLY_MATCH"
+        ]
+      },
+      "Li6Si(ClO2)2": {
+        "n_source_rows": 1,
+        "overlap_classification": [
+          "EXACT_COMPOSITION_AND_DOI_MATCH"
+        ]
+      },
+      "Li7.06La3Y0.06Zr1.94O12": {
+        "n_source_rows": 1,
+        "overlap_classification": [
+          "EXACT_COMPOSITION_AND_DOI_MATCH"
+        ]
+      },
+      "Li7Ge3PS12": {
+        "n_source_rows": 1,
+        "overlap_classification": [
+          "EXACT_COMPOSITION_AND_DOI_MATCH"
+        ]
+      },
+      "Li7La3Hf2O12": {
+        "n_source_rows": 1,
+        "overlap_classification": [
+          "EXACT_COMPOSITION_AND_DOI_MATCH"
+        ]
+      },
+      "Li7La3Ta2O13": {
+        "n_source_rows": 1,
+        "overlap_classification": [
+          "EXACT_COMPOSITION_AND_DOI_MATCH"
+        ]
+      },
+      "Li7La3Zr1.89Al0.15O12": {
+        "n_source_rows": 1,
+        "overlap_classification": [
+          "EXACT_COMPOSITION_AND_DOI_MATCH"
+        ]
+      },
+      "Li7La3Zr2O12": {
+        "n_source_rows": 4,
+        "overlap_classification": [
+          "COMPOSITION_ONLY_MATCH",
+          "EXACT_COMPOSITION_AND_DOI_MATCH"
+        ]
+      },
+      "Li7P3S11": {
+        "n_source_rows": 4,
+        "overlap_classification": [
+          "COMPOSITION_ONLY_MATCH"
+        ]
+      },
+      "Li9.54Si1.74P1.44S11.7Cl0.3": {
+        "n_source_rows": 1,
+        "overlap_classification": [
+          "EXACT_COMPOSITION_AND_DOI_MATCH"
+        ]
+      },
+      "Li9.6P3S12": {
+        "n_source_rows": 1,
+        "overlap_classification": [
+          "EXACT_COMPOSITION_AND_DOI_MATCH"
+        ]
+      },
+      "Li9.81Sn0.81P2.19S12": {
+        "n_source_rows": 1,
+        "overlap_classification": [
+          "EXACT_COMPOSITION_AND_DOI_MATCH"
+        ]
+      },
+      "LiAlH4": {
+        "n_source_rows": 1,
+        "overlap_classification": [
+          "EXACT_COMPOSITION_AND_DOI_MATCH"
+        ]
+      },
+      "LiAlSb(PO4)3": {
+        "n_source_rows": 1,
+        "overlap_classification": [
+          "EXACT_COMPOSITION_AND_DOI_MATCH"
+        ]
+      },
+      "LiCrSb(PO4)3": {
+        "n_source_rows": 1,
+        "overlap_classification": [
+          "EXACT_COMPOSITION_AND_DOI_MATCH"
+        ]
+      },
+      "LiFeSb(PO4)3": {
+        "n_source_rows": 1,
+        "overlap_classification": [
+          "EXACT_COMPOSITION_AND_DOI_MATCH"
+        ]
+      },
+      "LiGe2(PO4)3": {
+        "n_source_rows": 2,
+        "overlap_classification": [
+          "COMPOSITION_ONLY_MATCH"
+        ]
+      },
+      "LiHf2(PO4)3": {
+        "n_source_rows": 1,
+        "overlap_classification": [
+          "COMPOSITION_ONLY_MATCH"
+        ]
+      },
+      "LiTa2PO8": {
+        "n_source_rows": 1,
+        "overlap_classification": [
+          "EXACT_COMPOSITION_AND_DOI_MATCH"
+        ]
+      },
+      "LiTaAl(PO4)3": {
+        "n_source_rows": 1,
+        "overlap_classification": [
+          "EXACT_COMPOSITION_AND_DOI_MATCH"
+        ]
+      },
+      "LiTi2(PO4)3": {
+        "n_source_rows": 3,
+        "overlap_classification": [
+          "COMPOSITION_ONLY_MATCH",
+          "EXACT_COMPOSITION_AND_DOI_MATCH"
+        ]
+      },
+      "LiZr2(PO4)3": {
+        "n_source_rows": 3,
+        "overlap_classification": [
+          "COMPOSITION_ONLY_MATCH"
+        ]
+      },
+      "Sr0.15Li0.15La0.51Ti1O3": {
+        "n_source_rows": 1,
+        "overlap_classification": [
+          "EXACT_COMPOSITION_AND_DOI_MATCH"
+        ]
+      },
+      "Sr0.25Li0.25La0.41Ti1O3": {
+        "n_source_rows": 1,
+        "overlap_classification": [
+          "EXACT_COMPOSITION_AND_DOI_MATCH"
+        ]
+      },
+      "Sr0.5Li0.5Ta0.75Cr0.25O3": {
+        "n_source_rows": 1,
+        "overlap_classification": [
+          "EXACT_COMPOSITION_AND_DOI_MATCH"
+        ]
+      },
+      "Sr0.5Li0.5Ta0.75Fe0.25O3": {
+        "n_source_rows": 1,
+        "overlap_classification": [
+          "EXACT_COMPOSITION_AND_DOI_MATCH"
+        ]
+      },
+      "SrLi6La2Nb2O12": {
+        "n_source_rows": 2,
+        "overlap_classification": [
+          "EXACT_COMPOSITION_AND_DOI_MATCH"
+        ]
+      },
+      "SrLi6La2Ta2O12": {
+        "n_source_rows": 3,
+        "overlap_classification": [
+          "COMPOSITION_ONLY_MATCH",
+          "EXACT_COMPOSITION_AND_DOI_MATCH"
+        ]
+      }
+    },
+    "discrepancy_by_overlap_classification": {
+      "EXACT_COMPOSITION_AND_DOI_MATCH_ONLY": {
+        "n": 165,
+        "mean_absolute_discrepancy": 0.18416421885857243,
+        "median_absolute_discrepancy": 4.94243757032109e-10
+      },
+      "COMPOSITION_ONLY_MATCH_INVOLVED": {
+        "n": 35,
+        "mean_absolute_discrepancy": 0.7874056506003829,
+        "median_absolute_discrepancy": 0.3467874860476252
+      }
+    },
+    "overlap_classification_note": "EXACT_COMPOSITION_AND_DOI_MATCH pairs (near-certain the same underlying literature measurement cited by both databases) show much smaller discrepancy than pairs involving a COMPOSITION_ONLY_MATCH (same nominal formula, different/unverifiable source) -- consistent with genuine synthesis/measurement-protocol variability across independent reports of the 'same' nominal material, not a database-parsing error."
+  },
+  "scope_note": "These paired rows are excluded from every N2 external cohort (strict AND relaxed) by construction (overlap_classification != NO_MATCH) and are used HERE ONLY as a calibration/compatibility check between the two databases' raw label conventions -- never as external-test data, and this comparison is cross-database DISCREPANCY, not a model's prediction error."
+}

@@ -1,0 +1,175 @@
+{
+  "phase": "N3_portable_model_benchmark",
+  "git_commit": "176a481a54bd1e13852f1bb5aced725b59ddc817",
+  "git_branch": "npj-cross-dataset-extension",
+  "obelix_dev_population": {
+    "n_train": 359,
+    "n_validation": 90
+  },
+  "obelix_test_untouched_row_count": 113,
+  "hargreaves_data_read": false,
+  "feature_schema_check": {
+    "n_features_obelix": 132,
+    "n_features_hargreaves": 132,
+    "columns_identical": true,
+    "columns_identical_as_set": true,
+    "feature_schema_name": "magpie_composition_only_v1"
+  },
+  "seeds_available_for_downstream_multiseed_use": [
+    17,
+    29,
+    43,
+    71,
+    101
+  ],
+  "tuning_seed": 20260921,
+  "models": {
+    "ridge": {
+      "model_family": "ridge",
+      "hyperparameters": {
+        "alpha": 30.958697172708092
+      },
+      "hyperparameters_hash": "801abc681312a3e51d78ef94c83e893e774e29e6bc2cb2132d7282b98e3c7db4",
+      "seed": 20260921,
+      "feature_schema": "magpie_composition_only_v1",
+      "n_features": 132,
+      "train_mae": 1.1405938343020847,
+      "validation_mae": 1.0645840904425534,
+      "n_trials": 40
+    },
+    "random_forest": {
+      "model_family": "random_forest",
+      "hyperparameters": {
+        "n_estimators": 418,
+        "max_depth": 16,
+        "min_samples_leaf": 1,
+        "max_features": 0.422092208923064
+      },
+      "hyperparameters_hash": "3d10ed35a56ac55f5fc9d4f6d2005cb5698d8428eaffae9cf7316ae598244468",
+      "seed": 20260921,
+      "feature_schema": "magpie_composition_only_v1",
+      "n_features": 132,
+      "train_mae": 0.37636745214212114,
+      "validation_mae": 0.8548544762847334,
+      "n_trials": 40
+    },
+    "extra_trees": {
+      "model_family": "extra_trees",
+      "hyperparameters": {
+        "n_estimators": 422,
+        "max_depth": 17,
+        "min_samples_leaf": 1,
+        "max_features": 0.9834928266372729
+      },
+      "hyperparameters_hash": "47e53143089bd6939f638b0d80fe9423294a9f585ced82d31711204fb5724a13",
+      "seed": 20260921,
+      "feature_schema": "magpie_composition_only_v1",
+      "n_features": 132,
+      "train_mae": 0.15059135179935032,
+      "validation_mae": 0.7274277133577458,
+      "n_trials": 40
+    },
+    "xgboost": {
+      "model_family": "xgboost",
+      "hyperparameters": {
+        "n_estimators": 512,
+        "max_depth": 3,
+        "learning_rate": 0.1565542034735534,
+        "subsample": 0.6756493171210203,
+        "colsample_bytree": 0.7602879226905945,
+        "min_child_weight": 2,
+        "reg_lambda": 0.029735351133001662
+      },
+      "hyperparameters_hash": "f0381c77286e29a777f1702b041e4e6ba5a034da86f325e898801fb73112a93e",
+      "seed": 20260921,
+      "feature_schema": "magpie_composition_only_v1",
+      "n_features": 132,
+      "train_mae": 0.23065321827034094,
+      "validation_mae": 0.7018813275623619,
+      "n_trials": 40
+    },
+    "catboost": {
+      "model_family": "catboost",
+      "hyperparameters": {
+        "iterations": 525,
+        "depth": 7,
+        "learning_rate": 0.08670302911973542,
+        "l2_leaf_reg": 0.006726976384994009,
+        "subsample": 0.8171526071916277
+      },
+      "hyperparameters_hash": "7b68fb9a404f2dd4932016c08bd5b389117b04f69e4a6570b4b071835c485e57",
+      "seed": 20260921,
+      "feature_schema": "magpie_composition_only_v1",
+      "n_features": 132,
+      "train_mae": 0.15050158863776827,
+      "validation_mae": 0.7725761590880496,
+      "n_trials": 40
+    },
+    "shallow_mlp": {
+      "model_family": "torch_mlp",
+      "hyperparameters": {
+        "hidden_dims": [
+          128,
+          128
+        ],
+        "dropout": 0.13758461991609972,
+        "lr": 0.003856414723793305,
+        "weight_decay": 5.268201830611682e-06
+      },
+      "hyperparameters_hash": "348997a4b7cbb7ddde6f36112d4ff8fe8a9dd41cbd9564875c56da8a894da257",
+      "seed": 20260921,
+      "feature_schema": "magpie_composition_only_v1",
+      "n_features": 132,
+      "train_mae": 0.689510780253196,
+      "validation_mae": 0.8950655519243133,
+      "n_trials": 20,
+      "n_parameters": 33665,
+      "best_epoch": 111
+    },
+    "pretrained_element_embedding": {
+      "model_family": "torch_pooled_element_embedding_mlp",
+      "hyperparameters": {
+        "hidden_dims": [
+          64
+        ],
+        "dropout": 0.3674454305630193,
+        "lr": 0.009686618156248814,
+        "weight_decay": 0.0007205019755714976
+      },
+      "hyperparameters_hash": "d823d26fdf305be01f98690cfecace7b0467a9f97c455ffe11658f41295d9cfd",
+      "seed": 20260921,
+      "feature_schema": "magpie_pooled_element_embedding_v1",
+      "n_features": 22,
+      "train_mae": 1.368751379788725,
+      "validation_mae": 1.4471630922834122,
+      "n_trials": 20,
+      "n_parameters": 1537,
+      "best_epoch": 146,
+      "corrective_note": "Re-tuned under corrective01 after fixing the pymatgen Element bug in features/element_embeddings.py; search space, trial budget (TORCH_N_TRIALS=20), and tuning seed (20260921) are identical to the original N3 run. See reports/acs/specs/corrective01_pretrained_element_embedding_bugfix.md."
+    },
+    "composition_attention": {
+      "model_family": "torch_composition_attention",
+      "hyperparameters": {
+        "d_model": 32,
+        "n_heads": 4,
+        "n_layers": 2,
+        "dropout": 0.008505277843168811,
+        "lr": 0.0014386627202773385,
+        "weight_decay": 8.244885922802966e-05
+      },
+      "hyperparameters_hash": "311de54b5f1eb279b6b1f81dbf0eb45e0bfbca01dcd0f7195952897068affc59",
+      "seed": 20260921,
+      "feature_schema": "element_vocabulary_v1",
+      "n_features": null,
+      "max_elements": 10,
+      "vocab_size": 53,
+      "train_mae": 0.7309996785826717,
+      "validation_mae": 0.7783253626321244,
+      "n_trials": 20,
+      "n_parameters": 19937,
+      "best_epoch": 149
+    }
+  },
+  "corrective01_note": "This is a corrective, non-authoritative copy of artifacts/npj_model_ladder_frozen.json with ONLY the pretrained_element_embedding entry replaced. The other 7 models' entries below are byte-identical to the historical frozen ladder and are reproduced here only so downstream per-model-fragment scripts can read a single consistent file when run with --model pretrained_element_embedding. Do not use this file for any other model.",
+  "git_commit_at_corrective_rerun": "534da7af653407d764d3636e34fca3db1b068817"
+}

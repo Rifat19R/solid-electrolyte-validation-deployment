@@ -1,0 +1,53 @@
+{
+  "phase": "ACS_JCIM_remediation_post_hoc_spec",
+  "spec_version": "1.0",
+  "created_at_utc": "2026-09-30T00:00:00Z",
+  "git_commit_at_authoring": "3ba944866c0eb66fb799d3809c98def3c4b7a4da",
+  "git_branch": "npj-cross-dataset-extension",
+  "status": "POST HOC REMEDIATION SPEC -- NOT pre-registered/pre-specified under artifacts/npj_pretest_lock.json. These analyses are authorized post-hoc robustness/remediation checks for the JCIM conversion only. They do not rerun, reopen, or alter N6's one-shot external transfer result, any frozen npj_* artifact, or the NPJ-GO verdict.",
+  "purpose": "Define, before any number below is computed, the exact population/rule/source-data/output of each new analysis required to address issues 03, 04, 05, 06, and 08(b) of the JCIM remediation task. Fixed here so no analysis is adjusted after inspecting its own result (EXPERIMENT_PROTOCOL.md).",
+  "hard_constraints": [
+    "N6's one-shot external transfer is NOT rerun; its frozen predictions (artifacts/npj_n6_external_transfer.json) are reused as-is.",
+    "The frozen OBELiX official 113-row test split is never opened by any script below.",
+    "No frozen primary artifact (npj_pretest_lock.json, npj_model_ladder_frozen.json, npj_n4b_*.json, npj_n6_*.json, npj_n7b_*.json, npj_n8_*.json, npj_n9*.json, npj_n15_*.json, npj_n21*.json) is modified. All outputs are new files under artifacts/acs_*.json.",
+    "No manuscript_npj file is edited by any script below (governance: manuscript_npj is immutable source material for this conversion).",
+    "Every numeric result actually computed is reported, whether favorable or unfavorable to the existing narrative."
+  ],
+  "issue_03_common_support_lomfo": {
+    "question": "Do the A-vs-C and B-vs-C regime-utility comparisons change once A and B are scored on exactly the same 396-row common support that C (LOMFO) actually covers, instead of A/B's full 449-row support?",
+    "motivation": "LOMFO (regime C) only ever holds out rows belonging to one of the 9 'major' families (n>=15), so only 396 of 449 dev-population rows are ever scored as an LOMFO test row; A and B score all 449. Comparing A/B's 449-row MAE against C's 396-row MAE conflates a support-size difference with a regime-design difference.",
+    "method": "Reproduce regime A and B's exact fold partitions from artifacts/npj_n4b_nested_internal_validation.json (same CV_SEED=20260921, same random_kfold_splits/family_group_kfold_splits functions). For each of the 8 models, refit each fold using that fold's ALREADY-FROZEN per_fold_hyperparameters (no new tuning) via fit_predict_model, producing full 449-row OOF predictions. Sanity-check: recomputed pooled MAE over all 449 rows must match the frozen n4b pooled_mae within 1e-6 before trusting any subset number. Then restrict both A's and B's OOF predictions to the 396-row common-support mask (family_filled isin n4b's major_families list) and recompute pooled MAE per model. C's existing pooled_mae_over_major_family_rows is already on this exact support and is reused unchanged. Feed the three regimes' common-support internal-MAE dicts into the SAME regime_summary/bootstrap_regime_pair_delta_ci functions N7b used, against the same frozen N6 external residuals.",
+    "output_files": ["artifacts/acs_issue03_common_support_lomfo.json", "reports/npj/acs_issue03_common_support_lomfo.md"],
+    "decision_rule": "Report median |MAE gap|, Spearman rho, Kendall tau, and regret for A/B/C on the common 396-row support, with bootstrap CIs, and compare directly to N7b's full-support numbers. No claim of a changed verdict unless a CI crosses the sign the full-support comparison found."
+  },
+  "issue_04_training_size_matched_control": {
+    "question": "Is the extreme MAE degradation some models (ridge, shallow_mlp) show under Family-GroupKFold (regime B) attributable to training-size loss alone, independent of which rows/family were excluded?",
+    "motivation": "Regime B's fold 0 removes a large family from training (up to ~213/449 rows across its 5 folds' varying sizes), confounding family-novelty with a large training-size reduction.",
+    "method": "For each of regime B's 5 folds (fixed sizes, from family_group_kfold_splits(seed=20260921)), construct a plain random row-level holdout of the IDENTICAL test-set size (sse_transfer.evaluation.npj_internal_validation.size_matched_random_splits), for 3 deterministic control seeds (20260930, 20260931, 20260932). For each (seed, fold, model), run the identical nested tuning pipeline used by N4b (inner-split tune_hyperparameters on that fold's own outer-train partition, then fit_predict_model) -- full nested retuning, not a reuse of B's hyperparameters, so the matched control is judged under the same protocol as the reference regime. Compute pooled MAE per model per seed. Compare against B's actual per-model pooled MAE (from n4b) and A's (random CV) pooled MAE.",
+    "scope_decision": "Matched-size controls are built for regime B (Family-GroupKFold) only, not regime C (LOMFO), to bound compute to the ~2.5-3h budget agreed with the author. This is a disclosed scope reduction, not a claim that LOMFO's blowups are unexamined by any means (N4b/N15 already diagnose LOMFO's family-exclusion mechanism qualitatively).",
+    "output_files": ["artifacts/acs_issue04_size_matched_control.json", "reports/npj/acs_issue04_size_matched_control.md"],
+    "decision_rule": "If a model's matched-size-random pooled MAE is within the same order of magnitude as regime A (random CV) and far below regime B's actual blowup MAE, the degradation is attributable to family-exclusion distribution shift, not size loss alone. If the matched-size-random control ALSO blows up to a similar magnitude as regime B, size loss alone is sufficient to explain it. No causal claim beyond what the comparison directly shows."
+  },
+  "issue_05_fold_local_robust_shift_distance": {
+    "question": "Does N21e's 'robust' shift-distance fix (artifacts/npj_n21e_robust_shift_distance.json) actually avoid inspecting outer-test features, or does its normalization still reference full-449-population variance?",
+    "motivation": "N21e's near-zero-variance threshold was computed as 5% of the FULL 449-row population's per-feature variance. A fold-local diagnostic must be normalized using ONLY that fold's own training features (or an independently frozen threshold), never any statistic of the pooled population that includes the outer-test rows.",
+    "method": "Audit n21e_robust_shift_distance.py's variance-threshold computation directly (read the code, do not assume). Rebuild the same NN-distance/Wasserstein diagnostic so that, for every outer fold, the near-zero-variance threshold and any standardization scale are computed from that fold's OWN training partition only, matching regime A/B/C's actual fold structure (this necessarily produces one threshold per fold per regime, not one global threshold). No target labels are used at any point (target-free diagnostic, as N15/N21e already were).",
+    "output_files": ["artifacts/acs_issue05_fold_local_shift_distance.json", "reports/npj/acs_issue05_fold_local_shift_distance.md"],
+    "decision_rule": "Report old (population-normalized) vs corrected (fold-local-normalized) max/median/q90 standardized distance per regime, and state explicitly whether the conclusion that regime B's excluded family sits far outside its fold's training distribution survives the fold-local correction."
+  },
+  "issue_06_doi_cluster_bootstrap": {
+    "question": "Does accounting for multiple Hargreaves compositions sharing a literature source (DOI) widen the external-MAE bootstrap CIs beyond the existing row-level bootstrap?",
+    "motivation": "Row-level bootstrap (used throughout N7b/N15) treats every one of the 204 strict-cohort compositions as independent, but compositions from the same paper may be correlated (shared synthesis batch, shared measurement protocol/equipment).",
+    "method": "For each of the 204 strict-cohort reduced_formula rows, look up its contributing raw rows' 'source' (DOI) values from data/processed/npj_external_cohort/hargreaves_overlap_ledger.csv (RETAINED rows only). Build source-sharing clusters via union-find (formulas sharing >=1 DOI join the same cluster; a formula with a single unique DOI not shared by any other retained formula is its own singleton cluster). Resample CLUSTERS (not rows) with replacement, reconstructing a bootstrap sample's row set as the union of all rows in the resampled clusters, for each of N6's frozen per-model residuals. Recompute external MAE bootstrap CIs and, reusing bootstrap_regime_pair_delta_ci's statistic definitions, the primary A-vs-B/A-vs-C regime-utility deltas under cluster resampling.",
+    "output_files": ["artifacts/acs_issue06_doi_cluster_bootstrap.json", "reports/npj/acs_issue06_doi_cluster_bootstrap.md"],
+    "decision_rule": "Report cluster count, cluster-size distribution, and side-by-side row-bootstrap vs cluster-bootstrap CI widths/point estimates for external MAE and the primary regime-utility deltas. Flag explicitly if any conclusion's CI sign flips under cluster resampling."
+  },
+  "issue_08b_chemical_system_cluster_control": {
+    "question": "Beyond the existing exact-formula-disjoint control (N20b), does grouping by chemical system (element set, ignoring stoichiometry) -- a strictly coarser, more conservative grouping -- change internal-CV MAE materially?",
+    "motivation": "N20b's formula-GroupKFold groups only EXACT-duplicate reduced formulas; it does not address near-duplicate chemical redundancy (e.g. two different stoichiometries of the same element set).",
+    "feasibility_check": "Valid only if grouping by element-set does not collapse most of the dev population into one or two enormous groups (which would make the regime degenerate, not a meaningful control). Computed and disclosed before running the full nested pipeline.",
+    "method": "Define chemical_system(formula) = frozenset of elements in the pymatgen-parsed composition (ignoring stoichiometric amounts). GroupKFold on this key, otherwise identical protocol to N20b (same nested tuning pipeline, same seed, same model ladder).",
+    "output_files": ["artifacts/acs_issue08b_chemical_system_groupkfold.json", "reports/npj/acs_issue08b_chemical_system_groupkfold.md"],
+    "decision_rule": "If the feasibility check fails (degenerate group sizes), report why and do not run the nested pipeline -- document as 'not valid' per the task's own instruction, keeping only the exact-formula control. If valid, report pooled MAE per model vs N4b random-5fold and vs N20b formula-GroupKFold."
+  }
+}

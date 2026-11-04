@@ -1,0 +1,561 @@
+{
+  "n20_part": "B_random_cv_duplicate_leakage_audit",
+  "git_commit": "534da7af653407d764d3636e34fca3db1b068817",
+  "cv_seed": 20260921,
+  "n_outer_splits": 5,
+  "obelix_dev_population_n": 449,
+  "n_unique_canonical_formulas": 365,
+  "n_exact_duplicate_formula_groups": 52,
+  "n_rows_in_duplicate_groups": 136,
+  "n_duplicate_groups_crossing_random_cv_folds": 45,
+  "n_duplicate_groups_entirely_within_one_fold": 7,
+  "duplicate_group_fold_detail": {
+    "Li3BN2": {
+      "n_rows": 2,
+      "fold_ids": [
+        0,
+        2
+      ],
+      "crosses_folds": true
+    },
+    "Li3PO4": {
+      "n_rows": 2,
+      "fold_ids": [
+        2
+      ],
+      "crosses_folds": false
+    },
+    "Li10Ge(PS6)2": {
+      "n_rows": 5,
+      "fold_ids": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "crosses_folds": true
+    },
+    "Li10Sn(PS6)2": {
+      "n_rows": 3,
+      "fold_ids": [
+        0,
+        1,
+        4
+      ],
+      "crosses_folds": true
+    },
+    "Li7La3Zr2O12": {
+      "n_rows": 5,
+      "fold_ids": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "crosses_folds": true
+    },
+    "LiTi2(PO4)3": {
+      "n_rows": 5,
+      "fold_ids": [
+        0,
+        3,
+        4
+      ],
+      "crosses_folds": true
+    },
+    "Li1.2Ti1.8Al0.2P3O12": {
+      "n_rows": 3,
+      "fold_ids": [
+        0,
+        3
+      ],
+      "crosses_folds": true
+    },
+    "Li2PS3": {
+      "n_rows": 2,
+      "fold_ids": [
+        3,
+        4
+      ],
+      "crosses_folds": true
+    },
+    "Li1.2Sc0.2Ti1.8P3O12": {
+      "n_rows": 3,
+      "fold_ids": [
+        0,
+        1
+      ],
+      "crosses_folds": true
+    },
+    "LiHf2(PO4)3": {
+      "n_rows": 2,
+      "fold_ids": [
+        0,
+        4
+      ],
+      "crosses_folds": true
+    },
+    "LiGe2(PO4)3": {
+      "n_rows": 2,
+      "fold_ids": [
+        2,
+        3
+      ],
+      "crosses_folds": true
+    },
+    "Li1.2Al0.2Ge1.8P3O12": {
+      "n_rows": 2,
+      "fold_ids": [
+        1,
+        2
+      ],
+      "crosses_folds": true
+    },
+    "Li1.5Al0.5Ge1.5P3O12": {
+      "n_rows": 3,
+      "fold_ids": [
+        0,
+        2,
+        3
+      ],
+      "crosses_folds": true
+    },
+    "Li1.3Ti1.7Al0.3P3O12": {
+      "n_rows": 5,
+      "fold_ids": [
+        0,
+        1,
+        3,
+        4
+      ],
+      "crosses_folds": true
+    },
+    "Li1.5Ti1.5Al0.5P3O12": {
+      "n_rows": 2,
+      "fold_ids": [
+        2
+      ],
+      "crosses_folds": false
+    },
+    "Li1.2Ti1.8Cr0.2P3O12": {
+      "n_rows": 2,
+      "fold_ids": [
+        0,
+        1
+      ],
+      "crosses_folds": true
+    },
+    "Li1.3Ti1.7Cr0.3P3O12": {
+      "n_rows": 2,
+      "fold_ids": [
+        1,
+        2
+      ],
+      "crosses_folds": true
+    },
+    "Li1.3Ti1.7Fe0.3P3O12": {
+      "n_rows": 2,
+      "fold_ids": [
+        2,
+        3
+      ],
+      "crosses_folds": true
+    },
+    "Li1.3Sc0.3Ti1.7P3O12": {
+      "n_rows": 3,
+      "fold_ids": [
+        0,
+        2,
+        4
+      ],
+      "crosses_folds": true
+    },
+    "Li1.2Ti1.8In0.2P3O12": {
+      "n_rows": 2,
+      "fold_ids": [
+        1,
+        2
+      ],
+      "crosses_folds": true
+    },
+    "Li1.2La0.2Ti1.8P3O12": {
+      "n_rows": 2,
+      "fold_ids": [
+        0,
+        2
+      ],
+      "crosses_folds": true
+    },
+    "Li1.3La0.3Ti1.7P3O12": {
+      "n_rows": 2,
+      "fold_ids": [
+        0,
+        1
+      ],
+      "crosses_folds": true
+    },
+    "Li1.3Sc0.1Ti1.7Al0.2P3O12": {
+      "n_rows": 2,
+      "fold_ids": [
+        3,
+        4
+      ],
+      "crosses_folds": true
+    },
+    "Li1.3Sc0.2Ti1.7Al0.1P3O12": {
+      "n_rows": 2,
+      "fold_ids": [
+        1,
+        3
+      ],
+      "crosses_folds": true
+    },
+    "Li1.1Ti1.9Al0.1P3O12": {
+      "n_rows": 2,
+      "fold_ids": [
+        0,
+        4
+      ],
+      "crosses_folds": true
+    },
+    "Li1.3Al0.3Ge1.7P3O12": {
+      "n_rows": 2,
+      "fold_ids": [
+        0,
+        2
+      ],
+      "crosses_folds": true
+    },
+    "Li1.6Al0.6Ge1.4P3O12": {
+      "n_rows": 2,
+      "fold_ids": [
+        0,
+        4
+      ],
+      "crosses_folds": true
+    },
+    "Li1.3Hf1.7In0.3P3O12": {
+      "n_rows": 2,
+      "fold_ids": [
+        1,
+        4
+      ],
+      "crosses_folds": true
+    },
+    "Li3N": {
+      "n_rows": 2,
+      "fold_ids": [
+        3,
+        4
+      ],
+      "crosses_folds": true
+    },
+    "Li5La3Nb2O12": {
+      "n_rows": 2,
+      "fold_ids": [
+        4
+      ],
+      "crosses_folds": false
+    },
+    "Li8GeP4": {
+      "n_rows": 2,
+      "fold_ids": [
+        2,
+        3
+      ],
+      "crosses_folds": true
+    },
+    "Li6PS5Cl": {
+      "n_rows": 3,
+      "fold_ids": [
+        1,
+        2,
+        4
+      ],
+      "crosses_folds": true
+    },
+    "Li6PS5Br": {
+      "n_rows": 4,
+      "fold_ids": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "crosses_folds": true
+    },
+    "Li6PS5I": {
+      "n_rows": 3,
+      "fold_ids": [
+        1,
+        3
+      ],
+      "crosses_folds": true
+    },
+    "SrLi6La2Nb2O12": {
+      "n_rows": 2,
+      "fold_ids": [
+        3,
+        4
+      ],
+      "crosses_folds": true
+    },
+    "Li6CaLa2Nb2O12": {
+      "n_rows": 2,
+      "fold_ids": [
+        1,
+        2
+      ],
+      "crosses_folds": true
+    },
+    "Li5La3Ta2O12": {
+      "n_rows": 4,
+      "fold_ids": [
+        0,
+        4
+      ],
+      "crosses_folds": true
+    },
+    "Li6.8La3Zr1.8Ta0.2O12": {
+      "n_rows": 2,
+      "fold_ids": [
+        1,
+        4
+      ],
+      "crosses_folds": true
+    },
+    "Li6.75La3Zr1.75Ta0.25O12": {
+      "n_rows": 2,
+      "fold_ids": [
+        1,
+        3
+      ],
+      "crosses_folds": true
+    },
+    "Li6.6La3Zr1.6Ta0.4O12": {
+      "n_rows": 3,
+      "fold_ids": [
+        2,
+        3,
+        4
+      ],
+      "crosses_folds": true
+    },
+    "Li5La3(SbO6)2": {
+      "n_rows": 2,
+      "fold_ids": [
+        1,
+        4
+      ],
+      "crosses_folds": true
+    },
+    "Li6CaLa2Ta2O12": {
+      "n_rows": 2,
+      "fold_ids": [
+        2,
+        3
+      ],
+      "crosses_folds": true
+    },
+    "Li6.5La3Zr1.5Ta0.5O12": {
+      "n_rows": 3,
+      "fold_ids": [
+        0,
+        4
+      ],
+      "crosses_folds": true
+    },
+    "Li6La3ZrTaO12": {
+      "n_rows": 2,
+      "fold_ids": [
+        0
+      ],
+      "crosses_folds": false
+    },
+    "Li4SiS4": {
+      "n_rows": 2,
+      "fold_ids": [
+        4
+      ],
+      "crosses_folds": false
+    },
+    "Li3.4Si0.4P0.6S4": {
+      "n_rows": 2,
+      "fold_ids": [
+        4
+      ],
+      "crosses_folds": false
+    },
+    "Li3PS4": {
+      "n_rows": 2,
+      "fold_ids": [
+        0,
+        3
+      ],
+      "crosses_folds": true
+    },
+    "Li1.4Ti1.6Al0.4P3O12": {
+      "n_rows": 5,
+      "fold_ids": [
+        2,
+        3,
+        4
+      ],
+      "crosses_folds": true
+    },
+    "Li1.2Ti1.8Fe0.2P3O12": {
+      "n_rows": 2,
+      "fold_ids": [
+        1,
+        3
+      ],
+      "crosses_folds": true
+    },
+    "SrLi6La2Ta2O12": {
+      "n_rows": 3,
+      "fold_ids": [
+        0,
+        2
+      ],
+      "crosses_folds": true
+    },
+    "BaLi6La2Ta2O12": {
+      "n_rows": 5,
+      "fold_ids": [
+        0,
+        1,
+        3,
+        4
+      ],
+      "crosses_folds": true
+    },
+    "Li5La3(BiO6)2": {
+      "n_rows": 2,
+      "fold_ids": [
+        3
+      ],
+      "crosses_folds": false
+    }
+  },
+  "verdict": "Exact-formula duplicates DO cross random-CV folds: 45/52 duplicate-formula groups (122 of 136 duplicate rows) have their member rows split across more than one outer fold -- for these formulas, one measurement is a fold's test row while another measurement of the IDENTICAL formula is in that fold's training partition. The reviewer's leakage concern IS supported by exact-formula evidence.",
+  "requires_formula_group_kfold_diagnostic_regime": true,
+  "formula_group_kfold_diagnostic_status": "DONE",
+  "formula_group_kfold_diagnostic_result": {
+    "artifact_path": "artifacts/npj_n20b_formula_group_kfold.json",
+    "cv_seed": 20260921,
+    "n_unique_canonical_formulas": 365,
+    "pooled_mae_by_model": {
+      "ridge": 1.367610299876115,
+      "random_forest": 0.8458795994338025,
+      "extra_trees": 0.7563462084613939,
+      "xgboost": 0.7954291907633901,
+      "catboost": 0.7868902305811095,
+      "shallow_mlp": 1.1214289112902975,
+      "pretrained_element_embedding": 1.5133845082041923,
+      "composition_attention": 1.2978925499116125
+    },
+    "n4b_random_5fold_pooled_mae_by_model": {
+      "ridge": 1.4102786886486405,
+      "random_forest": 0.8255513319688031,
+      "extra_trees": 0.749704319611173,
+      "xgboost": 0.8119796143116303,
+      "catboost": 0.8016618498971427,
+      "shallow_mlp": 1.0293270973435693,
+      "pretrained_element_embedding": 1.5510869295229528,
+      "composition_attention": 1.0478134984764726
+    },
+    "delta_formula_groupkfold_minus_random_5fold": {
+      "ridge": -0.042668388772525434,
+      "random_forest": 0.020328267464999383,
+      "extra_trees": 0.006641888850220878,
+      "xgboost": -0.016550423548240212,
+      "catboost": -0.014771619316033213,
+      "shallow_mlp": 0.09210181394672823,
+      "pretrained_element_embedding": -0.03770242131876045,
+      "composition_attention": 0.25007905143513987
+    }
+  },
+  "formula_group_kfold_diagnostic_script": "scripts/transport_analysis/n20b_formula_group_kfold.py",
+  "near_duplicate_dopant_series_descriptive": {
+    "n_chemical_systems_with_multiple_distinct_formulas": 63,
+    "n_rows_involved": 334,
+    "note": "Descriptive only: rows sharing the same element set but a different stoichiometry (e.g. a doping/solid-solution series). This is NOT the same condition as an exact-formula duplicate crossing folds, and is not, on its own, evidence of leakage -- reported per task instruction to describe near-duplicate proximity without calling it leakage.",
+    "largest_systems": [
+      {
+        "elements": "Al-Li-O-P-Ti",
+        "n_distinct_formulas": 8,
+        "n_rows": 20
+      },
+      {
+        "elements": "La-Li-O-Ta-Zr",
+        "n_distinct_formulas": 12,
+        "n_rows": 19
+      },
+      {
+        "elements": "Al-Ge-Li-O-P",
+        "n_distinct_formulas": 8,
+        "n_rows": 13
+      },
+      {
+        "elements": "Br-Li-P-S-Si",
+        "n_distinct_formulas": 12,
+        "n_rows": 12
+      },
+      {
+        "elements": "Ba-La-Li-O-Ta",
+        "n_distinct_formulas": 7,
+        "n_rows": 11
+      },
+      {
+        "elements": "Li-P-S-Si",
+        "n_distinct_formulas": 9,
+        "n_rows": 10
+      },
+      {
+        "elements": "Fe-Li-O-P-Ti",
+        "n_distinct_formulas": 8,
+        "n_rows": 10
+      },
+      {
+        "elements": "Ge-Li-P-S",
+        "n_distinct_formulas": 6,
+        "n_rows": 10
+      },
+      {
+        "elements": "Li-P-S-Sn",
+        "n_distinct_formulas": 8,
+        "n_rows": 10
+      },
+      {
+        "elements": "Br-Li-P-S-Se",
+        "n_distinct_formulas": 10,
+        "n_rows": 10
+      },
+      {
+        "elements": "Ge-I-Li-P-S",
+        "n_distinct_formulas": 10,
+        "n_rows": 10
+      },
+      {
+        "elements": "Cr-Li-O-P-Ti",
+        "n_distinct_formulas": 7,
+        "n_rows": 9
+      },
+      {
+        "elements": "Al-F-La-Li-O-Ti",
+        "n_distinct_formulas": 8,
+        "n_rows": 8
+      },
+      {
+        "elements": "Li-O-P-Sc-Ti",
+        "n_distinct_formulas": 4,
+        "n_rows": 8
+      },
+      {
+        "elements": "La-Li-O-Ti",
+        "n_distinct_formulas": 6,
+        "n_rows": 6
+      }
+    ]
+  }
+}

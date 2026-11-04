@@ -1,0 +1,65 @@
+{
+  "phase": "N15_reviewer_remediation",
+  "status": "POST_REVIEW_SENSITIVITY_ANALYSIS_NOT_PRESPECIFIED",
+  "git_commit": "534da7af653407d764d3636e34fca3db1b068817",
+  "git_branch": "acs-jcim-finalization",
+  "spec_file": "artifacts/npj_n15_remediation_spec.json",
+  "spec_file_sha256": "c448d97590eb1d0ee283166d5b7805dbba0c4612c1811c212ab9c4eac8a42733",
+  "n6_source": "artifacts/npj_n6_external_transfer.json (frozen, not rerun)",
+  "n4b_source": "artifacts/npj_n4b_nested_internal_validation.json (frozen, not rerun)",
+  "analysis": "N15_analysis_6_baseline_and_variability",
+  "constant_predictor_baselines": {
+    "obelix_dev_mean_y": -4.818214388496422,
+    "obelix_dev_median_y": -4.084072788302884,
+    "hargreaves_strict": {
+      "n": 204,
+      "mean_predictor": {
+        "mae": 1.6701053422889702,
+        "rmse": 2.2508495876881374,
+        "r2": -0.0528368075502077,
+        "spearman_rho": NaN,
+        "median_absolute_error": 1.4108659110000001,
+        "n": 204
+      },
+      "median_predictor": {
+        "mae": 1.7429232851058165,
+        "rmse": 2.519057294218548,
+        "r2": -0.31869452035815526,
+        "spearman_rho": NaN,
+        "median_absolute_error": 1.0445143654999998,
+        "n": 204
+      }
+    },
+    "hargreaves_source_disjoint": {
+      "n": 153,
+      "mean_predictor": {
+        "mae": 1.8018474648237868,
+        "rmse": 2.445231547047707,
+        "r2": -0.10725448017920924,
+        "spearman_rho": NaN,
+        "median_absolute_error": 1.5151326925035784,
+        "n": 153
+      },
+      "median_predictor": {
+        "mae": 1.9675772570445265,
+        "rmse": 2.763247086482539,
+        "r2": -0.4139918536755578,
+        "spearman_rho": NaN,
+        "median_absolute_error": 1.1254654733028842,
+        "n": 153
+      }
+    }
+  },
+  "within_composition_variability": {
+    "n_groups_with_repeats": 37,
+    "min_repeats_threshold": 2,
+    "n_repeats_median": 2.0,
+    "n_repeats_q25": 2.0,
+    "n_repeats_q75": 3.0,
+    "range_median": 0.49485002099999953,
+    "range_q25": 0.15478644100000016,
+    "range_q75": 1.2944381249999999,
+    "pooled_mad": 0.1811303332499996,
+    "interpretation_label": "empirical measurement/temperature-protocol/synthesis heterogeneity across independent literature reports of a nominally identical composition -- NOT an irreducible noise floor"
+  }
+}

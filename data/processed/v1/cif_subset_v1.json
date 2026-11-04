@@ -1,0 +1,2872 @@
+{
+  "dataset": "obelix_cif_subset",
+  "processed_version": "v1",
+  "derived_from": {
+    "frozen_split": "data/processed/v1/obelix_index.json",
+    "frozen_split_hash": "13692a31839e295dd88bd45ca527d869990e02d799a6878c5ded6c43d3b94d3e"
+  },
+  "counts": {
+    "train": 180,
+    "validation": 46,
+    "test": 59
+  },
+  "expected_counts": {
+    "train": 180,
+    "validation": 46,
+    "test": 59
+  },
+  "counts_match_expected": true,
+  "entries": [
+    {
+      "id": "0ii",
+      "split": "test",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/0ii.cif",
+      "cif_sha256": "bcebf19b69e17f96cb00d1f33faaec95184206a95feaf8a9ffa501396cefb088",
+      "reduced_composition": "Li0.02Na0.48La0.5Nb2O6",
+      "true_composition": "Li0.02Na0.48La0.5Nb2.0O6.0",
+      "family": "perovskites",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "1ty",
+      "split": "test",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/1ty.cif",
+      "cif_sha256": "3ae674921af803d135bfab384ae9aa4d31b684c9c299b0e5d197fdcf860042e7",
+      "reduced_composition": "Li4GeS3Se",
+      "true_composition": "Li16.0Ge4.0S12.0Se4.0",
+      "family": null,
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "24k",
+      "split": "test",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/24k.cif",
+      "cif_sha256": "59c4d3ae570781d3e3a86098b421809c18131174b340a7ee287d9c6734ceb6c5",
+      "reduced_composition": "Li7Ge3PS12",
+      "true_composition": "Li28.0Ge12.0P4.0S48.0",
+      "family": "argyrodites",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "2d1",
+      "split": "test",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/2d1.cif",
+      "cif_sha256": "e94a6a4834aa89971524160ddfe75b87aee58461dffcbebbf660ec44746e7fd1",
+      "reduced_composition": "Li5.5La3Nb1.75Y0.25O12",
+      "true_composition": "Li44.0La24.0Nb14.0Y2.0O96.0",
+      "family": "garnet",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "2r7",
+      "split": "test",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/2r7.cif",
+      "cif_sha256": "fd3a008245954bd7ff7fe9e6fac1e9d9faacbc5eb42adbc830124aaa4729c1ac",
+      "reduced_composition": "Li3Cr(MoO4)3",
+      "true_composition": "Li12.0Cr4.0Mo12.0O48.0",
+      "family": "molybdates",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "2uv",
+      "split": "test",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/2uv.cif",
+      "cif_sha256": "4278e930117b288771074232afe08f2b4520f6c0ca0dd132ad03e92e4e565ca3",
+      "reduced_composition": "Li4SnSe4",
+      "true_composition": "Li16.0Sn4.0Se16.0",
+      "family": "Chalcogenidotetrelates",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "3rh",
+      "split": "test",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/3rh.cif",
+      "cif_sha256": "093d5a2a702d6fa8a49769d66d4d2346f53ccee37fe6d10a59fe27b66659f5db",
+      "reduced_composition": "Li6.5La3Nb1.25Y0.75O12 ",
+      "true_composition": "Li52.0La24.0Nb10.0Y6.0O96.0",
+      "family": "garnet",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "4ie",
+      "split": "test",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/4ie.cif",
+      "cif_sha256": "f7ec747ad99ce6f4c7b5a1fe459d35d61955206b2c013a5a6406c2ecf59b5868",
+      "reduced_composition": "Li6.05Ga0.25La3Zr2O11.8F0.2",
+      "true_composition": "Li48.4Ga2.0La24.0Zr16.0O94.4F1.6",
+      "family": "garnet",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "4p7",
+      "split": "test",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/4p7.cif",
+      "cif_sha256": "a25489465d67ed971af603f5cb7a6190524b17fceac5983832940b1528ca78de",
+      "reduced_composition": "Li3ClO",
+      "true_composition": "Li3.0Cl1.0O1.0",
+      "family": "antiperovskite",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "4xq",
+      "split": "test",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/4xq.cif",
+      "cif_sha256": "daf73ff0b4f459cb867bd1f0173ec539f4aa4ce00dda2f6199f5a89fa67fbba5",
+      "reduced_composition": "Li0.04Na0.46La0.5Nb2O6",
+      "true_composition": "Li0.04Na0.46La0.5Nb2.0O6.0",
+      "family": "perovskites",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "7cr",
+      "split": "test",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/7cr.cif",
+      "cif_sha256": "06af8fabdb8c01ea86680e0d0cd4448f8e75d0fee6611e92da83e3c213574387",
+      "reduced_composition": "Li2NaBP2O8",
+      "true_composition": "Li4.0Na2.0B2.0P4.0O16.0",
+      "family": "Borophosphates",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "9n0",
+      "split": "test",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/9n0.cif",
+      "cif_sha256": "fdf35d06e418991b302a94427de40b8ded7298eed080dc78cdd7df4322a34c93",
+      "reduced_composition": "Li0.3Na0.2La0.5Nb2O6",
+      "true_composition": "Li0.3Na0.2La0.5Nb2.0O6.0",
+      "family": "perovskites",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "9o6",
+      "split": "test",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/9o6.cif",
+      "cif_sha256": "9ad538ba5a68120515119b1a9e17edc404b6bafdf12cabe735f6ad522f9b425a",
+      "reduced_composition": "Li6.5La3Zr1.75Mo0.25O12",
+      "true_composition": "Li52.0La24.0Zr14.0Mo2.0O96.0",
+      "family": "garnet",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "aab",
+      "split": "test",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/aab.cif",
+      "cif_sha256": "a1d7ce0b99fa5f04671f8e85e63e79ae3233175707ee30dfd2dbb7e2f345661e",
+      "reduced_composition": "Li4Ge0.25Sn0.75Se4",
+      "true_composition": "Li16.0Ge1.0Sn3.0Se16.0",
+      "family": null,
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "ar1",
+      "split": "test",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/ar1.cif",
+      "cif_sha256": "ebb8be4bd65707a6c33b16e3bb57a7e57a3ac19c1c64500841ba22a007bb1e12",
+      "reduced_composition": "Li4SnS3Se",
+      "true_composition": "Li16.0Sn4.0S12.0Se4.0",
+      "family": null,
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "ard",
+      "split": "test",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/ard.cif",
+      "cif_sha256": "7053904c9c65e32e32cffcf3ee1f6321a725567e1c189fbf98d7a2defe5dd56f",
+      "reduced_composition": "LiTa2PO8",
+      "true_composition": "Li8.0Ta16.0P8.0O64.0",
+      "family": "oxides",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "br1",
+      "split": "test",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/br1.cif",
+      "cif_sha256": "467203a7f63f17123fc7ea081f89035b4a329168f5d74f7bebb090af1e4b4204",
+      "reduced_composition": "Li3AlN2",
+      "true_composition": "Li48.0Al16.0N32.0",
+      "family": "nitrides",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "cfy",
+      "split": "test",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/cfy.cif",
+      "cif_sha256": "fb94257cd00a895f12ffeeb69d04532a55f6204f74f0f6937b84e2d381a4886e",
+      "reduced_composition": "Li2P2S6",
+      "true_composition": "Li4.0P4.0S12.0",
+      "family": "thio-LISICON",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "cti",
+      "split": "test",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/cti.cif",
+      "cif_sha256": "68d1a5ddccf134ff92f203055e9150b31b12da953ab509abb500234bed8703f4",
+      "reduced_composition": "Li5.4La3Nb1.8Y0.2O12",
+      "true_composition": "Li43.2La24.0Nb14.4Y1.6O96.0",
+      "family": "garnet",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "cz2",
+      "split": "test",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/cz2.cif",
+      "cif_sha256": "82afebdf41557faed85f6ff88fd206cc73752f07561743dfa251cb77dc2fe0fd",
+      "reduced_composition": "Li4SnSSe3",
+      "true_composition": "Li16.0Sn4.0S4.0Se12.0",
+      "family": null,
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "de5",
+      "split": "test",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/de5.cif",
+      "cif_sha256": "fea259896e7e7971a3dfa4221276ddd55eabb15c05789988acee741f832571cb",
+      "reduced_composition": "Li3InCl6",
+      "true_composition": "Li6.0In2.0Cl12.0",
+      "family": "Halide",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "duf",
+      "split": "test",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/duf.cif",
+      "cif_sha256": "6541498bde4f25c23e29df03115d3b2f5fea1dabb1b83031dd011c0cd27220b1",
+      "reduced_composition": "Li6.6La3Zr1.6Sb0.4O12",
+      "true_composition": "Li52.8La24.0Zr12.8Sb3.2O96.0",
+      "family": "garnet",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "dvb",
+      "split": "test",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/dvb.cif",
+      "cif_sha256": "c6dc84123b99f7420d1577cb9839365faf8dd4ea95e9edbdc3b1a91626460f97",
+      "reduced_composition": "Li5.2La3Nb1.9Y0.1O12",
+      "true_composition": "Li41.6La24.0Nb15.2Y0.8O96.0",
+      "family": "garnet",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "ei3",
+      "split": "test",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/ei3.cif",
+      "cif_sha256": "9c986eb157e3445c929187ffea32441aef92ce02c17fb83149e600431391b77f",
+      "reduced_composition": "Li3YCl6",
+      "true_composition": "Li9.0Y3.0Cl18.0",
+      "family": "halides",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "elz",
+      "split": "test",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/elz.cif",
+      "cif_sha256": "1ca8b07b300a6e8aa15fe2bbc3d2775c5e0ffd484de9f9cdd4d314ad7a79bf60",
+      "reduced_composition": "Li3YBr6",
+      "true_composition": "Li6.0Y2.0Br12.0",
+      "family": "halides",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "gwu",
+      "split": "test",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/gwu.cif",
+      "cif_sha256": "e54e25594a03d01740e1df90f0dc7977185a005e55b6c257a307047895d0acaa",
+      "reduced_composition": "(La0.7Li0.3)(Ti0.6Al0.4)O3",
+      "true_composition": "La0.7Li0.3Ti0.6Al0.4O3.0",
+      "family": "perovskites",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "h5i",
+      "split": "test",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/h5i.cif",
+      "cif_sha256": "79cc1ad757ddce3bf3e6501dce89ca254ee8409f4acc4b5c33c6bd1389153959",
+      "reduced_composition": "Li0.1Na0.4La0.5Nb2O6",
+      "true_composition": "Li0.1Na0.4La0.5Nb2.0O6.0",
+      "family": "perovskites",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "i47",
+      "split": "test",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/i47.cif",
+      "cif_sha256": "5885e188d50c59e252f0a784bd66ff94f716f3aba268401b638cc21f498c1d70",
+      "reduced_composition": "LiZnPS4",
+      "true_composition": "Li2.0Zn2.0P2.0S8.0",
+      "family": "sulfides",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "i4l",
+      "split": "test",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/i4l.cif",
+      "cif_sha256": "c9231dcd5c7e3a4a7f1270dd8e40683e396993ddfdcd7b014ee67c61ab89898b",
+      "reduced_composition": "Li4GeSSe3",
+      "true_composition": "Li16.0Ge4.0S4.0Se12.0",
+      "family": null,
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "ipo",
+      "split": "test",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/ipo.cif",
+      "cif_sha256": "c0e223e6fdeffac1d7b8cbb3c8f26d5833371c9eb33cf56f5073977b063944e0",
+      "reduced_composition": "Li7La3Hf2O12",
+      "true_composition": "Li56.0La24.0Hf16.0O96.0",
+      "family": "garnet",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "j5g",
+      "split": "test",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/j5g.cif",
+      "cif_sha256": "083a313246748493ed6852e2e2d2454b201113b495734901c9d535fb972a7c87",
+      "reduced_composition": "Li6La3Nb1.5Y0.5O12",
+      "true_composition": "Li48.0La24.0Nb12.0Y4.0O96.0",
+      "family": "garnet",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "jy6",
+      "split": "test",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/jy6.cif",
+      "cif_sha256": "36db633b14774fb85d1a3566a7f1a0ebca479e8c8d02e39d6459e0002d7e9e94",
+      "reduced_composition": "Li6PO5Cl",
+      "true_composition": "Li24.0P4.0O20.0Cl4.0",
+      "family": "argyrodites",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "klr",
+      "split": "test",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/klr.cif",
+      "cif_sha256": "1f8fb44e3c6a792510b0784bc58ef1f2b110e83102b129b90405c5d7f9e6ccfa",
+      "reduced_composition": "Li4SnS2Se2",
+      "true_composition": "Li16.0Sn4.0S8.0Se8.0",
+      "family": null,
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "ku9",
+      "split": "test",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/ku9.cif",
+      "cif_sha256": "8a906db37c293e4d2ee0568918c0d17ece7f481a3c9c5f8e56ac2ee8774d9b2e",
+      "reduced_composition": "Li0.4Na0.1La0.5Nb2O6",
+      "true_composition": "Li0.4Na0.1La0.5Nb2.0O6.0",
+      "family": "perovskites",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "l2w",
+      "split": "test",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/l2w.cif",
+      "cif_sha256": "5d52cf5912c65afe0c782d113206065b2059025bdbdcd25790c75eff7a7b3d0d",
+      "reduced_composition": "Li3.333Mg0.333P2S6",
+      "true_composition": "Li3.33Mg0.33P2.0S6.0",
+      "family": "thio-phosphate",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "l6h",
+      "split": "test",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/l6h.cif",
+      "cif_sha256": "35535b53d32e388d21b8fec3cd345561a0706a69b848b298aace266c4b405153",
+      "reduced_composition": "Li49.6Al1.6La24Zr14.4Ta1.6O96",
+      "true_composition": "Li49.6Al1.6La24Zr14.4Ta1.6O96",
+      "family": "garnet",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "lk8",
+      "split": "test",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/lk8.cif",
+      "cif_sha256": "b4b0c592b1dc8adf27074c4f2fee7f2b1c016da8c159a8211393f366608816f0",
+      "reduced_composition": "(La0.55Li0.45)(Ti0.9Al0.1)O3",
+      "true_composition": "La0.55Li0.45Ti0.9Al0.1O3.0",
+      "family": "perovskites",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "lpt",
+      "split": "test",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/lpt.cif",
+      "cif_sha256": "d9dcd23ae68935c9efa79141f91a11437810aa7d5c4d039d60205e12cdd99491",
+      "reduced_composition": "Li4Nd3TeSbO12",
+      "true_composition": "Li32.0Nd24.0Te8.0Sb8.0O96.0",
+      "family": "garnet",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "lud",
+      "split": "test",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/lud.cif",
+      "cif_sha256": "571b7ee2f0eafc3b812d4fb9128b924382fce73ae6c014e5bc7281d91934fd39",
+      "reduced_composition": "(La0.6Li0.4)(Ti0.8Al0.2)O3",
+      "true_composition": "La0.6Li0.4Ti0.8Al0.2O3.0",
+      "family": "perovskites",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "mdp",
+      "split": "test",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/mdp.cif",
+      "cif_sha256": "0effbd30039cc8ca9b998d66eb31767c0e22c148633294ab7a1c25145a23c141",
+      "reduced_composition": "Li7P3S11",
+      "true_composition": "Li14.0P6.0S22.0",
+      "family": null,
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "me3",
+      "split": "test",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/me3.cif",
+      "cif_sha256": "3b33250e0aa750b26a8139c24f9570dc0324b927b7cf154618c160592df1d897",
+      "reduced_composition": "(La0.9Sr0.1)LiO2",
+      "true_composition": "La3.6Sr0.4Li4.0O8.0",
+      "family": "Lanthanumlithiumoxide",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "mfu",
+      "split": "test",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/mfu.cif",
+      "cif_sha256": "2168be04864050b10535254329b02895a7d077f128f153d0925110cb3c50309e",
+      "reduced_composition": "Li3Fe(MoO4)3",
+      "true_composition": "Li12.0Fe4.0Mo12.0O48.0",
+      "family": "molybdates",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "mn3",
+      "split": "test",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/mn3.cif",
+      "cif_sha256": "64bc4c9fbcba3c86df6791a8fb4b675b51a3ea15f4de67c6600226ba75b7dfe0",
+      "reduced_composition": "Li4SnSe4",
+      "true_composition": "Li16.0Sn4.0Se16.0",
+      "family": null,
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "mtr",
+      "split": "test",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/mtr.cif",
+      "cif_sha256": "afeb578d15f43aec20fb65ff6cb14639f7af04c10f1090fd5dced64fcb022be4",
+      "reduced_composition": "Fe0.16La2.95Li5.68Zr2O12",
+      "true_composition": "Fe1.28La23.6Li45.44Zr16.0O96.0",
+      "family": "garnet",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "na5",
+      "split": "test",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/na5.cif",
+      "cif_sha256": "fb5132dbacc95f54de4626aeb73b89b4cc432587a50e494d4f8627a4401f16ad",
+      "reduced_composition": "Li3(Mo8S8O8(OH)8(HWO5(H2O)))*(H2O)18",
+      "true_composition": "Li6.0Mo16.0S16.0O80.0H94.0W2.0",
+      "family": null,
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "o0a",
+      "split": "test",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/o0a.cif",
+      "cif_sha256": "d505e9d9e750610479727d3d481fcc8c9d6cde7a58f7625364589a011f9a7259",
+      "reduced_composition": "Li4Ge0.75Sn0.25Se4",
+      "true_composition": "Li16.0Ge3.0Sn1.0Se16.0",
+      "family": null,
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "o9h",
+      "split": "test",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/o9h.cif",
+      "cif_sha256": "9afb49296776854ef0dd77eccd3832c876751585fb3c4164e7961007a6cc25c5",
+      "reduced_composition": "Li0.07Na0.43La0.5Nb2O6",
+      "true_composition": "Li0.07Na0.43La0.5Nb2.0O6.0",
+      "family": "perovskites",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "ob9",
+      "split": "test",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/ob9.cif",
+      "cif_sha256": "a20a81530c9a8c1f737ca330281598e6801547db9700d5653d4fff9739acaab6",
+      "reduced_composition": "Li2.667Mg0.667P2S6",
+      "true_composition": "Li2.67Mg0.67P2.0S6.0",
+      "family": "thio-phosphate",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "ozo",
+      "split": "test",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/ozo.cif",
+      "cif_sha256": "23959c0d88d2f87c15297f5112fc5a549f34c5b0aca980e842cb175bd2b9f840",
+      "reduced_composition": "Li0.2Na0.3La0.5Nb2O6",
+      "true_composition": "Li0.2Na0.3La0.5Nb2.0O6.0",
+      "family": "perovskites",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "p81",
+      "split": "test",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/p81.cif",
+      "cif_sha256": "fc267652c7b83f0b1a2a60522e2481c375f493ba2b1ada89e38226c3aaeb3287",
+      "reduced_composition": "LiAlCl4",
+      "true_composition": "Li4.0Al4.0Cl16.0",
+      "family": "halides",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "qer",
+      "split": "test",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/qer.cif",
+      "cif_sha256": "d0c197e3b2fda963aec4dc9b415674383efb12afa2adbdad44c93b43a75506e7",
+      "reduced_composition": "Li4Ge0.50Sn0.50Se4",
+      "true_composition": "Li16.0Ge2.0Sn2.0Se16.0",
+      "family": null,
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "ro9",
+      "split": "test",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/ro9.cif",
+      "cif_sha256": "c185a28ada125aabce5b65fc61d990e3da865f28c31be6fa44c95e918e4443fd",
+      "reduced_composition": "Li3BP2O8",
+      "true_composition": "Li6.0B2.0P4.0O16.0",
+      "family": "Borophosphates",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "s2v",
+      "split": "test",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/s2v.cif",
+      "cif_sha256": "e29160822484bfa43aa931cae960525fcd2c773c9af5db3998b89ada008aaafe",
+      "reduced_composition": "Fe0.19La2.95Li5.57Zr2O12",
+      "true_composition": "Fe1.52La23.6Li44.56Zr16.0O96.0",
+      "family": "garnet",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "vlm",
+      "split": "test",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/vlm.cif",
+      "cif_sha256": "f1f4404c023eca8543c48d233a031e4c3a7a65beb9916191a88a808b4ed41663",
+      "reduced_composition": "(La0.65Li0.35)(Ti0.7Al0.3)O3",
+      "true_composition": "La0.65Li0.35Ti0.7Al0.3O3.0",
+      "family": "perovskites",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "vwy",
+      "split": "test",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/vwy.cif",
+      "cif_sha256": "45ab3fd18b6caba31f433ffbea4e9fd1a3401f7b23da6deb9736bda9fa636aa3",
+      "reduced_composition": "La0.56Li0.33TiO3",
+      "true_composition": "La1.12Li0.66Ti2.0O6.0",
+      "family": "perovskites",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "wa3",
+      "split": "test",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/wa3.cif",
+      "cif_sha256": "a8fd3b6d128b483fefee955ca808396845a98573909c7aaa0f9549a43ef7a926",
+      "reduced_composition": "Li51.2Al1.6La24Zr16O96",
+      "true_composition": "Li51.2Al1.6La24Zr16O96",
+      "family": "garnet",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "xk3",
+      "split": "test",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/xk3.cif",
+      "cif_sha256": "43a8d0a7af0df7c4b329325ca98cbb964350ce87506c90289ca8fb93918e19aa",
+      "reduced_composition": "Li4GeSe4",
+      "true_composition": "Li16.0Ge4.0Se16.0",
+      "family": null,
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "zs0",
+      "split": "test",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/zs0.cif",
+      "cif_sha256": "e290d845f331f496fa0d22fbc47b3855f12f1f76cdd98aa93dd8a57fce9a5382",
+      "reduced_composition": "La(Li0.76Mg0.08)O2",
+      "true_composition": "La4.0Li3.04Mg0.32O8.0",
+      "family": "Lanthanumlithiumoxide",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "zv5",
+      "split": "test",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/zv5.cif",
+      "cif_sha256": "1a7d18b3ae23c2ce193b29a475c4bb5ee2beb14c3bdea9e9295220ca32f185a1",
+      "reduced_composition": "Li4GeS2Se2",
+      "true_composition": "Li16.0Ge4.0S8.0Se8.0",
+      "family": null,
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "019",
+      "split": "train",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/019.cif",
+      "cif_sha256": "aa14a08700aa585b687798c4adc2febb6b3efd16c39cc977983e8a270b0f1a93",
+      "reduced_composition": "LiTi2(PO4)3",
+      "true_composition": "Li6.0Ti12.0P18.0O72.0",
+      "family": "NASICON",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "09w",
+      "split": "train",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/09w.cif",
+      "cif_sha256": "9eca641353f7904a5698c2dc2d7535f83e2c8778a5d97ec5e96980292f960150",
+      "reduced_composition": "Li6.05P0.95Si0.05S5Br",
+      "true_composition": "Li24.2P3.8Si0.2S20.0Br4.0",
+      "family": "argyrodites",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "0fh",
+      "split": "train",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/0fh.cif",
+      "cif_sha256": "fae697cfc24295bd154d1ee4aa9adf45404a431c684fd603b3a0944432834329",
+      "reduced_composition": "Li1.2Al0.2Ge1.8(PO4)3",
+      "true_composition": "Li7.2Al1.2Ge10.8P18.0O72.0",
+      "family": "NASICON",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "0iv",
+      "split": "train",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/0iv.cif",
+      "cif_sha256": "ba838dc1beffd35d0cae91cff43a78ed8efd8d1dba01c2fa4c7885b070e4fac6",
+      "reduced_composition": "Li4P2S6",
+      "true_composition": "Li4.0P2.0S6.0",
+      "family": "thio-phosphate",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "0o6",
+      "split": "train",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/0o6.cif",
+      "cif_sha256": "80588d044ea3d92658e8ad02a8aa4f6e0bd75b3bfc3fdfc9beee1fa2c895efe9",
+      "reduced_composition": "Li1.2Ti1.8Sc0.2(PO4)3",
+      "true_composition": "Li7.2Ti10.8Sc1.2P18.0O72.0",
+      "family": null,
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "10s",
+      "split": "train",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/10s.cif",
+      "cif_sha256": "62b712248a58798f5cefc4f3ba72100d4e541f7526f81388edd311d551c75594",
+      "reduced_composition": "Li6.35P0.65Si0.35S5Br",
+      "true_composition": "Li25.4P2.6Si1.4S20.0Br4.0",
+      "family": "argyrodites",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "11b",
+      "split": "train",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/11b.cif",
+      "cif_sha256": "ae05ee071fc5ae9346090aedefb917edd3f6a8d710a8350b1d0120c3ea132115",
+      "reduced_composition": "Li3P",
+      "true_composition": "Li6.0P2.0",
+      "family": "phosphates",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "122",
+      "split": "train",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/122.cif",
+      "cif_sha256": "a9fe913c3a112ed6043fe57dd0e899368bbe16e1272455f9ae5d4265c28ee5cb",
+      "reduced_composition": "Li6PS5Cl",
+      "true_composition": "Li24.0P4.0S20.0Cl4.0",
+      "family": "argyrodites",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "13q",
+      "split": "train",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/13q.cif",
+      "cif_sha256": "ffa1e9a82dff3f5a8a4b804861e6096e329370bd310e00ac4b97a21c5d610309",
+      "reduced_composition": "Li10SnP2S12",
+      "true_composition": "Li20.0Sn2.0P4.0S24.0",
+      "family": "LGPS",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "1dm",
+      "split": "train",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/1dm.cif",
+      "cif_sha256": "c0f12d070767f7f71adfa67811c9051422a8fef4d03737cac6468bccbeff15b8",
+      "reduced_composition": "Li1.6Al0.6Ge1.4(PO4)3",
+      "true_composition": "Li9.6Al3.6Ge8.4P18.0O72.0",
+      "family": "NASICON",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "1kq",
+      "split": "train",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/1kq.cif",
+      "cif_sha256": "141b211f9fdff8589363c36dec402d6e0e63556acf6b3ee2ce75135c8287f1f6",
+      "reduced_composition": "Li6P(S4.3Se0.7)Br",
+      "true_composition": "Li24.0P4.0S17.2Se2.8Br4.0",
+      "family": "argyrodites",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "1m8",
+      "split": "train",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/1m8.cif",
+      "cif_sha256": "0fec25e4939089097d0adf4d06369b24c2fd737d184a293338744b0898c66a05",
+      "reduced_composition": "Li6.8P0.2Ge0.8S5I",
+      "true_composition": "Li27.2P0.8Ge3.2S20.0I4.0",
+      "family": "argyrodites",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "1xf",
+      "split": "train",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/1xf.cif",
+      "cif_sha256": "30525ca0311d0c58e07bc0e8613f3d93b00c2edc15514ae9867c630ae062ad66",
+      "reduced_composition": "Li1.5Al0.5Ge1.5(PO4)3",
+      "true_composition": "Li9.0Al3.0Ge9.0P18.0O72.0",
+      "family": "NASICON",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "20k",
+      "split": "train",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/20k.cif",
+      "cif_sha256": "174207d1a2d404013f84de2bd23f049b31187e8b9bf85a88dbb723a48c1e2b8a",
+      "reduced_composition": "Li6(La2Sr)(NbO6)2",
+      "true_composition": "Li48.0La16.0Sr8.0Nb16.0O96.0",
+      "family": "garnet",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "240",
+      "split": "train",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/240.cif",
+      "cif_sha256": "d34df342d91cb0904daf629562888784dfa55322dcb6fe47abe0a7dfa2252648",
+      "reduced_composition": "Li8GeP4",
+      "true_composition": "Li64.0Ge8.0P32.0",
+      "family": "phosphates",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "2wb",
+      "split": "train",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/2wb.cif",
+      "cif_sha256": "74bf43c158ab90cc3f443b25f0354fa279dc0e27e42f7e163554cf01f0371e04",
+      "reduced_composition": "Li6.6La3Zr1.6Ta0.4O12",
+      "true_composition": "Li52.8La24.0Zr12.8Ta3.2O96.0",
+      "family": "garnet",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "3nb",
+      "split": "train",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/3nb.cif",
+      "cif_sha256": "2dc938b7cae06d3c6ec97c25472183e6122413c90f6f6faa6ae164b36651af60",
+      "reduced_composition": "(Li0.5Ce0.25Sm0.25)(MoO4)",
+      "true_composition": "Li2.0Ce1.0Sm1.0Mo4.0O16.0",
+      "family": "molybdates",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "3uq",
+      "split": "train",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/3uq.cif",
+      "cif_sha256": "ebd3f8c84f7b8c3ec88581c3bad3cdfecf81d17c9ac3ca9801f7d4e8b802e302",
+      "reduced_composition": "Li1.3Al0.3Ge1.7(PO4)3",
+      "true_composition": "Li7.8Al1.8Ge10.2P18.0O72.0",
+      "family": "NASICON",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "3zo",
+      "split": "train",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/3zo.cif",
+      "cif_sha256": "a297b6967d596810988a99df19560da7afe03bfe647535ab163646dbc5d3a913",
+      "reduced_composition": "Li6.225P0.775Si0.225S5Br",
+      "true_composition": "Li24.9P3.1Si0.9S20.0Br4.0",
+      "family": "argyrodites",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "419",
+      "split": "train",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/419.cif",
+      "cif_sha256": "211374f01cc3ae5bf30e03e687e5c6fd0b49f06438dd0c64b7f955e5f188c425",
+      "reduced_composition": "Li5.3La3Ta1.85Sm0.15O12",
+      "true_composition": "Li42.4La24.0Ta14.8Sm1.2O96.0",
+      "family": "garnet",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "472",
+      "split": "train",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/472.cif",
+      "cif_sha256": "62fbde8827b7ea78ebc936db9bcb9815ce846a265f6cc17e8d247ccfda5127c4",
+      "reduced_composition": "Li14Nd5(Si11N19O5)O2F2",
+      "true_composition": "Li28.0Nd10.0Si22.0N38.0O14.0F4.0",
+      "family": "nitridosilicates",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "4ba",
+      "split": "train",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/4ba.cif",
+      "cif_sha256": "404583d305d23e517ad1f5bfd8695c9607b374735e8ae7492a80cdccab99dda1",
+      "reduced_composition": "LiGe2(PO4)3",
+      "true_composition": "Li6.0Ge12.0P18.0O72.0",
+      "family": "NASICON",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "4ea",
+      "split": "train",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/4ea.cif",
+      "cif_sha256": "a39928365fc7b23586d214f2140e303134f0499c75145b0c00f81a2095f05ef8",
+      "reduced_composition": "Li(Ti0.4Sn1.6)(PO4)3",
+      "true_composition": "Li6.0Ti2.4Sn9.6P18.0O72.0",
+      "family": "NASICON",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "5bz",
+      "split": "train",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/5bz.cif",
+      "cif_sha256": "38a7384197c058439732b49c75833687c0fa00d542ab2a2fdfade062c8f87e1f",
+      "reduced_composition": "Li3BN2",
+      "true_composition": "Li12.0B4.0N8.0",
+      "family": "boron nitride",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "5tl",
+      "split": "train",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/5tl.cif",
+      "cif_sha256": "4c9daf144066cda239480e477bfcd0b7d9996908b291eb415a659b780b2d0b35",
+      "reduced_composition": "La0.62Li0.14TiO3",
+      "true_composition": "La1.24Li0.28Ti2.0O6.0",
+      "family": "perovskites",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "5wz",
+      "split": "train",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/5wz.cif",
+      "cif_sha256": "c0b0c8cf5fb125b611733a5ef6006f71c5ed500df572b83a76792382aaa79580",
+      "reduced_composition": "Li6PS5I",
+      "true_composition": "Li24.0P4.0S20.0I4.0",
+      "family": "argyrodites",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "5z0",
+      "split": "train",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/5z0.cif",
+      "cif_sha256": "1400e753fa4f85679154f204efbd03554d8077c97b69035c4eb2399bb7d97b5b",
+      "reduced_composition": "Li5AlO4",
+      "true_composition": "Li40.0Al8.0O32.0",
+      "family": "oxides",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "5zv",
+      "split": "train",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/5zv.cif",
+      "cif_sha256": "89340b1cd5c80f3aed86935190021178afc4a11a318ff87fffaa6ae8bb0750ec",
+      "reduced_composition": "Li4Zn(PO4)2",
+      "true_composition": "Li16.0Zn4.0P8.0O32.0",
+      "family": "phosphates",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "68u",
+      "split": "train",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/68u.cif",
+      "cif_sha256": "cc9900ff5fb3bca63bcd3235bbd4955a73153a1d5b8c445b7c94cfc203b3c4b6",
+      "reduced_composition": "Li5La3Nb2O12",
+      "true_composition": "Li40.0La24.0Nb16.0O96.0",
+      "family": "garnet",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "6jf",
+      "split": "train",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/6jf.cif",
+      "cif_sha256": "221a4dff8a53783f724ead8877bbe5f9be13fdf85fd583085b9973987173c59c",
+      "reduced_composition": "Li6PS5Br",
+      "true_composition": "Li24.0P4.0S20.0Br4.0",
+      "family": "argyrodites",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "6l9",
+      "split": "train",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/6l9.cif",
+      "cif_sha256": "66636d38d7d7b3b4d0962ea072c23f46b4415d97c973d1e2436eb38fa8ae3479",
+      "reduced_composition": "Li4B7O12Cl",
+      "true_composition": "Li32.0B56.0O96.0Cl8.0",
+      "family": "boracites",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "72f",
+      "split": "train",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/72f.cif",
+      "cif_sha256": "60ed98e4bcd2eec4c2cf921b42d5a9adb608129185326aa84a29ca3500611bce",
+      "reduced_composition": "(Li6.26Al0.24)La3Zr2O12",
+      "true_composition": "Li50.08Al1.92La24.0Zr16.0O96.0",
+      "family": "garnet",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "7e5",
+      "split": "train",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/7e5.cif",
+      "cif_sha256": "416cbe0903d8d5371fcd2b3bba08aff32ba280bbf41896a8696167de32caabcb",
+      "reduced_composition": "La0.65Li0.05(Mg0.5W0.5)O3",
+      "true_composition": "La2.6Li0.2Mg2.0W2.0O12.0",
+      "family": "perovskites",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "7ek",
+      "split": "train",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/7ek.cif",
+      "cif_sha256": "5341802b69f176483be3e0977ad242046c05853e64846c5120e0990401e32913",
+      "reduced_composition": "Li3.70Ge0.85W0.15O4",
+      "true_composition": "Li14.8Ge3.4W0.6O16.0",
+      "family": "LISICON",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "7w5",
+      "split": "train",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/7w5.cif",
+      "cif_sha256": "5ec8bbcb13d2da3e063cf64ffb94d75d0e25301881f15b15ea243ed5cb50c818",
+      "reduced_composition": "Li6.75La3Zr1.75Ta0.25O12",
+      "true_composition": "Li54.0La24.0Zr14.0Ta2.0O96.0",
+      "family": "garnet",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "824",
+      "split": "train",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/824.cif",
+      "cif_sha256": "ecad70b14695242931ea87fb9a6dd896ac91bc6770419f8d1d3132ceca7f1056",
+      "reduced_composition": "Li10.35Ge1.35P1.65S12",
+      "true_composition": "Li20.7Ge2.7P3.3S24.0",
+      "family": "LGPS",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "8fn",
+      "split": "train",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/8fn.cif",
+      "cif_sha256": "0d57ba270915fe70341671308216ee57642e3ce3ffefd226ca983a05701ec4cb",
+      "reduced_composition": "Li1.8Al0.8Ge1.2(PO4)3",
+      "true_composition": "Li10.8Al4.8Ge7.2P18.0O72.0",
+      "family": "NASICON",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "8ub",
+      "split": "train",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/8ub.cif",
+      "cif_sha256": "c9df9219b8f5f0b433c32979bbd743f0fd86e6ae53d5acf4ba54ee438c678cdc",
+      "reduced_composition": "Li10.5(Sn0.2Si0.8)1.5P1.5S12",
+      "true_composition": "Li21.0Sn0.6Si2.4P3.0S24.0",
+      "family": "LGPS",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "95j",
+      "split": "train",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/95j.cif",
+      "cif_sha256": "f9ef6573804359ecb871654db5eff56fee79276587e432b9f18ec19858a9eb26",
+      "reduced_composition": "Li3AlH6",
+      "true_composition": "Li18.0Al6.0H36.0",
+      "family": "hydrides",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "96f",
+      "split": "train",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/96f.cif",
+      "cif_sha256": "b033fce196ef822b8e1af26f0b9ee2b8ba6f59a48c9e9e6bcaa382ae1091e3a2",
+      "reduced_composition": "Li6P(S4.4Se0.6)Br",
+      "true_composition": "Li24.0P4.0S17.6Se2.4Br4.0",
+      "family": "argyrodites",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "97p",
+      "split": "train",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/97p.cif",
+      "cif_sha256": "813d73bedf83011b5145d0e71448b4764d2a271db05558663b11446ae09eb17b",
+      "reduced_composition": "Li6PS5Cl",
+      "true_composition": "Li24.0P4.0S20.0Cl4.0",
+      "family": "argyrodites",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "9ky",
+      "split": "train",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/9ky.cif",
+      "cif_sha256": "3d69d944553d36bde3e56a1b0e19d0168cf4ef303fa700597d928e1a5e96e691",
+      "reduced_composition": "Li(Ti0.6Sn1.4)(PO4)3",
+      "true_composition": "Li6.0Ti3.6Sn8.4P18.0O72.0",
+      "family": "NASICON",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "9lo",
+      "split": "train",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/9lo.cif",
+      "cif_sha256": "74814668a22b9aae60d64d707b9c4baa519554abef3dc4d91de8f6ecda8dc193",
+      "reduced_composition": "Li3PO4",
+      "true_composition": "Li12.0P4.0O16.0",
+      "family": "LISICON",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "9lx",
+      "split": "train",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/9lx.cif",
+      "cif_sha256": "cec2d965bc252f30b069c1552c708eba587d2914fda1666fe367bf90746487aa",
+      "reduced_composition": "Li10SnP2S12",
+      "true_composition": "Li20.0Sn2.0P4.0S24.0",
+      "family": "LGPS",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "9ph",
+      "split": "train",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/9ph.cif",
+      "cif_sha256": "3bcd9937967ef94ad3cea8dfe9c2d759c11072d014802a2f4868c4e398c25b9f",
+      "reduced_composition": "Li0.19La0.67(Ti0.9Co0.1)O3",
+      "true_composition": "Li0.76La2.68Ti3.6Co0.4O12.0",
+      "family": "perovskites",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "9rc",
+      "split": "train",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/9rc.cif",
+      "cif_sha256": "ac3cb50423a0193ebd9ad4ba5b19eebb5ba3f945238f981c9b9a04d0f0f4755a",
+      "reduced_composition": "Li10(Ge0.776Sn0.224)P2S12",
+      "true_composition": "Li20.0Ge1.55Sn0.45P4.0S24.0",
+      "family": "LGPS",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "9s4",
+      "split": "train",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/9s4.cif",
+      "cif_sha256": "f8a62fb6368dfec136eefb4e9f5935ea4e5a2daa845127e8d041e174812b841d",
+      "reduced_composition": "Li1.3Al0.3Ti1.7(PO4)3",
+      "true_composition": "Li7.8Al1.8Ti10.2P18.0O72.0",
+      "family": "NASICON",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "9wf",
+      "split": "train",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/9wf.cif",
+      "cif_sha256": "b352f616bc67c5fc38a1bb04406ae6a7bc6c9a1b69e20395bf5c330bd1c903fe",
+      "reduced_composition": "Li3ErI6",
+      "true_composition": "Li12.0Er4.0I24.0",
+      "family": "halides",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "9zk",
+      "split": "train",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/9zk.cif",
+      "cif_sha256": "a5e040aa4113adcd0fa5e4ff7990a92f2d7fedebd5630352d44c6b901077e6a1",
+      "reduced_composition": "Li5GaO4",
+      "true_composition": "Li40.0Ga8.0O32.0",
+      "family": "oxides",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "9zr",
+      "split": "train",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/9zr.cif",
+      "cif_sha256": "bf1e622b706c75743f44138d316ef9f8f66578e649c68ed0677dbffed4885be5",
+      "reduced_composition": "Li6PS5Br",
+      "true_composition": "Li24.0P4.0S20.0Br4.0",
+      "family": "argyrodites",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "a8v",
+      "split": "train",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/a8v.cif",
+      "cif_sha256": "14c5a787eee448099b7d806458d74c0ac7e1b2237c25b4d407e5a6c42a190d9b",
+      "reduced_composition": "Li6.025P0.975Si0.025S5Br",
+      "true_composition": "Li24.1P3.9Si0.1S20.0Br4.0",
+      "family": "argyrodites",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "be9",
+      "split": "train",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/be9.cif",
+      "cif_sha256": "204efd4200149d5dc07cc46930ea5bdec91f17162cbc858c18f28a3d5f8ae817",
+      "reduced_composition": "LiGaBr4",
+      "true_composition": "Li4.0Ga4.0Br16.0",
+      "family": "halides",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "bjw",
+      "split": "train",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/bjw.cif",
+      "cif_sha256": "6f2274d745c2b137870bf628faa183bc6fdff3cccce9e3dd6c043cd6fdde0102",
+      "reduced_composition": "Li2MnCl4",
+      "true_composition": "Li16.0Mn8.0Cl32.0",
+      "family": "chlorides",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "bnh",
+      "split": "train",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/bnh.cif",
+      "cif_sha256": "4272b33ba5d15bb69ff11200ff8d8d6d00132b5625e46f59f08cab4e922ce481",
+      "reduced_composition": "Li6.1P0.95Si0.1S5Br",
+      "true_composition": "Li24.4P3.8Si0.4S20.0Br4.0",
+      "family": "argyrodites",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "bq9",
+      "split": "train",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/bq9.cif",
+      "cif_sha256": "459d81cc787c950d4097f36445c2fea4b82469642f92b1e71f883feb82e2e546",
+      "reduced_composition": "Li3BiO3",
+      "true_composition": "Li24.0Bi8.0O24.0",
+      "family": "oxides",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "bsa",
+      "split": "train",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/bsa.cif",
+      "cif_sha256": "56d1d859a9046a7f59ffc681ec2d87cc353a92b9c79aa1176c59a757ec39a476",
+      "reduced_composition": "LiGaO2",
+      "true_composition": "Li4.0Ga4.0O8.0",
+      "family": "oxides",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "bv2",
+      "split": "train",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/bv2.cif",
+      "cif_sha256": "43277694347c3568a7f8be3541eb3ef021c79cf6db7400e5b17b81db610f9f61",
+      "reduced_composition": "LiYO2",
+      "true_composition": "Li4.0Y4.0O8.0",
+      "family": "oxides",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "c0g",
+      "split": "train",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/c0g.cif",
+      "cif_sha256": "8d89d35d702dc8cbe33abac30445de8acf891e321a40f31e53225e40c479e04d",
+      "reduced_composition": "Li5.5La3Ta1.75Sm0.25O12",
+      "true_composition": "Li44.0La24.0Ta14.0Sm2.0O96.0",
+      "family": "garnet",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "c6e",
+      "split": "train",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/c6e.cif",
+      "cif_sha256": "d906aa82a75d01916f42331d94a09dd7cb82eb0a424768adbac00ff20a52c33b",
+      "reduced_composition": "Li6P(S4.2Se0.8)Br",
+      "true_composition": "Li24.0P4.0S16.8Se3.2Br4.0",
+      "family": "argyrodites",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "clt",
+      "split": "train",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/clt.cif",
+      "cif_sha256": "724875bdfc5778bdb0bfaa4d3754d40a4bc9946c6ae1e38d7a894969c71a596e",
+      "reduced_composition": "Li6CuB4O10",
+      "true_composition": "Li6.0Cu1.0B4.0O10.0",
+      "family": "copper pyroborate",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "cy2",
+      "split": "train",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/cy2.cif",
+      "cif_sha256": "d618c3ac09751cc645bb1ceeb6e85c20ba6b3c0837810a4141faef58a2bd4d67",
+      "reduced_composition": "La0.64Li0.08TiO3",
+      "true_composition": "La1.28Li0.16Ti2.0O6.0",
+      "family": "perovskites",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "d7f",
+      "split": "train",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/d7f.cif",
+      "cif_sha256": "9ecceefaa6bfd202bfba3b637ff52af9f849407c040f333533bad36c5572ce15",
+      "reduced_composition": "Li3BiO4",
+      "true_composition": "Li12.0Bi4.0O16.0",
+      "family": "oxides",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "dae",
+      "split": "train",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/dae.cif",
+      "cif_sha256": "b35c6a7696127cdbe9577db93d596ce98e2fa741c25fa8f6b3d5094aecea77e8",
+      "reduced_composition": "Li6.10La3Ta1.45Sm0.55O12",
+      "true_composition": "Li48.8La24.0Ta11.6Sm4.4O96.0",
+      "family": "garnet",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "deu",
+      "split": "train",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/deu.cif",
+      "cif_sha256": "d9cb4cfe0851384a6e66d25ab062ea6794fe35f0eb8484e88684d9541dac916a",
+      "reduced_composition": "Li4.4Al0.4Ge0.6S4",
+      "true_composition": "Li8.8Al0.8Ge1.2S8.0",
+      "family": "sulfides",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "dlj",
+      "split": "train",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/dlj.cif",
+      "cif_sha256": "d020af55d965cb5b78bfe78003b90b9bc5f56053b52de24c34dc1125d69ef8ae",
+      "reduced_composition": "Li6P(S4Se)Br",
+      "true_composition": "Li24.0P4.0S16.0Se4.0Br4.0",
+      "family": "argyrodites",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "dth",
+      "split": "train",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/dth.cif",
+      "cif_sha256": "947a4e8d692a6143ac7dbddd404f9471dd51fc8f5ee39d4696867589ad84d424",
+      "reduced_composition": "Li4GeO4",
+      "true_composition": "Li16.0Ge4.0O16.0",
+      "family": "LISICON",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "dvn",
+      "split": "train",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/dvn.cif",
+      "cif_sha256": "f559586277dbb103c72858d660877170878d4add9f1c697c4f475cf3ed7bc376",
+      "reduced_composition": "Li2MgCl4",
+      "true_composition": "Li16.0Mg8.0Cl32.0",
+      "family": "chlorides",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "e6a",
+      "split": "train",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/e6a.cif",
+      "cif_sha256": "ef9eca25dcdcd7dc5c8e16262782263cb8ea9556a34faa998c2e470d9b93448a",
+      "reduced_composition": "Li6.7La3Zr1.7Ta0.3O12",
+      "true_composition": "Li53.6La24.0Zr13.6Ta2.4O96.0",
+      "family": "garnet",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "e6b",
+      "split": "train",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/e6b.cif",
+      "cif_sha256": "0e0b55cd68029afabe0251b75203caa569dd7484fe51bba49682fa1e64cb8a10",
+      "reduced_composition": "Li4GeS4",
+      "true_composition": "Li16.0Ge4.0S16.0",
+      "family": "thio-LISICON",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "etz",
+      "split": "train",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/etz.cif",
+      "cif_sha256": "7bbea8b36a0d734722c3207d37a1a232af95a3feed9a3f9c1d884a8064800e5e",
+      "reduced_composition": "Li7La3Zr2O12",
+      "true_composition": "Li56.0La24.0Zr16.0O96.0",
+      "family": null,
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "fam",
+      "split": "train",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/fam.cif",
+      "cif_sha256": "9f2d632b8c0ff34e41569fab426abef99ca149c042cf8f9bf2e7f3fe9acaa404",
+      "reduced_composition": "Li5.90La3Ta1.55Sm0.45O12",
+      "true_composition": "Li47.2La24.0Ta12.4Sm3.6O96.0",
+      "family": "garnet",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "fft",
+      "split": "train",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/fft.cif",
+      "cif_sha256": "dde5742bc1e991c723b44d8cafe34d82a3199f5c61eada5bcedc9e8f8a0864c8",
+      "reduced_composition": "Li3N",
+      "true_composition": "Li6.0N2.0",
+      "family": "nitrides",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "fwz",
+      "split": "train",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/fwz.cif",
+      "cif_sha256": "9285134e1e3d893c174f47f4145d98154977e66ba99c2734d44f4b69bf81d971",
+      "reduced_composition": "Li2SiS3",
+      "true_composition": "Li8.0Si4.0S12.0",
+      "family": "thio-LISICON",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "ga9",
+      "split": "train",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/ga9.cif",
+      "cif_sha256": "85c8574d610edb2afb5681537a99feab2994f91815c91e87c63fe02c72dc391d",
+      "reduced_composition": "LiCe(BH4)3Cl",
+      "true_composition": "Li8.0Ce8.0B24.0H96.0Cl8.0",
+      "family": "argyrodites",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "gas",
+      "split": "train",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/gas.cif",
+      "cif_sha256": "3668d508f58cad4a4cbcabcb9d697958bae9ff315dda7114cd164b7249f7bc5c",
+      "reduced_composition": "Li0.31La0.63(Ti0.9Co0.1)O3",
+      "true_composition": "Li0.31La0.63Ti0.9Co0.1O3.0",
+      "family": "perovskites",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "gcj",
+      "split": "train",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/gcj.cif",
+      "cif_sha256": "9201f6cbfabcb0f69c334fa6327cc33d1040f300845d7a303b06af858e9a0ae7",
+      "reduced_composition": "Li6(La2Ca)(NbO6)2",
+      "true_composition": "Li48.0La16.0Ca8.0Nb16.0O96.0",
+      "family": "garnet",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "gdr",
+      "split": "train",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/gdr.cif",
+      "cif_sha256": "62e9a6ab6118083e626b5fb684513ff786cc481312f9a2a459763c895fe1b843",
+      "reduced_composition": "Li6.2La3Zr1.2Ta0.8O12",
+      "true_composition": "Li49.6La24.0Zr9.6Ta6.4O96.0",
+      "family": "garnet",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "gkl",
+      "split": "train",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/gkl.cif",
+      "cif_sha256": "d7c6e29281c845fd3c04d946ce07d240045f6740f41fb4b7ee85b1e5c99474d0",
+      "reduced_composition": "Li5La3Nb2O12",
+      "true_composition": "Li40.0La24.0Nb16.0O96.0",
+      "family": "garnet",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "gvd",
+      "split": "train",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/gvd.cif",
+      "cif_sha256": "31dd942873c69b32559a7e1fee3ab5e975f9a4cfc9995e6bd975622067a0d4b2",
+      "reduced_composition": "Li3N",
+      "true_composition": "Li3.0N1.0",
+      "family": "nitrides",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "gz8",
+      "split": "train",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/gz8.cif",
+      "cif_sha256": "334b2e14c6f52ec932b3b28145470096496aebf3f63c62dad1122eca991bb41f",
+      "reduced_composition": "Li5La3Ta2O12",
+      "true_composition": "Li40.0La24.0Ta16.0O96.0",
+      "family": "garnet",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "h7r",
+      "split": "train",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/h7r.cif",
+      "cif_sha256": "165d88c0678e5af44e354f3187c12e405390ec50c9caef82e343517398c5b7d5",
+      "reduced_composition": "Li(Ti1.4Sn0.6)(PO4)3",
+      "true_composition": "Li6.0Ti8.4Sn3.6P18.0O72.0",
+      "family": "NASICON",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "hbz",
+      "split": "train",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/hbz.cif",
+      "cif_sha256": "216fee6b6c49ea23a90e1cd99f0722b2af286a230ef12649adedf38c87808cc2",
+      "reduced_composition": "Li6P(S4.8Se0.2)Br",
+      "true_composition": "Li24.0P4.0S19.2Se0.8Br4.0",
+      "family": "argyrodites",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "hcm",
+      "split": "train",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/hcm.cif",
+      "cif_sha256": "c144b124511e8a9cca307fb93b6548aae099c9e17790429b3377e4d39d40346c",
+      "reduced_composition": "Li5La3Ta2O12",
+      "true_composition": "Li40.0La24.0Ta16.0O96.0",
+      "family": "garnet",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "hja",
+      "split": "train",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/hja.cif",
+      "cif_sha256": "a7fc9d1d1711451e02e510d60c6f7b4c219371c3c1ae31a41d0aae755aa067f9",
+      "reduced_composition": "(Li0.5Ce0.25Pr0.25)(MoO4)",
+      "true_composition": "Li2.0Ce1.0Pr1.0Mo4.0O16.0",
+      "family": "molybdates",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "hta",
+      "split": "train",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/hta.cif",
+      "cif_sha256": "d278403ed31768225e67133884ea5ed80212f02cc2eee43e46040caf12065e54",
+      "reduced_composition": "La0.565Li0.305TiO3",
+      "true_composition": "La1.13Li0.61Ti2.0O6.0",
+      "family": "perovskites",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "ij5",
+      "split": "train",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/ij5.cif",
+      "cif_sha256": "46cabed496217bd26cc86d6c473ebd737ac3b24e71bd35f4f28ae2c3f209d936",
+      "reduced_composition": "Li6PS5Cl0.5Br0.5",
+      "true_composition": "Li24.0P4.0S20.0Cl2.0Br2.0",
+      "family": "argyrodites",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "ix1",
+      "split": "train",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/ix1.cif",
+      "cif_sha256": "12b7a832f3a1d0bb4b91cd23bab4ed95402b4627018772c2c82b815efbf3c608",
+      "reduced_composition": "Li0.91Hf2.022(PO4)3",
+      "true_composition": "Li5.46Hf12.13P18.0O72.0",
+      "family": "NASICON",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "j8q",
+      "split": "train",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/j8q.cif",
+      "cif_sha256": "739c38bf321c145901bbaa0e4bf850633ccb5594ae05798023b6058b3c724296",
+      "reduced_composition": "Li10GeP2S12",
+      "true_composition": "Li20.0Ge2.0P4.0S24.0",
+      "family": "LGPS",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "jej",
+      "split": "train",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/jej.cif",
+      "cif_sha256": "8e6821b1ce5cb6533d5b623e4eded42744b89f4bd3222241b5f523984a2761b2",
+      "reduced_composition": "Li6CaLa2Ta2O12",
+      "true_composition": "Li48.0Ca8.0La16.0Ta16.0O96.0",
+      "family": "garnet",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "jl4",
+      "split": "train",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/jl4.cif",
+      "cif_sha256": "0512ca950d58d840b75dd43519cc1b814d06fd3b7f09be8af7783af52eae0481",
+      "reduced_composition": "(Li0.61Mg0.39)(Li0.46Mg0.005Ti0.035)Ti1.5O4",
+      "true_composition": "Li8.56Mg3.16Ti12.28O32.0",
+      "family": "oxides",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "jqc",
+      "split": "train",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/jqc.cif",
+      "cif_sha256": "33c9133e1e85b1708037727aaa957241a1b2b5b99ca9ff521940fd2e706f008b",
+      "reduced_composition": "Li7BiO6",
+      "true_composition": "Li7.0Bi1.0O6.0",
+      "family": "hexaoxometalates",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "k4x",
+      "split": "train",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/k4x.cif",
+      "cif_sha256": "1a1ec69ccaebc9fd5046c6db8f8844d9a4cddfad3c13712a082f9c55c7d9ce01",
+      "reduced_composition": "Li10.35Si1.35P1.65S12",
+      "true_composition": "Li20.7Si2.7P3.3S24.0",
+      "family": "LGPS",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "ka6",
+      "split": "train",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/ka6.cif",
+      "cif_sha256": "c32ac4675e582ce7faeebd5d0ddc8cd71cc81af433e524a395e05285016a237a",
+      "reduced_composition": "Li5La3Ta2O12",
+      "true_composition": "Li40.0La24.0Ta16.0O96.0",
+      "family": "garnet",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "kab",
+      "split": "train",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/kab.cif",
+      "cif_sha256": "a6270cb2e424d0c222a55a1d2d999356ca1cb88005be92477d63d85f7919a861",
+      "reduced_composition": "Li1.3Al0.3Ti1.7(PO4)3",
+      "true_composition": "Li7.8Al1.8Ti10.2P18.0O72.0",
+      "family": "NASICON",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "kbu",
+      "split": "train",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/kbu.cif",
+      "cif_sha256": "46022ea9b8ea6c34cc5425cc21d39730f6bbdfb3b0542202973d75042ed0a2e4",
+      "reduced_composition": "Li5.70La3Ta1.65Sm0.35O12",
+      "true_composition": "Li45.6La24.0Ta13.2Sm2.8O96.0",
+      "family": "garnet",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "kgl",
+      "split": "train",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/kgl.cif",
+      "cif_sha256": "c37260eff6a17735e8c8cb4e8cc8c98ba534e501c677a933bf3815efd20e500f",
+      "reduced_composition": "Li6PS5Cl0.75Br0.25",
+      "true_composition": "Li24.0P4.0S20.0Cl3.0Br1.0",
+      "family": "argyrodites",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "kh3",
+      "split": "train",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/kh3.cif",
+      "cif_sha256": "93c39ed36bc91407e973b2e1bfe44642506c8c3a122e22f42f8ed95c48554882",
+      "reduced_composition": "Li6.5La3Zr1.5Ta0.5O12 ",
+      "true_composition": "Li52.0La24.0Zr12.0Ta4.0O96.0",
+      "family": null,
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "kji",
+      "split": "train",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/kji.cif",
+      "cif_sha256": "bedd0cbab14d7b434915e07bf2f32322aac24b31f3e91829e717b32e7771ad16",
+      "reduced_composition": "Li6.4La3Zr1.4Ta0.6O12",
+      "true_composition": "Li51.2La24.0Zr11.2Ta4.8O96.0",
+      "family": "garnet",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "kkn",
+      "split": "train",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/kkn.cif",
+      "cif_sha256": "9bef7a1cd73d51be3ab8035efaf33e062b74b72ab4f1ee6d50fef094adeb2aa3",
+      "reduced_composition": "Li6NBr3",
+      "true_composition": "Li24.0N4.0Br12.0",
+      "family": "halides",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "kko",
+      "split": "train",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/kko.cif",
+      "cif_sha256": "c4b38768b0fdb270f650e7714359be982995925b4c20bdbd339b42f69b688eb2",
+      "reduced_composition": "Li10SnP2S12",
+      "true_composition": "Li20.0Sn2.0P4.0S24.0",
+      "family": null,
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "kmv",
+      "split": "train",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/kmv.cif",
+      "cif_sha256": "8573d0138a4673fb26ae31faf1835e8411c588dbaf0bbdad400951826a62c33a",
+      "reduced_composition": "Li4SnS4",
+      "true_composition": "Li16.0Sn4.0S16.0",
+      "family": "Chalcogenidotetrelates",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "kop",
+      "split": "train",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/kop.cif",
+      "cif_sha256": "d27a407284b9c6a295cec36fa039dd0f79b340e4f9dfb552d9db1d641bb33608",
+      "reduced_composition": "Li10Ge0.66Sn0.33P2S12",
+      "true_composition": "Li20.0Ge1.32Sn0.66P4.0S24.0",
+      "family": null,
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "l9r",
+      "split": "train",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/l9r.cif",
+      "cif_sha256": "9a8710026c8d4571330c8c43205b8a5e1a40f7497c751fd5708ca9753eadb7f6",
+      "reduced_composition": "Li6CaLa2Ta2O12",
+      "true_composition": "Li48.0Ca8.0La16.0Ta16.0O96.0",
+      "family": "garnet",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "l9v",
+      "split": "train",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/l9v.cif",
+      "cif_sha256": "01e444077ccda41489f1aaa6caa6347e1acfd6c37d68943d69bad6225a809824",
+      "reduced_composition": "Li3AlF6",
+      "true_composition": "Li36.0Al12.0F72.0",
+      "family": "fluorides",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "lap",
+      "split": "train",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/lap.cif",
+      "cif_sha256": "73006025b278f2ea07c95d3ede09ea23625b00d9df27fe5402d695ca71fba717",
+      "reduced_composition": "Li1.3Al0.3Ti1.7(PO4)3",
+      "true_composition": "Li7.8Al1.8Ti10.2P18.0O72.0",
+      "family": "NASICON",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "ldx",
+      "split": "train",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/ldx.cif",
+      "cif_sha256": "547943bf32244f48aa6dfd8d65758ee2fe58fb01f579811ad85f3ac8cc0d3608",
+      "reduced_composition": "LiGe2(PO4)3",
+      "true_composition": "Li6.0Ge12.0P18.0O72.0",
+      "family": "NASICON",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "lkm",
+      "split": "train",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/lkm.cif",
+      "cif_sha256": "488ee5d938e5bb0dc9768846c3b16d760a1a6bd0ab60867554067db77597f660",
+      "reduced_composition": "Li6Ge2O7",
+      "true_composition": "Li24.0Ge8.0O28.0",
+      "family": null,
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "lol",
+      "split": "train",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/lol.cif",
+      "cif_sha256": "d4775549e36181325dc58b32ddc6e2590ce1322e027229b5f497a2ac91b64cec",
+      "reduced_composition": "Li4PS4I",
+      "true_composition": "Li8.0P2.0S8.0I2.0",
+      "family": "thio-LISICON",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "lpx",
+      "split": "train",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/lpx.cif",
+      "cif_sha256": "d5a4803c9ce187932f6ce9a545f1d37580f418430f8a87dd7530027b233da982",
+      "reduced_composition": "Li1.15Y0.15Zr1.85(PO4)3",
+      "true_composition": "Li6.9Y0.9Zr11.1P18.0O72.0",
+      "family": "NASICON",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "lrh",
+      "split": "train",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/lrh.cif",
+      "cif_sha256": "cfade66f01daa6f76e781da91918ec330b3fc86719a9f0ef7946bbdf589edca5",
+      "reduced_composition": "Li2.5V2(PO4)3",
+      "true_composition": "Li10.0V8.0P12.0O48.0",
+      "family": "NASICON",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "lxk",
+      "split": "train",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/lxk.cif",
+      "cif_sha256": "a3ee056e24049ba4d1c91d0604c6a6d9b97b9b61dd6df3fd96451888c3919d14",
+      "reduced_composition": "Li6.7P0.3Ge0.7S5I",
+      "true_composition": "Li26.8P1.2Ge2.8S20.0I4.0",
+      "family": "argyrodites",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "mg4",
+      "split": "train",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/mg4.cif",
+      "cif_sha256": "08f4a5bbbea73d991fa81feef1c7810a7144e902d0aa15c8d24270de76241a00",
+      "reduced_composition": "Li1.3Al0.3Ti1.7(PO4)3",
+      "true_composition": "Li7.8Al1.8Ti10.2P18.0O72.0",
+      "family": "NASICON",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "mq1",
+      "split": "train",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/mq1.cif",
+      "cif_sha256": "bcfa1f8d21b9bc66ae6ef4fd56b3912b27c2bf7ea635941f2e35f49effd59ba8",
+      "reduced_composition": "Li3SbS4",
+      "true_composition": "Li6.0Sb2.0S8.0",
+      "family": "thio-LISICON",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "mtn",
+      "split": "train",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/mtn.cif",
+      "cif_sha256": "3989be320fe9c6e78107e7fb42d77d217061c31c47a75fc21299166919087532",
+      "reduced_composition": "Li10GeP2S12",
+      "true_composition": "Li20.0Ge2.0P4.0S24.0",
+      "family": "LGPS",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "my9",
+      "split": "train",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/my9.cif",
+      "cif_sha256": "9315835f0b75f2bedf812cef39a080582a490959584b53e704e590a88cc717db",
+      "reduced_composition": "Li1.2Al0.2Ti1.8(PO4)3",
+      "true_composition": "Li7.2Al1.2Ti10.8P18.0O72.0",
+      "family": "NASICON",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "nig",
+      "split": "train",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/nig.cif",
+      "cif_sha256": "44aec92840435179e312ae70dd442435496c3ef04064c9277129ab8837a9fdbe",
+      "reduced_composition": "Li6PS5Br",
+      "true_composition": "Li24.0P4.0S20.0Br4.0",
+      "family": "argyrodites",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "nip",
+      "split": "train",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/nip.cif",
+      "cif_sha256": "fdb0243395388f7a657e2623c02866311941f0eedd20bc1fa976fec11c390285",
+      "reduced_composition": "Li9.81Sn0.81P2.19S12",
+      "true_composition": "Li19.62Sn1.62P4.38S24.0",
+      "family": "LGPS",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "o5q",
+      "split": "train",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/o5q.cif",
+      "cif_sha256": "99c7fc0351d3afb86f3de03bf31b297ef21cb9f53d84526dda67954183a7a4df",
+      "reduced_composition": "Li6.8La3Zr1.8Ta0.2O12 ",
+      "true_composition": "Li54.4La24.0Zr14.4Ta1.6O96.0",
+      "family": null,
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "oi6",
+      "split": "train",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/oi6.cif",
+      "cif_sha256": "ccce6a8b152b68203414aaca7a502ebbc76c3c0611d265dbb9fcc2547c2b5b71",
+      "reduced_composition": "Li7SbO6",
+      "true_composition": "Li7.0Sb1.0O6.0",
+      "family": "hexaoxometalates",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "p9u",
+      "split": "train",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/p9u.cif",
+      "cif_sha256": "0562edfffbc87413fa563580eef287ae573b0e7dd8583904baa75202a8b4ee57",
+      "reduced_composition": "Li6PS5I",
+      "true_composition": "Li24.0P4.0S20.0I4.0",
+      "family": "argyrodites",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "pa1",
+      "split": "train",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/pa1.cif",
+      "cif_sha256": "7f0b409dc71a089b057cac8959c9c402066db13580034a57746dc556ae481e90",
+      "reduced_composition": "Li6.6P0.4Ge0.6S5I",
+      "true_composition": "Li26.4P1.6Ge2.4S20.0I4.0",
+      "family": "argyrodites",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "pbz",
+      "split": "train",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/pbz.cif",
+      "cif_sha256": "99c11482e03c2b9dacd327b56bd1040a9b8c2d287e99017cc68978da209cf883",
+      "reduced_composition": "Li3.75Ge0.75V0.25O4",
+      "true_composition": "Li15.0Ge3.0V1.0O16.0",
+      "family": "LISICON",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "pe2",
+      "split": "train",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/pe2.cif",
+      "cif_sha256": "275d479a4b9df56313339a7e951beaac9d50c91991eb96e25b937896772205d3",
+      "reduced_composition": "Li17Sb13S28",
+      "true_composition": "Li17.0Sb13.0S28.0",
+      "family": null,
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "pg8",
+      "split": "train",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/pg8.cif",
+      "cif_sha256": "6952665a1371b00c3466dabea33d856aeb04c7b54fdc49b3a32403c59f4e1166",
+      "reduced_composition": "Li1.5Fe0.5Ti1.5(PO4)3",
+      "true_composition": "Li9.0Fe3.0Ti9.0P18.0O72.0",
+      "family": "NASICON",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "pql",
+      "split": "train",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/pql.cif",
+      "cif_sha256": "002fb38f0b7511e3862562a67c8a0131b77a6307fc99bb46cf42cd50c6745325",
+      "reduced_composition": "Li8SiP4",
+      "true_composition": "Li64.0Si8.0P32.0",
+      "family": "phosphates",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "pwr",
+      "split": "train",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/pwr.cif",
+      "cif_sha256": "0372a5c4648ea0cc8c41b9e8e43499f29fb740a3cd05f51cad04b29cc74a4ce1",
+      "reduced_composition": "Li7.22Si1.5P0.5O8",
+      "true_composition": "Li7.22Si1.5P0.5O8.0",
+      "family": "LISICON",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "qa9",
+      "split": "train",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/qa9.cif",
+      "cif_sha256": "1b9939aebd35a6af7bf014cb6ba38431c515bedb6f3253bcff76dba2922ec77c",
+      "reduced_composition": "Li3BN2",
+      "true_composition": "Li6.0B2.0N4.0",
+      "family": "boron nitride",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "qbb",
+      "split": "train",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/qbb.cif",
+      "cif_sha256": "d83827fb25bd79d4c4d5c8ffe9e9574f6be04b617b795821c4ee6e016ce1730c",
+      "reduced_composition": "Li3OBr",
+      "true_composition": "Li3.0O1.0Br1.0",
+      "family": "antiperovskite",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "qno",
+      "split": "train",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/qno.cif",
+      "cif_sha256": "27f02e01f16b7824e5c493dd273e368a601768be2d977b401e499a4cfa557cfc",
+      "reduced_composition": "LiTi2(PO4)3",
+      "true_composition": "Li6.0Ti12.0P18.0O72.0",
+      "family": "NASICON",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "qy4",
+      "split": "train",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/qy4.cif",
+      "cif_sha256": "fb037bb2f0b922976f964f1c512019e7cb803ece749ddf192320d0c8d398056d",
+      "reduced_composition": "Li3Na5(TiS4)2",
+      "true_composition": "Li12.0Na20.0Ti8.0S32.0",
+      "family": "sulfides",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "rr5",
+      "split": "train",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/rr5.cif",
+      "cif_sha256": "a1819866ea3dd8a5af9ad9cdf6a7d44ba4b7530d0f150f093c362a475ad24e42",
+      "reduced_composition": "LiTi2(PO4)3",
+      "true_composition": "Li6.0Ti12.0P18.0O72.0",
+      "family": "NASICON",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "rty",
+      "split": "train",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/rty.cif",
+      "cif_sha256": "97c28b5674d93cc33caeff14a4b73931e5b78ad116e300b4c7cfd39312627ea7",
+      "reduced_composition": "Li10Ge0.33Sn0.66P2S12",
+      "true_composition": "Li20.0Ge0.66Sn1.32P4.0S24.0",
+      "family": null,
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "rwr",
+      "split": "train",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/rwr.cif",
+      "cif_sha256": "d554f60d1b6b63c8dcfbf3fd5282eebee8a13aa4e5b864aea71bab0d26d93b18",
+      "reduced_composition": "Li8GeP4",
+      "true_composition": "Li64.0Ge8.0P32.0",
+      "family": "phosphates",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "s3h",
+      "split": "train",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/s3h.cif",
+      "cif_sha256": "97f0c35e156f44b2f29584febd3dd542cea31bf3a179ab72ac0232b38847a7f2",
+      "reduced_composition": "La0.5Li0.5TiO3",
+      "true_composition": "La1.0Li1.0Ti2.0O6.0",
+      "family": "perovskites",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "sqm",
+      "split": "train",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/sqm.cif",
+      "cif_sha256": "63e0d7b01f06412b72576abd0a907f6da798ae592e6a01a9e87355007e09c258",
+      "reduced_composition": "Li6Ba0.5Sr0.5La2Ta2O12",
+      "true_composition": "Li48.0Ba4.0Sr4.0La16.0Ta16.0O96.0",
+      "family": "garnet",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "t0h",
+      "split": "train",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/t0h.cif",
+      "cif_sha256": "cae860a893a5f22601417faca9d66f77639b9405bae51a243b37cc930ecaca00",
+      "reduced_composition": "Li2ZrO3",
+      "true_composition": "Li8.0Zr4.0O12.0",
+      "family": "oxides",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "t2c",
+      "split": "train",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/t2c.cif",
+      "cif_sha256": "9f475a5b9850b82458b4eede95581dc953f8c4e75098cdbce82e13bfa3fd2339",
+      "reduced_composition": "Li6P(S4.1Se0.9)Br",
+      "true_composition": "Li24.0P4.0S16.4Se3.6Br4.0",
+      "family": "argyrodites",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "t3k",
+      "split": "train",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/t3k.cif",
+      "cif_sha256": "20dee887a394b074422c6bd833eeeff3127574b50af6db91e853becafd5416c0",
+      "reduced_composition": "Li1.9Mn0.9Ga0.1Cl4",
+      "true_composition": "Li15.2Mn7.2Ga0.8Cl32.0",
+      "family": "chlorides",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "tbj",
+      "split": "train",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/tbj.cif",
+      "cif_sha256": "0f389bafae4873fcae248e0486c284280414f723c30dc1395a65a318313a0b3c",
+      "reduced_composition": "Li5La3Sb2O12",
+      "true_composition": "Li40.0La24.0Sb16.0O96.0",
+      "family": "garnet",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "tka",
+      "split": "train",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/tka.cif",
+      "cif_sha256": "f7649d58d921334d9aea64ca14989407125e73c54b45d4c3d8df4d20cca4c9b6",
+      "reduced_composition": "LiSi2N3",
+      "true_composition": "Li4.0Si8.0N12.0",
+      "family": "nitride",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "tvf",
+      "split": "train",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/tvf.cif",
+      "cif_sha256": "6e84098611ce43ad8fc58f3acc3956ffc5148d0a81d01a4b92e4fb2f05175018",
+      "reduced_composition": "Li3(NH2)2I",
+      "true_composition": "Li12.0N8.0H16.0I4.0",
+      "family": "hydrides",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "tws",
+      "split": "train",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/tws.cif",
+      "cif_sha256": "8a2ece5082f4a89286953303116172a6b037bf07553c7b2de84791dc2bb3145d",
+      "reduced_composition": "Li6Zr2O7",
+      "true_composition": "Li24.0Zr8.0O28.0",
+      "family": "zirconates",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "u2y",
+      "split": "train",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/u2y.cif",
+      "cif_sha256": "3017da6c46a49927a231190e104c3791edc0483df1d66a5d23aa6a97164b7218",
+      "reduced_composition": "La0.595Li0.215TiO3",
+      "true_composition": "La1.19Li0.43Ti2.0O6.0",
+      "family": "perovskites",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "uaz",
+      "split": "train",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/uaz.cif",
+      "cif_sha256": "23dbc0543b4ce4e33d9f1afd4b01072f5c252bdeccd7f822edb019a7de890fd6",
+      "reduced_composition": "Li6CaLa2Nb2O12",
+      "true_composition": "Li48.0Ca8.0La16.0Nb16.0O96.0",
+      "family": "garnet",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "ueu",
+      "split": "train",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/ueu.cif",
+      "cif_sha256": "2f4fcd273ab96e34997e30ba78c9a9ecd7b462e62d9ef8fe1214f7ff7ed17e1a",
+      "reduced_composition": "Li5.74La3Zr1.5Ta0.5O12",
+      "true_composition": "Li45.92La24.0Zr12.0Ta4.0O96.0",
+      "family": "garnet",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "ui6",
+      "split": "train",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/ui6.cif",
+      "cif_sha256": "6af96e5d81bb01699f5ba9993a7adeb8b9ebc59a497ad843079c9033a4fd11e4",
+      "reduced_composition": "Li10.35(Sn0.27Si1.08)P1.65S12",
+      "true_composition": "Li20.7Sn0.54Si2.16P3.3S24.0",
+      "family": "LGPS",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "uox",
+      "split": "train",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/uox.cif",
+      "cif_sha256": "fe59baeb1afd53bdc24b0981ec7e92ee407485e4cfc55a4d05bf649daffded20",
+      "reduced_composition": "Li3.7Zn0.7Ga0.3(PO4)2",
+      "true_composition": "Li7.4Zn1.4Ga0.6P4.0O16.0",
+      "family": "phosphates",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "ur9",
+      "split": "train",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/ur9.cif",
+      "cif_sha256": "7b1186c7cfc607932d7030a3868e267eefbd587ac84bde6d281375777a917104",
+      "reduced_composition": "LiZr2(PO4)3",
+      "true_composition": "Li6.0Zr12.0P18.0O72.0",
+      "family": "NASICON",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "usu",
+      "split": "train",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/usu.cif",
+      "cif_sha256": "4fe71c8603aae447e5b4739478005572d7169f18b9e5656f0a18f6982f0860fb",
+      "reduced_composition": "Li4.4Al0.4Sn0.6S4",
+      "true_composition": "Li8.8Al0.8Sn1.2S8.0",
+      "family": "sulfides",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "uu4",
+      "split": "train",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/uu4.cif",
+      "cif_sha256": "5f4ae4f995757e37960aa479d03f3a318dc5e1c1ef7455e3dbbbf0cbec2b46c1",
+      "reduced_composition": "LiVO3",
+      "true_composition": "Li8.0V8.0O24.0",
+      "family": "oxides",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "uw9",
+      "split": "train",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/uw9.cif",
+      "cif_sha256": "4fcc125e39ab88e52d0401d3baae673d88b2907e5975f1123f193f9d2aa289ae",
+      "reduced_composition": "Li6La2SrBi2O12",
+      "true_composition": "Li48.0La16.0Sr8.0Bi16.0O96.0",
+      "family": "garnet",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "uwh",
+      "split": "train",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/uwh.cif",
+      "cif_sha256": "b0335b1a69a138ee1415aedc14aacf1d262898712d373a38172a7f7b13bbb311",
+      "reduced_composition": "La3Li5.08Ta1.51Zr0.39O12",
+      "true_composition": "La24.0Li40.64Ta12.08Zr3.12O96.0",
+      "family": "garnet",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "uxi",
+      "split": "train",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/uxi.cif",
+      "cif_sha256": "ff7e53967b407afe4e068fad4d748e2f3a42b6600bf642b10d759eb3285512f9",
+      "reduced_composition": "Li1.65Mn0.65In0.35Cl4",
+      "true_composition": "Li13.2Mn5.2In2.8Cl32.0",
+      "family": "chlorides",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "uxo",
+      "split": "train",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/uxo.cif",
+      "cif_sha256": "efd44c4c96523c0ab3f4b0ef828e7c53d6addd3d97ad6cb6af902061431677bf",
+      "reduced_composition": "Li2.88PO3.73N0.14",
+      "true_composition": "Li11.52P4.0O14.92N0.56",
+      "family": "LISICON",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "vg0",
+      "split": "train",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/vg0.cif",
+      "cif_sha256": "2e2b591176ffccfa49b38f73147f7c4ad2da8693c8605cc0260a83d72c51bee5",
+      "reduced_composition": "Li1.5Al0.5Ge1.5(PO4)3",
+      "true_composition": "Li9.0Al3.0Ge9.0P18.0O72.0",
+      "family": "NASICON",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "vj7",
+      "split": "train",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/vj7.cif",
+      "cif_sha256": "b77a22a2b6d06040266bf96206392bdde66164fda8fba2effecbb000b58820e2",
+      "reduced_composition": "Li6.25P0.75Si0.25S5Br",
+      "true_composition": "Li25.0P3.0Si1.0S20.0Br4.0",
+      "family": "argyrodites",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "vqj",
+      "split": "train",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/vqj.cif",
+      "cif_sha256": "72956eccd987ed38db97c091ef88adaf00d4deb9d30f6bfd08404ee8f0c57da3",
+      "reduced_composition": "Li6PS5Br0.75I0.25",
+      "true_composition": "Li24.0P4.0S20.0Br3.0I1.0",
+      "family": "argyrodites",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "vqu",
+      "split": "train",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/vqu.cif",
+      "cif_sha256": "711ca384fbd4978a4f3fd8ac8b12c6a3b15c1a3c2d54ce4d89fc6ce1bf321322",
+      "reduced_composition": "Li5Nd3Sb2O12",
+      "true_composition": "Li40.0Nd24.0Sb16.0O96.0",
+      "family": "garnet",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "w7d",
+      "split": "train",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/w7d.cif",
+      "cif_sha256": "2319b779fd7bf30e6f030474ab8693111c9cbd6e974db04b05670fe863d025b7",
+      "reduced_composition": "Li3PO4",
+      "true_composition": "Li12.0P4.0O16.0",
+      "family": "LISICON",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "w87",
+      "split": "train",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/w87.cif",
+      "cif_sha256": "028a80ece709f69e86cebb48ab29d5e222254befad7b89e1f61935d219ad3889",
+      "reduced_composition": "Li6PS5Br",
+      "true_composition": "Li24.0P4.0S20.0Br4.0",
+      "family": "argyrodites",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "wsd",
+      "split": "train",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/wsd.cif",
+      "cif_sha256": "7b0f0df3939ce635642efd90b65092e64ff8185d75aea1b83c4aa03949ba960c",
+      "reduced_composition": "Li6.3P0.7Si0.3S5Br",
+      "true_composition": "Li25.2P2.8Si1.2S20.0Br4.0",
+      "family": "argyrodites",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "wyu",
+      "split": "train",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/wyu.cif",
+      "cif_sha256": "0aa27a1bec7fe5130e413db34de04b8a215ff73b1030355c4f9ee4ff0855465f",
+      "reduced_composition": "Li7La3Zr2O12",
+      "true_composition": "Li56.0La24.0Zr16.0O96.0",
+      "family": "garnet",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "x2i",
+      "split": "train",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/x2i.cif",
+      "cif_sha256": "b26bed9efec4e74eca6c1dfe0ae253e3ff78558979a48cf8c61e38ec762b67c0",
+      "reduced_composition": "LiBiO2",
+      "true_composition": "Li8.0Bi8.0O16.0",
+      "family": "oxides",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "x2v",
+      "split": "train",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/x2v.cif",
+      "cif_sha256": "6c06955bbca4f243f04f9b4ca8b9f4339304c14fc577c652ee2a10c09c2a3f07",
+      "reduced_composition": "Li6.075P0.925Si0.075S5Br",
+      "true_composition": "Li24.3P3.7Si0.3S20.0Br4.0",
+      "family": "argyrodites",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "x9d",
+      "split": "train",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/x9d.cif",
+      "cif_sha256": "dc25455597f28b0d796a647a1e38ce362847dcd2354549cfd4062aea879519d2",
+      "reduced_composition": "Li6.125P0.875Si0.125S5Br",
+      "true_composition": "Li24.5P3.5Si0.5S20.0Br4.0",
+      "family": "argyrodites",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "xa0",
+      "split": "train",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/xa0.cif",
+      "cif_sha256": "70274c842016f4c39b1f8b039fee827d7eb068897537cc920a5ae50fcbc00ff5",
+      "reduced_composition": "Li1.5Al0.5Ti1.5(PO4)3",
+      "true_composition": "Li9.0Al3.0Ti9.0P18.0O72.0",
+      "family": "NASICON",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "xas",
+      "split": "train",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/xas.cif",
+      "cif_sha256": "5625cdae22fa912da9810d60a4cedd7f9f8536081fac72aac197c11b1991d22e",
+      "reduced_composition": "Li2SnS3",
+      "true_composition": "Li16.0Sn8.0S24.0",
+      "family": "sulfides",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "xog",
+      "split": "train",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/xog.cif",
+      "cif_sha256": "dd62f863f5ffc5b72328e0fc367a129933573cb7d926950c9d98657103a60c95",
+      "reduced_composition": "Li5La3Sb2O12",
+      "true_composition": "Li40.0La24.0Sb16.0O96.0",
+      "family": "garnet",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "xub",
+      "split": "train",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/xub.cif",
+      "cif_sha256": "1a5cb9c5f684faac773619575e1c1a8e0ef5a4f244fea86e1c08f19b307c3ae3",
+      "reduced_composition": "(Li0.74Mg0.26)(Li0.40Mg0.04Ti1.56)O4",
+      "true_composition": "Li9.12Mg2.4Ti12.48O32.0",
+      "family": "oxides",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "y2l",
+      "split": "train",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/y2l.cif",
+      "cif_sha256": "f660e39eb4bb830b01dd02df456b09b47bfc304ba9f2e42dbf24f53b309a7be8",
+      "reduced_composition": "Li5AlS4",
+      "true_composition": "Li10.0Al2.0S8.0",
+      "family": "thio-LISICON",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "yav",
+      "split": "train",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/yav.cif",
+      "cif_sha256": "121d761fcfc6fb623f6090e0e954412052f8ef35c6b8d3a58fb4bd8fe7eb2a90",
+      "reduced_composition": "Li2VCl4",
+      "true_composition": "Li8.0V4.0Cl16.0",
+      "family": "cholorides",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "ym6",
+      "split": "train",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/ym6.cif",
+      "cif_sha256": "a8ea4f852fd67507358f8ab0100cadeb3649557799429959aaeee1e57acead2a",
+      "reduced_composition": "Li1.3Al0.3Ti1.7(PO4)3",
+      "true_composition": "Li7.8Al1.8Ti10.2P18.0O72.0",
+      "family": "NASICON",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "ymc",
+      "split": "train",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/ymc.cif",
+      "cif_sha256": "f30552310de0da91fe4820b51fe0d52f8697d9f3c6caa1e62989188a31d8a0f1",
+      "reduced_composition": "Li6PS5Br0.5I0.5",
+      "true_composition": "Li24.0P4.0S20.0Br2.0I2.0",
+      "family": "argyrodites",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "yq2",
+      "split": "train",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/yq2.cif",
+      "cif_sha256": "3475685567186570bb2df016a275c7396a086ee3367686071a19fb0a5005bf6f",
+      "reduced_composition": "Li1.1Al0.1Ti1.9(PO4)3",
+      "true_composition": "Li6.6Al0.6Ti11.4P18.0O72.0",
+      "family": "NASICON",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "yqu",
+      "split": "train",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/yqu.cif",
+      "cif_sha256": "dfcf5556a586fd6b1779d2f3a0a1a1b2da9a8c9f13ba37d823297768089cef59",
+      "reduced_composition": "Li1.2Ti1.8Al0.2(PO4)3",
+      "true_composition": "Li7.2Ti10.8Al1.2P18.0O72.0",
+      "family": "NASICON",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "ywe",
+      "split": "train",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/ywe.cif",
+      "cif_sha256": "fe29f1702c9ee3a51e4249b68b596149a2432ff88894604f1be0275f73ba8328",
+      "reduced_composition": "Li6PS5I",
+      "true_composition": "Li24.0P4.0S20.0I4.0",
+      "family": "argyrodites",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "z16",
+      "split": "train",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/z16.cif",
+      "cif_sha256": "46a451398705d3a92dcf731211826c6a2d524c802992fdb2eeb84c4b35e53561",
+      "reduced_composition": "Li6P(S4.9Se0.1)Br",
+      "true_composition": "Li24.0P4.0S19.6Se0.4Br4.0",
+      "family": "argyrodites",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "z7n",
+      "split": "train",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/z7n.cif",
+      "cif_sha256": "4bc94d6f9a9ef89ccc91249eacb688f85e86f1a14a84a80808210c6cc3d74dfa",
+      "reduced_composition": "Li0.86Hf2.035(PO4)3",
+      "true_composition": "Li5.16Hf12.21P18.0O72.0",
+      "family": "NASICON",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "z9y",
+      "split": "train",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/z9y.cif",
+      "cif_sha256": "8b82190a17449c1d87a9a5d3c147933fa9b02b201f5e4906852bbb569da8c521",
+      "reduced_composition": "Li1.2Al0.2Ti1.8(PO4)3",
+      "true_composition": "Li7.2Al1.2Ti10.8P18.0O72.0",
+      "family": "NASICON",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "zzr",
+      "split": "train",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/zzr.cif",
+      "cif_sha256": "49f913a48e3ddb72db8b26f75b2aec7a188570bb951665f09b2c7f9319ceab5b",
+      "reduced_composition": "Li10GeP2S12",
+      "true_composition": "Li20.0Ge2.0P4.0S24.0",
+      "family": null,
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "1e9",
+      "split": "validation",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/1e9.cif",
+      "cif_sha256": "8b5cf7399836403abecd0869ec577490d9931841acdc3b2ea130071620c4135c",
+      "reduced_composition": "Li3SbS3",
+      "true_composition": "Li12.0Sb4.0S12.0",
+      "family": "sulfides",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "2t8",
+      "split": "validation",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/2t8.cif",
+      "cif_sha256": "27cc1258a5a75a9d95564a1ac08b3f66d7819048708c963d66b051243f603734",
+      "reduced_composition": "LiV(PO4)F",
+      "true_composition": "Li2.0V2.0P2.0O8.0F2.0",
+      "family": "Tavorite",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "6du",
+      "split": "validation",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/6du.cif",
+      "cif_sha256": "8faa8a169e6dd99eced426c5931c2135215bd6f32128d6ed93d459f224a35b70",
+      "reduced_composition": "(Li0.916Mg0.084)(Li0.352Mg0.016Ti1.634)O4",
+      "true_composition": "Li10.14Mg0.8Ti13.07O32.0",
+      "family": "oxides",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "7o7",
+      "split": "validation",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/7o7.cif",
+      "cif_sha256": "dc7713f719455e71e4bbcffc57ea17c825e1cd8b82cb36c88fdb8b8ee05e9677",
+      "reduced_composition": "Li6BaLa2Ta2O12",
+      "true_composition": "Li48.0Ba8.0La16.0Ta16.0O96.0",
+      "family": "garnet",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "7tu",
+      "split": "validation",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/7tu.cif",
+      "cif_sha256": "9d1b84e8ade756dc4122e479d1fa335d886f15575b9d253ed4dac18ed56fd630",
+      "reduced_composition": "Li10.2(Sn0.2Si0.8)1.2P1.8S12",
+      "true_composition": "Li20.4Sn0.48Si1.92P3.6S24.0",
+      "family": "LGPS",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "883",
+      "split": "validation",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/883.cif",
+      "cif_sha256": "3dc435aecc86fec4b5ddfca17c92056b46aa6c75fca88bad76ceeabaf627d0b3",
+      "reduced_composition": "LiAlH4",
+      "true_composition": "Li4.0Al4.0H16.0",
+      "family": "hydrides",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "9yt",
+      "split": "validation",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/9yt.cif",
+      "cif_sha256": "6742ceadb989ca2870ec2f3700b0df56efc5c118a8231c76cc87f24fe15287db",
+      "reduced_composition": "Li6PS5Cl0.25Br0.75",
+      "true_composition": "Li24.0P4.0S20.0Cl1.0Br3.0",
+      "family": "argyrodites",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "an2",
+      "split": "validation",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/an2.cif",
+      "cif_sha256": "bd887086aca2acd002c7ca0f75051ae7864a396945d0f8893bc75063295aa35c",
+      "reduced_composition": "Li6SiO4Cl2",
+      "true_composition": "Li24.0Si4.0O16.0Cl8.0",
+      "family": "argyrodite",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "b4c",
+      "split": "validation",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/b4c.cif",
+      "cif_sha256": "95c8951d932864be541d226abb2a47bea61a5911ae4e7a4243f0238318b43dd4",
+      "reduced_composition": "Li4SiS4",
+      "true_composition": "Li8.0Si2.0S8.0",
+      "family": "thio-LISICON",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "bi3",
+      "split": "validation",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/bi3.cif",
+      "cif_sha256": "159c6403532c9ed69d5d113f0cf5d30b93d88629064957749477a8765adaf0a2",
+      "reduced_composition": "Li6SrLa2Sb2O12",
+      "true_composition": "Li48.0Sr8.0La16.0Sb16.0O96.0",
+      "family": "garnet",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "cju",
+      "split": "validation",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/cju.cif",
+      "cif_sha256": "ddc180f1701eb3964ac60f0f2a95f5881a2f47cdcf90e5584f807d9dd18762ae",
+      "reduced_composition": "Li6P(S4.6Se0.4)Br",
+      "true_composition": "Li24.0P4.0S18.4Se1.6Br4.0",
+      "family": "argyrodites",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "d9l",
+      "split": "validation",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/d9l.cif",
+      "cif_sha256": "b6f6300d8cdba7e3cd68c870b21a0eec6d10ffefc8a8db2b1a05d75910cfe485",
+      "reduced_composition": "Li6P(S4.5Se0.5)Br",
+      "true_composition": "Li24.0P4.0S18.0Se2.0Br4.0",
+      "family": "argyrodites",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "dmq",
+      "split": "validation",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/dmq.cif",
+      "cif_sha256": "b6bf2e6de3875b26adee81e7de13ed5a77eabe84146146c11dbf737288bc0a0a",
+      "reduced_composition": "Li3AlS3",
+      "true_composition": "Li24.0Al8.0S24.0",
+      "family": "sulfides",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "fj5",
+      "split": "validation",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/fj5.cif",
+      "cif_sha256": "f77d990dc1661b475dbed8e3a1e0c1816bc0ff241b42e992e25583f09f93b997",
+      "reduced_composition": "Li6.5O8P1.5Si0.5",
+      "true_composition": "Li13.0O16.0P3.0Si1.0",
+      "family": "LISICON",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "fkj",
+      "split": "validation",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/fkj.cif",
+      "cif_sha256": "9ca4e37ce11256a49d091319f75ca904356a2b70757fb314138609a6b5cdda59",
+      "reduced_composition": "Li6.5P0.5Si0.5S5Br",
+      "true_composition": "Li26.0P2.0Si2.0S20.0Br4.0",
+      "family": "argyrodites",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "g5q",
+      "split": "validation",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/g5q.cif",
+      "cif_sha256": "ee989184389516015ca32f0c54a683364ddb57dbe25952a45378748e9eb0468a",
+      "reduced_composition": "Li6.5La3Zr1.5Ta0.5O12",
+      "true_composition": "Li52.0La24.0Zr12.0Ta4.0O96.0",
+      "family": "garnet",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "goi",
+      "split": "validation",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/goi.cif",
+      "cif_sha256": "b58b64a7c6993577e7517f54ec0c0d5e68d6b6444e9627525f7f41e61d81172e",
+      "reduced_composition": "LiClC3H7NO",
+      "true_composition": "Li4.0Cl4.0C12.0H28.0N4.0O4.0",
+      "family": null,
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "gw2",
+      "split": "validation",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/gw2.cif",
+      "cif_sha256": "94baba5b9f8f76ec66d9706e2d4c2e5d5b350ffb3cda0ca881b33af1c7209951",
+      "reduced_composition": "Li1.4Al0.4Ge1.6(PO4)3",
+      "true_composition": "Li8.4Al2.4Ge9.6P18.0O72.0",
+      "family": "NASICON",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "h6c",
+      "split": "validation",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/h6c.cif",
+      "cif_sha256": "5df69619b165b4d6c6d9c37280c6d8a575f84df838ff5865387ea7e3372c72bc",
+      "reduced_composition": "Li3VO4",
+      "true_composition": "Li6.0V2.0O8.0",
+      "family": "LISICON",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "h82",
+      "split": "validation",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/h82.cif",
+      "cif_sha256": "d1bb69cee3137267ea0a29953a91fc4902d1b3e7776d04f65d0104c3c53f5f69",
+      "reduced_composition": "Li6PS5Br0.25I0.75",
+      "true_composition": "Li24.0P4.0S20.0Br1.0I3.0",
+      "family": "argyrodites",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "h89",
+      "split": "validation",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/h89.cif",
+      "cif_sha256": "bc5ba1e8b168a3278e6913e16391dc18de1d0d5bcf5bef578a96d38847b8e193",
+      "reduced_composition": "Li6BaLa2Ta2O12",
+      "true_composition": "Li48.0Ba8.0La16.0Ta16.0O96.0",
+      "family": "garnet",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "hud",
+      "split": "validation",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/hud.cif",
+      "cif_sha256": "bdb5a525b980030e5f1d9a8138d9f61549a6416ee720758b7b04a5ce9aa4f332",
+      "reduced_composition": "Li6BaLa2Ta2O12",
+      "true_composition": "Li48.0Ba8.0La16.0Ta16.0O96.0",
+      "family": "garnet",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "hx7",
+      "split": "validation",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/hx7.cif",
+      "cif_sha256": "c7bd2ad3101b61470617a46cf232e529505ea814bfeb5623b4ca02874c58dd3d",
+      "reduced_composition": "Li2(OH)Br",
+      "true_composition": "Li2.0O1.0H1.0Br1.0",
+      "family": "antiperovskite",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "iiy",
+      "split": "validation",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/iiy.cif",
+      "cif_sha256": "555da358c43ec7979d1caa7657ae3894f973a7a06de79f95c1900f8636ac072f",
+      "reduced_composition": "Li6.2P0.8Si0.2S5Br",
+      "true_composition": "Li24.8P3.2Si0.8S20.0Br4.0",
+      "family": "argyrodites",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "ik8",
+      "split": "validation",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/ik8.cif",
+      "cif_sha256": "e2e98e356e948d8f2a2bb9c78c67809fabbb675810ade5c7757ca5d56b3f982f",
+      "reduced_composition": "Li10(Ge0.416Sn0.584)P2S12",
+      "true_composition": "Li20.0Ge0.83Sn1.17P4.0S24.0",
+      "family": "LGPS",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "iqt",
+      "split": "validation",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/iqt.cif",
+      "cif_sha256": "71d3be570ae18779c8f117736de42f77215ca9cc61d99c843586934d414d2760",
+      "reduced_composition": "Li1.4Al0.4Ti1.6(PO4)3",
+      "true_composition": "Li8.4Al2.4Ti9.6P18.0O72.0",
+      "family": "NASICON",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "ish",
+      "split": "validation",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/ish.cif",
+      "cif_sha256": "1eedeff39c1385647c36c7573cd46c75a932b216b50e296f773d01cd7fafd3ac",
+      "reduced_composition": "Li6.175P0.825Si0.175S5Br",
+      "true_composition": "Li24.7P3.3Si0.7S20.0Br4.0",
+      "family": "argyrodites",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "jkq",
+      "split": "validation",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/jkq.cif",
+      "cif_sha256": "8207fd5bb026bd338739ca2869b01c75935a67532716264c15dc11d8fbefc831",
+      "reduced_composition": "(Li0.55Mg0.45)(Li0.445Mg0.055)Ti1.5O4",
+      "true_composition": "Li7.96Mg4.04Ti12.0O32.0",
+      "family": "oxides",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "joc",
+      "split": "validation",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/joc.cif",
+      "cif_sha256": "4a695967a5db852b835a2ca07b087e7ced449608a30e3a9331a3a6f040d9c94d",
+      "reduced_composition": "Li3PS4",
+      "true_composition": "Li6.0P2.0S8.0",
+      "family": "thio-LISICON",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "kbq",
+      "split": "validation",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/kbq.cif",
+      "cif_sha256": "2119af24d78a911f6061e7049ffb412555322a9b11466da25fb7fda2878c8994",
+      "reduced_composition": "Li5La3Bi2O12",
+      "true_composition": "Li40.0La24.0Bi16.0O96.0",
+      "family": "garnet",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "kfp",
+      "split": "validation",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/kfp.cif",
+      "cif_sha256": "9976b2b844e8c64a4e6785b1cb657e1b1d5d25cc28950956e519ccf0df64e1a6",
+      "reduced_composition": "Li2BaP2O7",
+      "true_composition": "Li16.0Ba8.0P16.0O56.0",
+      "family": "pyrophosphate",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "m0v",
+      "split": "validation",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/m0v.cif",
+      "cif_sha256": "e6543976a7b45d3dbf5c2fb2fcd1879786745df7aedb97949a8051ce001cd887",
+      "reduced_composition": "Li(Li0.34Ti1.66)O4",
+      "true_composition": "Li10.72Ti13.28O32.0",
+      "family": "oxides",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "n27",
+      "split": "validation",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/n27.cif",
+      "cif_sha256": "31898ec65dd24507a961ae8d95aeab6786e2eb82fbfcbdf42a5645d3dc32ca3b",
+      "reduced_composition": "LiBO2",
+      "true_composition": "Li4.0B4.0O8.0",
+      "family": null,
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "ner",
+      "split": "validation",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/ner.cif",
+      "cif_sha256": "4be0b823d9c9f02a44cfc626dba73bfb1ad64316cf735557b95ad25f18787f66",
+      "reduced_composition": "Li6BaLa2Ta2O12",
+      "true_composition": "Li48.0Ba8.0La16.0Ta16.0O96.0",
+      "family": "garnet",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "nhq",
+      "split": "validation",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/nhq.cif",
+      "cif_sha256": "82bc81cc7a4d11832c945f6f252686c363da93de4d104662e16ff7ee11e88517",
+      "reduced_composition": "Li3PS4",
+      "true_composition": "Li12.0P4.0S16.0",
+      "family": "thio-LISICON",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "opo",
+      "split": "validation",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/opo.cif",
+      "cif_sha256": "d98cbbccbd176b18ce5b305868adcf3f8eed2373647703adc474b15c4dc66317",
+      "reduced_composition": "Li0.6[Li0.2Sn0.8S2]",
+      "true_composition": "Li4.8Sn4.8S12.0",
+      "family": "layered",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "r99",
+      "split": "validation",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/r99.cif",
+      "cif_sha256": "e09ce2a8d7f22bc77f0fc3aad12294a95ef6e5ab814f8b5fb1619925eb664ab1",
+      "reduced_composition": "La0.62 Li0.14(Mg0.5W0.5)O3",
+      "true_composition": "La2.48Li0.56Mg2.0W2.0O12.0",
+      "family": "perovskites",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "sib",
+      "split": "validation",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/sib.cif",
+      "cif_sha256": "92423b59cc7f0da9900b0303615e5f6e6b5777eda6b6f75079c4692921d7c56f",
+      "reduced_composition": "La0.63Li0.11(Mg0.5W0.5)O3",
+      "true_composition": "La2.52Li0.44Mg2.0W2.0O12.0",
+      "family": "perovskites",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "skm",
+      "split": "validation",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/skm.cif",
+      "cif_sha256": "76eb77945507fbe3b9d2e59c9cd60e4a1d74ed519656841cc2641ebb4d8632b7",
+      "reduced_composition": "Li5BiO5",
+      "true_composition": "Li10.0Bi2.0O10.0",
+      "family": "oxides",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "tjh",
+      "split": "validation",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/tjh.cif",
+      "cif_sha256": "ba123a7d591f5bd35d5f9535061085fcf7d7d5b1bd4c00d3ef952c4bb789af2a",
+      "reduced_composition": "Li1.7Al0.7Ge1.3(PO4)3",
+      "true_composition": "Li10.2Al4.2Ge7.8P18.0O72.0",
+      "family": "NASICON",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "u0c",
+      "split": "validation",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/u0c.cif",
+      "cif_sha256": "cb84beb6d13ddac4c24a22926bbfddb53bc39301486e42d6f198a7c15755fd9f",
+      "reduced_composition": "(Li0.826Mg0.174)(Li0.374Mg0.026Ti1.60)O4",
+      "true_composition": "Li9.6Mg1.6Ti12.8O32.0",
+      "family": "oxides",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "uut",
+      "split": "validation",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/uut.cif",
+      "cif_sha256": "46ce3fa5144f559372b98a6c15a169cd7b5039a3145c80a9ab15a608a4791a63",
+      "reduced_composition": "Li6P(S4.7Se0.3)Br",
+      "true_composition": "Li24.0P4.0S18.8Se1.2Br4.0",
+      "family": "argyrodites",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "vy5",
+      "split": "validation",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/vy5.cif",
+      "cif_sha256": "7aeaa22579dfe2d5a3c1b60bb110513678234bc4fd48b23013d20fc1c8a2da4e",
+      "reduced_composition": "(K0.1Li0.9)(SbO3)",
+      "true_composition": "K0.4Li3.6Sb4.0O12.0",
+      "family": "oxides",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "xz4",
+      "split": "validation",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/xz4.cif",
+      "cif_sha256": "49100d5b2e080210f9acf4d24103c5667b2e4681f412478ee294e5352cff8183",
+      "reduced_composition": "(Li0.5Ce0.5)(MoO4)",
+      "true_composition": "Li2.0Ce2.0Mo4.0O16.0",
+      "family": "molybdates",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "z2s",
+      "split": "validation",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/z2s.cif",
+      "cif_sha256": "f1063f125119fd31de0a5ff3285162888bd209a7d44c32bc83d3e7ddb2e6bc4e",
+      "reduced_composition": "Nd3Zr2Al0.5Li5.5O12",
+      "true_composition": "Nd24.0Zr16.0Al4.0Li44.0O96.0",
+      "family": "garnet",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    },
+    {
+      "id": "zxr",
+      "split": "validation",
+      "cif_path": "data/raw/obelix/extracted/all_randomized_cifs/zxr.cif",
+      "cif_sha256": "b42f2eebc3192909ce2d5191cbd470eab880bbccf20fb5a4d74921fc4f25e55b",
+      "reduced_composition": "Li6SrLa2Ta2O12",
+      "true_composition": "Li48.0Sr8.0La16.0Ta16.0O96.0",
+      "family": "garnet",
+      "inclusion_reason": "member of the frozen primary split (data/processed/v1/obelix_index.json) with an EXACT conductivity label, intersected with a locally available CIF under data/raw/obelix/extracted/all_randomized_cifs/ -- no CIF was downloaded, generated, or substituted to build this subset."
+    }
+  ],
+  "notes": "Read-only intersection of the frozen split and locally available CIFs; never re-picked by model score. test rows are listed here for provenance only and are not used in any fit/predict/tuning call in scripts/phase1_8_structure_signal.py."
+}

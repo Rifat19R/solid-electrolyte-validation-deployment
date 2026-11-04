@@ -1,0 +1,85 @@
+{
+  "n20_part": "D_nested_cv_provenance_timeline",
+  "reconstructed_from": "git log --date=iso-strict on branch npj-cross-dataset-extension",
+  "external_visibility_boundary": {
+    "commit": "312f0e5",
+    "meaning": "N6 is the one-shot moment Hargreaves external predictions/labels were first computed and became visible to the researcher. Every milestone above this commit in the table is BEFORE external visibility; every milestone below it is AFTER."
+  },
+  "milestones": [
+    {
+      "step": "N3_freeze_8model_ladder_hyperparameters",
+      "commit": "60585f8c09a7038f50707f24d65aaca360554b2e",
+      "date": "2026-09-21T14:43:23+06:00",
+      "message": "npj N3: build and freeze 8-model portable composition-only benchmark",
+      "note": "Each of the 8 portable composition-only models' hyperparameters tuned ONCE against OBELiX train(359)/validation(90), then frozen.",
+      "before_external_visibility": true
+    },
+    {
+      "step": "N4_original_internal_cv_LEAKY",
+      "commit": "229e5de79eeaf8183d687b7f6cdef46f8243d45a",
+      "date": "2026-09-21T15:21:40+06:00",
+      "message": "npj N4: internal validation regimes (random CV, Family-GroupKFold, LOMFO)",
+      "note": "Original internal-CV regimes (Random-5fold / Family-GroupKFold / LOMFO) computed by reusing N3's frozen hyperparameters across every outer fold. Later found (b926660) to carry an optimism bias, because the 90 validation rows that shaped the frozen hyperparameters later served as outer-test rows in these same regimes.",
+      "before_external_visibility": true
+    },
+    {
+      "step": "N5_pretest_lock",
+      "commit": "600c75c99bdbff35ef82ec6ef990fa82e440eddd",
+      "date": "2026-09-21T15:37:28+06:00",
+      "message": "npj N5: pre-external lock, freeze full protocol before Hargreaves evaluation",
+      "note": "Internally hash-locked protocol (artifacts/npj_pretest_lock.json: local SHA-256 hashes of frozen inputs + written pre-specified N6-N10 protocol, committed to this private branch). NOT a public timestamped preregistration -- no OSF/DOI/public tag exists for this project; describing it as 'pre-registered' would overclaim. Locks in the leaky N4 numbers as the frozen internal-CV input at this point in time.",
+      "before_external_visibility": true
+    },
+    {
+      "step": "N6_one_shot_external_transfer_TO_HARGREAVES",
+      "commit": "312f0e5057eed18a4eccfff242a03c05bf682f14",
+      "date": "2026-09-21T16:21:16+06:00",
+      "message": "npj N6: one-shot external transfer to Hargreaves conductivity (run_count=1)",
+      "note": "One-shot (run_count=1) external inference on the 204-row strict Hargreaves cohort, using N3's frozen hyperparameters directly -- does NOT depend on N4's CV numbers at all, so N4's later-discovered leakage does not affect N6's predictions themselves. This is the moment external results became visible.",
+      "before_external_visibility": "THIS_IS_THE_BOUNDARY"
+    },
+    {
+      "step": "N7_regime_utility_comparison_USING_LEAKY_N4",
+      "commit": "a273091857c08b3f6e68ba9dcefe5577d5934c60",
+      "date": "2026-09-21T16:33:21+06:00",
+      "message": "npj N7: validation-regime utility comparison (H1/H2 both NOT SUPPORTED)",
+      "note": "H1/H2 NOT SUPPORTED, computed against N4's original (leaky) internal numbers.",
+      "before_external_visibility": false
+    },
+    {
+      "step": "N10_go_no_go_NPJ_GO_USING_LEAKY_N4",
+      "commit": "c73bebbda92a1ac960790eb9fe155a022869e07a",
+      "date": "2026-09-21T17:21:25+06:00",
+      "message": "npj N10: GO/NO-GO decision \u2014 NPJ-GO (with a genuine H1/H2 negative result)",
+      "note": "GO/NO-GO verdict NPJ-GO, still on N4's pre-fix numbers.",
+      "before_external_visibility": false
+    },
+    {
+      "step": "N11_N13_manuscript_and_audit_drafted_USING_LEAKY_N4",
+      "commit": "1a4bf3b..7eb7f80",
+      "date": "2026-09-21T20:01:14+06:00..2026-09-21T20:31:15+06:00",
+      "message": "Manuscript draft (N11), four-layer audit (N12), final status (N13)",
+      "note": "Full manuscript and an independent four-layer audit were completed BEFORE the internal-CV leakage defect was discovered.",
+      "before_external_visibility": false
+    },
+    {
+      "step": "DISCOVERY_AND_FIX_internal_cv_hyperparameter_leakage",
+      "commit": "b926660db5985725714de638b0b5c03d898e5356",
+      "date": "2026-09-22T01:56:45+06:00",
+      "message": "npj remediation: fix internal-CV hyperparameter leakage, reconcile 403 vs 422, correct manuscript overclaims",
+      "note": "N4b nested-CV recompute (hyperparameters now tuned per outer fold on an inner split of that fold's OWN outer-train partition only) fixes the optimism bias. N7b recomputes H1/H2 against N4b -- N6 was NOT rerun. H1/H2 conclusions and the NPJ-GO verdict are UNCHANGED after the fix. Also: manuscript language corrected from 'pre-registered' to 'pre-specified, hash-locked'; N1b reconciles a 403-vs-422 RT-window discrepancy; N2b adds the 25% source-overlap finding.",
+      "before_external_visibility": false
+    },
+    {
+      "step": "N9b_six_model_stable_sensitivity_recomputed_against_N4b",
+      "commit": "58931820f2bde61834b4a8c3e39687243a24078e",
+      "date": "2026-09-22T18:11:00+06:00",
+      "message": "npj N9b: relaxed-cohort H1/H2 sensitivity recomputed against N4b nested numbers",
+      "note": "6-model stable-architecture H1/H2 sensitivity, recomputed against the corrected N4b numbers (current branch HEAD).",
+      "before_external_visibility": false
+    }
+  ],
+  "key_finding": "The internal-CV hyperparameter-leakage defect (fixed in b926660) was discovered and fixed ~10.5 hours AFTER N6's external predictions were generated (312f0e5), and AFTER the GO/NO-GO decision (c73bebb), a full manuscript draft (N11), and a prior four-layer audit (N12) had already been completed using the leaky N4 numbers. N6's external predictions do not depend on N4's CV output and were NOT rerun; every claim that COMPARED internal-CV MAE to external MAE (H1/H2, regime-utility, GO/NO-GO) WAS recomputed post-fix (N4b/N7b) with an unchanged qualitative verdict.",
+  "preregistration_status": "artifacts/npj_pretest_lock.json is a purely INTERNAL, local git-committed SHA-256 hash lock plus written protocol text on a private branch -- there is no public timestamped registration (no OSF entry, no DOI, no pushed tag on a public remote). Accurate language: 'internally hash-locked protocol' / 'pre-specified internal protocol', never 'pre-registered' or 'publicly preregistered'. The b926660 commit already corrected the manuscript's own language to this effect; this timeline uses the same accurate framing throughout.",
+  "uncommitted_working_tree_note": "N15 through N19 (7 post-review sensitivity analyses, manuscript/SI rebuild, DOCX submission package, a citation fix, and a forensic NN-distance check) were performed in later sessions on top of HEAD 5893182 but were never committed -- they exist only as working-tree files (modified/untracked) at the time this reviewer-remediation pass (N20) began. None of them reran N6 external inference or reopened the frozen 113-row OBELiX test split."
+}

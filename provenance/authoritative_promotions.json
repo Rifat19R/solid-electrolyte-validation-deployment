@@ -1,0 +1,30 @@
+{
+ "description": "Authoritative artifacts replaced after the 2026-11-01 rerun showed that the corrective-01 run had read pre-correction inputs for specific fields. Only the listed fields changed (see reports/rerun/rerun_comparison.md); no protected headline value changed. Previous bytes are archived, NON-AUTHORITATIVE.",
+ "date": "2026-11-01",
+ "promotions": [
+  {
+   "file": "artifacts/authoritative/issue04_size_matched_control_corrected.json",
+   "previous_sha256": "398ebb1037903f6438b1d99613bd3a400e01fbe499ac606bfe5a607b9f32d3c1",
+   "previous_archived_as": "artifacts/historical/corrective01_stale_inputs/issue04_size_matched_control_corrected.json",
+   "new_sha256": "6a1fd9846527f32b4f990d701102cbec2ee6ad21d7ab37177a142282c755a987",
+   "produced_by": "python scripts/release/rerun_pipeline.py --stage aggregate (inputs: artifacts/authoritative)",
+   "reason": "regime A/B reference pooled MAE for the pooled elemental-property model were read from the pre-correction n4b (N4B_ARTIFACT not repointed in the corrective run); control fits themselves unchanged"
+  },
+  {
+   "file": "artifacts/authoritative/issue06_doi_cluster_bootstrap_corrected.json",
+   "previous_sha256": "4641ff58f42b650c5da76e5055aefcc6f65fb28c41ed944df583240f949b844b",
+   "previous_archived_as": "artifacts/historical/corrective01_stale_inputs/issue06_doi_cluster_bootstrap_corrected.json",
+   "new_sha256": "4c723d75fdda9b70c3f07dea819ae20ee8bf6979275dbf0f9e442147a21e80a7",
+   "produced_by": "python scripts/release/rerun_pipeline.py --stage aggregate (inputs: artifacts/authoritative)",
+   "reason": "row-level reference CIs (pairwise_bootstrap_ci_row_level_reference) were read from the pre-correction n7b via an inline path; cluster-level results unchanged"
+  },
+  {
+   "file": "artifacts/authoritative/phase1_factual_fixes_corrected.json",
+   "previous_sha256": "ef83a3fcaef8b951f5cbda9c525e75efbcdbba7c10895ddfe86b0f11f172003d",
+   "previous_archived_as": "artifacts/historical/corrective01_stale_inputs/phase1_factual_fixes_corrected.json",
+   "new_sha256": "0fde679269443f3de976164efdb61a829522eeddb5c46315361ebfacc85da265",
+   "produced_by": "python scripts/release/rerun_pipeline.py --stage aggregate (inputs: artifacts/authoritative)",
+   "reason": "item4 B/C pairwise CIs copied from pre-correction n7b (N7B_PATH not repointed) and item1 SEEN-family pooled-model MAE read from pre-correction glass split; item3 and item4 D-minus-A unchanged"
+  }
+ ]
+}

@@ -1,0 +1,2086 @@
+[
+ {
+  "record": "artifacts/authoritative/issue03_common_support_lomfo_corrected.json",
+  "rerun": "artifacts/rerun/issue03_common_support_lomfo_corrected.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [
+   "/git_commit",
+   "/n4b_source",
+   "/n6_source",
+   "/spec_path"
+  ],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ },
+ {
+  "record": "artifacts/authoritative/issue04_size_matched_control_corrected.json",
+  "rerun": "artifacts/rerun/issue04_size_matched_control_corrected.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ },
+ {
+  "record": "artifacts/authoritative/issue05_fold_local_shift_distance.json",
+  "rerun": "artifacts/rerun/issue05_fold_local_shift_distance.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [
+   "/git_branch",
+   "/git_commit",
+   "/n21e_source",
+   "/spec_path"
+  ],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ },
+ {
+  "record": "artifacts/authoritative/issue06_doi_cluster_bootstrap_corrected.json",
+  "rerun": "artifacts/rerun/issue06_doi_cluster_bootstrap_corrected.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ },
+ {
+  "record": "artifacts/authoritative/issue08b_chemical_system_groupkfold_corrected.json",
+  "rerun": "artifacts/rerun/issue08b_chemical_system_groupkfold_corrected.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [
+   "/git_commit",
+   "/spec_path"
+  ],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ },
+ {
+  "record": "artifacts/authoritative/issue08b_regime_utility_corrected.json",
+  "rerun": "artifacts/rerun/issue08b_regime_utility_corrected.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [
+   "/git_commit",
+   "/spec_path"
+  ],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ },
+ {
+  "record": "artifacts/authoritative/issue09a_missing_family_excluded_corrected.json",
+  "rerun": "artifacts/rerun/issue09a_missing_family_excluded_corrected.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [
+   "/git_commit",
+   "/n4b_source",
+   "/spec_path"
+  ],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ },
+ {
+  "record": "artifacts/authoritative/issue09b_missing_singleton_groupkfold_corrected.json",
+  "rerun": "artifacts/rerun/issue09b_missing_singleton_groupkfold_corrected.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [
+   "/corrective_note",
+   "/git_commit",
+   "/historical_spec_path",
+   "/phase",
+   "/spec_path"
+  ],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ },
+ {
+  "record": "artifacts/authoritative/issue09b_regime_utility_corrected.json",
+  "rerun": "artifacts/rerun/issue09b_regime_utility_corrected.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [
+   "/git_commit",
+   "/spec_path"
+  ],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ },
+ {
+  "record": "artifacts/authoritative/issue10_formula_balanced_sensitivity_corrected.json",
+  "rerun": "artifacts/rerun/issue10_formula_balanced_sensitivity_corrected.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [
+   "/git_commit",
+   "/historical_spec_path",
+   "/n6_source",
+   "/spec_path",
+   "/strict_cohort_source"
+  ],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ },
+ {
+  "record": "artifacts/authoritative/model_ladder_corrected.json",
+  "rerun": "artifacts/rerun/model_ladder_corrected.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [
+   "/corrective01_note",
+   "/git_commit_at_corrective_rerun",
+   "/models/pretrained_element_embedding/corrective_note"
+  ],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ },
+ {
+  "record": "artifacts/authoritative/n15_artifacts/n15_ad_aurc.json",
+  "rerun": "artifacts/rerun/n15_artifacts/n15_ad_aurc.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [
+   "/git_commit",
+   "/n4b_source",
+   "/n6_source",
+   "/spec_file"
+  ],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ },
+ {
+  "record": "artifacts/authoritative/n15_artifacts/n15_baseline_variability.json",
+  "rerun": "artifacts/rerun/n15_artifacts/n15_baseline_variability.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [
+   "/git_commit",
+   "/n4b_source",
+   "/n6_source",
+   "/spec_file"
+  ],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ },
+ {
+  "record": "artifacts/authoritative/n15_artifacts/n15_deployment_shift.json",
+  "rerun": "artifacts/rerun/n15_artifacts/n15_deployment_shift.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [
+   "/git_commit",
+   "/n4b_source",
+   "/n6_source",
+   "/spec_file"
+  ],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ },
+ {
+  "record": "artifacts/authoritative/n15_artifacts/n15_external_uncertainty.json",
+  "rerun": "artifacts/rerun/n15_artifacts/n15_external_uncertainty.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [
+   "/git_commit",
+   "/n4b_source",
+   "/n6_source",
+   "/spec_file"
+  ],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ },
+ {
+  "record": "artifacts/authoritative/n15_artifacts/n15_source_disjoint.json",
+  "rerun": "artifacts/rerun/n15_artifacts/n15_source_disjoint.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [
+   "/git_commit",
+   "/n2b_comparison/note",
+   "/n4b_source",
+   "/n6_source",
+   "/spec_file"
+  ],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ },
+ {
+  "record": "artifacts/authoritative/n15_artifacts/n15_stable_model_sensitivity.json",
+  "rerun": "artifacts/rerun/n15_artifacts/n15_stable_model_sensitivity.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [
+   "/git_commit",
+   "/n4b_source",
+   "/n6_source",
+   "/spec_file"
+  ],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ },
+ {
+  "record": "artifacts/authoritative/n15_artifacts/n15_summary.json",
+  "rerun": "artifacts/rerun/n15_artifacts/n15_summary.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [
+   "/git_commit",
+   "/n4b_source",
+   "/n6_source",
+   "/spec_file"
+  ],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ },
+ {
+  "record": "artifacts/authoritative/n15_artifacts/n15_temperature_sensitivity.json",
+  "rerun": "artifacts/rerun/n15_artifacts/n15_temperature_sensitivity.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [
+   "/git_commit",
+   "/n4b_source",
+   "/n6_source",
+   "/spec_file"
+  ],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ },
+ {
+  "record": "artifacts/authoritative/n18_nn_distance_forensic.json",
+  "rerun": "artifacts/rerun/n18_nn_distance_forensic.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ },
+ {
+  "record": "artifacts/authoritative/n20_artifacts/reviewer_family_audit.json",
+  "rerun": "artifacts/rerun/n20_artifacts/reviewer_family_audit.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [
+   "/git_commit"
+  ],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ },
+ {
+  "record": "artifacts/authoritative/n20_artifacts/reviewer_formula_duplicate_audit.json",
+  "rerun": "artifacts/rerun/n20_artifacts/reviewer_formula_duplicate_audit.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [
+   "/formula_group_kfold_diagnostic_result/artifact_path",
+   "/git_commit"
+  ],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ },
+ {
+  "record": "artifacts/authoritative/n20_artifacts/reviewer_label_compatibility.json",
+  "rerun": "artifacts/rerun/n20_artifacts/reviewer_label_compatibility.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [
+   "/git_commit",
+   "/hargreaves_metadata_fields/temperature_field"
+  ],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ },
+ {
+  "record": "artifacts/authoritative/n20_artifacts/reviewer_provenance_timeline.json",
+  "rerun": "artifacts/rerun/n20_artifacts/reviewer_provenance_timeline.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [
+   "/milestones[2]/note",
+   "/preregistration_status"
+  ],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ },
+ {
+  "record": "artifacts/authoritative/n20b_formula_group_kfold_corrected.json",
+  "rerun": "artifacts/rerun/n20b_formula_group_kfold_corrected.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [
+   "/git_commit"
+  ],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ },
+ {
+  "record": "artifacts/authoritative/n21_repeated_cv_sensitivity_corrected.json",
+  "rerun": "artifacts/rerun/n21_repeated_cv_sensitivity_corrected.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [
+   "/git_commit",
+   "/n4b_source",
+   "/n6_source"
+  ],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ },
+ {
+  "record": "artifacts/authoritative/n21c_primary_external_context_corrected.json",
+  "rerun": "artifacts/rerun/n21c_primary_external_context_corrected.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [
+   "/git_commit",
+   "/n6_source"
+  ],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ },
+ {
+  "record": "artifacts/authoritative/n21d_ad_benchmark_closure_corrected.json",
+  "rerun": "artifacts/rerun/n21d_ad_benchmark_closure_corrected.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [
+   "/family_audit_source",
+   "/git_commit",
+   "/n6_source"
+  ],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ },
+ {
+  "record": "artifacts/authoritative/n21e_robust_shift_distance.json",
+  "rerun": "artifacts/rerun/n21e_robust_shift_distance.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [
+   "/git_branch",
+   "/git_commit",
+   "/n15_source",
+   "/n18_source"
+  ],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ },
+ {
+  "record": "artifacts/authoritative/n4b_nested_internal_validation_corrected.json",
+  "rerun": "artifacts/rerun/n4b_nested_internal_validation_corrected.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [
+   "/git_commit",
+   "/supersedes"
+  ],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ },
+ {
+  "record": "artifacts/authoritative/n6_external_transfer_corrected.json",
+  "rerun": "artifacts/rerun/n6_external_transfer_corrected.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [
+   "/git_commit",
+   "/lock_file",
+   "/note"
+  ],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ },
+ {
+  "record": "artifacts/authoritative/n7b_regime_utility_nested_corrected.json",
+  "rerun": "artifacts/rerun/n7b_regime_utility_nested_corrected.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [
+   "/git_commit",
+   "/n4b_source",
+   "/n6_source",
+   "/supersedes"
+  ],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ },
+ {
+  "record": "artifacts/authoritative/n8_applicability_domain_corrected.json",
+  "rerun": "artifacts/rerun/n8_applicability_domain_corrected.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [
+   "/git_commit"
+  ],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ },
+ {
+  "record": "artifacts/authoritative/n9b_relaxed_sensitivity_nested_corrected.json",
+  "rerun": "artifacts/rerun/n9b_relaxed_sensitivity_nested_corrected.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [
+   "/git_commit",
+   "/n4b_source",
+   "/n6_source",
+   "/supersedes"
+  ],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ },
+ {
+  "record": "artifacts/authoritative/phase1_factual_fixes_corrected.json",
+  "rerun": "artifacts/rerun/phase1_factual_fixes_corrected.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ },
+ {
+  "record": "artifacts/authoritative/phase1_glass_split_corrected.json",
+  "rerun": "artifacts/rerun/phase1_glass_split_corrected.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [
+   "/git_commit",
+   "/predeclared_spec_sha256"
+  ],
+  "max_abs_numeric_diff": 8.881784197001252e-16,
+  "status": "EQUAL_WITHIN_1e-9"
+ },
+ {
+  "record": "artifacts/authoritative/phase1_predeclared_corrected.json",
+  "rerun": "artifacts/rerun/phase1_predeclared_corrected.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [
+   "/frozen_inputs/reviewer_family_audit_sha256",
+   "/git_commit"
+  ],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ },
+ {
+  "record": "artifacts/authoritative/phase2_glass_subset_regime_cis_corrected.json",
+  "rerun": "artifacts/rerun/phase2_glass_subset_regime_cis_corrected.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [
+   "/git_commit",
+   "/provenance"
+  ],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ },
+ {
+  "record": "artifacts/authoritative/phase2_label_compat_dev_only_full.json",
+  "rerun": "artifacts/rerun/phase2_label_compat_dev_only_full.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [
+   "/aggregate/mae_bootstrap_ci/n_finite",
+   "/aggregate/spearman_bootstrap_ci/n_finite",
+   "/git_commit"
+  ],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ },
+ {
+  "record": "artifacts/fragments/issue04/catboost__seed20260930.json",
+  "rerun": "artifacts/rerun/fragments/issue04/catboost__seed20260930.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [
+   "/runtime_seconds"
+  ],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ },
+ {
+  "record": "artifacts/fragments/issue04/catboost__seed20260931.json",
+  "rerun": "artifacts/rerun/fragments/issue04/catboost__seed20260931.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [
+   "/runtime_seconds"
+  ],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ },
+ {
+  "record": "artifacts/fragments/issue04/catboost__seed20260932.json",
+  "rerun": "artifacts/rerun/fragments/issue04/catboost__seed20260932.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [
+   "/runtime_seconds"
+  ],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ },
+ {
+  "record": "artifacts/fragments/issue04/composition_attention__seed20260930.json",
+  "rerun": "artifacts/rerun/fragments/issue04/composition_attention__seed20260930.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [
+   "/runtime_seconds"
+  ],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ },
+ {
+  "record": "artifacts/fragments/issue04/composition_attention__seed20260931.json",
+  "rerun": "artifacts/rerun/fragments/issue04/composition_attention__seed20260931.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [
+   "/runtime_seconds"
+  ],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ },
+ {
+  "record": "artifacts/fragments/issue04/composition_attention__seed20260932.json",
+  "rerun": "artifacts/rerun/fragments/issue04/composition_attention__seed20260932.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [
+   "/runtime_seconds"
+  ],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ },
+ {
+  "record": "artifacts/fragments/issue04/extra_trees__seed20260930.json",
+  "rerun": "artifacts/rerun/fragments/issue04/extra_trees__seed20260930.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [
+   "/runtime_seconds"
+  ],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ },
+ {
+  "record": "artifacts/fragments/issue04/extra_trees__seed20260931.json",
+  "rerun": "artifacts/rerun/fragments/issue04/extra_trees__seed20260931.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [
+   "/runtime_seconds"
+  ],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ },
+ {
+  "record": "artifacts/fragments/issue04/extra_trees__seed20260932.json",
+  "rerun": "artifacts/rerun/fragments/issue04/extra_trees__seed20260932.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [
+   "/runtime_seconds"
+  ],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ },
+ {
+  "record": "artifacts/fragments/issue04/pretrained_element_embedding__seed20260930.json",
+  "rerun": "artifacts/rerun/fragments/issue04/pretrained_element_embedding__seed20260930.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [
+   "/runtime_seconds"
+  ],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ },
+ {
+  "record": "artifacts/fragments/issue04/pretrained_element_embedding__seed20260931.json",
+  "rerun": "artifacts/rerun/fragments/issue04/pretrained_element_embedding__seed20260931.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [
+   "/runtime_seconds"
+  ],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ },
+ {
+  "record": "artifacts/fragments/issue04/pretrained_element_embedding__seed20260932.json",
+  "rerun": "artifacts/rerun/fragments/issue04/pretrained_element_embedding__seed20260932.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [
+   "/runtime_seconds"
+  ],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ },
+ {
+  "record": "artifacts/fragments/issue04/random_forest__seed20260930.json",
+  "rerun": "artifacts/rerun/fragments/issue04/random_forest__seed20260930.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [
+   "/runtime_seconds"
+  ],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ },
+ {
+  "record": "artifacts/fragments/issue04/random_forest__seed20260931.json",
+  "rerun": "artifacts/rerun/fragments/issue04/random_forest__seed20260931.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [
+   "/runtime_seconds"
+  ],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ },
+ {
+  "record": "artifacts/fragments/issue04/random_forest__seed20260932.json",
+  "rerun": "artifacts/rerun/fragments/issue04/random_forest__seed20260932.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [
+   "/runtime_seconds"
+  ],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ },
+ {
+  "record": "artifacts/fragments/issue04/ridge__seed20260930.json",
+  "rerun": "artifacts/rerun/fragments/issue04/ridge__seed20260930.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [
+   "/runtime_seconds"
+  ],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ },
+ {
+  "record": "artifacts/fragments/issue04/ridge__seed20260931.json",
+  "rerun": "artifacts/rerun/fragments/issue04/ridge__seed20260931.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [
+   "/runtime_seconds"
+  ],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ },
+ {
+  "record": "artifacts/fragments/issue04/ridge__seed20260932.json",
+  "rerun": "artifacts/rerun/fragments/issue04/ridge__seed20260932.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [
+   "/runtime_seconds"
+  ],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ },
+ {
+  "record": "artifacts/fragments/issue04/shallow_mlp__seed20260930.json",
+  "rerun": "artifacts/rerun/fragments/issue04/shallow_mlp__seed20260930.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [
+   "/runtime_seconds"
+  ],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ },
+ {
+  "record": "artifacts/fragments/issue04/shallow_mlp__seed20260931.json",
+  "rerun": "artifacts/rerun/fragments/issue04/shallow_mlp__seed20260931.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [
+   "/runtime_seconds"
+  ],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ },
+ {
+  "record": "artifacts/fragments/issue04/shallow_mlp__seed20260932.json",
+  "rerun": "artifacts/rerun/fragments/issue04/shallow_mlp__seed20260932.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [
+   "/runtime_seconds"
+  ],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ },
+ {
+  "record": "artifacts/fragments/issue04/xgboost__seed20260930.json",
+  "rerun": "artifacts/rerun/fragments/issue04/xgboost__seed20260930.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [
+   "/runtime_seconds"
+  ],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ },
+ {
+  "record": "artifacts/fragments/issue04/xgboost__seed20260931.json",
+  "rerun": "artifacts/rerun/fragments/issue04/xgboost__seed20260931.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [
+   "/runtime_seconds"
+  ],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ },
+ {
+  "record": "artifacts/fragments/issue04/xgboost__seed20260932.json",
+  "rerun": "artifacts/rerun/fragments/issue04/xgboost__seed20260932.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [
+   "/runtime_seconds"
+  ],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ },
+ {
+  "record": "artifacts/fragments/issue08b/catboost.json",
+  "rerun": "artifacts/rerun/fragments/issue08b/catboost.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [
+   "/runtime_seconds"
+  ],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ },
+ {
+  "record": "artifacts/fragments/issue08b/composition_attention.json",
+  "rerun": "artifacts/rerun/fragments/issue08b/composition_attention.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [
+   "/runtime_seconds"
+  ],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ },
+ {
+  "record": "artifacts/fragments/issue08b/extra_trees.json",
+  "rerun": "artifacts/rerun/fragments/issue08b/extra_trees.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [
+   "/runtime_seconds"
+  ],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ },
+ {
+  "record": "artifacts/fragments/issue08b/pretrained_element_embedding.json",
+  "rerun": "artifacts/rerun/fragments/issue08b/pretrained_element_embedding.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [
+   "/runtime_seconds"
+  ],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ },
+ {
+  "record": "artifacts/fragments/issue08b/random_forest.json",
+  "rerun": "artifacts/rerun/fragments/issue08b/random_forest.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [
+   "/runtime_seconds"
+  ],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ },
+ {
+  "record": "artifacts/fragments/issue08b/ridge.json",
+  "rerun": "artifacts/rerun/fragments/issue08b/ridge.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [
+   "/runtime_seconds"
+  ],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ },
+ {
+  "record": "artifacts/fragments/issue08b/shallow_mlp.json",
+  "rerun": "artifacts/rerun/fragments/issue08b/shallow_mlp.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [
+   "/runtime_seconds"
+  ],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ },
+ {
+  "record": "artifacts/fragments/issue08b/xgboost.json",
+  "rerun": "artifacts/rerun/fragments/issue08b/xgboost.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [
+   "/runtime_seconds"
+  ],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ },
+ {
+  "record": "artifacts/fragments/issue09b/catboost.json",
+  "rerun": "artifacts/rerun/fragments/issue09b/catboost.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [
+   "/runtime_seconds"
+  ],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ },
+ {
+  "record": "artifacts/fragments/issue09b/composition_attention.json",
+  "rerun": "artifacts/rerun/fragments/issue09b/composition_attention.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [
+   "/runtime_seconds"
+  ],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ },
+ {
+  "record": "artifacts/fragments/issue09b/extra_trees.json",
+  "rerun": "artifacts/rerun/fragments/issue09b/extra_trees.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [
+   "/runtime_seconds"
+  ],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ },
+ {
+  "record": "artifacts/fragments/issue09b/pretrained_element_embedding.json",
+  "rerun": "artifacts/rerun/fragments/issue09b/pretrained_element_embedding.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [
+   "/runtime_seconds"
+  ],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ },
+ {
+  "record": "artifacts/fragments/issue09b/random_forest.json",
+  "rerun": "artifacts/rerun/fragments/issue09b/random_forest.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [
+   "/runtime_seconds"
+  ],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ },
+ {
+  "record": "artifacts/fragments/issue09b/ridge.json",
+  "rerun": "artifacts/rerun/fragments/issue09b/ridge.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [
+   "/runtime_seconds"
+  ],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ },
+ {
+  "record": "artifacts/fragments/issue09b/shallow_mlp.json",
+  "rerun": "artifacts/rerun/fragments/issue09b/shallow_mlp.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [
+   "/runtime_seconds"
+  ],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ },
+ {
+  "record": "artifacts/fragments/issue09b/xgboost.json",
+  "rerun": "artifacts/rerun/fragments/issue09b/xgboost.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [
+   "/runtime_seconds"
+  ],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ },
+ {
+  "record": "artifacts/fragments/n20b/catboost.json",
+  "rerun": "artifacts/rerun/fragments/n20b/catboost.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [
+   "/formula_group_kfold/note",
+   "/runtime_seconds"
+  ],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ },
+ {
+  "record": "artifacts/fragments/n20b/composition_attention.json",
+  "rerun": "artifacts/rerun/fragments/n20b/composition_attention.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [
+   "/formula_group_kfold/note",
+   "/runtime_seconds"
+  ],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ },
+ {
+  "record": "artifacts/fragments/n20b/extra_trees.json",
+  "rerun": "artifacts/rerun/fragments/n20b/extra_trees.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [
+   "/formula_group_kfold/note",
+   "/runtime_seconds"
+  ],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ },
+ {
+  "record": "artifacts/fragments/n20b/pretrained_element_embedding.json",
+  "rerun": "artifacts/rerun/fragments/n20b/pretrained_element_embedding.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [
+   "/formula_group_kfold/note",
+   "/runtime_seconds"
+  ],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ },
+ {
+  "record": "artifacts/fragments/n20b/random_forest.json",
+  "rerun": "artifacts/rerun/fragments/n20b/random_forest.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [
+   "/formula_group_kfold/note",
+   "/runtime_seconds"
+  ],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ },
+ {
+  "record": "artifacts/fragments/n20b/ridge.json",
+  "rerun": "artifacts/rerun/fragments/n20b/ridge.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [
+   "/formula_group_kfold/note",
+   "/runtime_seconds"
+  ],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ },
+ {
+  "record": "artifacts/fragments/n20b/shallow_mlp.json",
+  "rerun": "artifacts/rerun/fragments/n20b/shallow_mlp.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [
+   "/formula_group_kfold/note",
+   "/runtime_seconds"
+  ],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ },
+ {
+  "record": "artifacts/fragments/n20b/xgboost.json",
+  "rerun": "artifacts/rerun/fragments/n20b/xgboost.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [
+   "/formula_group_kfold/note",
+   "/runtime_seconds"
+  ],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ },
+ {
+  "record": "artifacts/fragments/n21/seed20260921_catboost.json",
+  "rerun": "artifacts/rerun/fragments/n21/seed20260921_catboost.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [
+   "/runtime_seconds"
+  ],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ },
+ {
+  "record": "artifacts/fragments/n21/seed20260921_composition_attention.json",
+  "rerun": "artifacts/rerun/fragments/n21/seed20260921_composition_attention.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [
+   "/runtime_seconds"
+  ],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ },
+ {
+  "record": "artifacts/fragments/n21/seed20260921_extra_trees.json",
+  "rerun": "artifacts/rerun/fragments/n21/seed20260921_extra_trees.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [
+   "/runtime_seconds"
+  ],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ },
+ {
+  "record": "artifacts/fragments/n21/seed20260921_pretrained_element_embedding.json",
+  "rerun": "artifacts/rerun/fragments/n21/seed20260921_pretrained_element_embedding.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [
+   "/runtime_seconds"
+  ],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ },
+ {
+  "record": "artifacts/fragments/n21/seed20260921_random_forest.json",
+  "rerun": "artifacts/rerun/fragments/n21/seed20260921_random_forest.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [
+   "/runtime_seconds"
+  ],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ },
+ {
+  "record": "artifacts/fragments/n21/seed20260921_ridge.json",
+  "rerun": "artifacts/rerun/fragments/n21/seed20260921_ridge.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [
+   "/runtime_seconds"
+  ],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ },
+ {
+  "record": "artifacts/fragments/n21/seed20260921_shallow_mlp.json",
+  "rerun": "artifacts/rerun/fragments/n21/seed20260921_shallow_mlp.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [
+   "/runtime_seconds"
+  ],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ },
+ {
+  "record": "artifacts/fragments/n21/seed20260921_xgboost.json",
+  "rerun": "artifacts/rerun/fragments/n21/seed20260921_xgboost.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [
+   "/runtime_seconds"
+  ],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ },
+ {
+  "record": "artifacts/fragments/n21/seed20260922_catboost.json",
+  "rerun": "artifacts/rerun/fragments/n21/seed20260922_catboost.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [
+   "/runtime_seconds"
+  ],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ },
+ {
+  "record": "artifacts/fragments/n21/seed20260922_composition_attention.json",
+  "rerun": "artifacts/rerun/fragments/n21/seed20260922_composition_attention.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [
+   "/runtime_seconds"
+  ],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ },
+ {
+  "record": "artifacts/fragments/n21/seed20260922_extra_trees.json",
+  "rerun": "artifacts/rerun/fragments/n21/seed20260922_extra_trees.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [
+   "/runtime_seconds"
+  ],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ },
+ {
+  "record": "artifacts/fragments/n21/seed20260922_pretrained_element_embedding.json",
+  "rerun": "artifacts/rerun/fragments/n21/seed20260922_pretrained_element_embedding.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [
+   "/runtime_seconds"
+  ],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ },
+ {
+  "record": "artifacts/fragments/n21/seed20260922_random_forest.json",
+  "rerun": "artifacts/rerun/fragments/n21/seed20260922_random_forest.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [
+   "/runtime_seconds"
+  ],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ },
+ {
+  "record": "artifacts/fragments/n21/seed20260922_ridge.json",
+  "rerun": "artifacts/rerun/fragments/n21/seed20260922_ridge.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [
+   "/runtime_seconds"
+  ],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ },
+ {
+  "record": "artifacts/fragments/n21/seed20260922_shallow_mlp.json",
+  "rerun": "artifacts/rerun/fragments/n21/seed20260922_shallow_mlp.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [
+   "/runtime_seconds"
+  ],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ },
+ {
+  "record": "artifacts/fragments/n21/seed20260922_xgboost.json",
+  "rerun": "artifacts/rerun/fragments/n21/seed20260922_xgboost.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [
+   "/runtime_seconds"
+  ],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ },
+ {
+  "record": "artifacts/fragments/n21/seed20260923_catboost.json",
+  "rerun": "artifacts/rerun/fragments/n21/seed20260923_catboost.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [
+   "/runtime_seconds"
+  ],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ },
+ {
+  "record": "artifacts/fragments/n21/seed20260923_composition_attention.json",
+  "rerun": "artifacts/rerun/fragments/n21/seed20260923_composition_attention.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [
+   "/runtime_seconds"
+  ],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ },
+ {
+  "record": "artifacts/fragments/n21/seed20260923_extra_trees.json",
+  "rerun": "artifacts/rerun/fragments/n21/seed20260923_extra_trees.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [
+   "/runtime_seconds"
+  ],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ },
+ {
+  "record": "artifacts/fragments/n21/seed20260923_pretrained_element_embedding.json",
+  "rerun": "artifacts/rerun/fragments/n21/seed20260923_pretrained_element_embedding.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [
+   "/runtime_seconds"
+  ],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ },
+ {
+  "record": "artifacts/fragments/n21/seed20260923_random_forest.json",
+  "rerun": "artifacts/rerun/fragments/n21/seed20260923_random_forest.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [
+   "/runtime_seconds"
+  ],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ },
+ {
+  "record": "artifacts/fragments/n21/seed20260923_ridge.json",
+  "rerun": "artifacts/rerun/fragments/n21/seed20260923_ridge.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [
+   "/runtime_seconds"
+  ],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ },
+ {
+  "record": "artifacts/fragments/n21/seed20260923_shallow_mlp.json",
+  "rerun": "artifacts/rerun/fragments/n21/seed20260923_shallow_mlp.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [
+   "/runtime_seconds"
+  ],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ },
+ {
+  "record": "artifacts/fragments/n21/seed20260923_xgboost.json",
+  "rerun": "artifacts/rerun/fragments/n21/seed20260923_xgboost.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [
+   "/runtime_seconds"
+  ],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ },
+ {
+  "record": "artifacts/fragments/n21/seed20260924_catboost.json",
+  "rerun": "artifacts/rerun/fragments/n21/seed20260924_catboost.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [
+   "/runtime_seconds"
+  ],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ },
+ {
+  "record": "artifacts/fragments/n21/seed20260924_composition_attention.json",
+  "rerun": "artifacts/rerun/fragments/n21/seed20260924_composition_attention.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [
+   "/runtime_seconds"
+  ],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ },
+ {
+  "record": "artifacts/fragments/n21/seed20260924_extra_trees.json",
+  "rerun": "artifacts/rerun/fragments/n21/seed20260924_extra_trees.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [
+   "/runtime_seconds"
+  ],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ },
+ {
+  "record": "artifacts/fragments/n21/seed20260924_pretrained_element_embedding.json",
+  "rerun": "artifacts/rerun/fragments/n21/seed20260924_pretrained_element_embedding.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [
+   "/runtime_seconds"
+  ],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ },
+ {
+  "record": "artifacts/fragments/n21/seed20260924_random_forest.json",
+  "rerun": "artifacts/rerun/fragments/n21/seed20260924_random_forest.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [
+   "/runtime_seconds"
+  ],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ },
+ {
+  "record": "artifacts/fragments/n21/seed20260924_ridge.json",
+  "rerun": "artifacts/rerun/fragments/n21/seed20260924_ridge.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [
+   "/runtime_seconds"
+  ],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ },
+ {
+  "record": "artifacts/fragments/n21/seed20260924_shallow_mlp.json",
+  "rerun": "artifacts/rerun/fragments/n21/seed20260924_shallow_mlp.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [
+   "/runtime_seconds"
+  ],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ },
+ {
+  "record": "artifacts/fragments/n21/seed20260924_xgboost.json",
+  "rerun": "artifacts/rerun/fragments/n21/seed20260924_xgboost.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [
+   "/runtime_seconds"
+  ],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ },
+ {
+  "record": "artifacts/fragments/n21/seed20260925_catboost.json",
+  "rerun": "artifacts/rerun/fragments/n21/seed20260925_catboost.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [
+   "/runtime_seconds"
+  ],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ },
+ {
+  "record": "artifacts/fragments/n21/seed20260925_composition_attention.json",
+  "rerun": "artifacts/rerun/fragments/n21/seed20260925_composition_attention.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [
+   "/runtime_seconds"
+  ],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ },
+ {
+  "record": "artifacts/fragments/n21/seed20260925_extra_trees.json",
+  "rerun": "artifacts/rerun/fragments/n21/seed20260925_extra_trees.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [
+   "/runtime_seconds"
+  ],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ },
+ {
+  "record": "artifacts/fragments/n21/seed20260925_pretrained_element_embedding.json",
+  "rerun": "artifacts/rerun/fragments/n21/seed20260925_pretrained_element_embedding.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [
+   "/runtime_seconds"
+  ],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ },
+ {
+  "record": "artifacts/fragments/n21/seed20260925_random_forest.json",
+  "rerun": "artifacts/rerun/fragments/n21/seed20260925_random_forest.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [
+   "/runtime_seconds"
+  ],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ },
+ {
+  "record": "artifacts/fragments/n21/seed20260925_ridge.json",
+  "rerun": "artifacts/rerun/fragments/n21/seed20260925_ridge.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [
+   "/runtime_seconds"
+  ],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ },
+ {
+  "record": "artifacts/fragments/n21/seed20260925_shallow_mlp.json",
+  "rerun": "artifacts/rerun/fragments/n21/seed20260925_shallow_mlp.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [
+   "/runtime_seconds"
+  ],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ },
+ {
+  "record": "artifacts/fragments/n21/seed20260925_xgboost.json",
+  "rerun": "artifacts/rerun/fragments/n21/seed20260925_xgboost.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [
+   "/runtime_seconds"
+  ],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ },
+ {
+  "record": "artifacts/fragments/n21/seed20260926_catboost.json",
+  "rerun": "artifacts/rerun/fragments/n21/seed20260926_catboost.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [
+   "/runtime_seconds"
+  ],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ },
+ {
+  "record": "artifacts/fragments/n21/seed20260926_composition_attention.json",
+  "rerun": "artifacts/rerun/fragments/n21/seed20260926_composition_attention.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [
+   "/runtime_seconds"
+  ],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ },
+ {
+  "record": "artifacts/fragments/n21/seed20260926_extra_trees.json",
+  "rerun": "artifacts/rerun/fragments/n21/seed20260926_extra_trees.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [
+   "/runtime_seconds"
+  ],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ },
+ {
+  "record": "artifacts/fragments/n21/seed20260926_pretrained_element_embedding.json",
+  "rerun": "artifacts/rerun/fragments/n21/seed20260926_pretrained_element_embedding.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [
+   "/runtime_seconds"
+  ],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ },
+ {
+  "record": "artifacts/fragments/n21/seed20260926_random_forest.json",
+  "rerun": "artifacts/rerun/fragments/n21/seed20260926_random_forest.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [
+   "/runtime_seconds"
+  ],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ },
+ {
+  "record": "artifacts/fragments/n21/seed20260926_ridge.json",
+  "rerun": "artifacts/rerun/fragments/n21/seed20260926_ridge.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [
+   "/runtime_seconds"
+  ],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ },
+ {
+  "record": "artifacts/fragments/n21/seed20260926_shallow_mlp.json",
+  "rerun": "artifacts/rerun/fragments/n21/seed20260926_shallow_mlp.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [
+   "/runtime_seconds"
+  ],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ },
+ {
+  "record": "artifacts/fragments/n21/seed20260926_xgboost.json",
+  "rerun": "artifacts/rerun/fragments/n21/seed20260926_xgboost.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [
+   "/runtime_seconds"
+  ],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ },
+ {
+  "record": "artifacts/fragments/n21/seed20260927_catboost.json",
+  "rerun": "artifacts/rerun/fragments/n21/seed20260927_catboost.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [
+   "/runtime_seconds"
+  ],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ },
+ {
+  "record": "artifacts/fragments/n21/seed20260927_composition_attention.json",
+  "rerun": "artifacts/rerun/fragments/n21/seed20260927_composition_attention.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [
+   "/runtime_seconds"
+  ],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ },
+ {
+  "record": "artifacts/fragments/n21/seed20260927_extra_trees.json",
+  "rerun": "artifacts/rerun/fragments/n21/seed20260927_extra_trees.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [
+   "/runtime_seconds"
+  ],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ },
+ {
+  "record": "artifacts/fragments/n21/seed20260927_pretrained_element_embedding.json",
+  "rerun": "artifacts/rerun/fragments/n21/seed20260927_pretrained_element_embedding.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [
+   "/runtime_seconds"
+  ],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ },
+ {
+  "record": "artifacts/fragments/n21/seed20260927_random_forest.json",
+  "rerun": "artifacts/rerun/fragments/n21/seed20260927_random_forest.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [
+   "/runtime_seconds"
+  ],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ },
+ {
+  "record": "artifacts/fragments/n21/seed20260927_ridge.json",
+  "rerun": "artifacts/rerun/fragments/n21/seed20260927_ridge.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [
+   "/runtime_seconds"
+  ],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ },
+ {
+  "record": "artifacts/fragments/n21/seed20260927_shallow_mlp.json",
+  "rerun": "artifacts/rerun/fragments/n21/seed20260927_shallow_mlp.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [
+   "/runtime_seconds"
+  ],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ },
+ {
+  "record": "artifacts/fragments/n21/seed20260927_xgboost.json",
+  "rerun": "artifacts/rerun/fragments/n21/seed20260927_xgboost.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [
+   "/runtime_seconds"
+  ],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ },
+ {
+  "record": "artifacts/fragments/n21/seed20260928_catboost.json",
+  "rerun": "artifacts/rerun/fragments/n21/seed20260928_catboost.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [
+   "/runtime_seconds"
+  ],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ },
+ {
+  "record": "artifacts/fragments/n21/seed20260928_composition_attention.json",
+  "rerun": "artifacts/rerun/fragments/n21/seed20260928_composition_attention.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [
+   "/runtime_seconds"
+  ],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ },
+ {
+  "record": "artifacts/fragments/n21/seed20260928_extra_trees.json",
+  "rerun": "artifacts/rerun/fragments/n21/seed20260928_extra_trees.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [
+   "/runtime_seconds"
+  ],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ },
+ {
+  "record": "artifacts/fragments/n21/seed20260928_pretrained_element_embedding.json",
+  "rerun": "artifacts/rerun/fragments/n21/seed20260928_pretrained_element_embedding.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [
+   "/runtime_seconds"
+  ],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ },
+ {
+  "record": "artifacts/fragments/n21/seed20260928_random_forest.json",
+  "rerun": "artifacts/rerun/fragments/n21/seed20260928_random_forest.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [
+   "/runtime_seconds"
+  ],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ },
+ {
+  "record": "artifacts/fragments/n21/seed20260928_ridge.json",
+  "rerun": "artifacts/rerun/fragments/n21/seed20260928_ridge.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [
+   "/runtime_seconds"
+  ],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ },
+ {
+  "record": "artifacts/fragments/n21/seed20260928_shallow_mlp.json",
+  "rerun": "artifacts/rerun/fragments/n21/seed20260928_shallow_mlp.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [
+   "/runtime_seconds"
+  ],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ },
+ {
+  "record": "artifacts/fragments/n21/seed20260928_xgboost.json",
+  "rerun": "artifacts/rerun/fragments/n21/seed20260928_xgboost.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [
+   "/runtime_seconds"
+  ],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ },
+ {
+  "record": "artifacts/fragments/n21/seed20260929_catboost.json",
+  "rerun": "artifacts/rerun/fragments/n21/seed20260929_catboost.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [
+   "/runtime_seconds"
+  ],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ },
+ {
+  "record": "artifacts/fragments/n21/seed20260929_composition_attention.json",
+  "rerun": "artifacts/rerun/fragments/n21/seed20260929_composition_attention.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [
+   "/runtime_seconds"
+  ],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ },
+ {
+  "record": "artifacts/fragments/n21/seed20260929_extra_trees.json",
+  "rerun": "artifacts/rerun/fragments/n21/seed20260929_extra_trees.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [
+   "/runtime_seconds"
+  ],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ },
+ {
+  "record": "artifacts/fragments/n21/seed20260929_pretrained_element_embedding.json",
+  "rerun": "artifacts/rerun/fragments/n21/seed20260929_pretrained_element_embedding.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [
+   "/runtime_seconds"
+  ],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ },
+ {
+  "record": "artifacts/fragments/n21/seed20260929_random_forest.json",
+  "rerun": "artifacts/rerun/fragments/n21/seed20260929_random_forest.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [
+   "/runtime_seconds"
+  ],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ },
+ {
+  "record": "artifacts/fragments/n21/seed20260929_ridge.json",
+  "rerun": "artifacts/rerun/fragments/n21/seed20260929_ridge.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [
+   "/runtime_seconds"
+  ],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ },
+ {
+  "record": "artifacts/fragments/n21/seed20260929_shallow_mlp.json",
+  "rerun": "artifacts/rerun/fragments/n21/seed20260929_shallow_mlp.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [
+   "/runtime_seconds"
+  ],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ },
+ {
+  "record": "artifacts/fragments/n21/seed20260929_xgboost.json",
+  "rerun": "artifacts/rerun/fragments/n21/seed20260929_xgboost.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [
+   "/runtime_seconds"
+  ],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ },
+ {
+  "record": "artifacts/fragments/n21/seed20260930_catboost.json",
+  "rerun": "artifacts/rerun/fragments/n21/seed20260930_catboost.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [
+   "/runtime_seconds"
+  ],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ },
+ {
+  "record": "artifacts/fragments/n21/seed20260930_composition_attention.json",
+  "rerun": "artifacts/rerun/fragments/n21/seed20260930_composition_attention.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [
+   "/runtime_seconds"
+  ],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ },
+ {
+  "record": "artifacts/fragments/n21/seed20260930_extra_trees.json",
+  "rerun": "artifacts/rerun/fragments/n21/seed20260930_extra_trees.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [
+   "/runtime_seconds"
+  ],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ },
+ {
+  "record": "artifacts/fragments/n21/seed20260930_pretrained_element_embedding.json",
+  "rerun": "artifacts/rerun/fragments/n21/seed20260930_pretrained_element_embedding.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [
+   "/runtime_seconds"
+  ],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ },
+ {
+  "record": "artifacts/fragments/n21/seed20260930_random_forest.json",
+  "rerun": "artifacts/rerun/fragments/n21/seed20260930_random_forest.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [
+   "/runtime_seconds"
+  ],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ },
+ {
+  "record": "artifacts/fragments/n21/seed20260930_ridge.json",
+  "rerun": "artifacts/rerun/fragments/n21/seed20260930_ridge.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [
+   "/runtime_seconds"
+  ],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ },
+ {
+  "record": "artifacts/fragments/n21/seed20260930_shallow_mlp.json",
+  "rerun": "artifacts/rerun/fragments/n21/seed20260930_shallow_mlp.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [
+   "/runtime_seconds"
+  ],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ },
+ {
+  "record": "artifacts/fragments/n21/seed20260930_xgboost.json",
+  "rerun": "artifacts/rerun/fragments/n21/seed20260930_xgboost.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [
+   "/runtime_seconds"
+  ],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ },
+ {
+  "record": "artifacts/fragments/n4b/catboost.json",
+  "rerun": "artifacts/rerun/fragments/n4b/catboost.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [
+   "/runtime_seconds"
+  ],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ },
+ {
+  "record": "artifacts/fragments/n4b/composition_attention.json",
+  "rerun": "artifacts/rerun/fragments/n4b/composition_attention.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [
+   "/runtime_seconds"
+  ],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ },
+ {
+  "record": "artifacts/fragments/n4b/extra_trees.json",
+  "rerun": "artifacts/rerun/fragments/n4b/extra_trees.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [
+   "/runtime_seconds"
+  ],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ },
+ {
+  "record": "artifacts/fragments/n4b/pretrained_element_embedding.json",
+  "rerun": "artifacts/rerun/fragments/n4b/pretrained_element_embedding.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [
+   "/runtime_seconds"
+  ],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ },
+ {
+  "record": "artifacts/fragments/n4b/random_forest.json",
+  "rerun": "artifacts/rerun/fragments/n4b/random_forest.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [
+   "/runtime_seconds"
+  ],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ },
+ {
+  "record": "artifacts/fragments/n4b/ridge.json",
+  "rerun": "artifacts/rerun/fragments/n4b/ridge.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [
+   "/runtime_seconds"
+  ],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ },
+ {
+  "record": "artifacts/fragments/n4b/shallow_mlp.json",
+  "rerun": "artifacts/rerun/fragments/n4b/shallow_mlp.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [
+   "/runtime_seconds"
+  ],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ },
+ {
+  "record": "artifacts/fragments/n4b/xgboost.json",
+  "rerun": "artifacts/rerun/fragments/n4b/xgboost.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [
+   "/runtime_seconds"
+  ],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ },
+ {
+  "record": "artifacts/fragments/n6/catboost.json",
+  "rerun": "artifacts/rerun/fragments/n6/catboost.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [
+   "/runtime_seconds"
+  ],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ },
+ {
+  "record": "artifacts/fragments/n6/composition_attention.json",
+  "rerun": "artifacts/rerun/fragments/n6/composition_attention.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [
+   "/runtime_seconds"
+  ],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ },
+ {
+  "record": "artifacts/fragments/n6/extra_trees.json",
+  "rerun": "artifacts/rerun/fragments/n6/extra_trees.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [
+   "/runtime_seconds"
+  ],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ },
+ {
+  "record": "artifacts/fragments/n6/pretrained_element_embedding.json",
+  "rerun": "artifacts/rerun/fragments/n6/pretrained_element_embedding.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [
+   "/runtime_seconds"
+  ],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ },
+ {
+  "record": "artifacts/fragments/n6/random_forest.json",
+  "rerun": "artifacts/rerun/fragments/n6/random_forest.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [
+   "/runtime_seconds"
+  ],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ },
+ {
+  "record": "artifacts/fragments/n6/ridge.json",
+  "rerun": "artifacts/rerun/fragments/n6/ridge.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [
+   "/runtime_seconds"
+  ],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ },
+ {
+  "record": "artifacts/fragments/n6/shallow_mlp.json",
+  "rerun": "artifacts/rerun/fragments/n6/shallow_mlp.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [
+   "/runtime_seconds"
+  ],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ },
+ {
+  "record": "artifacts/fragments/n6/xgboost.json",
+  "rerun": "artifacts/rerun/fragments/n6/xgboost.json",
+  "scientific_differences": [],
+  "n_scientific_differences": 0,
+  "metadata_differences": [
+   "/runtime_seconds"
+  ],
+  "max_abs_numeric_diff": 0.0,
+  "status": "EXACT"
+ }
+]

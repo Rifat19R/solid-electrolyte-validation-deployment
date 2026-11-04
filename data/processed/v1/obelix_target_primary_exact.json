@@ -1,0 +1,2819 @@
+{
+  "target": "log10_sigma_rt",
+  "unit": "log10(S/cm)",
+  "policy": "primary regression index: EXACT-labeled rows only",
+  "temperature_caveat": "OBELiX's raw conductivity column has no per-row temperature field. Dataset-level room-temperature scope is VERIFIED_BY_PRIMARY_SOURCE against DOI 10.1039/D5DD00441A (see data/manifests/obelix.json 'temperature_scope_verification'); individual-row measurement temperature is not independently confirmable from the local CSVs.",
+  "n_rows": 562,
+  "rows": [
+    {
+      "id": "jqc",
+      "obelix_split": "train",
+      "y": -5.800000874803203
+    },
+    {
+      "id": "oi6",
+      "obelix_split": "train",
+      "y": -7.173925197299173
+    },
+    {
+      "id": "2t8",
+      "obelix_split": "validation",
+      "y": -6.0915149811213505
+    },
+    {
+      "id": "ro9",
+      "obelix_split": "test",
+      "y": -11.017728766960431
+    },
+    {
+      "id": "7cr",
+      "obelix_split": "test",
+      "y": -17.356547323513812
+    },
+    {
+      "id": "clt",
+      "obelix_split": "train",
+      "y": -13.0
+    },
+    {
+      "id": "mdp",
+      "obelix_split": "test",
+      "y": -2.494850021680094
+    },
+    {
+      "id": "ix1",
+      "obelix_split": "train",
+      "y": -6.494850021680094
+    },
+    {
+      "id": "ptg",
+      "obelix_split": "test",
+      "y": -2.065501548756432
+    },
+    {
+      "id": "bq9",
+      "obelix_split": "train",
+      "y": -9.619788758288394
+    },
+    {
+      "id": "skm",
+      "obelix_split": "validation",
+      "y": -8.4089353929735
+    },
+    {
+      "id": "pwr",
+      "obelix_split": "train",
+      "y": -6.785156151952302
+    },
+    {
+      "id": "o4u",
+      "obelix_split": "test",
+      "y": -5.749579997691106
+    },
+    {
+      "id": "yy9",
+      "obelix_split": "test",
+      "y": -3.7569619513137056
+    },
+    {
+      "id": "mvq",
+      "obelix_split": "test",
+      "y": -3.184422251675733
+    },
+    {
+      "id": "2yl",
+      "obelix_split": "test",
+      "y": -2.812479279163537
+    },
+    {
+      "id": "5qm",
+      "obelix_split": "test",
+      "y": -2.7594507517174
+    },
+    {
+      "id": "3jh",
+      "obelix_split": "test",
+      "y": -2.657577319177794
+    },
+    {
+      "id": "j3x",
+      "obelix_split": "test",
+      "y": -3.2557070168773237
+    },
+    {
+      "id": "b4c",
+      "obelix_split": "validation",
+      "y": -7.798602875679548
+    },
+    {
+      "id": "7se",
+      "obelix_split": "validation",
+      "y": -6.090979145788844
+    },
+    {
+      "id": "5e2",
+      "obelix_split": "train",
+      "y": -4.1432711096171175
+    },
+    {
+      "id": "dj2",
+      "obelix_split": "validation",
+      "y": -3.1791420105603
+    },
+    {
+      "id": "10u",
+      "obelix_split": "train",
+      "y": -5.494850021680094
+    },
+    {
+      "id": "s3r",
+      "obelix_split": "test",
+      "y": -5.488116639021126
+    },
+    {
+      "id": "max",
+      "obelix_split": "test",
+      "y": -7.694648630553377
+    },
+    {
+      "id": "k5y",
+      "obelix_split": "test",
+      "y": -6.2564902352715706
+    },
+    {
+      "id": "y2l",
+      "obelix_split": "train",
+      "y": -8.853871964321762
+    },
+    {
+      "id": "gl0",
+      "obelix_split": "train",
+      "y": -7.619788758288394
+    },
+    {
+      "id": "wmr",
+      "obelix_split": "train",
+      "y": -7.515700160653214
+    },
+    {
+      "id": "xxq",
+      "obelix_split": "validation",
+      "y": -7.835647144215563
+    },
+    {
+      "id": "h8o",
+      "obelix_split": "train",
+      "y": -6.640164517660112
+    },
+    {
+      "id": "de5",
+      "obelix_split": "test",
+      "y": -2.6903698325741012
+    },
+    {
+      "id": "cfy",
+      "obelix_split": "test",
+      "y": -10.10790539730952
+    },
+    {
+      "id": "na5",
+      "obelix_split": "test",
+      "y": -6.42021640338319
+    },
+    {
+      "id": "pe2",
+      "obelix_split": "train",
+      "y": -8.978810700930062
+    },
+    {
+      "id": "opo",
+      "obelix_split": "validation",
+      "y": -3.9208187539523753
+    },
+    {
+      "id": "elz",
+      "obelix_split": "test",
+      "y": -2.7166987712964503
+    },
+    {
+      "id": "lkm",
+      "obelix_split": "train",
+      "y": -6.070581074285707
+    },
+    {
+      "id": "p81",
+      "obelix_split": "test",
+      "y": -6.0
+    },
+    {
+      "id": "bv2",
+      "obelix_split": "train",
+      "y": -7.7447274948966935
+    },
+    {
+      "id": "be9",
+      "obelix_split": "train",
+      "y": -5.154901959985743
+    },
+    {
+      "id": "n27",
+      "obelix_split": "validation",
+      "y": -8.0
+    },
+    {
+      "id": "goi",
+      "obelix_split": "validation",
+      "y": -3.795880017344075
+    },
+    {
+      "id": "me3",
+      "obelix_split": "test",
+      "y": -9.201349354554731
+    },
+    {
+      "id": "zs0",
+      "obelix_split": "test",
+      "y": -9.138465589140962
+    },
+    {
+      "id": "lrh",
+      "obelix_split": "train",
+      "y": -6.721246399047171
+    },
+    {
+      "id": "5zv",
+      "obelix_split": "train",
+      "y": -17.255707016877324
+    },
+    {
+      "id": "5bz",
+      "obelix_split": "train",
+      "y": -7.060480747381382
+    },
+    {
+      "id": "883",
+      "obelix_split": "validation",
+      "y": -8.060480747381382
+    },
+    {
+      "id": "uu4",
+      "obelix_split": "train",
+      "y": -8.688246138944246
+    },
+    {
+      "id": "tws",
+      "obelix_split": "train",
+      "y": -9.2839966563652
+    },
+    {
+      "id": "l9v",
+      "obelix_split": "train",
+      "y": -6.301029995663981
+    },
+    {
+      "id": "t0h",
+      "obelix_split": "train",
+      "y": -9.214670164989233
+    },
+    {
+      "id": "xas",
+      "obelix_split": "train",
+      "y": -4.823908740944319
+    },
+    {
+      "id": "kfp",
+      "obelix_split": "validation",
+      "y": -16.796203144042632
+    },
+    {
+      "id": "qy4",
+      "obelix_split": "train",
+      "y": -5.055517327849831
+    },
+    {
+      "id": "ard",
+      "obelix_split": "test",
+      "y": -2.795880017344075
+    },
+    {
+      "id": "9wf",
+      "obelix_split": "train",
+      "y": -3.1870866433571443
+    },
+    {
+      "id": "dmq",
+      "obelix_split": "validation",
+      "y": -7.882728704344236
+    },
+    {
+      "id": "uox",
+      "obelix_split": "train",
+      "y": -11.247951552180561
+    },
+    {
+      "id": "joc",
+      "obelix_split": "validation",
+      "y": -6.585026652029182
+    },
+    {
+      "id": "mq1",
+      "obelix_split": "train",
+      "y": -8.318758762624412
+    },
+    {
+      "id": "ssv",
+      "obelix_split": "train",
+      "y": -12.882728704344236
+    },
+    {
+      "id": "h6c",
+      "obelix_split": "validation",
+      "y": -13.036212172654444
+    },
+    {
+      "id": "bsa",
+      "obelix_split": "train",
+      "y": -13.619788758288394
+    },
+    {
+      "id": "1e9",
+      "obelix_split": "validation",
+      "y": -9.0
+    },
+    {
+      "id": "an2",
+      "obelix_split": "validation",
+      "y": -10.0
+    },
+    {
+      "id": "tka",
+      "obelix_split": "train",
+      "y": -7.209714835966758
+    },
+    {
+      "id": "fwz",
+      "obelix_split": "train",
+      "y": -5.698970004336019
+    },
+    {
+      "id": "hln",
+      "obelix_split": "train",
+      "y": -7.42021640338319
+    },
+    {
+      "id": "cy2",
+      "obelix_split": "train",
+      "y": -3.474955192963155
+    },
+    {
+      "id": "5tl",
+      "obelix_split": "train",
+      "y": -3.354577730650908
+    },
+    {
+      "id": "u2y",
+      "obelix_split": "train",
+      "y": -3.0690509688324767
+    },
+    {
+      "id": "ku9",
+      "obelix_split": "test",
+      "y": -5.0034883278458215
+    },
+    {
+      "id": "9n0",
+      "obelix_split": "test",
+      "y": -4.954677021213342
+    },
+    {
+      "id": "ozo",
+      "obelix_split": "test",
+      "y": -4.928117992693875
+    },
+    {
+      "id": "h5i",
+      "obelix_split": "test",
+      "y": -4.91721462968355
+    },
+    {
+      "id": "o9h",
+      "obelix_split": "test",
+      "y": -4.910094888560602
+    },
+    {
+      "id": "4xq",
+      "obelix_split": "test",
+      "y": -5.228412519118745
+    },
+    {
+      "id": "0ii",
+      "obelix_split": "test",
+      "y": -5.399027104313252
+    },
+    {
+      "id": "81x",
+      "obelix_split": "test",
+      "y": -4.0
+    },
+    {
+      "id": "5fj",
+      "obelix_split": "test",
+      "y": -4.638272163982407
+    },
+    {
+      "id": "0vd",
+      "obelix_split": "test",
+      "y": -6.698970004336019
+    },
+    {
+      "id": "kxh",
+      "obelix_split": "train",
+      "y": -6.0
+    },
+    {
+      "id": "3we",
+      "obelix_split": "train",
+      "y": -7.096910013008056
+    },
+    {
+      "id": "5z0",
+      "obelix_split": "train",
+      "y": -9.301029995663981
+    },
+    {
+      "id": "472",
+      "obelix_split": "train",
+      "y": -9.769551078621726
+    },
+    {
+      "id": "9zk",
+      "obelix_split": "train",
+      "y": -8.301029995663981
+    },
+    {
+      "id": "dnt",
+      "obelix_split": "train",
+      "y": -6.355561410532162
+    },
+    {
+      "id": "g5g",
+      "obelix_split": "validation",
+      "y": -6.228412519118745
+    },
+    {
+      "id": "hpu",
+      "obelix_split": "train",
+      "y": -7.376750709602099
+    },
+    {
+      "id": "c6h",
+      "obelix_split": "train",
+      "y": -6.476253533188435
+    },
+    {
+      "id": "vzu",
+      "obelix_split": "train",
+      "y": -6.841637507904751
+    },
+    {
+      "id": "a3e",
+      "obelix_split": "train",
+      "y": -7.562249437179612
+    },
+    {
+      "id": "ubi",
+      "obelix_split": "train",
+      "y": -5.080921907623926
+    },
+    {
+      "id": "9z8",
+      "obelix_split": "train",
+      "y": -7.0851281824599495
+    },
+    {
+      "id": "nhq",
+      "obelix_split": "validation",
+      "y": -6.049148541111453
+    },
+    {
+      "id": "w7d",
+      "obelix_split": "train",
+      "y": -17.3767507096021
+    },
+    {
+      "id": "fj5",
+      "obelix_split": "validation",
+      "y": -6.347753658996677
+    },
+    {
+      "id": "uxo",
+      "obelix_split": "train",
+      "y": -12.853871964321762
+    },
+    {
+      "id": "e6b",
+      "obelix_split": "train",
+      "y": -6.698970004336019
+    },
+    {
+      "id": "pbz",
+      "obelix_split": "train",
+      "y": -5.247183568811729
+    },
+    {
+      "id": "7ek",
+      "obelix_split": "train",
+      "y": -4.42021640338319
+    },
+    {
+      "id": "86k",
+      "obelix_split": "train",
+      "y": -8.452225294612177
+    },
+    {
+      "id": "2uv",
+      "obelix_split": "test",
+      "y": -4.698970004336019
+    },
+    {
+      "id": "kmv",
+      "obelix_split": "train",
+      "y": -4.154901959985743
+    },
+    {
+      "id": "n7a",
+      "obelix_split": "validation",
+      "y": -2.853871964321762
+    },
+    {
+      "id": "i6k",
+      "obelix_split": "train",
+      "y": -6.698970004336019
+    },
+    {
+      "id": "2r7",
+      "obelix_split": "test",
+      "y": -8.496209316942819
+    },
+    {
+      "id": "mfu",
+      "obelix_split": "test",
+      "y": -9.229884705212898
+    },
+    {
+      "id": "x94",
+      "obelix_split": "validation",
+      "y": -7.30715308072277
+    },
+    {
+      "id": "kmr",
+      "obelix_split": "test",
+      "y": -2.065501548756432
+    },
+    {
+      "id": "e6e",
+      "obelix_split": "train",
+      "y": -5.943095148663527
+    },
+    {
+      "id": "ylh",
+      "obelix_split": "train",
+      "y": -4.721246399047171
+    },
+    {
+      "id": "eij",
+      "obelix_split": "train",
+      "y": -5.346787486224656
+    },
+    {
+      "id": "ldd",
+      "obelix_split": "train",
+      "y": -6.051098239029787
+    },
+    {
+      "id": "efb",
+      "obelix_split": "train",
+      "y": -4.958607314841775
+    },
+    {
+      "id": "lcm",
+      "obelix_split": "train",
+      "y": -4.496209316942819
+    },
+    {
+      "id": "mgs",
+      "obelix_split": "train",
+      "y": -5.987162775294828
+    },
+    {
+      "id": "31s",
+      "obelix_split": "train",
+      "y": -5.567030709125595
+    },
+    {
+      "id": "dku",
+      "obelix_split": "train",
+      "y": -12.449771646944907
+    },
+    {
+      "id": "ndx",
+      "obelix_split": "train",
+      "y": -12.494850021680094
+    },
+    {
+      "id": "m0j",
+      "obelix_split": "train",
+      "y": -12.688246138944246
+    },
+    {
+      "id": "9lo",
+      "obelix_split": "train",
+      "y": -12.756961951313706
+    },
+    {
+      "id": "dth",
+      "obelix_split": "train",
+      "y": -11.886056647693163
+    },
+    {
+      "id": "45e",
+      "obelix_split": "train",
+      "y": -9.10790539730952
+    },
+    {
+      "id": "85t",
+      "obelix_split": "test",
+      "y": -2.795880017344075
+    },
+    {
+      "id": "x2i",
+      "obelix_split": "train",
+      "y": -7.42021640338319
+    },
+    {
+      "id": "i9a",
+      "obelix_split": "test",
+      "y": -3.0757207139381184
+    },
+    {
+      "id": "i47",
+      "obelix_split": "test",
+      "y": -7.267606240177032
+    },
+    {
+      "id": "dco",
+      "obelix_split": "test",
+      "y": -3.886056647693163
+    },
+    {
+      "id": "tqb",
+      "obelix_split": "test",
+      "y": -4.782516055786093
+    },
+    {
+      "id": "xz4",
+      "obelix_split": "validation",
+      "y": -7.886056647693163
+    },
+    {
+      "id": "hja",
+      "obelix_split": "train",
+      "y": -9.0
+    },
+    {
+      "id": "3nb",
+      "obelix_split": "train",
+      "y": -9.744727494896694
+    },
+    {
+      "id": "qa9",
+      "obelix_split": "train",
+      "y": -9.795880017344075
+    },
+    {
+      "id": "ihb",
+      "obelix_split": "validation",
+      "y": -3.0087739243075053
+    },
+    {
+      "id": "3k7",
+      "obelix_split": "train",
+      "y": -2.9746941347352296
+    },
+    {
+      "id": "1sz",
+      "obelix_split": "train",
+      "y": -3.032452023781138
+    },
+    {
+      "id": "yh8",
+      "obelix_split": "train",
+      "y": -3.2062096153091812
+    },
+    {
+      "id": "coh",
+      "obelix_split": "train",
+      "y": -3.75448733218585
+    },
+    {
+      "id": "1pw",
+      "obelix_split": "train",
+      "y": -3.9746941347352296
+    },
+    {
+      "id": "bw3",
+      "obelix_split": "train",
+      "y": -3.1904402853647325
+    },
+    {
+      "id": "my5",
+      "obelix_split": "validation",
+      "y": -3.306273051076353
+    },
+    {
+      "id": "0lo",
+      "obelix_split": "test",
+      "y": -3.4685210829577446
+    },
+    {
+      "id": "hta",
+      "obelix_split": "train",
+      "y": -3.0190880622231564
+    },
+    {
+      "id": "s3h",
+      "obelix_split": "train",
+      "y": -3.0338582672609675
+    },
+    {
+      "id": "86o",
+      "obelix_split": "test",
+      "y": -3.3851027839668655
+    },
+    {
+      "id": "2lu",
+      "obelix_split": "test",
+      "y": -3.162411561764489
+    },
+    {
+      "id": "bd5",
+      "obelix_split": "test",
+      "y": -3.1864190114318083
+    },
+    {
+      "id": "ukw",
+      "obelix_split": "test",
+      "y": -3.300162274132754
+    },
+    {
+      "id": "5h8",
+      "obelix_split": "test",
+      "y": -3.2225731776106885
+    },
+    {
+      "id": "vwy",
+      "obelix_split": "test",
+      "y": -3.175223537524454
+    },
+    {
+      "id": "2ha",
+      "obelix_split": "test",
+      "y": -3.7825160557860937
+    },
+    {
+      "id": "il5",
+      "obelix_split": "test",
+      "y": -7.882728704344236
+    },
+    {
+      "id": "r1m",
+      "obelix_split": "test",
+      "y": -9.364516253185087
+    },
+    {
+      "id": "7e5",
+      "obelix_split": "train",
+      "y": -6.7447274948966935
+    },
+    {
+      "id": "sib",
+      "obelix_split": "validation",
+      "y": -5.167491087293763
+    },
+    {
+      "id": "r99",
+      "obelix_split": "validation",
+      "y": -4.920818753952375
+    },
+    {
+      "id": "lol",
+      "obelix_split": "train",
+      "y": -3.9208187539523753
+    },
+    {
+      "id": "d7f",
+      "obelix_split": "train",
+      "y": -9.387216143280265
+    },
+    {
+      "id": "52b",
+      "obelix_split": "validation",
+      "y": -1.9136401693252518
+    },
+    {
+      "id": "8po",
+      "obelix_split": "train",
+      "y": -1.8794260687941502
+    },
+    {
+      "id": "ya8",
+      "obelix_split": "train",
+      "y": -1.958607314841775
+    },
+    {
+      "id": "j8q",
+      "obelix_split": "train",
+      "y": -1.91721462968355
+    },
+    {
+      "id": "824",
+      "obelix_split": "train",
+      "y": -1.8416375079047504
+    },
+    {
+      "id": "mqo",
+      "obelix_split": "train",
+      "y": -2.171984935776023
+    },
+    {
+      "id": "izs",
+      "obelix_split": "train",
+      "y": -2.2781893847874533
+    },
+    {
+      "id": "8nc",
+      "obelix_split": "train",
+      "y": -2.2479515521805613
+    },
+    {
+      "id": "3sx",
+      "obelix_split": "validation",
+      "y": -2.3757179041643317
+    },
+    {
+      "id": "xga",
+      "obelix_split": "train",
+      "y": -2.4282911681913126
+    },
+    {
+      "id": "xn9",
+      "obelix_split": "train",
+      "y": -2.4377071355435254
+    },
+    {
+      "id": "sg4",
+      "obelix_split": "train",
+      "y": -2.360513510731414
+    },
+    {
+      "id": "ns3",
+      "obelix_split": "train",
+      "y": -2.3045183235098023
+    },
+    {
+      "id": "g8j",
+      "obelix_split": "train",
+      "y": -2.343901797987168
+    },
+    {
+      "id": "bim",
+      "obelix_split": "train",
+      "y": -2.4436974992327127
+    },
+    {
+      "id": "02p",
+      "obelix_split": "train",
+      "y": -2.638272163982407
+    },
+    {
+      "id": "9lx",
+      "obelix_split": "train",
+      "y": -2.154901959985743
+    },
+    {
+      "id": "mtn",
+      "obelix_split": "train",
+      "y": -1.609064892896621
+    },
+    {
+      "id": "9rc",
+      "obelix_split": "train",
+      "y": -1.85078088734462
+    },
+    {
+      "id": "13q",
+      "obelix_split": "train",
+      "y": -2.4001169279263124
+    },
+    {
+      "id": "ik8",
+      "obelix_split": "validation",
+      "y": -2.1290111862394245
+    },
+    {
+      "id": "nip",
+      "obelix_split": "train",
+      "y": -2.2596373105057563
+    },
+    {
+      "id": "1hh",
+      "obelix_split": "train",
+      "y": -1.9208187539523751
+    },
+    {
+      "id": "8ub",
+      "obelix_split": "train",
+      "y": -2.0560111249262283
+    },
+    {
+      "id": "7tu",
+      "obelix_split": "validation",
+      "y": -2.106793246940152
+    },
+    {
+      "id": "ui6",
+      "obelix_split": "train",
+      "y": -1.958607314841775
+    },
+    {
+      "id": "nkr",
+      "obelix_split": "train",
+      "y": -2.844663962534938
+    },
+    {
+      "id": "906",
+      "obelix_split": "train",
+      "y": -3.251037138743839
+    },
+    {
+      "id": "fnu",
+      "obelix_split": "train",
+      "y": -3.2426039712069756
+    },
+    {
+      "id": "pfi",
+      "obelix_split": "train",
+      "y": -3.1505805862031004
+    },
+    {
+      "id": "f0h",
+      "obelix_split": "train",
+      "y": -3.500312917381596
+    },
+    {
+      "id": "7iw",
+      "obelix_split": "train",
+      "y": -4.000869458712629
+    },
+    {
+      "id": "ikh",
+      "obelix_split": "train",
+      "y": -2.9208187539523753
+    },
+    {
+      "id": "hd3",
+      "obelix_split": "validation",
+      "y": -2.154901959985743
+    },
+    {
+      "id": "ete",
+      "obelix_split": "train",
+      "y": -1.6020599913279623
+    },
+    {
+      "id": "k4x",
+      "obelix_split": "train",
+      "y": -2.1870866433571443
+    },
+    {
+      "id": "ipo",
+      "obelix_split": "test",
+      "y": -6.006563769502388
+    },
+    {
+      "id": "wyu",
+      "obelix_split": "train",
+      "y": -5.787812395596042
+    },
+    {
+      "id": "019",
+      "obelix_split": "train",
+      "y": -3.7931741239681505
+    },
+    {
+      "id": "yqu",
+      "obelix_split": "train",
+      "y": -2.3169529617611504
+    },
+    {
+      "id": "95j",
+      "obelix_split": "train",
+      "y": -6.853871964321762
+    },
+    {
+      "id": "l2w",
+      "obelix_split": "test",
+      "y": -7.086186147616283
+    },
+    {
+      "id": "ob9",
+      "obelix_split": "test",
+      "y": -5.3979400086720375
+    },
+    {
+      "id": "0iv",
+      "obelix_split": "train",
+      "y": -6.623423042943488
+    },
+    {
+      "id": "2ro",
+      "obelix_split": "train",
+      "y": -9.795880017344075
+    },
+    {
+      "id": "ei3",
+      "obelix_split": "test",
+      "y": -3.2684112348132612
+    },
+    {
+      "id": "deu",
+      "obelix_split": "train",
+      "y": -4.366531544420414
+    },
+    {
+      "id": "usu",
+      "obelix_split": "train",
+      "y": -5.366531544420414
+    },
+    {
+      "id": "ur9",
+      "obelix_split": "train",
+      "y": -9.0
+    },
+    {
+      "id": "0o6",
+      "obelix_split": "train",
+      "y": -4.000869458712629
+    },
+    {
+      "id": "a3l",
+      "obelix_split": "train",
+      "y": -6.548213564475709
+    },
+    {
+      "id": "4ba",
+      "obelix_split": "train",
+      "y": -6.47755576649368
+    },
+    {
+      "id": "qea",
+      "obelix_split": "train",
+      "y": -5.698970004336019
+    },
+    {
+      "id": "ldx",
+      "obelix_split": "train",
+      "y": -8.316052869248487
+    },
+    {
+      "id": "0fh",
+      "obelix_split": "train",
+      "y": -4.316052869248487
+    },
+    {
+      "id": "gw2",
+      "obelix_split": "validation",
+      "y": -3.72584215073632
+    },
+    {
+      "id": "1xf",
+      "obelix_split": "train",
+      "y": -3.473660722610156
+    },
+    {
+      "id": "tjh",
+      "obelix_split": "validation",
+      "y": -3.5783960731301687
+    },
+    {
+      "id": "8fn",
+      "obelix_split": "train",
+      "y": -3.8632794328435933
+    },
+    {
+      "id": "mdj",
+      "obelix_split": "validation",
+      "y": -4.0655015487564325
+    },
+    {
+      "id": "t1l",
+      "obelix_split": "train",
+      "y": -3.494850021680094
+    },
+    {
+      "id": "my9",
+      "obelix_split": "train",
+      "y": -3.2254830342714502
+    },
+    {
+      "id": "9s4",
+      "obelix_split": "train",
+      "y": -3.141462802430361
+    },
+    {
+      "id": "iqt",
+      "obelix_split": "validation",
+      "y": -3.4111682744057927
+    },
+    {
+      "id": "xa0",
+      "obelix_split": "train",
+      "y": -3.6055483191737836
+    },
+    {
+      "id": "f4x",
+      "obelix_split": "train",
+      "y": -4.739928612014925
+    },
+    {
+      "id": "txm",
+      "obelix_split": "train",
+      "y": -4.454692883534176
+    },
+    {
+      "id": "v1t",
+      "obelix_split": "train",
+      "y": -3.826813731587726
+    },
+    {
+      "id": "d6b",
+      "obelix_split": "train",
+      "y": -3.413412695328245
+    },
+    {
+      "id": "x9a",
+      "obelix_split": "train",
+      "y": -3.7904849854573692
+    },
+    {
+      "id": "3ta",
+      "obelix_split": "train",
+      "y": -3.583359492661719
+    },
+    {
+      "id": "gjy",
+      "obelix_split": "train",
+      "y": -3.8927900303521317
+    },
+    {
+      "id": "lz8",
+      "obelix_split": "train",
+      "y": -3.9136401693252516
+    },
+    {
+      "id": "6st",
+      "obelix_split": "validation",
+      "y": -3.744727494896694
+    },
+    {
+      "id": "t9r",
+      "obelix_split": "train",
+      "y": -3.6090648928966207
+    },
+    {
+      "id": "xr7",
+      "obelix_split": "train",
+      "y": -3.406713932979543
+    },
+    {
+      "id": "pg8",
+      "obelix_split": "train",
+      "y": -3.7594507517174005
+    },
+    {
+      "id": "1wm",
+      "obelix_split": "train",
+      "y": -3.161150909262745
+    },
+    {
+      "id": "do2",
+      "obelix_split": "train",
+      "y": -3.153044674980176
+    },
+    {
+      "id": "uaj",
+      "obelix_split": "train",
+      "y": -3.288192770958809
+    },
+    {
+      "id": "5u3",
+      "obelix_split": "train",
+      "y": -3.408935392973501
+    },
+    {
+      "id": "2eq",
+      "obelix_split": "validation",
+      "y": -3.4056074496245734
+    },
+    {
+      "id": "yn6",
+      "obelix_split": "train",
+      "y": -3.5199930570428495
+    },
+    {
+      "id": "8jy",
+      "obelix_split": "validation",
+      "y": -3.6903698325741012
+    },
+    {
+      "id": "p4l",
+      "obelix_split": "train",
+      "y": -4.096910013008056
+    },
+    {
+      "id": "qkr",
+      "obelix_split": "train",
+      "y": -3.281498311132726
+    },
+    {
+      "id": "e0z",
+      "obelix_split": "train",
+      "y": -3.3027706572402824
+    },
+    {
+      "id": "vus",
+      "obelix_split": "validation",
+      "y": -3.55129368009492
+    },
+    {
+      "id": "h7r",
+      "obelix_split": "train",
+      "y": -4.642065152999546
+    },
+    {
+      "id": "9ky",
+      "obelix_split": "train",
+      "y": -5.025949097207123
+    },
+    {
+      "id": "4ea",
+      "obelix_split": "train",
+      "y": -5.501689446210399
+    },
+    {
+      "id": "z7n",
+      "obelix_split": "train",
+      "y": -7.036212172654444
+    },
+    {
+      "id": "7kf",
+      "obelix_split": "train",
+      "y": -2.9136401693252516
+    },
+    {
+      "id": "i8k",
+      "obelix_split": "train",
+      "y": -4.0851281824599495
+    },
+    {
+      "id": "hzf",
+      "obelix_split": "train",
+      "y": -3.0123337350737254
+    },
+    {
+      "id": "x61",
+      "obelix_split": "train",
+      "y": -2.906578314837765
+    },
+    {
+      "id": "czo",
+      "obelix_split": "train",
+      "y": -3.3675427078152755
+    },
+    {
+      "id": "o8s",
+      "obelix_split": "train",
+      "y": -3.344861565188618
+    },
+    {
+      "id": "lap",
+      "obelix_split": "train",
+      "y": -2.94692155651658
+    },
+    {
+      "id": "yp3",
+      "obelix_split": "train",
+      "y": -4.221848749616356
+    },
+    {
+      "id": "tzl",
+      "obelix_split": "train",
+      "y": -2.958607314841775
+    },
+    {
+      "id": "hyj",
+      "obelix_split": "train",
+      "y": -3.1739251972991736
+    },
+    {
+      "id": "mg4",
+      "obelix_split": "train",
+      "y": -2.207608310501746
+    },
+    {
+      "id": "50s",
+      "obelix_split": "validation",
+      "y": -2.4814860601221125
+    },
+    {
+      "id": "d4q",
+      "obelix_split": "train",
+      "y": -3.744727494896694
+    },
+    {
+      "id": "6he",
+      "obelix_split": "train",
+      "y": -3.5850266520291822
+    },
+    {
+      "id": "pwy",
+      "obelix_split": "train",
+      "y": -3.3665315444204134
+    },
+    {
+      "id": "y9l",
+      "obelix_split": "train",
+      "y": -3.537602002101044
+    },
+    {
+      "id": "rc1",
+      "obelix_split": "validation",
+      "y": -3.886056647693163
+    },
+    {
+      "id": "lzt",
+      "obelix_split": "validation",
+      "y": -3.2006594505464183
+    },
+    {
+      "id": "kbp",
+      "obelix_split": "validation",
+      "y": -2.853871964321762
+    },
+    {
+      "id": "b9u",
+      "obelix_split": "train",
+      "y": -2.638272163982407
+    },
+    {
+      "id": "3uq",
+      "obelix_split": "train",
+      "y": -4.084072788302884
+    },
+    {
+      "id": "1dm",
+      "obelix_split": "train",
+      "y": -3.5466816599529625
+    },
+    {
+      "id": "rg6",
+      "obelix_split": "validation",
+      "y": -2.4710832997223453
+    },
+    {
+      "id": "ed4",
+      "obelix_split": "train",
+      "y": -4.100179497572904
+    },
+    {
+      "id": "vg0",
+      "obelix_split": "train",
+      "y": -3.721246399047171
+    },
+    {
+      "id": "z9y",
+      "obelix_split": "train",
+      "y": -2.4710832997223453
+    },
+    {
+      "id": "w3n",
+      "obelix_split": "validation",
+      "y": -2.9507819773298185
+    },
+    {
+      "id": "ym6",
+      "obelix_split": "train",
+      "y": -2.91721462968355
+    },
+    {
+      "id": "nng",
+      "obelix_split": "train",
+      "y": -3.154901959985743
+    },
+    {
+      "id": "qno",
+      "obelix_split": "train",
+      "y": -6.416801226031377
+    },
+    {
+      "id": "oxc",
+      "obelix_split": "validation",
+      "y": -2.2494916051486538
+    },
+    {
+      "id": "dq4",
+      "obelix_split": "train",
+      "y": -3.370590400897281
+    },
+    {
+      "id": "0fa",
+      "obelix_split": "train",
+      "y": -3.570247719997592
+    },
+    {
+      "id": "rr5",
+      "obelix_split": "train",
+      "y": -4.142667503568732
+    },
+    {
+      "id": "6j9",
+      "obelix_split": "train",
+      "y": -3.282329496997738
+    },
+    {
+      "id": "0x9",
+      "obelix_split": "train",
+      "y": -3.6090648928966207
+    },
+    {
+      "id": "iwe",
+      "obelix_split": "train",
+      "y": -3.39040559077478
+    },
+    {
+      "id": "ib2",
+      "obelix_split": "train",
+      "y": -3.8013429130455774
+    },
+    {
+      "id": "ppz",
+      "obelix_split": "train",
+      "y": -5.0
+    },
+    {
+      "id": "ci1",
+      "obelix_split": "train",
+      "y": -7.251811972993799
+    },
+    {
+      "id": "08e",
+      "obelix_split": "train",
+      "y": -7.070581074285707
+    },
+    {
+      "id": "xkh",
+      "obelix_split": "train",
+      "y": -7.494850021680094
+    },
+    {
+      "id": "wng",
+      "obelix_split": "train",
+      "y": -5.3979400086720375
+    },
+    {
+      "id": "ncr",
+      "obelix_split": "train",
+      "y": -6.164309428507575
+    },
+    {
+      "id": "dx2",
+      "obelix_split": "train",
+      "y": -3.9706162223147903
+    },
+    {
+      "id": "6xc",
+      "obelix_split": "train",
+      "y": -4.289882634888183
+    },
+    {
+      "id": "21m",
+      "obelix_split": "train",
+      "y": -4.230622673923862
+    },
+    {
+      "id": "4k1",
+      "obelix_split": "validation",
+      "y": -4.610833915635467
+    },
+    {
+      "id": "gzp",
+      "obelix_split": "validation",
+      "y": -4.009217308196862
+    },
+    {
+      "id": "lh8",
+      "obelix_split": "validation",
+      "y": -6.279014255846261
+    },
+    {
+      "id": "ew5",
+      "obelix_split": "train",
+      "y": -4.267606240177032
+    },
+    {
+      "id": "9l3",
+      "obelix_split": "train",
+      "y": -3.8477116556169433
+    },
+    {
+      "id": "jdk",
+      "obelix_split": "train",
+      "y": -4.448550002027125
+    },
+    {
+      "id": "h8a",
+      "obelix_split": "train",
+      "y": -4.079876673709276
+    },
+    {
+      "id": "jq7",
+      "obelix_split": "train",
+      "y": -4.496209316942819
+    },
+    {
+      "id": "ylt",
+      "obelix_split": "validation",
+      "y": -3.8477116556169433
+    },
+    {
+      "id": "gnq",
+      "obelix_split": "train",
+      "y": -4.686132779630847
+    },
+    {
+      "id": "sso",
+      "obelix_split": "train",
+      "y": -4.679853713888946
+    },
+    {
+      "id": "lpx",
+      "obelix_split": "train",
+      "y": -4.1487416512809245
+    },
+    {
+      "id": "f7p",
+      "obelix_split": "train",
+      "y": -3.9208187539523753
+    },
+    {
+      "id": "l8t",
+      "obelix_split": "train",
+      "y": -4.136677139879544
+    },
+    {
+      "id": "3tt",
+      "obelix_split": "train",
+      "y": -4.721246399047171
+    },
+    {
+      "id": "za6",
+      "obelix_split": "validation",
+      "y": -5.5376020021010435
+    },
+    {
+      "id": "ag1",
+      "obelix_split": "train",
+      "y": -4.4089353929735005
+    },
+    {
+      "id": "u5t",
+      "obelix_split": "train",
+      "y": -3.552841968657781
+    },
+    {
+      "id": "0y6",
+      "obelix_split": "train",
+      "y": -3.853871964321762
+    },
+    {
+      "id": "yq2",
+      "obelix_split": "train",
+      "y": -4.522878745280337
+    },
+    {
+      "id": "kab",
+      "obelix_split": "train",
+      "y": -4.425968732272281
+    },
+    {
+      "id": "tp2",
+      "obelix_split": "train",
+      "y": -4.638272163982407
+    },
+    {
+      "id": "nf0",
+      "obelix_split": "train",
+      "y": -4.958607314841775
+    },
+    {
+      "id": "fkt",
+      "obelix_split": "train",
+      "y": -3.277366077466188
+    },
+    {
+      "id": "ctg",
+      "obelix_split": "train",
+      "y": -3.277366077466188
+    },
+    {
+      "id": "cmn",
+      "obelix_split": "test",
+      "y": -3.619788758288394
+    },
+    {
+      "id": "lc1",
+      "obelix_split": "test",
+      "y": -6.187086643357144
+    },
+    {
+      "id": "sxv",
+      "obelix_split": "test",
+      "y": -6.187086643357144
+    },
+    {
+      "id": "4t5",
+      "obelix_split": "train",
+      "y": -9.447331783887806
+    },
+    {
+      "id": "smk",
+      "obelix_split": "train",
+      "y": -7.498940737782249
+    },
+    {
+      "id": "vtr",
+      "obelix_split": "train",
+      "y": -5.863279432843593
+    },
+    {
+      "id": "tvf",
+      "obelix_split": "train",
+      "y": -5.0
+    },
+    {
+      "id": "gvd",
+      "obelix_split": "train",
+      "y": -3.2390500485891027
+    },
+    {
+      "id": "11b",
+      "obelix_split": "train",
+      "y": -3.153044674980176
+    },
+    {
+      "id": "fft",
+      "obelix_split": "train",
+      "y": -3.6808939406902237
+    },
+    {
+      "id": "lf5",
+      "obelix_split": "train",
+      "y": -5.221848749616356
+    },
+    {
+      "id": "68u",
+      "obelix_split": "train",
+      "y": -5.096910013008056
+    },
+    {
+      "id": "gyw",
+      "obelix_split": "validation",
+      "y": -5.376750709602099
+    },
+    {
+      "id": "0v9",
+      "obelix_split": "train",
+      "y": -4.619788758288394
+    },
+    {
+      "id": "qtc",
+      "obelix_split": "train",
+      "y": -4.97469413473523
+    },
+    {
+      "id": "vy5",
+      "obelix_split": "validation",
+      "y": -7.866461091629782
+    },
+    {
+      "id": "rwr",
+      "obelix_split": "train",
+      "y": -4.7447274948966935
+    },
+    {
+      "id": "pql",
+      "obelix_split": "train",
+      "y": -4.346787486224656
+    },
+    {
+      "id": "br1",
+      "obelix_split": "test",
+      "y": -7.301029995663981
+    },
+    {
+      "id": "jl4",
+      "obelix_split": "train",
+      "y": -9.18309616062434
+    },
+    {
+      "id": "jkq",
+      "obelix_split": "validation",
+      "y": -10.8153085691824
+    },
+    {
+      "id": "jy6",
+      "obelix_split": "test",
+      "y": -9.0
+    },
+    {
+      "id": "yav",
+      "obelix_split": "train",
+      "y": -5.158015195409886
+    },
+    {
+      "id": "9yt",
+      "obelix_split": "validation",
+      "y": -2.7304870557820835
+    },
+    {
+      "id": "122",
+      "obelix_split": "train",
+      "y": -2.688246138944246
+    },
+    {
+      "id": "ij5",
+      "obelix_split": "train",
+      "y": -2.4775557664936803
+    },
+    {
+      "id": "6jf",
+      "obelix_split": "train",
+      "y": -2.939302159646388
+    },
+    {
+      "id": "ymc",
+      "obelix_split": "train",
+      "y": -4.581698708680254
+    },
+    {
+      "id": "ywe",
+      "obelix_split": "train",
+      "y": -5.886056647693163
+    },
+    {
+      "id": "kgl",
+      "obelix_split": "train",
+      "y": -2.6458915608525992
+    },
+    {
+      "id": "vqj",
+      "obelix_split": "train",
+      "y": -3.9507819773298185
+    },
+    {
+      "id": "h82",
+      "obelix_split": "validation",
+      "y": -5.3260580013659125
+    },
+    {
+      "id": "9zr",
+      "obelix_split": "train",
+      "y": -3.1542819820333414
+    },
+    {
+      "id": "a8v",
+      "obelix_split": "train",
+      "y": -3.0565054840938974
+    },
+    {
+      "id": "09w",
+      "obelix_split": "train",
+      "y": -3.359518563029578
+    },
+    {
+      "id": "x2v",
+      "obelix_split": "train",
+      "y": -3.0589857562944305
+    },
+    {
+      "id": "bnh",
+      "obelix_split": "train",
+      "y": -3.097453220686009
+    },
+    {
+      "id": "x9d",
+      "obelix_split": "train",
+      "y": -3.0447934624580584
+    },
+    {
+      "id": "ish",
+      "obelix_split": "validation",
+      "y": -3.0310503190186573
+    },
+    {
+      "id": "iiy",
+      "obelix_split": "validation",
+      "y": -2.7721132953863266
+    },
+    {
+      "id": "3zo",
+      "obelix_split": "train",
+      "y": -2.96657624451305
+    },
+    {
+      "id": "vj7",
+      "obelix_split": "train",
+      "y": -2.85078088734462
+    },
+    {
+      "id": "wsd",
+      "obelix_split": "train",
+      "y": -2.7825160557860937
+    },
+    {
+      "id": "10s",
+      "obelix_split": "train",
+      "y": -2.630784142589857
+    },
+    {
+      "id": "fkj",
+      "obelix_split": "validation",
+      "y": -2.6595558851598815
+    },
+    {
+      "id": "24k",
+      "obelix_split": "test",
+      "y": -3.958607314841775
+    },
+    {
+      "id": "tt3",
+      "obelix_split": "train",
+      "y": -2.886056647693163
+    },
+    {
+      "id": "nig",
+      "obelix_split": "train",
+      "y": -2.5575202309355514
+    },
+    {
+      "id": "z16",
+      "obelix_split": "train",
+      "y": -2.494850021680094
+    },
+    {
+      "id": "hbz",
+      "obelix_split": "train",
+      "y": -2.406713932979543
+    },
+    {
+      "id": "uut",
+      "obelix_split": "validation",
+      "y": -2.441291429466834
+    },
+    {
+      "id": "cju",
+      "obelix_split": "validation",
+      "y": -2.438898616350944
+    },
+    {
+      "id": "d9l",
+      "obelix_split": "validation",
+      "y": -2.571865205971211
+    },
+    {
+      "id": "96f",
+      "obelix_split": "train",
+      "y": -2.555955204081924
+    },
+    {
+      "id": "1kq",
+      "obelix_split": "train",
+      "y": -2.5214335044061564
+    },
+    {
+      "id": "c6e",
+      "obelix_split": "train",
+      "y": -2.4584207560534193
+    },
+    {
+      "id": "t2c",
+      "obelix_split": "train",
+      "y": -2.417936637088291
+    },
+    {
+      "id": "dlj",
+      "obelix_split": "train",
+      "y": -2.4424927980943423
+    },
+    {
+      "id": "w87",
+      "obelix_split": "train",
+      "y": -4.494850021680094
+    },
+    {
+      "id": "97p",
+      "obelix_split": "train",
+      "y": -4.481486060122112
+    },
+    {
+      "id": "p9u",
+      "obelix_split": "train",
+      "y": -3.657577319177794
+    },
+    {
+      "id": "5wz",
+      "obelix_split": "train",
+      "y": -5.8996294548824375
+    },
+    {
+      "id": "5gj",
+      "obelix_split": "train",
+      "y": -5.052566278112949
+    },
+    {
+      "id": "t17",
+      "obelix_split": "train",
+      "y": -4.405607449624573
+    },
+    {
+      "id": "kf7",
+      "obelix_split": "train",
+      "y": -4.496209316942819
+    },
+    {
+      "id": "utv",
+      "obelix_split": "train",
+      "y": -3.8239087409443187
+    },
+    {
+      "id": "q9f",
+      "obelix_split": "validation",
+      "y": -3.1870866433571443
+    },
+    {
+      "id": "5qw",
+      "obelix_split": "train",
+      "y": -2.8239087409443187
+    },
+    {
+      "id": "znj",
+      "obelix_split": "validation",
+      "y": -2.7304870557820835
+    },
+    {
+      "id": "pa1",
+      "obelix_split": "train",
+      "y": -2.2831622767004753
+    },
+    {
+      "id": "lxk",
+      "obelix_split": "train",
+      "y": -2.25649023527157
+    },
+    {
+      "id": "1m8",
+      "obelix_split": "train",
+      "y": -2.58838029403677
+    },
+    {
+      "id": "xnb",
+      "obelix_split": "test",
+      "y": -2.744727494896694
+    },
+    {
+      "id": "ga9",
+      "obelix_split": "train",
+      "y": -3.987162775294828
+    },
+    {
+      "id": "240",
+      "obelix_split": "train",
+      "y": -4.0655015487564325
+    },
+    {
+      "id": "6l9",
+      "obelix_split": "train",
+      "y": -5.698970004336019
+    },
+    {
+      "id": "mtr",
+      "obelix_split": "test",
+      "y": -3.0291883891274822
+    },
+    {
+      "id": "s2v",
+      "obelix_split": "test",
+      "y": -2.8601209135987635
+    },
+    {
+      "id": "4p7",
+      "obelix_split": "test",
+      "y": -1.6020599913279623
+    },
+    {
+      "id": "gas",
+      "obelix_split": "train",
+      "y": -3.5850266520291822
+    },
+    {
+      "id": "f5n",
+      "obelix_split": "train",
+      "y": -4.413412695328245
+    },
+    {
+      "id": "hx7",
+      "obelix_split": "validation",
+      "y": -5.920818753952375
+    },
+    {
+      "id": "lk8",
+      "obelix_split": "test",
+      "y": -2.8210230527068307
+    },
+    {
+      "id": "lud",
+      "obelix_split": "test",
+      "y": -3.245651664288981
+    },
+    {
+      "id": "vlm",
+      "obelix_split": "test",
+      "y": -3.7931741239681505
+    },
+    {
+      "id": "gwu",
+      "obelix_split": "test",
+      "y": -6.982966660701219
+    },
+    {
+      "id": "oi4",
+      "obelix_split": "train",
+      "y": -3.42021640338319
+    },
+    {
+      "id": "lcx",
+      "obelix_split": "test",
+      "y": -4.94692155651658
+    },
+    {
+      "id": "mam",
+      "obelix_split": "test",
+      "y": -4.863279432843593
+    },
+    {
+      "id": "0jx",
+      "obelix_split": "test",
+      "y": -4.275724130399211
+    },
+    {
+      "id": "lyq",
+      "obelix_split": "test",
+      "y": -4.11690664142431
+    },
+    {
+      "id": "2tt",
+      "obelix_split": "test",
+      "y": -4.218963061378868
+    },
+    {
+      "id": "xy0",
+      "obelix_split": "test",
+      "y": -4.716698771296451
+    },
+    {
+      "id": "epv",
+      "obelix_split": "test",
+      "y": -3.079876673709276
+    },
+    {
+      "id": "v7r",
+      "obelix_split": "test",
+      "y": -2.886056647693163
+    },
+    {
+      "id": "yhc",
+      "obelix_split": "test",
+      "y": -2.812479279163537
+    },
+    {
+      "id": "q3c",
+      "obelix_split": "test",
+      "y": -2.9030899869919438
+    },
+    {
+      "id": "pdv",
+      "obelix_split": "test",
+      "y": -3.1051303432547472
+    },
+    {
+      "id": "sv7",
+      "obelix_split": "train",
+      "y": -3.0
+    },
+    {
+      "id": "qbb",
+      "obelix_split": "train",
+      "y": -5.958607314841775
+    },
+    {
+      "id": "o23",
+      "obelix_split": "test",
+      "y": -4.583359492661719
+    },
+    {
+      "id": "w1l",
+      "obelix_split": "validation",
+      "y": -4.221848749616356
+    },
+    {
+      "id": "jce",
+      "obelix_split": "train",
+      "y": -4.0
+    },
+    {
+      "id": "9ph",
+      "obelix_split": "train",
+      "y": -3.96657624451305
+    },
+    {
+      "id": "kkn",
+      "obelix_split": "train",
+      "y": -8.0
+    },
+    {
+      "id": "m0v",
+      "obelix_split": "validation",
+      "y": -7.219682687859849
+    },
+    {
+      "id": "6du",
+      "obelix_split": "validation",
+      "y": -7.761953896871205
+    },
+    {
+      "id": "u0c",
+      "obelix_split": "validation",
+      "y": -8.372634143407268
+    },
+    {
+      "id": "xub",
+      "obelix_split": "train",
+      "y": -8.821023052706831
+    },
+    {
+      "id": "bjw",
+      "obelix_split": "train",
+      "y": -5.319664486585436
+    },
+    {
+      "id": "dvn",
+      "obelix_split": "train",
+      "y": -6.204815410317576
+    },
+    {
+      "id": "t3k",
+      "obelix_split": "train",
+      "y": -6.6252516539898965
+    },
+    {
+      "id": "uxi",
+      "obelix_split": "train",
+      "y": -7.00436480540245
+    },
+    {
+      "id": "r5y",
+      "obelix_split": "train",
+      "y": -6.236572006437063
+    },
+    {
+      "id": "3qz",
+      "obelix_split": "train",
+      "y": -3.9208187539523753
+    },
+    {
+      "id": "cjq",
+      "obelix_split": "train",
+      "y": -5.376750709602099
+    },
+    {
+      "id": "uaz",
+      "obelix_split": "train",
+      "y": -5.795880017344075
+    },
+    {
+      "id": "aax",
+      "obelix_split": "train",
+      "y": -5.130181792020672
+    },
+    {
+      "id": "o86",
+      "obelix_split": "train",
+      "y": -4.85078088734462
+    },
+    {
+      "id": "coi",
+      "obelix_split": "validation",
+      "y": -4.30189945437661
+    },
+    {
+      "id": "3vi",
+      "obelix_split": "train",
+      "y": -4.511449283499555
+    },
+    {
+      "id": "vwn",
+      "obelix_split": "train",
+      "y": -4.928117992693875
+    },
+    {
+      "id": "tlp",
+      "obelix_split": "train",
+      "y": -5.54515513999149
+    },
+    {
+      "id": "ka6",
+      "obelix_split": "train",
+      "y": -5.179798540514359
+    },
+    {
+      "id": "7o7",
+      "obelix_split": "validation",
+      "y": -4.530177984021837
+    },
+    {
+      "id": "d6f",
+      "obelix_split": "validation",
+      "y": -3.4685210829577446
+    },
+    {
+      "id": "dvs",
+      "obelix_split": "train",
+      "y": -3.0915149811213505
+    },
+    {
+      "id": "3o4",
+      "obelix_split": "train",
+      "y": -3.4559319556497243
+    },
+    {
+      "id": "kji",
+      "obelix_split": "train",
+      "y": -3.0
+    },
+    {
+      "id": "gdr",
+      "obelix_split": "train",
+      "y": -3.494850021680094
+    },
+    {
+      "id": "v1q",
+      "obelix_split": "train",
+      "y": -3.136677139879544
+    },
+    {
+      "id": "4vd",
+      "obelix_split": "train",
+      "y": -3.2006594505464183
+    },
+    {
+      "id": "5xk",
+      "obelix_split": "train",
+      "y": -3.337242168318426
+    },
+    {
+      "id": "2wb",
+      "obelix_split": "train",
+      "y": -3.3279021420642825
+    },
+    {
+      "id": "zfg",
+      "obelix_split": "train",
+      "y": -3.3979400086720375
+    },
+    {
+      "id": "6hq",
+      "obelix_split": "validation",
+      "y": -3.4559319556497243
+    },
+    {
+      "id": "hcm",
+      "obelix_split": "train",
+      "y": -4.468521082957745
+    },
+    {
+      "id": "e6a",
+      "obelix_split": "train",
+      "y": -3.161150909262745
+    },
+    {
+      "id": "g5q",
+      "obelix_split": "validation",
+      "y": -3.552841968657781
+    },
+    {
+      "id": "4ie",
+      "obelix_split": "test",
+      "y": -2.8927900303521317
+    },
+    {
+      "id": "5z8",
+      "obelix_split": "validation",
+      "y": -3.309803919971486
+    },
+    {
+      "id": "5d6",
+      "obelix_split": "test",
+      "y": -4.096910013008056
+    },
+    {
+      "id": "ciq",
+      "obelix_split": "test",
+      "y": -3.5072396109731625
+    },
+    {
+      "id": "suz",
+      "obelix_split": "test",
+      "y": -3.43297363384094
+    },
+    {
+      "id": "1tk",
+      "obelix_split": "test",
+      "y": -3.4685210829577446
+    },
+    {
+      "id": "9o6",
+      "obelix_split": "test",
+      "y": -3.4775557664936803
+    },
+    {
+      "id": "r07",
+      "obelix_split": "train",
+      "y": -3.4814860601221125
+    },
+    {
+      "id": "uht",
+      "obelix_split": "train",
+      "y": -2.9913998282380825
+    },
+    {
+      "id": "kbq",
+      "obelix_split": "validation",
+      "y": -4.721246399047171
+    },
+    {
+      "id": "uw9",
+      "obelix_split": "train",
+      "y": -4.698970004336019
+    },
+    {
+      "id": "vqu",
+      "obelix_split": "train",
+      "y": -6.886056647693163
+    },
+    {
+      "id": "lpt",
+      "obelix_split": "test",
+      "y": -8.060480747381382
+    },
+    {
+      "id": "xog",
+      "obelix_split": "train",
+      "y": -5.107905397309519
+    },
+    {
+      "id": "bi3",
+      "obelix_split": "validation",
+      "y": -5.200659450546418
+    },
+    {
+      "id": "gcj",
+      "obelix_split": "train",
+      "y": -5.876148359032914
+    },
+    {
+      "id": "20k",
+      "obelix_split": "train",
+      "y": -5.432973633840939
+    },
+    {
+      "id": "jej",
+      "obelix_split": "train",
+      "y": -5.657577319177793
+    },
+    {
+      "id": "hud",
+      "obelix_split": "validation",
+      "y": -4.886056647693163
+    },
+    {
+      "id": "4uu",
+      "obelix_split": "validation",
+      "y": -3.3872161432802645
+    },
+    {
+      "id": "sdz",
+      "obelix_split": "train",
+      "y": -3.431798275933005
+    },
+    {
+      "id": "7w5",
+      "obelix_split": "train",
+      "y": -3.0604807473813813
+    },
+    {
+      "id": "etz",
+      "obelix_split": "train",
+      "y": -5.705533773838407
+    },
+    {
+      "id": "ner",
+      "obelix_split": "validation",
+      "y": -4.772113295386326
+    },
+    {
+      "id": "z2s",
+      "obelix_split": "validation",
+      "y": -4.4089353929735005
+    },
+    {
+      "id": "72f",
+      "obelix_split": "train",
+      "y": -3.677780705266081
+    },
+    {
+      "id": "j5g",
+      "obelix_split": "test",
+      "y": -3.72584215073632
+    },
+    {
+      "id": "dvb",
+      "obelix_split": "test",
+      "y": -4.1944991418416
+    },
+    {
+      "id": "cti",
+      "obelix_split": "test",
+      "y": -4.17134010346468
+    },
+    {
+      "id": "2d1",
+      "obelix_split": "test",
+      "y": -4.037157318798758
+    },
+    {
+      "id": "sqm",
+      "obelix_split": "train",
+      "y": -5.1487416512809245
+    },
+    {
+      "id": "zxr",
+      "obelix_split": "validation",
+      "y": -5.267606240177032
+    },
+    {
+      "id": "h89",
+      "obelix_split": "validation",
+      "y": -4.823908740944319
+    },
+    {
+      "id": "l9r",
+      "obelix_split": "train",
+      "y": -5.657577319177793
+    },
+    {
+      "id": "544",
+      "obelix_split": "validation",
+      "y": -4.3979400086720375
+    },
+    {
+      "id": "ps0",
+      "obelix_split": "validation",
+      "y": -5.154901959985743
+    },
+    {
+      "id": "ueu",
+      "obelix_split": "train",
+      "y": -3.0443122496864943
+    },
+    {
+      "id": "uwh",
+      "obelix_split": "train",
+      "y": -3.987162775294828
+    },
+    {
+      "id": "wa3",
+      "obelix_split": "test",
+      "y": -3.595166283380062
+    },
+    {
+      "id": "l6h",
+      "obelix_split": "test",
+      "y": -3.211831628858832
+    },
+    {
+      "id": "gz8",
+      "obelix_split": "train",
+      "y": -4.798602875679548
+    },
+    {
+      "id": "419",
+      "obelix_split": "train",
+      "y": -5.148130399270234
+    },
+    {
+      "id": "c0g",
+      "obelix_split": "train",
+      "y": -5.286509456906058
+    },
+    {
+      "id": "kbu",
+      "obelix_split": "train",
+      "y": -4.667561540084395
+    },
+    {
+      "id": "fam",
+      "obelix_split": "train",
+      "y": -4.928117992693875
+    },
+    {
+      "id": "dae",
+      "obelix_split": "train",
+      "y": -4.853871964321762
+    },
+    {
+      "id": "9p1",
+      "obelix_split": "train",
+      "y": -3.2448877336049287
+    },
+    {
+      "id": "gkl",
+      "obelix_split": "train",
+      "y": -5.294136287716081
+    },
+    {
+      "id": "ijh",
+      "obelix_split": "train",
+      "y": -4.872895201635193
+    },
+    {
+      "id": "q46",
+      "obelix_split": "train",
+      "y": -4.841637507904751
+    },
+    {
+      "id": "8m3",
+      "obelix_split": "train",
+      "y": -5.243363891754152
+    },
+    {
+      "id": "zyx",
+      "obelix_split": "validation",
+      "y": -5.039529222465701
+    },
+    {
+      "id": "qvu",
+      "obelix_split": "validation",
+      "y": -5.014124642691606
+    },
+    {
+      "id": "v07",
+      "obelix_split": "train",
+      "y": -4.0
+    },
+    {
+      "id": "whw",
+      "obelix_split": "test",
+      "y": -4.229147988357856
+    },
+    {
+      "id": "duf",
+      "obelix_split": "test",
+      "y": -3.113509274827518
+    },
+    {
+      "id": "dll",
+      "obelix_split": "test",
+      "y": -3.1804560644581312
+    },
+    {
+      "id": "i90",
+      "obelix_split": "test",
+      "y": -3.3467874862246565
+    },
+    {
+      "id": "dm9",
+      "obelix_split": "test",
+      "y": -3.5850266520291822
+    },
+    {
+      "id": "32j",
+      "obelix_split": "test",
+      "y": -3.619788758288394
+    },
+    {
+      "id": "z53",
+      "obelix_split": "train",
+      "y": -3.5044556624535517
+    },
+    {
+      "id": "8y4",
+      "obelix_split": "train",
+      "y": -3.4989407377822483
+    },
+    {
+      "id": "ucw",
+      "obelix_split": "validation",
+      "y": -3.360513510731414
+    },
+    {
+      "id": "ff9",
+      "obelix_split": "train",
+      "y": -3.6458915608525992
+    },
+    {
+      "id": "2mn",
+      "obelix_split": "train",
+      "y": -3.291579099865287
+    },
+    {
+      "id": "8ee",
+      "obelix_split": "train",
+      "y": -3.5086383061657274
+    },
+    {
+      "id": "8k7",
+      "obelix_split": "train",
+      "y": -5.8124792791635365
+    },
+    {
+      "id": "b7v",
+      "obelix_split": "validation",
+      "y": -4.657577319177793
+    },
+    {
+      "id": "66a",
+      "obelix_split": "train",
+      "y": -3.0969100130080562
+    },
+    {
+      "id": "3rh",
+      "obelix_split": "test",
+      "y": -3.5686362358410126
+    },
+    {
+      "id": "kh3",
+      "obelix_split": "train",
+      "y": -3.036212172654445
+    },
+    {
+      "id": "zqx",
+      "obelix_split": "train",
+      "y": -3.136677139879544
+    },
+    {
+      "id": "o5q",
+      "obelix_split": "train",
+      "y": -3.552841968657781
+    },
+    {
+      "id": "0ew",
+      "obelix_split": "train",
+      "y": -3.795880017344075
+    },
+    {
+      "id": "a6v",
+      "obelix_split": "test",
+      "y": -4.600326278518962
+    },
+    {
+      "id": "tbj",
+      "obelix_split": "train",
+      "y": -5.47755576649368
+    },
+    {
+      "id": "dbs",
+      "obelix_split": "validation",
+      "y": -3.1001794975729036
+    },
+    {
+      "id": "bt0",
+      "obelix_split": "train",
+      "y": -3.079876673709276
+    },
+    {
+      "id": "dti",
+      "obelix_split": "train",
+      "y": -3.078833949362261
+    },
+    {
+      "id": "7gm",
+      "obelix_split": "train",
+      "y": -3.1999706407558657
+    },
+    {
+      "id": "c71",
+      "obelix_split": "train",
+      "y": -3.3080348972326394
+    },
+    {
+      "id": "rgo",
+      "obelix_split": "train",
+      "y": -5.576754126063192
+    },
+    {
+      "id": "ar1",
+      "obelix_split": "test",
+      "y": -4.1249387366083
+    },
+    {
+      "id": "cz2",
+      "obelix_split": "test",
+      "y": -6.022276394711152
+    },
+    {
+      "id": "klr",
+      "obelix_split": "test",
+      "y": -4.443697499232712
+    },
+    {
+      "id": "mn3",
+      "obelix_split": "test",
+      "y": -7.346787486224656
+    },
+    {
+      "id": "o0a",
+      "obelix_split": "test",
+      "y": -5.221848749616356
+    },
+    {
+      "id": "qer",
+      "obelix_split": "test",
+      "y": -5.7447274948966935
+    },
+    {
+      "id": "aab",
+      "obelix_split": "test",
+      "y": -6.080921907623926
+    },
+    {
+      "id": "1ty",
+      "obelix_split": "test",
+      "y": -5.070581074285707
+    },
+    {
+      "id": "zv5",
+      "obelix_split": "test",
+      "y": -4.552841968657781
+    },
+    {
+      "id": "xk3",
+      "obelix_split": "test",
+      "y": -5.301029995663981
+    },
+    {
+      "id": "i4l",
+      "obelix_split": "test",
+      "y": -4.823908740944319
+    },
+    {
+      "id": "zzr",
+      "obelix_split": "train",
+      "y": -2.1191864077192086
+    },
+    {
+      "id": "kop",
+      "obelix_split": "train",
+      "y": -2.193820026016113
+    },
+    {
+      "id": "rty",
+      "obelix_split": "train",
+      "y": -2.318758762624413
+    },
+    {
+      "id": "kko",
+      "obelix_split": "train",
+      "y": -2.42021640338319
+    }
+  ]
+}

@@ -1,0 +1,250 @@
+{
+  "phase": "acs_issue05_fold_local_shift_distance",
+  "spec_path": "reports/acs/specs/issue05_fold_local_shift_distance.md",
+  "git_commit": "3ba944866c0eb66fb799d3809c98def3c4b7a4da",
+  "git_branch": "npj-cross-dataset-extension",
+  "n21e_source": "artifacts/npj_n21e_robust_shift_distance.json",
+  "degeneracy_ratio_threshold": 0.05,
+  "threshold_definition_acs05": "raw Magpie feature column dropped from fold k if fold k's train-only std < 5% of the MEDIAN, across every OTHER fold j!=k of the same regime, of fold j's own train-only std for that column -- replaces n21e's single shared full-449-row-population reference, which included every fold's own held-out rows' feature values. Still fully target-free. See script docstring for why a theoretically perfect fold-k-blind reference is not constructible for a K-fold partition.",
+  "threshold_chosen_independently_of_target_y": true,
+  "per_fold_dims_dropped": {
+    "A_random_5fold_cv": [
+      {
+        "fold": 0,
+        "n_dropped": 22,
+        "n_total_dims": 132
+      },
+      {
+        "fold": 1,
+        "n_dropped": 22,
+        "n_total_dims": 132
+      },
+      {
+        "fold": 2,
+        "n_dropped": 22,
+        "n_total_dims": 132
+      },
+      {
+        "fold": 3,
+        "n_dropped": 22,
+        "n_total_dims": 132
+      },
+      {
+        "fold": 4,
+        "n_dropped": 22,
+        "n_total_dims": 132
+      }
+    ],
+    "B_family_group_kfold": [
+      {
+        "fold": 0,
+        "n_dropped": 26,
+        "n_total_dims": 132
+      },
+      {
+        "fold": 1,
+        "n_dropped": 22,
+        "n_total_dims": 132
+      },
+      {
+        "fold": 2,
+        "n_dropped": 23,
+        "n_total_dims": 132
+      },
+      {
+        "fold": 3,
+        "n_dropped": 22,
+        "n_total_dims": 132
+      },
+      {
+        "fold": 4,
+        "n_dropped": 22,
+        "n_total_dims": 132
+      }
+    ],
+    "C_lomfo": [
+      {
+        "family": "LGPS",
+        "n_dropped": 22,
+        "n_total_dims": 132
+      },
+      {
+        "family": "LISICON",
+        "n_dropped": 22,
+        "n_total_dims": 132
+      },
+      {
+        "family": "NASICON",
+        "n_dropped": 22,
+        "n_total_dims": 132
+      },
+      {
+        "family": "__MISSING__",
+        "n_dropped": 22,
+        "n_total_dims": 132
+      },
+      {
+        "family": "argyrodites",
+        "n_dropped": 22,
+        "n_total_dims": 132
+      },
+      {
+        "family": "garnet",
+        "n_dropped": 22,
+        "n_total_dims": 132
+      },
+      {
+        "family": "oxides",
+        "n_dropped": 22,
+        "n_total_dims": 132
+      },
+      {
+        "family": "perovskites",
+        "n_dropped": 22,
+        "n_total_dims": 132
+      },
+      {
+        "family": "thio-LISICON",
+        "n_dropped": 22,
+        "n_total_dims": 132
+      }
+    ],
+    "external_reference_fit": {
+      "n_dropped": 22,
+      "n_total_dims": 132
+    }
+  },
+  "distance_distribution_summary_acs05": {
+    "A_random_5fold_cv": {
+      "n": 449,
+      "median": 0.21349057191563003,
+      "q25": 0.0,
+      "q75": 1.2540892285632113,
+      "iqr": 1.2540892285632113,
+      "q90": 4.356843867153834,
+      "max": 23.422714172668563,
+      "mean": 1.4541696480662527
+    },
+    "B_family_group_kfold": {
+      "n": 449,
+      "median": 4.429528587639314,
+      "q25": 1.6649028694607422,
+      "q75": 6.965161639506758,
+      "iqr": 5.300258770046016,
+      "q90": 9.155109018404586,
+      "max": 26.649031835661283,
+      "mean": 4.746733559191989
+    },
+    "C_lomfo": {
+      "n": 396,
+      "median": 4.256085915974098,
+      "q25": 1.3463395560373312,
+      "q75": 6.770110674521373,
+      "iqr": 5.423771118484042,
+      "q90": 8.732387670974342,
+      "max": 18.588552050247255,
+      "mean": 4.3982486832188945
+    },
+    "hargreaves_strict": {
+      "n": 204,
+      "median": 3.0113609441663653,
+      "q25": 0.822377350697496,
+      "q75": 4.725029331720361,
+      "iqr": 3.902651981022865,
+      "q90": 7.210107522512489,
+      "max": 21.626620750403692,
+      "mean": 3.4989004657828757
+    },
+    "hargreaves_source_disjoint": {
+      "n": 153,
+      "median": 3.791089225304793,
+      "q25": 2.1777526792437905,
+      "q75": 5.284864921443325,
+      "iqr": 3.1071122421995345,
+      "q90": 8.250284673221406,
+      "max": 21.626620750403692,
+      "mean": 4.344386150324755
+    }
+  },
+  "wasserstein_distance_internal_vs_external_acs05": {
+    "A_random_5fold_cv": {
+      "vs_hargreaves_strict": 2.0997995178582527,
+      "vs_hargreaves_source_disjoint": 2.9267165333450182
+    },
+    "B_family_group_kfold": {
+      "vs_hargreaves_strict": 1.3762928180312155,
+      "vs_hargreaves_source_disjoint": 1.0095421432143137
+    },
+    "C_lomfo": {
+      "vs_hargreaves_strict": 1.096197807823475,
+      "vs_hargreaves_source_disjoint": 0.8584233611358204
+    }
+  },
+  "n21e_vs_acs05_distance_summary": {
+    "A_random_5fold_cv": {
+      "n21e_shared_pop_ref_max": 23.422714172668563,
+      "acs05_fold_local_ref_max": 23.422714172668563,
+      "n21e_shared_pop_ref_q90": 4.356843867153834,
+      "acs05_fold_local_ref_q90": 4.356843867153834,
+      "n21e_shared_pop_ref_median": 0.21349057191563003,
+      "acs05_fold_local_ref_median": 0.21349057191563003
+    },
+    "B_family_group_kfold": {
+      "n21e_shared_pop_ref_max": 26.649031835661283,
+      "acs05_fold_local_ref_max": 26.649031835661283,
+      "n21e_shared_pop_ref_q90": 9.155109018404586,
+      "acs05_fold_local_ref_q90": 9.155109018404586,
+      "n21e_shared_pop_ref_median": 4.429528587639314,
+      "acs05_fold_local_ref_median": 4.429528587639314
+    },
+    "C_lomfo": {
+      "n21e_shared_pop_ref_max": 18.588552050247255,
+      "acs05_fold_local_ref_max": 18.588552050247255,
+      "n21e_shared_pop_ref_q90": 8.732387670974342,
+      "acs05_fold_local_ref_q90": 8.732387670974342,
+      "n21e_shared_pop_ref_median": 4.256085915974098,
+      "acs05_fold_local_ref_median": 4.256085915974098
+    },
+    "hargreaves_strict": {
+      "n21e_shared_pop_ref_max": 21.626620750403692,
+      "acs05_fold_local_ref_max": 21.626620750403692,
+      "n21e_shared_pop_ref_q90": 7.210107522512489,
+      "acs05_fold_local_ref_q90": 7.210107522512489,
+      "n21e_shared_pop_ref_median": 3.0113609441663653,
+      "acs05_fold_local_ref_median": 3.0113609441663653
+    },
+    "hargreaves_source_disjoint": {
+      "n21e_shared_pop_ref_max": 21.626620750403692,
+      "acs05_fold_local_ref_max": 21.626620750403692,
+      "n21e_shared_pop_ref_q90": 8.250284673221406,
+      "acs05_fold_local_ref_q90": 8.250284673221406,
+      "n21e_shared_pop_ref_median": 3.791089225304793,
+      "acs05_fold_local_ref_median": 3.791089225304793
+    }
+  },
+  "n21e_vs_acs05_wasserstein": {
+    "A_random_5fold_cv": {
+      "n21e_vs_strict": 2.0997995178582527,
+      "acs05_vs_strict": 2.0997995178582527,
+      "n21e_vs_source_disjoint": 2.9267165333450182,
+      "acs05_vs_source_disjoint": 2.9267165333450182
+    },
+    "B_family_group_kfold": {
+      "n21e_vs_strict": 1.3762928180312155,
+      "acs05_vs_strict": 1.3762928180312155,
+      "n21e_vs_source_disjoint": 1.0095421432143137,
+      "acs05_vs_source_disjoint": 1.0095421432143137
+    },
+    "C_lomfo": {
+      "n21e_vs_strict": 1.096197807823475,
+      "acs05_vs_strict": 1.096197807823475,
+      "n21e_vs_source_disjoint": 0.8584233611358204,
+      "acs05_vs_source_disjoint": 0.8584233611358204
+    }
+  },
+  "closest_regime_to_external_by_wasserstein": {
+    "n21e_shared_population_reference": "C_lomfo",
+    "acs05_fold_local_reference": "C_lomfo",
+    "interpretation_changed": false
+  }
+}

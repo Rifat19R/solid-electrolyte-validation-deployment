@@ -1,0 +1,102 @@
+{
+  "dataset_name": "OBELiX",
+  "version": "as published in the NRC-Mila/OBELiX GitHub repository (main branch, retrieved 2026-09-12); paper arXiv:2502.14234",
+  "role": "experimental_conductivity (DATA_CONTRACT.md dataset role D: final regression target)",
+  "paper_reference": "Therrien et al., \"OBELiX: A Curated Dataset of Crystal Structures and Experimentally Measured Ionic Conductivities for Lithium Solid-State Electrolytes\", Digital Discovery, 2026, 5, 910-918.",
+  "paper_doi": "10.1039/D5DD00441A",
+  "paper_doi_note": "Published version (RSC Digital Discovery, vol. 5, issue 2, pp. 910-918, published online 2026-01-22); same work as preprint arXiv:2502.14234 and ScienceDirect record S2635098X26000203. 10.1039/D5DD00441A is the primary-source DOI used for provenance verification.",
+  "source_repository": "https://github.com/NRC-Mila/OBELiX",
+  "source_urls": [
+    "https://raw.githubusercontent.com/NRC-Mila/OBELiX/main/data/downloads/all.csv",
+    "https://raw.githubusercontent.com/NRC-Mila/OBELiX/main/data/downloads/train.csv",
+    "https://raw.githubusercontent.com/NRC-Mila/OBELiX/main/data/downloads/test.csv",
+    "https://raw.githubusercontent.com/NRC-Mila/OBELiX/main/data/downloads/all_cifs.zip",
+    "https://raw.githubusercontent.com/NRC-Mila/OBELiX/main/data/README.md"
+  ],
+  "retrieval_date": "2026-09-12",
+  "license": "CC-BY-4.0",
+  "files": [
+    {
+      "filename": "all.csv",
+      "path": "data/raw/obelix/all.csv",
+      "size_bytes": 114856,
+      "sha256": "54f6265ef84d16a919d08c6815f14b0fd7465fa00090bee2511c16c042e57f3c"
+    },
+    {
+      "filename": "train.csv",
+      "path": "data/raw/obelix/train.csv",
+      "size_bytes": 91889,
+      "sha256": "01d87779862807e24bc45bb2c759852f892390b99f9340f13906c54805aa8776"
+    },
+    {
+      "filename": "test.csv",
+      "path": "data/raw/obelix/test.csv",
+      "size_bytes": 23220,
+      "sha256": "b2c266eb74e22f403743d52959bea7c43b1531a850994870a70dd909200e5297"
+    },
+    {
+      "filename": "all_cifs.zip",
+      "path": "data/raw/obelix/all_cifs.zip",
+      "size_bytes": 292449,
+      "sha256": "90f54f781fe6c4ba014636046556ec66c3bfa909b617e7258ff50ac3dcfa027c",
+      "notes": "Extracts to all_randomized_cifs/<ID>.cif, 321 files. Coordinates carry upstream-applied randomization noise (symmetry-preserving); original CIFs are private (see data_README.md)."
+    }
+  ],
+  "reported_sample_count": 599,
+  "locally_verified_sample_count": {"all": 599, "train": 478, "test": 121},
+  "record_unit": "one synthesized solid electrolyte material with an experimentally measured room-temperature ionic conductivity",
+  "available_identifiers": [
+    "ID (dataset-internal, matches CIF filenames)",
+    "ICSD ID (292/599 rows populated)",
+    "Laskowski ID, Liion ID (secondary-database cross-references, sparsely populated)",
+    "DOI (source publication per row; 223 unique DOIs across 599 rows)"
+  ],
+  "available_structure_fields": [
+    "Reduced Composition, True Composition, Z (formula units)",
+    "Space group, Space group #, lattice parameters a/b/c/alpha/beta/gamma",
+    "CIF file for 321/599 rows (53.59%) under data/raw/obelix/extracted/all_randomized_cifs/"
+  ],
+  "target_field": "Ionic conductivity (S cm-1)",
+  "target_field_unit_note": "raw column is S/cm at reported measurement temperature; DATA_CONTRACT.md's canonical target y = log10(sigma_RT / S cm^-1) must be derived explicitly in Phase 1, not assumed pre-transformed.",
+  "temperature_scope": "ROOM_TEMPERATURE",
+  "verification_status": "VERIFIED_BY_PRIMARY_SOURCE",
+  "temperature_scope_verification": {
+    "primary_source_doi": "10.1039/D5DD00441A",
+    "verified_claim": "The primary-source abstract (Therrien et al., Digital Discovery, 2026, 5, 910-918) states the dataset comprises 'experimentally measured room temperature ionic conductivities gathered from literature and curated by domain experts.' This confirms dataset-level curation scope is room-temperature ionic conductivity.",
+    "verification_date": "2026-09-12",
+    "row_level_caveat": "Dataset-level curation intent is verified as room temperature; the redistributed CSVs (all.csv/train.csv/test.csv) carry no explicit per-row temperature column, so individual-row measurement temperature cannot be independently confirmed from the local files alone. Treat 'Ionic conductivity (S cm-1)' as room-temperature by curation policy, not as a per-row-verified field.",
+    "method": "Resolved DOI 10.1039/D5DD00441A via doi.org redirect to the RSC Digital Discovery article landing page (pubs.rsc.org/dd/article/5/2/910-918/312885, Issue 2 2026) and cross-checked against the arXiv:2502.14234 abstract, which carries matching room-temperature language; RSC article page itself returned HTTP 403 to automated fetch, so the abstract text was confirmed via the arXiv preprint of the same work plus indexed search-result excerpts of the RSC abstract."
+  },
+  "target_dtype": "object (free text: exact values and inequality-censored values are mixed in the same column)",
+  "censoring": {
+    "n_censored_rows": 37,
+    "fraction_censored": 0.0618,
+    "examples": ["<1E-10", "<1E-10", "<1E-10", "<1E-10"],
+    "policy_reference": "DATA_CONTRACT.md 'Censoring': primary analysis must use a censor-aware strategy or exclude these points with a documented sensitivity analysis -- not yet decided in this phase."
+  },
+  "total_vs_bulk_conductivity": {
+    "ic_total_populated_rows": 29,
+    "ic_bulk_populated_rows": 28,
+    "both_populated_rows": 27,
+    "neither_populated_rows": 569,
+    "note": "The primary 'Ionic conductivity (S cm-1)' column does not itself carry a per-row total/bulk label for most rows; 'IC (Total)' and 'IC (Bulk)' are sparse auxiliary columns. DATA_CONTRACT.md prohibits silently mixing total and bulk conductivity -- this must be resolved with an explicit, versioned, tested harmonization rule in Phase 1, not inferred here."
+  },
+  "family_distribution": {
+    "NASICON": 134, "garnet": 105, "perovskites": 68, "argyrodites": 52, "LGPS": 36,
+    "missing_family": 33, "oxides": 29, "thio-LISICON": 26, "LISICON": 24, "sulfides": 11,
+    "note": "top 10 of the 'Family' column value counts; usable as a structural-family OOD holdout axis per EXPERIMENT_PROTOCOL.md"
+  },
+  "disorder": {
+    "cifs_inspected": 321,
+    "cifs_with_fractional_occupancy": 249,
+    "fraction_disordered": 0.7757,
+    "method": "pymatgen Structure.is_ordered on each locally available CIF"
+  },
+  "official_split": {
+    "provided_by": "dataset authors, as train.csv (478 rows) and test.csv (121 rows)",
+    "usage": "use as the primary split per EXPERIMENT_PROTOCOL.md ('Primary split must preserve the official benchmark split when feasible'); do not re-split without a documented reason."
+  },
+  "duplicates": "0 duplicate ID rows. 85/599 rows (14.2%) share a Reduced Composition with at least one other row (distinct polymorphs/measurements/publications of the same composition, not row-level duplication) -- see reports/results/leakage/within_dataset_duplicates.json for structure-level duplicate detection on the 321 available CIFs.",
+  "known_missing_censored_disordered_data": "9/599 rows have no 'Cif ID' reference at all; 590/599 have a Cif ID reference but only 321/599 (53.6%) have a CIF file redistributed in this repository -- the remaining referenced structures are withheld upstream (ICSD/COD licensing). 37/599 rows are inequality-censored. Space group is populated for all 599 rows even without a CIF.",
+  "notes": "This is the final task dataset; per RESEARCH_CONTRACT.md and EXPERIMENT_PROTOCOL.md, its test split and labels must never be used for tuning, model/seed/split selection, or pretraining-stage decisions. Cross-dataset overlap against the three pretraining datasets is reported in reports/results/leakage/obelix_vs_pretraining_structure_overlap.json."
+}

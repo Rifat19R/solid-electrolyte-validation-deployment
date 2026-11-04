@@ -1,0 +1,47 @@
+{
+  "dataset_name": "BVEL13k",
+  "version": "as published with LiTraj (repository pushed_at 2025-06-05; paper npj Comput. Mater. 11, 131, 2025)",
+  "role": "whole_crystal_transport_pretraining (DATA_CONTRACT.md dataset role A)",
+  "paper_reference": "Dembitskiy et al., \"Benchmarking machine learning models for predicting lithium ion migration\", npj Computational Materials 11, 131 (2025)",
+  "paper_doi": "10.1038/s41524-025-01571-z",
+  "source_repository": "https://github.com/AIRI-Institute/LiTraj",
+  "source_url": "https://bs3u.obs.ru-moscow-1.hc.sbercloud.ru/litraj/BVEL13k.zip",
+  "retrieval_date": "2026-09-12",
+  "license": {
+    "code_and_dataset_packaging": "MIT (AIRI-Institute/LiTraj repository license)",
+    "underlying_crystal_structures": "CC-BY-4.0 (sourced from the Materials Project, https://creativecommons.org/licenses/by/4.0/)"
+  },
+  "files": [
+    {
+      "filename": "BVEL13k.zip",
+      "path": "data/raw/bvel_percolation/BVEL13k.zip",
+      "size_bytes": 10711383,
+      "sha256": "3d89f921c47101bd3c9050e92829813e57f05b8178ef5bc3ce16dfb58b845c22"
+    }
+  ],
+  "reported_sample_count": 12807,
+  "locally_verified_sample_count": 12807,
+  "record_unit": "one whole-crystal structure per Materials Project material_id, with 1D/2D/3D percolation barriers",
+  "available_identifiers": ["material_id (Materials Project id, e.g. mp-757596)"],
+  "available_structure_fields": [
+    "full periodic crystal structure embedded per record in extended-XYZ (BVEL13k_train.xyz, BVEL13k_val.xyz, BVEL13k_test.xyz)",
+    "lattice/cell, fractional coordinates, species (as read via ASE/pymatgen)"
+  ],
+  "target_fields": {
+    "E_1D": "1D percolation barrier, eV (BVSE/BVEL method)",
+    "E_2D": "2D percolation barrier, eV",
+    "E_3D": "3D percolation barrier, eV",
+    "E_1D_x_nsites / E_2D_x_nsites / E_3D_x_nsites": "barrier scaled by number of sites, present in per-frame atoms.info but not used as a primary target"
+  },
+  "target_distribution_eV": {
+    "E_1D": {"min": 0.0293, "max": 7.041, "mean": 0.776948},
+    "E_2D": {"min": 0.0293, "max": 7.041, "mean": 1.109279},
+    "E_3D": {"min": 0.0293, "max": 17.7246, "mean": 2.222806}
+  },
+  "official_split_column": "_split (train/val/test), embedded in the index CSV and consistent with per-split .xyz files",
+  "official_split_counts": {"train": 10159, "val": 1331, "test": 1317},
+  "li_containing_fraction": 1.0,
+  "known_missing_censored_disordered_data": "No missing target values (0/12807 for E_1D/E_2D/E_3D). No censored values -- BVSE-computed barriers are always exact numeric estimates, not experimental inequality-censored measurements. Disorder/fractional occupancy of the underlying Materials Project structures was not separately re-verified in this phase; occupancy must be inspected per-structure at feature-engineering time in Phase 1, not assumed absent.",
+  "duplicates": "0 duplicate material_id rows (verified).",
+  "notes": "Percolation barriers are computed with the empirical BVSE/BVEL method (not DFT-NEB); per RESEARCH_CONTRACT.md this is microscopic transport supervision, not equivalent to DFT-NEB migration barriers or experimental conductivity. nebBVSE122k (bvse_hops) and nebDFT2k (dft_neb) material_id sets are exact subsets of this dataset's material_id set (see reports/results/leakage/pretraining_id_overlap.json) -- all three pretraining datasets share the same underlying Materials Project screening universe. The larger MPLiTrj/MPLiTrj_subsample sibling datasets (929,066 / 118,024 configurations, 16GB/2.1GB) were deliberately NOT downloaded: they are force/energy/stress supervision for training universal interatomic potentials, not one of the four dataset roles defined in DATA_CONTRACT.md, and are out of scope for this project unless a future planning change adds that role."
+}

@@ -1,0 +1,111 @@
+{
+  "phase": "N15_reviewer_remediation_sensitivity_spec",
+  "spec_version": "1.0",
+  "created_at_utc": "2026-09-22T00:00:00Z",
+  "git_commit_at_authoring": "58931820f2bde61834b4a8c3e39687243a24078e",
+  "git_branch": "npj-cross-dataset-extension",
+  "status": "POST-REVIEW SENSITIVITY SPEC -- NOT a pre-registered/pre-specified analysis under artifacts/npj_pretest_lock.json. These seven analyses are authorized post-review remediation checks only; they do not alter, re-open, or supersede N6's one-shot external transfer result, any frozen artifact, or the NPJ-GO verdict recorded in GO_NO_GO_NPJ.md.",
+  "purpose": "Define, before any N15 number is computed, exactly what each of the seven reviewer-remediation sensitivity analyses does: its population, rule, source data, and output. Fixed here so no analysis can be adjusted after inspecting its own result (EXPERIMENT_PROTOCOL.md 'Never select a split because it produces a better score').",
+
+  "hard_constraints": [
+    "No N6 external inference is rerun. Every analysis below reads N6's already-frozen strict-cohort predictions/residuals (artifacts/npj_n6_external_transfer.json) and/or N4b's already-frozen internal-validation numbers (artifacts/npj_n4b_nested_internal_validation.json) wherever a model prediction or internal-CV MAE is needed.",
+    "No model is retrained or fine-tuned anywhere in N15. Composition featurization (TrainFitCompositionScaler Magpie pipeline) is fit fresh per fold only where explicitly required (analysis 2, a deterministic feature transform, not an ML model fit) -- reusing existing unmodified code (features/composition_pipeline.py, uncertainty/applicability_domain.py).",
+    "The frozen OBELiX official 113-row test split is never opened by any N15 script, at any point, for any purpose.",
+    "No frozen primary artifact (npj_pretest_lock.json, npj_model_ladder_frozen.json, npj_n4b_*.json, npj_n6_*.json, npj_n7b_*.json, npj_n8_*.json, npj_n9*.json, hargreaves_strict.csv, hargreaves_relaxed.csv, hargreaves_overlap_ledger.csv, or any file under src/sse_transfer/ already referenced by a frozen lock's *_sha256 field) is modified by N15. New N15-only pure-function modules are added as new files.",
+    "No manuscript or figure file is edited as part of N15 (task instruction: analysis only, STOP before manuscript/figures).",
+    "Every numeric result actually computed, whether it supports or contradicts the existing NPJ-GO story, is reported. No result is suppressed, rounded away, or omitted for being unfavorable."
+  ],
+
+  "analysis_1_fully_source_disjoint_external_sensitivity": {
+    "question": "Does the strict external cohort's H1/H2/H3/G-gate picture change once compositions that merely avoid a composition-level OBELiX match, but still trace to a literature source (DOI) that also contributed to OBELiX, are additionally excluded?",
+    "motivation": "N2b (reports/npj/n2b_source_overlap_audit.md) found 51/204 (25.0%) strict-cohort compositions share >=1 source DOI with OBELiX, using a simple per-composition-row DOI check. N15 analysis 1 turns that audit into an actual exclusion and recomputes the external metrics on the surviving rows.",
+    "source_population": "The 213 pre-aggregation strict-cohort raw rows in data/processed/npj_external_cohort/hargreaves_overlap_ledger.csv with exclusion_reason == 'RETAINED' (i.e. the same raw rows N2's strict 204-formula cohort aggregates).",
+    "obelix_doi_set_construction": "All DOIs in data/raw/obelix/all.csv's 'DOI' column, normalized (lowercase, stripped) AND split on the '|' delimiter into individual DOIs before deduplication -- OBELiX stores multiple co-citing DOIs in a single pipe-delimited cell for 6/599 rows (verified by direct inspection); N2/N2b's existing build_obelix_formula_doi_index (src/sse_transfer/data/hargreaves_cohort.py, unmodified/untouched by N15) does NOT split on '|', so this is a methodologically stricter, newly-implemented rule for N15 only -- explicitly disclosed as a refinement over N2/N2b's per-composition DOI check, not a correction applied retroactively to N2/N2b's own frozen numbers.",
+    "exclusion_rule": "For each of the 204 strict-cohort reduced-formula groups, collect the normalized source DOI of every RETAINED raw row contributing to that formula's aggregation. If ANY of those DOIs (after '|'-splitting) appears in the OBELiX DOI set, the entire aggregated composition is excluded from the fully-source-disjoint cohort -- exclusion is at the composition level, not the row level, and the composition's already-frozen aggregated label (log_target_rt_median, from N2) is never recomputed.",
+    "prediction_join": "For every retained (source-disjoint) reduced_formula, look up that formula's already-frozen y_true/y_pred per model directly from artifacts/npj_n6_external_transfer.json's results.<model>.strict.predictions (reduced_formula-keyed). No prediction is recomputed.",
+    "output": "Actual n (not forced to any prior estimate), per-model MAE/RMSE/Spearman rho on the source-disjoint subset, and the delta vs. the same models' full strict-cohort (n=204) numbers.",
+    "output_files": ["artifacts/npj_n15_source_disjoint.json", "manuscript_npj/tables/n15_source_disjoint.csv"]
+  },
+
+  "analysis_2_deployment_shift_alignment": {
+    "question": "How far, in standardized composition-feature space, is a held-out row from its own regime's training pool -- for the three internal regimes (A/B/C) versus the external cohorts -- and does that distance distribution look similar (small Wasserstein distance) or different (large Wasserstein distance)?",
+    "no_target_used": "This analysis reads no y/log_target value anywhere -- composition features and family labels only.",
+    "composition_representation": "magpie_composition_only_v1 (features/composition_pipeline.py TrainFitCompositionScaler), reused unmodified, exactly as N3/N4/N6/N8 already use it.",
+    "family_representation": "canonicalize_and_fill_family (evaluation/npj_internal_validation.py), reused unmodified -- same harmonized+__MISSING__-filled Family label N4/N4b already use.",
+    "fold_reconstruction": "Folds are deterministically rebuilt (not re-fit models, only re-split indices + re-fit the composition scaler) using the exact same functions and seed N4/N4b already froze: random_kfold_splits/family_group_kfold_splits/leave_one_major_family_out_splits, CV_SEED=20260921, N_OUTER_SPLITS=5, LOMFO_MIN_FAMILY_N=15, on the same 449-row OBELiX development population (train UNION validation).",
+    "internal_regimes": {
+      "A_random_5fold_cv": "For each of 5 folds: TrainFitCompositionScaler fit on that fold's train partition only; NN distance (applicability_domain.fit_standardization + nearest_neighbor_ad_score, unmodified) of each held-out row to its own fold's train set. All 449 rows scored exactly once.",
+      "B_family_group_kfold": "Same procedure, GroupKFold-by-family folds. All 449 rows scored exactly once.",
+      "C_lomfo": "For each major family (n>=15): scaler fit on every other row; NN distance of every held-out (excluded-family) row to that training pool. Only major-family rows scored (partial coverage, matching N4's own C-regime coverage)."
+    },
+    "external_regimes": {
+      "hargreaves_strict": "Composition scaler fit ONCE on the full 449-row development population (identical to N8's AD reference fit); NN distance of all 204 strict-cohort rows to that population.",
+      "hargreaves_source_disjoint": "Same fitted scaler/reference population as above; NN distance of only the analysis-1 source-disjoint subset's rows (a subset of the same 204 distances, not refit)."
+    },
+    "reported_per_regime": "n, median, IQR (q25/q75), q90 of the NN-distance distribution; for B/C, the fraction of held-out rows whose family is completely absent from that row's own fold's training partition (family novelty, using only the existing deterministic family_filled label -- no new subjective family grouping).",
+    "cross_comparison": "1-D Wasserstein distance (scipy.stats.wasserstein_distance) between each internal regime's NN-distance distribution and each external cohort's NN-distance distribution (3 regimes x 2 external cohorts = 6 values).",
+    "output_files": ["artifacts/npj_n15_deployment_shift.json", "manuscript_npj/tables/n15_deployment_shift.csv"]
+  },
+
+  "analysis_3_stable_model_sensitivity": {
+    "question": "Does N7b's regime-utility verdict (H1/H2 both NOT SUPPORTED, random 5-fold CV wins all 4 statistics) survive if the two models responsible for the catastrophic Family-GroupKFold blowups (ridge: pooled MAE 143.13; shallow_mlp: pooled MAE 969.42, both under regime B per N4b) are excluded from the 8-model panel?",
+    "primary_result_preserved": "The primary 8-model N4b/N7b result is NEVER modified, overwritten, or hidden by this analysis -- it is recomputed as a SEPARATE 6-model companion statistic only.",
+    "excluded_models": ["ridge", "shallow_mlp"],
+    "retained_models": ["random_forest", "extra_trees", "xgboost", "catboost", "pretrained_element_embedding", "composition_attention"],
+    "method": "Filter artifacts/npj_n4b_nested_internal_validation.json's per-model pooled MAE (A/B/C) and artifacts/npj_n6_external_transfer.json's per-model strict-cohort MAE/residuals down to the 6 retained models, then call evaluation/npj_regime_utility.py's regime_summary and bootstrap_regime_pair_delta_ci (unmodified) exactly as N7b already does for 8 models.",
+    "bootstrap": "Same protocol as N7b: n_boot=2000, seed=20260921, row-level resampling of the strict external cohort.",
+    "output_files": ["artifacts/npj_n15_stable_model_sensitivity.json", "manuscript_npj/tables/n15_stable_model_sensitivity.csv"]
+  },
+
+  "analysis_4_external_uncertainty": {
+    "question": "How much does each model's external MAE and its rank among the 8 (or, secondarily, 6) models actually vary under row-level resampling of the external cohort, and how stable is the model ranking?",
+    "method": "Row-paired bootstrap: the SAME resampled row-index vector (drawn with replacement from the n available rows) is applied to every model's residual array on each of n_boot iterations -- never an independent per-model resample -- so a per-iteration model ranking is well-defined.",
+    "seed": 20260921,
+    "n_boot": 2000,
+    "ci_level": 0.95,
+    "cohorts_evaluated": ["hargreaves_strict (n=204, primary)", "hargreaves_source_disjoint (analysis-1 subset, secondary/companion)"],
+    "reported": "Per model: point MAE, 95% percentile bootstrap CI. Per model: empirical rank-frequency distribution (how often it lands at rank 1..8 across the n_boot resamples) and the probability the point-estimate best (lowest full-sample MAE) model remains rank 1 under resampling. Pairwise: for every model pair (m1, m2), the fraction of resamples in which m1's resampled MAE is lower than m2's -- reported descriptively as an empirical frequency, explicitly NOT as a p-value or a formal significance test.",
+    "no_significance_claim": "No result from this analysis is used to assert that any model is 'significantly' better or worse than another; only descriptive frequencies are reported, per the task instruction.",
+    "output_files": ["artifacts/npj_n15_external_uncertainty.json", "manuscript_npj/tables/n15_external_uncertainty.csv"]
+  },
+
+  "analysis_5_ad_aurc": {
+    "question": "Does the existing composition-space nearest-neighbor applicability-domain (AD) score's selective-prediction value hold up under a finer, deterministic coverage grid and a single summary statistic (AURC), computed honestly for all 8 models rather than only N8's single best-by-external-MAE model?",
+    "ad_score": "Identical, unmodified method to N8: uncertainty/applicability_domain.py's fit_standardization + nearest_neighbor_ad_score, reference population = 449-row OBELiX development population, query = 204-row strict external cohort. APPLICABILITY_DOMAIN_VERSION=1.0, unchanged. Family is never used as an AD input, exactly as N8 requires.",
+    "coverage_grid": "Deterministic, finer than N8's 4-point grid: retained_fraction in {1.00, 0.95, 0.90, 0.85, 0.80, 0.75, 0.70, 0.65, 0.60, 0.55, 0.50, 0.45, 0.40, 0.35, 0.30, 0.25} (16 points, step 0.05), computed via uncertainty/npj_risk_coverage.py's risk_coverage_mae_at_retained_fraction (unmodified, already accepts an arbitrary retained_fractions tuple).",
+    "aurc_definition": "Area under the risk-coverage curve (MAE as a function of retained coverage fraction), trapezoidal integration over the 16-point grid ordered by ascending coverage, normalized by the covered coverage span (0.75) so AURC is directly comparable to a per-coverage-point MAE. Lower AURC = better selective-prediction behavior across the whole grid, not just the 4 points N8 reported.",
+    "models_scored": "All 8 (ridge, random_forest, extra_trees, xgboost, catboost, shallow_mlp, pretrained_element_embedding, composition_attention) -- no model is chosen or omitted based on its own external performance; AURC is reported for every model as a descriptive table, and the headline (whether AD/risk-coverage utility survives at all) is judged on the panel-wide pattern (n/8 models still Spearman-positive at the finer grid, monotonicity), never on picking whichever single model's AURC looks best.",
+    "output_files": ["artifacts/npj_n15_ad_aurc.json", "manuscript_npj/tables/n15_ad_aurc.csv"]
+  },
+
+  "analysis_6_baseline_and_variability": {
+    "question_a": "How much of each model's apparent external skill is explained by a trivial constant predictor?",
+    "constant_predictors": "mean(y) and median(y) of the 449-row OBELiX development population's canonical y = log10(sigma_RT / S cm^-1) label (identical population N3/N4/N6 already fit on), evaluated (MAE/RMSE/median-AE via evaluation/metrics.py's regression_metrics, unmodified) against the strict external cohort (n=204) and the analysis-1 source-disjoint external cohort.",
+    "question_b": "How much do repeated room-temperature measurements of the SAME nominal composition disagree with each other in the raw Hargreaves data, independent of any model?",
+    "variability_population": "data/processed/npj_external_cohort/hargreaves_overlap_ledger.csv rows with in_rt_window == True and valid_target == True (the same 465-row RT-window population N2 starts from, before any OBELiX-overlap exclusion -- this question is about raw measurement heterogeneity in the source literature, not about the OBELiX-disjoint cohort specifically), grouped by reduced_formula, restricted to groups with >= 2 contributing raw rows (repeated measurements of the same nominal composition).",
+    "variability_statistics": "Per group: range (max-min) of log10(conductivity) across its repeat rows, and n_repeats. Across groups: n_groups_with_repeats, and the median/IQR of both n_repeats and per-group log10-range, plus a pooled median absolute deviation (MAD) computed by pooling every repeat-group's within-group centered residuals (row value minus its own group's median) across all qualifying groups.",
+    "labeling_requirement": "This variability is reported and labeled explicitly as empirical measurement/temperature-protocol/synthesis heterogeneity across independent literature reports of a nominally identical composition -- it is NOT reported, characterized, or used anywhere as an 'irreducible noise floor' or a lower bound on achievable model MAE.",
+    "output_files": ["artifacts/npj_n15_baseline_variability.json", "manuscript_npj/tables/n15_baseline_variability.csv"]
+  },
+
+  "analysis_7_fixed_temperature_sensitivity": {
+    "question": "Does narrowing the room-temperature window from N2's [15, 35] degC to a tighter [20, 30] degC ambient-lab-temperature window change the strict-cohort external picture?",
+    "window": [20.0, 30.0],
+    "method": "Reuses src/sse_transfer/data/hargreaves_cohort.py's existing pure functions UNCHANGED and UNMODIFIED (rt_window_mask(temperature, low=20.0, high=35.0->30.0 passed as explicit call-site arguments, never editing the module's own RT_WINDOW_LOW_C/RT_WINDOW_HIGH_C constants or build_cohorts()), valid_target_mask, safe_reduced_formula, classify_overlap, build_obelix_formula_doi_index, aggregate_by_formula) to rebuild a strict cohort under the narrower window with the identical overlap-exclusion rule (overlap_classification == NO_MATCH) and identical median-aggregation rule -- a single deterministic rebuild, not a search over multiple windows.",
+    "window_selection_rule": "Exactly one window ([20, 30]) is evaluated, chosen for being the tightest common 'ambient room temperature' convention nested inside N2's already-frozen [15, 35] window, fixed before this rebuild is run -- per EXPERIMENT_PROTOCOL.md 'never select a split because it produces a better score', no other window is tried or reported.",
+    "subset_guarantee": "Because [20, 30] subset-of [15, 35] at the raw-row level and the overlap-exclusion rule is unchanged and evaluated per raw row independent of temperature, every reduced_formula surviving the [20, 30] strict rebuild is guaranteed to already be one of N2's original 204 strict-cohort formulas (proof: the exclusion mask is a monotone AND of a narrower row-level RT mask with the same per-row overlap/validity conditions, so the retained raw-row set can only shrink, and any formula with a surviving row under the narrower window also has that row surviving the wider window's identical strict rule).",
+    "prediction_join": "For every formula surviving the [20, 30] rebuild, its already-frozen N6 y_pred per model is looked up directly (reduced_formula-keyed) from artifacts/npj_n6_external_transfer.json -- no prediction is recomputed. Only the aggregated label (log_target_rt_median) is recomputed, from the narrower row set, using the same median-aggregation rule.",
+    "output": "Actual n under [20, 30] (not assumed), per-model MAE/RMSE/Spearman on this rebuilt cohort, and the delta vs. the primary [15, 35] strict-cohort numbers for the same formulas.",
+    "output_files": ["artifacts/npj_n15_temperature_sensitivity.json", "manuscript_npj/tables/n15_temperature_sensitivity.csv"]
+  },
+
+  "software_validation_required": [
+    "pytest -q",
+    "ruff check .",
+    "ruff format --check .",
+    "mypy src",
+    "python scripts/preflight.py"
+  ],
+
+  "reporting_rule": "All seven analyses are written to reports/npj/n15_reviewer_remediation.md, labeled throughout as POST-REVIEW SENSITIVITY ANALYSES (not preregistered/pre-specified analyses under the N5 lock). Every result -- whether it preserves, weakens, or contradicts the existing NPJ-GO conclusion -- is reported. No manuscript or figure file is edited in N15; that is deferred to a later, explicitly authorized phase."
+}

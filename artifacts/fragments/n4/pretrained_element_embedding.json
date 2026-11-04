@@ -1,0 +1,386 @@
+{
+  "model_name": "pretrained_element_embedding",
+  "obelix_dev_population_n": 449,
+  "obelix_test_untouched_row_count": 113,
+  "pool_meta": {
+    "family_counts_all": {
+      "NASICON": 130,
+      "garnet": 81,
+      "argyrodites": 50,
+      "LGPS": 36,
+      "perovskites": 26,
+      "LISICON": 21,
+      "__MISSING__": 18,
+      "oxides": 17,
+      "thio-LISICON": 17,
+      "sulfides": 7,
+      "phosphates": 6,
+      "chlorides": 6,
+      "halides": 5,
+      "nitrides": 3,
+      "hydrides": 3,
+      "antiperovskite": 3,
+      "molybdates": 3,
+      "thio-phosphate": 2,
+      "hexaoxometalates": 2,
+      "garnet-like": 2,
+      "boron nitride": 2,
+      "copper pyroborate": 1,
+      "zirconates": 1,
+      "fluorides": 1,
+      "nitridosilicates": 1,
+      "Chalcogenidotetrelates": 1,
+      "boracites": 1,
+      "Tavorite": 1,
+      "layered": 1,
+      "pyrophosphate": 1
+    },
+    "major_families": {
+      "LGPS": 36,
+      "LISICON": 21,
+      "NASICON": 130,
+      "__MISSING__": 18,
+      "argyrodites": 50,
+      "garnet": 81,
+      "oxides": 17,
+      "perovskites": 26,
+      "thio-LISICON": 17
+    }
+  },
+  "A_random_5fold_cv": {
+    "pooled_mae": 1.7230584443765486,
+    "rmse": 2.5393052626888526,
+    "r2": -0.06738361888224942,
+    "spearman_rho": -0.014687301623938033,
+    "median_absolute_error": 1.2035934174219562,
+    "sample_weighted_mae_from_per_family": 1.7230584443765486,
+    "macro_family_mae": 2.9588069084284,
+    "median_family_mae": 2.1043808915049365,
+    "n_families_covered": 30,
+    "per_family_mae": {
+      "Chalcogenidotetrelates": {
+        "mae": 0.11771867522622159,
+        "n": 1
+      },
+      "LGPS": {
+        "mae": 1.856149974889162,
+        "n": 36
+      },
+      "LISICON": {
+        "mae": 4.516183106667223,
+        "n": 21
+      },
+      "NASICON": {
+        "mae": 1.1020916444877793,
+        "n": 130
+      },
+      "Tavorite": {
+        "mae": 1.596138394207288,
+        "n": 1
+      },
+      "__MISSING__": {
+        "mae": 1.5178223277549028,
+        "n": 18
+      },
+      "antiperovskite": {
+        "mae": 1.3937629699479432,
+        "n": 3
+      },
+      "argyrodites": {
+        "mae": 1.350337893216076,
+        "n": 50
+      },
+      "boracites": {
+        "mae": 1.2035934174219562,
+        "n": 1
+      },
+      "boron nitride": {
+        "mae": 4.3347851492084315,
+        "n": 2
+      },
+      "chlorides": {
+        "mae": 1.9089677191833863,
+        "n": 6
+      },
+      "copper pyroborate": {
+        "mae": 8.962816715240479,
+        "n": 1
+      },
+      "fluorides": {
+        "mae": 2.151422814114909,
+        "n": 1
+      },
+      "garnet": {
+        "mae": 0.8770865345307897,
+        "n": 81
+      },
+      "garnet-like": {
+        "mae": 0.6830257511745934,
+        "n": 2
+      },
+      "halides": {
+        "mae": 2.507116656203789,
+        "n": 5
+      },
+      "hexaoxometalates": {
+        "mae": 2.1263148808387857,
+        "n": 2
+      },
+      "hydrides": {
+        "mae": 2.3733715403960023,
+        "n": 3
+      },
+      "layered": {
+        "mae": 0.5745578329616872,
+        "n": 1
+      },
+      "molybdates": {
+        "mae": 4.5223630628904665,
+        "n": 3
+      },
+      "nitrides": {
+        "mae": 1.5501396672999448,
+        "n": 3
+      },
+      "nitridosilicates": {
+        "mae": 5.4089029234093235,
+        "n": 1
+      },
+      "oxides": {
+        "mae": 4.675555888865176,
+        "n": 17
+      },
+      "perovskites": {
+        "mae": 1.193598128096553,
+        "n": 26
+      },
+      "phosphates": {
+        "mae": 3.737018120992907,
+        "n": 6
+      },
+      "pyrophosphate": {
+        "mae": 12.75901985928311,
+        "n": 1
+      },
+      "sulfides": {
+        "mae": 2.0824469021710867,
+        "n": 7
+      },
+      "thio-LISICON": {
+        "mae": 2.442228768073921,
+        "n": 17
+      },
+      "thio-phosphate": {
+        "mae": 3.992856562492414,
+        "n": 2
+      },
+      "zirconates": {
+        "mae": 5.246813371605679,
+        "n": 1
+      }
+    },
+    "regime": "A_random_5fold_cv",
+    "n_folds": 5,
+    "seed": 20260921,
+    "note": "Folds are not family-stratified; per-family/macro-family MAE here is purely descriptive (pooled across whichever fold each family's rows happened to land in), not the regime's grouping axis."
+  },
+  "B_family_group_kfold": {
+    "pooled_mae": 1.904955951447852,
+    "rmse": 2.663197205034414,
+    "r2": -0.1740791094485108,
+    "spearman_rho": -0.28592906129192397,
+    "median_absolute_error": 1.4509250359769013,
+    "sample_weighted_mae_from_per_family": 1.904955951447852,
+    "macro_family_mae": 3.1455727205315,
+    "median_family_mae": 2.471019827165847,
+    "n_families_covered": 30,
+    "per_family_mae": {
+      "Chalcogenidotetrelates": {
+        "mae": 0.6280479217472177,
+        "n": 1
+      },
+      "LGPS": {
+        "mae": 2.4901209772559696,
+        "n": 36
+      },
+      "LISICON": {
+        "mae": 5.249193444133509,
+        "n": 21
+      },
+      "NASICON": {
+        "mae": 1.3348404449729852,
+        "n": 130
+      },
+      "Tavorite": {
+        "mae": 2.564660942882825,
+        "n": 1
+      },
+      "__MISSING__": {
+        "mae": 1.3853194745244322,
+        "n": 18
+      },
+      "antiperovskite": {
+        "mae": 1.581834936119208,
+        "n": 3
+      },
+      "argyrodites": {
+        "mae": 1.4260400740785029,
+        "n": 50
+      },
+      "boracites": {
+        "mae": 1.849858685747762,
+        "n": 1
+      },
+      "boron nitride": {
+        "mae": 4.45367662679327,
+        "n": 2
+      },
+      "chlorides": {
+        "mae": 2.116943504120927,
+        "n": 6
+      },
+      "copper pyroborate": {
+        "mae": 8.66311264038086,
+        "n": 1
+      },
+      "fluorides": {
+        "mae": 2.4519186770757244,
+        "n": 1
+      },
+      "garnet": {
+        "mae": 0.8697745717373592,
+        "n": 81
+      },
+      "garnet-like": {
+        "mae": 0.3784809756568528,
+        "n": 2
+      },
+      "halides": {
+        "mae": 2.376992277999443,
+        "n": 5
+      },
+      "hexaoxometalates": {
+        "mae": 1.640121223917399,
+        "n": 2
+      },
+      "hydrides": {
+        "mae": 3.1112635323291893,
+        "n": 3
+      },
+      "layered": {
+        "mae": 0.4160686056667653,
+        "n": 1
+      },
+      "molybdates": {
+        "mae": 4.540040687910811,
+        "n": 3
+      },
+      "nitrides": {
+        "mae": 1.3796273884252297,
+        "n": 3
+      },
+      "nitridosilicates": {
+        "mae": 5.795047323052268,
+        "n": 1
+      },
+      "oxides": {
+        "mae": 4.079382237787008,
+        "n": 17
+      },
+      "perovskites": {
+        "mae": 1.4865392931052652,
+        "n": 26
+      },
+      "phosphates": {
+        "mae": 3.8518641916004106,
+        "n": 6
+      },
+      "pyrophosphate": {
+        "mae": 12.821699388473174,
+        "n": 1
+      },
+      "sulfides": {
+        "mae": 2.746779428241818,
+        "n": 7
+      },
+      "thio-LISICON": {
+        "mae": 2.685641747507807,
+        "n": 17
+      },
+      "thio-phosphate": {
+        "mae": 4.682797491905256,
+        "n": 2
+      },
+      "zirconates": {
+        "mae": 5.3094929007957425,
+        "n": 1
+      }
+    },
+    "regime": "B_family_group_kfold",
+    "n_folds": 5,
+    "seed": 20260921
+  },
+  "C_lomfo": {
+    "regime": "C_lomfo",
+    "seed": 20260921,
+    "major_families": [
+      "LGPS",
+      "LISICON",
+      "NASICON",
+      "__MISSING__",
+      "argyrodites",
+      "garnet",
+      "oxides",
+      "perovskites",
+      "thio-LISICON"
+    ],
+    "n_major_families": 9,
+    "n_held_out_rows_total": 396,
+    "pooled_mae_over_major_family_rows": 1.6294593571107099,
+    "rmse_over_major_family_rows": 2.343239173264489,
+    "spearman_rho_over_major_family_rows": -0.19693790467628364,
+    "sample_weighted_mae_from_per_family": 1.6294593571107099,
+    "macro_family_mae": 2.2505971606026667,
+    "median_family_mae": 1.4221031757281966,
+    "per_family_mae": {
+      "LGPS": {
+        "mae": 2.0760231913062626,
+        "n": 36
+      },
+      "LISICON": {
+        "mae": 4.744255795360315,
+        "n": 21
+      },
+      "NASICON": {
+        "mae": 1.1563372947985542,
+        "n": 130
+      },
+      "__MISSING__": {
+        "mae": 1.4221031757281966,
+        "n": 18
+      },
+      "argyrodites": {
+        "mae": 1.3079682318848993,
+        "n": 50
+      },
+      "garnet": {
+        "mae": 0.8947175413603222,
+        "n": 81
+      },
+      "oxides": {
+        "mae": 5.072449979181052,
+        "n": 17
+      },
+      "perovskites": {
+        "mae": 1.109998248905081,
+        "n": 26
+      },
+      "thio-LISICON": {
+        "mae": 2.4715209868993178,
+        "n": 17
+      }
+    },
+    "note": "Coverage is intentionally partial: only rows belonging to a major family (n>=15) are ever held out and scored here, unlike regimes A/B which cover the full 449-row pool."
+  },
+  "runtime_seconds": 23.496795654296875
+}

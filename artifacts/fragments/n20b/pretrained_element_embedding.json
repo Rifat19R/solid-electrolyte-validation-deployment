@@ -1,0 +1,186 @@
+{
+  "model_name": "pretrained_element_embedding",
+  "obelix_dev_population_n": 449,
+  "obelix_test_untouched_row_count": 113,
+  "n_unique_canonical_formulas": 365,
+  "formula_group_kfold": {
+    "pooled_mae": 1.5133845082041923,
+    "rmse": 2.364249827512576,
+    "r2": 0.07471091319023049,
+    "spearman_rho": 0.4329893702330604,
+    "median_absolute_error": 0.8856068616419375,
+    "sample_weighted_mae_from_per_family": 1.5133845082041923,
+    "macro_family_mae": 2.8401043027080632,
+    "median_family_mae": 1.858004625897917,
+    "n_families_covered": 30,
+    "per_family_mae": {
+      "Chalcogenidotetrelates": {
+        "mae": 1.3296210552158456,
+        "n": 1
+      },
+      "LGPS": {
+        "mae": 0.8610379672884274,
+        "n": 36
+      },
+      "LISICON": {
+        "mae": 3.752808316281492,
+        "n": 21
+      },
+      "NASICON": {
+        "mae": 1.0628621198473782,
+        "n": 130
+      },
+      "Tavorite": {
+        "mae": 1.534302628368665,
+        "n": 1
+      },
+      "__MISSING__": {
+        "mae": 1.164213842255709,
+        "n": 18
+      },
+      "antiperovskite": {
+        "mae": 0.790423136253461,
+        "n": 3
+      },
+      "argyrodites": {
+        "mae": 0.9392001088778396,
+        "n": 50
+      },
+      "boracites": {
+        "mae": 0.8704849922815754,
+        "n": 1
+      },
+      "boron nitride": {
+        "mae": 4.496917412392025,
+        "n": 2
+      },
+      "chlorides": {
+        "mae": 2.6192415413320274,
+        "n": 6
+      },
+      "copper pyroborate": {
+        "mae": 8.26247501373291,
+        "n": 1
+      },
+      "fluorides": {
+        "mae": 0.27452738641105157,
+        "n": 1
+      },
+      "garnet": {
+        "mae": 0.7124879263793753,
+        "n": 81
+      },
+      "garnet-like": {
+        "mae": 0.3986833739570237,
+        "n": 2
+      },
+      "halides": {
+        "mae": 2.381078486342949,
+        "n": 5
+      },
+      "hexaoxometalates": {
+        "mae": 1.0241709091117546,
+        "n": 2
+      },
+      "hydrides": {
+        "mae": 1.1512892433887594,
+        "n": 3
+      },
+      "layered": {
+        "mae": 0.7198049504703197,
+        "n": 1
+      },
+      "molybdates": {
+        "mae": 2.181706623427169,
+        "n": 3
+      },
+      "nitrides": {
+        "mae": 2.2143306749140805,
+        "n": 3
+      },
+      "nitridosilicates": {
+        "mae": 6.570090572182517,
+        "n": 1
+      },
+      "oxides": {
+        "mae": 3.882953153457964,
+        "n": 17
+      },
+      "perovskites": {
+        "mae": 0.9826625788403701,
+        "n": 26
+      },
+      "phosphates": {
+        "mae": 3.660660835811226,
+        "n": 6
+      },
+      "pyrophosphate": {
+        "mae": 13.1474237518002,
+        "n": 1
+      },
+      "sulfides": {
+        "mae": 3.5296795572875768,
+        "n": 7
+      },
+      "thio-LISICON": {
+        "mae": 3.4762326522895166,
+        "n": 17
+      },
+      "thio-phosphate": {
+        "mae": 6.182620108482404,
+        "n": 2
+      },
+      "zirconates": {
+        "mae": 5.029138162560269,
+        "n": 1
+      }
+    },
+    "regime": "formula_group_kfold_nested",
+    "n_folds": 5,
+    "seed": 20260921,
+    "per_fold_hyperparameters": [
+      {
+        "hidden_dims": [
+          64
+        ],
+        "dropout": 0.30281591580708667,
+        "lr": 0.008007438039772769,
+        "weight_decay": 0.004204930555526371
+      },
+      {
+        "hidden_dims": [
+          64
+        ],
+        "dropout": 0.14047464665630932,
+        "lr": 0.009357144226668383,
+        "weight_decay": 8.037620234071065e-05
+      },
+      {
+        "hidden_dims": [
+          64
+        ],
+        "dropout": 0.3674454305630193,
+        "lr": 0.009686618156248814,
+        "weight_decay": 0.0007205019755714976
+      },
+      {
+        "hidden_dims": [
+          64
+        ],
+        "dropout": 0.08562665654543906,
+        "lr": 0.0010737511311308728,
+        "weight_decay": 1.74822388911632e-05
+      },
+      {
+        "hidden_dims": [
+          64
+        ],
+        "dropout": 0.3674454305630193,
+        "lr": 0.009686618156248814,
+        "weight_decay": 0.0007205019755714976
+      }
+    ],
+    "note": "Grouping axis is the pymatgen-reduced canonical formula (Part B reviewer-remediation diagnostic), not chemistry family -- this regime tests whether exact-formula duplicate leakage across random-CV folds (see artifacts/reviewer_formula_duplicate_audit.json) materially changes internal-CV MAE, independent of the family-grouping question N4b/Regime B already answers."
+  },
+  "runtime_seconds": 62.70502686500549
+}

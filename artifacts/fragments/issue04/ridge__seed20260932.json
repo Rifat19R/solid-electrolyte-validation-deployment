@@ -1,0 +1,170 @@
+{
+  "model_name": "ridge",
+  "control_seed": 20260932,
+  "obelix_dev_population_n": 449,
+  "obelix_test_untouched_row_count": 113,
+  "result": {
+    "pooled_mae": 1.2812758968259566,
+    "rmse": 1.7588797133595877,
+    "r2": 0.48789031694431895,
+    "spearman_rho": 0.6804533093726951,
+    "median_absolute_error": 0.98437442052701,
+    "sample_weighted_mae_from_per_family": 1.2812758968259566,
+    "macro_family_mae": 2.1293435598816974,
+    "median_family_mae": 1.6666610822991414,
+    "n_families_covered": 30,
+    "per_family_mae": {
+      "Chalcogenidotetrelates": {
+        "mae": 3.452841209459928,
+        "n": 1
+      },
+      "LGPS": {
+        "mae": 0.8197654451905056,
+        "n": 36
+      },
+      "LISICON": {
+        "mae": 3.466204519608461,
+        "n": 21
+      },
+      "NASICON": {
+        "mae": 1.1185670172226507,
+        "n": 130
+      },
+      "Tavorite": {
+        "mae": 0.5585818172817874,
+        "n": 1
+      },
+      "__MISSING__": {
+        "mae": 1.2717887659307803,
+        "n": 18
+      },
+      "antiperovskite": {
+        "mae": 1.1483493403317417,
+        "n": 3
+      },
+      "argyrodites": {
+        "mae": 1.093677662496421,
+        "n": 50
+      },
+      "boracites": {
+        "mae": 3.4229022879126347,
+        "n": 1
+      },
+      "boron nitride": {
+        "mae": 2.309160906410952,
+        "n": 2
+      },
+      "chlorides": {
+        "mae": 1.8255821148551228,
+        "n": 6
+      },
+      "copper pyroborate": {
+        "mae": 3.370027015829404,
+        "n": 1
+      },
+      "fluorides": {
+        "mae": 1.304022965086876,
+        "n": 1
+      },
+      "garnet": {
+        "mae": 0.7928175572668493,
+        "n": 81
+      },
+      "garnet-like": {
+        "mae": 0.27654861633476324,
+        "n": 2
+      },
+      "halides": {
+        "mae": 2.3291945700594687,
+        "n": 5
+      },
+      "hexaoxometalates": {
+        "mae": 0.8027349634055567,
+        "n": 2
+      },
+      "hydrides": {
+        "mae": 2.74103822465104,
+        "n": 3
+      },
+      "layered": {
+        "mae": 1.9191208536718807,
+        "n": 1
+      },
+      "molybdates": {
+        "mae": 1.3399857449212462,
+        "n": 3
+      },
+      "nitrides": {
+        "mae": 1.735957243177128,
+        "n": 3
+      },
+      "nitridosilicates": {
+        "mae": 3.195082736327773,
+        "n": 1
+      },
+      "oxides": {
+        "mae": 1.6415098262101113,
+        "n": 17
+      },
+      "perovskites": {
+        "mae": 0.9784205968389242,
+        "n": 26
+      },
+      "phosphates": {
+        "mae": 1.6918123383881716,
+        "n": 6
+      },
+      "pyrophosphate": {
+        "mae": 10.722313891205618,
+        "n": 1
+      },
+      "sulfides": {
+        "mae": 1.3659194903210559,
+        "n": 7
+      },
+      "thio-LISICON": {
+        "mae": 1.455832159344132,
+        "n": 17
+      },
+      "thio-phosphate": {
+        "mae": 4.0291658478135535,
+        "n": 2
+      },
+      "zirconates": {
+        "mae": 1.7013810688963842,
+        "n": 1
+      }
+    },
+    "regime": "E_size_matched_random_control",
+    "reference_regime": "B_family_group_kfold",
+    "control_seed": 20260932,
+    "fold_construction_seed": 20260921,
+    "n_folds": 5,
+    "fold_test_sizes": [
+      213,
+      29,
+      141,
+      31,
+      35
+    ],
+    "per_fold_hyperparameters": [
+      {
+        "alpha": 21.582926275267763
+      },
+      {
+        "alpha": 9.337034172066936
+      },
+      {
+        "alpha": 4.843552288230841
+      },
+      {
+        "alpha": 0.03256624642294245
+      },
+      {
+        "alpha": 15.969353507612254
+      }
+    ],
+    "note": "Test-fold sizes are IDENTICAL to regime B's 5 folds, but row membership is a plain random draw, not family-grouped. Hyperparameters were tuned per fold using the same nested inner-split protocol as N4b (not reused from B's frozen hyperparameters)."
+  },
+  "runtime_seconds": 30.355315446853638
+}

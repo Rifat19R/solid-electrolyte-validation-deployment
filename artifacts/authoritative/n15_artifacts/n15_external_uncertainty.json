@@ -1,0 +1,475 @@
+{
+  "phase": "N15_reviewer_remediation",
+  "status": "POST_REVIEW_SENSITIVITY_ANALYSIS_NOT_PRESPECIFIED",
+  "git_commit": "534da7af653407d764d3636e34fca3db1b068817",
+  "git_branch": "acs-jcim-finalization",
+  "spec_file": "artifacts/npj_n15_remediation_spec.json",
+  "spec_file_sha256": "c448d97590eb1d0ee283166d5b7805dbba0c4612c1811c212ab9c4eac8a42733",
+  "n6_source": "artifacts/npj_n6_external_transfer.json (frozen, not rerun)",
+  "n4b_source": "artifacts/npj_n4b_nested_internal_validation.json (frozen, not rerun)",
+  "analysis": "N15_analysis_4_external_uncertainty",
+  "seed": 20260921,
+  "n_boot": 2000,
+  "hargreaves_strict": {
+    "models": [
+      "catboost",
+      "composition_attention",
+      "extra_trees",
+      "pretrained_element_embedding",
+      "random_forest",
+      "ridge",
+      "shallow_mlp",
+      "xgboost"
+    ],
+    "n_rows": 204,
+    "seed": 20260921,
+    "n_boot": 2000,
+    "ci_level": 0.95,
+    "best_model_point_estimate": "extra_trees",
+    "probability_best_model_stays_rank_1": 0.7855,
+    "per_model": {
+      "catboost": {
+        "point_mae": 1.291649414159711,
+        "ci_low": 1.1202818306378517,
+        "ci_high": 1.4877600050773352,
+        "ci_level": 0.95,
+        "rank_frequency": {
+          "1": 0.0115,
+          "2": 0.2425,
+          "3": 0.3175,
+          "4": 0.3035,
+          "5": 0.106,
+          "6": 0.0175,
+          "7": 0.0015,
+          "8": 0.0
+        },
+        "probability_rank_1": 0.0115
+      },
+      "composition_attention": {
+        "point_mae": 1.2823679106846348,
+        "ci_low": 1.1037569623073797,
+        "ci_high": 1.457901111505603,
+        "ci_level": 0.95,
+        "rank_frequency": {
+          "1": 0.177,
+          "2": 0.267,
+          "3": 0.1245,
+          "4": 0.1605,
+          "5": 0.201,
+          "6": 0.063,
+          "7": 0.007,
+          "8": 0.0
+        },
+        "probability_rank_1": 0.177
+      },
+      "extra_trees": {
+        "point_mae": 1.2021821244387565,
+        "ci_low": 1.0353738928705067,
+        "ci_high": 1.3912000331356726,
+        "ci_level": 0.95,
+        "rank_frequency": {
+          "1": 0.7855,
+          "2": 0.1745,
+          "3": 0.035,
+          "4": 0.0045,
+          "5": 0.0005,
+          "6": 0.0,
+          "7": 0.0,
+          "8": 0.0
+        },
+        "probability_rank_1": 0.7855
+      },
+      "pretrained_element_embedding": {
+        "point_mae": 1.7163215138198815,
+        "ci_low": 1.4882384252140528,
+        "ci_high": 1.9510034462080583,
+        "ci_level": 0.95,
+        "rank_frequency": {
+          "1": 0.0,
+          "2": 0.0,
+          "3": 0.0,
+          "4": 0.0,
+          "5": 0.0,
+          "6": 0.0005,
+          "7": 0.0105,
+          "8": 0.989
+        },
+        "probability_rank_1": 0.0
+      },
+      "random_forest": {
+        "point_mae": 1.2861310710168572,
+        "ci_low": 1.112638389550585,
+        "ci_high": 1.4792738351011159,
+        "ci_level": 0.95,
+        "rank_frequency": {
+          "1": 0.018,
+          "2": 0.2605,
+          "3": 0.39,
+          "4": 0.237,
+          "5": 0.0795,
+          "6": 0.0135,
+          "7": 0.0015,
+          "8": 0.0
+        },
+        "probability_rank_1": 0.018
+      },
+      "ridge": {
+        "point_mae": 1.3819534011084926,
+        "ci_low": 1.2172245621559863,
+        "ci_high": 1.5564044833971884,
+        "ci_level": 0.95,
+        "rank_frequency": {
+          "1": 0.006,
+          "2": 0.0445,
+          "3": 0.075,
+          "4": 0.0805,
+          "5": 0.184,
+          "6": 0.538,
+          "7": 0.0715,
+          "8": 0.0005
+        },
+        "probability_rank_1": 0.006
+      },
+      "shallow_mlp": {
+        "point_mae": 1.483064467296068,
+        "ci_low": 1.2981707879578654,
+        "ci_high": 1.6647934367434565,
+        "ci_level": 0.95,
+        "rank_frequency": {
+          "1": 0.0,
+          "2": 0.0015,
+          "3": 0.006,
+          "4": 0.011,
+          "5": 0.0175,
+          "6": 0.121,
+          "7": 0.835,
+          "8": 0.008
+        },
+        "probability_rank_1": 0.0
+      },
+      "xgboost": {
+        "point_mae": 1.3492430698048163,
+        "ci_low": 1.1640201369290228,
+        "ci_high": 1.5496960815681258,
+        "ci_level": 0.95,
+        "rank_frequency": {
+          "1": 0.002,
+          "2": 0.0095,
+          "3": 0.052,
+          "4": 0.203,
+          "5": 0.4115,
+          "6": 0.2465,
+          "7": 0.073,
+          "8": 0.0025
+        },
+        "probability_rank_1": 0.002
+      }
+    },
+    "pairwise_win_rate_descriptive_only": {
+      "catboost": {
+        "composition_attention": 0.4705,
+        "extra_trees": 0.0205,
+        "pretrained_element_embedding": 1.0,
+        "random_forest": 0.448,
+        "ridge": 0.844,
+        "shallow_mlp": 0.9805,
+        "xgboost": 0.928
+      },
+      "composition_attention": {
+        "catboost": 0.5295,
+        "extra_trees": 0.1845,
+        "pretrained_element_embedding": 1.0,
+        "random_forest": 0.5175,
+        "ridge": 0.874,
+        "shallow_mlp": 0.988,
+        "xgboost": 0.748
+      },
+      "extra_trees": {
+        "catboost": 0.9795,
+        "composition_attention": 0.8155,
+        "pretrained_element_embedding": 1.0,
+        "random_forest": 0.963,
+        "ridge": 0.9865,
+        "shallow_mlp": 1.0,
+        "xgboost": 0.9955
+      },
+      "pretrained_element_embedding": {
+        "catboost": 0.0,
+        "composition_attention": 0.0,
+        "extra_trees": 0.0,
+        "random_forest": 0.0,
+        "ridge": 0.001,
+        "shallow_mlp": 0.008,
+        "xgboost": 0.0025
+      },
+      "random_forest": {
+        "catboost": 0.552,
+        "composition_attention": 0.4825,
+        "extra_trees": 0.037,
+        "pretrained_element_embedding": 1.0,
+        "ridge": 0.852,
+        "shallow_mlp": 0.984,
+        "xgboost": 0.9465
+      },
+      "ridge": {
+        "catboost": 0.156,
+        "composition_attention": 0.126,
+        "extra_trees": 0.0135,
+        "pretrained_element_embedding": 0.999,
+        "random_forest": 0.148,
+        "shallow_mlp": 0.911,
+        "xgboost": 0.352
+      },
+      "shallow_mlp": {
+        "catboost": 0.0195,
+        "composition_attention": 0.012,
+        "extra_trees": 0.0,
+        "pretrained_element_embedding": 0.992,
+        "random_forest": 0.016,
+        "ridge": 0.089,
+        "xgboost": 0.084
+      },
+      "xgboost": {
+        "catboost": 0.072,
+        "composition_attention": 0.252,
+        "extra_trees": 0.0045,
+        "pretrained_element_embedding": 0.9975,
+        "random_forest": 0.0535,
+        "ridge": 0.648,
+        "shallow_mlp": 0.916
+      }
+    },
+    "note": "pairwise_win_rate_descriptive_only[a][b] is the fraction of row-paired bootstrap resamples in which model a's resampled MAE was strictly lower than model b's. Descriptive only -- not a p-value, not a claim of statistical significance."
+  },
+  "hargreaves_source_disjoint": {
+    "models": [
+      "catboost",
+      "composition_attention",
+      "extra_trees",
+      "pretrained_element_embedding",
+      "random_forest",
+      "ridge",
+      "shallow_mlp",
+      "xgboost"
+    ],
+    "n_rows": 153,
+    "seed": 20260921,
+    "n_boot": 2000,
+    "ci_level": 0.95,
+    "best_model_point_estimate": "extra_trees",
+    "probability_best_model_stays_rank_1": 0.5535,
+    "per_model": {
+      "catboost": {
+        "point_mae": 1.459432530399523,
+        "ci_low": 1.2345009459919682,
+        "ci_high": 1.696016892851331,
+        "ci_level": 0.95,
+        "rank_frequency": {
+          "1": 0.0215,
+          "2": 0.145,
+          "3": 0.2355,
+          "4": 0.2875,
+          "5": 0.227,
+          "6": 0.08,
+          "7": 0.0035,
+          "8": 0.0
+        },
+        "probability_rank_1": 0.0215
+      },
+      "composition_attention": {
+        "point_mae": 1.4035519715835822,
+        "ci_low": 1.1904484945904774,
+        "ci_high": 1.6236731530527013,
+        "ci_level": 0.95,
+        "rank_frequency": {
+          "1": 0.344,
+          "2": 0.2415,
+          "3": 0.1205,
+          "4": 0.0825,
+          "5": 0.1515,
+          "6": 0.057,
+          "7": 0.003,
+          "8": 0.0
+        },
+        "probability_rank_1": 0.344
+      },
+      "extra_trees": {
+        "point_mae": 1.367273426213229,
+        "ci_low": 1.1469041549640608,
+        "ci_high": 1.5910744865060165,
+        "ci_level": 0.95,
+        "rank_frequency": {
+          "1": 0.5535,
+          "2": 0.2985,
+          "3": 0.112,
+          "4": 0.027,
+          "5": 0.007,
+          "6": 0.002,
+          "7": 0.0,
+          "8": 0.0
+        },
+        "probability_rank_1": 0.5535
+      },
+      "pretrained_element_embedding": {
+        "point_mae": 1.9446780287167196,
+        "ci_low": 1.6612820280921676,
+        "ci_high": 2.219347089897987,
+        "ci_level": 0.95,
+        "rank_frequency": {
+          "1": 0.0,
+          "2": 0.0,
+          "3": 0.0,
+          "4": 0.0,
+          "5": 0.0,
+          "6": 0.001,
+          "7": 0.0155,
+          "8": 0.9835
+        },
+        "probability_rank_1": 0.0
+      },
+      "random_forest": {
+        "point_mae": 1.451621409922025,
+        "ci_low": 1.2414081530268006,
+        "ci_high": 1.6726690226983048,
+        "ci_level": 0.95,
+        "rank_frequency": {
+          "1": 0.023,
+          "2": 0.1635,
+          "3": 0.29,
+          "4": 0.3035,
+          "5": 0.156,
+          "6": 0.06,
+          "7": 0.0035,
+          "8": 0.0005
+        },
+        "probability_rank_1": 0.023
+      },
+      "ridge": {
+        "point_mae": 1.502977231005629,
+        "ci_low": 1.2938451117149339,
+        "ci_high": 1.7282247410613956,
+        "ci_level": 0.95,
+        "rank_frequency": {
+          "1": 0.0415,
+          "2": 0.1215,
+          "3": 0.145,
+          "4": 0.096,
+          "5": 0.1385,
+          "6": 0.4245,
+          "7": 0.033,
+          "8": 0.0
+        },
+        "probability_rank_1": 0.0415
+      },
+      "shallow_mlp": {
+        "point_mae": 1.6800668379277492,
+        "ci_low": 1.455595802685154,
+        "ci_high": 1.9019839478630705,
+        "ci_level": 0.95,
+        "rank_frequency": {
+          "1": 0.0,
+          "2": 0.0,
+          "3": 0.004,
+          "4": 0.016,
+          "5": 0.0155,
+          "6": 0.06,
+          "7": 0.89,
+          "8": 0.0145
+        },
+        "probability_rank_1": 0.0
+      },
+      "xgboost": {
+        "point_mae": 1.4919528694727449,
+        "ci_low": 1.2680108077247865,
+        "ci_high": 1.7324324800865276,
+        "ci_level": 0.95,
+        "rank_frequency": {
+          "1": 0.0165,
+          "2": 0.03,
+          "3": 0.093,
+          "4": 0.1875,
+          "5": 0.3045,
+          "6": 0.3155,
+          "7": 0.0515,
+          "8": 0.0015
+        },
+        "probability_rank_1": 0.0165
+      }
+    },
+    "pairwise_win_rate_descriptive_only": {
+      "catboost": {
+        "composition_attention": 0.3095,
+        "extra_trees": 0.0445,
+        "pretrained_element_embedding": 1.0,
+        "random_forest": 0.439,
+        "ridge": 0.6435,
+        "shallow_mlp": 0.974,
+        "xgboost": 0.782
+      },
+      "composition_attention": {
+        "catboost": 0.6905,
+        "extra_trees": 0.3725,
+        "pretrained_element_embedding": 1.0,
+        "random_forest": 0.6795,
+        "ridge": 0.834,
+        "shallow_mlp": 0.9945,
+        "xgboost": 0.79
+      },
+      "extra_trees": {
+        "catboost": 0.9555,
+        "composition_attention": 0.6275,
+        "pretrained_element_embedding": 1.0,
+        "random_forest": 0.929,
+        "ridge": 0.8915,
+        "shallow_mlp": 0.9985,
+        "xgboost": 0.9565
+      },
+      "pretrained_element_embedding": {
+        "catboost": 0.0,
+        "composition_attention": 0.0,
+        "extra_trees": 0.0,
+        "random_forest": 0.0005,
+        "ridge": 0.0005,
+        "shallow_mlp": 0.0145,
+        "xgboost": 0.002
+      },
+      "random_forest": {
+        "catboost": 0.561,
+        "composition_attention": 0.3205,
+        "extra_trees": 0.071,
+        "pretrained_element_embedding": 0.9995,
+        "ridge": 0.6565,
+        "shallow_mlp": 0.9745,
+        "xgboost": 0.8145
+      },
+      "ridge": {
+        "catboost": 0.3565,
+        "composition_attention": 0.166,
+        "extra_trees": 0.1085,
+        "pretrained_element_embedding": 0.9995,
+        "random_forest": 0.3435,
+        "shallow_mlp": 0.9635,
+        "xgboost": 0.4885
+      },
+      "shallow_mlp": {
+        "catboost": 0.026,
+        "composition_attention": 0.0055,
+        "extra_trees": 0.0015,
+        "pretrained_element_embedding": 0.9855,
+        "random_forest": 0.0255,
+        "ridge": 0.0365,
+        "xgboost": 0.06
+      },
+      "xgboost": {
+        "catboost": 0.218,
+        "composition_attention": 0.21,
+        "extra_trees": 0.0435,
+        "pretrained_element_embedding": 0.998,
+        "random_forest": 0.1855,
+        "ridge": 0.5115,
+        "shallow_mlp": 0.94
+      }
+    },
+    "note": "pairwise_win_rate_descriptive_only[a][b] is the fraction of row-paired bootstrap resamples in which model a's resampled MAE was strictly lower than model b's. Descriptive only -- not a p-value, not a claim of statistical significance."
+  }
+}

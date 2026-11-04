@@ -1,0 +1,51 @@
+# Frozen v1.0-project config (percolation/BVSE/DFT-NEB transport-
+# pretraining dataset roles). That project closed VALID_NEGATIVE_RESULT at
+# commit 8f37c89. The active v2.0 study (RESEARCH_CONTRACT.md) uses only
+# the obelix + hargreaves datasets (data/manifests/*.json), defined
+# directly in scripts/acs/*.py, not via this file. project_seed below is
+# still cited by comment in the historical scripts/phase1_*.py scripts;
+# kept unchanged for that reason.
+project_seed: 20260912
+
+datasets:
+  bvel_percolation:
+    role: whole_crystal_transport_pretraining
+    raw_dir: data/raw/bvel_percolation
+    manifest: data/manifests/bvel_percolation.json
+  bvse_hops:
+    role: local_transport_pretraining
+    raw_dir: data/raw/bvse_hops
+    manifest: data/manifests/bvse_hops.json
+  dft_neb:
+    role: high_fidelity_transport_supervision
+    raw_dir: data/raw/dft_neb
+    manifest: data/manifests/dft_neb.json
+  obelix:
+    role: experimental_conductivity
+    raw_dir: data/raw/obelix
+    manifest: data/manifests/obelix.json
+
+target:
+  name: log10_sigma_rt
+  unit: "log10(S/cm)"
+  temperature_policy: room_temperature_only
+
+disorder:
+  preserve_fractional_occupancy: true
+  explicit_vacancy_fraction: true
+  rounding_allowed_only_as_ablation: true
+
+leakage:
+  exact_duplicates: true
+  composition_groups: true
+  structure_matcher: true
+  source_id_overlap: true
+
+validation_split:
+  source: obelix_official_train
+  method: composition_group_holdout
+  target_fraction: 0.2
+  seed: 20260912
+
+processed_version: v1
+raw_data_immutable: true

@@ -1,0 +1,37 @@
+# Frozen v1.0-project config (GNN transport-pretraining architecture).
+# That project closed VALID_NEGATIVE_RESULT at commit 8f37c89; see
+# RESEARCH_CONTRACT.md v2.0 for the current, active study (composition-
+# only models, defined directly in src/sse_transfer/models/ladder.py, not
+# via this file). Not read by any scripts/acs/* pipeline script. Kept as
+# the historical record of the v1.0 architecture config, not deleted.
+encoder:
+  family: configurable_graph_encoder
+  occupancy_aware: true
+  hidden_dim: 128
+  num_layers: 4
+  dropout: 0.1
+
+heads:
+  percolation:
+    outputs: [barrier_1d, barrier_2d, barrier_3d]
+  approximate_migration:
+    outputs: [migration_barrier]
+  dft_neb:
+    outputs: [migration_barrier]
+  conductivity:
+    outputs: [log10_sigma_rt]
+
+transfer:
+  compare:
+    - scratch
+    - generic_pretrained
+    - percolation_pretrained
+    - percolation_plus_bvse
+    - full_transport
+    - shuffled_transport_labels
+
+fine_tuning:
+  strategies:
+    - frozen_encoder
+    - partial_unfreeze
+    - full_unfreeze

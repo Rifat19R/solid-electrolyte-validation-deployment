@@ -1,0 +1,8 @@
+cohort,n,sources,strict_rows_removed
+OBELiX development population,449,,
+OBELiX official test split,113,,
+Hargreaves et al. database,820,214,
+Room-temperature window (15–35 °C),465,,
+Strict external cohort (primary),204,,
+DOI-source-disjoint subset of strict cohort,153,,51
+Relaxed external cohort,239,,

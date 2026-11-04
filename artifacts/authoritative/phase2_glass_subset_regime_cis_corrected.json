@@ -1,0 +1,154 @@
+{
+  "phase": "phase2_stage0_glass_subset_regime_cis",
+  "git_commit": "534da7af653407d764d3636e34fca3db1b068817",
+  "n_glass_rows": 36,
+  "bootstrap_seed": 20260921,
+  "n_boot": 2000,
+  "pairwise_bootstrap_ci": {
+    "B_minus_A": {
+      "median_abs_mae_gap": {
+        "statistic": "median_abs_mae_gap",
+        "point_delta": -0.7204069011830619,
+        "ci_low": -0.8281102545958531,
+        "ci_high": -0.3706297105710276,
+        "ci_level": 0.95,
+        "n_boot": 2000,
+        "n_finite": 2000,
+        "seed": 20260921
+      },
+      "spearman_rho": {
+        "statistic": "spearman_rho",
+        "point_delta": 0.16666666666666666,
+        "ci_low": -0.3571428571428572,
+        "ci_high": 0.47619047619047616,
+        "ci_level": 0.95,
+        "n_boot": 2000,
+        "n_finite": 2000,
+        "seed": 20260921
+      },
+      "kendall_tau": {
+        "statistic": "kendall_tau",
+        "point_delta": 0.0,
+        "ci_low": -0.4285714285714285,
+        "ci_high": 0.4285714285714285,
+        "ci_level": 0.95,
+        "n_boot": 2000,
+        "n_finite": 2000,
+        "seed": 20260921
+      },
+      "top_model_selection_regret": {
+        "statistic": "top_model_selection_regret",
+        "point_delta": 0.053593199831345695,
+        "ci_low": -0.2832984149238754,
+        "ci_high": 0.3912346633223686,
+        "ci_level": 0.95,
+        "n_boot": 2000,
+        "n_finite": 2000,
+        "seed": 20260921
+      }
+    },
+    "C_minus_A": {
+      "median_abs_mae_gap": {
+        "statistic": "median_abs_mae_gap",
+        "point_delta": -0.9759155070764578,
+        "ci_low": -1.0856044265818001,
+        "ci_high": -0.37302825726673156,
+        "ci_level": 0.95,
+        "n_boot": 2000,
+        "n_finite": 2000,
+        "seed": 20260921
+      },
+      "spearman_rho": {
+        "statistic": "spearman_rho",
+        "point_delta": 0.23809523809523817,
+        "ci_low": -0.6190476190476192,
+        "ci_high": 0.6428571428571429,
+        "ci_level": 0.95,
+        "n_boot": 2000,
+        "n_finite": 2000,
+        "seed": 20260921
+      },
+      "kendall_tau": {
+        "statistic": "kendall_tau",
+        "point_delta": 0.07142857142857142,
+        "ci_low": -0.6428571428571428,
+        "ci_high": 0.49999999999999994,
+        "ci_level": 0.95,
+        "n_boot": 2000,
+        "n_finite": 2000,
+        "seed": 20260921
+      },
+      "top_model_selection_regret": {
+        "statistic": "top_model_selection_regret",
+        "point_delta": -0.07614757995787658,
+        "ci_low": -0.7947613351746242,
+        "ci_high": 0.6499691492830266,
+        "ci_level": 0.95,
+        "n_boot": 2000,
+        "n_finite": 2000,
+        "seed": 20260921
+      }
+    },
+    "D_minus_A": {
+      "median_abs_mae_gap": {
+        "statistic": "median_abs_mae_gap",
+        "point_delta": -0.045030803963918675,
+        "ci_low": -0.08827210233116715,
+        "ci_high": 0.027126422433500275,
+        "ci_level": 0.95,
+        "n_boot": 2000,
+        "n_finite": 2000,
+        "seed": 20260921
+      },
+      "spearman_rho": {
+        "statistic": "spearman_rho",
+        "point_delta": 0.0,
+        "ci_low": 0.0,
+        "ci_high": 0.0,
+        "ci_level": 0.95,
+        "n_boot": 2000,
+        "n_finite": 2000,
+        "seed": 20260921
+      },
+      "kendall_tau": {
+        "statistic": "kendall_tau",
+        "point_delta": 0.0,
+        "ci_low": 0.0,
+        "ci_high": 0.0,
+        "ci_level": 0.95,
+        "n_boot": 2000,
+        "n_finite": 2000,
+        "seed": 20260921
+      },
+      "top_model_selection_regret": {
+        "statistic": "top_model_selection_regret",
+        "point_delta": 0.0,
+        "ci_low": 0.0,
+        "ci_high": 0.0,
+        "ci_level": 0.95,
+        "n_boot": 2000,
+        "n_finite": 2000,
+        "seed": 20260921
+      }
+    }
+  },
+  "verdict_by_pair": {
+    "B_minus_A": {
+      "median_gap_ci_excludes_zero_favoring_family_aware": true,
+      "any_ranking_or_regret_ci_excludes_zero": false,
+      "claim": "anticipates error magnitude, not model selection"
+    },
+    "C_minus_A": {
+      "median_gap_ci_excludes_zero_favoring_family_aware": true,
+      "any_ranking_or_regret_ci_excludes_zero": false,
+      "claim": "anticipates error magnitude, not model selection"
+    },
+    "D_minus_A": {
+      "median_gap_ci_excludes_zero_favoring_family_aware": false,
+      "any_ranking_or_regret_ci_excludes_zero": false,
+      "claim": "median-gap advantage for family-aware regime is not CI-supported at n=36"
+    }
+  },
+  "note": "CI-excludes-zero uses a strict no-overlap standard (ci_low>0 or ci_high<0), matching the convention used elsewhere in this study (N21 Section B / SI-29) for calling a delta 'CI-supported' rather than merely a favorable point estimate.",
+  "provenance": "Internal (N4b regimes A/B/C, N20b regime D) pooled-MAE-per-model numbers reused unchanged from artifacts/npj_n4b_nested_internal_validation.json and artifacts/npj_n20b_formula_group_kfold.json. External residuals are N6's frozen strict.predictions, restricted by formula membership to the 36 UNSEEN_GLASS formulas from artifacts/phase1_glass_split.json. bootstrap_regime_pair_delta_ci is reused unchanged (same function, same seed 20260921, same n_boot 2000) from src/sse_transfer/evaluation/regime_utility.py."
+}

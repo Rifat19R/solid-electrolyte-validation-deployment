@@ -1,0 +1,174 @@
+{
+  "seed": 20260930,
+  "model_name": "extra_trees",
+  "regime_a": {
+    "pooled_mae": 0.8090473000040667,
+    "rmse": 1.3224456159811508,
+    "r2": 0.7105014783028635,
+    "spearman_rho": 0.878169946347528,
+    "median_absolute_error": 0.404328862486496,
+    "sample_weighted_mae_from_per_family": 0.8090473000040667,
+    "macro_family_mae": 1.8793088351080545,
+    "median_family_mae": 1.428231402363684,
+    "n_families_covered": 30,
+    "per_family_mae": {
+      "Chalcogenidotetrelates": {
+        "mae": 1.2551116949209495,
+        "n": 1
+      },
+      "LGPS": {
+        "mae": 0.32459745504418674,
+        "n": 36
+      },
+      "LISICON": {
+        "mae": 1.939689843767674,
+        "n": 21
+      },
+      "NASICON": {
+        "mae": 0.6377702675546122,
+        "n": 130
+      },
+      "Tavorite": {
+        "mae": 1.1947876385199567,
+        "n": 1
+      },
+      "__MISSING__": {
+        "mae": 0.6988194480782813,
+        "n": 18
+      },
+      "antiperovskite": {
+        "mae": 2.548053359232093,
+        "n": 3
+      },
+      "argyrodites": {
+        "mae": 0.4967504559430306,
+        "n": 50
+      },
+      "boracites": {
+        "mae": 2.1340316166529307,
+        "n": 1
+      },
+      "boron nitride": {
+        "mae": 2.8104599600267006,
+        "n": 2
+      },
+      "chlorides": {
+        "mae": 1.27972967981854,
+        "n": 6
+      },
+      "copper pyroborate": {
+        "mae": 5.435444391304565,
+        "n": 1
+      },
+      "fluorides": {
+        "mae": 3.5248594961320894,
+        "n": 1
+      },
+      "garnet": {
+        "mae": 0.3592338144397734,
+        "n": 81
+      },
+      "garnet-like": {
+        "mae": 0.30050929508110524,
+        "n": 2
+      },
+      "halides": {
+        "mae": 2.6923998800323043,
+        "n": 5
+      },
+      "hexaoxometalates": {
+        "mae": 1.4715582480508829,
+        "n": 2
+      },
+      "hydrides": {
+        "mae": 1.1271376348962037,
+        "n": 3
+      },
+      "layered": {
+        "mae": 1.5502448470994534,
+        "n": 1
+      },
+      "molybdates": {
+        "mae": 0.9647401667379443,
+        "n": 3
+      },
+      "nitrides": {
+        "mae": 0.654028559961009,
+        "n": 3
+      },
+      "nitridosilicates": {
+        "mae": 3.1768678824097627,
+        "n": 1
+      },
+      "oxides": {
+        "mae": 1.3849045566764848,
+        "n": 17
+      },
+      "perovskites": {
+        "mae": 0.6891751250373825,
+        "n": 26
+      },
+      "phosphates": {
+        "mae": 1.6659147237279723,
+        "n": 6
+      },
+      "pyrophosphate": {
+        "mae": 8.28662480227675,
+        "n": 1
+      },
+      "sulfides": {
+        "mae": 1.5687034476668538,
+        "n": 7
+      },
+      "thio-LISICON": {
+        "mae": 1.0292267717102965,
+        "n": 17
+      },
+      "thio-phosphate": {
+        "mae": 3.5605236696189917,
+        "n": 2
+      },
+      "zirconates": {
+        "mae": 1.6173663208228382,
+        "n": 1
+      }
+    },
+    "regime": "A_random_5fold_cv_nested",
+    "n_folds": 5,
+    "seed": 20260930,
+    "per_fold_hyperparameters": [
+      {
+        "n_estimators": 321,
+        "max_depth": 15,
+        "min_samples_leaf": 3,
+        "max_features": 0.8418846755743449
+      },
+      {
+        "n_estimators": 381,
+        "max_depth": 16,
+        "min_samples_leaf": 3,
+        "max_features": 0.9154337064003353
+      },
+      {
+        "n_estimators": 244,
+        "max_depth": 8,
+        "min_samples_leaf": 1,
+        "max_features": 0.7051225566043529
+      },
+      {
+        "n_estimators": 427,
+        "max_depth": 15,
+        "min_samples_leaf": 2,
+        "max_features": 0.30666878123632724
+      },
+      {
+        "n_estimators": 383,
+        "max_depth": 15,
+        "min_samples_leaf": 1,
+        "max_features": 0.5652318298589254
+      }
+    ],
+    "note": "Folds are not family-stratified; per-family/macro-family MAE here is purely descriptive, not the regime's grouping axis. Hyperparameters were tuned per fold using an inner split of that fold's own outer-train partition only (nested; see module docstring)."
+  },
+  "runtime_seconds": 154.56507968902588
+}

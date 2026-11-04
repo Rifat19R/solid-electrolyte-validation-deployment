@@ -1,0 +1,40 @@
+{
+  "phase": "phase1_stage0_predeclared",
+  "git_commit": "534da7af653407d764d3636e34fca3db1b068817",
+  "written_before_any_subset_statistic_was_computed": true,
+  "subset_size_thresholds": {
+    "n_ge_20": "MAE + RMSE + R2 + bootstrap_95pct_CI",
+    "n_ge_30": "MAE+CI treatment above, PLUS regime-ranking statistics (median_abs_mae_gap, spearman_rho, kendall_tau, top_model_selection_regret)",
+    "below_20": "descriptive only (n, mean, median, spread) -- no bootstrap CI, no regime-ranking statistic is computed for a subset this small"
+  },
+  "conditional_framing_rule": {
+    "branch_1": {
+      "condition": "crystalline-unseen subset (n>=20, so a regime comparison exists) shows family-aware internal-CV median |MAE gap| < random-CV's median |MAE gap| against that subset's external MAE",
+      "framing": "family-holdout anticipates unseen-chemistry error magnitude"
+    },
+    "branch_2": {
+      "condition": "the same smaller-gap pattern holds only for the glass/glass-ceramic subset, not for crystalline-unseen",
+      "framing": "unseen material class (amorphous), not chemistry novelty"
+    },
+    "branch_3": {
+      "condition": "crystalline-unseen n is below the n>=20 threshold",
+      "framing": "report descriptively; state unresolved"
+    },
+    "evaluation_order": "branch_3 is checked FIRST (a sample-size gate on what can be computed at all), then branch_1, then branch_2 -- if branch_3 fires for crystalline-unseen, branches 1/2 can still independently apply to the glass subset using its own (independently thresholded) regime comparison, but the crystalline subset itself is never given a regime-ranking verdict regardless of what its raw numbers would have shown."
+  },
+  "frozen_inputs": {
+    "n6_external_transfer_sha256": "dbfde79d72f3cd2021d861380d9e80b8d40e2d774a295240353cd34dd7f6fe3f",
+    "n4b_nested_internal_validation_sha256": "653779c925494e9cb366f79de2947eabd5bccb1324b107f3677c14920f8ff8ad",
+    "n20b_formula_group_kfold_sha256": "0b57838f11f3df66cb3eea07a25d96b3652ad652b36f544d8cec9e444339ada2",
+    "reviewer_family_audit_sha256": "9d84029c34b88e41a952d7a23d5fff009bc533d4ebd4043c987a1503cf20f0ae",
+    "hargreaves_overlap_ledger_sha256": "a1b4d0f425fc3048a03cdf4a82321292cbc80b9590ba7e309f7f353788098683"
+  },
+  "hard_constraints": [
+    "no external inference rerun",
+    "no retraining of final models",
+    "no new model or dataset",
+    "frozen predictions/artifacts only",
+    "report adverse results",
+    "no commit, no push"
+  ]
+}

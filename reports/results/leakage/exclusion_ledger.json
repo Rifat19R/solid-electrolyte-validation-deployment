@@ -1,0 +1,1184 @@
+{
+  "policy_reference": "CLAUDE.md Phase 0C leakage-exclusion hierarchy",
+  "n_excluded_materials": 20,
+  "n_excluded_records": 107,
+  "entries": [
+    {
+      "original_dataset": "bvel_percolation",
+      "record_id": "mp-1020019",
+      "material_id": "mp-1020019",
+      "match_type": "EXACT_STRUCTURE_MATCH",
+      "protection_tier": "validation_protection",
+      "matched_obelix_ids": [
+        "cdk"
+      ],
+      "exclusion_reason": "EXACT_STRUCTURE_MATCH against OBELiX id(s) ['cdk'] (validation_protection); see REVIEWED_PROBABLE_MATCHES for probable-match rationale."
+    },
+    {
+      "original_dataset": "bvse_hops",
+      "record_id": "mp-1020019_0_3_0_1_1",
+      "material_id": "mp-1020019",
+      "match_type": "EXACT_STRUCTURE_MATCH",
+      "protection_tier": "validation_protection",
+      "matched_obelix_ids": [
+        "cdk"
+      ],
+      "exclusion_reason": "EXACT_STRUCTURE_MATCH against OBELiX id(s) ['cdk'] (validation_protection); see REVIEWED_PROBABLE_MATCHES for probable-match rationale."
+    },
+    {
+      "original_dataset": "bvse_hops",
+      "record_id": "mp-1020019_0_3_0_1_0",
+      "material_id": "mp-1020019",
+      "match_type": "EXACT_STRUCTURE_MATCH",
+      "protection_tier": "validation_protection",
+      "matched_obelix_ids": [
+        "cdk"
+      ],
+      "exclusion_reason": "EXACT_STRUCTURE_MATCH against OBELiX id(s) ['cdk'] (validation_protection); see REVIEWED_PROBABLE_MATCHES for probable-match rationale."
+    },
+    {
+      "original_dataset": "bvse_hops",
+      "record_id": "mp-1020019_0_1_0_1_0",
+      "material_id": "mp-1020019",
+      "match_type": "EXACT_STRUCTURE_MATCH",
+      "protection_tier": "validation_protection",
+      "matched_obelix_ids": [
+        "cdk"
+      ],
+      "exclusion_reason": "EXACT_STRUCTURE_MATCH against OBELiX id(s) ['cdk'] (validation_protection); see REVIEWED_PROBABLE_MATCHES for probable-match rationale."
+    },
+    {
+      "original_dataset": "bvse_hops",
+      "record_id": "mp-1020019_0_2_0_1_0",
+      "material_id": "mp-1020019",
+      "match_type": "EXACT_STRUCTURE_MATCH",
+      "protection_tier": "validation_protection",
+      "matched_obelix_ids": [
+        "cdk"
+      ],
+      "exclusion_reason": "EXACT_STRUCTURE_MATCH against OBELiX id(s) ['cdk'] (validation_protection); see REVIEWED_PROBABLE_MATCHES for probable-match rationale."
+    },
+    {
+      "original_dataset": "bvse_hops",
+      "record_id": "mp-1020019_0_3_0_0_0",
+      "material_id": "mp-1020019",
+      "match_type": "EXACT_STRUCTURE_MATCH",
+      "protection_tier": "validation_protection",
+      "matched_obelix_ids": [
+        "cdk"
+      ],
+      "exclusion_reason": "EXACT_STRUCTURE_MATCH against OBELiX id(s) ['cdk'] (validation_protection); see REVIEWED_PROBABLE_MATCHES for probable-match rationale."
+    },
+    {
+      "original_dataset": "bvse_hops",
+      "record_id": "mp-1020019_1_0_1_-1_0",
+      "material_id": "mp-1020019",
+      "match_type": "EXACT_STRUCTURE_MATCH",
+      "protection_tier": "validation_protection",
+      "matched_obelix_ids": [
+        "cdk"
+      ],
+      "exclusion_reason": "EXACT_STRUCTURE_MATCH against OBELiX id(s) ['cdk'] (validation_protection); see REVIEWED_PROBABLE_MATCHES for probable-match rationale."
+    },
+    {
+      "original_dataset": "bvse_hops",
+      "record_id": "mp-1020019_0_3_1_1_0",
+      "material_id": "mp-1020019",
+      "match_type": "EXACT_STRUCTURE_MATCH",
+      "protection_tier": "validation_protection",
+      "matched_obelix_ids": [
+        "cdk"
+      ],
+      "exclusion_reason": "EXACT_STRUCTURE_MATCH against OBELiX id(s) ['cdk'] (validation_protection); see REVIEWED_PROBABLE_MATCHES for probable-match rationale."
+    },
+    {
+      "original_dataset": "bvse_hops",
+      "record_id": "mp-1020019_1_3_1_-1_0",
+      "material_id": "mp-1020019",
+      "match_type": "EXACT_STRUCTURE_MATCH",
+      "protection_tier": "validation_protection",
+      "matched_obelix_ids": [
+        "cdk"
+      ],
+      "exclusion_reason": "EXACT_STRUCTURE_MATCH against OBELiX id(s) ['cdk'] (validation_protection); see REVIEWED_PROBABLE_MATCHES for probable-match rationale."
+    },
+    {
+      "original_dataset": "bvel_percolation",
+      "record_id": "mp-1020022",
+      "material_id": "mp-1020022",
+      "match_type": "EXACT_STRUCTURE_MATCH",
+      "protection_tier": "final_test_protection",
+      "matched_obelix_ids": [
+        "ro9"
+      ],
+      "exclusion_reason": "EXACT_STRUCTURE_MATCH against OBELiX id(s) ['ro9'] (final_test_protection); see REVIEWED_PROBABLE_MATCHES for probable-match rationale."
+    },
+    {
+      "original_dataset": "bvel_percolation",
+      "record_id": "mp-1020057",
+      "material_id": "mp-1020057",
+      "match_type": "EXACT_STRUCTURE_MATCH",
+      "protection_tier": "final_test_protection",
+      "matched_obelix_ids": [
+        "ecp"
+      ],
+      "exclusion_reason": "EXACT_STRUCTURE_MATCH against OBELiX id(s) ['ecp'] (final_test_protection); see REVIEWED_PROBABLE_MATCHES for probable-match rationale."
+    },
+    {
+      "original_dataset": "bvse_hops",
+      "record_id": "mp-1020057_2_0_0_1_0",
+      "material_id": "mp-1020057",
+      "match_type": "EXACT_STRUCTURE_MATCH",
+      "protection_tier": "final_test_protection",
+      "matched_obelix_ids": [
+        "ecp"
+      ],
+      "exclusion_reason": "EXACT_STRUCTURE_MATCH against OBELiX id(s) ['ecp'] (final_test_protection); see REVIEWED_PROBABLE_MATCHES for probable-match rationale."
+    },
+    {
+      "original_dataset": "bvse_hops",
+      "record_id": "mp-1020057_0_3_0_0_0",
+      "material_id": "mp-1020057",
+      "match_type": "EXACT_STRUCTURE_MATCH",
+      "protection_tier": "final_test_protection",
+      "matched_obelix_ids": [
+        "ecp"
+      ],
+      "exclusion_reason": "EXACT_STRUCTURE_MATCH against OBELiX id(s) ['ecp'] (final_test_protection); see REVIEWED_PROBABLE_MATCHES for probable-match rationale."
+    },
+    {
+      "original_dataset": "bvse_hops",
+      "record_id": "mp-1020057_0_1_0_0_1",
+      "material_id": "mp-1020057",
+      "match_type": "EXACT_STRUCTURE_MATCH",
+      "protection_tier": "final_test_protection",
+      "matched_obelix_ids": [
+        "ecp"
+      ],
+      "exclusion_reason": "EXACT_STRUCTURE_MATCH against OBELiX id(s) ['ecp'] (final_test_protection); see REVIEWED_PROBABLE_MATCHES for probable-match rationale."
+    },
+    {
+      "original_dataset": "bvse_hops",
+      "record_id": "mp-1020057_0_2_0_0_0",
+      "material_id": "mp-1020057",
+      "match_type": "EXACT_STRUCTURE_MATCH",
+      "protection_tier": "final_test_protection",
+      "matched_obelix_ids": [
+        "ecp"
+      ],
+      "exclusion_reason": "EXACT_STRUCTURE_MATCH against OBELiX id(s) ['ecp'] (final_test_protection); see REVIEWED_PROBABLE_MATCHES for probable-match rationale."
+    },
+    {
+      "original_dataset": "dft_neb",
+      "record_id": "mp-1020057_2_0_0_1_0",
+      "material_id": "mp-1020057",
+      "match_type": "EXACT_STRUCTURE_MATCH",
+      "protection_tier": "final_test_protection",
+      "matched_obelix_ids": [
+        "ecp"
+      ],
+      "exclusion_reason": "EXACT_STRUCTURE_MATCH against OBELiX id(s) ['ecp'] (final_test_protection); see REVIEWED_PROBABLE_MATCHES for probable-match rationale."
+    },
+    {
+      "original_dataset": "bvel_percolation",
+      "record_id": "mp-1020646",
+      "material_id": "mp-1020646",
+      "match_type": "EXACT_STRUCTURE_MATCH",
+      "protection_tier": "final_test_protection",
+      "matched_obelix_ids": [
+        "7cr"
+      ],
+      "exclusion_reason": "EXACT_STRUCTURE_MATCH against OBELiX id(s) ['7cr'] (final_test_protection); see REVIEWED_PROBABLE_MATCHES for probable-match rationale."
+    },
+    {
+      "original_dataset": "bvel_percolation",
+      "record_id": "mp-10520",
+      "material_id": "mp-10520",
+      "match_type": "EXACT_STRUCTURE_MATCH",
+      "protection_tier": "validation_protection",
+      "matched_obelix_ids": [
+        "3rx"
+      ],
+      "exclusion_reason": "EXACT_STRUCTURE_MATCH against OBELiX id(s) ['3rx'] (validation_protection); see REVIEWED_PROBABLE_MATCHES for probable-match rationale."
+    },
+    {
+      "original_dataset": "bvse_hops",
+      "record_id": "mp-10520_0_1_0_0_0",
+      "material_id": "mp-10520",
+      "match_type": "EXACT_STRUCTURE_MATCH",
+      "protection_tier": "validation_protection",
+      "matched_obelix_ids": [
+        "3rx"
+      ],
+      "exclusion_reason": "EXACT_STRUCTURE_MATCH against OBELiX id(s) ['3rx'] (validation_protection); see REVIEWED_PROBABLE_MATCHES for probable-match rationale."
+    },
+    {
+      "original_dataset": "bvel_percolation",
+      "record_id": "mp-1104386",
+      "material_id": "mp-1104386",
+      "match_type": "EXACT_STRUCTURE_MATCH",
+      "protection_tier": "final_test_protection",
+      "matched_obelix_ids": [
+        "jy6"
+      ],
+      "exclusion_reason": "EXACT_STRUCTURE_MATCH against OBELiX id(s) ['jy6'] (final_test_protection); see REVIEWED_PROBABLE_MATCHES for probable-match rationale."
+    },
+    {
+      "original_dataset": "bvse_hops",
+      "record_id": "mp-1104386_0_5_0_0_1",
+      "material_id": "mp-1104386",
+      "match_type": "EXACT_STRUCTURE_MATCH",
+      "protection_tier": "final_test_protection",
+      "matched_obelix_ids": [
+        "jy6"
+      ],
+      "exclusion_reason": "EXACT_STRUCTURE_MATCH against OBELiX id(s) ['jy6'] (final_test_protection); see REVIEWED_PROBABLE_MATCHES for probable-match rationale."
+    },
+    {
+      "original_dataset": "bvse_hops",
+      "record_id": "mp-1104386_0_1_0_0_0",
+      "material_id": "mp-1104386",
+      "match_type": "EXACT_STRUCTURE_MATCH",
+      "protection_tier": "final_test_protection",
+      "matched_obelix_ids": [
+        "jy6"
+      ],
+      "exclusion_reason": "EXACT_STRUCTURE_MATCH against OBELiX id(s) ['jy6'] (final_test_protection); see REVIEWED_PROBABLE_MATCHES for probable-match rationale."
+    },
+    {
+      "original_dataset": "bvel_percolation",
+      "record_id": "mp-11175",
+      "material_id": "mp-11175",
+      "match_type": "EXACT_STRUCTURE_MATCH",
+      "protection_tier": "final_test_protection",
+      "matched_obelix_ids": [
+        "i47"
+      ],
+      "exclusion_reason": "EXACT_STRUCTURE_MATCH against OBELiX id(s) ['i47'] (final_test_protection); see REVIEWED_PROBABLE_MATCHES for probable-match rationale."
+    },
+    {
+      "original_dataset": "bvse_hops",
+      "record_id": "mp-11175_0_0_0_1_1",
+      "material_id": "mp-11175",
+      "match_type": "EXACT_STRUCTURE_MATCH",
+      "protection_tier": "final_test_protection",
+      "matched_obelix_ids": [
+        "i47"
+      ],
+      "exclusion_reason": "EXACT_STRUCTURE_MATCH against OBELiX id(s) ['i47'] (final_test_protection); see REVIEWED_PROBABLE_MATCHES for probable-match rationale."
+    },
+    {
+      "original_dataset": "bvel_percolation",
+      "record_id": "mp-1194339",
+      "material_id": "mp-1194339",
+      "match_type": "EXACT_STRUCTURE_MATCH",
+      "protection_tier": "validation_protection",
+      "matched_obelix_ids": [
+        "1e9"
+      ],
+      "exclusion_reason": "EXACT_STRUCTURE_MATCH against OBELiX id(s) ['1e9'] (validation_protection); see REVIEWED_PROBABLE_MATCHES for probable-match rationale."
+    },
+    {
+      "original_dataset": "bvse_hops",
+      "record_id": "mp-1194339_0_7_0_0_0",
+      "material_id": "mp-1194339",
+      "match_type": "EXACT_STRUCTURE_MATCH",
+      "protection_tier": "validation_protection",
+      "matched_obelix_ids": [
+        "1e9"
+      ],
+      "exclusion_reason": "EXACT_STRUCTURE_MATCH against OBELiX id(s) ['1e9'] (validation_protection); see REVIEWED_PROBABLE_MATCHES for probable-match rationale."
+    },
+    {
+      "original_dataset": "bvse_hops",
+      "record_id": "mp-1194339_0_4_0_0_0",
+      "material_id": "mp-1194339",
+      "match_type": "EXACT_STRUCTURE_MATCH",
+      "protection_tier": "validation_protection",
+      "matched_obelix_ids": [
+        "1e9"
+      ],
+      "exclusion_reason": "EXACT_STRUCTURE_MATCH against OBELiX id(s) ['1e9'] (validation_protection); see REVIEWED_PROBABLE_MATCHES for probable-match rationale."
+    },
+    {
+      "original_dataset": "bvse_hops",
+      "record_id": "mp-1194339_0_9_0_0_0",
+      "material_id": "mp-1194339",
+      "match_type": "EXACT_STRUCTURE_MATCH",
+      "protection_tier": "validation_protection",
+      "matched_obelix_ids": [
+        "1e9"
+      ],
+      "exclusion_reason": "EXACT_STRUCTURE_MATCH against OBELiX id(s) ['1e9'] (validation_protection); see REVIEWED_PROBABLE_MATCHES for probable-match rationale."
+    },
+    {
+      "original_dataset": "bvse_hops",
+      "record_id": "mp-1194339_0_10_0_0_0",
+      "material_id": "mp-1194339",
+      "match_type": "EXACT_STRUCTURE_MATCH",
+      "protection_tier": "validation_protection",
+      "matched_obelix_ids": [
+        "1e9"
+      ],
+      "exclusion_reason": "EXACT_STRUCTURE_MATCH against OBELiX id(s) ['1e9'] (validation_protection); see REVIEWED_PROBABLE_MATCHES for probable-match rationale."
+    },
+    {
+      "original_dataset": "bvse_hops",
+      "record_id": "mp-1194339_4_8_0_0_0",
+      "material_id": "mp-1194339",
+      "match_type": "EXACT_STRUCTURE_MATCH",
+      "protection_tier": "validation_protection",
+      "matched_obelix_ids": [
+        "1e9"
+      ],
+      "exclusion_reason": "EXACT_STRUCTURE_MATCH against OBELiX id(s) ['1e9'] (validation_protection); see REVIEWED_PROBABLE_MATCHES for probable-match rationale."
+    },
+    {
+      "original_dataset": "bvel_percolation",
+      "record_id": "mp-1194700",
+      "material_id": "mp-1194700",
+      "match_type": "EXACT_STRUCTURE_MATCH",
+      "protection_tier": "final_test_protection",
+      "matched_obelix_ids": [
+        "2uv"
+      ],
+      "exclusion_reason": "EXACT_STRUCTURE_MATCH against OBELiX id(s) ['2uv'] (final_test_protection); see REVIEWED_PROBABLE_MATCHES for probable-match rationale."
+    },
+    {
+      "original_dataset": "bvse_hops",
+      "record_id": "mp-1194700_0_8_0_0_0",
+      "material_id": "mp-1194700",
+      "match_type": "EXACT_STRUCTURE_MATCH",
+      "protection_tier": "final_test_protection",
+      "matched_obelix_ids": [
+        "2uv"
+      ],
+      "exclusion_reason": "EXACT_STRUCTURE_MATCH against OBELiX id(s) ['2uv'] (final_test_protection); see REVIEWED_PROBABLE_MATCHES for probable-match rationale."
+    },
+    {
+      "original_dataset": "bvse_hops",
+      "record_id": "mp-1194700_0_12_0_0_0",
+      "material_id": "mp-1194700",
+      "match_type": "EXACT_STRUCTURE_MATCH",
+      "protection_tier": "final_test_protection",
+      "matched_obelix_ids": [
+        "2uv"
+      ],
+      "exclusion_reason": "EXACT_STRUCTURE_MATCH against OBELiX id(s) ['2uv'] (final_test_protection); see REVIEWED_PROBABLE_MATCHES for probable-match rationale."
+    },
+    {
+      "original_dataset": "bvse_hops",
+      "record_id": "mp-1194700_4_12_0_0_0",
+      "material_id": "mp-1194700",
+      "match_type": "EXACT_STRUCTURE_MATCH",
+      "protection_tier": "final_test_protection",
+      "matched_obelix_ids": [
+        "2uv"
+      ],
+      "exclusion_reason": "EXACT_STRUCTURE_MATCH against OBELiX id(s) ['2uv'] (final_test_protection); see REVIEWED_PROBABLE_MATCHES for probable-match rationale."
+    },
+    {
+      "original_dataset": "bvel_percolation",
+      "record_id": "mp-1198622",
+      "material_id": "mp-1198622",
+      "match_type": "EXACT_STRUCTURE_MATCH",
+      "protection_tier": "final_test_protection",
+      "matched_obelix_ids": [
+        "ipo"
+      ],
+      "exclusion_reason": "EXACT_STRUCTURE_MATCH against OBELiX id(s) ['ipo'] (final_test_protection); see REVIEWED_PROBABLE_MATCHES for probable-match rationale."
+    },
+    {
+      "original_dataset": "bvse_hops",
+      "record_id": "mp-1198622_0_13_0_0_0",
+      "material_id": "mp-1198622",
+      "match_type": "EXACT_STRUCTURE_MATCH",
+      "protection_tier": "final_test_protection",
+      "matched_obelix_ids": [
+        "ipo"
+      ],
+      "exclusion_reason": "EXACT_STRUCTURE_MATCH against OBELiX id(s) ['ipo'] (final_test_protection); see REVIEWED_PROBABLE_MATCHES for probable-match rationale."
+    },
+    {
+      "original_dataset": "bvse_hops",
+      "record_id": "mp-1198622_4_14_0_1_0",
+      "material_id": "mp-1198622",
+      "match_type": "EXACT_STRUCTURE_MATCH",
+      "protection_tier": "final_test_protection",
+      "matched_obelix_ids": [
+        "ipo"
+      ],
+      "exclusion_reason": "EXACT_STRUCTURE_MATCH against OBELiX id(s) ['ipo'] (final_test_protection); see REVIEWED_PROBABLE_MATCHES for probable-match rationale."
+    },
+    {
+      "original_dataset": "bvse_hops",
+      "record_id": "mp-1198622_4_13_0_0_0",
+      "material_id": "mp-1198622",
+      "match_type": "EXACT_STRUCTURE_MATCH",
+      "protection_tier": "final_test_protection",
+      "matched_obelix_ids": [
+        "ipo"
+      ],
+      "exclusion_reason": "EXACT_STRUCTURE_MATCH against OBELiX id(s) ['ipo'] (final_test_protection); see REVIEWED_PROBABLE_MATCHES for probable-match rationale."
+    },
+    {
+      "original_dataset": "bvel_percolation",
+      "record_id": "mp-1222525",
+      "material_id": "mp-1222525",
+      "match_type": "EXACT_STRUCTURE_MATCH",
+      "protection_tier": "final_test_protection",
+      "matched_obelix_ids": [
+        "kxw"
+      ],
+      "exclusion_reason": "EXACT_STRUCTURE_MATCH against OBELiX id(s) ['kxw'] (final_test_protection); see REVIEWED_PROBABLE_MATCHES for probable-match rationale."
+    },
+    {
+      "original_dataset": "bvse_hops",
+      "record_id": "mp-1222525_0_1_0_0_0",
+      "material_id": "mp-1222525",
+      "match_type": "EXACT_STRUCTURE_MATCH",
+      "protection_tier": "final_test_protection",
+      "matched_obelix_ids": [
+        "kxw"
+      ],
+      "exclusion_reason": "EXACT_STRUCTURE_MATCH against OBELiX id(s) ['kxw'] (final_test_protection); see REVIEWED_PROBABLE_MATCHES for probable-match rationale."
+    },
+    {
+      "original_dataset": "bvse_hops",
+      "record_id": "mp-1222525_3_0_1_1_0",
+      "material_id": "mp-1222525",
+      "match_type": "EXACT_STRUCTURE_MATCH",
+      "protection_tier": "final_test_protection",
+      "matched_obelix_ids": [
+        "kxw"
+      ],
+      "exclusion_reason": "EXACT_STRUCTURE_MATCH against OBELiX id(s) ['kxw'] (final_test_protection); see REVIEWED_PROBABLE_MATCHES for probable-match rationale."
+    },
+    {
+      "original_dataset": "bvse_hops",
+      "record_id": "mp-1222525_3_4_0_0_0",
+      "material_id": "mp-1222525",
+      "match_type": "EXACT_STRUCTURE_MATCH",
+      "protection_tier": "final_test_protection",
+      "matched_obelix_ids": [
+        "kxw"
+      ],
+      "exclusion_reason": "EXACT_STRUCTURE_MATCH against OBELiX id(s) ['kxw'] (final_test_protection); see REVIEWED_PROBABLE_MATCHES for probable-match rationale."
+    },
+    {
+      "original_dataset": "bvel_percolation",
+      "record_id": "mp-13944",
+      "material_id": "mp-13944",
+      "match_type": "EXACT_STRUCTURE_MATCH",
+      "protection_tier": "final_test_protection",
+      "matched_obelix_ids": [
+        "br1"
+      ],
+      "exclusion_reason": "EXACT_STRUCTURE_MATCH against OBELiX id(s) ['br1'] (final_test_protection); see REVIEWED_PROBABLE_MATCHES for probable-match rationale."
+    },
+    {
+      "original_dataset": "bvse_hops",
+      "record_id": "mp-13944_0_21_0_0_0",
+      "material_id": "mp-13944",
+      "match_type": "EXACT_STRUCTURE_MATCH",
+      "protection_tier": "final_test_protection",
+      "matched_obelix_ids": [
+        "br1"
+      ],
+      "exclusion_reason": "EXACT_STRUCTURE_MATCH against OBELiX id(s) ['br1'] (final_test_protection); see REVIEWED_PROBABLE_MATCHES for probable-match rationale."
+    },
+    {
+      "original_dataset": "bvse_hops",
+      "record_id": "mp-13944_0_18_0_0_1",
+      "material_id": "mp-13944",
+      "match_type": "EXACT_STRUCTURE_MATCH",
+      "protection_tier": "final_test_protection",
+      "matched_obelix_ids": [
+        "br1"
+      ],
+      "exclusion_reason": "EXACT_STRUCTURE_MATCH against OBELiX id(s) ['br1'] (final_test_protection); see REVIEWED_PROBABLE_MATCHES for probable-match rationale."
+    },
+    {
+      "original_dataset": "bvse_hops",
+      "record_id": "mp-13944_1_22_0_0_0",
+      "material_id": "mp-13944",
+      "match_type": "EXACT_STRUCTURE_MATCH",
+      "protection_tier": "final_test_protection",
+      "matched_obelix_ids": [
+        "br1"
+      ],
+      "exclusion_reason": "EXACT_STRUCTURE_MATCH against OBELiX id(s) ['br1'] (final_test_protection); see REVIEWED_PROBABLE_MATCHES for probable-match rationale."
+    },
+    {
+      "original_dataset": "bvel_percolation",
+      "record_id": "mp-19219",
+      "material_id": "mp-19219",
+      "match_type": "EXACT_STRUCTURE_MATCH",
+      "protection_tier": "validation_protection",
+      "matched_obelix_ids": [
+        "h6c"
+      ],
+      "exclusion_reason": "EXACT_STRUCTURE_MATCH against OBELiX id(s) ['h6c'] (validation_protection); see REVIEWED_PROBABLE_MATCHES for probable-match rationale."
+    },
+    {
+      "original_dataset": "bvse_hops",
+      "record_id": "mp-19219_0_3_0_0_1",
+      "material_id": "mp-19219",
+      "match_type": "EXACT_STRUCTURE_MATCH",
+      "protection_tier": "validation_protection",
+      "matched_obelix_ids": [
+        "h6c"
+      ],
+      "exclusion_reason": "EXACT_STRUCTURE_MATCH against OBELiX id(s) ['h6c'] (validation_protection); see REVIEWED_PROBABLE_MATCHES for probable-match rationale."
+    },
+    {
+      "original_dataset": "bvse_hops",
+      "record_id": "mp-19219_0_1_0_0_0",
+      "material_id": "mp-19219",
+      "match_type": "EXACT_STRUCTURE_MATCH",
+      "protection_tier": "validation_protection",
+      "matched_obelix_ids": [
+        "h6c"
+      ],
+      "exclusion_reason": "EXACT_STRUCTURE_MATCH against OBELiX id(s) ['h6c'] (validation_protection); see REVIEWED_PROBABLE_MATCHES for probable-match rationale."
+    },
+    {
+      "original_dataset": "bvse_hops",
+      "record_id": "mp-19219_0_4_0_1_0",
+      "material_id": "mp-19219",
+      "match_type": "EXACT_STRUCTURE_MATCH",
+      "protection_tier": "validation_protection",
+      "matched_obelix_ids": [
+        "h6c"
+      ],
+      "exclusion_reason": "EXACT_STRUCTURE_MATCH against OBELiX id(s) ['h6c'] (validation_protection); see REVIEWED_PROBABLE_MATCHES for probable-match rationale."
+    },
+    {
+      "original_dataset": "bvse_hops",
+      "record_id": "mp-19219_0_5_0_0_1",
+      "material_id": "mp-19219",
+      "match_type": "EXACT_STRUCTURE_MATCH",
+      "protection_tier": "validation_protection",
+      "matched_obelix_ids": [
+        "h6c"
+      ],
+      "exclusion_reason": "EXACT_STRUCTURE_MATCH against OBELiX id(s) ['h6c'] (validation_protection); see REVIEWED_PROBABLE_MATCHES for probable-match rationale."
+    },
+    {
+      "original_dataset": "bvse_hops",
+      "record_id": "mp-19219_1_4_0_0_0",
+      "material_id": "mp-19219",
+      "match_type": "EXACT_STRUCTURE_MATCH",
+      "protection_tier": "validation_protection",
+      "matched_obelix_ids": [
+        "h6c"
+      ],
+      "exclusion_reason": "EXACT_STRUCTURE_MATCH against OBELiX id(s) ['h6c'] (validation_protection); see REVIEWED_PROBABLE_MATCHES for probable-match rationale."
+    },
+    {
+      "original_dataset": "bvel_percolation",
+      "record_id": "mp-22983",
+      "material_id": "mp-22983",
+      "match_type": "EXACT_STRUCTURE_MATCH",
+      "protection_tier": "final_test_protection",
+      "matched_obelix_ids": [
+        "p81"
+      ],
+      "exclusion_reason": "EXACT_STRUCTURE_MATCH against OBELiX id(s) ['p81'] (final_test_protection); see REVIEWED_PROBABLE_MATCHES for probable-match rationale."
+    },
+    {
+      "original_dataset": "bvse_hops",
+      "record_id": "mp-22983_1_0_0_1_0",
+      "material_id": "mp-22983",
+      "match_type": "EXACT_STRUCTURE_MATCH",
+      "protection_tier": "final_test_protection",
+      "matched_obelix_ids": [
+        "p81"
+      ],
+      "exclusion_reason": "EXACT_STRUCTURE_MATCH against OBELiX id(s) ['p81'] (final_test_protection); see REVIEWED_PROBABLE_MATCHES for probable-match rationale."
+    },
+    {
+      "original_dataset": "bvse_hops",
+      "record_id": "mp-22983_0_0_1_0_0",
+      "material_id": "mp-22983",
+      "match_type": "EXACT_STRUCTURE_MATCH",
+      "protection_tier": "final_test_protection",
+      "matched_obelix_ids": [
+        "p81"
+      ],
+      "exclusion_reason": "EXACT_STRUCTURE_MATCH against OBELiX id(s) ['p81'] (final_test_protection); see REVIEWED_PROBABLE_MATCHES for probable-match rationale."
+    },
+    {
+      "original_dataset": "bvse_hops",
+      "record_id": "mp-22983_1_3_0_0_1",
+      "material_id": "mp-22983",
+      "match_type": "EXACT_STRUCTURE_MATCH",
+      "protection_tier": "final_test_protection",
+      "matched_obelix_ids": [
+        "p81"
+      ],
+      "exclusion_reason": "EXACT_STRUCTURE_MATCH against OBELiX id(s) ['p81'] (final_test_protection); see REVIEWED_PROBABLE_MATCHES for probable-match rationale."
+    },
+    {
+      "original_dataset": "bvel_percolation",
+      "record_id": "mp-29365",
+      "material_id": "mp-29365",
+      "match_type": "EXACT_STRUCTURE_MATCH",
+      "protection_tier": "validation_protection",
+      "matched_obelix_ids": [
+        "skm"
+      ],
+      "exclusion_reason": "EXACT_STRUCTURE_MATCH against OBELiX id(s) ['skm'] (validation_protection); see REVIEWED_PROBABLE_MATCHES for probable-match rationale."
+    },
+    {
+      "original_dataset": "bvse_hops",
+      "record_id": "mp-29365_0_1_0_0_0",
+      "material_id": "mp-29365",
+      "match_type": "EXACT_STRUCTURE_MATCH",
+      "protection_tier": "validation_protection",
+      "matched_obelix_ids": [
+        "skm"
+      ],
+      "exclusion_reason": "EXACT_STRUCTURE_MATCH against OBELiX id(s) ['skm'] (validation_protection); see REVIEWED_PROBABLE_MATCHES for probable-match rationale."
+    },
+    {
+      "original_dataset": "bvse_hops",
+      "record_id": "mp-29365_0_2_0_1_0",
+      "material_id": "mp-29365",
+      "match_type": "EXACT_STRUCTURE_MATCH",
+      "protection_tier": "validation_protection",
+      "matched_obelix_ids": [
+        "skm"
+      ],
+      "exclusion_reason": "EXACT_STRUCTURE_MATCH against OBELiX id(s) ['skm'] (validation_protection); see REVIEWED_PROBABLE_MATCHES for probable-match rationale."
+    },
+    {
+      "original_dataset": "bvse_hops",
+      "record_id": "mp-29365_0_3_0_0_1",
+      "material_id": "mp-29365",
+      "match_type": "EXACT_STRUCTURE_MATCH",
+      "protection_tier": "validation_protection",
+      "matched_obelix_ids": [
+        "skm"
+      ],
+      "exclusion_reason": "EXACT_STRUCTURE_MATCH against OBELiX id(s) ['skm'] (validation_protection); see REVIEWED_PROBABLE_MATCHES for probable-match rationale."
+    },
+    {
+      "original_dataset": "bvse_hops",
+      "record_id": "mp-29365_0_4_0_1_0",
+      "material_id": "mp-29365",
+      "match_type": "EXACT_STRUCTURE_MATCH",
+      "protection_tier": "validation_protection",
+      "matched_obelix_ids": [
+        "skm"
+      ],
+      "exclusion_reason": "EXACT_STRUCTURE_MATCH against OBELiX id(s) ['skm'] (validation_protection); see REVIEWED_PROBABLE_MATCHES for probable-match rationale."
+    },
+    {
+      "original_dataset": "bvse_hops",
+      "record_id": "mp-29365_1_2_0_1_0",
+      "material_id": "mp-29365",
+      "match_type": "EXACT_STRUCTURE_MATCH",
+      "protection_tier": "validation_protection",
+      "matched_obelix_ids": [
+        "skm"
+      ],
+      "exclusion_reason": "EXACT_STRUCTURE_MATCH against OBELiX id(s) ['skm'] (validation_protection); see REVIEWED_PROBABLE_MATCHES for probable-match rationale."
+    },
+    {
+      "original_dataset": "bvse_hops",
+      "record_id": "mp-29365_1_3_0_1_0",
+      "material_id": "mp-29365",
+      "match_type": "EXACT_STRUCTURE_MATCH",
+      "protection_tier": "validation_protection",
+      "matched_obelix_ids": [
+        "skm"
+      ],
+      "exclusion_reason": "EXACT_STRUCTURE_MATCH against OBELiX id(s) ['skm'] (validation_protection); see REVIEWED_PROBABLE_MATCHES for probable-match rationale."
+    },
+    {
+      "original_dataset": "bvse_hops",
+      "record_id": "mp-29365_1_4_1_1_0",
+      "material_id": "mp-29365",
+      "match_type": "EXACT_STRUCTURE_MATCH",
+      "protection_tier": "validation_protection",
+      "matched_obelix_ids": [
+        "skm"
+      ],
+      "exclusion_reason": "EXACT_STRUCTURE_MATCH against OBELiX id(s) ['skm'] (validation_protection); see REVIEWED_PROBABLE_MATCHES for probable-match rationale."
+    },
+    {
+      "original_dataset": "bvse_hops",
+      "record_id": "mp-29365_3_2_0_1_-1",
+      "material_id": "mp-29365",
+      "match_type": "EXACT_STRUCTURE_MATCH",
+      "protection_tier": "validation_protection",
+      "matched_obelix_ids": [
+        "skm"
+      ],
+      "exclusion_reason": "EXACT_STRUCTURE_MATCH against OBELiX id(s) ['skm'] (validation_protection); see REVIEWED_PROBABLE_MATCHES for probable-match rationale."
+    },
+    {
+      "original_dataset": "bvse_hops",
+      "record_id": "mp-29365_2_4_0_0_1",
+      "material_id": "mp-29365",
+      "match_type": "EXACT_STRUCTURE_MATCH",
+      "protection_tier": "validation_protection",
+      "matched_obelix_ids": [
+        "skm"
+      ],
+      "exclusion_reason": "EXACT_STRUCTURE_MATCH against OBELiX id(s) ['skm'] (validation_protection); see REVIEWED_PROBABLE_MATCHES for probable-match rationale."
+    },
+    {
+      "original_dataset": "bvse_hops",
+      "record_id": "mp-29365_3_4_0_1_0",
+      "material_id": "mp-29365",
+      "match_type": "EXACT_STRUCTURE_MATCH",
+      "protection_tier": "validation_protection",
+      "matched_obelix_ids": [
+        "skm"
+      ],
+      "exclusion_reason": "EXACT_STRUCTURE_MATCH against OBELiX id(s) ['skm'] (validation_protection); see REVIEWED_PROBABLE_MATCHES for probable-match rationale."
+    },
+    {
+      "original_dataset": "dft_neb",
+      "record_id": "mp-29365_3_4_0_1_0",
+      "material_id": "mp-29365",
+      "match_type": "EXACT_STRUCTURE_MATCH",
+      "protection_tier": "validation_protection",
+      "matched_obelix_ids": [
+        "skm"
+      ],
+      "exclusion_reason": "EXACT_STRUCTURE_MATCH against OBELiX id(s) ['skm'] (validation_protection); see REVIEWED_PROBABLE_MATCHES for probable-match rationale."
+    },
+    {
+      "original_dataset": "dft_neb",
+      "record_id": "mp-29365_0_2_0_1_0",
+      "material_id": "mp-29365",
+      "match_type": "EXACT_STRUCTURE_MATCH",
+      "protection_tier": "validation_protection",
+      "matched_obelix_ids": [
+        "skm"
+      ],
+      "exclusion_reason": "EXACT_STRUCTURE_MATCH against OBELiX id(s) ['skm'] (validation_protection); see REVIEWED_PROBABLE_MATCHES for probable-match rationale."
+    },
+    {
+      "original_dataset": "bvel_percolation",
+      "record_id": "mp-3635",
+      "material_id": "mp-3635",
+      "match_type": "EXACT_STRUCTURE_MATCH",
+      "protection_tier": "validation_protection",
+      "matched_obelix_ids": [
+        "n27"
+      ],
+      "exclusion_reason": "EXACT_STRUCTURE_MATCH against OBELiX id(s) ['n27'] (validation_protection); see REVIEWED_PROBABLE_MATCHES for probable-match rationale."
+    },
+    {
+      "original_dataset": "bvse_hops",
+      "record_id": "mp-3635_0_3_1_0_0",
+      "material_id": "mp-3635",
+      "match_type": "EXACT_STRUCTURE_MATCH",
+      "protection_tier": "validation_protection",
+      "matched_obelix_ids": [
+        "n27"
+      ],
+      "exclusion_reason": "EXACT_STRUCTURE_MATCH against OBELiX id(s) ['n27'] (validation_protection); see REVIEWED_PROBABLE_MATCHES for probable-match rationale."
+    },
+    {
+      "original_dataset": "bvse_hops",
+      "record_id": "mp-3635_0_3_0_0_0",
+      "material_id": "mp-3635",
+      "match_type": "EXACT_STRUCTURE_MATCH",
+      "protection_tier": "validation_protection",
+      "matched_obelix_ids": [
+        "n27"
+      ],
+      "exclusion_reason": "EXACT_STRUCTURE_MATCH against OBELiX id(s) ['n27'] (validation_protection); see REVIEWED_PROBABLE_MATCHES for probable-match rationale."
+    },
+    {
+      "original_dataset": "bvse_hops",
+      "record_id": "mp-3635_0_2_1_0_1",
+      "material_id": "mp-3635",
+      "match_type": "EXACT_STRUCTURE_MATCH",
+      "protection_tier": "validation_protection",
+      "matched_obelix_ids": [
+        "n27"
+      ],
+      "exclusion_reason": "EXACT_STRUCTURE_MATCH against OBELiX id(s) ['n27'] (validation_protection); see REVIEWED_PROBABLE_MATCHES for probable-match rationale."
+    },
+    {
+      "original_dataset": "bvse_hops",
+      "record_id": "mp-3635_0_2_1_0_0",
+      "material_id": "mp-3635",
+      "match_type": "EXACT_STRUCTURE_MATCH",
+      "protection_tier": "validation_protection",
+      "matched_obelix_ids": [
+        "n27"
+      ],
+      "exclusion_reason": "EXACT_STRUCTURE_MATCH against OBELiX id(s) ['n27'] (validation_protection); see REVIEWED_PROBABLE_MATCHES for probable-match rationale."
+    },
+    {
+      "original_dataset": "dft_neb",
+      "record_id": "mp-3635_0_3_0_0_0",
+      "material_id": "mp-3635",
+      "match_type": "EXACT_STRUCTURE_MATCH",
+      "protection_tier": "validation_protection",
+      "matched_obelix_ids": [
+        "n27"
+      ],
+      "exclusion_reason": "EXACT_STRUCTURE_MATCH against OBELiX id(s) ['n27'] (validation_protection); see REVIEWED_PROBABLE_MATCHES for probable-match rationale."
+    },
+    {
+      "original_dataset": "bvel_percolation",
+      "record_id": "mp-6175",
+      "material_id": "mp-6175",
+      "match_type": "EXACT_STRUCTURE_MATCH",
+      "protection_tier": "validation_protection",
+      "matched_obelix_ids": [
+        "kfp"
+      ],
+      "exclusion_reason": "EXACT_STRUCTURE_MATCH against OBELiX id(s) ['kfp'] (validation_protection); see REVIEWED_PROBABLE_MATCHES for probable-match rationale."
+    },
+    {
+      "original_dataset": "bvse_hops",
+      "record_id": "mp-6175_4_6_0_1_0",
+      "material_id": "mp-6175",
+      "match_type": "EXACT_STRUCTURE_MATCH",
+      "protection_tier": "validation_protection",
+      "matched_obelix_ids": [
+        "kfp"
+      ],
+      "exclusion_reason": "EXACT_STRUCTURE_MATCH against OBELiX id(s) ['kfp'] (validation_protection); see REVIEWED_PROBABLE_MATCHES for probable-match rationale."
+    },
+    {
+      "original_dataset": "bvse_hops",
+      "record_id": "mp-6175_5_7_1_-1_0",
+      "material_id": "mp-6175",
+      "match_type": "EXACT_STRUCTURE_MATCH",
+      "protection_tier": "validation_protection",
+      "matched_obelix_ids": [
+        "kfp"
+      ],
+      "exclusion_reason": "EXACT_STRUCTURE_MATCH against OBELiX id(s) ['kfp'] (validation_protection); see REVIEWED_PROBABLE_MATCHES for probable-match rationale."
+    },
+    {
+      "original_dataset": "bvse_hops",
+      "record_id": "mp-6175_5_8_1_0_0",
+      "material_id": "mp-6175",
+      "match_type": "EXACT_STRUCTURE_MATCH",
+      "protection_tier": "validation_protection",
+      "matched_obelix_ids": [
+        "kfp"
+      ],
+      "exclusion_reason": "EXACT_STRUCTURE_MATCH against OBELiX id(s) ['kfp'] (validation_protection); see REVIEWED_PROBABLE_MATCHES for probable-match rationale."
+    },
+    {
+      "original_dataset": "bvse_hops",
+      "record_id": "mp-6175_4_8_0_0_0",
+      "material_id": "mp-6175",
+      "match_type": "EXACT_STRUCTURE_MATCH",
+      "protection_tier": "validation_protection",
+      "matched_obelix_ids": [
+        "kfp"
+      ],
+      "exclusion_reason": "EXACT_STRUCTURE_MATCH against OBELiX id(s) ['kfp'] (validation_protection); see REVIEWED_PROBABLE_MATCHES for probable-match rationale."
+    },
+    {
+      "original_dataset": "bvse_hops",
+      "record_id": "mp-6175_4_10_0_1_0",
+      "material_id": "mp-6175",
+      "match_type": "EXACT_STRUCTURE_MATCH",
+      "protection_tier": "validation_protection",
+      "matched_obelix_ids": [
+        "kfp"
+      ],
+      "exclusion_reason": "EXACT_STRUCTURE_MATCH against OBELiX id(s) ['kfp'] (validation_protection); see REVIEWED_PROBABLE_MATCHES for probable-match rationale."
+    },
+    {
+      "original_dataset": "bvse_hops",
+      "record_id": "mp-6175_6_10_0_0_0",
+      "material_id": "mp-6175",
+      "match_type": "EXACT_STRUCTURE_MATCH",
+      "protection_tier": "validation_protection",
+      "matched_obelix_ids": [
+        "kfp"
+      ],
+      "exclusion_reason": "EXACT_STRUCTURE_MATCH against OBELiX id(s) ['kfp'] (validation_protection); see REVIEWED_PROBABLE_MATCHES for probable-match rationale."
+    },
+    {
+      "original_dataset": "bvse_hops",
+      "record_id": "mp-6175_6_8_1_0_0",
+      "material_id": "mp-6175",
+      "match_type": "EXACT_STRUCTURE_MATCH",
+      "protection_tier": "validation_protection",
+      "matched_obelix_ids": [
+        "kfp"
+      ],
+      "exclusion_reason": "EXACT_STRUCTURE_MATCH against OBELiX id(s) ['kfp'] (validation_protection); see REVIEWED_PROBABLE_MATCHES for probable-match rationale."
+    },
+    {
+      "original_dataset": "bvse_hops",
+      "record_id": "mp-6175_6_9_1_0_0",
+      "material_id": "mp-6175",
+      "match_type": "EXACT_STRUCTURE_MATCH",
+      "protection_tier": "validation_protection",
+      "matched_obelix_ids": [
+        "kfp"
+      ],
+      "exclusion_reason": "EXACT_STRUCTURE_MATCH against OBELiX id(s) ['kfp'] (validation_protection); see REVIEWED_PROBABLE_MATCHES for probable-match rationale."
+    },
+    {
+      "original_dataset": "bvse_hops",
+      "record_id": "mp-6175_10_8_1_-1_0",
+      "material_id": "mp-6175",
+      "match_type": "EXACT_STRUCTURE_MATCH",
+      "protection_tier": "validation_protection",
+      "matched_obelix_ids": [
+        "kfp"
+      ],
+      "exclusion_reason": "EXACT_STRUCTURE_MATCH against OBELiX id(s) ['kfp'] (validation_protection); see REVIEWED_PROBABLE_MATCHES for probable-match rationale."
+    },
+    {
+      "original_dataset": "bvse_hops",
+      "record_id": "mp-6175_8_10_0_1_0",
+      "material_id": "mp-6175",
+      "match_type": "EXACT_STRUCTURE_MATCH",
+      "protection_tier": "validation_protection",
+      "matched_obelix_ids": [
+        "kfp"
+      ],
+      "exclusion_reason": "EXACT_STRUCTURE_MATCH against OBELiX id(s) ['kfp'] (validation_protection); see REVIEWED_PROBABLE_MATCHES for probable-match rationale."
+    },
+    {
+      "original_dataset": "bvse_hops",
+      "record_id": "mp-6175_10_8_1_0_0",
+      "material_id": "mp-6175",
+      "match_type": "EXACT_STRUCTURE_MATCH",
+      "protection_tier": "validation_protection",
+      "matched_obelix_ids": [
+        "kfp"
+      ],
+      "exclusion_reason": "EXACT_STRUCTURE_MATCH against OBELiX id(s) ['kfp'] (validation_protection); see REVIEWED_PROBABLE_MATCHES for probable-match rationale."
+    },
+    {
+      "original_dataset": "bvse_hops",
+      "record_id": "mp-6175_8_10_0_0_0",
+      "material_id": "mp-6175",
+      "match_type": "EXACT_STRUCTURE_MATCH",
+      "protection_tier": "validation_protection",
+      "matched_obelix_ids": [
+        "kfp"
+      ],
+      "exclusion_reason": "EXACT_STRUCTURE_MATCH against OBELiX id(s) ['kfp'] (validation_protection); see REVIEWED_PROBABLE_MATCHES for probable-match rationale."
+    },
+    {
+      "original_dataset": "bvel_percolation",
+      "record_id": "mp-641703",
+      "material_id": "mp-641703",
+      "match_type": "PROBABLE_STRUCTURE_MATCH",
+      "protection_tier": "final_test_protection",
+      "matched_obelix_ids": [
+        "mdp"
+      ],
+      "exclusion_reason": "PROBABLE_STRUCTURE_MATCH against OBELiX id(s) ['mdp'] (final_test_protection); see REVIEWED_PROBABLE_MATCHES for probable-match rationale."
+    },
+    {
+      "original_dataset": "bvse_hops",
+      "record_id": "mp-641703_0_6_0_0_0",
+      "material_id": "mp-641703",
+      "match_type": "PROBABLE_STRUCTURE_MATCH",
+      "protection_tier": "final_test_protection",
+      "matched_obelix_ids": [
+        "mdp"
+      ],
+      "exclusion_reason": "PROBABLE_STRUCTURE_MATCH against OBELiX id(s) ['mdp'] (final_test_protection); see REVIEWED_PROBABLE_MATCHES for probable-match rationale."
+    },
+    {
+      "original_dataset": "bvse_hops",
+      "record_id": "mp-641703_0_5_1_0_0",
+      "material_id": "mp-641703",
+      "match_type": "PROBABLE_STRUCTURE_MATCH",
+      "protection_tier": "final_test_protection",
+      "matched_obelix_ids": [
+        "mdp"
+      ],
+      "exclusion_reason": "PROBABLE_STRUCTURE_MATCH against OBELiX id(s) ['mdp'] (final_test_protection); see REVIEWED_PROBABLE_MATCHES for probable-match rationale."
+    },
+    {
+      "original_dataset": "bvse_hops",
+      "record_id": "mp-641703_0_7_0_0_0",
+      "material_id": "mp-641703",
+      "match_type": "PROBABLE_STRUCTURE_MATCH",
+      "protection_tier": "final_test_protection",
+      "matched_obelix_ids": [
+        "mdp"
+      ],
+      "exclusion_reason": "PROBABLE_STRUCTURE_MATCH against OBELiX id(s) ['mdp'] (final_test_protection); see REVIEWED_PROBABLE_MATCHES for probable-match rationale."
+    },
+    {
+      "original_dataset": "bvse_hops",
+      "record_id": "mp-641703_9_0_0_0_1",
+      "material_id": "mp-641703",
+      "match_type": "PROBABLE_STRUCTURE_MATCH",
+      "protection_tier": "final_test_protection",
+      "matched_obelix_ids": [
+        "mdp"
+      ],
+      "exclusion_reason": "PROBABLE_STRUCTURE_MATCH against OBELiX id(s) ['mdp'] (final_test_protection); see REVIEWED_PROBABLE_MATCHES for probable-match rationale."
+    },
+    {
+      "original_dataset": "bvse_hops",
+      "record_id": "mp-641703_3_1_0_1_0",
+      "material_id": "mp-641703",
+      "match_type": "PROBABLE_STRUCTURE_MATCH",
+      "protection_tier": "final_test_protection",
+      "matched_obelix_ids": [
+        "mdp"
+      ],
+      "exclusion_reason": "PROBABLE_STRUCTURE_MATCH against OBELiX id(s) ['mdp'] (final_test_protection); see REVIEWED_PROBABLE_MATCHES for probable-match rationale."
+    },
+    {
+      "original_dataset": "bvse_hops",
+      "record_id": "mp-641703_1_4_0_0_0",
+      "material_id": "mp-641703",
+      "match_type": "PROBABLE_STRUCTURE_MATCH",
+      "protection_tier": "final_test_protection",
+      "matched_obelix_ids": [
+        "mdp"
+      ],
+      "exclusion_reason": "PROBABLE_STRUCTURE_MATCH against OBELiX id(s) ['mdp'] (final_test_protection); see REVIEWED_PROBABLE_MATCHES for probable-match rationale."
+    },
+    {
+      "original_dataset": "bvse_hops",
+      "record_id": "mp-641703_2_4_0_0_0",
+      "material_id": "mp-641703",
+      "match_type": "PROBABLE_STRUCTURE_MATCH",
+      "protection_tier": "final_test_protection",
+      "matched_obelix_ids": [
+        "mdp"
+      ],
+      "exclusion_reason": "PROBABLE_STRUCTURE_MATCH against OBELiX id(s) ['mdp'] (final_test_protection); see REVIEWED_PROBABLE_MATCHES for probable-match rationale."
+    },
+    {
+      "original_dataset": "bvse_hops",
+      "record_id": "mp-641703_2_13_1_0_0",
+      "material_id": "mp-641703",
+      "match_type": "PROBABLE_STRUCTURE_MATCH",
+      "protection_tier": "final_test_protection",
+      "matched_obelix_ids": [
+        "mdp"
+      ],
+      "exclusion_reason": "PROBABLE_STRUCTURE_MATCH against OBELiX id(s) ['mdp'] (final_test_protection); see REVIEWED_PROBABLE_MATCHES for probable-match rationale."
+    },
+    {
+      "original_dataset": "bvse_hops",
+      "record_id": "mp-641703_2_13_0_0_0",
+      "material_id": "mp-641703",
+      "match_type": "PROBABLE_STRUCTURE_MATCH",
+      "protection_tier": "final_test_protection",
+      "matched_obelix_ids": [
+        "mdp"
+      ],
+      "exclusion_reason": "PROBABLE_STRUCTURE_MATCH against OBELiX id(s) ['mdp'] (final_test_protection); see REVIEWED_PROBABLE_MATCHES for probable-match rationale."
+    },
+    {
+      "original_dataset": "bvse_hops",
+      "record_id": "mp-641703_3_9_0_0_0",
+      "material_id": "mp-641703",
+      "match_type": "PROBABLE_STRUCTURE_MATCH",
+      "protection_tier": "final_test_protection",
+      "matched_obelix_ids": [
+        "mdp"
+      ],
+      "exclusion_reason": "PROBABLE_STRUCTURE_MATCH against OBELiX id(s) ['mdp'] (final_test_protection); see REVIEWED_PROBABLE_MATCHES for probable-match rationale."
+    },
+    {
+      "original_dataset": "bvse_hops",
+      "record_id": "mp-641703_8_3_1_0_0",
+      "material_id": "mp-641703",
+      "match_type": "PROBABLE_STRUCTURE_MATCH",
+      "protection_tier": "final_test_protection",
+      "matched_obelix_ids": [
+        "mdp"
+      ],
+      "exclusion_reason": "PROBABLE_STRUCTURE_MATCH against OBELiX id(s) ['mdp'] (final_test_protection); see REVIEWED_PROBABLE_MATCHES for probable-match rationale."
+    },
+    {
+      "original_dataset": "bvse_hops",
+      "record_id": "mp-641703_7_13_1_0_0",
+      "material_id": "mp-641703",
+      "match_type": "PROBABLE_STRUCTURE_MATCH",
+      "protection_tier": "final_test_protection",
+      "matched_obelix_ids": [
+        "mdp"
+      ],
+      "exclusion_reason": "PROBABLE_STRUCTURE_MATCH against OBELiX id(s) ['mdp'] (final_test_protection); see REVIEWED_PROBABLE_MATCHES for probable-match rationale."
+    },
+    {
+      "original_dataset": "dft_neb",
+      "record_id": "mp-641703_8_3_1_0_0",
+      "material_id": "mp-641703",
+      "match_type": "PROBABLE_STRUCTURE_MATCH",
+      "protection_tier": "final_test_protection",
+      "matched_obelix_ids": [
+        "mdp"
+      ],
+      "exclusion_reason": "PROBABLE_STRUCTURE_MATCH against OBELiX id(s) ['mdp'] (final_test_protection); see REVIEWED_PROBABLE_MATCHES for probable-match rationale."
+    },
+    {
+      "original_dataset": "dft_neb",
+      "record_id": "mp-641703_3_9_0_0_0",
+      "material_id": "mp-641703",
+      "match_type": "PROBABLE_STRUCTURE_MATCH",
+      "protection_tier": "final_test_protection",
+      "matched_obelix_ids": [
+        "mdp"
+      ],
+      "exclusion_reason": "PROBABLE_STRUCTURE_MATCH against OBELiX id(s) ['mdp'] (final_test_protection); see REVIEWED_PROBABLE_MATCHES for probable-match rationale."
+    },
+    {
+      "original_dataset": "dft_neb",
+      "record_id": "mp-641703_2_4_0_0_0",
+      "material_id": "mp-641703",
+      "match_type": "PROBABLE_STRUCTURE_MATCH",
+      "protection_tier": "final_test_protection",
+      "matched_obelix_ids": [
+        "mdp"
+      ],
+      "exclusion_reason": "PROBABLE_STRUCTURE_MATCH against OBELiX id(s) ['mdp'] (final_test_protection); see REVIEWED_PROBABLE_MATCHES for probable-match rationale."
+    },
+    {
+      "original_dataset": "bvel_percolation",
+      "record_id": "mp-6521",
+      "material_id": "mp-6521",
+      "match_type": "EXACT_STRUCTURE_MATCH",
+      "protection_tier": "validation_protection",
+      "matched_obelix_ids": [
+        "nua"
+      ],
+      "exclusion_reason": "EXACT_STRUCTURE_MATCH against OBELiX id(s) ['nua'] (validation_protection); see REVIEWED_PROBABLE_MATCHES for probable-match rationale."
+    },
+    {
+      "original_dataset": "bvse_hops",
+      "record_id": "mp-6521_0_1_0_0_0",
+      "material_id": "mp-6521",
+      "match_type": "EXACT_STRUCTURE_MATCH",
+      "protection_tier": "validation_protection",
+      "matched_obelix_ids": [
+        "nua"
+      ],
+      "exclusion_reason": "EXACT_STRUCTURE_MATCH against OBELiX id(s) ['nua'] (validation_protection); see REVIEWED_PROBABLE_MATCHES for probable-match rationale."
+    },
+    {
+      "original_dataset": "bvel_percolation",
+      "record_id": "mp-985585",
+      "material_id": "mp-985585",
+      "match_type": "EXACT_STRUCTURE_MATCH",
+      "protection_tier": "final_test_protection",
+      "matched_obelix_ids": [
+        "4p7"
+      ],
+      "exclusion_reason": "EXACT_STRUCTURE_MATCH against OBELiX id(s) ['4p7'] (final_test_protection); see REVIEWED_PROBABLE_MATCHES for probable-match rationale."
+    }
+  ]
+}

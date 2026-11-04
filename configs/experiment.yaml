@@ -1,0 +1,32 @@
+# Frozen v1.0-project config. The active v2.0 study (RESEARCH_CONTRACT.md)
+# uses its own seed conventions (5 seeds for the final external-transfer
+# refit, 10 fold seeds for the regime-A sensitivity; see
+# EXPERIMENT_PROTOCOL.md v2.0), defined directly in scripts/acs/*.py, not
+# via this file. seeds/low_data_fractions below are still cited by
+# comment in the historical scripts/phase1_*.py scripts; kept unchanged.
+seeds: [17, 29, 43, 71, 101]
+
+low_data_fractions: [0.25, 0.50, 0.75, 1.00]
+
+primary_metric: mae
+secondary_metrics:
+  - rmse
+  - r2
+  - spearman
+  - median_absolute_error
+
+uncertainty:
+  enabled: true
+  method: ensemble_plus_conformal
+  calibration_split_required: true
+
+evaluation:
+  preserve_official_split: true
+  bootstrap_ci: true
+  bootstrap_samples: 2000
+  ood_family_holdout: true
+  save_raw_predictions: true
+
+tuning:
+  framework: optuna
+  final_test_visible: false

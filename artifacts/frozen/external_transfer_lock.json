@@ -1,0 +1,170 @@
+{
+  "phase": "N5_pre_external_lock",
+  "lock_version": "1.0",
+  "created_at_utc": "2026-09-21T15:35:00Z",
+  "git_commit": "229e5de79eeaf8183d687b7f6cdef46f8243d45a",
+  "git_branch": "npj-cross-dataset-extension",
+  "purpose": "Freeze every input/protocol decision needed for N6's one-shot external evaluation BEFORE any Hargreaves target value (log_target_rt_median) is read by model-fitting or model-selection code. N6 is authorized to run exactly once against this lock; no hyperparameter, feature, model-list, or exclusion-rule change is permitted after N6 opens external targets.",
+
+  "frozen_inputs": {
+    "obelix_frozen_split": {
+      "file": "data/processed/v1/obelix_index.json",
+      "sha256": "13692a31839e295dd88bd45ca527d869990e02d799a6878c5ded6c43d3b94d3e",
+      "note": "Identical to the hash recorded in the old (closed) project's reports/phase2_7_pretest_lock.md -- confirms the OBELiX split has not been altered by this npj work.",
+      "n_train": 359,
+      "n_validation": 90,
+      "n_test_untouched": 113,
+      "development_population_n": 449
+    },
+    "external_cohort": {
+      "strict_cohort_file": "data/processed/npj_external_cohort/hargreaves_strict.csv",
+      "strict_cohort_file_sha256": "1bda972d893c3cf546b3638ea8935e59b345e1d14d9c607be5b1c59437b237c9",
+      "strict_cohort_id_set_sha256": "a17ed9a97b01a819c95bdcf756dceaccbd4c058ff4259ac26f029b8f697bc8c8",
+      "strict_cohort_n": 204,
+      "relaxed_cohort_file": "data/processed/npj_external_cohort/hargreaves_relaxed.csv",
+      "relaxed_cohort_file_sha256": "dac166ee16be91d76a255a30ec7f6af8cc47bc6d569db3ad74d2212209e99da8",
+      "relaxed_cohort_id_set_sha256": "4548bfce8d7e44a044ed97ce413af1ab49700b7266f6882d113a851848d0af53",
+      "relaxed_cohort_n": 239,
+      "strict_is_subset_of_relaxed": true,
+      "overlap_ledger_file": "data/processed/npj_external_cohort/hargreaves_overlap_ledger.csv",
+      "overlap_ledger_file_sha256": "a1b4d0f425fc3048a03cdf4a82321292cbc80b9590ba7e309f7f353788098683",
+      "cohort_build_manifest": "data/manifests/npj_external_cohort.json",
+      "cohort_build_manifest_sha256": "a503b5cb39c17fb0bd23de639f4ac96a63e39f79d6a9c6e3f8f0a1eb8f8543e6",
+      "cohort_build_code": "src/sse_transfer/data/hargreaves_cohort.py",
+      "cohort_build_code_sha256": "4c2d7a36380b9519d7b878f2ec91d49417969d385024c25d2ed5bd29ec3e56c3",
+      "raw_source_manifest": "data/manifests/hargreaves_conductivity.json",
+      "raw_source_manifest_sha256": "7584882d388ceffe208db41f72d6731ea122d70dfd54c442abb79a003ce543d6",
+      "target_column": "log_target_rt_median",
+      "row_key": "reduced_formula",
+      "note": "These hashes are the exclusion-rule/aggregation freeze. Any change to the RT window, overlap classification, or aggregation rule after this point invalidates the lock and requires a new lock version."
+    },
+    "feature_schema": {
+      "name": "magpie_composition_only_v1",
+      "code": "src/sse_transfer/features/composition_pipeline.py",
+      "code_sha256": "68a0d924ef3c5b40c27552d35846b265a7d3777c3befac73cc43df822f31da80",
+      "underlying_featurizer_code": "src/sse_transfer/features/composition_features.py",
+      "underlying_featurizer_code_sha256": "34f7a8934ac996ddbc8baf2befd42d7aac6b307ec852e0c1c7fa0c322a759234",
+      "n_features": 132,
+      "columns_identical_obelix_vs_hargreaves": true,
+      "verified_in": "reports/npj/n3_portable_model_benchmark.md section 2"
+    },
+    "candidate_model_list": {
+      "file": "artifacts/npj_model_ladder_frozen.json",
+      "sha256": "bc38eabf6c3936c75ca967c7c24a35e7343f1bf94b1810a4eec98d6d9c5ba0b3",
+      "models": [
+        "ridge", "random_forest", "extra_trees", "xgboost", "catboost",
+        "shallow_mlp", "pretrained_element_embedding", "composition_attention"
+      ],
+      "hyperparameters_frozen": true,
+      "tuning_seed": 20260921,
+      "note": "Hyperparameters in this file are FINAL. N6 refits each model on the full 449-row development population with these exact hyperparameters; no re-tuning occurs at any point after this lock."
+    },
+    "seeds": {
+      "multi_seed_final_fit_list": [17, 29, 43, 71, 101],
+      "source": "Same 5-seed list used by the old (closed) project's Phase 2.7/2.8 final-fit protocol (reports/phase2_7_pretest_lock.md), reused for cross-phase consistency.",
+      "tuning_seed": 20260921,
+      "internal_validation_cv_seed": 20260921,
+      "bootstrap_seed": 20260921,
+      "note": "All bootstrap/statistical-test procedures below use bootstrap_seed=20260921 unless stated otherwise, fixed here before any external result is seen."
+    },
+    "internal_validation_outputs": {
+      "file": "artifacts/npj_n4_internal_validation.json",
+      "sha256": "09508ba010f96f9a8311dcfa0b2d311482a42941e13261caa4ee229bbdc0745d",
+      "report": "reports/npj/n4_internal_validation.md",
+      "regimes": ["A_random_5fold_cv", "B_family_group_kfold", "C_lomfo"],
+      "note": "Frozen; N7 consumes these numbers unchanged. No internal-validation number may be recomputed with different folds/seeds after this lock."
+    },
+    "applicability_domain_method": {
+      "name": "standardized_composition_nearest_neighbor_distance",
+      "code": "src/sse_transfer/uncertainty/applicability_domain.py",
+      "code_sha256": "dd4ef45f61775d69973c772477fcf07970a656eb327bedb116049bbf8af17a0a",
+      "version": "APPLICABILITY_DOMAIN_VERSION=1.0 (reused unchanged from the old closed project)",
+      "reference_fit_population": "OBELiX development population (449 rows: frozen train+validation), the same rows N6 fits its final models on -- 'source training data' per N8's requirement",
+      "feature_space": "magpie_composition_only_v1 (132-col), Family label never used as an AD input",
+      "functions_used": [
+        "fit_standardization(x_ref=OBELiX_dev_449_features)",
+        "nearest_neighbor_ad_score(x_ref, x_query=strict_external_cohort_features, stats)",
+        "ad_score_error_correlation(ad_scores, abs_residual)",
+        "ad_score_quantile_error_table(ad_scores, abs_residual, n_bins=4)"
+      ],
+      "predeclared_new_function_needed_for_n8": "risk_coverage_mae_at_retained_fraction([1.0, 0.75, 0.5, 0.25]) -- sort external rows ascending by AD score (most in-domain first), compute pooled MAE on the retained top fraction at each coverage level. Not yet implemented; N8 must add it as a pure, tested function in the same style as ad_score_quantile_error_table, not invent an ad hoc script-local version.",
+      "conformal_analysis": "OPTIONAL for N8, only if calibrated entirely from OBELiX source development data, and only using a method specified in the N8 report BEFORE external outcomes are inspected. Not required for GO."
+    }
+  },
+
+  "predeclared_n6_protocol": {
+    "description": "Final-fit + one-shot external transfer protocol, specified now and not to be altered after execution.",
+    "training_population": "Full 449-row OBELiX development population (train UNION validation). No fold-holdout at this stage -- this is the final fit, not another internal-validation regime.",
+    "feature_fit_population": "Same 449 rows (composition scaler / element embedder / element vocabulary all refit once on the full 449-row pool for this final fit, per the same train-only-fit convention used throughout).",
+    "hyperparameters": "Exactly the frozen values in artifacts/npj_model_ladder_frozen.json; zero retuning.",
+    "seeds": "Each of the 8 models is fit once per seed in [17, 29, 43, 71, 101] (5 fits per model, 40 total fits). Point prediction per external row = arithmetic mean of the 5 seeds' predictions. Seed-dispersion (std across seeds) is recorded but is NOT the primary UQ result (N8's AD method is primary, per N8's explicit instruction not to reuse the old wide seed-dispersion interval as the headline UQ figure).",
+    "evaluation_targets": "Both the strict (204-row) and relaxed (239-row) external cohorts are scored, exactly once each, in the same run.",
+    "metrics_recorded_per_model": ["MAE", "RMSE", "Spearman rho", "per-row prediction", "per-row residual", "model rank by external MAE", "seed-dispersion std (metadata only)"],
+    "execution_rule": "This is the ONE authorized run. A results file with a run-count field must be written; if N6 is ever invoked a second time against this same lock hash, that second run must be flagged NOT_AUTHORIZED in its own output rather than silently treated as the primary result -- no cherry-picking between repeated runs.",
+    "prohibited_after_n6_opens_external_targets": [
+      "changing any hyperparameter",
+      "changing the feature schema",
+      "changing the model list (adding/removing/replacing a candidate)",
+      "changing the RT window, overlap-exclusion rule, or aggregation rule",
+      "changing the seed list",
+      "re-running N6 and reporting a different run's numbers",
+      "selecting a 'best' model using external performance for any purpose other than reporting it"
+    ]
+  },
+
+  "predeclared_n7_protocol": {
+    "description": "Validation-regime utility comparison: does internal validation regime (A/B/C) predict real external behavior?",
+    "inputs": "N4's frozen internal per-model pooled MAE (A/B/C) + N6's frozen external per-model MAE (strict cohort, primary; relaxed cohort as a sensitivity cross-check).",
+    "primary_analyses": [
+      "abs_gap(regime, model) = |internal_pooled_MAE(regime, model) - external_MAE(model)|, summarized as the median abs_gap across the 8 models for each regime.",
+      "Spearman rank correlation between each regime's model ranking (by internal pooled MAE, ascending) and the external model ranking (by external MAE, ascending).",
+      "Kendall tau, same ranking pair, as a second rank-agreement statistic (Spearman and Kendall can disagree on small n=8; both are reported rather than picking whichever looks better).",
+      "Top-model selection regret(regime) = external_MAE(argmin_model_by_that_regime) - external_MAE(argmin_model_by_true_external_ranking). Zero regret means the regime's #1 pick was also the truly best external model.",
+      "Bootstrap CI (n_boot=2000, seed=20260921, resample external rows with replacement, recompute external MAE per model per resample, then recompute abs_gap/Spearman/Kendall/regret) for the DIFFERENCE between each pair of regimes on each statistic above."
+    ],
+    "reporting_rule": "Report which regime (A, B, or C) best anticipates external behavior on each of the four statistics independently; do not force agreement between statistics, and do not average across statistics into one composite score not specified here.",
+    "H1_H2_test": "H1 (family-aware validation estimates external error better than random CV): supported if abs_gap(B or C) < abs_gap(A) with the bootstrap CI on that difference excluding zero. H2 (family-aware validation ranks models better): supported if Spearman/Kendall rank agreement with the external ranking is higher for B or C than for A, similarly CI-supported. Both H1 and H2 may be rejected (VALID_NEGATIVE_RESULT) if the CIs include zero or point in the opposite direction -- this is an acceptable, reportable outcome, not a failure to fix."
+  },
+
+  "predeclared_n8_protocol": {
+    "description": "External applicability-domain / risk analysis, computed for ALL 8 models (not only the best by N6, to avoid model-selection-driven cherry-picking of which AD result gets reported).",
+    "ad_reference_population": "OBELiX development population (449 rows), same as N6's final-fit population -- source-domain AD, not external-cohort-internal AD.",
+    "analyses": [
+      "Spearman(AD_score, |residual|) per model on the strict external cohort.",
+      "AD-quartile mean-error table (ad_score_quantile_error_table, n_bins=4) per model.",
+      "Risk-coverage curve: pooled MAE at retained coverage 100/75/50/25% (most in-domain rows retained first), per model.",
+      "Optional predeclared conformal interval, only if calibrated from OBELiX development data alone; explicitly optional, not required for G4."
+    ],
+    "h3_test": "H3 (AD distance predicts external absolute error and supports useful selective prediction): supported for a given model if Spearman(AD, |error|) > 0 with the correlation's own p-value reported, AND retained-coverage MAE is monotonically non-increasing (allowing at most one non-monotonic step) from 100% to 25% coverage."
+  },
+
+  "predeclared_n9_sensitivity_analyses": {
+    "list": [
+      "strict vs relaxed external cohort (re-run N6/N7/N8's external-facing numbers on the relaxed 239-row cohort; strict remains primary)",
+      "__MISSING__ family excluded from chemical-family-level summary tables (does not change the strict/relaxed cohort membership, only whether __MISSING__ rows appear in a per-family breakdown table)",
+      "source-overlap exclusion sensitivity: this is already the strict-vs-relaxed axis above, not a third separate analysis (relaxed differs from strict exactly by which overlap category is excluded)"
+    ],
+    "rule": "No other sensitivity analysis is authorized. No post-hoc model hunting, no new model added to chase a better sensitivity number."
+  },
+
+  "predeclared_n10_go_no_go_criteria": {
+    "G1_external_cohort_valid_and_adequately_sized": {
+      "criterion": "strict cohort n >= 100 independent rows",
+      "status": "ALREADY VERIFIED PASS (n=204) -- see data.frozen_inputs.external_cohort above; this criterion cannot change after this lock since the cohort itself is frozen."
+    },
+    "G2_cross_dataset_evaluation_technically_and_scientifically_valid": {
+      "criterion": "N6 ran exactly once against this lock (single authorized run, no retuning afterward, verified by the run-count field in N6's output), zero Hargreaves target leakage into any hyperparameter/feature/model-list decision (verifiable by inspecting N0-N5 code paths, none of which read log_target_rt_median), and all N6 outputs (predictions, residuals, hashes) are fully recorded and reproducible from this lock."
+    },
+    "G3_validation_regime_comparison_gives_clear_reproducible_result": {
+      "criterion": "N7's four primary statistics (median abs_gap, Spearman rank agreement, Kendall tau, selection regret) identify the SAME regime (or the same clearly-worst regime) as most/least externally predictive on at least 2 of the 4 statistics, OR the four statistics consistently show NO regime meaningfully outperforms random CV (a stable, well-documented negative result). G3 FAILS only if the four statistics give mutually contradictory signal with no stable pattern in either direction -- i.e. a genuinely inconclusive result, not merely a negative one."
+    },
+    "G4_external_ad_risk_analysis_interpretable_utility": {
+      "criterion": "Spearman(AD, |error|) is positive for a majority (>=5/8) of models AND the best-by-external-MAE model's risk-coverage MAE is monotonically non-increasing (>=1 non-monotonic step tolerated) from 100% to 25% coverage.",
+      "requirement_level": "STRONGLY PREFERRED, NOT REQUIRED for NPJ-GO, per N10's own instruction."
+    },
+    "npj_go_rule": "NPJ-GO iff G1 AND G2 AND G3 all PASS. G4 is reported regardless of outcome but does not block NPJ-GO on its own. If G1, G2, or G3 fails, the task's own instruction is to STOP at N10 and not proceed to N11 (manuscript), preserving the existing DD-ready submission as the sole Q1 output.",
+    "tolerance_change_rule": "None of the numeric thresholds in this section may be loosened, tightened, or reinterpreted after N6 opens external targets. Any deviation must be logged in CHANGELOG.md with an explicit rationale, per CLAUDE.md's planning-freeze change-control convention, and would itself be reported as a limitation."
+  },
+
+  "anti_tamper_statement": "As of this lock's creation, no code path anywhere in src/, scripts/, or tests/ on this branch reads data/raw/hargreaves_conductivity/LiIonDatabase.csv's target/log_target columns for any purpose other than the N1 audit (read-only, reported, never fit) and the N2 cohort build (aggregation into log_target_rt_median, never fit against a model). No model has been trained against a Hargreaves target value at any point before this lock. N6 is the first and only phase authorized to do so."
+}

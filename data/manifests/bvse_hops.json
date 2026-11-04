@@ -1,0 +1,45 @@
+{
+  "dataset_name": "nebBVSE122k",
+  "version": "as published with LiTraj (repository pushed_at 2025-06-05; paper npj Comput. Mater. 11, 131, 2025)",
+  "role": "local_transport_pretraining (DATA_CONTRACT.md dataset role B)",
+  "paper_reference": "Dembitskiy et al., \"Benchmarking machine learning models for predicting lithium ion migration\", npj Computational Materials 11, 131 (2025)",
+  "paper_doi": "10.1038/s41524-025-01571-z",
+  "source_repository": "https://github.com/AIRI-Institute/LiTraj",
+  "source_url": "https://bs3u.obs.ru-moscow-1.hc.sbercloud.ru/litraj/nebBVSE122k.zip",
+  "retrieval_date": "2026-09-12",
+  "license": {
+    "code_and_dataset_packaging": "MIT (AIRI-Institute/LiTraj repository license)",
+    "underlying_crystal_structures": "CC-BY-4.0 (sourced from the Materials Project, https://creativecommons.org/licenses/by/4.0/)"
+  },
+  "files": [
+    {
+      "filename": "nebBVSE122k.zip",
+      "path": "data/raw/bvse_hops/nebBVSE122k.zip",
+      "size_bytes": 199873007,
+      "sha256": "8b90c44902cd799de45b3e30ba70f0cf463f8a60b199fcd3a675caa5316bbe0a"
+    }
+  ],
+  "reported_sample_count": 122421,
+  "locally_verified_sample_count": 122421,
+  "record_unit": "one Li-ion vacancy-hop (edge) between two equilibrium sites, with a BVSE-NEB migration barrier",
+  "available_identifiers": [
+    "material_id (Materials Project id)",
+    "edge_id (mp-id_source_target_offsetx_offsety_offsetz)"
+  ],
+  "available_structure_fields": [
+    "supercell with a dummy centroid ('X') atom marking the hop midpoint, per edge, in extended-XYZ (nebBVSE122k_train/val/test.xyz)",
+    "chemsys per record"
+  ],
+  "target_fields": {
+    "em": "BVSE-NEB migration barrier for this hop, eV"
+  },
+  "target_distribution_eV": {"em": {"min": 0.014874, "max": 20.924692, "mean": 1.544646}},
+  "official_split_column": "_split (train/val/test)",
+  "official_split_counts": {"train": 96849, "val": 12405, "test": 13167},
+  "li_containing_fraction": 1.0,
+  "n_unique_materials": 11290,
+  "n_unique_edges": 122421,
+  "known_missing_censored_disordered_data": "No missing em values (0/122421). No censored values (empirical BVSE barrier, always numeric). 0 duplicate edge_id rows (verified). Disorder of underlying structures not separately re-verified in this phase; supercell + centroid representation must be handled explicitly by the feature/graph builder in Phase 1.",
+  "duplicates": "0 duplicate edge_id rows (verified).",
+  "notes": "material_id set (11,290 unique materials) is an exact subset of bvel_percolation's material_id set (12,807), and dft_neb's material_id set (867) is an exact subset of this dataset's (see reports/results/leakage/pretraining_id_overlap.json). Multiple edges (average ~10.8) exist per material, corresponding to distinct candidate hops for the same crystal."
+}

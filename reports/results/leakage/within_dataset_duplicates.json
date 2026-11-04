@@ -1,0 +1,43 @@
+{
+  "obelix": {
+    "duplicate_id_rows": 0,
+    "rows_sharing_reduced_composition": 85,
+    "structure_level_duplicate_groups": [
+      [
+        "4ba",
+        "ldx"
+      ],
+      [
+        "7o7",
+        "h89"
+      ],
+      [
+        "9lo",
+        "w7d"
+      ],
+      [
+        "9s4",
+        "kab"
+      ],
+      [
+        "ix1",
+        "z7n"
+      ],
+      [
+        "p9u",
+        "ywe"
+      ]
+    ],
+    "structure_level_duplicate_group_count": 6,
+    "method": "pymatgen StructureMatcher (strict), composition-prefiltered, on the 321 locally available CIFs"
+  },
+  "bvel_percolation": {
+    "duplicate_material_id_rows": 0
+  },
+  "bvse_hops": {
+    "duplicate_edge_id_rows": 0
+  },
+  "dft_neb": {
+    "duplicate_edge_id_rows": 0
+  }
+}

@@ -1,0 +1,794 @@
+{
+  "phase": "N15_reviewer_remediation",
+  "status": "POST_REVIEW_SENSITIVITY_ANALYSIS_NOT_PRESPECIFIED",
+  "git_commit": "534da7af653407d764d3636e34fca3db1b068817",
+  "git_branch": "acs-jcim-finalization",
+  "spec_file": "artifacts/npj_n15_remediation_spec.json",
+  "spec_file_sha256": "c448d97590eb1d0ee283166d5b7805dbba0c4612c1811c212ab9c4eac8a42733",
+  "n6_source": "artifacts/npj_n6_external_transfer.json (frozen, not rerun)",
+  "n4b_source": "artifacts/npj_n4b_nested_internal_validation.json (frozen, not rerun)",
+  "analysis": "N15_analysis_5_ad_aurc",
+  "coverage_grid": [
+    1.0,
+    0.95,
+    0.9,
+    0.85,
+    0.8,
+    0.75,
+    0.7,
+    0.65,
+    0.6,
+    0.55,
+    0.5,
+    0.45,
+    0.4,
+    0.35,
+    0.3,
+    0.25
+  ],
+  "n_models_with_positive_spearman": 8,
+  "n_models_with_defined_spearman": 8,
+  "per_model": {
+    "ridge": {
+      "spearman_ad_vs_abs_error": {
+        "spearman_r": 0.24160547313963432,
+        "p_value": 0.0004989298183246616,
+        "n": 204
+      },
+      "risk_coverage_mae_fine_grid": [
+        {
+          "retained_fraction": 1.0,
+          "n_retained": 204,
+          "mae": 1.3819534011084926
+        },
+        {
+          "retained_fraction": 0.95,
+          "n_retained": 194,
+          "mae": 1.3488258089554757
+        },
+        {
+          "retained_fraction": 0.9,
+          "n_retained": 184,
+          "mae": 1.2780870074873618
+        },
+        {
+          "retained_fraction": 0.85,
+          "n_retained": 173,
+          "mae": 1.1981762598852828
+        },
+        {
+          "retained_fraction": 0.8,
+          "n_retained": 163,
+          "mae": 1.1852226912452541
+        },
+        {
+          "retained_fraction": 0.75,
+          "n_retained": 153,
+          "mae": 1.1684177692655158
+        },
+        {
+          "retained_fraction": 0.7,
+          "n_retained": 143,
+          "mae": 1.168313113469528
+        },
+        {
+          "retained_fraction": 0.65,
+          "n_retained": 133,
+          "mae": 1.172802927657733
+        },
+        {
+          "retained_fraction": 0.6,
+          "n_retained": 122,
+          "mae": 1.166924584192261
+        },
+        {
+          "retained_fraction": 0.55,
+          "n_retained": 112,
+          "mae": 1.1296083755743702
+        },
+        {
+          "retained_fraction": 0.5,
+          "n_retained": 102,
+          "mae": 1.0333283730307632
+        },
+        {
+          "retained_fraction": 0.45,
+          "n_retained": 92,
+          "mae": 1.0328907911342542
+        },
+        {
+          "retained_fraction": 0.4,
+          "n_retained": 82,
+          "mae": 0.9875176390417214
+        },
+        {
+          "retained_fraction": 0.35,
+          "n_retained": 71,
+          "mae": 0.9809991928120032
+        },
+        {
+          "retained_fraction": 0.3,
+          "n_retained": 61,
+          "mae": 0.9741385352936784
+        },
+        {
+          "retained_fraction": 0.25,
+          "n_retained": 51,
+          "mae": 0.9080260431958159
+        }
+      ],
+      "aurc": {
+        "aurc": 1.1313495194131573,
+        "coverage_min": 0.25,
+        "coverage_max": 1.0,
+        "n_points": 16
+      }
+    },
+    "random_forest": {
+      "spearman_ad_vs_abs_error": {
+        "spearman_r": 0.3663045706087313,
+        "p_value": 7.117427953419183e-08,
+        "n": 204
+      },
+      "risk_coverage_mae_fine_grid": [
+        {
+          "retained_fraction": 1.0,
+          "n_retained": 204,
+          "mae": 1.2861310710168572
+        },
+        {
+          "retained_fraction": 0.95,
+          "n_retained": 194,
+          "mae": 1.2758483733273196
+        },
+        {
+          "retained_fraction": 0.9,
+          "n_retained": 184,
+          "mae": 1.2150674814750493
+        },
+        {
+          "retained_fraction": 0.85,
+          "n_retained": 173,
+          "mae": 1.1061775890797776
+        },
+        {
+          "retained_fraction": 0.8,
+          "n_retained": 163,
+          "mae": 1.077836857782821
+        },
+        {
+          "retained_fraction": 0.75,
+          "n_retained": 153,
+          "mae": 1.0892229499555774
+        },
+        {
+          "retained_fraction": 0.7,
+          "n_retained": 143,
+          "mae": 1.0329994165223049
+        },
+        {
+          "retained_fraction": 0.65,
+          "n_retained": 133,
+          "mae": 1.0431485396974767
+        },
+        {
+          "retained_fraction": 0.6,
+          "n_retained": 122,
+          "mae": 0.9916104169163313
+        },
+        {
+          "retained_fraction": 0.55,
+          "n_retained": 112,
+          "mae": 0.9524683080251547
+        },
+        {
+          "retained_fraction": 0.5,
+          "n_retained": 102,
+          "mae": 0.8636057007437776
+        },
+        {
+          "retained_fraction": 0.45,
+          "n_retained": 92,
+          "mae": 0.8240569573301401
+        },
+        {
+          "retained_fraction": 0.4,
+          "n_retained": 82,
+          "mae": 0.7835983849250361
+        },
+        {
+          "retained_fraction": 0.35,
+          "n_retained": 71,
+          "mae": 0.7897273240005416
+        },
+        {
+          "retained_fraction": 0.3,
+          "n_retained": 61,
+          "mae": 0.7683549941493765
+        },
+        {
+          "retained_fraction": 0.25,
+          "n_retained": 51,
+          "mae": 0.7188693199049166
+        }
+      ],
+      "aurc": {
+        "aurc": 0.9877482326261046,
+        "coverage_min": 0.25,
+        "coverage_max": 1.0,
+        "n_points": 16
+      }
+    },
+    "extra_trees": {
+      "spearman_ad_vs_abs_error": {
+        "spearman_r": 0.3080407941141133,
+        "p_value": 7.389781876885743e-06,
+        "n": 204
+      },
+      "risk_coverage_mae_fine_grid": [
+        {
+          "retained_fraction": 1.0,
+          "n_retained": 204,
+          "mae": 1.2021821244387563
+        },
+        {
+          "retained_fraction": 0.95,
+          "n_retained": 194,
+          "mae": 1.1759371136630636
+        },
+        {
+          "retained_fraction": 0.9,
+          "n_retained": 184,
+          "mae": 1.1065267742033216
+        },
+        {
+          "retained_fraction": 0.85,
+          "n_retained": 173,
+          "mae": 0.9946319651182537
+        },
+        {
+          "retained_fraction": 0.8,
+          "n_retained": 163,
+          "mae": 0.9790363257051108
+        },
+        {
+          "retained_fraction": 0.75,
+          "n_retained": 153,
+          "mae": 1.0045498609631955
+        },
+        {
+          "retained_fraction": 0.7,
+          "n_retained": 143,
+          "mae": 1.000708543199588
+        },
+        {
+          "retained_fraction": 0.65,
+          "n_retained": 133,
+          "mae": 1.0082570037740777
+        },
+        {
+          "retained_fraction": 0.6,
+          "n_retained": 122,
+          "mae": 0.971435355280831
+        },
+        {
+          "retained_fraction": 0.55,
+          "n_retained": 112,
+          "mae": 0.9216889059248794
+        },
+        {
+          "retained_fraction": 0.5,
+          "n_retained": 102,
+          "mae": 0.8458836004690207
+        },
+        {
+          "retained_fraction": 0.45,
+          "n_retained": 92,
+          "mae": 0.7871334030922534
+        },
+        {
+          "retained_fraction": 0.4,
+          "n_retained": 82,
+          "mae": 0.7538326172197815
+        },
+        {
+          "retained_fraction": 0.35,
+          "n_retained": 71,
+          "mae": 0.6950405106272152
+        },
+        {
+          "retained_fraction": 0.3,
+          "n_retained": 61,
+          "mae": 0.6680266754333833
+        },
+        {
+          "retained_fraction": 0.25,
+          "n_retained": 51,
+          "mae": 0.665145833963734
+        }
+      ],
+      "aurc": {
+        "aurc": 0.9230901755916815,
+        "coverage_min": 0.25,
+        "coverage_max": 1.0,
+        "n_points": 16
+      }
+    },
+    "xgboost": {
+      "spearman_ad_vs_abs_error": {
+        "spearman_r": 0.3506210114498708,
+        "p_value": 2.729217054477242e-07,
+        "n": 204
+      },
+      "risk_coverage_mae_fine_grid": [
+        {
+          "retained_fraction": 1.0,
+          "n_retained": 204,
+          "mae": 1.3492430698048161
+        },
+        {
+          "retained_fraction": 0.95,
+          "n_retained": 194,
+          "mae": 1.3500370164527407
+        },
+        {
+          "retained_fraction": 0.9,
+          "n_retained": 184,
+          "mae": 1.2868631376346693
+        },
+        {
+          "retained_fraction": 0.85,
+          "n_retained": 173,
+          "mae": 1.170535900581802
+        },
+        {
+          "retained_fraction": 0.8,
+          "n_retained": 163,
+          "mae": 1.1523897402975167
+        },
+        {
+          "retained_fraction": 0.75,
+          "n_retained": 153,
+          "mae": 1.1594507332018722
+        },
+        {
+          "retained_fraction": 0.7,
+          "n_retained": 143,
+          "mae": 1.0853556375211635
+        },
+        {
+          "retained_fraction": 0.65,
+          "n_retained": 133,
+          "mae": 1.0966764229495207
+        },
+        {
+          "retained_fraction": 0.6,
+          "n_retained": 122,
+          "mae": 1.0500607738814156
+        },
+        {
+          "retained_fraction": 0.55,
+          "n_retained": 112,
+          "mae": 1.005858307189708
+        },
+        {
+          "retained_fraction": 0.5,
+          "n_retained": 102,
+          "mae": 0.9586948386160791
+        },
+        {
+          "retained_fraction": 0.45,
+          "n_retained": 92,
+          "mae": 0.9387795989281669
+        },
+        {
+          "retained_fraction": 0.4,
+          "n_retained": 82,
+          "mae": 0.9001180350182465
+        },
+        {
+          "retained_fraction": 0.35,
+          "n_retained": 71,
+          "mae": 0.8374752002977949
+        },
+        {
+          "retained_fraction": 0.3,
+          "n_retained": 61,
+          "mae": 0.8135479644767645
+        },
+        {
+          "retained_fraction": 0.25,
+          "n_retained": 51,
+          "mae": 0.7333246738422013
+        }
+      ],
+      "aurc": {
+        "aurc": 1.0564751452580645,
+        "coverage_min": 0.25,
+        "coverage_max": 1.0,
+        "n_points": 16
+      }
+    },
+    "catboost": {
+      "spearman_ad_vs_abs_error": {
+        "spearman_r": 0.3011931151780567,
+        "p_value": 1.2002175087984907e-05,
+        "n": 204
+      },
+      "risk_coverage_mae_fine_grid": [
+        {
+          "retained_fraction": 1.0,
+          "n_retained": 204,
+          "mae": 1.2916494141597106
+        },
+        {
+          "retained_fraction": 0.95,
+          "n_retained": 194,
+          "mae": 1.2872103093273137
+        },
+        {
+          "retained_fraction": 0.9,
+          "n_retained": 184,
+          "mae": 1.224573790795261
+        },
+        {
+          "retained_fraction": 0.85,
+          "n_retained": 173,
+          "mae": 1.1202701099603507
+        },
+        {
+          "retained_fraction": 0.8,
+          "n_retained": 163,
+          "mae": 1.1005810009346382
+        },
+        {
+          "retained_fraction": 0.75,
+          "n_retained": 153,
+          "mae": 1.1080936542021878
+        },
+        {
+          "retained_fraction": 0.7,
+          "n_retained": 143,
+          "mae": 1.0597549299309807
+        },
+        {
+          "retained_fraction": 0.65,
+          "n_retained": 133,
+          "mae": 1.0745496074165115
+        },
+        {
+          "retained_fraction": 0.6,
+          "n_retained": 122,
+          "mae": 1.0315150663314785
+        },
+        {
+          "retained_fraction": 0.55,
+          "n_retained": 112,
+          "mae": 0.9688217976607199
+        },
+        {
+          "retained_fraction": 0.5,
+          "n_retained": 102,
+          "mae": 0.9291589441740079
+        },
+        {
+          "retained_fraction": 0.45,
+          "n_retained": 92,
+          "mae": 0.8821384319514232
+        },
+        {
+          "retained_fraction": 0.4,
+          "n_retained": 82,
+          "mae": 0.8509787546748172
+        },
+        {
+          "retained_fraction": 0.35,
+          "n_retained": 71,
+          "mae": 0.7857616635993171
+        },
+        {
+          "retained_fraction": 0.3,
+          "n_retained": 61,
+          "mae": 0.740387990981666
+        },
+        {
+          "retained_fraction": 0.25,
+          "n_retained": 51,
+          "mae": 0.7014186324741357
+        }
+      ],
+      "aurc": {
+        "aurc": 1.01068867168384,
+        "coverage_min": 0.25,
+        "coverage_max": 1.0,
+        "n_points": 16
+      }
+    },
+    "shallow_mlp": {
+      "spearman_ad_vs_abs_error": {
+        "spearman_r": 0.3868076414754295,
+        "p_value": 1.0984478494082747e-08,
+        "n": 204
+      },
+      "risk_coverage_mae_fine_grid": [
+        {
+          "retained_fraction": 1.0,
+          "n_retained": 204,
+          "mae": 1.4830644672960682
+        },
+        {
+          "retained_fraction": 0.95,
+          "n_retained": 194,
+          "mae": 1.426996968713947
+        },
+        {
+          "retained_fraction": 0.9,
+          "n_retained": 184,
+          "mae": 1.37757875881884
+        },
+        {
+          "retained_fraction": 0.85,
+          "n_retained": 173,
+          "mae": 1.2869548500874168
+        },
+        {
+          "retained_fraction": 0.8,
+          "n_retained": 163,
+          "mae": 1.2557823194710165
+        },
+        {
+          "retained_fraction": 0.75,
+          "n_retained": 153,
+          "mae": 1.241495391674229
+        },
+        {
+          "retained_fraction": 0.7,
+          "n_retained": 143,
+          "mae": 1.2323822165706877
+        },
+        {
+          "retained_fraction": 0.65,
+          "n_retained": 133,
+          "mae": 1.2480591508954806
+        },
+        {
+          "retained_fraction": 0.6,
+          "n_retained": 122,
+          "mae": 1.2026088781523052
+        },
+        {
+          "retained_fraction": 0.55,
+          "n_retained": 112,
+          "mae": 1.0816951603331326
+        },
+        {
+          "retained_fraction": 0.5,
+          "n_retained": 102,
+          "mae": 1.0145590678806529
+        },
+        {
+          "retained_fraction": 0.45,
+          "n_retained": 92,
+          "mae": 0.943122097776539
+        },
+        {
+          "retained_fraction": 0.4,
+          "n_retained": 82,
+          "mae": 0.8916903760585722
+        },
+        {
+          "retained_fraction": 0.35,
+          "n_retained": 71,
+          "mae": 0.8629291524951834
+        },
+        {
+          "retained_fraction": 0.3,
+          "n_retained": 61,
+          "mae": 0.8788785772705007
+        },
+        {
+          "retained_fraction": 0.25,
+          "n_retained": 51,
+          "mae": 0.8715703808784409
+        }
+      ],
+      "aurc": {
+        "aurc": 1.1414700260190505,
+        "coverage_min": 0.25,
+        "coverage_max": 1.0,
+        "n_points": 16
+      }
+    },
+    "pretrained_element_embedding": {
+      "spearman_ad_vs_abs_error": {
+        "spearman_r": 0.4322409199171679,
+        "p_value": 1.077398661329499e-10,
+        "n": 204
+      },
+      "risk_coverage_mae_fine_grid": [
+        {
+          "retained_fraction": 1.0,
+          "n_retained": 204,
+          "mae": 1.716321513819882
+        },
+        {
+          "retained_fraction": 0.95,
+          "n_retained": 194,
+          "mae": 1.6658251736409004
+        },
+        {
+          "retained_fraction": 0.9,
+          "n_retained": 184,
+          "mae": 1.6331252196060506
+        },
+        {
+          "retained_fraction": 0.85,
+          "n_retained": 173,
+          "mae": 1.5604880467324063
+        },
+        {
+          "retained_fraction": 0.8,
+          "n_retained": 163,
+          "mae": 1.4605265126995286
+        },
+        {
+          "retained_fraction": 0.75,
+          "n_retained": 153,
+          "mae": 1.370576626082114
+        },
+        {
+          "retained_fraction": 0.7,
+          "n_retained": 143,
+          "mae": 1.3778985738406782
+        },
+        {
+          "retained_fraction": 0.65,
+          "n_retained": 133,
+          "mae": 1.3410171126598993
+        },
+        {
+          "retained_fraction": 0.6,
+          "n_retained": 122,
+          "mae": 1.239020727453295
+        },
+        {
+          "retained_fraction": 0.55,
+          "n_retained": 112,
+          "mae": 1.0951668347217918
+        },
+        {
+          "retained_fraction": 0.5,
+          "n_retained": 102,
+          "mae": 1.0400060683777022
+        },
+        {
+          "retained_fraction": 0.45,
+          "n_retained": 92,
+          "mae": 1.0002500578115447
+        },
+        {
+          "retained_fraction": 0.4,
+          "n_retained": 82,
+          "mae": 0.9051073045559603
+        },
+        {
+          "retained_fraction": 0.35,
+          "n_retained": 71,
+          "mae": 0.8703015167800603
+        },
+        {
+          "retained_fraction": 0.3,
+          "n_retained": 61,
+          "mae": 0.8275547010226589
+        },
+        {
+          "retained_fraction": 0.25,
+          "n_retained": 51,
+          "mae": 0.8782517521688374
+        }
+      ],
+      "aurc": {
+        "aurc": 1.24561007393193,
+        "coverage_min": 0.25,
+        "coverage_max": 1.0,
+        "n_points": 16
+      }
+    },
+    "composition_attention": {
+      "spearman_ad_vs_abs_error": {
+        "spearman_r": 0.35925111844569624,
+        "p_value": 1.3143949085490344e-07,
+        "n": 204
+      },
+      "risk_coverage_mae_fine_grid": [
+        {
+          "retained_fraction": 1.0,
+          "n_retained": 204,
+          "mae": 1.2823679106846348
+        },
+        {
+          "retained_fraction": 0.95,
+          "n_retained": 194,
+          "mae": 1.236395129314041
+        },
+        {
+          "retained_fraction": 0.9,
+          "n_retained": 184,
+          "mae": 1.1760604451644314
+        },
+        {
+          "retained_fraction": 0.85,
+          "n_retained": 173,
+          "mae": 1.0940025737519934
+        },
+        {
+          "retained_fraction": 0.8,
+          "n_retained": 163,
+          "mae": 1.0310825374162147
+        },
+        {
+          "retained_fraction": 0.75,
+          "n_retained": 153,
+          "mae": 1.0213661905620364
+        },
+        {
+          "retained_fraction": 0.7,
+          "n_retained": 143,
+          "mae": 1.0246509208830088
+        },
+        {
+          "retained_fraction": 0.65,
+          "n_retained": 133,
+          "mae": 1.0474692085916335
+        },
+        {
+          "retained_fraction": 0.6,
+          "n_retained": 122,
+          "mae": 0.981789672521272
+        },
+        {
+          "retained_fraction": 0.55,
+          "n_retained": 112,
+          "mae": 0.9296841944529157
+        },
+        {
+          "retained_fraction": 0.5,
+          "n_retained": 102,
+          "mae": 0.8507691955695839
+        },
+        {
+          "retained_fraction": 0.45,
+          "n_retained": 92,
+          "mae": 0.824900605702256
+        },
+        {
+          "retained_fraction": 0.4,
+          "n_retained": 82,
+          "mae": 0.7763604400549018
+        },
+        {
+          "retained_fraction": 0.35,
+          "n_retained": 71,
+          "mae": 0.7787217382840403
+        },
+        {
+          "retained_fraction": 0.3,
+          "n_retained": 61,
+          "mae": 0.7786046503787002
+        },
+        {
+          "retained_fraction": 0.25,
+          "n_retained": 51,
+          "mae": 0.7408144934276483
+        }
+      ],
+      "aurc": {
+        "aurc": 0.9708965803135446,
+        "coverage_min": 0.25,
+        "coverage_max": 1.0,
+        "n_points": 16
+      }
+    }
+  },
+  "note": "AURC reported for all 8 models descriptively; no model is chosen based on its own external performance for this headline (per spec analysis_5)."
+}

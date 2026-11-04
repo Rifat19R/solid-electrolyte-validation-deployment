@@ -1,0 +1,53 @@
+{
+  "generated_by": "scripts/build_evidence_summary.py",
+  "records_per_dataset": {
+    "bvel_percolation": 12807,
+    "bvse_hops": 122421,
+    "dft_neb": 1681,
+    "obelix": 599
+  },
+  "unique_structures_or_materials": {
+    "bvel_percolation_material_ids": 12807,
+    "bvse_hops_material_ids": 11290,
+    "bvse_hops_edges": 122421,
+    "dft_neb_material_ids": 867,
+    "dft_neb_edges": 1681,
+    "obelix_ids": 599,
+    "obelix_unique_reduced_compositions": 514
+  },
+  "exact_id_overlaps_within_pretraining": {
+    "bvel_percolation_vs_bvse_hops": 11290,
+    "bvel_percolation_vs_dft_neb": 867,
+    "bvse_hops_vs_dft_neb": 867,
+    "note": "OBELiX carries no Materials Project id field, so EXACT_ID_MATCH against obelix is not computable (see struct_overlap 'limitation')."
+  },
+  "obelix_vs_bvel_percolation_structure_overlap": {
+    "EXACT_STRUCTURE_MATCH": {
+      "total": 57,
+      "involving_obelix_test_split": 11,
+      "involving_obelix_train_split": 46
+    },
+    "PROBABLE_STRUCTURE_MATCH": {
+      "total": 3,
+      "involving_obelix_test_split": 1,
+      "involving_obelix_train_split": 2
+    },
+    "COMPOSITION_ONLY_MATCH": {
+      "total": 31,
+      "involving_obelix_test_split": 2,
+      "involving_obelix_train_split": 29
+    },
+    "NO_MATCH_count": 230,
+    "note": "Because bvse_hops and dft_neb material_id sets are proper subsets of bvel_percolation's, every match reported here against bvel_percolation also implies presence in bvse_hops and, where applicable, dft_neb (see pretraining_id_overlap.json)."
+  },
+  "within_dataset_duplicates": {
+    "obelix_structure_level_duplicate_groups": 6,
+    "bvel_percolation_duplicate_material_id_rows": 0,
+    "bvse_hops_duplicate_edge_id_rows": 0,
+    "dft_neb_duplicate_edge_id_rows": 0
+  },
+  "exclusion_ledger_summary": {
+    "n_excluded_materials": 20,
+    "n_excluded_records": 107
+  }
+}

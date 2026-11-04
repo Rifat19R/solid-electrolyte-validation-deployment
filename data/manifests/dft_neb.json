@@ -1,0 +1,47 @@
+{
+  "dataset_name": "nebDFT2k",
+  "version": "as published with LiTraj (repository pushed_at 2025-06-05; paper npj Comput. Mater. 11, 131, 2025)",
+  "role": "high_fidelity_transport_supervision (DATA_CONTRACT.md dataset role C: existing published DFT-NEB migration barriers)",
+  "paper_reference": "Dembitskiy et al., \"Benchmarking machine learning models for predicting lithium ion migration\", npj Computational Materials 11, 131 (2025)",
+  "paper_doi": "10.1038/s41524-025-01571-z",
+  "source_repository": "https://github.com/AIRI-Institute/LiTraj",
+  "source_url": "https://bs3u.obs.ru-moscow-1.hc.sbercloud.ru/litraj/nebDFT2k.zip",
+  "retrieval_date": "2026-09-12",
+  "license": {
+    "code_and_dataset_packaging": "MIT (AIRI-Institute/LiTraj repository license)",
+    "underlying_crystal_structures": "CC-BY-4.0 (sourced from the Materials Project, https://creativecommons.org/licenses/by/4.0/)"
+  },
+  "files": [
+    {
+      "filename": "nebDFT2k.zip",
+      "path": "data/raw/dft_neb/nebDFT2k.zip",
+      "size_bytes": 68583182,
+      "sha256": "b7a99d89337902e9e1da319f57547170fdb132bf15bf6ffef03a0140e2207d7f"
+    }
+  ],
+  "reported_sample_count": 1681,
+  "locally_verified_sample_count": 1681,
+  "record_unit": "one Li-ion vacancy hop with a climbing-image DFT(PBE)-NEB-optimized migration barrier",
+  "available_identifiers": [
+    "material_id (Materials Project id)",
+    "edge_id (mp-id_source_target_offsetx_offsety_offsetz)"
+  ],
+  "available_structure_fields": [
+    "per-edge initial (BVSE-NEB preconditioned) and DFT-NEB-relaxed trajectory .xyz files (<edge_id>_init.xyz, <edge_id>_relaxed.xyz)",
+    "nebDFT2k_centroids.xyz: supercell with inserted centroid ('X') per edge, for GNN structure-to-property use"
+  ],
+  "target_fields": {
+    "em_dft": "DFT(PBE)-NEB migration barrier, eV -- this is the existing-published-DFT-NEB target per DATA_CONTRACT.md role C",
+    "em_bvse": "BVSE-NEB estimate for the same hop, included for cross-fidelity comparison only, not a substitute target",
+    "has_specific_TM": "boolean flag for hops involving a specific transition metal, present in the index for filtering/analysis"
+  },
+  "target_distribution_eV": {"em_dft": {"min": 0.0060545, "max": 6.6726477, "mean": 0.811098}},
+  "official_split_column": "_split (train/val/test)",
+  "official_split_counts": {"train": 1220, "val": 241, "test": 220},
+  "li_containing_fraction": 1.0,
+  "n_unique_materials": 867,
+  "n_unique_edges": 1681,
+  "known_missing_censored_disordered_data": "No missing em_dft values (0/1681). No censored values (DFT barrier, always numeric). 0 duplicate edge_id rows (verified). Disorder of underlying structures not separately re-verified in this phase.",
+  "duplicates": "0 duplicate edge_id rows (verified).",
+  "notes": "This dataset's material_id set (867) is an exact subset of both bvse_hops' (11,290) and bvel_percolation's (12,807) material_id sets (see reports/results/leakage/pretraining_id_overlap.json). No new DFT/NEB calculations were performed or are planned to obtain this data -- it is downloaded published output only, consistent with RESEARCH_CONTRACT.md and DATA_CONTRACT.md role C ('Existing published DFT-NEB migration barriers only. No new DFT/NEB generation.'). em_bvse vs em_dft on the same 1,681 hops is available in this dataset for a cross-fidelity sanity check but must not be conflated as three fidelities of one target per RESEARCH_CONTRACT.md's forbidden-claims list."
+}

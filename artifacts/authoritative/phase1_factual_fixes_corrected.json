@@ -1,0 +1,321 @@
+{
+  "phase": "phase1_stage2_factual_fixes",
+  "git_commit": "4348ef6b37722605feb0213189ba414c10e6bd56",
+  "item1_label_audit_dev_only": {
+    "item": "1_label_audit_dev_only",
+    "scope_fix": "The prior audit (reviewer_label_compatibility.json) ran over obelix_raw_rows=599 (the full raw OBELiX file, including the frozen 113-row test split). This re-run restricts the OBELiX side to the 449-row development population (train+validation) only; the frozen test split's labels were never read for this comparison.",
+    "n_dev_rows": 449,
+    "n_censored_excluded_dev_only": 0,
+    "n_exact_formulas_dev_only": 365,
+    "n_formulas_with_within_obelix_spread_over_1_log10_dev_only": 17,
+    "n_paired_formulas_dev_only": 166,
+    "n_paired_formulas_full_599_for_comparison": 200,
+    "lead_statistic_different_source_pairs": {
+      "n": 31,
+      "mean_absolute_discrepancy": 0.7537682172161753,
+      "median_absolute_discrepancy": 0.3467874860476252
+    },
+    "sanity_check_same_source_pairs": {
+      "n": 135,
+      "mean_absolute_discrepancy": 0.1862478976954082,
+      "median_absolute_discrepancy": 3.0550939555951118e-09
+    },
+    "descriptive_comparison_vs_seen_family_model_mae": {
+      "different_source_mean_abs_discrepancy": 0.7537682172161753,
+      "seen_family_external_mae_by_model": {
+        "ridge": 1.108193761253568,
+        "random_forest": 0.8638424415059154,
+        "extra_trees": 0.8294806716453098,
+        "xgboost": 0.9183165722849793,
+        "catboost": 0.841426472337033,
+        "shallow_mlp": 1.0006011143887297,
+        "pretrained_element_embedding": 1.118582551751199,
+        "composition_attention": 0.8924365245089068
+      },
+      "note": "Cross-database independent-report discrepancy (DIFFERENT-SOURCE pairs) is compared here only descriptively against each model's own SEEN-family external MAE (Stage 1 artifact) -- these are two different quantities (measurement-vs-measurement disagreement vs. model-vs-measurement error) and this is not a formal statistical test of one explaining the other."
+    }
+  },
+  "item2_relaxed_cohort_membership": {
+    "item": "2_relaxed_cohort_composition_only_membership",
+    "n_composition_only_match_paired_formulas": 35,
+    "n_present_in_relaxed_cohort_239": 35,
+    "n_present_in_strict_cohort_204": 0,
+    "contradiction_found": false,
+    "verdict": "NO CONTRADICTION: all 35 COMPOSITION_ONLY_MATCH-involved paired formulas from the label-compatibility audit are present in the 239-row relaxed cohort (as N2's own construction rule requires -- COMPOSITION_ONLY_MATCH rows are excluded only from strict, retained in relaxed) and none are present in the 204-row strict cohort (also as required -- strict excludes them). No manuscript statement asserting either count was found to be numerically wrong; this closes the open question with a direct verification rather than leaving it unconfirmed.",
+    "supporting_evidence": "The large mean/median absolute discrepancy for these 35 pairs (0.787 / 0.347, vs. 0.184 / ~0 for the same-source EXACT_DOI group) is consistent with these being genuinely independent measurements rather than silent duplicates, which supports (does not prove) N2's design decision to retain them in the relaxed sensitivity cohort rather than excluding them as certain duplicates."
+  },
+  "item3_formula_gkf_utility": {
+    "item": "3_formula_gkf_utility_vs_frozen_external_mae",
+    "formula_gkf_internal_pooled_mae_by_model": {
+      "ridge": 1.367610299876115,
+      "random_forest": 0.8458795994338025,
+      "extra_trees": 0.7563462084613939,
+      "xgboost": 0.7954291907633901,
+      "catboost": 0.7868902305811095,
+      "shallow_mlp": 1.1214289112902975,
+      "pretrained_element_embedding": 1.5133845082041923,
+      "composition_attention": 1.2978925499116125
+    },
+    "primary_8_model": {
+      "median_abs_mae_gap": 0.40094351379441256,
+      "spearman_rho": 0.6428571428571429,
+      "kendall_tau": 0.4999999999999999,
+      "top_model_selection_regret": 0.0,
+      "n_models": 8
+    },
+    "six_model_stable_sensitivity": {
+      "median_abs_mae_gap": 0.44304369378020864,
+      "spearman_rho": 0.48571428571428577,
+      "kendall_tau": 0.3333333333333333,
+      "top_model_selection_regret": 0.0,
+      "n_models": 6
+    },
+    "stable_models": [
+      "random_forest",
+      "extra_trees",
+      "xgboost",
+      "catboost",
+      "pretrained_element_embedding",
+      "composition_attention"
+    ],
+    "reference_random_cv_8_model": {
+      "median_abs_mae_gap": 0.4531075873900411,
+      "spearman_rho": 0.6428571428571429,
+      "kendall_tau": 0.4999999999999999,
+      "top_model_selection_regret": 0.0,
+      "n_models": 8
+    },
+    "expected_check": {
+      "median_abs_mae_gap_approx": 0.4,
+      "spearman_rho_approx": 0.64,
+      "kendall_tau_approx": 0.5,
+      "top_model_selection_regret": 0.0
+    },
+    "expected_check_rationale": "Formula-GroupKFold (N20b) groups by exact-formula duplicates only (45/52 duplicate groups affect a minority of the 449-row pool); it is not expected to resemble the chemistry-family-shift regimes (B/C) but rather to behave like random CV (A), since it removes a narrow leakage mechanism, not the family-shift mechanism the negative H1/H2 result is about.",
+    "mismatches_flagged": [],
+    "verdict": "MATCHES EXPECTATION (formula-GKF tracks random CV within tolerance, as the task predicted): median_abs_mae_gap=0.4009, spearman_rho=0.6429, kendall_tau=0.5000, top_model_selection_regret=0.0000"
+  },
+  "item4_pairwise_diffs": {
+    "item": "4_nested_8model_pairwise_between_regime_diff_cis",
+    "B_minus_A": {
+      "median_abs_mae_gap": {
+        "statistic": "median_abs_mae_gap",
+        "point_delta": 0.22784705197502175,
+        "ci_low": -0.06934293672173214,
+        "ci_high": 0.5700197976156869,
+        "ci_level": 0.95,
+        "n_boot": 2000,
+        "n_finite": 2000,
+        "seed": 20260921
+      },
+      "spearman_rho": {
+        "statistic": "spearman_rho",
+        "point_delta": -0.09523809523809523,
+        "ci_low": -0.33392857142857046,
+        "ci_high": 0.04761904761904756,
+        "ci_level": 0.95,
+        "n_boot": 2000,
+        "n_finite": 2000,
+        "seed": 20260921
+      },
+      "kendall_tau": {
+        "statistic": "kendall_tau",
+        "point_delta": -0.1428571428571428,
+        "ci_low": -0.4285714285714285,
+        "ci_high": 0.0,
+        "ci_level": 0.95,
+        "n_boot": 2000,
+        "n_finite": 2000,
+        "seed": 20260921
+      },
+      "top_model_selection_regret": {
+        "statistic": "top_model_selection_regret",
+        "point_delta": 0.14706094536605985,
+        "ci_low": 0.03365458741014421,
+        "ci_high": 0.26377290574057494,
+        "ci_level": 0.95,
+        "n_boot": 2000,
+        "n_finite": 2000,
+        "seed": 20260921
+      }
+    },
+    "C_minus_A": {
+      "median_abs_mae_gap": {
+        "statistic": "median_abs_mae_gap",
+        "point_delta": 0.06176432326187875,
+        "ci_low": -0.2029004612247451,
+        "ci_high": 0.42325195579339686,
+        "ci_level": 0.95,
+        "n_boot": 2000,
+        "n_finite": 2000,
+        "seed": 20260921
+      },
+      "spearman_rho": {
+        "statistic": "spearman_rho",
+        "point_delta": -0.0714285714285714,
+        "ci_low": -0.6190476190476192,
+        "ci_high": 0.16666666666666669,
+        "ci_level": 0.95,
+        "n_boot": 2000,
+        "n_finite": 2000,
+        "seed": 20260921
+      },
+      "kendall_tau": {
+        "statistic": "kendall_tau",
+        "point_delta": -0.07142857142857134,
+        "ci_low": -0.5,
+        "ci_high": 0.07142857142857151,
+        "ci_level": 0.95,
+        "n_boot": 2000,
+        "n_finite": 2000,
+        "seed": 20260921
+      },
+      "top_model_selection_regret": {
+        "statistic": "top_model_selection_regret",
+        "point_delta": 0.08018578624587835,
+        "ci_low": -0.09970022562463587,
+        "ci_high": 0.255744984279427,
+        "ci_level": 0.95,
+        "n_boot": 2000,
+        "n_finite": 2000,
+        "seed": 20260921
+      }
+    },
+    "C_minus_B": {
+      "median_abs_mae_gap": {
+        "statistic": "median_abs_mae_gap",
+        "point_delta": -0.166082728713143,
+        "ci_low": -0.24060453908080873,
+        "ci_high": -0.028230249183899363,
+        "ci_level": 0.95,
+        "n_boot": 2000,
+        "n_finite": 2000,
+        "seed": 20260921
+      },
+      "spearman_rho": {
+        "statistic": "spearman_rho",
+        "point_delta": 0.023809523809523836,
+        "ci_low": -0.35714285714285715,
+        "ci_high": 0.261904761904762,
+        "ci_level": 0.95,
+        "n_boot": 2000,
+        "n_finite": 2000,
+        "seed": 20260921
+      },
+      "kendall_tau": {
+        "statistic": "kendall_tau",
+        "point_delta": 0.07142857142857145,
+        "ci_low": -0.35714285714285704,
+        "ci_high": 0.2142857142857143,
+        "ci_level": 0.95,
+        "n_boot": 2000,
+        "n_finite": 2000,
+        "seed": 20260921
+      },
+      "top_model_selection_regret": {
+        "statistic": "top_model_selection_regret",
+        "point_delta": -0.0668751591201815,
+        "ci_low": -0.2640581608015623,
+        "ci_high": 0.13105377602507665,
+        "ci_level": 0.95,
+        "n_boot": 2000,
+        "n_finite": 2000,
+        "seed": 20260921
+      }
+    },
+    "formulaGKF_minus_A": {
+      "median_abs_mae_gap": {
+        "statistic": "median_abs_mae_gap",
+        "point_delta": -0.052164073595628524,
+        "ci_low": -0.05621504070586386,
+        "ci_high": -0.00188892195837964,
+        "ci_level": 0.95,
+        "n_boot": 2000,
+        "n_finite": 2000,
+        "seed": 20260921
+      },
+      "spearman_rho": {
+        "statistic": "spearman_rho",
+        "point_delta": 0.0,
+        "ci_low": 0.0,
+        "ci_high": 0.0,
+        "ci_level": 0.95,
+        "n_boot": 2000,
+        "n_finite": 2000,
+        "seed": 20260921
+      },
+      "kendall_tau": {
+        "statistic": "kendall_tau",
+        "point_delta": 0.0,
+        "ci_low": 0.0,
+        "ci_high": 0.0,
+        "ci_level": 0.95,
+        "n_boot": 2000,
+        "n_finite": 2000,
+        "seed": 20260921
+      },
+      "top_model_selection_regret": {
+        "statistic": "top_model_selection_regret",
+        "point_delta": 0.0,
+        "ci_low": 0.0,
+        "ci_high": 0.0,
+        "ci_level": 0.95,
+        "n_boot": 2000,
+        "n_finite": 2000,
+        "seed": 20260921
+      }
+    },
+    "provenance": "B_minus_A/C_minus_A/C_minus_B reused verbatim from artifacts/historical/n7b_regime_utility_nested.json (already computed, not recomputed). formulaGKF_minus_A is newly computed here with the identical regime_utility.bootstrap_regime_pair_delta_ci function, same seed (20260921) and n_boot (2000), reusing N6's frozen external residuals unchanged."
+  },
+  "item5_repeated_cv_wording": {
+    "item": "5_repeated_cv_95pct_interval_wording",
+    "location": "manuscript_npj/09_npj_submission_ready.md, Section 3.15, \"...with the 95% interval across seeds excluding both fixed comparator values...\"",
+    "per_statistic": {
+      "median_abs_mae_gap": {
+        "reported_as_95pct_interval": {
+          "ci95_low": 0.3810799569883766,
+          "ci95_high": 0.44965576322967904
+        },
+        "actual_method": "2.5th/97.5th percentile (numpy linear interpolation) of only n=10 seed values -- not an asymptotically justified 95% CI at this sample size.",
+        "true_observed_range_across_10_seeds": {
+          "min": 0.3788580527510265,
+          "max": 0.4531075873900411
+        }
+      },
+      "spearman_rho": {
+        "reported_as_95pct_interval": {
+          "ci95_low": 0.4577380952380952,
+          "ci95_high": 0.7619047619047621
+        },
+        "actual_method": "2.5th/97.5th percentile (numpy linear interpolation) of only n=10 seed values -- not an asymptotically justified 95% CI at this sample size.",
+        "true_observed_range_across_10_seeds": {
+          "min": 0.4523809523809524,
+          "max": 0.7619047619047621
+        }
+      },
+      "kendall_tau": {
+        "reported_as_95pct_interval": {
+          "ci95_low": 0.3571428571428571,
+          "ci95_high": 0.5714285714285714
+        },
+        "actual_method": "2.5th/97.5th percentile (numpy linear interpolation) of only n=10 seed values -- not an asymptotically justified 95% CI at this sample size.",
+        "true_observed_range_across_10_seeds": {
+          "min": 0.3571428571428571,
+          "max": 0.5714285714285714
+        }
+      },
+      "top_model_selection_regret": {
+        "reported_as_95pct_interval": {
+          "ci95_low": 0.0,
+          "ci95_high": 0.13410237284591117
+        },
+        "actual_method": "2.5th/97.5th percentile (numpy linear interpolation) of only n=10 seed values -- not an asymptotically justified 95% CI at this sample size.",
+        "true_observed_range_across_10_seeds": {
+          "min": 0.0,
+          "max": 0.14706094536605985
+        }
+      }
+    },
+    "recommended_relabel": "Replace '95% interval across seeds' with 'range across 10 seeds' and report the true [min, max] values above (not the 2.5/97.5 percentile values) -- the underlying artifact (npj_n21_repeated_cv_sensitivity.json) is not changed, this is a manuscript-wording-only fix deferred to Stage 3 per this task's 'do not edit the manuscript' instruction."
+  }
+}

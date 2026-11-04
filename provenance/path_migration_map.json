@@ -1,0 +1,2950 @@
+{
+ "description": "Old repository path -> current path for every file moved in the 2026-11-01 journal-neutral migration. Data, artifacts and reports were moved byte-identical (sha256 = content hash before and after the move). Scripts, tests and manuscript/source/01_si.md were moved with git mv and then had internal path references updated, so for those the sha256 here is the pre-move content hash. Frozen records (locks, specs, historical reports) are never edited; their old path strings resolve through this map.",
+ "migrated_on": "2026-11-01",
+ "entries": [
+  {
+   "old": "GO_NO_GO_NPJ.md",
+   "new": "reports/cross_dataset_study/go_no_go_decision.md",
+   "sha256": "e6bd1a6922f4894c88fbb8a23ae77798dde81fef01505b7d6f6d79451fc68faf",
+   "reason": "N10 decision record"
+  },
+  {
+   "old": "Turnitin/SSE_Transport_npj_CM_Submission_Final -without_Reference.docx",
+   "new": "Turnitin/SSE_Transport_Submission_Final -without_Reference.docx",
+   "sha256": "afa56e92997dcd9ffd1e60388748de855865f32093e98e4ca6ce3a7d9e047b8f",
+   "reason": "private plagiarism-check copy; removed from the working tree in the final release pass (recoverable from git history at 4348ef6)",
+   "removed": true
+  },
+  {
+   "old": "Turnitin/SSE_Transport_npj_CM_Submission_Final.docx",
+   "new": "Turnitin/SSE_Transport_Submission_Final.docx",
+   "sha256": "4ff31f276e956f9e793306d554bdabc89f34232a79aab10bc65c28f163864348",
+   "reason": "private plagiarism-check copy; removed from the working tree in the final release pass (recoverable from git history at 4348ef6)",
+   "removed": true
+  },
+  {
+   "old": "Turnitin/SSE_Transport_npj_CM_Supplementary_Information_Submission_Final.docx",
+   "new": "Turnitin/SSE_Transport_Supplementary_Information_Submission_Final.docx",
+   "sha256": "cb901c832aa63552fe94f625dd836243fc0245358934c30b368da5f5641fb935",
+   "reason": "private plagiarism-check copy; removed from the working tree in the final release pass (recoverable from git history at 4348ef6)",
+   "removed": true
+  },
+  {
+   "old": "artifacts/acs_issue03_common_support_lomfo.json",
+   "new": "artifacts/historical/issue03_common_support_lomfo.json",
+   "sha256": "f26ff422d3a418837c330facbfe7321d7e78457d453497ee6952e6e7990dab03",
+   "reason": "pre-correction merged result, NON-AUTHORITATIVE"
+  },
+  {
+   "old": "artifacts/acs_issue04_fragments/catboost__seed20260930.json",
+   "new": "artifacts/fragments/issue04/catboost__seed20260930.json",
+   "sha256": "1802fd6887346b5d6e876a3b4381e793052a3a11e520f5013e0b70585bc282fd",
+   "reason": "per-model fragments"
+  },
+  {
+   "old": "artifacts/acs_issue04_fragments/catboost__seed20260931.json",
+   "new": "artifacts/fragments/issue04/catboost__seed20260931.json",
+   "sha256": "2be6fda78997cc9fc7d29cc481b4d22d9248fc70f6048530bfcf917af0eb1b5d",
+   "reason": "per-model fragments"
+  },
+  {
+   "old": "artifacts/acs_issue04_fragments/catboost__seed20260932.json",
+   "new": "artifacts/fragments/issue04/catboost__seed20260932.json",
+   "sha256": "65869d1d79392ce9f9743720d1e7bafd85e7aabb6226df9300e225e4259a7d1f",
+   "reason": "per-model fragments"
+  },
+  {
+   "old": "artifacts/acs_issue04_fragments/composition_attention__seed20260930.json",
+   "new": "artifacts/fragments/issue04/composition_attention__seed20260930.json",
+   "sha256": "44e081815fb9190597f4be8140694f9fd90595c449b9fb56c4b4fe60bf1be0dd",
+   "reason": "per-model fragments"
+  },
+  {
+   "old": "artifacts/acs_issue04_fragments/composition_attention__seed20260931.json",
+   "new": "artifacts/fragments/issue04/composition_attention__seed20260931.json",
+   "sha256": "274c4a85a2299249e20324bfd406c45dfc91a5be2d580226314291a77d2f57f8",
+   "reason": "per-model fragments"
+  },
+  {
+   "old": "artifacts/acs_issue04_fragments/composition_attention__seed20260932.json",
+   "new": "artifacts/fragments/issue04/composition_attention__seed20260932.json",
+   "sha256": "8a022802ed378b149edb49ede3c9da62fed63d3b8687684afa19b04aec3056d8",
+   "reason": "per-model fragments"
+  },
+  {
+   "old": "artifacts/acs_issue04_fragments/extra_trees__seed20260930.json",
+   "new": "artifacts/fragments/issue04/extra_trees__seed20260930.json",
+   "sha256": "281b41e562521c0960f475085d3f0eed4dcb2d0ea9c1b586637f950b53b459db",
+   "reason": "per-model fragments"
+  },
+  {
+   "old": "artifacts/acs_issue04_fragments/extra_trees__seed20260931.json",
+   "new": "artifacts/fragments/issue04/extra_trees__seed20260931.json",
+   "sha256": "020d1d1f9d52e9aa744129f62375f3a28f539df3a10b1d2ef91b4f2c51fd3e65",
+   "reason": "per-model fragments"
+  },
+  {
+   "old": "artifacts/acs_issue04_fragments/extra_trees__seed20260932.json",
+   "new": "artifacts/fragments/issue04/extra_trees__seed20260932.json",
+   "sha256": "eba80bc8ebebc6c00ff961644811f97e4cb3531c539efad8a7a2d7d23c62d8bc",
+   "reason": "per-model fragments"
+  },
+  {
+   "old": "artifacts/acs_issue04_fragments/pretrained_element_embedding__seed20260930.json",
+   "new": "artifacts/fragments/issue04/pretrained_element_embedding__seed20260930.json",
+   "sha256": "39e1423a8249c38166090b51ffc1198096fdd1f79292eaff5fcc481a304bff94",
+   "reason": "per-model fragments"
+  },
+  {
+   "old": "artifacts/acs_issue04_fragments/pretrained_element_embedding__seed20260931.json",
+   "new": "artifacts/fragments/issue04/pretrained_element_embedding__seed20260931.json",
+   "sha256": "a1296ebbde7c750367a5f4579f5141071f27ee5862741effbb26739faa66215b",
+   "reason": "per-model fragments"
+  },
+  {
+   "old": "artifacts/acs_issue04_fragments/pretrained_element_embedding__seed20260932.json",
+   "new": "artifacts/fragments/issue04/pretrained_element_embedding__seed20260932.json",
+   "sha256": "5d6f76d8bf55d29b557ce4a8302fdf448d792df36d57a2d2f175b95d821952c5",
+   "reason": "per-model fragments"
+  },
+  {
+   "old": "artifacts/acs_issue04_fragments/random_forest__seed20260930.json",
+   "new": "artifacts/fragments/issue04/random_forest__seed20260930.json",
+   "sha256": "e4071f6d11ed3420427d2534da12c771d850e1765f6dce7c2478ff4100d57161",
+   "reason": "per-model fragments"
+  },
+  {
+   "old": "artifacts/acs_issue04_fragments/random_forest__seed20260931.json",
+   "new": "artifacts/fragments/issue04/random_forest__seed20260931.json",
+   "sha256": "13849ec10f88f828f3b963bf6668eb22314d3c70b12eef54f2c8bab804a5dd99",
+   "reason": "per-model fragments"
+  },
+  {
+   "old": "artifacts/acs_issue04_fragments/random_forest__seed20260932.json",
+   "new": "artifacts/fragments/issue04/random_forest__seed20260932.json",
+   "sha256": "28f7677c551e64213dd7163486cf8f1cbd2d2d2b6cd94d9eb692d95e63115baa",
+   "reason": "per-model fragments"
+  },
+  {
+   "old": "artifacts/acs_issue04_fragments/ridge__seed20260930.json",
+   "new": "artifacts/fragments/issue04/ridge__seed20260930.json",
+   "sha256": "cb111bfb358f20e343bb11148e26c237ea21d4a689b01f2e7ac9229eb74a8e23",
+   "reason": "per-model fragments"
+  },
+  {
+   "old": "artifacts/acs_issue04_fragments/ridge__seed20260931.json",
+   "new": "artifacts/fragments/issue04/ridge__seed20260931.json",
+   "sha256": "3a15779ffb4ba122ac10c694be3efd18e9be9fb62f2a85a5bec63a6fc6323d74",
+   "reason": "per-model fragments"
+  },
+  {
+   "old": "artifacts/acs_issue04_fragments/ridge__seed20260932.json",
+   "new": "artifacts/fragments/issue04/ridge__seed20260932.json",
+   "sha256": "16635d424022d2d133ef40325a5baa706834bbf686d9ce6feb8ef3bcc050819c",
+   "reason": "per-model fragments"
+  },
+  {
+   "old": "artifacts/acs_issue04_fragments/shallow_mlp__seed20260930.json",
+   "new": "artifacts/fragments/issue04/shallow_mlp__seed20260930.json",
+   "sha256": "ab5213ccd615c62681bf73d54b480e167c5b542377ff69841ffa1ee22ead001d",
+   "reason": "per-model fragments"
+  },
+  {
+   "old": "artifacts/acs_issue04_fragments/shallow_mlp__seed20260931.json",
+   "new": "artifacts/fragments/issue04/shallow_mlp__seed20260931.json",
+   "sha256": "7132937f56ffba4a7e355094391152e66ba91d3c4cf39f6753c2aaccb498bb17",
+   "reason": "per-model fragments"
+  },
+  {
+   "old": "artifacts/acs_issue04_fragments/shallow_mlp__seed20260932.json",
+   "new": "artifacts/fragments/issue04/shallow_mlp__seed20260932.json",
+   "sha256": "d666b7d0dab670c70131a4c57d9437cc85012b9a86f2aa20d6d6d86c72850424",
+   "reason": "per-model fragments"
+  },
+  {
+   "old": "artifacts/acs_issue04_fragments/xgboost__seed20260930.json",
+   "new": "artifacts/fragments/issue04/xgboost__seed20260930.json",
+   "sha256": "85606577e1164ef747a41a370eb408a4ff4754268860ff5be534b8db81349a1a",
+   "reason": "per-model fragments"
+  },
+  {
+   "old": "artifacts/acs_issue04_fragments/xgboost__seed20260931.json",
+   "new": "artifacts/fragments/issue04/xgboost__seed20260931.json",
+   "sha256": "5307b11f6a2db8e5763962b43373b3af861c5860ebb4d070d8757940d22c8935",
+   "reason": "per-model fragments"
+  },
+  {
+   "old": "artifacts/acs_issue04_fragments/xgboost__seed20260932.json",
+   "new": "artifacts/fragments/issue04/xgboost__seed20260932.json",
+   "sha256": "c1d2b84a0c694ef5e21b594cf2f6907fa5ca23c7f99bb5220c949927957a7402",
+   "reason": "per-model fragments"
+  },
+  {
+   "old": "artifacts/acs_issue04_size_matched_control.json",
+   "new": "artifacts/historical/issue04_size_matched_control.json",
+   "sha256": "df181661d1f94850eeba1a0c50d7d1daf88d1ec6b79ff568955a982fc24c6b9b",
+   "reason": "pre-correction merged result, NON-AUTHORITATIVE"
+  },
+  {
+   "old": "artifacts/acs_issue05_fold_local_shift_distance.json",
+   "new": "artifacts/authoritative/issue05_fold_local_shift_distance.json",
+   "sha256": "5622b488854ffbf7eedaca6656a844bd6f15cc36b811cbcd1cb016733003be96",
+   "reason": "model-independent diagnostic, unaffected by corrective-01 (impact map section 3)"
+  },
+  {
+   "old": "artifacts/acs_issue06_doi_cluster_bootstrap.json",
+   "new": "artifacts/historical/issue06_doi_cluster_bootstrap.json",
+   "sha256": "21966d0ecfa24a14b2b287ee823a60534877892630654ebfc3afedc236e9ff14",
+   "reason": "pre-correction merged result, NON-AUTHORITATIVE"
+  },
+  {
+   "old": "artifacts/acs_issue08b_chemical_system_groupkfold.json",
+   "new": "artifacts/historical/issue08b_chemical_system_groupkfold.json",
+   "sha256": "125a8f7e18a57da1fa4d616c7742be770be3df370dfad02554c122a20c98658a",
+   "reason": "pre-correction merged result, NON-AUTHORITATIVE"
+  },
+  {
+   "old": "artifacts/acs_issue08b_fragments/catboost.json",
+   "new": "artifacts/fragments/issue08b/catboost.json",
+   "sha256": "48a3ccd5bb77609b1cb02874bd288dd6ecb749f08a8a45edf74e6a8079fc4558",
+   "reason": "per-model fragments"
+  },
+  {
+   "old": "artifacts/acs_issue08b_fragments/composition_attention.json",
+   "new": "artifacts/fragments/issue08b/composition_attention.json",
+   "sha256": "8073fc7739e57b77059def10592c85d4b9b19617b4513aadc0b1a81e6ec04329",
+   "reason": "per-model fragments"
+  },
+  {
+   "old": "artifacts/acs_issue08b_fragments/extra_trees.json",
+   "new": "artifacts/fragments/issue08b/extra_trees.json",
+   "sha256": "d214f13d38c0edf6f651a574abadce39197385ab446b1d36ed63e59a9cdf8e5e",
+   "reason": "per-model fragments"
+  },
+  {
+   "old": "artifacts/acs_issue08b_fragments/pretrained_element_embedding.json",
+   "new": "artifacts/fragments/issue08b/pretrained_element_embedding.json",
+   "sha256": "12dc4c091ab21063619a45738e3186701175f169a2d69c27214d611ed456db5a",
+   "reason": "per-model fragments"
+  },
+  {
+   "old": "artifacts/acs_issue08b_fragments/random_forest.json",
+   "new": "artifacts/fragments/issue08b/random_forest.json",
+   "sha256": "6e0cdaefa226727c7e65336fc71c1f0e491cdadcf7cd928d5cef47140d615e33",
+   "reason": "per-model fragments"
+  },
+  {
+   "old": "artifacts/acs_issue08b_fragments/ridge.json",
+   "new": "artifacts/fragments/issue08b/ridge.json",
+   "sha256": "22eaea82a62acf23b1e52cdfe6968a958e5339f1e8bd4aaf630a3b99b7664c40",
+   "reason": "per-model fragments"
+  },
+  {
+   "old": "artifacts/acs_issue08b_fragments/shallow_mlp.json",
+   "new": "artifacts/fragments/issue08b/shallow_mlp.json",
+   "sha256": "7053afeaf6d9372a03b378459c6ebee11b1468ad1decdfb122539590b87b1ce8",
+   "reason": "per-model fragments"
+  },
+  {
+   "old": "artifacts/acs_issue08b_fragments/xgboost.json",
+   "new": "artifacts/fragments/issue08b/xgboost.json",
+   "sha256": "896bf47290bcacd464ea33d48e9e59f48efdd1d82448ac5848546dfde9dc728e",
+   "reason": "per-model fragments"
+  },
+  {
+   "old": "artifacts/acs_issue08b_regime_utility.json",
+   "new": "artifacts/historical/issue08b_regime_utility.json",
+   "sha256": "564d958e9b28f809f8e3b90d19af15f1d60a9a5a30dac7c7601ab2a4fa23cac3",
+   "reason": "pre-correction merged result, NON-AUTHORITATIVE"
+  },
+  {
+   "old": "artifacts/acs_issue09a_missing_family_excluded.json",
+   "new": "artifacts/historical/issue09a_missing_family_excluded.json",
+   "sha256": "61e80e76198f5d0d167876c929eaf7b40d4bbf31fb193b1b06651c4e9fb83336",
+   "reason": "pre-correction merged result, NON-AUTHORITATIVE"
+  },
+  {
+   "old": "artifacts/acs_issue09b_fragments/catboost.json",
+   "new": "artifacts/fragments/issue09b/catboost.json",
+   "sha256": "187bed318b5beee2fc04cbecbcf63b32f89fafdf49c99897de837e77e171ffc7",
+   "reason": "per-model fragments"
+  },
+  {
+   "old": "artifacts/acs_issue09b_fragments/composition_attention.json",
+   "new": "artifacts/fragments/issue09b/composition_attention.json",
+   "sha256": "db8129fe8d06e9b10569c99a8ed6851c2c4c7258952991d934636cd7e211c7ff",
+   "reason": "per-model fragments"
+  },
+  {
+   "old": "artifacts/acs_issue09b_fragments/extra_trees.json",
+   "new": "artifacts/fragments/issue09b/extra_trees.json",
+   "sha256": "99247155f78aaea9875c9dfd1a0f20c53a2b4558a7a3a1306e4cc90894af4202",
+   "reason": "per-model fragments"
+  },
+  {
+   "old": "artifacts/acs_issue09b_fragments/pretrained_element_embedding.json",
+   "new": "artifacts/fragments/issue09b/pretrained_element_embedding.json",
+   "sha256": "a2fc2a593d83dcabc2c7ab2ebc00df2bab5b901e12208e946a1e87f5dc0a5541",
+   "reason": "per-model fragments"
+  },
+  {
+   "old": "artifacts/acs_issue09b_fragments/random_forest.json",
+   "new": "artifacts/fragments/issue09b/random_forest.json",
+   "sha256": "ba5ee2be373ce29908a561c75725768fb9fb05c8611676f8deee8338d7a60d93",
+   "reason": "per-model fragments"
+  },
+  {
+   "old": "artifacts/acs_issue09b_fragments/ridge.json",
+   "new": "artifacts/fragments/issue09b/ridge.json",
+   "sha256": "49a75ac3b35524d79a32155eace98dd68f84bba666adb458f749487005d12487",
+   "reason": "per-model fragments"
+  },
+  {
+   "old": "artifacts/acs_issue09b_fragments/shallow_mlp.json",
+   "new": "artifacts/fragments/issue09b/shallow_mlp.json",
+   "sha256": "13d3c68efcbca739a619be90cd333a9b7a0d6b663502153cab3bd277cd99f08f",
+   "reason": "per-model fragments"
+  },
+  {
+   "old": "artifacts/acs_issue09b_fragments/xgboost.json",
+   "new": "artifacts/fragments/issue09b/xgboost.json",
+   "sha256": "6a28c87226ad50665757e1c47ac92618911dbfb4efaf2f5b7df3e5d0857ec155",
+   "reason": "per-model fragments"
+  },
+  {
+   "old": "artifacts/acs_issue09b_missing_singleton_groupkfold.json",
+   "new": "artifacts/historical/issue09b_missing_singleton_groupkfold.json",
+   "sha256": "323d96db8e089a86552833589d780ae324b1de54f85649375b52b23c26c4557e",
+   "reason": "pre-correction merged result, NON-AUTHORITATIVE"
+  },
+  {
+   "old": "artifacts/acs_issue09b_regime_utility.json",
+   "new": "artifacts/historical/issue09b_regime_utility.json",
+   "sha256": "2d21beebb605bf4a2548bafe27bce7a49362a441c3ca34f991f4112265294b56",
+   "reason": "pre-correction merged result, NON-AUTHORITATIVE"
+  },
+  {
+   "old": "artifacts/acs_issue10_formula_balanced_sensitivity.json",
+   "new": "artifacts/historical/issue10_formula_balanced_sensitivity.json",
+   "sha256": "9b97d7222c7afcc1047fde5ea30ecb99b952b43fdb99f6358eb73ab77a4e94a9",
+   "reason": "pre-correction merged result, NON-AUTHORITATIVE"
+  },
+  {
+   "old": "artifacts/acs_remediation_spec.json",
+   "new": "artifacts/frozen/remediation_spec.json",
+   "sha256": "54aa1a37edfb6956d6487a8a18691615166fe93df132cdd4ff87e70725c4ce87",
+   "reason": "hash-locked post hoc spec"
+  },
+  {
+   "old": "artifacts/corrective01_pretrained_element_embedding/acs03_common_support_lomfo_corrected.json",
+   "new": "artifacts/authoritative/issue03_common_support_lomfo_corrected.json",
+   "sha256": "30abb7742c353ddf79fb0fff582515873dc93632a2bf3836fabc257ced3aff68",
+   "reason": "AUTHORITATIVE corrected results"
+  },
+  {
+   "old": "artifacts/corrective01_pretrained_element_embedding/acs04_size_matched_control_corrected.json",
+   "new": "artifacts/authoritative/issue04_size_matched_control_corrected.json",
+   "sha256": "398ebb1037903f6438b1d99613bd3a400e01fbe499ac606bfe5a607b9f32d3c1",
+   "reason": "AUTHORITATIVE corrected results"
+  },
+  {
+   "old": "artifacts/corrective01_pretrained_element_embedding/acs06_doi_cluster_bootstrap_corrected.json",
+   "new": "artifacts/authoritative/issue06_doi_cluster_bootstrap_corrected.json",
+   "sha256": "4641ff58f42b650c5da76e5055aefcc6f65fb28c41ed944df583240f949b844b",
+   "reason": "AUTHORITATIVE corrected results"
+  },
+  {
+   "old": "artifacts/corrective01_pretrained_element_embedding/acs08b_chemical_system_groupkfold_corrected.json",
+   "new": "artifacts/authoritative/issue08b_chemical_system_groupkfold_corrected.json",
+   "sha256": "24f880b870f60ccb7c10b5f117658721080abd6ac9f4139a907a04557eb24aec",
+   "reason": "AUTHORITATIVE corrected results"
+  },
+  {
+   "old": "artifacts/corrective01_pretrained_element_embedding/acs08b_regime_utility_corrected.json",
+   "new": "artifacts/authoritative/issue08b_regime_utility_corrected.json",
+   "sha256": "461309c6f69670c5c332955679358d110e3f46e9fc0b3f482f9b355507a32941",
+   "reason": "AUTHORITATIVE corrected results"
+  },
+  {
+   "old": "artifacts/corrective01_pretrained_element_embedding/acs09a_missing_family_excluded_corrected.json",
+   "new": "artifacts/authoritative/issue09a_missing_family_excluded_corrected.json",
+   "sha256": "ee455191c1b36e46e99df7d3a3eaccf6157524419ab5d4baabce04b1e8ddcffb",
+   "reason": "AUTHORITATIVE corrected results"
+  },
+  {
+   "old": "artifacts/corrective01_pretrained_element_embedding/acs09b_missing_singleton_groupkfold_corrected.json",
+   "new": "artifacts/authoritative/issue09b_missing_singleton_groupkfold_corrected.json",
+   "sha256": "973e90f0fb14bde7db90d8440c65a19f4b4f75d5fb4b6e87bc27d69f2afb60a3",
+   "reason": "AUTHORITATIVE corrected results"
+  },
+  {
+   "old": "artifacts/corrective01_pretrained_element_embedding/acs09b_regime_utility_corrected.json",
+   "new": "artifacts/authoritative/issue09b_regime_utility_corrected.json",
+   "sha256": "c62b410dfce13b8a0c2b793601cdd90e9c16862c19dc674adb288d5e93edd39e",
+   "reason": "AUTHORITATIVE corrected results"
+  },
+  {
+   "old": "artifacts/corrective01_pretrained_element_embedding/issue10_formula_balanced_sensitivity_corrected.json",
+   "new": "artifacts/authoritative/issue10_formula_balanced_sensitivity_corrected.json",
+   "sha256": "5e729363f2c3d577d109d569d2659c0e49274e89b4deb7b201cc4037e46ec29e",
+   "reason": "AUTHORITATIVE corrected results"
+  },
+  {
+   "old": "artifacts/corrective01_pretrained_element_embedding/model_ladder_corrected.json",
+   "new": "artifacts/authoritative/model_ladder_corrected.json",
+   "sha256": "c1152eabc3a908836afff1a4b49569e9beb4a7f39c1baf83bb7f6d85821485d1",
+   "reason": "AUTHORITATIVE corrected results"
+  },
+  {
+   "old": "artifacts/corrective01_pretrained_element_embedding/n15_artifacts/npj_n15_ad_aurc.json",
+   "new": "artifacts/authoritative/n15_artifacts/n15_ad_aurc.json",
+   "sha256": "43c130e897600eeb14d149aa086b709755142bfad18566eb16816222465de55e",
+   "reason": "AUTHORITATIVE corrected results"
+  },
+  {
+   "old": "artifacts/corrective01_pretrained_element_embedding/n15_artifacts/npj_n15_baseline_variability.json",
+   "new": "artifacts/authoritative/n15_artifacts/n15_baseline_variability.json",
+   "sha256": "4d4528e724707ef6674e18d12efd4f1a100ec77a2135d4ea01a7fc416a3195d1",
+   "reason": "AUTHORITATIVE corrected results"
+  },
+  {
+   "old": "artifacts/corrective01_pretrained_element_embedding/n15_artifacts/npj_n15_deployment_shift.json",
+   "new": "artifacts/authoritative/n15_artifacts/n15_deployment_shift.json",
+   "sha256": "e0ecc953df640bc53c14a4650e8bee149772da53c3bb49c15e9bd1e02e2bd52b",
+   "reason": "AUTHORITATIVE corrected results"
+  },
+  {
+   "old": "artifacts/corrective01_pretrained_element_embedding/n15_artifacts/npj_n15_external_uncertainty.json",
+   "new": "artifacts/authoritative/n15_artifacts/n15_external_uncertainty.json",
+   "sha256": "62a759c960b4d39d65156394e8709757280d53955ac3ef3321913eaf2e79be89",
+   "reason": "AUTHORITATIVE corrected results"
+  },
+  {
+   "old": "artifacts/corrective01_pretrained_element_embedding/n15_artifacts/npj_n15_source_disjoint.json",
+   "new": "artifacts/authoritative/n15_artifacts/n15_source_disjoint.json",
+   "sha256": "322d14c9e9bc92338813b5738baa9332c2bc92b0d5870043ffe1c0dfe6e9fa6a",
+   "reason": "AUTHORITATIVE corrected results"
+  },
+  {
+   "old": "artifacts/corrective01_pretrained_element_embedding/n15_artifacts/npj_n15_stable_model_sensitivity.json",
+   "new": "artifacts/authoritative/n15_artifacts/n15_stable_model_sensitivity.json",
+   "sha256": "e66968a9f3a6b0d4af1a862a8fac417f1feee314b1ca4a10195f58c74e1f5180",
+   "reason": "AUTHORITATIVE corrected results"
+  },
+  {
+   "old": "artifacts/corrective01_pretrained_element_embedding/n15_artifacts/npj_n15_summary.json",
+   "new": "artifacts/authoritative/n15_artifacts/n15_summary.json",
+   "sha256": "44894a19eb3ac5e5fc4ec122f30f9afaede775c7648560b7f1b45778e2e062c3",
+   "reason": "AUTHORITATIVE corrected results"
+  },
+  {
+   "old": "artifacts/corrective01_pretrained_element_embedding/n15_artifacts/npj_n15_temperature_sensitivity.json",
+   "new": "artifacts/authoritative/n15_artifacts/n15_temperature_sensitivity.json",
+   "sha256": "60da378bbe938a06e89942cc8e4631b7eda20278171f859165d5c676a05edfd0",
+   "reason": "AUTHORITATIVE corrected results"
+  },
+  {
+   "old": "artifacts/corrective01_pretrained_element_embedding/n15_tables/n15_ad_aurc.csv",
+   "new": "artifacts/authoritative/n15_tables/n15_ad_aurc.csv",
+   "sha256": "8a5ad7e9c3f5a2296cd037fa909162cd1398c1bde7c5a6633f3e010c0e67acb0",
+   "reason": "AUTHORITATIVE corrected results"
+  },
+  {
+   "old": "artifacts/corrective01_pretrained_element_embedding/n15_tables/n15_baseline_variability.csv",
+   "new": "artifacts/authoritative/n15_tables/n15_baseline_variability.csv",
+   "sha256": "18acbd79ca37774de4cbcf3afd2d489fa14b80835e9eb32903b135ac1417f898",
+   "reason": "AUTHORITATIVE corrected results"
+  },
+  {
+   "old": "artifacts/corrective01_pretrained_element_embedding/n15_tables/n15_deployment_shift.csv",
+   "new": "artifacts/authoritative/n15_tables/n15_deployment_shift.csv",
+   "sha256": "ff279279df940e659f5ccdc345eba785f0f4d08da48edeae94b50adcfff7c124",
+   "reason": "AUTHORITATIVE corrected results"
+  },
+  {
+   "old": "artifacts/corrective01_pretrained_element_embedding/n15_tables/n15_external_uncertainty.csv",
+   "new": "artifacts/authoritative/n15_tables/n15_external_uncertainty.csv",
+   "sha256": "97e668a95268bd9afbae1a1a1196aa4d179ed98dafffc964852ba0a06f57fedd",
+   "reason": "AUTHORITATIVE corrected results"
+  },
+  {
+   "old": "artifacts/corrective01_pretrained_element_embedding/n15_tables/n15_source_disjoint.csv",
+   "new": "artifacts/authoritative/n15_tables/n15_source_disjoint.csv",
+   "sha256": "cb3b7159f9b3c76f1e84e7315ec4379f02220a261773599ef0c14578bda88022",
+   "reason": "AUTHORITATIVE corrected results"
+  },
+  {
+   "old": "artifacts/corrective01_pretrained_element_embedding/n15_tables/n15_stable_model_sensitivity.csv",
+   "new": "artifacts/authoritative/n15_tables/n15_stable_model_sensitivity.csv",
+   "sha256": "251449de11441b9e777543194f78853e294ca4a97d25e3068ee1db993b97b891",
+   "reason": "AUTHORITATIVE corrected results"
+  },
+  {
+   "old": "artifacts/corrective01_pretrained_element_embedding/n15_tables/n15_temperature_sensitivity.csv",
+   "new": "artifacts/authoritative/n15_tables/n15_temperature_sensitivity.csv",
+   "sha256": "92210ac718789a16cd9e0d865631348530f20ccfcb24d1e17e90dca2a8594eef",
+   "reason": "AUTHORITATIVE corrected results"
+  },
+  {
+   "old": "artifacts/corrective01_pretrained_element_embedding/n20_artifacts/reviewer_family_audit.json",
+   "new": "artifacts/authoritative/n20_artifacts/reviewer_family_audit.json",
+   "sha256": "51867c493998091d1b725bca0da83e61b8bb41063143d1bbdb83374f8bcf7e9b",
+   "reason": "AUTHORITATIVE corrected results"
+  },
+  {
+   "old": "artifacts/corrective01_pretrained_element_embedding/n20_artifacts/reviewer_formula_duplicate_audit.json",
+   "new": "artifacts/authoritative/n20_artifacts/reviewer_formula_duplicate_audit.json",
+   "sha256": "05e267317effdb46ffd8a3d2cebea417be213b6d1414159d0795763a777a0b86",
+   "reason": "AUTHORITATIVE corrected results"
+  },
+  {
+   "old": "artifacts/corrective01_pretrained_element_embedding/n20_artifacts/reviewer_label_compatibility.json",
+   "new": "artifacts/authoritative/n20_artifacts/reviewer_label_compatibility.json",
+   "sha256": "997f83755e34833705acdd724e16dfa0d239c8f9b45a1b1f16cffa71e03a2c9f",
+   "reason": "AUTHORITATIVE corrected results"
+  },
+  {
+   "old": "artifacts/corrective01_pretrained_element_embedding/n20_artifacts/reviewer_provenance_timeline.json",
+   "new": "artifacts/authoritative/n20_artifacts/reviewer_provenance_timeline.json",
+   "sha256": "1fa377a5cca50e0200a2cafac50fe0a62f941355ef69af7d084eb2c17ea71ead",
+   "reason": "AUTHORITATIVE corrected results"
+  },
+  {
+   "old": "artifacts/corrective01_pretrained_element_embedding/n20b_formula_group_kfold_corrected.json",
+   "new": "artifacts/authoritative/n20b_formula_group_kfold_corrected.json",
+   "sha256": "0b57838f11f3df66cb3eea07a25d96b3652ad652b36f544d8cec9e444339ada2",
+   "reason": "AUTHORITATIVE corrected results"
+  },
+  {
+   "old": "artifacts/corrective01_pretrained_element_embedding/n21_repeated_cv_sensitivity_corrected.json",
+   "new": "artifacts/authoritative/n21_repeated_cv_sensitivity_corrected.json",
+   "sha256": "8e066638a4335cc4ec21d6a942a76f0f2d1d3d937dadd132c5b8e98de71ab641",
+   "reason": "AUTHORITATIVE corrected results"
+  },
+  {
+   "old": "artifacts/corrective01_pretrained_element_embedding/n21c_primary_external_context_corrected.json",
+   "new": "artifacts/authoritative/n21c_primary_external_context_corrected.json",
+   "sha256": "16200fe400ae25251807d511f1c40f8d45252a83edd2b5ceb55fde33d8674e30",
+   "reason": "AUTHORITATIVE corrected results"
+  },
+  {
+   "old": "artifacts/corrective01_pretrained_element_embedding/n21d_ad_benchmark_closure_corrected.json",
+   "new": "artifacts/authoritative/n21d_ad_benchmark_closure_corrected.json",
+   "sha256": "f2efe44f59d1e2ec16d4eb4f6962cfdeca3a095cde0f7151285fae65d394dfb3",
+   "reason": "AUTHORITATIVE corrected results"
+  },
+  {
+   "old": "artifacts/corrective01_pretrained_element_embedding/n4b_nested_internal_validation_corrected.json",
+   "new": "artifacts/authoritative/n4b_nested_internal_validation_corrected.json",
+   "sha256": "653779c925494e9cb366f79de2947eabd5bccb1324b107f3677c14920f8ff8ad",
+   "reason": "AUTHORITATIVE corrected results"
+  },
+  {
+   "old": "artifacts/corrective01_pretrained_element_embedding/n6_external_transfer_corrected.json",
+   "new": "artifacts/authoritative/n6_external_transfer_corrected.json",
+   "sha256": "dbfde79d72f3cd2021d861380d9e80b8d40e2d774a295240353cd34dd7f6fe3f",
+   "reason": "AUTHORITATIVE corrected results"
+  },
+  {
+   "old": "artifacts/corrective01_pretrained_element_embedding/n7b_regime_utility_nested_corrected.json",
+   "new": "artifacts/authoritative/n7b_regime_utility_nested_corrected.json",
+   "sha256": "2788885a8776ef5912198fa2736cd7774c0a4492ad185e0b13f0402944ae4e53",
+   "reason": "AUTHORITATIVE corrected results"
+  },
+  {
+   "old": "artifacts/corrective01_pretrained_element_embedding/n8_applicability_domain_corrected.json",
+   "new": "artifacts/authoritative/n8_applicability_domain_corrected.json",
+   "sha256": "264fd5753eb99b7fd94e5bb36464ac7ff46809ddc07f90571e8132f34e224b1b",
+   "reason": "AUTHORITATIVE corrected results"
+  },
+  {
+   "old": "artifacts/corrective01_pretrained_element_embedding/n9b_relaxed_sensitivity_nested_corrected.json",
+   "new": "artifacts/authoritative/n9b_relaxed_sensitivity_nested_corrected.json",
+   "sha256": "f63fd086b6b8752f822636e2f569704e4de25b8b62adfff85048a2d86f25622b",
+   "reason": "AUTHORITATIVE corrected results"
+  },
+  {
+   "old": "artifacts/corrective01_pretrained_element_embedding/phase1_factual_fixes_corrected.json",
+   "new": "artifacts/authoritative/phase1_factual_fixes_corrected.json",
+   "sha256": "ef83a3fcaef8b951f5cbda9c525e75efbcdbba7c10895ddfe86b0f11f172003d",
+   "reason": "AUTHORITATIVE corrected results"
+  },
+  {
+   "old": "artifacts/corrective01_pretrained_element_embedding/phase1_glass_split_corrected.json",
+   "new": "artifacts/authoritative/phase1_glass_split_corrected.json",
+   "sha256": "b0271c476849aef1167d4c6583f1178d1f5203450bd449efc537aa090f986bc9",
+   "reason": "AUTHORITATIVE corrected results"
+  },
+  {
+   "old": "artifacts/corrective01_pretrained_element_embedding/phase1_predeclared_corrected.json",
+   "new": "artifacts/authoritative/phase1_predeclared_corrected.json",
+   "sha256": "4ed0be9a3edd66cb7ee6491d685e7f32fd28aa797469f6c39b96252556c5fdef",
+   "reason": "AUTHORITATIVE corrected results"
+  },
+  {
+   "old": "artifacts/corrective01_pretrained_element_embedding/phase2_glass_subset_regime_cis_corrected.json",
+   "new": "artifacts/authoritative/phase2_glass_subset_regime_cis_corrected.json",
+   "sha256": "478c750e5c8934aac03213eabc1971893d4fe018504073b8bf063f31ccc033d9",
+   "reason": "AUTHORITATIVE corrected results"
+  },
+  {
+   "old": "artifacts/corrective01_pretrained_element_embedding/pre_fix_archive/BASELINE_SHA256SUMS.txt",
+   "new": "artifacts/historical/corrective01_pre_fix_archive/BASELINE_SHA256SUMS.txt",
+   "sha256": "54289a6526c8375a3c06711f23899745aa4dd5dd50dabbf3dd9acad0576663dc",
+   "reason": "pre-fix (broken) pooled-model fragments, NON-AUTHORITATIVE"
+  },
+  {
+   "old": "artifacts/corrective01_pretrained_element_embedding/pre_fix_archive/issue04/pretrained_element_embedding__seed20260930.json",
+   "new": "artifacts/historical/corrective01_pre_fix_archive/issue04/pretrained_element_embedding__seed20260930.json",
+   "sha256": "40fbfb0cf8eafc145c865133a5183bbd4d3c9221840806dfd9078ca146330159",
+   "reason": "pre-fix (broken) pooled-model fragments, NON-AUTHORITATIVE"
+  },
+  {
+   "old": "artifacts/corrective01_pretrained_element_embedding/pre_fix_archive/issue04/pretrained_element_embedding__seed20260931.json",
+   "new": "artifacts/historical/corrective01_pre_fix_archive/issue04/pretrained_element_embedding__seed20260931.json",
+   "sha256": "2ee8f5944c3bab958fc15f65a71aab4523b552f9f110e4cd26b41d79921a6585",
+   "reason": "pre-fix (broken) pooled-model fragments, NON-AUTHORITATIVE"
+  },
+  {
+   "old": "artifacts/corrective01_pretrained_element_embedding/pre_fix_archive/issue04/pretrained_element_embedding__seed20260932.json",
+   "new": "artifacts/historical/corrective01_pre_fix_archive/issue04/pretrained_element_embedding__seed20260932.json",
+   "sha256": "01cf286f4f447e44f7bb285c22111afb133f04769dd961573e875aa92f202e19",
+   "reason": "pre-fix (broken) pooled-model fragments, NON-AUTHORITATIVE"
+  },
+  {
+   "old": "artifacts/corrective01_pretrained_element_embedding/pre_fix_archive/issue08b/pretrained_element_embedding.json",
+   "new": "artifacts/historical/corrective01_pre_fix_archive/issue08b/pretrained_element_embedding.json",
+   "sha256": "5368f5e48bc52004c4958f28839dd9594a16c2db29d13e07b168fb274413c2ac",
+   "reason": "pre-fix (broken) pooled-model fragments, NON-AUTHORITATIVE"
+  },
+  {
+   "old": "artifacts/corrective01_pretrained_element_embedding/pre_fix_archive/issue09b/pretrained_element_embedding.json",
+   "new": "artifacts/historical/corrective01_pre_fix_archive/issue09b/pretrained_element_embedding.json",
+   "sha256": "b46abbb37ffa7fce9c4c20f39488306e9286edc3a89ae214abb014c1d3825600",
+   "reason": "pre-fix (broken) pooled-model fragments, NON-AUTHORITATIVE"
+  },
+  {
+   "old": "artifacts/corrective01_pretrained_element_embedding/pre_fix_archive/n20b/pretrained_element_embedding.json",
+   "new": "artifacts/historical/corrective01_pre_fix_archive/n20b/pretrained_element_embedding.json",
+   "sha256": "3b0717a90d90d9d5ddee457841b7e7fb1919fd38f11a516d5591502a4cbdfdac",
+   "reason": "pre-fix (broken) pooled-model fragments, NON-AUTHORITATIVE"
+  },
+  {
+   "old": "artifacts/corrective01_pretrained_element_embedding/pre_fix_archive/n21/seed20260921_pretrained_element_embedding.json",
+   "new": "artifacts/historical/corrective01_pre_fix_archive/n21/seed20260921_pretrained_element_embedding.json",
+   "sha256": "1d79606c359add91dd90f8cbec48e5286241a942186cb71b2a28a7ca3e433b5c",
+   "reason": "pre-fix (broken) pooled-model fragments, NON-AUTHORITATIVE"
+  },
+  {
+   "old": "artifacts/corrective01_pretrained_element_embedding/pre_fix_archive/n21/seed20260922_pretrained_element_embedding.json",
+   "new": "artifacts/historical/corrective01_pre_fix_archive/n21/seed20260922_pretrained_element_embedding.json",
+   "sha256": "d208377bfd37719abda87cc0329b1573bad3567bb6f5f8ff6852ad2a95bf004a",
+   "reason": "pre-fix (broken) pooled-model fragments, NON-AUTHORITATIVE"
+  },
+  {
+   "old": "artifacts/corrective01_pretrained_element_embedding/pre_fix_archive/n21/seed20260923_pretrained_element_embedding.json",
+   "new": "artifacts/historical/corrective01_pre_fix_archive/n21/seed20260923_pretrained_element_embedding.json",
+   "sha256": "cd64fe7d00ee161b0c6252f70383ee3ce423b3f535703b2819df18b8b776f5f1",
+   "reason": "pre-fix (broken) pooled-model fragments, NON-AUTHORITATIVE"
+  },
+  {
+   "old": "artifacts/corrective01_pretrained_element_embedding/pre_fix_archive/n21/seed20260924_pretrained_element_embedding.json",
+   "new": "artifacts/historical/corrective01_pre_fix_archive/n21/seed20260924_pretrained_element_embedding.json",
+   "sha256": "d776da6fe4eea13bd0d5b738da54af2227c6c0abe5cdf7fb1ee6a837749225f7",
+   "reason": "pre-fix (broken) pooled-model fragments, NON-AUTHORITATIVE"
+  },
+  {
+   "old": "artifacts/corrective01_pretrained_element_embedding/pre_fix_archive/n21/seed20260925_pretrained_element_embedding.json",
+   "new": "artifacts/historical/corrective01_pre_fix_archive/n21/seed20260925_pretrained_element_embedding.json",
+   "sha256": "ce3db7e93a8ea834c667f211526e82e48b8c2eca8fe631e01a36bd6c5c82b938",
+   "reason": "pre-fix (broken) pooled-model fragments, NON-AUTHORITATIVE"
+  },
+  {
+   "old": "artifacts/corrective01_pretrained_element_embedding/pre_fix_archive/n21/seed20260926_pretrained_element_embedding.json",
+   "new": "artifacts/historical/corrective01_pre_fix_archive/n21/seed20260926_pretrained_element_embedding.json",
+   "sha256": "3e417361cc00f2df2f0bbfb8652152b140185d321ad8022ccd59c5f2b55e27a3",
+   "reason": "pre-fix (broken) pooled-model fragments, NON-AUTHORITATIVE"
+  },
+  {
+   "old": "artifacts/corrective01_pretrained_element_embedding/pre_fix_archive/n21/seed20260927_pretrained_element_embedding.json",
+   "new": "artifacts/historical/corrective01_pre_fix_archive/n21/seed20260927_pretrained_element_embedding.json",
+   "sha256": "7b8c975ea05f92939104b51371cedad95422421986a74dfe2f0ee54a91a5e410",
+   "reason": "pre-fix (broken) pooled-model fragments, NON-AUTHORITATIVE"
+  },
+  {
+   "old": "artifacts/corrective01_pretrained_element_embedding/pre_fix_archive/n21/seed20260928_pretrained_element_embedding.json",
+   "new": "artifacts/historical/corrective01_pre_fix_archive/n21/seed20260928_pretrained_element_embedding.json",
+   "sha256": "8fa4bffde93c8150c958725312a96e709ba7a17d5048227ff01c93931326a8f1",
+   "reason": "pre-fix (broken) pooled-model fragments, NON-AUTHORITATIVE"
+  },
+  {
+   "old": "artifacts/corrective01_pretrained_element_embedding/pre_fix_archive/n21/seed20260929_pretrained_element_embedding.json",
+   "new": "artifacts/historical/corrective01_pre_fix_archive/n21/seed20260929_pretrained_element_embedding.json",
+   "sha256": "02365e0e5a9eab8a551e70a690215947b50b78c63071d0e00a63131508c5b882",
+   "reason": "pre-fix (broken) pooled-model fragments, NON-AUTHORITATIVE"
+  },
+  {
+   "old": "artifacts/corrective01_pretrained_element_embedding/pre_fix_archive/n21/seed20260930_pretrained_element_embedding.json",
+   "new": "artifacts/historical/corrective01_pre_fix_archive/n21/seed20260930_pretrained_element_embedding.json",
+   "sha256": "0bde32898817397a56aa97e827acf7d6de720d9a3d2567c7c6142cfa811da2e6",
+   "reason": "pre-fix (broken) pooled-model fragments, NON-AUTHORITATIVE"
+  },
+  {
+   "old": "artifacts/corrective01_pretrained_element_embedding/pre_fix_archive/n4b/pretrained_element_embedding.json",
+   "new": "artifacts/historical/corrective01_pre_fix_archive/n4b/pretrained_element_embedding.json",
+   "sha256": "a8dd755ea44d6d2c6a8a795cf495a27b07704d0cb4009b96cbe5502fc895ac84",
+   "reason": "pre-fix (broken) pooled-model fragments, NON-AUTHORITATIVE"
+  },
+  {
+   "old": "artifacts/corrective01_pretrained_element_embedding/pre_fix_archive/n6/pretrained_element_embedding.json",
+   "new": "artifacts/historical/corrective01_pre_fix_archive/n6/pretrained_element_embedding.json",
+   "sha256": "d1d979b782d18ef1589f6b1cfe9b9c1902a7f0cf99c0b138dfdf53d30eae2a54",
+   "reason": "pre-fix (broken) pooled-model fragments, NON-AUTHORITATIVE"
+  },
+  {
+   "old": "artifacts/npj_model_ladder_frozen.json",
+   "new": "artifacts/frozen/model_ladder_frozen.json",
+   "sha256": "bc38eabf6c3936c75ca967c7c24a35e7343f1bf94b1810a4eec98d6d9c5ba0b3",
+   "reason": "lock-cited frozen ladder"
+  },
+  {
+   "old": "artifacts/npj_n10_go_no_go.json",
+   "new": "artifacts/historical/n10_go_no_go.json",
+   "sha256": "6ea34c907c4957208263d3e226071c6d93a619a7a1416eea022646d1ee76ab81",
+   "reason": "pre-correction merged result, NON-AUTHORITATIVE"
+  },
+  {
+   "old": "artifacts/npj_n15_ad_aurc.json",
+   "new": "artifacts/historical/n15_ad_aurc.json",
+   "sha256": "a1a52ef981a07f37980334b4581dd245d1a4836ddde1cb5b28dbd4f51b238b92",
+   "reason": "pre-correction merged result, NON-AUTHORITATIVE"
+  },
+  {
+   "old": "artifacts/npj_n15_baseline_variability.json",
+   "new": "artifacts/historical/n15_baseline_variability.json",
+   "sha256": "fad160c0e9b8ee0dc6d2d3b45407e175acdcd4d3df261bd07e5cba816480aed3",
+   "reason": "pre-correction merged result, NON-AUTHORITATIVE"
+  },
+  {
+   "old": "artifacts/npj_n15_deployment_shift.json",
+   "new": "artifacts/historical/n15_deployment_shift.json",
+   "sha256": "c62b44d80f493598410cd27efe4d638b06af32fe748847c3ebb763b40e9addbd",
+   "reason": "pre-correction merged result, NON-AUTHORITATIVE"
+  },
+  {
+   "old": "artifacts/npj_n15_external_uncertainty.json",
+   "new": "artifacts/historical/n15_external_uncertainty.json",
+   "sha256": "8a0c82924fb513f72642b91e31d33c826bb1086ea4fef27f12ca615c2511b6f5",
+   "reason": "pre-correction merged result, NON-AUTHORITATIVE"
+  },
+  {
+   "old": "artifacts/npj_n15_remediation_spec.json",
+   "new": "artifacts/frozen/n15_remediation_spec.json",
+   "sha256": "c448d97590eb1d0ee283166d5b7805dbba0c4612c1811c212ab9c4eac8a42733",
+   "reason": "N15 spec"
+  },
+  {
+   "old": "artifacts/npj_n15_source_disjoint.json",
+   "new": "artifacts/historical/n15_source_disjoint.json",
+   "sha256": "389574884ff06253e9ea714cfb0c1ff5ef389195e8edbe94d8d5e821644496aa",
+   "reason": "pre-correction merged result, NON-AUTHORITATIVE"
+  },
+  {
+   "old": "artifacts/npj_n15_stable_model_sensitivity.json",
+   "new": "artifacts/historical/n15_stable_model_sensitivity.json",
+   "sha256": "12b2746799d85f1b8dd99f97b7a85c17b51e1ffaf7c7f8b646a30d87bc7dae9e",
+   "reason": "pre-correction merged result, NON-AUTHORITATIVE"
+  },
+  {
+   "old": "artifacts/npj_n15_summary.json",
+   "new": "artifacts/historical/n15_summary.json",
+   "sha256": "14ea31745a0d642b888fc979f8d74327b3fa889f0d9d9aa5081aec287a89db27",
+   "reason": "pre-correction merged result, NON-AUTHORITATIVE"
+  },
+  {
+   "old": "artifacts/npj_n15_temperature_sensitivity.json",
+   "new": "artifacts/historical/n15_temperature_sensitivity.json",
+   "sha256": "1513fd03617980d47ea93e7b52682d7013da7e30329eb6145ded6444d886ac36",
+   "reason": "pre-correction merged result, NON-AUTHORITATIVE"
+  },
+  {
+   "old": "artifacts/npj_n18_nn_distance_forensic.json",
+   "new": "artifacts/authoritative/n18_nn_distance_forensic.json",
+   "sha256": "7ba7d8a694572fa75ae39390c30f8b034e22c850e4a8b918b87b8a4000131905",
+   "reason": "model-independent diagnostic, unaffected by corrective-01 (impact map section 3)"
+  },
+  {
+   "old": "artifacts/npj_n20b_formula_group_kfold.json",
+   "new": "artifacts/historical/n20b_formula_group_kfold.json",
+   "sha256": "af5874515b4918d480162b96a3c70eee42451a7cd4581cfbd2f859bd89b854a6",
+   "reason": "pre-correction merged result, NON-AUTHORITATIVE"
+  },
+  {
+   "old": "artifacts/npj_n20b_fragments/catboost.json",
+   "new": "artifacts/fragments/n20b/catboost.json",
+   "sha256": "b74bf77347bf569577be95aa7c58240c52e34bda38942deefe67835b27da1ac7",
+   "reason": "per-model fragments"
+  },
+  {
+   "old": "artifacts/npj_n20b_fragments/composition_attention.json",
+   "new": "artifacts/fragments/n20b/composition_attention.json",
+   "sha256": "a51bb9f6d6e742e54bb1d1cd147137e3a433bb4337cb906094decf8adafb3919",
+   "reason": "per-model fragments"
+  },
+  {
+   "old": "artifacts/npj_n20b_fragments/extra_trees.json",
+   "new": "artifacts/fragments/n20b/extra_trees.json",
+   "sha256": "b8f07ea1af5d7eb2a910e0133d23a343ae7f71e5756c33daa1d59fd32ed85662",
+   "reason": "per-model fragments"
+  },
+  {
+   "old": "artifacts/npj_n20b_fragments/nohup.out",
+   "new": "artifacts/fragments/n20b/nohup.out",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "reason": "per-model fragments"
+  },
+  {
+   "old": "artifacts/npj_n20b_fragments/pretrained_element_embedding.json",
+   "new": "artifacts/fragments/n20b/pretrained_element_embedding.json",
+   "sha256": "e09b0a27a46e83b60e1ff437acf3098c9102b0b276bd7b5c465ea921898d6201",
+   "reason": "per-model fragments"
+  },
+  {
+   "old": "artifacts/npj_n20b_fragments/random_forest.json",
+   "new": "artifacts/fragments/n20b/random_forest.json",
+   "sha256": "f1b9b2d7e9e0c1ef6716b16e07e4b34ba10ae7757bdd059bde20579e32ba1b37",
+   "reason": "per-model fragments"
+  },
+  {
+   "old": "artifacts/npj_n20b_fragments/ridge.json",
+   "new": "artifacts/fragments/n20b/ridge.json",
+   "sha256": "5fb6cd6d8ce92f5ed90df54a1deb77bf712b9a957c0a502fbe0b39e4b34f5b2b",
+   "reason": "per-model fragments"
+  },
+  {
+   "old": "artifacts/npj_n20b_fragments/run.log",
+   "new": "artifacts/fragments/n20b/run.log",
+   "sha256": "b9b6d5ebd18d8a222a00584df674b7d6d8128658c88776b374c8b1257010117a",
+   "reason": "per-model fragments"
+  },
+  {
+   "old": "artifacts/npj_n20b_fragments/shallow_mlp.json",
+   "new": "artifacts/fragments/n20b/shallow_mlp.json",
+   "sha256": "81ae9d2b870741b51c1522e67a50d9b7050a28a9ed9214c046f025bb89ba5b65",
+   "reason": "per-model fragments"
+  },
+  {
+   "old": "artifacts/npj_n20b_fragments/xgboost.json",
+   "new": "artifacts/fragments/n20b/xgboost.json",
+   "sha256": "6af4089d31df6200304ef26c62d6b6e0c086589ca642fd8684c7b1debd6b16cd",
+   "reason": "per-model fragments"
+  },
+  {
+   "old": "artifacts/npj_n21_fragments/seed20260921_catboost.json",
+   "new": "artifacts/fragments/n21/seed20260921_catboost.json",
+   "sha256": "e6b931d8a897cf8f8ca47afd6790a4dc6b61700df73e6837a3baab59fc6dc669",
+   "reason": "per-model fragments"
+  },
+  {
+   "old": "artifacts/npj_n21_fragments/seed20260921_composition_attention.json",
+   "new": "artifacts/fragments/n21/seed20260921_composition_attention.json",
+   "sha256": "0bcb2ddcb283c7316af264f7554a150eae9b606fb57db5fd455e52fbd4bf5b22",
+   "reason": "per-model fragments"
+  },
+  {
+   "old": "artifacts/npj_n21_fragments/seed20260921_extra_trees.json",
+   "new": "artifacts/fragments/n21/seed20260921_extra_trees.json",
+   "sha256": "13e3a3c3b45376fa96f25ecfe22491a411f810107d8e49c1a0b2d1e6655cf0c7",
+   "reason": "per-model fragments"
+  },
+  {
+   "old": "artifacts/npj_n21_fragments/seed20260921_pretrained_element_embedding.json",
+   "new": "artifacts/fragments/n21/seed20260921_pretrained_element_embedding.json",
+   "sha256": "44c522557a4aa2529f515adb319c3ec002b84acfb05f6a01d4f4eb3e42123f1a",
+   "reason": "per-model fragments"
+  },
+  {
+   "old": "artifacts/npj_n21_fragments/seed20260921_random_forest.json",
+   "new": "artifacts/fragments/n21/seed20260921_random_forest.json",
+   "sha256": "83b290708503b950fdc8e6bf3178439159f7933ed51bb5b5f67b19230c1732a1",
+   "reason": "per-model fragments"
+  },
+  {
+   "old": "artifacts/npj_n21_fragments/seed20260921_ridge.json",
+   "new": "artifacts/fragments/n21/seed20260921_ridge.json",
+   "sha256": "7d1d9d414d6890676de77ab06c3798d7493e7af72d2273125a6345815dc33b10",
+   "reason": "per-model fragments"
+  },
+  {
+   "old": "artifacts/npj_n21_fragments/seed20260921_shallow_mlp.json",
+   "new": "artifacts/fragments/n21/seed20260921_shallow_mlp.json",
+   "sha256": "f2aa8444e6c0de79c033c8b54342f46b1404bc8a364de88c5c10ef402d65f718",
+   "reason": "per-model fragments"
+  },
+  {
+   "old": "artifacts/npj_n21_fragments/seed20260921_xgboost.json",
+   "new": "artifacts/fragments/n21/seed20260921_xgboost.json",
+   "sha256": "8bd33c53834bce1b8609cd6567ededde741ef73e0e76d40f6b7de626702558c1",
+   "reason": "per-model fragments"
+  },
+  {
+   "old": "artifacts/npj_n21_fragments/seed20260922_catboost.json",
+   "new": "artifacts/fragments/n21/seed20260922_catboost.json",
+   "sha256": "6af3f8b59f424bc90996884a6f9b52fd2abcadeb5274b2a9931e3b518998ab27",
+   "reason": "per-model fragments"
+  },
+  {
+   "old": "artifacts/npj_n21_fragments/seed20260922_composition_attention.json",
+   "new": "artifacts/fragments/n21/seed20260922_composition_attention.json",
+   "sha256": "7b04c80bf4077d0fd8954a8308459086d70a9387df584504074f1cd9d0763afe",
+   "reason": "per-model fragments"
+  },
+  {
+   "old": "artifacts/npj_n21_fragments/seed20260922_extra_trees.json",
+   "new": "artifacts/fragments/n21/seed20260922_extra_trees.json",
+   "sha256": "f58c8c5d9b173394fb7b6626b094d96ad167525b32e64c27b8b52a99b395bbdf",
+   "reason": "per-model fragments"
+  },
+  {
+   "old": "artifacts/npj_n21_fragments/seed20260922_pretrained_element_embedding.json",
+   "new": "artifacts/fragments/n21/seed20260922_pretrained_element_embedding.json",
+   "sha256": "86b9706d009a67bf30236452ede12b4e60c0a202d0694a46eb733380ed88563f",
+   "reason": "per-model fragments"
+  },
+  {
+   "old": "artifacts/npj_n21_fragments/seed20260922_random_forest.json",
+   "new": "artifacts/fragments/n21/seed20260922_random_forest.json",
+   "sha256": "1c666845ecfd68261ac59ea474c11278ee0b892759898c98b4849f73dbd6b45a",
+   "reason": "per-model fragments"
+  },
+  {
+   "old": "artifacts/npj_n21_fragments/seed20260922_ridge.json",
+   "new": "artifacts/fragments/n21/seed20260922_ridge.json",
+   "sha256": "d7a2ec84dcf19f820dc5ccaa8e9ff5861a491a8e945355e04358da2bced4278d",
+   "reason": "per-model fragments"
+  },
+  {
+   "old": "artifacts/npj_n21_fragments/seed20260922_shallow_mlp.json",
+   "new": "artifacts/fragments/n21/seed20260922_shallow_mlp.json",
+   "sha256": "8feebc5dfc4218818146529975fc2275e405324583c47bb8df57a8b3124e1adc",
+   "reason": "per-model fragments"
+  },
+  {
+   "old": "artifacts/npj_n21_fragments/seed20260922_xgboost.json",
+   "new": "artifacts/fragments/n21/seed20260922_xgboost.json",
+   "sha256": "ed0f03631ea846de4276e2b70583939bf354826d21d12f229c5133a80c7189d7",
+   "reason": "per-model fragments"
+  },
+  {
+   "old": "artifacts/npj_n21_fragments/seed20260923_catboost.json",
+   "new": "artifacts/fragments/n21/seed20260923_catboost.json",
+   "sha256": "bc6aaf438ec99b8135bd74116819aee0a25734e0e160a8ab22f29ac3923049a2",
+   "reason": "per-model fragments"
+  },
+  {
+   "old": "artifacts/npj_n21_fragments/seed20260923_composition_attention.json",
+   "new": "artifacts/fragments/n21/seed20260923_composition_attention.json",
+   "sha256": "bda45dd87ae66bf1186241b82a2d30c02e9847730014fb69e111193dedf8d0ec",
+   "reason": "per-model fragments"
+  },
+  {
+   "old": "artifacts/npj_n21_fragments/seed20260923_extra_trees.json",
+   "new": "artifacts/fragments/n21/seed20260923_extra_trees.json",
+   "sha256": "a5959606ae9f57c1519cd7b9d32fe67383cd89cec594696f902f6351e4a464bd",
+   "reason": "per-model fragments"
+  },
+  {
+   "old": "artifacts/npj_n21_fragments/seed20260923_pretrained_element_embedding.json",
+   "new": "artifacts/fragments/n21/seed20260923_pretrained_element_embedding.json",
+   "sha256": "8993030308f6550b1c8cceecdd70c757f7268a6012d421e337262fa0462399fc",
+   "reason": "per-model fragments"
+  },
+  {
+   "old": "artifacts/npj_n21_fragments/seed20260923_random_forest.json",
+   "new": "artifacts/fragments/n21/seed20260923_random_forest.json",
+   "sha256": "d5d95d4ef411525a40ac9652c4ca50650e41042db2a29eff7fca29d70409acd2",
+   "reason": "per-model fragments"
+  },
+  {
+   "old": "artifacts/npj_n21_fragments/seed20260923_ridge.json",
+   "new": "artifacts/fragments/n21/seed20260923_ridge.json",
+   "sha256": "a4da9f37cdfeedf73706aa81c419518609bca7558bd3a9ad07cdbda7d2445b14",
+   "reason": "per-model fragments"
+  },
+  {
+   "old": "artifacts/npj_n21_fragments/seed20260923_shallow_mlp.json",
+   "new": "artifacts/fragments/n21/seed20260923_shallow_mlp.json",
+   "sha256": "105169de2373589f8f18976781477f8d08439e78e3cb6ffaf4f71f7029553306",
+   "reason": "per-model fragments"
+  },
+  {
+   "old": "artifacts/npj_n21_fragments/seed20260923_xgboost.json",
+   "new": "artifacts/fragments/n21/seed20260923_xgboost.json",
+   "sha256": "d44def69099f2df12760bd9056fc529ddcb665e665dff15d19d534ab1b5774e4",
+   "reason": "per-model fragments"
+  },
+  {
+   "old": "artifacts/npj_n21_fragments/seed20260924_catboost.json",
+   "new": "artifacts/fragments/n21/seed20260924_catboost.json",
+   "sha256": "32801c43c1a94b87c05ee5e5f4c457dcc22ba66ae41c3896695cbd87b08d1d25",
+   "reason": "per-model fragments"
+  },
+  {
+   "old": "artifacts/npj_n21_fragments/seed20260924_composition_attention.json",
+   "new": "artifacts/fragments/n21/seed20260924_composition_attention.json",
+   "sha256": "161ed96691f51094180abb9de898271ea219d1dab9db668ed3686fac6692dc4b",
+   "reason": "per-model fragments"
+  },
+  {
+   "old": "artifacts/npj_n21_fragments/seed20260924_extra_trees.json",
+   "new": "artifacts/fragments/n21/seed20260924_extra_trees.json",
+   "sha256": "59808e22014b32b2726112b60ab71c0481710ffabc537077f8f2abaf83acd62b",
+   "reason": "per-model fragments"
+  },
+  {
+   "old": "artifacts/npj_n21_fragments/seed20260924_pretrained_element_embedding.json",
+   "new": "artifacts/fragments/n21/seed20260924_pretrained_element_embedding.json",
+   "sha256": "db8acbd7a700409b3b76042416b30c9d48f7c02abd73b6578824b4dc020c85e7",
+   "reason": "per-model fragments"
+  },
+  {
+   "old": "artifacts/npj_n21_fragments/seed20260924_random_forest.json",
+   "new": "artifacts/fragments/n21/seed20260924_random_forest.json",
+   "sha256": "80fd65c47058829cc6df11cb8e5300ca07d3cf8d8ad81bb63babca647cd6a0e5",
+   "reason": "per-model fragments"
+  },
+  {
+   "old": "artifacts/npj_n21_fragments/seed20260924_ridge.json",
+   "new": "artifacts/fragments/n21/seed20260924_ridge.json",
+   "sha256": "ecc5fb8f48d38b9adbe8edd21d5bbc3aa956afe19fa3c1880d359e94a83220b7",
+   "reason": "per-model fragments"
+  },
+  {
+   "old": "artifacts/npj_n21_fragments/seed20260924_shallow_mlp.json",
+   "new": "artifacts/fragments/n21/seed20260924_shallow_mlp.json",
+   "sha256": "e95ee6de31b55c96cb2cdb8c858b36ca975de1f63942797ccb626b8d75e01d7a",
+   "reason": "per-model fragments"
+  },
+  {
+   "old": "artifacts/npj_n21_fragments/seed20260924_xgboost.json",
+   "new": "artifacts/fragments/n21/seed20260924_xgboost.json",
+   "sha256": "2d089c63ce918087e959e9cecf13211e9e9ba585db82fc6bfbe45f0d14d11b38",
+   "reason": "per-model fragments"
+  },
+  {
+   "old": "artifacts/npj_n21_fragments/seed20260925_catboost.json",
+   "new": "artifacts/fragments/n21/seed20260925_catboost.json",
+   "sha256": "bcad05c2365e60da5d7e04658527abd0048d2059e216084cee6741f8a8d166c7",
+   "reason": "per-model fragments"
+  },
+  {
+   "old": "artifacts/npj_n21_fragments/seed20260925_composition_attention.json",
+   "new": "artifacts/fragments/n21/seed20260925_composition_attention.json",
+   "sha256": "01070ab71a646af50ac2e71eef77fc9caff5d5e4ca21dcc9c8fd14551f9e0b41",
+   "reason": "per-model fragments"
+  },
+  {
+   "old": "artifacts/npj_n21_fragments/seed20260925_extra_trees.json",
+   "new": "artifacts/fragments/n21/seed20260925_extra_trees.json",
+   "sha256": "8d27620ad61c00fd30ce04f616dacfa5df6c4c61396e2da6841203fc9418c889",
+   "reason": "per-model fragments"
+  },
+  {
+   "old": "artifacts/npj_n21_fragments/seed20260925_pretrained_element_embedding.json",
+   "new": "artifacts/fragments/n21/seed20260925_pretrained_element_embedding.json",
+   "sha256": "92f2b83de8bf1bf6c9a6b001eda25832dd357baead25dcf2237228840ed64df0",
+   "reason": "per-model fragments"
+  },
+  {
+   "old": "artifacts/npj_n21_fragments/seed20260925_random_forest.json",
+   "new": "artifacts/fragments/n21/seed20260925_random_forest.json",
+   "sha256": "fcf26eaecad16a07e274cdd828a47058876252cf59f4b07b9268ca1312602c17",
+   "reason": "per-model fragments"
+  },
+  {
+   "old": "artifacts/npj_n21_fragments/seed20260925_ridge.json",
+   "new": "artifacts/fragments/n21/seed20260925_ridge.json",
+   "sha256": "a4eac959a591aba9fbd4050ed2f03de20111ce69660467ee9468534324e2e65f",
+   "reason": "per-model fragments"
+  },
+  {
+   "old": "artifacts/npj_n21_fragments/seed20260925_shallow_mlp.json",
+   "new": "artifacts/fragments/n21/seed20260925_shallow_mlp.json",
+   "sha256": "3a39471d4729109d9ba4e78e9988a69b14a83870c24b9bec35a572bf48d67ddf",
+   "reason": "per-model fragments"
+  },
+  {
+   "old": "artifacts/npj_n21_fragments/seed20260925_xgboost.json",
+   "new": "artifacts/fragments/n21/seed20260925_xgboost.json",
+   "sha256": "17b662480fadf56ef0b63cade0388c4cddfd8be73c1a4a35a2bff894e1b56cb5",
+   "reason": "per-model fragments"
+  },
+  {
+   "old": "artifacts/npj_n21_fragments/seed20260926_catboost.json",
+   "new": "artifacts/fragments/n21/seed20260926_catboost.json",
+   "sha256": "ad1528da86f4b64cf06d6ae87a0dc0ea74f926225ca01b9c2f6acfd4fe916ecf",
+   "reason": "per-model fragments"
+  },
+  {
+   "old": "artifacts/npj_n21_fragments/seed20260926_composition_attention.json",
+   "new": "artifacts/fragments/n21/seed20260926_composition_attention.json",
+   "sha256": "5636cb488690cd04856985c3b6cfd822694d4e87df9263c469d5e5f422280b6c",
+   "reason": "per-model fragments"
+  },
+  {
+   "old": "artifacts/npj_n21_fragments/seed20260926_extra_trees.json",
+   "new": "artifacts/fragments/n21/seed20260926_extra_trees.json",
+   "sha256": "e2e21bbc6f3465dab599c0825b4722da6eefe27c618c1181ad05a951d8788ea8",
+   "reason": "per-model fragments"
+  },
+  {
+   "old": "artifacts/npj_n21_fragments/seed20260926_pretrained_element_embedding.json",
+   "new": "artifacts/fragments/n21/seed20260926_pretrained_element_embedding.json",
+   "sha256": "0821cb1da551db118a2250b3fb64677dabf663ba3b2caf0f8aa3d973ef50b1a0",
+   "reason": "per-model fragments"
+  },
+  {
+   "old": "artifacts/npj_n21_fragments/seed20260926_random_forest.json",
+   "new": "artifacts/fragments/n21/seed20260926_random_forest.json",
+   "sha256": "57b2f36e6a6658147e0b69668cce6eea0af165e77670892847d17743fd3bc73a",
+   "reason": "per-model fragments"
+  },
+  {
+   "old": "artifacts/npj_n21_fragments/seed20260926_ridge.json",
+   "new": "artifacts/fragments/n21/seed20260926_ridge.json",
+   "sha256": "6cf90cc42c294df44479b9817d85759f576ab3d8336ab9c89703729891225f2d",
+   "reason": "per-model fragments"
+  },
+  {
+   "old": "artifacts/npj_n21_fragments/seed20260926_shallow_mlp.json",
+   "new": "artifacts/fragments/n21/seed20260926_shallow_mlp.json",
+   "sha256": "6f7018867ed9c65e133b34e93c3cc604d0a6864f2535fa78329f8b5a8706a581",
+   "reason": "per-model fragments"
+  },
+  {
+   "old": "artifacts/npj_n21_fragments/seed20260926_xgboost.json",
+   "new": "artifacts/fragments/n21/seed20260926_xgboost.json",
+   "sha256": "13174222164646554a1c1826fd394aa77db4543c1037f5f2f671e184628e80c5",
+   "reason": "per-model fragments"
+  },
+  {
+   "old": "artifacts/npj_n21_fragments/seed20260927_catboost.json",
+   "new": "artifacts/fragments/n21/seed20260927_catboost.json",
+   "sha256": "b5c3f0647c5debd5a0c322f31525e994948fc8ca132cce28df6033e38d4ac3a7",
+   "reason": "per-model fragments"
+  },
+  {
+   "old": "artifacts/npj_n21_fragments/seed20260927_composition_attention.json",
+   "new": "artifacts/fragments/n21/seed20260927_composition_attention.json",
+   "sha256": "50eaa8cf171489cbd1efc9474458c3d12e80f9b89b9ccb3b13da083fff9b25da",
+   "reason": "per-model fragments"
+  },
+  {
+   "old": "artifacts/npj_n21_fragments/seed20260927_extra_trees.json",
+   "new": "artifacts/fragments/n21/seed20260927_extra_trees.json",
+   "sha256": "98fb0d2b50212f72b7cd9198c719fb76736de7b261a4398458f29f72e388ec7b",
+   "reason": "per-model fragments"
+  },
+  {
+   "old": "artifacts/npj_n21_fragments/seed20260927_pretrained_element_embedding.json",
+   "new": "artifacts/fragments/n21/seed20260927_pretrained_element_embedding.json",
+   "sha256": "50650e90d577644c474d090ed478b15ee0f166e43870ffe79e1c17baeac92b43",
+   "reason": "per-model fragments"
+  },
+  {
+   "old": "artifacts/npj_n21_fragments/seed20260927_random_forest.json",
+   "new": "artifacts/fragments/n21/seed20260927_random_forest.json",
+   "sha256": "8538533e4e9b888280430cd59e7e3e3aeb178ae212d763ad8702dc41bf1e130d",
+   "reason": "per-model fragments"
+  },
+  {
+   "old": "artifacts/npj_n21_fragments/seed20260927_ridge.json",
+   "new": "artifacts/fragments/n21/seed20260927_ridge.json",
+   "sha256": "20cb140e2465e581325d83a66491c718d2d0780e0c9d474d26b6e2ca0b11b51e",
+   "reason": "per-model fragments"
+  },
+  {
+   "old": "artifacts/npj_n21_fragments/seed20260927_shallow_mlp.json",
+   "new": "artifacts/fragments/n21/seed20260927_shallow_mlp.json",
+   "sha256": "0f606a85635f67eb28d70fa5dab7f64701148e20f15374e210caf456c6cdb059",
+   "reason": "per-model fragments"
+  },
+  {
+   "old": "artifacts/npj_n21_fragments/seed20260927_xgboost.json",
+   "new": "artifacts/fragments/n21/seed20260927_xgboost.json",
+   "sha256": "c678e4384cc382ed66c5d4b3220f1dff934a293fa9e799425258564786cc4949",
+   "reason": "per-model fragments"
+  },
+  {
+   "old": "artifacts/npj_n21_fragments/seed20260928_catboost.json",
+   "new": "artifacts/fragments/n21/seed20260928_catboost.json",
+   "sha256": "c0c8dcc062935f7fee9f393d695c38db1559d864d1e0cffbc7e70f39c7a0a6d8",
+   "reason": "per-model fragments"
+  },
+  {
+   "old": "artifacts/npj_n21_fragments/seed20260928_composition_attention.json",
+   "new": "artifacts/fragments/n21/seed20260928_composition_attention.json",
+   "sha256": "587156d18067ab67621ac5e185fa92fcaaab2794cc2842863b05c441dd816324",
+   "reason": "per-model fragments"
+  },
+  {
+   "old": "artifacts/npj_n21_fragments/seed20260928_extra_trees.json",
+   "new": "artifacts/fragments/n21/seed20260928_extra_trees.json",
+   "sha256": "d3dfc3313ebce4fb09d46ce0ba871e9025d71143e9447376fca570b3e6013d03",
+   "reason": "per-model fragments"
+  },
+  {
+   "old": "artifacts/npj_n21_fragments/seed20260928_pretrained_element_embedding.json",
+   "new": "artifacts/fragments/n21/seed20260928_pretrained_element_embedding.json",
+   "sha256": "f7da0e3f694771993ec0d97904043a260a5e5bee1169463c7d84b4490debea75",
+   "reason": "per-model fragments"
+  },
+  {
+   "old": "artifacts/npj_n21_fragments/seed20260928_random_forest.json",
+   "new": "artifacts/fragments/n21/seed20260928_random_forest.json",
+   "sha256": "9f9728dfe8bfaa9aad7ec44a90f99159f98a240f42a0930722536cc69a39a814",
+   "reason": "per-model fragments"
+  },
+  {
+   "old": "artifacts/npj_n21_fragments/seed20260928_ridge.json",
+   "new": "artifacts/fragments/n21/seed20260928_ridge.json",
+   "sha256": "9f35ec84efe5274b77c351e5fc556f4f60caa05a953083a9b635d8d3cb875500",
+   "reason": "per-model fragments"
+  },
+  {
+   "old": "artifacts/npj_n21_fragments/seed20260928_shallow_mlp.json",
+   "new": "artifacts/fragments/n21/seed20260928_shallow_mlp.json",
+   "sha256": "2bbeb1d1330a2821259d81985d314c2c496e5ebd419b12f1fb7e126f3faabc2a",
+   "reason": "per-model fragments"
+  },
+  {
+   "old": "artifacts/npj_n21_fragments/seed20260928_xgboost.json",
+   "new": "artifacts/fragments/n21/seed20260928_xgboost.json",
+   "sha256": "c67b39fc65bf356cb4ebf0f9c1d9660922353e0c872c17c83db8afe44f26c283",
+   "reason": "per-model fragments"
+  },
+  {
+   "old": "artifacts/npj_n21_fragments/seed20260929_catboost.json",
+   "new": "artifacts/fragments/n21/seed20260929_catboost.json",
+   "sha256": "268f92f2f1afe93acb5ced87d09219c0360a736cd565fc832ed2b6889ce8d098",
+   "reason": "per-model fragments"
+  },
+  {
+   "old": "artifacts/npj_n21_fragments/seed20260929_composition_attention.json",
+   "new": "artifacts/fragments/n21/seed20260929_composition_attention.json",
+   "sha256": "fe5298c32daabefcd99ed7a29a19879149e064efe7a8bc825f4b1fbcfac4b26f",
+   "reason": "per-model fragments"
+  },
+  {
+   "old": "artifacts/npj_n21_fragments/seed20260929_extra_trees.json",
+   "new": "artifacts/fragments/n21/seed20260929_extra_trees.json",
+   "sha256": "5fbc3b00208aeb39d9c32672c0205bc96bc3898436841ced49b766c029f4a103",
+   "reason": "per-model fragments"
+  },
+  {
+   "old": "artifacts/npj_n21_fragments/seed20260929_pretrained_element_embedding.json",
+   "new": "artifacts/fragments/n21/seed20260929_pretrained_element_embedding.json",
+   "sha256": "355bf46dceff26ca0ad36c9afd988b4518ff8ab56ada3b7f5062e495c417ef9c",
+   "reason": "per-model fragments"
+  },
+  {
+   "old": "artifacts/npj_n21_fragments/seed20260929_random_forest.json",
+   "new": "artifacts/fragments/n21/seed20260929_random_forest.json",
+   "sha256": "5b92d8948b4e047e65ed10c04acc7fbf17b9a998333f96eefefde4f3b6bb4a30",
+   "reason": "per-model fragments"
+  },
+  {
+   "old": "artifacts/npj_n21_fragments/seed20260929_ridge.json",
+   "new": "artifacts/fragments/n21/seed20260929_ridge.json",
+   "sha256": "a9cca9e8988222ec15d9668bb38709a758ed1b9ddcd52201127f5019990d42df",
+   "reason": "per-model fragments"
+  },
+  {
+   "old": "artifacts/npj_n21_fragments/seed20260929_shallow_mlp.json",
+   "new": "artifacts/fragments/n21/seed20260929_shallow_mlp.json",
+   "sha256": "a192a81d2fda727d3755da6a5a2daeb7ca423da9ae32662421d3ab4768e44500",
+   "reason": "per-model fragments"
+  },
+  {
+   "old": "artifacts/npj_n21_fragments/seed20260929_xgboost.json",
+   "new": "artifacts/fragments/n21/seed20260929_xgboost.json",
+   "sha256": "fa91d5e9fd4c1ba63c7f3a29d2a62d23c72d6fe6ed1f6728dc7749d2b1b15bd9",
+   "reason": "per-model fragments"
+  },
+  {
+   "old": "artifacts/npj_n21_fragments/seed20260930_catboost.json",
+   "new": "artifacts/fragments/n21/seed20260930_catboost.json",
+   "sha256": "3d9961b0a7716f551a408686c87475c29d615c80d33ab481d482586a72797e4f",
+   "reason": "per-model fragments"
+  },
+  {
+   "old": "artifacts/npj_n21_fragments/seed20260930_composition_attention.json",
+   "new": "artifacts/fragments/n21/seed20260930_composition_attention.json",
+   "sha256": "c4bed40131548d6021eff7dd9ac1d59ac4d764e1743c699ed8f0c229df3e2e31",
+   "reason": "per-model fragments"
+  },
+  {
+   "old": "artifacts/npj_n21_fragments/seed20260930_extra_trees.json",
+   "new": "artifacts/fragments/n21/seed20260930_extra_trees.json",
+   "sha256": "c3123456ff60fbf23f9e10a630aed2124ec456655295585bfb0ffbb18886d922",
+   "reason": "per-model fragments"
+  },
+  {
+   "old": "artifacts/npj_n21_fragments/seed20260930_pretrained_element_embedding.json",
+   "new": "artifacts/fragments/n21/seed20260930_pretrained_element_embedding.json",
+   "sha256": "007ab7a00b06e1aa2cb305c32218143a2884fd983b204fa0f56c1b09aec56821",
+   "reason": "per-model fragments"
+  },
+  {
+   "old": "artifacts/npj_n21_fragments/seed20260930_random_forest.json",
+   "new": "artifacts/fragments/n21/seed20260930_random_forest.json",
+   "sha256": "5854df6a4022928fdf5dbdae12ac840727acae8d75e4c6192f2d9a9067832a2d",
+   "reason": "per-model fragments"
+  },
+  {
+   "old": "artifacts/npj_n21_fragments/seed20260930_ridge.json",
+   "new": "artifacts/fragments/n21/seed20260930_ridge.json",
+   "sha256": "1c79d7e48d0ef4ecc3eeddedeaea6e790d778684432adde06032861f8f902508",
+   "reason": "per-model fragments"
+  },
+  {
+   "old": "artifacts/npj_n21_fragments/seed20260930_shallow_mlp.json",
+   "new": "artifacts/fragments/n21/seed20260930_shallow_mlp.json",
+   "sha256": "80d8d3b32b6c6c860081d31a838d172baded5a983e6933cc99a9abc0fd1d9006",
+   "reason": "per-model fragments"
+  },
+  {
+   "old": "artifacts/npj_n21_fragments/seed20260930_xgboost.json",
+   "new": "artifacts/fragments/n21/seed20260930_xgboost.json",
+   "sha256": "941b444f1f6b733dd716ee96d918b9fb4ae725e4bde658b195675f3afbd2a28b",
+   "reason": "per-model fragments"
+  },
+  {
+   "old": "artifacts/npj_n21_repeated_cv_sensitivity.json",
+   "new": "artifacts/historical/n21_repeated_cv_sensitivity.json",
+   "sha256": "71214401be9a135b6f918a78250bfb03c19355c1a6e8e79ec338125a151860e0",
+   "reason": "pre-correction merged result, NON-AUTHORITATIVE"
+  },
+  {
+   "old": "artifacts/npj_n21c_primary_external_context.json",
+   "new": "artifacts/historical/n21c_primary_external_context.json",
+   "sha256": "d6f6a660666c3420bfbeafb014be0d7ba400679432d5cc385501ab1c78c2343f",
+   "reason": "pre-correction merged result, NON-AUTHORITATIVE"
+  },
+  {
+   "old": "artifacts/npj_n21d_ad_benchmark_closure.json",
+   "new": "artifacts/historical/n21d_ad_benchmark_closure.json",
+   "sha256": "ae2f48be01ad8f5ddcb07e5a3dfb564e4cffe4e838ec177ffba4bb6b2fefab3f",
+   "reason": "pre-correction merged result, NON-AUTHORITATIVE"
+  },
+  {
+   "old": "artifacts/npj_n21e_robust_shift_distance.json",
+   "new": "artifacts/authoritative/n21e_robust_shift_distance.json",
+   "sha256": "33041560cdf1c31dcae62a832dfde579a3ec87c9e0fce29d83f64e5248be0f32",
+   "reason": "model-independent diagnostic, unaffected by corrective-01 (impact map section 3)"
+  },
+  {
+   "old": "artifacts/npj_n4_fragments/catboost.json",
+   "new": "artifacts/fragments/n4/catboost.json",
+   "sha256": "1a88848cbd6abea7eff00ba28e327e2e5867008fb88a612cf12d07f5d744ca29",
+   "reason": "per-model fragments"
+  },
+  {
+   "old": "artifacts/npj_n4_fragments/composition_attention.json",
+   "new": "artifacts/fragments/n4/composition_attention.json",
+   "sha256": "3af254065925581397956226c9f9686dbaf24651e78ee89267c12634b37ebd73",
+   "reason": "per-model fragments"
+  },
+  {
+   "old": "artifacts/npj_n4_fragments/extra_trees.json",
+   "new": "artifacts/fragments/n4/extra_trees.json",
+   "sha256": "d69766d64777d0a25c2a758a2498b459e491e7c75fc31ea53a2eba50f04272db",
+   "reason": "per-model fragments"
+  },
+  {
+   "old": "artifacts/npj_n4_fragments/pretrained_element_embedding.json",
+   "new": "artifacts/fragments/n4/pretrained_element_embedding.json",
+   "sha256": "0a6123997783076940abc05dd8714b6b57ffc02c20c6be3e14df4c7155032839",
+   "reason": "per-model fragments"
+  },
+  {
+   "old": "artifacts/npj_n4_fragments/random_forest.json",
+   "new": "artifacts/fragments/n4/random_forest.json",
+   "sha256": "d7f37a53c9e53bd35a9b104b48731c1f47b63ddd3cf0d5290a12b16e5fb96438",
+   "reason": "per-model fragments"
+  },
+  {
+   "old": "artifacts/npj_n4_fragments/ridge.json",
+   "new": "artifacts/fragments/n4/ridge.json",
+   "sha256": "94c3a0144598aa3cb9f7798817f5ad7b882baeb3be24780449de7e4239f4e04d",
+   "reason": "per-model fragments"
+  },
+  {
+   "old": "artifacts/npj_n4_fragments/shallow_mlp.json",
+   "new": "artifacts/fragments/n4/shallow_mlp.json",
+   "sha256": "4cf0557c3119b571d711c390a504b253da4c01afd1265ade26cad4cc87c5f72e",
+   "reason": "per-model fragments"
+  },
+  {
+   "old": "artifacts/npj_n4_fragments/xgboost.json",
+   "new": "artifacts/fragments/n4/xgboost.json",
+   "sha256": "5c0e17072ac89212e863d31ad8687957260ff722b3a169effcedc94c54eb411e",
+   "reason": "per-model fragments"
+  },
+  {
+   "old": "artifacts/npj_n4_internal_validation.json",
+   "new": "artifacts/frozen/n4_internal_validation.json",
+   "sha256": "09508ba010f96f9a8311dcfa0b2d311482a42941e13261caa4ee229bbdc0745d",
+   "reason": "lock-cited frozen N4 output"
+  },
+  {
+   "old": "artifacts/npj_n4b_fragments/catboost.json",
+   "new": "artifacts/fragments/n4b/catboost.json",
+   "sha256": "283203e267833cd7c2a009e697f9b7e213100105aa37d257bb1548c71fcc50f8",
+   "reason": "per-model fragments"
+  },
+  {
+   "old": "artifacts/npj_n4b_fragments/composition_attention.json",
+   "new": "artifacts/fragments/n4b/composition_attention.json",
+   "sha256": "2c4e27f22a5e1920ab3d52f8770f673b8c3f1c8b24c7e04260391033527ad8e2",
+   "reason": "per-model fragments"
+  },
+  {
+   "old": "artifacts/npj_n4b_fragments/extra_trees.json",
+   "new": "artifacts/fragments/n4b/extra_trees.json",
+   "sha256": "60f937a0b9c37831d7846fede140128c49479fa2a4a4d6d1b574c57257813d9e",
+   "reason": "per-model fragments"
+  },
+  {
+   "old": "artifacts/npj_n4b_fragments/pretrained_element_embedding.json",
+   "new": "artifacts/fragments/n4b/pretrained_element_embedding.json",
+   "sha256": "04a8988b56d862e6d3e9a0469568edee5d280baa09512b51172c1d37bb07e070",
+   "reason": "per-model fragments"
+  },
+  {
+   "old": "artifacts/npj_n4b_fragments/random_forest.json",
+   "new": "artifacts/fragments/n4b/random_forest.json",
+   "sha256": "65fe9939acc2dd5fed816da34b395ef8ef6233e26f32acf62fe428083d0f43f1",
+   "reason": "per-model fragments"
+  },
+  {
+   "old": "artifacts/npj_n4b_fragments/ridge.json",
+   "new": "artifacts/fragments/n4b/ridge.json",
+   "sha256": "c55b2fabce14b905616813cc5ba3c8ddd54ac98cbe99feea088d5d7c1b4bf222",
+   "reason": "per-model fragments"
+  },
+  {
+   "old": "artifacts/npj_n4b_fragments/shallow_mlp.json",
+   "new": "artifacts/fragments/n4b/shallow_mlp.json",
+   "sha256": "dc42947291ee9e7b7092c2bf28f3cfb7dc60526c35f36df39251a9aa3ba79f46",
+   "reason": "per-model fragments"
+  },
+  {
+   "old": "artifacts/npj_n4b_fragments/xgboost.json",
+   "new": "artifacts/fragments/n4b/xgboost.json",
+   "sha256": "26793ea9047ac9652d1d575bedf62597cdbdbd29bf0f2c7ea531c1f0af2725bb",
+   "reason": "per-model fragments"
+  },
+  {
+   "old": "artifacts/npj_n4b_nested_internal_validation.json",
+   "new": "artifacts/historical/n4b_nested_internal_validation.json",
+   "sha256": "f2bc3a816bb680f7f5a23e82dc3ccfcd5b4dfa8ca028ff552c2c40fcc16e6489",
+   "reason": "pre-correction merged result, NON-AUTHORITATIVE"
+  },
+  {
+   "old": "artifacts/npj_n6_external_transfer.json",
+   "new": "artifacts/frozen/n6_external_transfer_primary.json",
+   "sha256": "def43a59623aedc69662f47670037300de76a644b092d696cf318e652f439e43",
+   "reason": "primary one-shot external transfer record (immutable)"
+  },
+  {
+   "old": "artifacts/npj_n6_fragments/catboost.json",
+   "new": "artifacts/fragments/n6/catboost.json",
+   "sha256": "04aaf77dc09a369e6a80e802b59956e84b19e6d42e8a61dac9fa12fc574e20cd",
+   "reason": "per-model fragments"
+  },
+  {
+   "old": "artifacts/npj_n6_fragments/composition_attention.json",
+   "new": "artifacts/fragments/n6/composition_attention.json",
+   "sha256": "a02e59e0e0965f2fbc9338cdf68920bf6172b08febd6f1fe01ba6c0d142cae5e",
+   "reason": "per-model fragments"
+  },
+  {
+   "old": "artifacts/npj_n6_fragments/extra_trees.json",
+   "new": "artifacts/fragments/n6/extra_trees.json",
+   "sha256": "f33907faae81558b8a27a46730605d31b5db6df74c0ef556d2388f0db8b66ad2",
+   "reason": "per-model fragments"
+  },
+  {
+   "old": "artifacts/npj_n6_fragments/pretrained_element_embedding.json",
+   "new": "artifacts/fragments/n6/pretrained_element_embedding.json",
+   "sha256": "6ba6a1de7fafae52b0cc66c36e112d15815dc82df9cb56c685ae7d419686a69f",
+   "reason": "per-model fragments"
+  },
+  {
+   "old": "artifacts/npj_n6_fragments/random_forest.json",
+   "new": "artifacts/fragments/n6/random_forest.json",
+   "sha256": "c0ca24fa44bf0e1bb41933e1d9cc9736360058e353e795698d5a4604393260d5",
+   "reason": "per-model fragments"
+  },
+  {
+   "old": "artifacts/npj_n6_fragments/ridge.json",
+   "new": "artifacts/fragments/n6/ridge.json",
+   "sha256": "d921e51b382a57085ec5af97814ff5d4ab5c961cb4c76c1633c97f3c1e8a693f",
+   "reason": "per-model fragments"
+  },
+  {
+   "old": "artifacts/npj_n6_fragments/shallow_mlp.json",
+   "new": "artifacts/fragments/n6/shallow_mlp.json",
+   "sha256": "b257c4308ed64a06ddf892d95d38aac2039c0de6dd31d880c7d2d12bbef0e4f3",
+   "reason": "per-model fragments"
+  },
+  {
+   "old": "artifacts/npj_n6_fragments/xgboost.json",
+   "new": "artifacts/fragments/n6/xgboost.json",
+   "sha256": "e5f812c16b05aa9234898b2f64bf308cacafe6fdcc5dc4c4d99b910faa016264",
+   "reason": "per-model fragments"
+  },
+  {
+   "old": "artifacts/npj_n7_regime_utility.json",
+   "new": "artifacts/historical/n7_regime_utility.json",
+   "sha256": "cca1c257f3791d9cbef90dd9aa6bae06392b974fd9e5db44c3dd32b8c2d614d0",
+   "reason": "pre-correction merged result, NON-AUTHORITATIVE"
+  },
+  {
+   "old": "artifacts/npj_n7b_regime_utility_nested.json",
+   "new": "artifacts/historical/n7b_regime_utility_nested.json",
+   "sha256": "2b271f62d025f75dfd92109c997507e79e5f6c439f699f28c9264660b7b5089b",
+   "reason": "pre-correction merged result, NON-AUTHORITATIVE"
+  },
+  {
+   "old": "artifacts/npj_n8_applicability_domain.json",
+   "new": "artifacts/historical/n8_applicability_domain.json",
+   "sha256": "dbe2477944b8f2f617cbf59b614951887a8aaf19022fb9053a81840ad0dfdfc9",
+   "reason": "pre-correction merged result, NON-AUTHORITATIVE"
+  },
+  {
+   "old": "artifacts/npj_n9_sensitivity.json",
+   "new": "artifacts/historical/n9_sensitivity.json",
+   "sha256": "f96e303ec1894b5bb0302a7e7a9a64bb91d0ac0661fa37eadfe56067857cddf0",
+   "reason": "pre-correction merged result, NON-AUTHORITATIVE"
+  },
+  {
+   "old": "artifacts/npj_n9b_relaxed_sensitivity_nested.json",
+   "new": "artifacts/historical/n9b_relaxed_sensitivity_nested.json",
+   "sha256": "4f3431988e0dd6ba0562eaebfb793fbb64a892e895907ad8d08b3077d8419b1f",
+   "reason": "pre-correction merged result, NON-AUTHORITATIVE"
+  },
+  {
+   "old": "artifacts/npj_pretest_lock.json",
+   "new": "artifacts/frozen/external_transfer_lock.json",
+   "sha256": "76510b372bca29624e597aa8f9cffdd7ee32bb33962dff40bb85b41cfa519b98",
+   "reason": "N5 lock, byte-identical"
+  },
+  {
+   "old": "artifacts/phase1_factual_fixes.json",
+   "new": "artifacts/historical/phase1_factual_fixes.json",
+   "sha256": "275de3b3156094c2c4394ed7c17ce1809fa87e81c55923724ce3231e19203884",
+   "reason": "pre-correction result superseded by artifacts/authoritative, NON-AUTHORITATIVE"
+  },
+  {
+   "old": "artifacts/phase1_glass_split.json",
+   "new": "artifacts/historical/phase1_glass_split.json",
+   "sha256": "7feeb19ac1f2a50b8c634ff6918ed70ac7627023734d6e84a6f312d090a03f94",
+   "reason": "pre-correction result superseded by artifacts/authoritative, NON-AUTHORITATIVE"
+  },
+  {
+   "old": "artifacts/phase1_predeclared.json",
+   "new": "artifacts/historical/phase1_predeclared.json",
+   "sha256": "8a62a249613c126e5c43964d739b86f545bbcd6cdf1868085bb9d44dc2e00808",
+   "reason": "pre-correction result superseded by artifacts/authoritative, NON-AUTHORITATIVE"
+  },
+  {
+   "old": "artifacts/phase2_glass_subset_regime_cis.json",
+   "new": "artifacts/historical/phase2_glass_subset_regime_cis.json",
+   "sha256": "be94f789cc71f3de9eb18e19f3f1f8c3f1d155a3d5c14ac991d6d2f653a9b87f",
+   "reason": "pre-correction result superseded by artifacts/authoritative, NON-AUTHORITATIVE"
+  },
+  {
+   "old": "artifacts/phase2_label_compat_dev_only_full.json",
+   "new": "artifacts/authoritative/phase2_label_compat_dev_only_full.json",
+   "sha256": "641268193ae8da2750656c68603227db7bbd05c4f5be9b811a399037eb6e8eb5",
+   "reason": "model-independent label audit, unaffected by corrective-01"
+  },
+  {
+   "old": "artifacts/reviewer_family_audit.json",
+   "new": "artifacts/historical/reviewer_family_audit.json",
+   "sha256": "9d84029c34b88e41a952d7a23d5fff009bc533d4ebd4043c987a1503cf20f0ae",
+   "reason": "pre-correction result superseded by artifacts/authoritative, NON-AUTHORITATIVE"
+  },
+  {
+   "old": "artifacts/reviewer_formula_duplicate_audit.json",
+   "new": "artifacts/historical/reviewer_formula_duplicate_audit.json",
+   "sha256": "3cd0365a2b922354bb8d16c072b171c8c0d2be4aa5f632e34a1db1ae00be5ed4",
+   "reason": "pre-correction result superseded by artifacts/authoritative, NON-AUTHORITATIVE"
+  },
+  {
+   "old": "artifacts/reviewer_label_compatibility.json",
+   "new": "artifacts/historical/reviewer_label_compatibility.json",
+   "sha256": "311898e37fd6911d79ea1edac4a44900a97b8b03fff3813e0af730fb30a08184",
+   "reason": "pre-correction result superseded by artifacts/authoritative, NON-AUTHORITATIVE"
+  },
+  {
+   "old": "artifacts/reviewer_provenance_timeline.json",
+   "new": "artifacts/historical/reviewer_provenance_timeline.json",
+   "sha256": "1fa377a5cca50e0200a2cafac50fe0a62f941355ef69af7d084eb2c17ea71ead",
+   "reason": "pre-correction result superseded by artifacts/authoritative, NON-AUTHORITATIVE"
+  },
+  {
+   "old": "data/manifests/npj_external_cohort.json",
+   "new": "data/manifests/external_cohort.json",
+   "sha256": "a503b5cb39c17fb0bd23de639f4ac96a63e39f79d6a9c6e3f8f0a1eb8f8543e6",
+   "reason": "cohort build manifest, byte-identical"
+  },
+  {
+   "old": "data/processed/npj_external_cohort/hargreaves_overlap_ledger.csv",
+   "new": "data/processed/external_cohort/hargreaves_overlap_ledger.csv",
+   "sha256": "a1b4d0f425fc3048a03cdf4a82321292cbc80b9590ba7e309f7f353788098683",
+   "reason": "frozen external cohorts, byte-identical"
+  },
+  {
+   "old": "data/processed/npj_external_cohort/hargreaves_relaxed.csv",
+   "new": "data/processed/external_cohort/hargreaves_relaxed.csv",
+   "sha256": "dac166ee16be91d76a255a30ec7f6af8cc47bc6d569db3ad74d2212209e99da8",
+   "reason": "frozen external cohorts, byte-identical"
+  },
+  {
+   "old": "data/processed/npj_external_cohort/hargreaves_strict.csv",
+   "new": "data/processed/external_cohort/hargreaves_strict.csv",
+   "sha256": "1bda972d893c3cf546b3638ea8935e59b345e1d14d9c607be5b1c59437b237c9",
+   "reason": "frozen external cohorts, byte-identical"
+  },
+  {
+   "old": "manuscript_acs/JCIM_Submission_Checklist.md",
+   "new": "reports/history/manuscript_audits/submission_checklist.md",
+   "sha256": "4eff70844256a51d6a9e5dcbcd441b30ad8178b599d1020a4f272e787af00f0e",
+   "reason": "historical manuscript audit record, moved out of manuscript/ in the minimization pass"
+  },
+  {
+   "old": "manuscript_acs/archive_manifest/SHA256SUMS.txt",
+   "new": "manuscript/archive_manifest/SHA256SUMS.txt",
+   "sha256": "92c8d381318bffed10bd9849c1794f5d0ef889dd253217b38d850d6a7d1c8ccd",
+   "reason": "manuscript sources/figures/tables; removed in the evidence-backed minimization pass (no active reference; superseded or untrusted); preserved in git history at commit 4348ef6 under the old path",
+   "removed": true
+  },
+  {
+   "old": "manuscript_acs/archive_manifest/final_submission_manifest.json",
+   "new": "manuscript/archive_manifest/final_submission_manifest.json",
+   "sha256": "955ba9577d7bbbaab4607db32e7246a948b61116c93fa62c42dd60093f2870be",
+   "reason": "manuscript sources/figures/tables; removed in the evidence-backed minimization pass (no active reference; superseded or untrusted); preserved in git history at commit 4348ef6 under the old path",
+   "removed": true
+  },
+  {
+   "old": "manuscript_acs/figures/fig1_schematic.pdf",
+   "new": "manuscript/figures/fig1_schematic.pdf",
+   "sha256": "d4d8cbbfdf85d0b607dbfe9824a3a1177fd7c2fa78ab3fc8ac8afe8dbfeb6538",
+   "reason": "manuscript sources/figures/tables"
+  },
+  {
+   "old": "manuscript_acs/figures/fig1_schematic.png",
+   "new": "manuscript/figures/fig1_schematic.png",
+   "sha256": "dc9573067ce480c163966a64c4a74c096eca85ec288313bcca3649b1bf5609c5",
+   "reason": "manuscript sources/figures/tables"
+  },
+  {
+   "old": "manuscript_acs/figures/fig2_external_performance.pdf",
+   "new": "manuscript/figures/fig2_external_performance.pdf",
+   "sha256": "092d4b228bfa4296b8e53492bfa406e90248efe29196b8dd7a20d775e08c32e0",
+   "reason": "manuscript sources/figures/tables"
+  },
+  {
+   "old": "manuscript_acs/figures/fig2_external_performance.png",
+   "new": "manuscript/figures/fig2_external_performance.png",
+   "sha256": "5edcfe44fece12ba606a8af2e6c68aa0c24fa47f101e7b9347c4ed05fbf86ef0",
+   "reason": "manuscript sources/figures/tables"
+  },
+  {
+   "old": "manuscript_acs/figures/fig3_regime_utility.pdf",
+   "new": "manuscript/figures/fig3_regime_utility.pdf",
+   "sha256": "88f1dd3b8d263e64e4ca6997ea21fae87a10ef228c9a463ed8135ab851522352",
+   "reason": "manuscript sources/figures/tables"
+  },
+  {
+   "old": "manuscript_acs/figures/fig3_regime_utility.png",
+   "new": "manuscript/figures/fig3_regime_utility.png",
+   "sha256": "3555a5a9ec1c4f12913cc64f1de937faa8128729c2a3c8bfc33166ada9000dd9",
+   "reason": "manuscript sources/figures/tables"
+  },
+  {
+   "old": "manuscript_acs/figures/fig4_seen_glass_crystalline.pdf",
+   "new": "manuscript/figures/fig4_seen_glass_crystalline.pdf",
+   "sha256": "fd765c59f209cf7ba21c1ef4367d4c2f1606cc19c02176116e6c1a6fec55e021",
+   "reason": "manuscript sources/figures/tables"
+  },
+  {
+   "old": "manuscript_acs/figures/fig4_seen_glass_crystalline.png",
+   "new": "manuscript/figures/fig4_seen_glass_crystalline.png",
+   "sha256": "35d24085de048072a6af433540325f89943a3bbf22db68f2b5f7924d002babae",
+   "reason": "manuscript sources/figures/tables"
+  },
+  {
+   "old": "manuscript_acs/figures/fig5_extrapolation_failure.pdf",
+   "new": "manuscript/figures/fig5_extrapolation_failure.pdf",
+   "sha256": "5b24a546a17c336af405169a12e91175c9dd18eebe719f60e416dbe2b0aff6a8",
+   "reason": "manuscript sources/figures/tables"
+  },
+  {
+   "old": "manuscript_acs/figures/fig5_extrapolation_failure.png",
+   "new": "manuscript/figures/fig5_extrapolation_failure.png",
+   "sha256": "5312ca68afa86448cc4bbeebedf992c0ebce604d681ced62925662169b2afc99",
+   "reason": "manuscript sources/figures/tables"
+  },
+  {
+   "old": "manuscript_acs/figures/fig6_risk_coverage_comparison.pdf",
+   "new": "manuscript/figures/fig6_risk_coverage_comparison.pdf",
+   "sha256": "01156ddefcdb2a55b9c9945d3048db4df2d4d2bfdebc08809f7016ffb9b2edac",
+   "reason": "manuscript sources/figures/tables"
+  },
+  {
+   "old": "manuscript_acs/figures/fig6_risk_coverage_comparison.png",
+   "new": "manuscript/figures/fig6_risk_coverage_comparison.png",
+   "sha256": "23f34a5fdfd261c9ff52ca95cf6b05e5bcf435dd01897ddec6136c8f8c3b712c",
+   "reason": "manuscript sources/figures/tables"
+  },
+  {
+   "old": "manuscript_acs/figures/si/si_fig1_shift_alignment.pdf",
+   "new": "manuscript/figures/si/si_fig1_shift_alignment.pdf",
+   "sha256": "105a1c05e3b3368f33529a2baf8e8d254274d0bb0209ea686cde018377917e98",
+   "reason": "manuscript sources/figures/tables"
+  },
+  {
+   "old": "manuscript_acs/figures/si/si_fig1_shift_alignment.png",
+   "new": "manuscript/figures/si/si_fig1_shift_alignment.png",
+   "sha256": "818e51ef5c768fb251971dd5d6d67a6786613a14c1fe32ba18deba34f9b86bec",
+   "reason": "manuscript sources/figures/tables"
+  },
+  {
+   "old": "manuscript_acs/figures/si/si_fig2_parity.pdf",
+   "new": "manuscript/figures/si/si_fig2_parity.pdf",
+   "sha256": "96ccb371fa479127a4e2637d8fedd72a6164d4443fae030e9cab02d2fc9da4f3",
+   "reason": "manuscript sources/figures/tables"
+  },
+  {
+   "old": "manuscript_acs/figures/si/si_fig2_parity.png",
+   "new": "manuscript/figures/si/si_fig2_parity.png",
+   "sha256": "d73c07fb04f3daad983889f745f9ecff47c4144db39e984ec37a09ca515daafd",
+   "reason": "manuscript sources/figures/tables"
+  },
+  {
+   "old": "manuscript_acs/reports/JCIM_15_issue_remediation_matrix.md",
+   "new": "reports/history/manuscript_audits/15_issue_remediation_matrix.md",
+   "sha256": "f12affa58fd289ef76caf43402c526d54a45fa4c06d04787fe16bec6c390b8eb",
+   "reason": "historical manuscript audit record, moved out of manuscript/ in the minimization pass"
+  },
+  {
+   "old": "manuscript_acs/reports/JCIM_final_pre_submission_audit.md",
+   "new": "reports/history/manuscript_audits/final_pre_submission_audit.md",
+   "sha256": "69987a6bed0b2bd9a557fb55801171aec54b3e9ee3b114f9ad83b912e8aa6e6a",
+   "reason": "historical manuscript audit record, moved out of manuscript/ in the minimization pass"
+  },
+  {
+   "old": "manuscript_acs/reports/JCIM_four_layer_validation_report.md",
+   "new": "reports/history/manuscript_audits/four_layer_validation_report.md",
+   "sha256": "ffd14d3a21b95778e318d61c2bc8d0942f88c4de61c0ff95d3b603a4ebb7f074",
+   "reason": "historical manuscript audit record, moved out of manuscript/ in the minimization pass"
+  },
+  {
+   "old": "manuscript_acs/reports/JCIM_integrity_closure_report.md",
+   "new": "reports/history/manuscript_audits/integrity_closure_report.md",
+   "sha256": "a1949b71efd84ba57dd002dec9f586355bd4fcbb7a899b3efc67dd1af1ffb3e6",
+   "reason": "historical manuscript audit record, moved out of manuscript/ in the minimization pass"
+  },
+  {
+   "old": "manuscript_acs/reproducibility/data_manifests/hargreaves_conductivity.json",
+   "new": "manuscript/reproducibility/data_manifests/hargreaves_conductivity.json",
+   "sha256": "7584882d388ceffe208db41f72d6731ea122d70dfd54c442abb79a003ce543d6",
+   "reason": "manuscript sources/figures/tables; removed in the evidence-backed minimization pass (no active reference; superseded or untrusted); preserved in git history at commit 4348ef6 under the old path",
+   "removed": true
+  },
+  {
+   "old": "manuscript_acs/reproducibility/data_manifests/npj_external_cohort.json",
+   "new": "manuscript/reproducibility/data_manifests/external_cohort.json",
+   "sha256": "a503b5cb39c17fb0bd23de639f4ac96a63e39f79d6a9c6e3f8f0a1eb8f8543e6",
+   "reason": "manuscript sources/figures/tables; removed in the evidence-backed minimization pass (no active reference; superseded or untrusted); preserved in git history at commit 4348ef6 under the old path",
+   "removed": true
+  },
+  {
+   "old": "manuscript_acs/reproducibility/data_manifests/obelix.json",
+   "new": "manuscript/reproducibility/data_manifests/obelix.json",
+   "sha256": "998629fd2ed22bc8c48592c2fd15cbf7ea5cd0a8864536a69cb424bee1112525",
+   "reason": "manuscript sources/figures/tables; removed in the evidence-backed minimization pass (no active reference; superseded or untrusted); preserved in git history at commit 4348ef6 under the old path",
+   "removed": true
+  },
+  {
+   "old": "manuscript_acs/source/00_acs_main.md",
+   "new": "manuscript/source/00_main.md",
+   "sha256": "b6a4b86d179b8bd37e40c8e4cbde63b79cb0607c7ac29e567eadb0b973c9d804",
+   "reason": "main manuscript source"
+  },
+  {
+   "old": "manuscript_acs/source/01_acs_si.md",
+   "new": "manuscript/source/01_si.md",
+   "sha256": "90a9d236249b3f91e4338bb620cfe6e2557251ab43b0670f7b8a72cbc992cf2f",
+   "reason": "SI source"
+  },
+  {
+   "old": "manuscript_acs/submission/JCIM_Cover_Letter.docx",
+   "new": "manuscript/reference_submission/Cover_Letter.docx",
+   "sha256": "778f4b9fd5abe64e31517459b78b96041879f5bc28db3885529230a78d633214",
+   "reason": "prior submission build, style reference; removed after the regenerated submission documents and builders replaced it (no active reference); preserved in git history at commit 4348ef6 under the old path",
+   "removed": true
+  },
+  {
+   "old": "manuscript_acs/submission/JCIM_Cover_Letter_source.md",
+   "new": "manuscript/reference_submission/Cover_Letter_source.md",
+   "sha256": "a39853386874a6e2d2ccb56a0de6cc376fd630adbc6d46b3b20fbd87f58334bf",
+   "reason": "prior submission build, style reference; removed after the regenerated submission documents and builders replaced it (no active reference); preserved in git history at commit 4348ef6 under the old path",
+   "removed": true
+  },
+  {
+   "old": "manuscript_acs/submission/JCIM_Data_and_Code_Availability.docx",
+   "new": "manuscript/reference_submission/Data_and_Code_Availability.docx",
+   "sha256": "0841a168e0443887267512fc3469abef3f5aa73615c398bfbe7bce6461743456",
+   "reason": "prior submission build, style reference; removed after the regenerated submission documents and builders replaced it (no active reference); preserved in git history at commit 4348ef6 under the old path",
+   "removed": true
+  },
+  {
+   "old": "manuscript_acs/submission/JCIM_Data_and_Code_Availability_source.md",
+   "new": "manuscript/reference_submission/Data_and_Code_Availability_source.md",
+   "sha256": "a755ccd8d9da54011fdffe2ab3a6c5b6e4a2334ba657c7a7ef25e0169df15e39",
+   "reason": "prior submission build, style reference; removed after the regenerated submission documents and builders replaced it (no active reference); preserved in git history at commit 4348ef6 under the old path",
+   "removed": true
+  },
+  {
+   "old": "manuscript_acs/submission/JCIM_Main_Manuscript.docx",
+   "new": "manuscript/reference_submission/Main_Manuscript.docx",
+   "sha256": "cbc3c86b3ee92e4fd8bde9ac4a215e181975cf233966eecc1877cf3905552d8a",
+   "reason": "prior submission build, style reference; removed after the regenerated submission documents and builders replaced it (no active reference); preserved in git history at commit 4348ef6 under the old path",
+   "removed": true
+  },
+  {
+   "old": "manuscript_acs/submission/JCIM_Main_Manuscript.pdf",
+   "new": "manuscript/reference_submission/Main_Manuscript.pdf",
+   "sha256": "8478a789b0cb524b82ed861a55c47d736500616ffa283f66c9aadf5ed4f593e3",
+   "reason": "prior submission build, style reference; removed after the regenerated submission documents and builders replaced it (no active reference); preserved in git history at commit 4348ef6 under the old path",
+   "removed": true
+  },
+  {
+   "old": "manuscript_acs/submission/JCIM_Reproducibility_and_Provenance_Summary.docx",
+   "new": "manuscript/reference_submission/Reproducibility_and_Provenance_Summary.docx",
+   "sha256": "75396e0402be9ede4ee8a40cf2fe4bfe10c3012c2855e8dcfb6637e2990e11be",
+   "reason": "prior submission build, style reference; removed after the regenerated submission documents and builders replaced it (no active reference); preserved in git history at commit 4348ef6 under the old path",
+   "removed": true
+  },
+  {
+   "old": "manuscript_acs/submission/JCIM_Reproducibility_and_Provenance_Summary_source.md",
+   "new": "manuscript/reference_submission/Reproducibility_and_Provenance_Summary_source.md",
+   "sha256": "7643e71579c7bd04a3813273fa3c5d51c069528ccd2521b2f673cfe783b80980",
+   "reason": "prior submission build, style reference; removed after the regenerated submission documents and builders replaced it (no active reference); preserved in git history at commit 4348ef6 under the old path",
+   "removed": true
+  },
+  {
+   "old": "manuscript_acs/submission/JCIM_Supplementary_Information.docx",
+   "new": "manuscript/reference_submission/Supplementary_Information.docx",
+   "sha256": "3e47dc90d6b0d79158926b84036cae9a918915fccfc6a566a4ba94bd8b79ee0d",
+   "reason": "prior submission build, style reference; removed after the regenerated submission documents and builders replaced it (no active reference); preserved in git history at commit 4348ef6 under the old path",
+   "removed": true
+  },
+  {
+   "old": "manuscript_acs/submission/JCIM_Supplementary_Information.pdf",
+   "new": "manuscript/reference_submission/Supplementary_Information.pdf",
+   "sha256": "50ca6467a90811f31b6a2bce43a6f626fcbc6ac989d10adf4cbe49c984af2601",
+   "reason": "prior submission build, style reference; removed after the regenerated submission documents and builders replaced it (no active reference); preserved in git history at commit 4348ef6 under the old path",
+   "removed": true
+  },
+  {
+   "old": "manuscript_acs/submission/contact_sheets/JCIM_Main_Manuscript_sheet00_pages1-6.png",
+   "new": "manuscript/reference_submission/contact_sheets/Main_Manuscript_sheet00_pages1-6.png",
+   "sha256": "33ef6a9f8c89411673da0e99d2ed77edabd80cf0541ccb238a92682fc8702a51",
+   "reason": "prior submission build, style reference; removed after the regenerated submission documents and builders replaced it (no active reference); preserved in git history at commit 4348ef6 under the old path",
+   "removed": true
+  },
+  {
+   "old": "manuscript_acs/submission/contact_sheets/JCIM_Main_Manuscript_sheet01_pages7-12.png",
+   "new": "manuscript/reference_submission/contact_sheets/Main_Manuscript_sheet01_pages7-12.png",
+   "sha256": "812ec44e7f4e60659d6f2790452f8e5c015804df312408a8e52ee64b9821fe3a",
+   "reason": "prior submission build, style reference; removed after the regenerated submission documents and builders replaced it (no active reference); preserved in git history at commit 4348ef6 under the old path",
+   "removed": true
+  },
+  {
+   "old": "manuscript_acs/submission/contact_sheets/JCIM_Main_Manuscript_sheet02_pages13-18.png",
+   "new": "manuscript/reference_submission/contact_sheets/Main_Manuscript_sheet02_pages13-18.png",
+   "sha256": "b7cd6eb741aa18f9d5797df8ce0218203ceadb0f4535eda369d6832ec430761a",
+   "reason": "prior submission build, style reference; removed after the regenerated submission documents and builders replaced it (no active reference); preserved in git history at commit 4348ef6 under the old path",
+   "removed": true
+  },
+  {
+   "old": "manuscript_acs/submission/contact_sheets/JCIM_Main_Manuscript_sheet03_pages19-24.png",
+   "new": "manuscript/reference_submission/contact_sheets/Main_Manuscript_sheet03_pages19-24.png",
+   "sha256": "c93b435d1b60f866dd89a75aec23d3867b0a4b9a63862c6c983b459be92e8610",
+   "reason": "prior submission build, style reference; removed after the regenerated submission documents and builders replaced it (no active reference); preserved in git history at commit 4348ef6 under the old path",
+   "removed": true
+  },
+  {
+   "old": "manuscript_acs/submission/contact_sheets/JCIM_Main_Manuscript_sheet04_pages25-28.png",
+   "new": "manuscript/reference_submission/contact_sheets/Main_Manuscript_sheet04_pages25-28.png",
+   "sha256": "badc95552601ea44bc391a4f024db679dd5457b7a65da42e36d1a242c459a4bb",
+   "reason": "prior submission build, style reference; removed after the regenerated submission documents and builders replaced it (no active reference); preserved in git history at commit 4348ef6 under the old path",
+   "removed": true
+  },
+  {
+   "old": "manuscript_acs/submission/contact_sheets/JCIM_Supplementary_Information_sheet00_pages1-6.png",
+   "new": "manuscript/reference_submission/contact_sheets/Supplementary_Information_sheet00_pages1-6.png",
+   "sha256": "ffc59e752b21f237e4926be3a820036930a64572612c565173ad3ab222bb81c6",
+   "reason": "prior submission build, style reference; removed after the regenerated submission documents and builders replaced it (no active reference); preserved in git history at commit 4348ef6 under the old path",
+   "removed": true
+  },
+  {
+   "old": "manuscript_acs/submission/contact_sheets/JCIM_Supplementary_Information_sheet01_pages7-12.png",
+   "new": "manuscript/reference_submission/contact_sheets/Supplementary_Information_sheet01_pages7-12.png",
+   "sha256": "1c0f8c87be9801c5c614d7c068648a2f0d65762766c367da03a7c07a93d9427b",
+   "reason": "prior submission build, style reference; removed after the regenerated submission documents and builders replaced it (no active reference); preserved in git history at commit 4348ef6 under the old path",
+   "removed": true
+  },
+  {
+   "old": "manuscript_acs/submission/contact_sheets/JCIM_Supplementary_Information_sheet02_pages13-18.png",
+   "new": "manuscript/reference_submission/contact_sheets/Supplementary_Information_sheet02_pages13-18.png",
+   "sha256": "b8831afa001632cedda076ebdc2d3bd744569e52c25dfecca0d4426f83fc4694",
+   "reason": "prior submission build, style reference; removed after the regenerated submission documents and builders replaced it (no active reference); preserved in git history at commit 4348ef6 under the old path",
+   "removed": true
+  },
+  {
+   "old": "manuscript_acs/submission/contact_sheets/JCIM_Supplementary_Information_sheet03_pages19-24.png",
+   "new": "manuscript/reference_submission/contact_sheets/Supplementary_Information_sheet03_pages19-24.png",
+   "sha256": "445489fed08f705eb34606fa3ae1725c110b5e19890fd9153c5a76f45f179166",
+   "reason": "prior submission build, style reference; removed after the regenerated submission documents and builders replaced it (no active reference); preserved in git history at commit 4348ef6 under the old path",
+   "removed": true
+  },
+  {
+   "old": "manuscript_acs/submission/contact_sheets/JCIM_Supplementary_Information_sheet04_pages25-29.png",
+   "new": "manuscript/reference_submission/contact_sheets/Supplementary_Information_sheet04_pages25-29.png",
+   "sha256": "a729ceea59065d97f894c71cf1fe497e2de7021b786b10ed8c17faddfde3401c",
+   "reason": "prior submission build, style reference; removed after the regenerated submission documents and builders replaced it (no active reference); preserved in git history at commit 4348ef6 under the old path",
+   "removed": true
+  },
+  {
+   "old": "manuscript_acs/tables/table1_cohorts.csv",
+   "new": "manuscript/tables/table1_cohorts.csv",
+   "sha256": "dd00990d929b5e5a062537c0968a82ccad3a026feb265278aab3daf1fa591e93",
+   "reason": "manuscript sources/figures/tables"
+  },
+  {
+   "old": "manuscript_acs/tables/table2a_regime_comparison.csv",
+   "new": "manuscript/tables/table2a_regime_comparison.csv",
+   "sha256": "f04d5a38548d5e7f098aec441a0fcb4aeb39c7cc71cca70744140b31248990fc",
+   "reason": "stale generated table holding pre-correction values; replaced by scripts/manuscript/build_tables.py outputs (table2_regime_utility.csv, table3_pairwise_deltas.csv, table4_deployment_subset_mae.csv); prior bytes preserved in git history at commit 4348ef6 under the old path",
+   "removed": true
+  },
+  {
+   "old": "manuscript_acs/tables/table2b_pairwise_deltas.csv",
+   "new": "manuscript/tables/table2b_pairwise_deltas.csv",
+   "sha256": "bb075b055d027cbe0c45e3edeb5c510fc6d96b87b30aaae8efbda00af4dde676",
+   "reason": "stale generated table holding pre-correction values; replaced by scripts/manuscript/build_tables.py outputs (table2_regime_utility.csv, table3_pairwise_deltas.csv, table4_deployment_subset_mae.csv); prior bytes preserved in git history at commit 4348ef6 under the old path",
+   "removed": true
+  },
+  {
+   "old": "manuscript_acs/tables/table3_subset_mae.csv",
+   "new": "manuscript/tables/table3_subset_mae.csv",
+   "sha256": "f7fda6310722b8bbaf691da9627080ff748447f1ef37f1de4a8a776ffe7a0d3f",
+   "reason": "stale generated table holding pre-correction values; replaced by scripts/manuscript/build_tables.py outputs (table2_regime_utility.csv, table3_pairwise_deltas.csv, table4_deployment_subset_mae.csv); prior bytes preserved in git history at commit 4348ef6 under the old path",
+   "removed": true
+  },
+  {
+   "old": "reports/acs/corrective01_impact_map.md",
+   "new": "reports/remediation/corrective01_impact_map.md",
+   "sha256": "df4e655b638967b11ce1a6aa112b4b53c4a71498135fbc9d966cfb610bfa3efe",
+   "reason": "post hoc remediation reports/specs"
+  },
+  {
+   "old": "reports/acs/corrective01_phase2_verification.md",
+   "new": "reports/remediation/corrective01_phase2_verification.md",
+   "sha256": "a287bdeb8056dd91e53e1b5b8104ee11a440f4958cbcc7eebd372317bc3684cf",
+   "reason": "post hoc remediation reports/specs"
+  },
+  {
+   "old": "reports/acs/corrective01_phase5_old_vs_corrected.md",
+   "new": "reports/remediation/corrective01_phase5_old_vs_corrected.md",
+   "sha256": "b62df76b9320e88875bb484d58f29b3b1fcbfb9e3268af8822a67e88347ba721",
+   "reason": "post hoc remediation reports/specs"
+  },
+  {
+   "old": "reports/acs/corrective01_reports/acs03_common_support_lomfo_corrected.md",
+   "new": "reports/remediation/corrective01_reports/issue03_common_support_lomfo_corrected.md",
+   "sha256": "1d9b64ce2aa9e9d1c6ea026fe0f2e030737ad14e1734be86edcd97f05f168bff",
+   "reason": "corrected-analysis reports"
+  },
+  {
+   "old": "reports/acs/corrective01_reports/acs04_size_matched_control_corrected.md",
+   "new": "reports/remediation/corrective01_reports/issue04_size_matched_control_corrected.md",
+   "sha256": "1a45d6dbc47e16c3d3cfc090ee3a4d77d6db8011fdceb9c25899dca705c2ce21",
+   "reason": "corrected-analysis reports"
+  },
+  {
+   "old": "reports/acs/corrective01_reports/acs06_doi_cluster_bootstrap_corrected.md",
+   "new": "reports/remediation/corrective01_reports/issue06_doi_cluster_bootstrap_corrected.md",
+   "sha256": "0834b596d2870af065fbda8b2c0448f26eb12936a5fa5fca29a5812ff5c546f9",
+   "reason": "corrected-analysis reports"
+  },
+  {
+   "old": "reports/acs/corrective01_reports/acs08b_chemical_system_groupkfold_corrected.md",
+   "new": "reports/remediation/corrective01_reports/issue08b_chemical_system_groupkfold_corrected.md",
+   "sha256": "12d36abd82c684e6cf2d06911913a7db4b2192232a53e3633fef1afb77ba5410",
+   "reason": "corrected-analysis reports"
+  },
+  {
+   "old": "reports/acs/corrective01_reports/acs08b_regime_utility_corrected.md",
+   "new": "reports/remediation/corrective01_reports/issue08b_regime_utility_corrected.md",
+   "sha256": "39e0bb6d3335372d4d4c125d36938078d55c75cff47bc599e7c708ba54b90155",
+   "reason": "corrected-analysis reports"
+  },
+  {
+   "old": "reports/acs/corrective01_reports/acs09a_missing_family_excluded_corrected.md",
+   "new": "reports/remediation/corrective01_reports/issue09a_missing_family_excluded_corrected.md",
+   "sha256": "303843a202bce56e4bb5823225327c7791e08bcaa1c26889a2783c3ff406b547",
+   "reason": "corrected-analysis reports"
+  },
+  {
+   "old": "reports/acs/corrective01_reports/acs09b_missing_singleton_groupkfold_corrected.md",
+   "new": "reports/remediation/corrective01_reports/issue09b_missing_singleton_groupkfold_corrected.md",
+   "sha256": "3c53362622908a9a4a1fc98ee6360fbb58e86834a5e8fbc89b30730f81bfa640",
+   "reason": "corrected-analysis reports"
+  },
+  {
+   "old": "reports/acs/corrective01_reports/issue10_formula_balanced_sensitivity_corrected.md",
+   "new": "reports/remediation/corrective01_reports/issue10_formula_balanced_sensitivity_corrected.md",
+   "sha256": "52f95323d7f50e36935f29cb21c97673290322f72635729e7290dcbe5244ca7d",
+   "reason": "corrected-analysis reports"
+  },
+  {
+   "old": "reports/acs/corrective01_reports/n15_reviewer_remediation_corrected.md",
+   "new": "reports/remediation/corrective01_reports/n15_reviewer_remediation_corrected.md",
+   "sha256": "4a4aa27710db7755d9560fb8d12c51552c8ec8e6a9462016edf210a92da5bc53",
+   "reason": "corrected-analysis reports"
+  },
+  {
+   "old": "reports/acs/corrective01_reports/n20b_formula_group_kfold_corrected.md",
+   "new": "reports/remediation/corrective01_reports/n20b_formula_group_kfold_corrected.md",
+   "sha256": "1ac1873c01f1a0cc8cb9611f9e4b0dd28880a802ed8c4d784298761084a726a0",
+   "reason": "corrected-analysis reports"
+  },
+  {
+   "old": "reports/acs/corrective01_reports/n21_repeated_cv_sensitivity_corrected.md",
+   "new": "reports/remediation/corrective01_reports/n21_repeated_cv_sensitivity_corrected.md",
+   "sha256": "ceaaba0e5780e713d8cc2ce6bf51488d1a359742b92536a4effcfa837d11227a",
+   "reason": "corrected-analysis reports"
+  },
+  {
+   "old": "reports/acs/corrective01_reports/n21c_primary_external_context_corrected.md",
+   "new": "reports/remediation/corrective01_reports/n21c_primary_external_context_corrected.md",
+   "sha256": "fcf9a38bd1daeb025ba0d4d92f9258073629a0d85702971d418c6966fbc8fba1",
+   "reason": "corrected-analysis reports"
+  },
+  {
+   "old": "reports/acs/corrective01_reports/n21d_ad_benchmark_closure_corrected.md",
+   "new": "reports/remediation/corrective01_reports/n21d_ad_benchmark_closure_corrected.md",
+   "sha256": "6f953291bade494a4fc2095bcedf9c403860ca2244974e001ebc08055fd00412",
+   "reason": "corrected-analysis reports"
+  },
+  {
+   "old": "reports/acs/corrective01_reports/n4b_nested_internal_validation_corrected.md",
+   "new": "reports/remediation/corrective01_reports/n4b_nested_internal_validation_corrected.md",
+   "sha256": "47869223f9a031e26c5bf7e438d4d6c0b0e90a674b99e2dc2e7c29e45d5cdaab",
+   "reason": "corrected-analysis reports"
+  },
+  {
+   "old": "reports/acs/corrective01_reports/n7b_regime_utility_nested_corrected.md",
+   "new": "reports/remediation/corrective01_reports/n7b_regime_utility_nested_corrected.md",
+   "sha256": "c3e9a2194940a006d3ec0174cfc980067eb4730296ed91ea8a2fcfd04e2f35d1",
+   "reason": "corrected-analysis reports"
+  },
+  {
+   "old": "reports/acs/corrective01_reports/n8_applicability_domain_corrected.md",
+   "new": "reports/remediation/corrective01_reports/n8_applicability_domain_corrected.md",
+   "sha256": "1cf5b8eb3fa81d3c4c9e05f2cda3a2ea4311171c3a590b62d6507d5f677033fb",
+   "reason": "corrected-analysis reports"
+  },
+  {
+   "old": "reports/acs/corrective01_reports/n9b_relaxed_sensitivity_nested_corrected.md",
+   "new": "reports/remediation/corrective01_reports/n9b_relaxed_sensitivity_nested_corrected.md",
+   "sha256": "d8926078bd9ff769e5a458a8067f74cc9e78f9e7a60c692b060e0f40d56b1a3a",
+   "reason": "corrected-analysis reports"
+  },
+  {
+   "old": "reports/acs/issue01_provenance_consistency.md",
+   "new": "reports/remediation/issue01_provenance_consistency.md",
+   "sha256": "f6c1661715bb5951fd81b66bf1248288960e4b80cf81d53dd8117021ef2b463a",
+   "reason": "post hoc remediation reports/specs"
+  },
+  {
+   "old": "reports/acs/issue03_common_support_lomfo.md",
+   "new": "reports/remediation/issue03_common_support_lomfo.md",
+   "sha256": "b2050b692d0625ffe422387b42ee9e92278786fc9f16d63f44255c9128447373",
+   "reason": "post hoc remediation reports/specs"
+  },
+  {
+   "old": "reports/acs/issue04_training_size_matched_control.md",
+   "new": "reports/remediation/issue04_training_size_matched_control.md",
+   "sha256": "d9894d3e1f435184be0bc8005ad79ed9a4c043d4d598ffddfccc40f335e3b871",
+   "reason": "post hoc remediation reports/specs"
+  },
+  {
+   "old": "reports/acs/issue05_fold_local_shift_distance.md",
+   "new": "reports/remediation/issue05_fold_local_shift_distance.md",
+   "sha256": "a68dd53cab67ee7743cbb7b8edc5993bb90f2d682a867ca60627d871c872a98c",
+   "reason": "post hoc remediation reports/specs"
+  },
+  {
+   "old": "reports/acs/issue06_doi_cluster_bootstrap.md",
+   "new": "reports/remediation/issue06_doi_cluster_bootstrap.md",
+   "sha256": "e65fa575ddf696a602ffdfd48e5248de9875e697b440bc9d52a698f149e35341",
+   "reason": "post hoc remediation reports/specs"
+  },
+  {
+   "old": "reports/acs/issue08a_wording_fix.md",
+   "new": "reports/remediation/issue08a_wording_fix.md",
+   "sha256": "797e5dcc6621838e218088b960ad9d7fe64b826bbf94d65d1a1823e2a75b702e",
+   "reason": "post hoc remediation reports/specs"
+  },
+  {
+   "old": "reports/acs/issue08b_chemical_system_groupkfold.md",
+   "new": "reports/remediation/issue08b_chemical_system_groupkfold.md",
+   "sha256": "dba9ba0947727b598bda1a714c4668122072fe27c7fba94a4df0c2b68cd4fd57",
+   "reason": "post hoc remediation reports/specs"
+  },
+  {
+   "old": "reports/acs/issue09_missing_family_sensitivity.md",
+   "new": "reports/remediation/issue09_missing_family_sensitivity.md",
+   "sha256": "dad0c6714dfbdfead4e8a105497f2c99e51e5af6c1e5e86bb5c0ced7992c63f0",
+   "reason": "post hoc remediation reports/specs"
+  },
+  {
+   "old": "reports/acs/issue09b_missing_singleton_groupkfold.md",
+   "new": "reports/remediation/issue09b_missing_singleton_groupkfold.md",
+   "sha256": "737c80a2ffa9d6227bea745f9caa087823b4a73a3241a92bf8b26f2657c2ff08",
+   "reason": "post hoc remediation reports/specs"
+  },
+  {
+   "old": "reports/acs/issue10_formula_balanced_sensitivity.md",
+   "new": "reports/remediation/issue10_formula_balanced_sensitivity.md",
+   "sha256": "e8cea2a04cade2a757969f7182bc7580cf0a30a3252cf22ad92ca49928d47b94",
+   "reason": "post hoc remediation reports/specs"
+  },
+  {
+   "old": "reports/acs/issue13_protocol_timestamp_provenance.md",
+   "new": "reports/remediation/issue13_protocol_timestamp_provenance.md",
+   "sha256": "55f4d7b3c4d1d60d46534a9e2bc1634b2e6ba0e9b23aacadb21a90ed236b4862",
+   "reason": "post hoc remediation reports/specs"
+  },
+  {
+   "old": "reports/acs/issue14_licence_redistribution_audit.md",
+   "new": "reports/remediation/issue14_licence_redistribution_audit.md",
+   "sha256": "5cb2196ea56befea31945ffec26e050ce84c0d91f873e5b929fd89ae863f906a",
+   "reason": "post hoc remediation reports/specs"
+  },
+  {
+   "old": "reports/acs/issue15_availability_and_ai_disclosure.md",
+   "new": "reports/remediation/issue15_availability_and_ai_disclosure.md",
+   "sha256": "06ad1cd0747a7d49b8e1ffd9be39279b1b5e114442e3487a360df27a3468091b",
+   "reason": "post hoc remediation reports/specs"
+  },
+  {
+   "old": "reports/acs/issues_verify_only.md",
+   "new": "reports/remediation/issues_verify_only.md",
+   "sha256": "c3589f11f698ea20b87ae9cbeded6bdb1f848c2b4f45631c00eae22a337f49b1",
+   "reason": "post hoc remediation reports/specs"
+  },
+  {
+   "old": "reports/acs/phase0_foundation.md",
+   "new": "reports/remediation/phase0_foundation.md",
+   "sha256": "a57677b4243ef45974c501aff0e67caa0921535ccae3c2220e1182fa21de0059",
+   "reason": "post hoc remediation reports/specs"
+  },
+  {
+   "old": "reports/acs/specs/HASHES.txt",
+   "new": "reports/remediation/specs/HASHES.txt",
+   "sha256": "ab3f847c189227126a342092a431986203ef74e5124c0b6e31f3c39178e5c866",
+   "reason": "post hoc remediation reports/specs"
+  },
+  {
+   "old": "reports/acs/specs/corrective01_pretrained_element_embedding_bugfix.md",
+   "new": "reports/remediation/specs/corrective01_pretrained_element_embedding_bugfix.md",
+   "sha256": "88a9fd58ead09cd856b4c32efebcb6656ba855eb44c3b92f36c6491b6ecc6707",
+   "reason": "post hoc remediation reports/specs"
+  },
+  {
+   "old": "reports/acs/specs/issue03_common_support_lomfo.md",
+   "new": "reports/remediation/specs/issue03_common_support_lomfo.md",
+   "sha256": "238f331deb40a70041e70642347d457022ff3a95689c739d967c768c265b141d",
+   "reason": "post hoc remediation reports/specs"
+  },
+  {
+   "old": "reports/acs/specs/issue04_training_size_matched_control.md",
+   "new": "reports/remediation/specs/issue04_training_size_matched_control.md",
+   "sha256": "5bf47b8fbb3aca4fafceaca6e4e915401170af38d4c4e5a17d2c219f1516c28f",
+   "reason": "post hoc remediation reports/specs"
+  },
+  {
+   "old": "reports/acs/specs/issue05_fold_local_shift_distance.md",
+   "new": "reports/remediation/specs/issue05_fold_local_shift_distance.md",
+   "sha256": "13562a57c337e31b3d8eab9936f68102658468e299bcfc71b8596e9076352e5f",
+   "reason": "post hoc remediation reports/specs"
+  },
+  {
+   "old": "reports/acs/specs/issue06_doi_cluster_bootstrap.md",
+   "new": "reports/remediation/specs/issue06_doi_cluster_bootstrap.md",
+   "sha256": "d0609fd33744e4f37e5c33305c9cdeececfb3edd46202fa8bc0bfc1002137006",
+   "reason": "post hoc remediation reports/specs"
+  },
+  {
+   "old": "reports/acs/specs/issue08b_chemical_system_groupkfold.md",
+   "new": "reports/remediation/specs/issue08b_chemical_system_groupkfold.md",
+   "sha256": "e3cc28f632d8b65553c7824bc32454abc20c19a93b780c86b9813505cddfea24",
+   "reason": "post hoc remediation reports/specs"
+  },
+  {
+   "old": "reports/acs/specs/issue09_missing_family_sensitivity.md",
+   "new": "reports/remediation/specs/issue09_missing_family_sensitivity.md",
+   "sha256": "e096b455062bd96562a4d7b05f057a23c9c16c2ddfca44d71dd7703f77acd611",
+   "reason": "post hoc remediation reports/specs"
+  },
+  {
+   "old": "reports/acs/specs/issue10_formula_balanced_sensitivity.md",
+   "new": "reports/remediation/specs/issue10_formula_balanced_sensitivity.md",
+   "sha256": "1d1caae2f3c4e71ba4c79a9e5368b6fcb9e497714659358efe62557966bc8d61",
+   "reason": "post hoc remediation reports/specs"
+  },
+  {
+   "old": "reports/acs/verification_evidence/ridge__seed20260930__original.json",
+   "new": "reports/remediation/verification_evidence/ridge__seed20260930__original.json",
+   "sha256": "7c7053d2859723946f32f0ab7cfb004cb484bd594a3606a6f8386bfbf569d7ed",
+   "reason": "post hoc remediation reports/specs"
+  },
+  {
+   "old": "reports/acs/verification_evidence/ridge__seed20260930__rerun.json",
+   "new": "reports/remediation/verification_evidence/ridge__seed20260930__rerun.json",
+   "sha256": "cb111bfb358f20e343bb11148e26c237ea21d4a689b01f2e7ac9229eb74a8e23",
+   "reason": "post hoc remediation reports/specs"
+  },
+  {
+   "old": "reports/acs/verification_evidence/shallow_mlp__seed20260930__original.json",
+   "new": "reports/remediation/verification_evidence/shallow_mlp__seed20260930__original.json",
+   "sha256": "31847b37df8369869665f6bf3e06d21e2209616cf9ce0cd301eb4dfb7dcb3a47",
+   "reason": "post hoc remediation reports/specs"
+  },
+  {
+   "old": "reports/acs/verification_evidence/shallow_mlp__seed20260930__rerun.json",
+   "new": "reports/remediation/verification_evidence/shallow_mlp__seed20260930__rerun.json",
+   "sha256": "ab5213ccd615c62681bf73d54b480e167c5b542377ff69841ffa1ee22ead001d",
+   "reason": "post hoc remediation reports/specs"
+  },
+  {
+   "old": "reports/acs_jcim_legacy_reference_allowlist.md",
+   "new": "reports/history/legacy_reference_allowlist.md",
+   "sha256": "e082447c9f8a393aba1bebb267d47f75a928eee3c56e8655925fae5f064f1cdb",
+   "reason": "earlier repository-migration records"
+  },
+  {
+   "old": "reports/acs_jcim_repo_migration_audit.md",
+   "new": "reports/history/repo_migration_audit.md",
+   "sha256": "a65868e51b8858184539cc1d706a0e9b4e38aa72a889b6836678066beecd74c7",
+   "reason": "earlier repository-migration records"
+  },
+  {
+   "old": "reports/acs_jcim_repo_migration_final.md",
+   "new": "reports/history/repo_migration_final.md",
+   "sha256": "0cfd06ffb8f7f446d3a77c95a3eb703a37b96b838dcadf46dac7070f32c84c96",
+   "reason": "earlier repository-migration records"
+  },
+  {
+   "old": "reports/npj/n0_preserve_baseline.md",
+   "new": "reports/cross_dataset_study/n0_preserve_baseline.md",
+   "sha256": "9eead7bd7fb35a4264898e30d728c8e6d82ae70b2f223180a017b8bb4d16eb1d",
+   "reason": "study phase reports N0-N21"
+  },
+  {
+   "old": "reports/npj/n10_go_no_go.md",
+   "new": "reports/cross_dataset_study/n10_go_no_go.md",
+   "sha256": "62b9252869813a92636c0b000a0cbae241ac1492221384ff7617051080a713a1",
+   "reason": "study phase reports N0-N21"
+  },
+  {
+   "old": "reports/npj/n11_literature_positioning.md",
+   "new": "reports/cross_dataset_study/n11_literature_positioning.md",
+   "sha256": "eb59a91e9f01407723912194f2648d9aac732a600f859ab2ee3cd02a2b66b6d2",
+   "reason": "study phase reports N0-N21"
+  },
+  {
+   "old": "reports/npj/n12_four_layer_validation.md",
+   "new": "reports/cross_dataset_study/n12_four_layer_validation.md",
+   "sha256": "9f10d86fc9c8ecf19b70d08635758fb40704deab29608fd5a7c2e985a7f8f25f",
+   "reason": "study phase reports N0-N21"
+  },
+  {
+   "old": "reports/npj/n13_final_status.md",
+   "new": "reports/cross_dataset_study/n13_final_status.md",
+   "sha256": "753edaa805475d759e9ae61f9a837bdb72538acea536888033c82ed8e486021a",
+   "reason": "study phase reports N0-N21"
+  },
+  {
+   "old": "reports/npj/n14_final_submission_fix.md",
+   "new": "reports/cross_dataset_study/n14_final_submission_fix.md",
+   "sha256": "41276718efcae23fa39e2751126dd245ed380bdf5d0da501d8b726f3318be8ad",
+   "reason": "study phase reports N0-N21"
+  },
+  {
+   "old": "reports/npj/n15_reviewer_remediation.md",
+   "new": "reports/cross_dataset_study/n15_reviewer_remediation.md",
+   "sha256": "4f94c6807169d3174e1643ba0873f81ef829e72c42ba8c62f1dbc8ad08f15d32",
+   "reason": "study phase reports N0-N21"
+  },
+  {
+   "old": "reports/npj/n16_manuscript_and_figures.md",
+   "new": "reports/cross_dataset_study/n16_manuscript_and_figures.md",
+   "sha256": "1a8beac5253f088dedc3f437b16afe538489c2130e50bc79bc7cc16439ab165f",
+   "reason": "study phase reports N0-N21"
+  },
+  {
+   "old": "reports/npj/n17_docx_submission_qa.md",
+   "new": "reports/cross_dataset_study/n17_docx_submission_qa.md",
+   "sha256": "a45e012b76e6621ccfb18a26d1614a2ee9b277bfcb9d2029b3d98ee450021923",
+   "reason": "study phase reports N0-N21"
+  },
+  {
+   "old": "reports/npj/n18_final_referee_semantic_audit.md",
+   "new": "reports/cross_dataset_study/n18_final_referee_semantic_audit.md",
+   "sha256": "cb2183751e3033b3a6ffac3c84c9f992af339b034236954652ddc9fc7cae581b",
+   "reason": "study phase reports N0-N21"
+  },
+  {
+   "old": "reports/npj/n1_external_data_audit.md",
+   "new": "reports/cross_dataset_study/n1_external_data_audit.md",
+   "sha256": "f92b0179b283fb25e0ddd199a6b762de1ee7a6a52861c58c37d8315860b0ec9b",
+   "reason": "study phase reports N0-N21"
+  },
+  {
+   "old": "reports/npj/n1b_403_reconciliation.md",
+   "new": "reports/cross_dataset_study/n1b_403_reconciliation.md",
+   "sha256": "274f23d0ed0d8c6897f49af301f60a73aae77cc85098c9f34ac7f98718a5f82d",
+   "reason": "study phase reports N0-N21"
+  },
+  {
+   "old": "reports/npj/n20b_formula_group_kfold.md",
+   "new": "reports/cross_dataset_study/n20b_formula_group_kfold.md",
+   "sha256": "86669bba390043a83811d99a31360d2aadbd5fac8ae4e2152bcc39bcab8fdb40",
+   "reason": "study phase reports N0-N21"
+  },
+  {
+   "old": "reports/npj/n21_final_reviewer_closure.md",
+   "new": "reports/cross_dataset_study/n21_final_reviewer_closure.md",
+   "sha256": "9792b5297bf7730202135ab97ef536bd54231f5e4218982e2a51d57a23665d90",
+   "reason": "study phase reports N0-N21"
+  },
+  {
+   "old": "reports/npj/n21b_repeated_cv_sensitivity.md",
+   "new": "reports/cross_dataset_study/n21b_repeated_cv_sensitivity.md",
+   "sha256": "e32b172612136622f67e1f2484e477c09e5aa0fa9008b945e941827e1f8dc0c7",
+   "reason": "study phase reports N0-N21"
+  },
+  {
+   "old": "reports/npj/n21c_primary_external_context.md",
+   "new": "reports/cross_dataset_study/n21c_primary_external_context.md",
+   "sha256": "4381199cdd9776e464f46a668dcae96cf62afcbb3465a8c60d250a6de9aa3988",
+   "reason": "study phase reports N0-N21"
+  },
+  {
+   "old": "reports/npj/n21d_ad_benchmark_closure.md",
+   "new": "reports/cross_dataset_study/n21d_ad_benchmark_closure.md",
+   "sha256": "e1e24eea055c4817ad8917e7674c3dcf49889a6b1529a659e9ee54bb8b6186a5",
+   "reason": "study phase reports N0-N21"
+  },
+  {
+   "old": "reports/npj/n21e_robust_shift_distance.md",
+   "new": "reports/cross_dataset_study/n21e_robust_shift_distance.md",
+   "sha256": "d3c8abcfc75bfe88827ca8762fb6dd54d53c2e749a55074cddd46ef443e96419",
+   "reason": "study phase reports N0-N21"
+  },
+  {
+   "old": "reports/npj/n21j_public_release_preparation.md",
+   "new": "reports/cross_dataset_study/n21j_public_release_preparation.md",
+   "sha256": "64652fb7bbec4da103dd924ea2e6e3caa0d992807eea502d2594ac5860727da4",
+   "reason": "study phase reports N0-N21"
+  },
+  {
+   "old": "reports/npj/n21j_release_manifest_sha256.txt",
+   "new": "reports/cross_dataset_study/n21j_release_manifest_sha256.txt",
+   "sha256": "6d4c20b6e769823d0746c9efa27f22aee64ec800df43715efb832fe2401fef41",
+   "reason": "study phase reports N0-N21"
+  },
+  {
+   "old": "reports/npj/n2_external_cohort.md",
+   "new": "reports/cross_dataset_study/n2_external_cohort.md",
+   "sha256": "db4a5a71b4ce21c4509f5da69386b3573a0c985d2dffcf66026aeee0390f3c88",
+   "reason": "study phase reports N0-N21"
+  },
+  {
+   "old": "reports/npj/n2b_source_overlap_audit.md",
+   "new": "reports/cross_dataset_study/n2b_source_overlap_audit.md",
+   "sha256": "daac27050fc626b1f57854225eaec074dbc02c6f1521d739e4348081599cfa04",
+   "reason": "study phase reports N0-N21"
+  },
+  {
+   "old": "reports/npj/n3_portable_model_benchmark.md",
+   "new": "reports/cross_dataset_study/n3_portable_model_benchmark.md",
+   "sha256": "12676791962b9ebf83657a745fb4eacea6cfef4f476fe8196cd22f4199aa9c3f",
+   "reason": "study phase reports N0-N21"
+  },
+  {
+   "old": "reports/npj/n4_internal_validation.md",
+   "new": "reports/cross_dataset_study/n4_internal_validation.md",
+   "sha256": "01d79b921efd4c3661b1b76dfa3894dd57ef7c0b78ae0944584fe0afe57d3aec",
+   "reason": "study phase reports N0-N21"
+  },
+  {
+   "old": "reports/npj/n4b_nested_internal_validation.md",
+   "new": "reports/cross_dataset_study/n4b_nested_internal_validation.md",
+   "sha256": "535081af64cb0d8a4379ec942cdaeef4731999933f74c952f044f5c1c564f93c",
+   "reason": "study phase reports N0-N21"
+  },
+  {
+   "old": "reports/npj/n5_pretest_lock.md",
+   "new": "reports/cross_dataset_study/n5_pretest_lock.md",
+   "sha256": "25d58464a9f3f65311878e91c0da592e7c139886ae4bb3e1b0ba570cf9308142",
+   "reason": "study phase reports N0-N21"
+  },
+  {
+   "old": "reports/npj/n6_external_transfer.md",
+   "new": "reports/cross_dataset_study/n6_external_transfer.md",
+   "sha256": "bc2dc8dffe607a757854f3c465059f8cc5f22524d8eaca93531e9f41b5a50171",
+   "reason": "study phase reports N0-N21"
+  },
+  {
+   "old": "reports/npj/n7_regime_utility.md",
+   "new": "reports/cross_dataset_study/n7_regime_utility.md",
+   "sha256": "dc8235e26b28097bdff75b856a765b912a66242d3d392dd7bd6148c3a868b9dc",
+   "reason": "study phase reports N0-N21"
+  },
+  {
+   "old": "reports/npj/n7b_regime_utility_nested.md",
+   "new": "reports/cross_dataset_study/n7b_regime_utility_nested.md",
+   "sha256": "9cc9517f820d7347c955e64e1aee6d8ce0764cacc814b731f4814a1fc9732237",
+   "reason": "study phase reports N0-N21"
+  },
+  {
+   "old": "reports/npj/n8_applicability_domain.md",
+   "new": "reports/cross_dataset_study/n8_applicability_domain.md",
+   "sha256": "6156f8527e25b06347e68e2ae44a16da6280dd193682f180f7649dcab148f952",
+   "reason": "study phase reports N0-N21"
+  },
+  {
+   "old": "reports/npj/n9_sensitivity.md",
+   "new": "reports/cross_dataset_study/n9_sensitivity.md",
+   "sha256": "2ce638edf628e334adc9054d1571a34c89bb19649d3bbcf4cdde0e7acf2b2f57",
+   "reason": "study phase reports N0-N21"
+  },
+  {
+   "old": "reports/npj/n9b_relaxed_sensitivity_nested.md",
+   "new": "reports/cross_dataset_study/n9b_relaxed_sensitivity_nested.md",
+   "sha256": "f8e3675eaecc381aeed138cd1a4a04e6f03feb93b8a9713ea980b95c25690265",
+   "reason": "study phase reports N0-N21"
+  },
+  {
+   "old": "reports/npj/phase1_outline.md",
+   "new": "reports/cross_dataset_study/phase1_outline.md",
+   "sha256": "8315c55c058b31b933ccc5cda2a8dc5cb676c72948ea88f3f0ab4a1c4f00f1fd",
+   "reason": "study phase reports N0-N21"
+  },
+  {
+   "old": "reports/npj/phase1_report.md",
+   "new": "reports/cross_dataset_study/phase1_report.md",
+   "sha256": "468d1d1a7daf7e6d446c738441a5ce11690cd8c1c19d3845488bfb82ad91ff9f",
+   "reason": "study phase reports N0-N21"
+  },
+  {
+   "old": "reports/npj/phase2b_report.md",
+   "new": "reports/cross_dataset_study/phase2b_report.md",
+   "sha256": "bfc92fa710d66897ddbd8adf8003a0e5496e93b59005bc0ea0359f7afc50b0d3",
+   "reason": "study phase reports N0-N21"
+  },
+  {
+   "old": "reports/npj/reviewer_remediation_final.md",
+   "new": "reports/cross_dataset_study/reviewer_remediation_final.md",
+   "sha256": "6e5557a7d82cd04bb497ecbb8d06704df1b48cb80f0f7dbe06c94f085eac0c16",
+   "reason": "study phase reports N0-N21"
+  },
+  {
+   "old": "scripts/acs/acs00_extract_turnitin_source.py",
+   "new": "scripts/historical/extract_turnitin_source.py",
+   "sha256": "be1b87db197ff19bc4764cc5e980a5e770f3ff8dffd82e05cff65abeab91dd46",
+   "reason": "scripts/acs split by role; removed in the evidence-backed minimization pass (no active reference; superseded or untrusted); preserved in git history at commit 4348ef6 under the old path",
+   "removed": true
+  },
+  {
+   "old": "scripts/acs/acs01_verify_provenance_tables.py",
+   "new": "scripts/historical/docx_patch_chain/verify_provenance_tables.py",
+   "sha256": "31d33334d4988aa1bd45f1bbc7adf018a1ac23ebacfa1cf78d0ffdfc610863e0",
+   "reason": "superseded by scripts/manuscript/build_tables.py (builds and verifies tables); removed after the regenerated submission documents and builders replaced it (no active reference); preserved in git history at commit 4348ef6 under the old path",
+   "removed": true
+  },
+  {
+   "old": "scripts/acs/acs03_common_support_lomfo.py",
+   "new": "scripts/analysis/issue03_common_support_lomfo.py",
+   "sha256": "167d5e60e0590b928e866fbcb81f4fe30c7577cb3adab384a87996449c69473d",
+   "reason": "post hoc / corrective analysis script"
+  },
+  {
+   "old": "scripts/acs/acs04_size_matched_control.py",
+   "new": "scripts/analysis/issue04_size_matched_control.py",
+   "sha256": "fb252be63158d92af1d76b43e48470f4fe01d24e3edd2131f686c896215c7776",
+   "reason": "post hoc / corrective analysis script"
+  },
+  {
+   "old": "scripts/acs/acs05_fold_local_shift_distance.py",
+   "new": "scripts/analysis/issue05_fold_local_shift_distance.py",
+   "sha256": "9385448a09c9010702072859be8619bd48801543eab8b7b715eaf44cfe882d7e",
+   "reason": "post hoc / corrective analysis script"
+  },
+  {
+   "old": "scripts/acs/acs06_doi_cluster_bootstrap.py",
+   "new": "scripts/analysis/issue06_doi_cluster_bootstrap.py",
+   "sha256": "0f5c5922b0bbd3490d1650ec423faf38eb2a04948da02b57a0639d78572a4dba",
+   "reason": "post hoc / corrective analysis script"
+  },
+  {
+   "old": "scripts/acs/acs08b_chemical_system_groupkfold.py",
+   "new": "scripts/analysis/issue08b_chemical_system_groupkfold.py",
+   "sha256": "a765be66d81d6d19f2257a5cdf75cdbbe78991c459f9f61d98c432bdc36ff7df",
+   "reason": "post hoc / corrective analysis script"
+  },
+  {
+   "old": "scripts/acs/acs08b_regime_utility.py",
+   "new": "scripts/analysis/issue08b_regime_utility.py",
+   "sha256": "a410bef31df312c955c6f9861f40149756c8431f7f62e09567ae724e669e6bb5",
+   "reason": "post hoc / corrective analysis script"
+  },
+  {
+   "old": "scripts/acs/acs09a_missing_family_excluded.py",
+   "new": "scripts/analysis/issue09a_missing_family_excluded.py",
+   "sha256": "295a76a9aa7230e5c07f0ea9a5faca45026e8400cd6e251e2570e973a7d305cb",
+   "reason": "post hoc / corrective analysis script"
+  },
+  {
+   "old": "scripts/acs/acs09b_missing_singleton_groupkfold.py",
+   "new": "scripts/analysis/issue09b_missing_singleton_groupkfold.py",
+   "sha256": "81664f11cf60ca3ca6886d62730ad888c471d0fc6b238479ef34045cf88d22d8",
+   "reason": "post hoc / corrective analysis script"
+  },
+  {
+   "old": "scripts/acs/acs09b_regime_utility.py",
+   "new": "scripts/analysis/issue09b_regime_utility.py",
+   "sha256": "3d9a332312512b12e143851a80488d2b004d6bb73fdb162d196ec99eb9532e6a",
+   "reason": "post hoc / corrective analysis script"
+  },
+  {
+   "old": "scripts/acs/acs10_formula_balanced_sensitivity.py",
+   "new": "scripts/analysis/issue10_formula_balanced_sensitivity.py",
+   "sha256": "63bc841c65037cf02774afecea53aa93bd262b73f09d6c004577c2c2aebfc1f5",
+   "reason": "post hoc / corrective analysis script"
+  },
+  {
+   "old": "scripts/acs/acs_build_admin_docx.py",
+   "new": "scripts/historical/docx_patch_chain/build_admin_docx.py",
+   "sha256": "975c1b7d81f0a23a7321e8d7e09db05522ea6e37d99acbd0056a93a7d226e521",
+   "reason": "superseded DOCX/release patch chain, replaced by scripts/manuscript and scripts/release builders; removed after the regenerated submission documents and builders replaced it (no active reference); preserved in git history at commit 4348ef6 under the old path",
+   "removed": true
+  },
+  {
+   "old": "scripts/acs/acs_build_docx.py",
+   "new": "scripts/historical/docx_patch_chain/build_docx.py",
+   "sha256": "5c2b98ec721879e9b94e3ff7be2babef29ed35fc9e167c13eccd9a33645a93fe",
+   "reason": "superseded DOCX/release patch chain, replaced by scripts/manuscript and scripts/release builders; removed after the regenerated submission documents and builders replaced it (no active reference); preserved in git history at commit 4348ef6 under the old path",
+   "removed": true
+  },
+  {
+   "old": "scripts/acs/acs_build_final_manifest.py",
+   "new": "scripts/historical/release_patch_chain/build_final_manifest.py",
+   "sha256": "6209f64d16078f512074b87d5d83eaaaf87328b1fb82701c8fbf3d6f9c6424c8",
+   "reason": "superseded DOCX/release patch chain, replaced by scripts/manuscript and scripts/release builders; removed after the regenerated submission documents and builders replaced it (no active reference); preserved in git history at commit 4348ef6 under the old path",
+   "removed": true
+  },
+  {
+   "old": "scripts/acs/acs_build_release_manifest.py",
+   "new": "scripts/historical/release_patch_chain/build_release_manifest.py",
+   "sha256": "a3e90549d6577eddeedfcf2df64219b4feee6f9796f40f291db21e626366a6ce",
+   "reason": "superseded DOCX/release patch chain, replaced by scripts/manuscript and scripts/release builders; removed after the regenerated submission documents and builders replaced it (no active reference); preserved in git history at commit 4348ef6 under the old path",
+   "removed": true
+  },
+  {
+   "old": "scripts/acs/acs_build_submission_package.py",
+   "new": "scripts/historical/release_patch_chain/build_submission_package.py",
+   "sha256": "69f9a01c9304142416a1ae110dfeb71de8925e457fb49e80f6b7b4a204d0c9df",
+   "reason": "superseded DOCX/release patch chain, replaced by scripts/manuscript and scripts/release builders; removed after the regenerated submission documents and builders replaced it (no active reference); preserved in git history at commit 4348ef6 under the old path",
+   "removed": true
+  },
+  {
+   "old": "scripts/acs/acs_numeric_audit.py",
+   "new": "scripts/analysis/numeric_audit.py",
+   "sha256": "71f18ec5fd0247725eda30aa3e055f3310ac0707109a121f09b428fcc13cba94",
+   "reason": "scripts/acs split by role"
+  },
+  {
+   "old": "scripts/acs/acs_qa_docx.py",
+   "new": "scripts/historical/docx_patch_chain/qa_docx.py",
+   "sha256": "c757717394978f999ac114197f054b00b2f0efae32caa045b54bac5ae152e175",
+   "reason": "superseded DOCX/release patch chain, replaced by scripts/manuscript and scripts/release builders; removed after the regenerated submission documents and builders replaced it (no active reference); preserved in git history at commit 4348ef6 under the old path",
+   "removed": true
+  },
+  {
+   "old": "scripts/acs/acs_render_contact_sheets.py",
+   "new": "scripts/manuscript/render_contact_sheets.py",
+   "sha256": "6d85ab9efd524cffe9ea492495b127b38e49a008baa33559fa9f9d807d81011a",
+   "reason": "scripts/acs split by role"
+  },
+  {
+   "old": "scripts/acs/corrective01_apply_docx_text_edits.py",
+   "new": "scripts/historical/docx_patch_chain/corrective01_apply_docx_text_edits.py",
+   "sha256": "12bcb7943171fe76ea53f45c256b91d5d17a1b4ead2a8b286e2a200b3662257d",
+   "reason": "superseded DOCX/release patch chain, replaced by scripts/manuscript and scripts/release builders; removed after the regenerated submission documents and builders replaced it (no active reference); preserved in git history at commit 4348ef6 under the old path",
+   "removed": true
+  },
+  {
+   "old": "scripts/acs/corrective01_embed_figures.py",
+   "new": "scripts/historical/docx_patch_chain/corrective01_embed_figures.py",
+   "sha256": "3ab5ad8f7e1b305771eaa7bc291a3d17599b3be9307019e3bd37bdbe3901721d",
+   "reason": "superseded DOCX/release patch chain, replaced by scripts/manuscript and scripts/release builders; removed after the regenerated submission documents and builders replaced it (no active reference); preserved in git history at commit 4348ef6 under the old path",
+   "removed": true
+  },
+  {
+   "old": "scripts/acs/corrective01_issue10_formula_balanced_sensitivity.py",
+   "new": "scripts/analysis/corrective01_issue10_formula_balanced_sensitivity.py",
+   "sha256": "38a7f07542a985808497f6a93afb9b18def1392364ac5c5ae13bbacb94c96c3f",
+   "reason": "post hoc / corrective analysis script"
+  },
+  {
+   "old": "scripts/acs/corrective01_merge_aggregators_batch1.py",
+   "new": "scripts/analysis/corrective01_merge_aggregators_batch1.py",
+   "sha256": "60e13b5aef6ddcda4910834f61e6b76183fbbea71c42ee277a264ac190893d33",
+   "reason": "post hoc / corrective analysis script"
+  },
+  {
+   "old": "scripts/acs/corrective01_merge_fragment_scripts.py",
+   "new": "scripts/analysis/corrective01_merge_fragment_scripts.py",
+   "sha256": "2adc822b47189c7d175fb6c579310b1e916f272757bf126f634f4316e8640a41",
+   "reason": "post hoc / corrective analysis script"
+  },
+  {
+   "old": "scripts/acs/corrective01_merge_issue09b.py",
+   "new": "scripts/analysis/corrective01_merge_issue09b.py",
+   "sha256": "626031818c55ce2c57f3870098b9be78d482e1103cad11c0a083cde96d63cfe9",
+   "reason": "post hoc / corrective analysis script"
+  },
+  {
+   "old": "scripts/acs/corrective01_merge_n6.py",
+   "new": "scripts/analysis/corrective01_merge_n6.py",
+   "sha256": "aac43dd355590093b32ed7c7d6b3cfd8eb6aba24f1b058b522b3ffb4ba556df7",
+   "reason": "post hoc / corrective analysis script"
+  },
+  {
+   "old": "scripts/acs/corrective01_regenerate_figures.py",
+   "new": "scripts/historical/docx_patch_chain/corrective01_regenerate_figures.py",
+   "sha256": "5d05d526a4acb38f0c07cf6580df45ca4e5c26e6d7b39a071df4573621a59af6",
+   "reason": "superseded DOCX/release patch chain, replaced by scripts/manuscript and scripts/release builders; removed after the regenerated submission documents and builders replaced it (no active reference); preserved in git history at commit 4348ef6 under the old path",
+   "removed": true
+  },
+  {
+   "old": "scripts/acs/corrective01_retune_pretrained_element_embedding.py",
+   "new": "scripts/analysis/corrective01_retune_pretrained_element_embedding.py",
+   "sha256": "7ec63ec247910a184c913ad0787d12da365a33d23c08fea2e70feafc340fc245",
+   "reason": "post hoc / corrective analysis script"
+  },
+  {
+   "old": "scripts/acs/corrective01_run_glass_split.py",
+   "new": "scripts/analysis/corrective01_run_glass_split.py",
+   "sha256": "13aaae5c19e5398cfbcb2775716ba697faba374cacdc0aceb7f1d83101f76b1e",
+   "reason": "post hoc / corrective analysis script"
+  },
+  {
+   "old": "scripts/acs/corrective01_run_glass_subset_cis.py",
+   "new": "scripts/analysis/corrective01_run_glass_subset_cis.py",
+   "sha256": "4a927cda89aac5a9839a648cffd44154e1c2cad12fe5f057927ff6f6fa168ceb",
+   "reason": "post hoc / corrective analysis script"
+  },
+  {
+   "old": "scripts/acs/corrective01_run_n6_pretrained_element_embedding.py",
+   "new": "scripts/analysis/corrective01_run_n6_pretrained_element_embedding.py",
+   "sha256": "5626e5f611343f3eccc0a5aa1ea0d1bfd4bf8e2a5a8fefccb04a547286fc427d",
+   "reason": "post hoc / corrective analysis script"
+  },
+  {
+   "old": "scripts/acs_legacy_docx_build/build_main_docx.py",
+   "new": "scripts/historical/legacy_docx_build/build_main_docx.py",
+   "sha256": "b6245e174a6859e7af485400f27df00e12fe77ec98786e21d2e0d195dde3ba28",
+   "reason": "superseded DOCX builder; removed in the evidence-backed minimization pass (no active reference; superseded or untrusted); preserved in git history at commit 4348ef6 under the old path",
+   "removed": true
+  },
+  {
+   "old": "scripts/acs_legacy_docx_build/build_release_manifest.py",
+   "new": "scripts/historical/legacy_docx_build/build_release_manifest.py",
+   "sha256": "35b81ada5066aac767fb5e4e6c769917e104cc6697b8dcd572bfcb0b23bb6bee",
+   "reason": "superseded DOCX builder; removed in the evidence-backed minimization pass (no active reference; superseded or untrusted); preserved in git history at commit 4348ef6 under the old path",
+   "removed": true
+  },
+  {
+   "old": "scripts/acs_legacy_docx_build/build_si_docx.py",
+   "new": "scripts/historical/legacy_docx_build/build_si_docx.py",
+   "sha256": "b3bad9d9a3ec0ddf142c1c547c7780b99867567fb6cd7e5dc344334880b6aafb",
+   "reason": "superseded DOCX builder; removed in the evidence-backed minimization pass (no active reference; superseded or untrusted); preserved in git history at commit 4348ef6 under the old path",
+   "removed": true
+  },
+  {
+   "old": "scripts/acs_legacy_docx_build/build_si_pdf.py",
+   "new": "scripts/historical/legacy_docx_build/build_si_pdf.py",
+   "sha256": "bee5402887815b01395bf5f5abf6ec5d070b41f29bb9ca5a60ed52b9c55362f5",
+   "reason": "superseded DOCX builder; removed in the evidence-backed minimization pass (no active reference; superseded or untrusted); preserved in git history at commit 4348ef6 under the old path",
+   "removed": true
+  },
+  {
+   "old": "scripts/acs_legacy_docx_build/n17_numeric_audit.py",
+   "new": "scripts/historical/legacy_docx_build/n17_numeric_audit.py",
+   "sha256": "e83ce4e9940430af0a02d0cb672248e1cbfeebc21a380c58fd8ef35d6e127a05",
+   "reason": "superseded DOCX builder; removed in the evidence-backed minimization pass (no active reference; superseded or untrusted); preserved in git history at commit 4348ef6 under the old path",
+   "removed": true
+  },
+  {
+   "old": "scripts/acs_legacy_docx_build/qa_docx.py",
+   "new": "scripts/historical/legacy_docx_build/qa_docx.py",
+   "sha256": "562778e67460cc7597757b41b3edaf450c8b65bafb8f64e19de628f385333953",
+   "reason": "superseded DOCX builder; removed in the evidence-backed minimization pass (no active reference; superseded or untrusted); preserved in git history at commit 4348ef6 under the old path",
+   "removed": true
+  },
+  {
+   "old": "scripts/acs_manuscript_figures_current/build_docx_restructured.py",
+   "new": "scripts/historical/restructured_build/build_docx_restructured.py",
+   "sha256": "cdc099ac29547ada9b0cb17b53148ab61d5b9d433211c76109b3d9f17e59e00a",
+   "reason": "superseded DOCX builder; removed in the evidence-backed minimization pass (no active reference; superseded or untrusted); preserved in git history at commit 4348ef6 under the old path",
+   "removed": true
+  },
+  {
+   "old": "scripts/acs_manuscript_figures_current/build_si_restructured.py",
+   "new": "scripts/historical/restructured_build/build_si_restructured.py",
+   "sha256": "c7480d8dd0302cdaf461fc9c90cd10b105dc2e8b2bb364721c8ed069c8ea3592",
+   "reason": "superseded SI builder; removed in the evidence-backed minimization pass (no active reference; superseded or untrusted); preserved in git history at commit 4348ef6 under the old path",
+   "removed": true
+  },
+  {
+   "old": "scripts/acs_manuscript_figures_current/fig1_schematic.py",
+   "new": "scripts/figures/fig1_schematic.py",
+   "sha256": "eb3700836764edd3ce22e74d7592e278918186c367152cac08f45b45f0bf9638",
+   "reason": "current figure builders"
+  },
+  {
+   "old": "scripts/acs_manuscript_figures_current/fig2_external_performance.py",
+   "new": "scripts/figures/fig2_external_performance.py",
+   "sha256": "583204613b7fbab691d333b06fcd4331f75edc635d7c969c242207b9b70a51dc",
+   "reason": "current figure builders"
+  },
+  {
+   "old": "scripts/acs_manuscript_figures_current/fig3_regime_utility.py",
+   "new": "scripts/figures/fig3_regime_utility.py",
+   "sha256": "db5dccb7f60135b69b469d1640961e97806d49960ef12b640c9743074b057ddf",
+   "reason": "current figure builders"
+  },
+  {
+   "old": "scripts/acs_manuscript_figures_current/fig4_seen_glass_crystalline.py",
+   "new": "scripts/figures/fig4_seen_glass_crystalline.py",
+   "sha256": "914747caa1b801bdf497aacc0fe78f41b55b660d00575571736446da1e062746",
+   "reason": "current figure builders"
+  },
+  {
+   "old": "scripts/acs_manuscript_figures_current/fig5_extrapolation_failure.py",
+   "new": "scripts/figures/fig5_extrapolation_failure.py",
+   "sha256": "0a74b8b04d5d6d1fd708fc399f0098fcf1473e6de2cdce6c2d3eda912210b37f",
+   "reason": "current figure builders"
+  },
+  {
+   "old": "scripts/acs_manuscript_figures_current/fig6_risk_coverage_comparison.py",
+   "new": "scripts/figures/fig6_risk_coverage_comparison.py",
+   "sha256": "edaf411eeb3aba3b2c261692e7a1ee760bc58b1ecc8370133e4366cc7cab62a7",
+   "reason": "current figure builders"
+  },
+  {
+   "old": "scripts/acs_manuscript_figures_current/n23_numeric_audit.py",
+   "new": "scripts/historical/restructured_build/n23_numeric_audit.py",
+   "sha256": "52b627f599b6e7b8ec3d6c03589146470a9bda8fd9de7883b1b89c28e84d3956",
+   "reason": "audit over pre-correction artifacts, superseded by scripts/analysis/numeric_audit.py; removed in the evidence-backed minimization pass (no active reference; superseded or untrusted); preserved in git history at commit 4348ef6 under the old path",
+   "removed": true
+  },
+  {
+   "old": "scripts/acs_manuscript_figures_current/qa_docx_restructured.py",
+   "new": "scripts/historical/restructured_build/qa_docx_restructured.py",
+   "sha256": "38810140374d838f24d0dc8548ea3b5bf62e31ec85bdd96a39586c5bcbadacb6",
+   "reason": "superseded DOCX QA; removed in the evidence-backed minimization pass (no active reference; superseded or untrusted); preserved in git history at commit 4348ef6 under the old path",
+   "removed": true
+  },
+  {
+   "old": "scripts/acs_manuscript_figures_current/shared.py",
+   "new": "scripts/figures/shared.py",
+   "sha256": "f39156a78f146bebe6888333b610ec9ef457411c6123305e01898a81ae3edd3f",
+   "reason": "current figure builders"
+  },
+  {
+   "old": "scripts/acs_manuscript_figures_current/si_fig1_shift_alignment.py",
+   "new": "scripts/figures/si_fig1_shift_alignment.py",
+   "sha256": "8de1639b14d588db4cf5a893b4e2d2c9e5e312c2e49a3bf6c8e9332ed5d643bc",
+   "reason": "current figure builders"
+  },
+  {
+   "old": "scripts/acs_manuscript_figures_current/si_fig2_parity.py",
+   "new": "scripts/figures/si_fig2_parity.py",
+   "sha256": "23722da074057c4afa81152951f3ff7bf8d04eb31dcd335e360e58b0df20767d",
+   "reason": "current figure builders"
+  },
+  {
+   "old": "scripts/acs_manuscript_figures_v16/build_tables.py",
+   "new": "scripts/figures/build_robustness_table.py",
+   "sha256": "fa6f769480ca552412cf0fdc8beb3d718bdf700efe4431555ba2bd7f5909f30c",
+   "reason": "build_table4 imported by DOCX builder; renamed (builds Supplementary Table 1)"
+  },
+  {
+   "old": "scripts/acs_manuscript_figures_v16/fig1_study_cohort_framework.py",
+   "new": "scripts/historical/figures_v16/fig1_study_cohort_framework.py",
+   "sha256": "69e1f50e8f3349bc0a3b10086bea645269abaf6d6fb395964912b98a4363bcb5",
+   "reason": "superseded figure generation; removed in the evidence-backed minimization pass (no active reference; superseded or untrusted); preserved in git history at commit 4348ef6 under the old path",
+   "removed": true
+  },
+  {
+   "old": "scripts/acs_manuscript_figures_v16/fig2_external_performance_ci.py",
+   "new": "scripts/historical/figures_v16/fig2_external_performance_ci.py",
+   "sha256": "ecbb790e3a60210dfb22cfa4eee64ab9f09d69c4b5f5c241975c13c073a3d8c9",
+   "reason": "superseded figure generation; removed in the evidence-backed minimization pass (no active reference; superseded or untrusted); preserved in git history at commit 4348ef6 under the old path",
+   "removed": true
+  },
+  {
+   "old": "scripts/acs_manuscript_figures_v16/fig3_validation_regime_utility.py",
+   "new": "scripts/historical/figures_v16/fig3_validation_regime_utility.py",
+   "sha256": "1369d353d037746d4c668e863fdb4940a0122d2551eb1d7c11cbf0e663ca19c6",
+   "reason": "superseded figure generation; removed in the evidence-backed minimization pass (no active reference; superseded or untrusted); preserved in git history at commit 4348ef6 under the old path",
+   "removed": true
+  },
+  {
+   "old": "scripts/acs_manuscript_figures_v16/fig4_family_holdout_forensic.py",
+   "new": "scripts/historical/figures_v16/fig4_family_holdout_forensic.py",
+   "sha256": "f9dff194c253ce2e8628c7bb4fc86d7284f80d161f5f5d5649c726e16b8f3306",
+   "reason": "superseded figure generation; removed in the evidence-backed minimization pass (no active reference; superseded or untrusted); preserved in git history at commit 4348ef6 under the old path",
+   "removed": true
+  },
+  {
+   "old": "scripts/acs_manuscript_figures_v16/fig5_deployment_shift_alignment.py",
+   "new": "scripts/historical/figures_v16/fig5_deployment_shift_alignment.py",
+   "sha256": "1028f0d025adaa8fbe9a80d0a3fc456b640d81dab2a5849d5fdfd872397f1355",
+   "reason": "superseded figure generation; removed in the evidence-backed minimization pass (no active reference; superseded or untrusted); preserved in git history at commit 4348ef6 under the old path",
+   "removed": true
+  },
+  {
+   "old": "scripts/acs_manuscript_figures_v16/fig6_ad_risk_coverage_aurc.py",
+   "new": "scripts/historical/figures_v16/fig6_ad_risk_coverage_aurc.py",
+   "sha256": "b809eb3023a5e282de3b41a3bb513b58e09e1dab3a80fd5f783c45b31ce6ee80",
+   "reason": "superseded figure generation; removed in the evidence-backed minimization pass (no active reference; superseded or untrusted); preserved in git history at commit 4348ef6 under the old path",
+   "removed": true
+  },
+  {
+   "old": "scripts/acs_manuscript_figures_v16/n16_numeric_audit.py",
+   "new": "scripts/historical/figures_v16/n16_numeric_audit.py",
+   "sha256": "981e8710c373014317b3c2acb7ce616f8f3e330d9cebfff47eb68764d452798d",
+   "reason": "superseded figure generation; removed in the evidence-backed minimization pass (no active reference; superseded or untrusted); preserved in git history at commit 4348ef6 under the old path",
+   "removed": true
+  },
+  {
+   "old": "scripts/acs_manuscript_figures_v16/palette_import.py",
+   "new": "scripts/figures/palette_import.py",
+   "sha256": "fc579417ad49db9373b39fdf711f10afe48d434d6e4b160b2e319a13106d597d",
+   "reason": "palette imported by current figure builders"
+  },
+  {
+   "old": "scripts/acs_manuscript_figures_v20/build_table5.py",
+   "new": "scripts/historical/figures_v20/build_table5.py",
+   "sha256": "b81ffcf0da123cb627241b948679204eea1ecd68a06888918a9c3434416c1a46",
+   "reason": "superseded figure generation; removed in the evidence-backed minimization pass (no active reference; superseded or untrusted); preserved in git history at commit 4348ef6 under the old path",
+   "removed": true
+  },
+  {
+   "old": "scripts/acs_manuscript_figures_v21/fig8_parity_all_models.py",
+   "new": "scripts/historical/figures_v21/fig8_parity_all_models.py",
+   "sha256": "0bcd902ea758fafd4302eee325fe9160ac119de82a1161eb44acb1617b9d6fc7",
+   "reason": "superseded figure generation; removed in the evidence-backed minimization pass (no active reference; superseded or untrusted); preserved in git history at commit 4348ef6 under the old path",
+   "removed": true
+  },
+  {
+   "old": "scripts/acs_manuscript_figures_v21/n21_numeric_audit.py",
+   "new": "scripts/historical/figures_v21/n21_numeric_audit.py",
+   "sha256": "898c75c64b228769dbbd4d42267b49a0f1b3f34d60b9465a352aecce6f78ab37",
+   "reason": "superseded figure generation; removed in the evidence-backed minimization pass (no active reference; superseded or untrusted); preserved in git history at commit 4348ef6 under the old path",
+   "removed": true
+  },
+  {
+   "old": "scripts/acs_manuscript_figures_v22/fig7_seen_glass_crystalline_regime_gap.py",
+   "new": "scripts/historical/figures_v22/fig7_seen_glass_crystalline_regime_gap.py",
+   "sha256": "a868d915d2c94092cd502a3bcd1197e5678a2ae0f2b02937d24dd46deb84bec2",
+   "reason": "superseded figure generation; removed in the evidence-backed minimization pass (no active reference; superseded or untrusted); preserved in git history at commit 4348ef6 under the old path",
+   "removed": true
+  },
+  {
+   "old": "scripts/acs_manuscript_figures_v22/n22_numeric_audit.py",
+   "new": "scripts/historical/figures_v22/n22_numeric_audit.py",
+   "sha256": "0d216a9a727a38f86c04461366aacbb93bbe5047672554ce5021c4371cc6ad01",
+   "reason": "superseded figure generation; removed in the evidence-backed minimization pass (no active reference; superseded or untrusted); preserved in git history at commit 4348ef6 under the old path",
+   "removed": true
+  },
+  {
+   "old": "snapshots/pre_npj_baseline_2026-09-21/HEAD_commit.txt",
+   "new": "snapshots/pre_cross_dataset_baseline_2026-09-21/HEAD_commit.txt",
+   "sha256": "fcce8cbfdfb68ed5e093684bca115a011018564950057f30b42e59a608892db8",
+   "reason": "local safety snapshot"
+  },
+  {
+   "old": "snapshots/pre_npj_baseline_2026-09-21/SHA256SUMS.txt",
+   "new": "snapshots/pre_cross_dataset_baseline_2026-09-21/SHA256SUMS.txt",
+   "sha256": "396f375cc63d3ce6c161496070624eec4f2c6ce8fc6e3077641b676d0d8ed158",
+   "reason": "local safety snapshot"
+  },
+  {
+   "old": "snapshots/pre_npj_baseline_2026-09-21/repo_full_history.bundle",
+   "new": "snapshots/pre_cross_dataset_baseline_2026-09-21/repo_full_history.bundle",
+   "sha256": "6601e8589a45d565c2a666fceede342b891f1194df086c4bbf45eccd8da55a55",
+   "reason": "local safety snapshot"
+  },
+  {
+   "old": "snapshots/pre_npj_baseline_2026-09-21/working_tree_status.txt",
+   "new": "snapshots/pre_cross_dataset_baseline_2026-09-21/working_tree_status.txt",
+   "sha256": "85e9e29b2613645ebcd816a8ad89020ab5f2b669f4a0aaadbda802c4c547c5d8",
+   "reason": "local safety snapshot"
+  },
+  {
+   "old": "snapshots/pre_npj_baseline_2026-09-21/working_tree_tracked.diff",
+   "new": "snapshots/pre_cross_dataset_baseline_2026-09-21/working_tree_tracked.diff",
+   "sha256": "a5069ace96ff4a15068e1bc6bc15b73ff9e1436859eac263d90d2b9d940c3d45",
+   "reason": "local safety snapshot"
+  },
+  {
+   "old": "tests/unit/test_acs10_formula_balanced_sensitivity.py",
+   "new": "tests/unit/test_issue10_formula_balanced_sensitivity.py",
+   "sha256": "12ac359f3e00fee5c5a9064922caef7e7960b3315218568a9737961497caa47d",
+   "reason": "test rename"
+  },
+  {
+   "old": "tests/unit/test_acs_submission_no_section_symbol.py",
+   "new": "tests/unit/test_submission_no_section_symbol.py",
+   "sha256": "66855157daadc03c88267ebff748910ddd45ef584f92a5c6da5dced196963f58",
+   "reason": "test rename"
+  }
+ ]
+}

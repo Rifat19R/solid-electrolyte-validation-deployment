@@ -1,0 +1,9 @@
+model,mae_strict_n204,mae_source_disjoint_n153,mae_delta_source_disjoint,mae_window_20_30_n197,mae_delta_window_only_same_formula_subset,mae_delta_window_20_30_vs_full_strict
+extra_trees,1.2022,1.3673,0.1651,1.2113,0.0009,0.0091
+composition_attention,1.2824,1.4036,0.1212,1.2715,-0.0019,-0.0108
+random_forest,1.2861,1.4516,0.1655,1.3005,0.0009,0.0144
+catboost,1.2916,1.4594,0.1678,1.3002,0.0009,0.0085
+xgboost,1.3492,1.492,0.1427,1.3745,0.0009,0.0252
+ridge,1.382,1.503,0.121,1.3712,0.0007,-0.0108
+shallow_mlp,1.4831,1.6801,0.197,1.4619,-0.0036,-0.0211
+pretrained_element_embedding,1.7163,1.9447,0.2284,1.7018,0.0036,-0.0145

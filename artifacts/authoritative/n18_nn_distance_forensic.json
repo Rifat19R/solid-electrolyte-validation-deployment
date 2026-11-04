@@ -1,0 +1,97 @@
+{
+  "analysis": "N18_nn_distance_forensic_sanity_check",
+  "cv_seed": 20260921,
+  "reported_n15_max": 94559.5361,
+  "recomputed_max": 94559.5360502404,
+  "recomputed_matches_reported": true,
+  "max_record": {
+    "fold": 0,
+    "pool_row_index": 222,
+    "obelix_id": "vtr",
+    "family": "NASICON",
+    "distance": 94559.5360502404,
+    "n_near_zero_variance_dims_in_train_fold": 22,
+    "n_total_dims": 132,
+    "top_contributing_features": [
+      {
+        "feature": "MagpieData maximum GSmagmom",
+        "sq_contribution": 3681316628.8610616,
+        "pct_of_total_sq": 41.17110347304933,
+        "train_fold_mean_layer2": 7.526935760170553e-18,
+        "train_fold_std_layer2": 0.9978791068383016,
+        "train_fold_raw_std_layer1_pre_guard": 0.9978791068383016,
+        "is_near_zero_variance_layer1": false,
+        "held_out_row_value_layer1_scaled": 60553.95046981062,
+        "held_out_row_z_value": 60682.65189124047,
+        "nearest_train_row_layer1_scaled": 8.778659118510515
+      },
+      {
+        "feature": "MagpieData range GSmagmom",
+        "sq_contribution": 3681316628.8610616,
+        "pct_of_total_sq": 41.17110347304933,
+        "train_fold_mean_layer2": 7.526935760170553e-18,
+        "train_fold_std_layer2": 0.9978791068383016,
+        "train_fold_raw_std_layer1_pre_guard": 0.9978791068383016,
+        "is_near_zero_variance_layer1": false,
+        "held_out_row_value_layer1_scaled": 60553.95046981062,
+        "held_out_row_z_value": 60682.65189124047,
+        "nearest_train_row_layer1_scaled": 8.778659118510515
+      },
+      {
+        "feature": "MagpieData avg_dev GSmagmom",
+        "sq_contribution": 853245701.0136211,
+        "pct_of_total_sq": 9.54252800994047,
+        "train_fold_mean_layer2": 2.069907334046902e-17,
+        "train_fold_std_layer2": 0.9978791068383019,
+        "train_fold_raw_std_layer1_pre_guard": 0.9978791068383019,
+        "is_near_zero_variance_layer1": false,
+        "held_out_row_value_layer1_scaled": 29158.299112671328,
+        "held_out_row_z_value": 29220.272188138104,
+        "nearest_train_row_layer1_scaled": 9.881434725745258
+      },
+      {
+        "feature": "MagpieData mean GSmagmom",
+        "sq_contribution": 725626610.1582726,
+        "pct_of_total_sq": 8.115261810247237,
+        "train_fold_mean_layer2": 1.8817339400426382e-18,
+        "train_fold_std_layer2": 0.9978791068383014,
+        "train_fold_raw_std_layer1_pre_guard": 0.9978791068383014,
+        "is_near_zero_variance_layer1": false,
+        "held_out_row_value_layer1_scaled": 26890.36923017069,
+        "held_out_row_z_value": 26947.522045401503,
+        "nearest_train_row_layer1_scaled": 10.043318229483884
+      },
+      {
+        "feature": "MagpieData avg_dev NpValence",
+        "sq_contribution": 30.997236630900865,
+        "pct_of_total_sq": 3.466668492202603e-07,
+        "train_fold_mean_layer2": 7.07531961456032e-16,
+        "train_fold_std_layer2": 0.9978791068383016,
+        "train_fold_raw_std_layer1_pre_guard": 0.9978791068383016,
+        "is_near_zero_variance_layer1": false,
+        "held_out_row_value_layer1_scaled": -3.53810921283168,
+        "held_out_row_z_value": -3.5456291133721503,
+        "nearest_train_row_layer1_scaled": 2.0175988795619957
+      }
+    ]
+  },
+  "n_folds": 5,
+  "n_rows_scored": 449,
+  "diagnostic_sensitivity_drop_near_zero_variance_dims": {
+    "description": "Regime B NN distance recomputed after DROPPING (not scale=1.0 fallback for) any raw composition-feature dimension whose train-fold-only std is < 5% of that same feature's std over the full 449-row target-free development population (a fold-local degenerate-variance dimension), per fold.",
+    "n_dims_dropped_by_fold": {
+      "0": 26,
+      "1": 22,
+      "2": 23,
+      "3": 22,
+      "4": 22
+    },
+    "n": 449,
+    "median": 4.429528587639314,
+    "q90": 9.155109018404586,
+    "max": 26.649031835661283,
+    "original_max_reported_n15": 94559.5361,
+    "max_reduction_factor": 3548.3291356747163
+  },
+  "note": "Diagnostic sanity check only, per N18 instruction item 3. Does not alter N15's reported numbers, does not rerun N6, does not read any target y, and does not open the frozen OBELiX 113-row test split."
+}

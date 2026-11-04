@@ -1,0 +1,4 @@
+SSE reproducibility package
+source commit: 6efc3b34528ac65916e12f1ac0731d57e3a251bc
+Hargreaves-derived files: withheld or redacted (provenance/restricted_data.json)
+public repository URL and archival DOI: added on deposit (not yet created)

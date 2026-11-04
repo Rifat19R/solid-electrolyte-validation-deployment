@@ -1,0 +1,99 @@
+{
+  "description": "Hargreaves-derived files withheld from, or redacted in, the public reproducibility package (RIGHTS_AND_LICENSING.md). Restore with `python scripts/release/restricted_data.py restore` after obtaining the raw database (data/RECONSTRUCTION.md).",
+  "withheld": {
+    "data/raw/hargreaves_conductivity/LiIonDatabase.csv": {
+      "sha256": "805e157decb613e9d1ed651f4218c2ea69ed7d6fa2aa24b7b860485894570606"
+    },
+    "data/processed/external_cohort/hargreaves_overlap_ledger.csv": {
+      "sha256": "a1b4d0f425fc3048a03cdf4a82321292cbc80b9590ba7e309f7f353788098683"
+    },
+    "data/processed/external_cohort/hargreaves_strict.csv": {
+      "sha256": "1bda972d893c3cf546b3638ea8935e59b345e1d14d9c607be5b1c59437b237c9"
+    },
+    "data/processed/external_cohort/hargreaves_relaxed.csv": {
+      "sha256": "dac166ee16be91d76a255a30ec7f6af8cc47bc6d569db3ad74d2212209e99da8"
+    }
+  },
+  "redacted": {
+    "artifacts/frozen/n6_external_transfer_primary.json": {
+      "original_sha256": "def43a59623aedc69662f47670037300de76a644b092d696cf318e652f439e43",
+      "redacted_sha256": "78e5d90221ef69e6613006dc85096e20f2c578871c32899ae522e76b74372502",
+      "redacted_fields": [
+        "y_true",
+        "residual"
+      ]
+    },
+    "artifacts/authoritative/n6_external_transfer_corrected.json": {
+      "original_sha256": "dbfde79d72f3cd2021d861380d9e80b8d40e2d774a295240353cd34dd7f6fe3f",
+      "redacted_sha256": "ef21edd6ff422b12c1a22b1bb358ed50611081f0290c594c7b31719b03ebbd2a",
+      "redacted_fields": [
+        "y_true",
+        "residual"
+      ]
+    },
+    "artifacts/fragments/n6/catboost.json": {
+      "original_sha256": "04aaf77dc09a369e6a80e802b59956e84b19e6d42e8a61dac9fa12fc574e20cd",
+      "redacted_sha256": "e786cd6b0d931907256261ee61891c747c8b83efb47152f06eb07cd6d63af16f",
+      "redacted_fields": [
+        "y_true",
+        "residual"
+      ]
+    },
+    "artifacts/fragments/n6/composition_attention.json": {
+      "original_sha256": "a02e59e0e0965f2fbc9338cdf68920bf6172b08febd6f1fe01ba6c0d142cae5e",
+      "redacted_sha256": "dfd5fa4cdf5c6e732a75c2dc73e3cb8c375189e611d8e196544eceac38b95da0",
+      "redacted_fields": [
+        "y_true",
+        "residual"
+      ]
+    },
+    "artifacts/fragments/n6/extra_trees.json": {
+      "original_sha256": "f33907faae81558b8a27a46730605d31b5db6df74c0ef556d2388f0db8b66ad2",
+      "redacted_sha256": "9a15b629a00c0849822051356cd6c698474975809a93f1273792505441b24fa3",
+      "redacted_fields": [
+        "y_true",
+        "residual"
+      ]
+    },
+    "artifacts/fragments/n6/pretrained_element_embedding.json": {
+      "original_sha256": "6ba6a1de7fafae52b0cc66c36e112d15815dc82df9cb56c685ae7d419686a69f",
+      "redacted_sha256": "1bb3a4a817172edaa1d157b873fe9482aa76bca39bca4b1c342c18c25e5b0d1a",
+      "redacted_fields": [
+        "y_true",
+        "residual"
+      ]
+    },
+    "artifacts/fragments/n6/random_forest.json": {
+      "original_sha256": "c0ca24fa44bf0e1bb41933e1d9cc9736360058e353e795698d5a4604393260d5",
+      "redacted_sha256": "d29154866a71b5a7bed5f5f5acaa8492e3bcb0a9d0fe949ce1d2ee347f25f74c",
+      "redacted_fields": [
+        "y_true",
+        "residual"
+      ]
+    },
+    "artifacts/fragments/n6/ridge.json": {
+      "original_sha256": "d921e51b382a57085ec5af97814ff5d4ab5c961cb4c76c1633c97f3c1e8a693f",
+      "redacted_sha256": "5696f32e0a1d34214cbe3d2d62f706343703167667f7b9d8b1ccee6afdf14333",
+      "redacted_fields": [
+        "y_true",
+        "residual"
+      ]
+    },
+    "artifacts/fragments/n6/shallow_mlp.json": {
+      "original_sha256": "b257c4308ed64a06ddf892d95d38aac2039c0de6dd31d880c7d2d12bbef0e4f3",
+      "redacted_sha256": "9f09db84059537ec3d3c32772d425675d4469ece011f508a79ea964449c3a6a5",
+      "redacted_fields": [
+        "y_true",
+        "residual"
+      ]
+    },
+    "artifacts/fragments/n6/xgboost.json": {
+      "original_sha256": "e5f812c16b05aa9234898b2f64bf308cacafe6fdcc5dc4c4d99b910faa016264",
+      "redacted_sha256": "39459186e6e1edab3dba554cf1daed1733effefcad2ea33d8d108f84e4183495",
+      "redacted_fields": [
+        "y_true",
+        "residual"
+      ]
+    }
+  }
+}

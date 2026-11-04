@@ -1,0 +1,161 @@
+{
+  "model_name": "ridge",
+  "obelix_dev_population_n": 449,
+  "obelix_test_untouched_row_count": 113,
+  "n_unique_chemical_systems": 153,
+  "chemical_system_group_kfold": {
+    "pooled_mae": 1.5633401985800732,
+    "rmse": 2.099698761196169,
+    "r2": 0.27019860036512644,
+    "spearman_rho": 0.5671544836228575,
+    "median_absolute_error": 1.1667640771195185,
+    "sample_weighted_mae_from_per_family": 1.5633401985800732,
+    "macro_family_mae": 2.285135299966981,
+    "median_family_mae": 1.7236622154629697,
+    "n_families_covered": 30,
+    "per_family_mae": {
+      "Chalcogenidotetrelates": {
+        "mae": 1.7459497397870374,
+        "n": 1
+      },
+      "LGPS": {
+        "mae": 0.7170379094485627,
+        "n": 36
+      },
+      "LISICON": {
+        "mae": 3.6495078996380323,
+        "n": 21
+      },
+      "NASICON": {
+        "mae": 1.564087302085207,
+        "n": 130
+      },
+      "Tavorite": {
+        "mae": 0.45946244338939923,
+        "n": 1
+      },
+      "__MISSING__": {
+        "mae": 1.2806291241403644,
+        "n": 18
+      },
+      "antiperovskite": {
+        "mae": 0.9297459453100153,
+        "n": 3
+      },
+      "argyrodites": {
+        "mae": 1.0943015554434476,
+        "n": 50
+      },
+      "boracites": {
+        "mae": 2.768488342744064,
+        "n": 1
+      },
+      "boron nitride": {
+        "mae": 1.3676996349813466,
+        "n": 2
+      },
+      "chlorides": {
+        "mae": 1.7530694576841939,
+        "n": 6
+      },
+      "copper pyroborate": {
+        "mae": 4.220067964010125,
+        "n": 1
+      },
+      "fluorides": {
+        "mae": 3.699187395506602,
+        "n": 1
+      },
+      "garnet": {
+        "mae": 1.1828917029205839,
+        "n": 81
+      },
+      "garnet-like": {
+        "mae": 0.6741428891573471,
+        "n": 2
+      },
+      "halides": {
+        "mae": 3.2277694461167394,
+        "n": 5
+      },
+      "hexaoxometalates": {
+        "mae": 1.1131912381796,
+        "n": 2
+      },
+      "hydrides": {
+        "mae": 0.7563097055404411,
+        "n": 3
+      },
+      "layered": {
+        "mae": 0.37143854123503983,
+        "n": 1
+      },
+      "molybdates": {
+        "mae": 1.7859510002725247,
+        "n": 3
+      },
+      "nitrides": {
+        "mae": 3.7814216990761857,
+        "n": 3
+      },
+      "nitridosilicates": {
+        "mae": 5.377996999406042,
+        "n": 1
+      },
+      "oxides": {
+        "mae": 1.8437182187711905,
+        "n": 17
+      },
+      "perovskites": {
+        "mae": 1.3072519089238845,
+        "n": 26
+      },
+      "phosphates": {
+        "mae": 1.682073863161084,
+        "n": 6
+      },
+      "pyrophosphate": {
+        "mae": 8.571802844236124,
+        "n": 1
+      },
+      "sulfides": {
+        "mae": 1.7013746911389023,
+        "n": 7
+      },
+      "thio-LISICON": {
+        "mae": 2.386219327780724,
+        "n": 17
+      },
+      "thio-phosphate": {
+        "mae": 5.19190434405842,
+        "n": 2
+      },
+      "zirconates": {
+        "mae": 2.349365864866197,
+        "n": 1
+      }
+    },
+    "regime": "E_chemical_system_group_kfold",
+    "n_folds": 5,
+    "seed": 20260921,
+    "per_fold_hyperparameters": [
+      {
+        "alpha": 4.446399811509528
+      },
+      {
+        "alpha": 5.425582114379545
+      },
+      {
+        "alpha": 61.660441350977955
+      },
+      {
+        "alpha": 25.29376181496567
+      },
+      {
+        "alpha": 11.007644908090917
+      }
+    ],
+    "note": "ACS/JCIM remediation Issue 08b: grouping axis is the pymatgen element set (chemical system), not exact reduced formula (regime D) or chemistry family (regime B) -- tests whether redundancy broader than exact-formula duplication (e.g. dopant/solid-solution series sharing an element set) drives any part of the primary result."
+  },
+  "runtime_seconds": 28.758821725845337
+}

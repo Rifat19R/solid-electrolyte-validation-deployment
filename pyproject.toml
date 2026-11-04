@@ -1,0 +1,137 @@
+[build-system]
+requires = ["setuptools>=75", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sse-transport-transfer"
+version = "1.0.0"
+description = "Composition-only ML for experimental lithium solid-electrolyte conductivity: validation-regime utility and cross-dataset (OBELiX->Hargreaves) generalization. (Earlier v1.0 GNN transport-pretraining direction closed VALID_NEGATIVE_RESULT at commit 8f37c89; see RESEARCH_CONTRACT.md v2.0.)"
+readme = "README.md"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+  "numpy>=1.26,<3",
+  "pandas>=2.2,<3",
+  "scipy>=1.13,<2",
+  "scikit-learn>=1.5,<2",
+  "torch>=2.5",
+  "pymatgen>=2025.1",
+  "ase>=3.23",
+  "matminer>=0.9",
+  "xgboost>=2.1",
+  "catboost>=1.2",
+  "optuna>=4",
+  "shap>=0.46",
+  "pyyaml>=6",
+  "joblib>=1.4",
+  "pyarrow>=18",
+  "h5py>=3.12",
+  "tqdm>=4.67",
+  "requests>=2.32",
+  "platformdirs>=4.3"
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8",
+  "pytest-cov>=6",
+  "ruff>=0.9",
+  "mypy>=1.14",
+  "pandas-stubs>=2.2",
+  "types-PyYAML>=6",
+  "jupyterlab>=4.3",
+  "ipykernel>=6.29"
+]
+# Phase 2.4B: frozen, pretrained (not fine-tuned) materials-structure
+# encoders used only for CPU forward-pass embedding extraction -- no new
+# DFT/NEB/AIMD/MD, no encoder training. See
+# src/sse_transfer/features/pretrained_structure_embeddings.py.
+structure-embeddings = [
+  "chgnet>=0.4,<0.5",
+  "mace-torch>=0.3,<0.4"
+]
+# Manuscript M7: deterministic local DOCX generation for the submission
+# package (scripts/manuscript_submission/). Documentation tooling only --
+# not used by any scientific data/model/evaluation code path.
+manuscript = [
+  "python-docx>=1.1"
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
+filterwarnings = [
+  # Fail closed: any warning not matched by an exact, audited filter below
+  # is an error. pytest applies later entries with higher precedence, so
+  # this must stay first.
+  "error",
+  # Each filter below matches one exact upstream message, category, and
+  # emitting third-party module (never sse_transfer). Messages are regexes;
+  # a literal ":" is written as \x3a because pytest splits fields on ":".
+  #
+  # pymatgen CIF parser snaps near-ideal fractional coordinates; occupancy
+  # and disorder are untouched (verified by the disorder-preservation tests
+  # and sse_transfer.audit.cif_rounding, which records this warning under
+  # its own catch_warnings). Anchored with $ so a message that also reports
+  # any other CIF issue still errors.
+  "ignore:Issues encountered while parsing CIF\\x3a \\d+ fractional coordinates rounded to ideal values to avoid issues with finite precision\\.$:UserWarning:pymatgen\\.io\\.cif$",
+  # CatBoost cannot numba-JIT a Python custom objective whose
+  # calc_ders_range uses self; it falls back to the plain Python method.
+  "ignore:Can't optimze method \"calc_ders_range\" because self argument is used$:UserWarning:catboost\\.core$",
+  # torch.nn.TransformerEncoder fast path (inference with a padding mask)
+  # notes the nested-tensor API is prototype; emitted once per process.
+  "ignore:The PyTorch API of nested tensors is in prototype stage and will change in the near future\\.:UserWarning:torch\\.nn\\.modules\\.transformer$",
+  # mace/__init__.py sets TORCH_FORCE_NO_WEIGHTS_ONLY_LOAD=1 on import;
+  # torch.load then warns when e3nn/MACE load their bundled constants and
+  # the pinned MACE-MP foundation-model checkpoint.
+  "ignore:Environment variable TORCH_FORCE_NO_WEIGHTS_ONLY_LOAD detected, since the`weights_only` argument was not explicitly passed to `torch\\.load`, forcing weights_only=False\\.$:UserWarning:e3nn\\.o3\\._wigner$",
+  "ignore:Environment variable TORCH_FORCE_NO_WEIGHTS_ONLY_LOAD detected, since the`weights_only` argument was not explicitly passed to `torch\\.load`, forcing weights_only=False\\.$:UserWarning:mace\\.calculators\\.mace$",
+  # TorchScript deprecation notices raised inside e3nn/MACE model loading.
+  "ignore:`torch\\.jit\\.script` is deprecated\\. Please switch to `torch\\.compile` or `torch\\.export`\\.$:FutureWarning:torch\\.jit\\._script$",
+  "ignore:`torch\\.jit\\.load` is deprecated\\. Please switch to `torch\\.export`\\.$:FutureWarning:torch\\.jit\\._serialization$",
+  # spglib>=2.7 warns on every call (success or failure) during its opt-in
+  # migration to exception-based error handling (default flips in 2.8,
+  # old path removed in 3.0; see spglib.error module docstring). Flipping
+  # spglib.error.OLD_ERROR_HANDLING globally would change exception
+  # semantics for every spglib call in the pipeline (including disordered
+  # OBELiX/pretraining structures), so this filters only that exact,
+  # informational, upstream deprecation notice.
+  "ignore:Set OLD_ERROR_HANDLING to false and catch the errors directly\\.:DeprecationWarning:spglib.*",
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]
+ignore = []
+
+[tool.ruff.format]
+quote-style = "double"
+
+[tool.mypy]
+python_version = "3.12"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = true
+no_implicit_optional = true
+check_untyped_defs = true
+packages = ["sse_transfer"]
+
+[[tool.mypy.overrides]]
+module = [
+  "pymatgen.*",
+  "matminer.*",
+  "xgboost.*",
+  "catboost.*",
+  "ase.*",
+  "scipy.*",
+  "sklearn.*",
+  "optuna.*",
+  "chgnet.*",
+  "mace.*"
+]
+ignore_missing_imports = true

@@ -1,0 +1,82 @@
+{
+  "phase": "acs_issue08b_regime_utility",
+  "spec_path": "reports/acs/specs/issue08b_chemical_system_groupkfold.md",
+  "git_commit": "534da7af653407d764d3636e34fca3db1b068817",
+  "n_unique_chemical_systems": 153,
+  "e_internal_mae": {
+    "catboost": 1.160877321528823,
+    "composition_attention": 1.3606723192796226,
+    "extra_trees": 1.1911320100896052,
+    "pretrained_element_embedding": 1.5213211893328413,
+    "random_forest": 1.2679381413083086,
+    "ridge": 1.5633401985800732,
+    "shallow_mlp": 1.501870581454768,
+    "xgboost": 1.2097207997767736
+  },
+  "a_internal_mae": {
+    "catboost": 0.8016618498971427,
+    "composition_attention": 1.0478134984764726,
+    "extra_trees": 0.749704319611173,
+    "pretrained_element_embedding": 1.5510869295229528,
+    "random_forest": 0.8255513319688031,
+    "ridge": 1.4102786886486405,
+    "shallow_mlp": 1.0293270973435693,
+    "xgboost": 0.8119796143116303
+  },
+  "e_regime_summary": {
+    "median_abs_mae_gap": 0.10453825061293787,
+    "spearman_rho": 0.6428571428571429,
+    "kendall_tau": 0.42857142857142855,
+    "top_model_selection_regret": 0.08946728972095452,
+    "n_models": 8
+  },
+  "a_regime_summary": {
+    "median_abs_mae_gap": 0.4531075873900411,
+    "spearman_rho": 0.6428571428571429,
+    "kendall_tau": 0.4999999999999999,
+    "top_model_selection_regret": 0.0,
+    "n_models": 8
+  },
+  "pairwise_bootstrap_ci_E_minus_A": {
+    "median_abs_mae_gap": {
+      "statistic": "median_abs_mae_gap",
+      "point_delta": -0.3485693367771032,
+      "ci_low": -0.4262599288751676,
+      "ci_high": -0.13699297670433733,
+      "ci_level": 0.95,
+      "n_boot": 2000,
+      "n_finite": 2000,
+      "seed": 20260921
+    },
+    "spearman_rho": {
+      "statistic": "spearman_rho",
+      "point_delta": 0.0,
+      "ci_low": -0.16666666666666669,
+      "ci_high": 0.07142857142857151,
+      "ci_level": 0.95,
+      "n_boot": 2000,
+      "n_finite": 2000,
+      "seed": 20260921
+    },
+    "kendall_tau": {
+      "statistic": "kendall_tau",
+      "point_delta": -0.07142857142857134,
+      "ci_low": -0.07142857142857151,
+      "ci_high": -0.07142857142857134,
+      "ci_level": 0.95,
+      "n_boot": 2000,
+      "n_finite": 2000,
+      "seed": 20260921
+    },
+    "top_model_selection_regret": {
+      "statistic": "top_model_selection_regret",
+      "point_delta": 0.08946728972095452,
+      "ci_low": 0.0018739157669943785,
+      "ci_high": 0.17263622277665205,
+      "ci_level": 0.95,
+      "n_boot": 2000,
+      "n_finite": 2000,
+      "seed": 20260921
+    }
+  }
+}

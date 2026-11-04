@@ -1,0 +1,251 @@
+{
+  "phase": "N21_section_e_robust_shift_distance",
+  "git_commit": "58931820f2bde61834b4a8c3e39687243a24078e",
+  "git_branch": "npj-cross-dataset-extension",
+  "n15_source": "artifacts/npj_n15_deployment_shift.json",
+  "n18_source": "artifacts/npj_n18_nn_distance_forensic.json",
+  "degeneracy_ratio_threshold": 0.05,
+  "threshold_definition": "raw (pre-TrainFitCompositionScaler) Magpie feature column dropped from a fold if that fold's train-only std < 5% of the same column's std over the full 449-row target-free development population; reused unchanged from N18's already-validated diagnostic, not tuned on this script's own output",
+  "threshold_chosen_independently_of_target_y": true,
+  "cv_seed": 20260921,
+  "per_fold_dims_dropped": {
+    "A_random_5fold_cv": [
+      {
+        "fold": 0,
+        "n_dropped": 22,
+        "n_total_dims": 132
+      },
+      {
+        "fold": 1,
+        "n_dropped": 22,
+        "n_total_dims": 132
+      },
+      {
+        "fold": 2,
+        "n_dropped": 22,
+        "n_total_dims": 132
+      },
+      {
+        "fold": 3,
+        "n_dropped": 22,
+        "n_total_dims": 132
+      },
+      {
+        "fold": 4,
+        "n_dropped": 22,
+        "n_total_dims": 132
+      }
+    ],
+    "B_family_group_kfold": [
+      {
+        "fold": 0,
+        "n_dropped": 26,
+        "n_total_dims": 132
+      },
+      {
+        "fold": 1,
+        "n_dropped": 22,
+        "n_total_dims": 132
+      },
+      {
+        "fold": 2,
+        "n_dropped": 23,
+        "n_total_dims": 132
+      },
+      {
+        "fold": 3,
+        "n_dropped": 22,
+        "n_total_dims": 132
+      },
+      {
+        "fold": 4,
+        "n_dropped": 22,
+        "n_total_dims": 132
+      }
+    ],
+    "C_lomfo": [
+      {
+        "family": "LGPS",
+        "n_dropped": 22,
+        "n_total_dims": 132
+      },
+      {
+        "family": "LISICON",
+        "n_dropped": 22,
+        "n_total_dims": 132
+      },
+      {
+        "family": "NASICON",
+        "n_dropped": 22,
+        "n_total_dims": 132
+      },
+      {
+        "family": "__MISSING__",
+        "n_dropped": 22,
+        "n_total_dims": 132
+      },
+      {
+        "family": "argyrodites",
+        "n_dropped": 22,
+        "n_total_dims": 132
+      },
+      {
+        "family": "garnet",
+        "n_dropped": 22,
+        "n_total_dims": 132
+      },
+      {
+        "family": "oxides",
+        "n_dropped": 22,
+        "n_total_dims": 132
+      },
+      {
+        "family": "perovskites",
+        "n_dropped": 22,
+        "n_total_dims": 132
+      },
+      {
+        "family": "thio-LISICON",
+        "n_dropped": 22,
+        "n_total_dims": 132
+      }
+    ],
+    "external_reference_fit": {
+      "n_dropped": 22,
+      "n_total_dims": 132
+    }
+  },
+  "distance_distribution_summary_robust": {
+    "A_random_5fold_cv": {
+      "n": 449,
+      "median": 0.21349057191563003,
+      "q25": 0.0,
+      "q75": 1.2540892285632113,
+      "iqr": 1.2540892285632113,
+      "q90": 4.356843867153834,
+      "max": 23.422714172668563,
+      "mean": 1.4541696480662527
+    },
+    "B_family_group_kfold": {
+      "n": 449,
+      "median": 4.429528587639314,
+      "q25": 1.6649028694607422,
+      "q75": 6.965161639506758,
+      "iqr": 5.300258770046016,
+      "q90": 9.155109018404586,
+      "max": 26.649031835661283,
+      "mean": 4.746733559191989
+    },
+    "C_lomfo": {
+      "n": 396,
+      "median": 4.256085915974098,
+      "q25": 1.3463395560373312,
+      "q75": 6.770110674521373,
+      "iqr": 5.423771118484042,
+      "q90": 8.732387670974342,
+      "max": 18.588552050247255,
+      "mean": 4.3982486832188945
+    },
+    "hargreaves_strict": {
+      "n": 204,
+      "median": 3.0113609441663653,
+      "q25": 0.822377350697496,
+      "q75": 4.725029331720361,
+      "iqr": 3.902651981022865,
+      "q90": 7.210107522512489,
+      "max": 21.626620750403692,
+      "mean": 3.4989004657828757
+    },
+    "hargreaves_source_disjoint": {
+      "n": 153,
+      "median": 3.791089225304793,
+      "q25": 2.1777526792437905,
+      "q75": 5.284864921443325,
+      "iqr": 3.1071122421995345,
+      "q90": 8.250284673221406,
+      "max": 21.626620750403692,
+      "mean": 4.344386150324755
+    }
+  },
+  "wasserstein_distance_internal_vs_external_robust": {
+    "A_random_5fold_cv": {
+      "vs_hargreaves_strict": 2.0997995178582527,
+      "vs_hargreaves_source_disjoint": 2.9267165333450182
+    },
+    "B_family_group_kfold": {
+      "vs_hargreaves_strict": 1.3762928180312155,
+      "vs_hargreaves_source_disjoint": 1.0095421432143137
+    },
+    "C_lomfo": {
+      "vs_hargreaves_strict": 1.096197807823475,
+      "vs_hargreaves_source_disjoint": 0.8584233611358204
+    }
+  },
+  "original_vs_robust_distance_summary": {
+    "A_random_5fold_cv": {
+      "original_max": 23.422714172668563,
+      "robust_max": 23.422714172668563,
+      "original_q90": 4.356843867153834,
+      "robust_q90": 4.356843867153834,
+      "original_median": 0.21349057191563003,
+      "robust_median": 0.21349057191563003
+    },
+    "B_family_group_kfold": {
+      "original_max": 94559.5360502404,
+      "robust_max": 26.649031835661283,
+      "original_q90": 10.063197181505496,
+      "robust_q90": 9.155109018404586,
+      "original_median": 4.747555778103026,
+      "robust_median": 4.429528587639314
+    },
+    "C_lomfo": {
+      "original_max": 18.58855205024726,
+      "robust_max": 18.588552050247255,
+      "original_q90": 8.732387670974342,
+      "robust_q90": 8.732387670974342,
+      "original_median": 4.256085915974098,
+      "robust_median": 4.256085915974098
+    },
+    "hargreaves_strict": {
+      "original_max": 21.626620750403685,
+      "robust_max": 21.626620750403692,
+      "original_q90": 7.210107522512488,
+      "robust_q90": 7.210107522512489,
+      "original_median": 3.0113609441663645,
+      "robust_median": 3.0113609441663653
+    },
+    "hargreaves_source_disjoint": {
+      "original_max": 21.626620750403685,
+      "robust_max": 21.626620750403692,
+      "original_q90": 8.250284673221405,
+      "robust_q90": 8.250284673221406,
+      "original_median": 3.791089225304793,
+      "robust_median": 3.791089225304793
+    }
+  },
+  "original_vs_robust_wasserstein": {
+    "A_random_5fold_cv": {
+      "original_vs_strict": 2.0997995178582523,
+      "robust_vs_strict": 2.0997995178582527,
+      "original_vs_source_disjoint": 2.9267165333450182,
+      "robust_vs_source_disjoint": 2.9267165333450182
+    },
+    "B_family_group_kfold": {
+      "original_vs_strict": 3240.103111655095,
+      "robust_vs_strict": 1.3762928180312155,
+      "original_vs_source_disjoint": 3239.5372764150634,
+      "robust_vs_source_disjoint": 1.0095421432143137
+    },
+    "C_lomfo": {
+      "original_vs_strict": 1.0961978078234753,
+      "robust_vs_strict": 1.096197807823475,
+      "original_vs_source_disjoint": 0.8584233611358203,
+      "robust_vs_source_disjoint": 0.8584233611358204
+    }
+  },
+  "closest_regime_to_external_by_wasserstein": {
+    "original": "C_lomfo",
+    "robust": "C_lomfo",
+    "interpretation_changed": false
+  }
+}

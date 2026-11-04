@@ -1,0 +1,182 @@
+{
+  "model_name": "extra_trees",
+  "obelix_dev_population_n": 449,
+  "obelix_test_untouched_row_count": 113,
+  "missing_singleton_group_kfold": {
+    "pooled_mae": 2.1246817478844258,
+    "rmse": 2.7127482391108497,
+    "r2": -0.21817501674655038,
+    "spearman_rho": 0.4634350088218052,
+    "median_absolute_error": 1.9900390938857826,
+    "sample_weighted_mae_from_per_family": 2.124681747884426,
+    "macro_family_mae": 2.5472103193841065,
+    "median_family_mae": 2.2199595191518404,
+    "n_families_covered": 30,
+    "per_family_mae": {
+      "Chalcogenidotetrelates": {
+        "mae": 1.4607792892675677,
+        "n": 1
+      },
+      "LGPS": {
+        "mae": 1.2275174479225777,
+        "n": 36
+      },
+      "LISICON": {
+        "mae": 4.3663914364624175,
+        "n": 21
+      },
+      "NASICON": {
+        "mae": 3.2090952222236315,
+        "n": 130
+      },
+      "Tavorite": {
+        "mae": 0.018921555455627015,
+        "n": 1
+      },
+      "__MISSING__": {
+        "mae": 0.8700475674279082,
+        "n": 18
+      },
+      "antiperovskite": {
+        "mae": 2.9962261103818464,
+        "n": 3
+      },
+      "argyrodites": {
+        "mae": 2.018937863502003,
+        "n": 50
+      },
+      "boracites": {
+        "mae": 2.30214979983716,
+        "n": 1
+      },
+      "boron nitride": {
+        "mae": 1.9101499018696257,
+        "n": 2
+      },
+      "chlorides": {
+        "mae": 1.1418475217694293,
+        "n": 6
+      },
+      "copper pyroborate": {
+        "mae": 5.51993957821393,
+        "n": 1
+      },
+      "fluorides": {
+        "mae": 2.9438959636464386,
+        "n": 1
+      },
+      "garnet": {
+        "mae": 0.5027257593876288,
+        "n": 81
+      },
+      "garnet-like": {
+        "mae": 0.252186791673378,
+        "n": 2
+      },
+      "halides": {
+        "mae": 2.4964077409085474,
+        "n": 5
+      },
+      "hexaoxometalates": {
+        "mae": 2.5823646768879325,
+        "n": 2
+      },
+      "hydrides": {
+        "mae": 1.7810695235446163,
+        "n": 3
+      },
+      "layered": {
+        "mae": 3.0786377583759967,
+        "n": 1
+      },
+      "molybdates": {
+        "mae": 3.472068422074569,
+        "n": 3
+      },
+      "nitrides": {
+        "mae": 3.388665139769382,
+        "n": 3
+      },
+      "nitridosilicates": {
+        "mae": 4.520783051988964,
+        "n": 1
+      },
+      "oxides": {
+        "mae": 1.8353671312188444,
+        "n": 17
+      },
+      "perovskites": {
+        "mae": 2.137769238466521,
+        "n": 26
+      },
+      "phosphates": {
+        "mae": 2.697181099840593,
+        "n": 6
+      },
+      "pyrophosphate": {
+        "mae": 9.764206891560267,
+        "n": 1
+      },
+      "sulfides": {
+        "mae": 1.4118016721213473,
+        "n": 7
+      },
+      "thio-LISICON": {
+        "mae": 1.8125443079317813,
+        "n": 17
+      },
+      "thio-phosphate": {
+        "mae": 1.881589581857007,
+        "n": 2
+      },
+      "zirconates": {
+        "mae": 2.8150415359356558,
+        "n": 1
+      }
+    },
+    "regime": "B_prime_missing_singleton_group_kfold",
+    "n_folds": 5,
+    "fold_sizes": [
+      45,
+      195,
+      159,
+      30,
+      20
+    ],
+    "seed": 20260921,
+    "per_fold_hyperparameters": [
+      {
+        "n_estimators": 156,
+        "max_depth": 9,
+        "min_samples_leaf": 2,
+        "max_features": 0.340222198081932
+      },
+      {
+        "n_estimators": 526,
+        "max_depth": 13,
+        "min_samples_leaf": 3,
+        "max_features": 0.32989241214627657
+      },
+      {
+        "n_estimators": 171,
+        "max_depth": 16,
+        "min_samples_leaf": 2,
+        "max_features": 0.6026571731856656
+      },
+      {
+        "n_estimators": 438,
+        "max_depth": 19,
+        "min_samples_leaf": 2,
+        "max_features": 0.5597574895107442
+      },
+      {
+        "n_estimators": 356,
+        "max_depth": 12,
+        "min_samples_leaf": 1,
+        "max_features": 0.8271292089632496
+      }
+    ],
+    "note": "ACS/JCIM remediation Issue 09 Variant B: identical to regime B (Family-GroupKFold) except the 18 __MISSING__ rows are each their own singleton group instead of one shared 18-row group -- tests whether Family-GroupKFold's fold assignment for OTHER rows, and hence the primary result, is sensitive to how __MISSING__ is grouped."
+  },
+  "runtime_seconds": 210.2780556678772
+}

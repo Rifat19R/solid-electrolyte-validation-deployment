@@ -1,0 +1,26 @@
+{
+  "phase": "N15_reviewer_remediation",
+  "status": "POST_REVIEW_SENSITIVITY_ANALYSIS_NOT_PRESPECIFIED",
+  "git_commit": "534da7af653407d764d3636e34fca3db1b068817",
+  "git_branch": "acs-jcim-finalization",
+  "spec_file": "artifacts/npj_n15_remediation_spec.json",
+  "spec_file_sha256": "c448d97590eb1d0ee283166d5b7805dbba0c4612c1811c212ab9c4eac8a42733",
+  "n6_source": "artifacts/npj_n6_external_transfer.json (frozen, not rerun)",
+  "n4b_source": "artifacts/npj_n4b_nested_internal_validation.json (frozen, not rerun)",
+  "n_strict_cohort": 204,
+  "n_source_disjoint": 153,
+  "n_window_20_30": 197,
+  "stable_model_h1_h2": {
+    "h1": {
+      "B_minus_A": false,
+      "C_minus_A": false
+    },
+    "h2": {
+      "B_minus_A_spearman_rho": false,
+      "B_minus_A_kendall_tau": false,
+      "C_minus_A_spearman_rho": false,
+      "C_minus_A_kendall_tau": false
+    }
+  },
+  "n_models_with_positive_spearman_finer_grid": 8
+}

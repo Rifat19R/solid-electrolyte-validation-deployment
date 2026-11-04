@@ -1,0 +1,3 @@
+cohort,n,mean_predictor_mae,median_predictor_mae
+hargreaves_strict,204,1.6701053422889702,1.7429232851058165
+hargreaves_source_disjoint,153,1.8018474648237868,1.9675772570445265

@@ -1,0 +1,106 @@
+{
+  "phase": "N15_reviewer_remediation",
+  "status": "POST_REVIEW_SENSITIVITY_ANALYSIS_NOT_PRESPECIFIED",
+  "git_commit": "534da7af653407d764d3636e34fca3db1b068817",
+  "git_branch": "acs-jcim-finalization",
+  "spec_file": "artifacts/npj_n15_remediation_spec.json",
+  "spec_file_sha256": "c448d97590eb1d0ee283166d5b7805dbba0c4612c1811c212ab9c4eac8a42733",
+  "n6_source": "artifacts/npj_n6_external_transfer.json (frozen, not rerun)",
+  "n4b_source": "artifacts/npj_n4b_nested_internal_validation.json (frozen, not rerun)",
+  "analysis": "N15_analysis_2_deployment_shift_alignment",
+  "cv_seed": 20260921,
+  "n_outer_splits": 5,
+  "lomfo_min_family_n": 15,
+  "major_families": [
+    "LGPS",
+    "LISICON",
+    "NASICON",
+    "__MISSING__",
+    "argyrodites",
+    "garnet",
+    "oxides",
+    "perovskites",
+    "thio-LISICON"
+  ],
+  "distance_distribution_summary": {
+    "A_random_5fold_cv": {
+      "n": 449,
+      "median": 0.21349057191563003,
+      "q25": 0.0,
+      "q75": 1.2540892285632108,
+      "iqr": 1.2540892285632108,
+      "q90": 4.356843867153834,
+      "max": 23.422714172668563,
+      "mean": 1.4541696480662527
+    },
+    "B_family_group_kfold": {
+      "n": 449,
+      "median": 4.747555778103026,
+      "q25": 1.7506993873462788,
+      "q75": 7.55910444872398,
+      "iqr": 5.808405061377702,
+      "q90": 10.063197181505496,
+      "max": 94559.5360502404,
+      "mean": 3243.56308526675
+    },
+    "C_lomfo": {
+      "n": 396,
+      "median": 4.256085915974098,
+      "q25": 1.3463395560373312,
+      "q75": 6.770110674521372,
+      "iqr": 5.423771118484041,
+      "q90": 8.732387670974342,
+      "max": 18.58855205024726,
+      "mean": 4.3982486832188945
+    },
+    "hargreaves_strict": {
+      "n": 204,
+      "median": 3.0113609441663645,
+      "q25": 0.8223773506974958,
+      "q75": 4.725029331720361,
+      "iqr": 3.902651981022865,
+      "q90": 7.210107522512488,
+      "max": 21.626620750403685,
+      "mean": 3.4989004657828757
+    },
+    "hargreaves_source_disjoint": {
+      "n": 153,
+      "median": 3.791089225304793,
+      "q25": 2.1777526792437905,
+      "q75": 5.284864921443324,
+      "iqr": 3.1071122421995336,
+      "q90": 8.250284673221405,
+      "max": 21.626620750403685,
+      "mean": 4.344386150324755
+    }
+  },
+  "family_novelty_fraction": {
+    "A_random_5fold_cv": {
+      "n": 449,
+      "fraction_novel": 0.031180400890868598
+    },
+    "B_family_group_kfold": {
+      "n": 449,
+      "fraction_novel": 1.0
+    },
+    "C_lomfo": {
+      "n": 396,
+      "fraction_novel": 1.0
+    }
+  },
+  "wasserstein_distance_internal_vs_external": {
+    "A_random_5fold_cv": {
+      "vs_hargreaves_strict": 2.0997995178582523,
+      "vs_hargreaves_source_disjoint": 2.9267165333450182
+    },
+    "B_family_group_kfold": {
+      "vs_hargreaves_strict": 3240.103111655095,
+      "vs_hargreaves_source_disjoint": 3239.5372764150634
+    },
+    "C_lomfo": {
+      "vs_hargreaves_strict": 1.0961978078234753,
+      "vs_hargreaves_source_disjoint": 0.8584233611358203
+    }
+  },
+  "note": "No target y/log_target value was read anywhere in this analysis."
+}

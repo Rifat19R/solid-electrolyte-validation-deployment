@@ -1,0 +1,703 @@
+{
+  "dataset_a": "obelix",
+  "dataset_b": "bvel_percolation",
+  "classification_counts": {
+    "EXACT_STRUCTURE_MATCH": 57,
+    "COMPOSITION_ONLY_MATCH": 31,
+    "PROBABLE_STRUCTURE_MATCH": 3,
+    "NO_MATCH": 230
+  },
+  "matches": [
+    {
+      "query_id": "00x",
+      "matched_id": "mp-6248",
+      "classification": "EXACT_STRUCTURE_MATCH"
+    },
+    {
+      "query_id": "019",
+      "matched_id": "mp-759793",
+      "classification": "COMPOSITION_ONLY_MATCH"
+    },
+    {
+      "query_id": "122",
+      "matched_id": "mp-985592",
+      "classification": "COMPOSITION_ONLY_MATCH"
+    },
+    {
+      "query_id": "1e9",
+      "matched_id": "mp-1194339",
+      "classification": "EXACT_STRUCTURE_MATCH"
+    },
+    {
+      "query_id": "1xt",
+      "matched_id": "mp-1198780",
+      "classification": "EXACT_STRUCTURE_MATCH"
+    },
+    {
+      "query_id": "2t8",
+      "matched_id": "mp-1247560",
+      "classification": "COMPOSITION_ONLY_MATCH"
+    },
+    {
+      "query_id": "2uv",
+      "matched_id": "mp-1194700",
+      "classification": "EXACT_STRUCTURE_MATCH"
+    },
+    {
+      "query_id": "3nb",
+      "matched_id": "mp-1238771",
+      "classification": "COMPOSITION_ONLY_MATCH"
+    },
+    {
+      "query_id": "3rx",
+      "matched_id": "mp-10520",
+      "classification": "EXACT_STRUCTURE_MATCH"
+    },
+    {
+      "query_id": "472",
+      "matched_id": "mp-1223420",
+      "classification": "COMPOSITION_ONLY_MATCH"
+    },
+    {
+      "query_id": "47i",
+      "matched_id": "mp-28450",
+      "classification": "EXACT_STRUCTURE_MATCH"
+    },
+    {
+      "query_id": "4ba",
+      "matched_id": "mp-1021510",
+      "classification": "EXACT_STRUCTURE_MATCH"
+    },
+    {
+      "query_id": "4kt",
+      "matched_id": "mp-29582",
+      "classification": "PROBABLE_STRUCTURE_MATCH"
+    },
+    {
+      "query_id": "4p7",
+      "matched_id": "mp-985585",
+      "classification": "EXACT_STRUCTURE_MATCH"
+    },
+    {
+      "query_id": "5bz",
+      "matched_id": "mp-5001",
+      "classification": "EXACT_STRUCTURE_MATCH"
+    },
+    {
+      "query_id": "5wz",
+      "matched_id": "mp-950995",
+      "classification": "COMPOSITION_ONLY_MATCH"
+    },
+    {
+      "query_id": "5z0",
+      "matched_id": "mp-15960",
+      "classification": "EXACT_STRUCTURE_MATCH"
+    },
+    {
+      "query_id": "5zv",
+      "matched_id": "mp-1200615",
+      "classification": "EXACT_STRUCTURE_MATCH"
+    },
+    {
+      "query_id": "7cr",
+      "matched_id": "mp-1020646",
+      "classification": "EXACT_STRUCTURE_MATCH"
+    },
+    {
+      "query_id": "97p",
+      "matched_id": "mp-985592",
+      "classification": "COMPOSITION_ONLY_MATCH"
+    },
+    {
+      "query_id": "9lo",
+      "matched_id": "mp-2878",
+      "classification": "EXACT_STRUCTURE_MATCH"
+    },
+    {
+      "query_id": "9zk",
+      "matched_id": "mp-4657",
+      "classification": "EXACT_STRUCTURE_MATCH"
+    },
+    {
+      "query_id": "9zr",
+      "matched_id": "mp-985591",
+      "classification": "COMPOSITION_ONLY_MATCH"
+    },
+    {
+      "query_id": "aui",
+      "matched_id": "mp-769597",
+      "classification": "COMPOSITION_ONLY_MATCH"
+    },
+    {
+      "query_id": "be9",
+      "matched_id": "mp-28326",
+      "classification": "EXACT_STRUCTURE_MATCH"
+    },
+    {
+      "query_id": "bjw",
+      "matched_id": "mp-34148",
+      "classification": "COMPOSITION_ONLY_MATCH"
+    },
+    {
+      "query_id": "bq9",
+      "matched_id": "mp-28510",
+      "classification": "EXACT_STRUCTURE_MATCH"
+    },
+    {
+      "query_id": "br1",
+      "matched_id": "mp-13944",
+      "classification": "EXACT_STRUCTURE_MATCH"
+    },
+    {
+      "query_id": "bsa",
+      "matched_id": "mp-5854",
+      "classification": "EXACT_STRUCTURE_MATCH"
+    },
+    {
+      "query_id": "bv2",
+      "matched_id": "mp-7020",
+      "classification": "EXACT_STRUCTURE_MATCH"
+    },
+    {
+      "query_id": "cdk",
+      "matched_id": "mp-1020019",
+      "classification": "EXACT_STRUCTURE_MATCH"
+    },
+    {
+      "query_id": "clt",
+      "matched_id": "mp-1191302",
+      "classification": "EXACT_STRUCTURE_MATCH"
+    },
+    {
+      "query_id": "d7f",
+      "matched_id": "mp-557738",
+      "classification": "EXACT_STRUCTURE_MATCH"
+    },
+    {
+      "query_id": "dc8",
+      "matched_id": "mp-1203004",
+      "classification": "EXACT_STRUCTURE_MATCH"
+    },
+    {
+      "query_id": "dl7",
+      "matched_id": "mp-774752",
+      "classification": "COMPOSITION_ONLY_MATCH"
+    },
+    {
+      "query_id": "dth",
+      "matched_id": "mp-4558",
+      "classification": "EXACT_STRUCTURE_MATCH"
+    },
+    {
+      "query_id": "dvn",
+      "matched_id": "mp-38684",
+      "classification": "COMPOSITION_ONLY_MATCH"
+    },
+    {
+      "query_id": "e6b",
+      "matched_id": "mp-1222529",
+      "classification": "COMPOSITION_ONLY_MATCH"
+    },
+    {
+      "query_id": "ecp",
+      "matched_id": "mp-1020057",
+      "classification": "EXACT_STRUCTURE_MATCH"
+    },
+    {
+      "query_id": "fft",
+      "matched_id": "mp-2341",
+      "classification": "EXACT_STRUCTURE_MATCH"
+    },
+    {
+      "query_id": "fwz",
+      "matched_id": "mp-1210789",
+      "classification": "COMPOSITION_ONLY_MATCH"
+    },
+    {
+      "query_id": "gvd",
+      "matched_id": "mp-2251",
+      "classification": "EXACT_STRUCTURE_MATCH"
+    },
+    {
+      "query_id": "gxz",
+      "matched_id": "mp-1200615",
+      "classification": "COMPOSITION_ONLY_MATCH"
+    },
+    {
+      "query_id": "h6c",
+      "matched_id": "mp-19219",
+      "classification": "EXACT_STRUCTURE_MATCH"
+    },
+    {
+      "query_id": "hcm",
+      "matched_id": "mp-559776",
+      "classification": "EXACT_STRUCTURE_MATCH"
+    },
+    {
+      "query_id": "hja",
+      "matched_id": "mp-1222777",
+      "classification": "COMPOSITION_ONLY_MATCH"
+    },
+    {
+      "query_id": "i12",
+      "matched_id": "mp-1662153",
+      "classification": "COMPOSITION_ONLY_MATCH"
+    },
+    {
+      "query_id": "i47",
+      "matched_id": "mp-11175",
+      "classification": "EXACT_STRUCTURE_MATCH"
+    },
+    {
+      "query_id": "ia5",
+      "matched_id": "mp-861268",
+      "classification": "COMPOSITION_ONLY_MATCH"
+    },
+    {
+      "query_id": "ipo",
+      "matched_id": "mp-1198622",
+      "classification": "EXACT_STRUCTURE_MATCH"
+    },
+    {
+      "query_id": "jqc",
+      "matched_id": "mp-38487",
+      "classification": "COMPOSITION_ONLY_MATCH"
+    },
+    {
+      "query_id": "jy6",
+      "matched_id": "mp-1104386",
+      "classification": "EXACT_STRUCTURE_MATCH"
+    },
+    {
+      "query_id": "kfp",
+      "matched_id": "mp-6175",
+      "classification": "EXACT_STRUCTURE_MATCH"
+    },
+    {
+      "query_id": "kkn",
+      "matched_id": "mp-568365",
+      "classification": "COMPOSITION_ONLY_MATCH"
+    },
+    {
+      "query_id": "kmv",
+      "matched_id": "mp-1195718",
+      "classification": "COMPOSITION_ONLY_MATCH"
+    },
+    {
+      "query_id": "kxw",
+      "matched_id": "mp-1222525",
+      "classification": "EXACT_STRUCTURE_MATCH"
+    },
+    {
+      "query_id": "l9v",
+      "matched_id": "mp-15254",
+      "classification": "EXACT_STRUCTURE_MATCH"
+    },
+    {
+      "query_id": "ldx",
+      "matched_id": "mp-1021510",
+      "classification": "EXACT_STRUCTURE_MATCH"
+    },
+    {
+      "query_id": "lkm",
+      "matched_id": "mp-27968",
+      "classification": "EXACT_STRUCTURE_MATCH"
+    },
+    {
+      "query_id": "lrh",
+      "matched_id": "mp-771281",
+      "classification": "COMPOSITION_ONLY_MATCH"
+    },
+    {
+      "query_id": "mde",
+      "matched_id": "mp-558105",
+      "classification": "EXACT_STRUCTURE_MATCH"
+    },
+    {
+      "query_id": "mdp",
+      "matched_id": "mp-641703",
+      "classification": "PROBABLE_STRUCTURE_MATCH"
+    },
+    {
+      "query_id": "mn3",
+      "matched_id": "mp-1194700",
+      "classification": "COMPOSITION_ONLY_MATCH"
+    },
+    {
+      "query_id": "mq1",
+      "matched_id": "mp-756316",
+      "classification": "EXACT_STRUCTURE_MATCH"
+    },
+    {
+      "query_id": "n27",
+      "matched_id": "mp-3635",
+      "classification": "EXACT_STRUCTURE_MATCH"
+    },
+    {
+      "query_id": "nhq",
+      "matched_id": "mp-985583",
+      "classification": "COMPOSITION_ONLY_MATCH"
+    },
+    {
+      "query_id": "nua",
+      "matched_id": "mp-6521",
+      "classification": "EXACT_STRUCTURE_MATCH"
+    },
+    {
+      "query_id": "oi6",
+      "matched_id": "mp-27453",
+      "classification": "COMPOSITION_ONLY_MATCH"
+    },
+    {
+      "query_id": "p81",
+      "matched_id": "mp-22983",
+      "classification": "EXACT_STRUCTURE_MATCH"
+    },
+    {
+      "query_id": "pg8",
+      "matched_id": "mp-743603",
+      "classification": "COMPOSITION_ONLY_MATCH"
+    },
+    {
+      "query_id": "qa9",
+      "matched_id": "mp-8926",
+      "classification": "EXACT_STRUCTURE_MATCH"
+    },
+    {
+      "query_id": "qbb",
+      "matched_id": "mp-28593",
+      "classification": "EXACT_STRUCTURE_MATCH"
+    },
+    {
+      "query_id": "qno",
+      "matched_id": "mp-759793",
+      "classification": "COMPOSITION_ONLY_MATCH"
+    },
+    {
+      "query_id": "qy4",
+      "matched_id": "mp-554395",
+      "classification": "EXACT_STRUCTURE_MATCH"
+    },
+    {
+      "query_id": "ro9",
+      "matched_id": "mp-1020022",
+      "classification": "EXACT_STRUCTURE_MATCH"
+    },
+    {
+      "query_id": "rr5",
+      "matched_id": "mp-18640",
+      "classification": "EXACT_STRUCTURE_MATCH"
+    },
+    {
+      "query_id": "sg0",
+      "matched_id": "mp-5840",
+      "classification": "EXACT_STRUCTURE_MATCH"
+    },
+    {
+      "query_id": "skm",
+      "matched_id": "mp-29365",
+      "classification": "EXACT_STRUCTURE_MATCH"
+    },
+    {
+      "query_id": "t0h",
+      "matched_id": "mp-4156",
+      "classification": "EXACT_STRUCTURE_MATCH"
+    },
+    {
+      "query_id": "tka",
+      "matched_id": "mp-5853",
+      "classification": "EXACT_STRUCTURE_MATCH"
+    },
+    {
+      "query_id": "tws",
+      "matched_id": "mp-5418",
+      "classification": "EXACT_STRUCTURE_MATCH"
+    },
+    {
+      "query_id": "uex",
+      "matched_id": "mp-16283",
+      "classification": "COMPOSITION_ONLY_MATCH"
+    },
+    {
+      "query_id": "um1",
+      "matched_id": "mp-8702",
+      "classification": "COMPOSITION_ONLY_MATCH"
+    },
+    {
+      "query_id": "ur9",
+      "matched_id": "mp-541661",
+      "classification": "EXACT_STRUCTURE_MATCH"
+    },
+    {
+      "query_id": "uu4",
+      "matched_id": "mp-19373",
+      "classification": "EXACT_STRUCTURE_MATCH"
+    },
+    {
+      "query_id": "w7d",
+      "matched_id": "mp-2878",
+      "classification": "EXACT_STRUCTURE_MATCH"
+    },
+    {
+      "query_id": "w87",
+      "matched_id": "mp-985591",
+      "classification": "COMPOSITION_ONLY_MATCH"
+    },
+    {
+      "query_id": "wyu",
+      "matched_id": "mp-942733",
+      "classification": "EXACT_STRUCTURE_MATCH"
+    },
+    {
+      "query_id": "x2i",
+      "matched_id": "mp-1540429",
+      "classification": "PROBABLE_STRUCTURE_MATCH"
+    },
+    {
+      "query_id": "xas",
+      "matched_id": "mp-1190364",
+      "classification": "EXACT_STRUCTURE_MATCH"
+    },
+    {
+      "query_id": "yav",
+      "matched_id": "mp-36330",
+      "classification": "COMPOSITION_ONLY_MATCH"
+    }
+  ],
+  "no_match_query_ids": [
+    "09w",
+    "0fh",
+    "0ii",
+    "0iv",
+    "0o6",
+    "10s",
+    "11b",
+    "13q",
+    "1dm",
+    "1kq",
+    "1m8",
+    "1ty",
+    "1xf",
+    "20k",
+    "240",
+    "24k",
+    "2d1",
+    "2r7",
+    "2wb",
+    "3rh",
+    "3uq",
+    "3zo",
+    "419",
+    "4ea",
+    "4ie",
+    "4xq",
+    "5tl",
+    "68u",
+    "6du",
+    "6jf",
+    "6l9",
+    "72f",
+    "7e5",
+    "7ek",
+    "7o7",
+    "7tu",
+    "7w5",
+    "824",
+    "883",
+    "8fn",
+    "8ub",
+    "95j",
+    "96f",
+    "97b",
+    "9ky",
+    "9lx",
+    "9n0",
+    "9o6",
+    "9ph",
+    "9rc",
+    "9s4",
+    "9wf",
+    "9yt",
+    "a8v",
+    "aab",
+    "an2",
+    "ar1",
+    "ard",
+    "b4c",
+    "b56",
+    "bi3",
+    "bnh",
+    "bnu",
+    "c0g",
+    "c6e",
+    "cfy",
+    "cju",
+    "ckw",
+    "cti",
+    "cy2",
+    "cz2",
+    "d9l",
+    "dae",
+    "de5",
+    "deu",
+    "dlj",
+    "dmq",
+    "duf",
+    "dvb",
+    "e6a",
+    "e81",
+    "ei3",
+    "ek5",
+    "elz",
+    "etz",
+    "fam",
+    "fj5",
+    "fkj",
+    "g5q",
+    "ga9",
+    "gas",
+    "gcj",
+    "gdr",
+    "gkl",
+    "goi",
+    "gw2",
+    "gwu",
+    "gz8",
+    "h5i",
+    "h7r",
+    "h82",
+    "h89",
+    "hai",
+    "hbz",
+    "hta",
+    "hud",
+    "hx7",
+    "i4l",
+    "iiy",
+    "ij5",
+    "ik8",
+    "iqt",
+    "ish",
+    "ix1",
+    "j5g",
+    "j8q",
+    "jej",
+    "jkq",
+    "jl4",
+    "joc",
+    "k4x",
+    "ka6",
+    "kab",
+    "kbo",
+    "kbq",
+    "kbu",
+    "kgl",
+    "kh3",
+    "kji",
+    "kko",
+    "klr",
+    "kop",
+    "ku9",
+    "l2w",
+    "l6h",
+    "l9r",
+    "lap",
+    "lk8",
+    "lol",
+    "lpt",
+    "lpx",
+    "lud",
+    "lxk",
+    "m0v",
+    "me3",
+    "mfs",
+    "mfu",
+    "mg4",
+    "mtn",
+    "mtr",
+    "my9",
+    "na5",
+    "ner",
+    "nig",
+    "nip",
+    "o0a",
+    "o5q",
+    "o9h",
+    "ob9",
+    "opo",
+    "ozo",
+    "p9u",
+    "pa1",
+    "pbz",
+    "pe2",
+    "pql",
+    "pwr",
+    "qer",
+    "r99",
+    "rty",
+    "rwr",
+    "s2v",
+    "s3h",
+    "sib",
+    "sqm",
+    "t2c",
+    "t3k",
+    "tbj",
+    "tbu",
+    "tjh",
+    "tvf",
+    "u0c",
+    "u2y",
+    "u8r",
+    "uaz",
+    "ueu",
+    "ui6",
+    "uox",
+    "usu",
+    "uut",
+    "uw9",
+    "uwh",
+    "ux3",
+    "uxi",
+    "uxo",
+    "vg0",
+    "vj7",
+    "vlm",
+    "vqj",
+    "vqu",
+    "vwy",
+    "vy5",
+    "wa3",
+    "wgw",
+    "wsd",
+    "x2v",
+    "x9d",
+    "xa0",
+    "xk3",
+    "xog",
+    "xq3",
+    "xub",
+    "xut",
+    "xz4",
+    "y2l",
+    "yab",
+    "ym6",
+    "ymc",
+    "yq2",
+    "yqu",
+    "ysm",
+    "ywe",
+    "z16",
+    "z2s",
+    "z7n",
+    "z9y",
+    "zs0",
+    "zv5",
+    "zxr",
+    "zzr"
+  ],
+  "method": "Composition-prefiltered pymatgen StructureMatcher. EXACT_STRUCTURE_MATCH: ltol=0.2/stol=0.3/angle_tol=5. PROBABLE_STRUCTURE_MATCH: ltol=0.4/stol=0.6/angle_tol=10 fit but not the strict matcher. Because bvse_hops and dft_neb material_id sets are proper subsets of bvel_percolation's (see pretraining_id_overlap.json), any match against bvel_percolation also implies the same material is present in bvse_hops and, if applicable, dft_neb.",
+  "limitation": "OBELiX has no Materials Project id field, so EXACT_ID_MATCH is not computable between obelix and the pretraining datasets; only composition/structure-level classification is possible for this pair.",
+  "obelix_structures_considered": 321,
+  "bvel_percolation_structures_considered": 12807
+}

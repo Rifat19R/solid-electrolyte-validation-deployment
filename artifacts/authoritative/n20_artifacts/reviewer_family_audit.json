@@ -1,0 +1,1300 @@
+{
+  "n20_part": "A_external_family_audit",
+  "git_commit": "534da7af653407d764d3636e34fca3db1b068817",
+  "obelix_dev_population_family_vocabulary": [
+    "Chalcogenidotetrelates",
+    "LGPS",
+    "LISICON",
+    "NASICON",
+    "Tavorite",
+    "__MISSING__",
+    "antiperovskite",
+    "argyrodites",
+    "boracites",
+    "boron nitride",
+    "chlorides",
+    "copper pyroborate",
+    "fluorides",
+    "garnet",
+    "garnet-like",
+    "halides",
+    "hexaoxometalates",
+    "hydrides",
+    "layered",
+    "molybdates",
+    "nitrides",
+    "nitridosilicates",
+    "oxides",
+    "perovskites",
+    "phosphates",
+    "pyrophosphate",
+    "sulfides",
+    "thio-LISICON",
+    "thio-phosphate",
+    "zirconates"
+  ],
+  "hargreaves_to_obelix_family_crosswalk": {
+    "Anti-Perovskite": {
+      "matched_obelix_family": "antiperovskite",
+      "n_strict_cohort_formulas": 5,
+      "status": "SEEN_IN_OBELIX"
+    },
+    "Argyrodite": {
+      "matched_obelix_family": "argyrodites",
+      "n_strict_cohort_formulas": 8,
+      "status": "SEEN_IN_OBELIX"
+    },
+    "Garnet": {
+      "matched_obelix_family": "garnet",
+      "n_strict_cohort_formulas": 4,
+      "status": "SEEN_IN_OBELIX"
+    },
+    "LISICON": {
+      "matched_obelix_family": "LISICON",
+      "n_strict_cohort_formulas": 6,
+      "status": "SEEN_IN_OBELIX"
+    },
+    "NASICON": {
+      "matched_obelix_family": "NASICON",
+      "n_strict_cohort_formulas": 61,
+      "status": "SEEN_IN_OBELIX"
+    },
+    "Perovskite": {
+      "matched_obelix_family": "perovskites",
+      "n_strict_cohort_formulas": 45,
+      "status": "SEEN_IN_OBELIX"
+    },
+    "Thio-LISICON": {
+      "matched_obelix_family": "thio-LISICON",
+      "n_strict_cohort_formulas": 9,
+      "status": "SEEN_IN_OBELIX"
+    },
+    "Glass": {
+      "matched_obelix_family": null,
+      "n_strict_cohort_formulas": 31,
+      "status": "NO_OBELIX_MATCH"
+    },
+    "Glass-Ceramic": {
+      "matched_obelix_family": null,
+      "n_strict_cohort_formulas": 5,
+      "status": "NO_OBELIX_MATCH"
+    },
+    "Lysonite": {
+      "matched_obelix_family": null,
+      "n_strict_cohort_formulas": 0,
+      "status": "NO_OBELIX_MATCH"
+    },
+    "Olivine": {
+      "matched_obelix_family": null,
+      "n_strict_cohort_formulas": 6,
+      "status": "NO_OBELIX_MATCH"
+    },
+    "Other": {
+      "matched_obelix_family": null,
+      "n_strict_cohort_formulas": 11,
+      "status": "NO_OBELIX_MATCH"
+    },
+    "Phenakite": {
+      "matched_obelix_family": null,
+      "n_strict_cohort_formulas": 3,
+      "status": "NO_OBELIX_MATCH"
+    },
+    "Rocksalt": {
+      "matched_obelix_family": null,
+      "n_strict_cohort_formulas": 6,
+      "status": "NO_OBELIX_MATCH"
+    },
+    "Zircon": {
+      "matched_obelix_family": null,
+      "n_strict_cohort_formulas": 4,
+      "status": "NO_OBELIX_MATCH"
+    },
+    "Other (ambiguous, non-informative label)": {
+      "matched_obelix_family": null,
+      "n_strict_cohort_formulas": 11,
+      "status": "AMBIGUOUS_NON_INFORMATIVE_LABEL"
+    }
+  },
+  "crosswalk_method": "Exact match after case/hyphen/space normalization and singular/plural folding only; no fuzzy/edit-distance matching. 'Zircon' (Hargreaves) intentionally NOT merged with OBELiX's 'zirconates' (chemically distinct mineral vs. oxide family), mirroring the project's existing LISICON/NASICON non-merge precedent in family_harmonization.py.",
+  "n_strict_cohort_formulas": 204,
+  "n_seen_family": 138,
+  "n_unseen_family": 55,
+  "n_ambiguous_or_missing_family": 11,
+  "seen_family_formulas": [
+    "Ba2LiTi2NbO9",
+    "Li0.022La0.115Ti0.165Al0.055O0.618",
+    "Li0.022La0.117Ti0.208Al0.001O0.626",
+    "Li0.022La0.118Ti0.2Al0.004O0.631",
+    "Li0.067La0.64Ti1O2.99",
+    "Li0.06La0.66Ti0.93Al0.06O3",
+    "Li0.15La0.66Ti0.85Al0.15O3",
+    "Li0.1La0.63Ti1O3",
+    "Li0.1La0.66Ti0.9Al0.1O3",
+    "Li0.245La0.592Ti0.98Mn0.02O3",
+    "Li0.24La0.59Ti1O3",
+    "Li0.25La0.66Ti0.75Al0.25O3",
+    "Li0.27La0.59Ti1O3",
+    "Li0.2La0.66Ti0.8Al0.2O3",
+    "Li0.2Zr1.2Nb0.8P3O12",
+    "Li0.34La0.56Ti1O3",
+    "Li0.34Pr0.56Ti1O3",
+    "Li0.361La0.55Ti0.995Al0.005O3",
+    "Li0.36La0.51Ti0.95W0.05O3",
+    "Li0.36La0.54Ti1O3",
+    "Li0.36La0.55Ti0.95Ge0.05O3",
+    "Li0.36La0.55Ti0.95Mn0.05O3",
+    "Li0.36La0.55Ti0.95Ru0.05O3",
+    "Li0.36La0.55Ti0.992Al0.008O3",
+    "Li0.36La0.55Ti0.995Al0.005O3",
+    "Li0.36La0.56Ti0.95Al0.05O3",
+    "Li0.36La0.58Mg0.05Ti0.95O3",
+    "Li0.3La0.66Ti0.7Al0.3O3",
+    "Li0.5La0.4Nd0.1Ti1O3",
+    "Li0.7Ti1.7Al0.3P3O12",
+    "Li0.8La0.066Zr2P3O12",
+    "Li0.98Zr1.98Nb0.02P3O12",
+    "Li0.9Zr1.9Nb0.1P3O12",
+    "Li1.02Y0.02Zr1.98P3O12",
+    "Li1.05Ti1.95Al0.05P1O4",
+    "Li1.076Ti1.462Al0.6923P3O12",
+    "Li1.1Hf1.9Cr0.1P3O12",
+    "Li1.1Y0.1Hf1.9P3O12",
+    "Li1.2Hf1.8Cr0.2P3O12",
+    "Li1.2Hf1.8Fe0.2P3O12",
+    "Li1.2Hf1.8Sc0.2P3O12",
+    "Li1.2Ti0.8Al0.2Ge1P3O12",
+    "Li1.2Ti1Al0.2Ge0.8P3O12",
+    "Li1.2Y0.2Hf1.8P3O12",
+    "Li1.2Y0.2Ti1.8P3O12",
+    "Li1.2Zr0.2Sc0.2Ti1.6P3O12",
+    "Li1.2Zr1.5Sc0.2Ti0.2P3O12",
+    "Li1.35Ti1.45Al0.35Ge0.2P3O12",
+    "Li1.3Cr0.3Ge1.7P3O12",
+    "Li1.3Eu0.3Ti1.7P3O12",
+    "Li1.3Fe0.3Ge1.7P3O12",
+    "Li1.3In0.3Ge1.7P3O12",
+    "Li1.3Sc0.3Ge1.7P3O12",
+    "Li1.3Y0.3Ti1.7P3O12",
+    "Li1.45Ti1.35Al0.45Ge0.2P3O12",
+    "Li1.45Ti1.55Al0.45P1O4",
+    "Li1.4Hf1.6Sc0.4P3O12",
+    "Li1.4Ti0.4Al0.4Ge1.2P3O12",
+    "Li1.4Ti0.528Al0.4Ge1.072P3O12",
+    "Li1.4Ti0.6Al0.4Ge1P3O12",
+    "Li1.4Ti0.8Al0.4Ge0.8P3O12",
+    "Li1.4Ti1.4Al0.4Ge0.2P3O12",
+    "Li1.4Y0.4Ti1.6P3O12",
+    "Li1.55Ti1.25Al0.55Ge0.2P3O12",
+    "Li1.5Ga0.5Ge1.5P3O12",
+    "Li1.5Hf1.5Al0.5P3O12",
+    "Li1.5Hf1.5Cr0.5P3O12",
+    "Li1.5In0.5Ge1.5P3O12",
+    "Li1.5Sc0.5Ge1.5P3O12",
+    "Li1.5Ti1.3Al0.5Ge0.2P3O12",
+    "Li1.5Y0.5Ti1.5P3O12",
+    "Li1.6Al0.6Ge0.8P3O12",
+    "Li1.6Mg0.3Ti1.7P3O12",
+    "Li1.6Ti0.4Al0.6Ge1P3O12",
+    "Li1.6Ti1.4Cr0.6P3O12",
+    "Li1.6Ti1.4Ga0.6P3O12",
+    "Li1.7Fe0.7Ge1.3P3O12",
+    "Li1.7Ga0.7Ge1.3P3O12",
+    "Li1.7Ti1.3Al0.7P3O12",
+    "Li1.8Sc0.8Ti1.2P3O12",
+    "Li1.8Ti0.2Al0.8Ge1P3O12",
+    "Li1.8Ti0.4Al0.8Ge0.8P3O12",
+    "Li11Al(PS6)2",
+    "Li13.6Si2.8S1.2O16",
+    "Li14Zn(GeO4)4",
+    "Li1Zr1.5Ti0.5P3O12",
+    "Li2.1H0.9Cl1O1",
+    "Li2.2Zr0.9Zn0.1S3",
+    "Li2.4H0.6Cl1O1",
+    "Li2.7H0.3Cl1O1",
+    "Li2.9Zr0.1Sc1.9P3O12",
+    "Li2HClO",
+    "Li2ZrS3",
+    "Li3.2P1N0.7O3.1",
+    "Li3.5V0.5Ge0.5O4",
+    "Li3.6Ge0.4P0.6S4",
+    "Li3.9Zn0.05Ge1S4",
+    "Li3Br0.5Cl0.5O1",
+    "Li3Sc1.6Al0.4P3O12",
+    "Li3Sc2(PO4)3",
+    "Li4.275Ga0.25Ge0.61S4",
+    "Li4.2Ga0.2Ge0.8S4",
+    "Li4.4Ga0.4Ge0.6S4",
+    "Li4.4Ga0.4Sn0.6S4",
+    "Li4Al0.33Si0.17Ge0.17P0.33O4",
+    "Li4SiO4",
+    "Li6.02Si0.02P0.98S5Br1",
+    "Li6.08Si0.08P0.92S5Br1",
+    "Li6.12Si0.12P0.9S5Br1",
+    "Li6.13Si0.13P0.87S5Br1",
+    "Li6.17Si0.17P0.83S5Br1",
+    "Li6.1Si0.1P0.9S5Br1",
+    "Li6.22Si0.22P0.78S5Br1",
+    "Li6.25P1S5.25Cl0.75",
+    "Li6.46La3Zr1.95Al0.15O11.86",
+    "Li6.4La3Zr2Ga0.2O12",
+    "Li6.55La3Zr2Ga0.9O12",
+    "Li6La2MgTa2O12",
+    "LiCaTiNbO6",
+    "LiHfTi(PO4)3",
+    "LiSn2(PO4)3",
+    "LiZrTi(PO4)3",
+    "Na0.125Li0.375La0.5Ti1O3",
+    "Na0.1Li0.1La0.6Ti1O3",
+    "Sr0.6Li0.3Ta0.5Ti0.2Fe0.3O3",
+    "Sr0.6Li0.3Ta0.5Ti0.35Fe0.15O3",
+    "Sr0.6Li0.3Ta0.5Ti0.45Fe0.05O3",
+    "Sr0.6Li0.3Ta0.5Ti0.4Fe0.1O3",
+    "Sr0.6Li0.3Ta0.5Ti0.5O3",
+    "Sr0.6Li0.3Ti0.5Nb0.5O3",
+    "Sr0.8Li0.1Ti0.7Nb0.3O3",
+    "Sr1.65Li1Ta1.7Ti1.3O9",
+    "Sr1.65Li1Ti1.3Nb1.7O9",
+    "Sr1.65Li1Zr1.3Ta1.7O9",
+    "Sr2LiTaTi2O9",
+    "Sr2LiTi2NbO9",
+    "SrLiTaTiO6",
+    "SrLiTiNbO6"
+  ],
+  "unseen_family_formulas": [
+    "Li0.3Y0.9P1O4",
+    "Li0.5Ag0.5P0.5I0.5O1.5",
+    "Li0.5P1Cl0.5O2.5",
+    "Li0.68Ga0.68Si2.33O6",
+    "Li0.6Ga0.14Ge0.63S1.77",
+    "Li0.6Sb0.84P0.56S2.96",
+    "Li0.6Y0.8P1O4",
+    "Li0.72Ga0.098Ge0.441S1.239I0.3",
+    "Li0.83Mg0.83In0.17P1O4",
+    "Li0.85Mg0.85In0.15P1O4",
+    "Li0.8Ga0.12Ge0.54S1.66",
+    "Li0.8Sb0.72P0.48S2.68",
+    "Li0.95Mg0.95In0.05P1O4",
+    "Li0.96Ga0.96Si2.04O6",
+    "Li0.9Mg0.9In0.1P1O4",
+    "Li0.9Y0.7P1O4",
+    "Li1.15P0.6Cl0.25O1.95",
+    "Li1.4P0.6S2.2",
+    "Li1.5P0.5S2",
+    "Li1.5Y0.5P1O4",
+    "Li1.6P0.4S1.8",
+    "Li1.75P0.25S1.5",
+    "Li1.9Mg0.1Ti1O3.05",
+    "Li10Al(P3O10)3",
+    "Li133B33P34(H44S45)3",
+    "Li134Si43S133O20",
+    "Li14La3S7(IO)3",
+    "Li18LaS9IO",
+    "Li1Ga0.1Ge0.45S1.55",
+    "Li1P0.9I0.1O2.7",
+    "Li1Sb0.6P0.4S2.4",
+    "Li25Al(P12O37)2",
+    "Li25Al2P23O73",
+    "Li2LaSIO",
+    "Li3.09B1N0.52O2.53",
+    "Li33.2Si83.4O183.4",
+    "Li3Fe2(PO4)3",
+    "Li47.5La47.5Ti95Si5O295",
+    "Li47La47Ti94(SiO49)6",
+    "Li48.5La48.5Ti97Si3O297",
+    "Li4B2SeO7",
+    "Li4La5S2(IO)5",
+    "Li50Al3P47O147",
+    "Li6CoCl8",
+    "Li6FeCl8",
+    "Li6NiCl8",
+    "Li6P3O10F",
+    "Li9AlSiO8",
+    "LiAl(SiO3)2",
+    "LiF",
+    "LiFePO4",
+    "LiGaSiO4",
+    "LiI",
+    "LiMgPO4",
+    "LiPO3"
+  ],
+  "ambiguous_or_missing_family_formulas": [
+    "Li0.06La0.313Nb1O3",
+    "Li0.09La0.303Nb1O3",
+    "Li0.12La0.29Nb1O3",
+    "Li0.15La0.283Nb1O3",
+    "Li0.18La0.273Nb1O3",
+    "Li2Ca(HN)2",
+    "Li2Ge7O15",
+    "Li2HN",
+    "Li4BH10N3",
+    "Li5I2N",
+    "LiBH4"
+  ],
+  "ambiguous_status_by_formula": {
+    "Li0.06La0.313Nb1O3": "AMBIGUOUS_NON_INFORMATIVE_LABEL",
+    "Li0.09La0.303Nb1O3": "AMBIGUOUS_NON_INFORMATIVE_LABEL",
+    "Li0.12La0.29Nb1O3": "AMBIGUOUS_NON_INFORMATIVE_LABEL",
+    "Li0.15La0.283Nb1O3": "AMBIGUOUS_NON_INFORMATIVE_LABEL",
+    "Li0.18La0.273Nb1O3": "AMBIGUOUS_NON_INFORMATIVE_LABEL",
+    "Li2Ca(HN)2": "AMBIGUOUS_NON_INFORMATIVE_LABEL",
+    "Li2Ge7O15": "AMBIGUOUS_NON_INFORMATIVE_LABEL",
+    "Li2HN": "AMBIGUOUS_NON_INFORMATIVE_LABEL",
+    "Li4BH10N3": "AMBIGUOUS_NON_INFORMATIVE_LABEL",
+    "Li5I2N": "AMBIGUOUS_NON_INFORMATIVE_LABEL",
+    "LiBH4": "AMBIGUOUS_NON_INFORMATIVE_LABEL"
+  },
+  "chemical_family_secondary_field_by_formula": {
+    "Ba2LiTi2NbO9": [
+      "Oxides"
+    ],
+    "Li0.022La0.115Ti0.165Al0.055O0.618": [
+      "Oxides"
+    ],
+    "Li0.022La0.117Ti0.208Al0.001O0.626": [
+      "Oxides"
+    ],
+    "Li0.022La0.118Ti0.2Al0.004O0.631": [
+      "Oxides"
+    ],
+    "Li0.067La0.64Ti1O2.99": [
+      "Oxides"
+    ],
+    "Li0.06La0.313Nb1O3": [
+      "Oxides"
+    ],
+    "Li0.06La0.66Ti0.93Al0.06O3": [
+      "Oxides"
+    ],
+    "Li0.09La0.303Nb1O3": [
+      "Oxides"
+    ],
+    "Li0.12La0.29Nb1O3": [
+      "Oxides"
+    ],
+    "Li0.15La0.283Nb1O3": [
+      "Oxides"
+    ],
+    "Li0.15La0.66Ti0.85Al0.15O3": [
+      "Oxides"
+    ],
+    "Li0.18La0.273Nb1O3": [
+      "Oxides"
+    ],
+    "Li0.1La0.63Ti1O3": [
+      "Oxides"
+    ],
+    "Li0.1La0.66Ti0.9Al0.1O3": [
+      "Oxides"
+    ],
+    "Li0.245La0.592Ti0.98Mn0.02O3": [
+      "Oxides"
+    ],
+    "Li0.24La0.59Ti1O3": [
+      "Oxides"
+    ],
+    "Li0.25La0.66Ti0.75Al0.25O3": [
+      "Oxides"
+    ],
+    "Li0.27La0.59Ti1O3": [
+      "Oxides"
+    ],
+    "Li0.2La0.66Ti0.8Al0.2O3": [
+      "Oxides"
+    ],
+    "Li0.2Zr1.2Nb0.8P3O12": [
+      "Oxides"
+    ],
+    "Li0.34La0.56Ti1O3": [
+      "Oxides"
+    ],
+    "Li0.34Pr0.56Ti1O3": [
+      "Oxides"
+    ],
+    "Li0.361La0.55Ti0.995Al0.005O3": [
+      "Oxides"
+    ],
+    "Li0.36La0.51Ti0.95W0.05O3": [
+      "Oxides"
+    ],
+    "Li0.36La0.54Ti1O3": [
+      "Oxides"
+    ],
+    "Li0.36La0.55Ti0.95Ge0.05O3": [
+      "Oxides"
+    ],
+    "Li0.36La0.55Ti0.95Mn0.05O3": [
+      "Oxides"
+    ],
+    "Li0.36La0.55Ti0.95Ru0.05O3": [
+      "Oxides"
+    ],
+    "Li0.36La0.55Ti0.992Al0.008O3": [
+      "Oxides"
+    ],
+    "Li0.36La0.55Ti0.995Al0.005O3": [
+      "Oxides"
+    ],
+    "Li0.36La0.56Ti0.95Al0.05O3": [
+      "Oxides"
+    ],
+    "Li0.36La0.58Mg0.05Ti0.95O3": [
+      "Oxides"
+    ],
+    "Li0.3La0.66Ti0.7Al0.3O3": [
+      "Oxides"
+    ],
+    "Li0.3Y0.9P1O4": [
+      "Oxides"
+    ],
+    "Li0.5Ag0.5P0.5I0.5O1.5": [
+      "Oxides and Other Anions"
+    ],
+    "Li0.5La0.4Nd0.1Ti1O3": [
+      "Oxides"
+    ],
+    "Li0.5P1Cl0.5O2.5": [
+      "Oxides and Other Anions"
+    ],
+    "Li0.68Ga0.68Si2.33O6": [
+      "Oxides"
+    ],
+    "Li0.6Ga0.14Ge0.63S1.77": [
+      "Sulphides and Other Anions"
+    ],
+    "Li0.6Sb0.84P0.56S2.96": [
+      "Sulphides"
+    ],
+    "Li0.6Y0.8P1O4": [
+      "Oxides"
+    ],
+    "Li0.72Ga0.098Ge0.441S1.239I0.3": [
+      "Sulphides and Other Anions"
+    ],
+    "Li0.7Ti1.7Al0.3P3O12": [
+      "Oxides"
+    ],
+    "Li0.83Mg0.83In0.17P1O4": [
+      "Oxides"
+    ],
+    "Li0.85Mg0.85In0.15P1O4": [
+      "Oxides"
+    ],
+    "Li0.8Ga0.12Ge0.54S1.66": [
+      "Sulphides"
+    ],
+    "Li0.8La0.066Zr2P3O12": [
+      "Oxides"
+    ],
+    "Li0.8Sb0.72P0.48S2.68": [
+      "Sulphides"
+    ],
+    "Li0.95Mg0.95In0.05P1O4": [
+      "Oxides"
+    ],
+    "Li0.96Ga0.96Si2.04O6": [
+      "Oxides"
+    ],
+    "Li0.98Zr1.98Nb0.02P3O12": [
+      "Oxides"
+    ],
+    "Li0.9Mg0.9In0.1P1O4": [
+      "Oxides"
+    ],
+    "Li0.9Y0.7P1O4": [
+      "Oxides"
+    ],
+    "Li0.9Zr1.9Nb0.1P3O12": [
+      "Oxides"
+    ],
+    "Li1.02Y0.02Zr1.98P3O12": [
+      "Oxides"
+    ],
+    "Li1.05Ti1.95Al0.05P1O4": [
+      "Oxides"
+    ],
+    "Li1.076Ti1.462Al0.6923P3O12": [
+      "Oxides"
+    ],
+    "Li1.15P0.6Cl0.25O1.95": [
+      "Oxides and Other Anions"
+    ],
+    "Li1.1Hf1.9Cr0.1P3O12": [
+      "Oxides"
+    ],
+    "Li1.1Y0.1Hf1.9P3O12": [
+      "Oxides"
+    ],
+    "Li1.2Hf1.8Cr0.2P3O12": [
+      "Oxides"
+    ],
+    "Li1.2Hf1.8Fe0.2P3O12": [
+      "Oxides"
+    ],
+    "Li1.2Hf1.8Sc0.2P3O12": [
+      "Oxides"
+    ],
+    "Li1.2Ti0.8Al0.2Ge1P3O12": [
+      "Oxides"
+    ],
+    "Li1.2Ti1Al0.2Ge0.8P3O12": [
+      "Oxides"
+    ],
+    "Li1.2Y0.2Hf1.8P3O12": [
+      "Oxides"
+    ],
+    "Li1.2Y0.2Ti1.8P3O12": [
+      "Oxides"
+    ],
+    "Li1.2Zr0.2Sc0.2Ti1.6P3O12": [
+      "Oxides"
+    ],
+    "Li1.2Zr1.5Sc0.2Ti0.2P3O12": [
+      "Oxides"
+    ],
+    "Li1.35Ti1.45Al0.35Ge0.2P3O12": [
+      "Oxides"
+    ],
+    "Li1.3Cr0.3Ge1.7P3O12": [
+      "Oxides"
+    ],
+    "Li1.3Eu0.3Ti1.7P3O12": [
+      "Oxides"
+    ],
+    "Li1.3Fe0.3Ge1.7P3O12": [
+      "Oxides"
+    ],
+    "Li1.3In0.3Ge1.7P3O12": [
+      "Oxides"
+    ],
+    "Li1.3Sc0.3Ge1.7P3O12": [
+      "Oxides"
+    ],
+    "Li1.3Y0.3Ti1.7P3O12": [
+      "Oxides"
+    ],
+    "Li1.45Ti1.35Al0.45Ge0.2P3O12": [
+      "Oxides"
+    ],
+    "Li1.45Ti1.55Al0.45P1O4": [
+      "Oxides"
+    ],
+    "Li1.4Hf1.6Sc0.4P3O12": [
+      "Oxides"
+    ],
+    "Li1.4P0.6S2.2": [
+      "Sulphides"
+    ],
+    "Li1.4Ti0.4Al0.4Ge1.2P3O12": [
+      "Oxides"
+    ],
+    "Li1.4Ti0.528Al0.4Ge1.072P3O12": [
+      "Oxides"
+    ],
+    "Li1.4Ti0.6Al0.4Ge1P3O12": [
+      "Oxides"
+    ],
+    "Li1.4Ti0.8Al0.4Ge0.8P3O12": [
+      "Oxides"
+    ],
+    "Li1.4Ti1.4Al0.4Ge0.2P3O12": [
+      "Oxides"
+    ],
+    "Li1.4Y0.4Ti1.6P3O12": [
+      "Oxides"
+    ],
+    "Li1.55Ti1.25Al0.55Ge0.2P3O12": [
+      "Oxides"
+    ],
+    "Li1.5Ga0.5Ge1.5P3O12": [
+      "Oxides"
+    ],
+    "Li1.5Hf1.5Al0.5P3O12": [
+      "Oxides"
+    ],
+    "Li1.5Hf1.5Cr0.5P3O12": [
+      "Oxides"
+    ],
+    "Li1.5In0.5Ge1.5P3O12": [
+      "Oxides"
+    ],
+    "Li1.5P0.5S2": [
+      "Sulphides"
+    ],
+    "Li1.5Sc0.5Ge1.5P3O12": [
+      "Oxides"
+    ],
+    "Li1.5Ti1.3Al0.5Ge0.2P3O12": [
+      "Oxides"
+    ],
+    "Li1.5Y0.5P1O4": [
+      "Oxides"
+    ],
+    "Li1.5Y0.5Ti1.5P3O12": [
+      "Oxides"
+    ],
+    "Li1.6Al0.6Ge0.8P3O12": [
+      "Oxides"
+    ],
+    "Li1.6Mg0.3Ti1.7P3O12": [
+      "Oxides"
+    ],
+    "Li1.6P0.4S1.8": [
+      "Sulphides"
+    ],
+    "Li1.6Ti0.4Al0.6Ge1P3O12": [
+      "Oxides"
+    ],
+    "Li1.6Ti1.4Cr0.6P3O12": [
+      "Oxides"
+    ],
+    "Li1.6Ti1.4Ga0.6P3O12": [
+      "Oxides"
+    ],
+    "Li1.75P0.25S1.5": [
+      "Sulphides"
+    ],
+    "Li1.7Fe0.7Ge1.3P3O12": [
+      "Oxides"
+    ],
+    "Li1.7Ga0.7Ge1.3P3O12": [
+      "Oxides"
+    ],
+    "Li1.7Ti1.3Al0.7P3O12": [
+      "Oxides"
+    ],
+    "Li1.8Sc0.8Ti1.2P3O12": [
+      "Oxides"
+    ],
+    "Li1.8Ti0.2Al0.8Ge1P3O12": [
+      "Oxides"
+    ],
+    "Li1.8Ti0.4Al0.8Ge0.8P3O12": [
+      "Oxides"
+    ],
+    "Li1.9Mg0.1Ti1O3.05": [
+      "Sulphides and Other Anions"
+    ],
+    "Li10Al(P3O10)3": [
+      "Oxides"
+    ],
+    "Li11Al(PS6)2": [
+      "Sulphides"
+    ],
+    "Li13.6Si2.8S1.2O16": [
+      "Oxides"
+    ],
+    "Li133B33P34(H44S45)3": [
+      "Sulphides and Other Anions"
+    ],
+    "Li134Si43S133O20": [
+      "Sulphides and Other Anions"
+    ],
+    "Li14La3S7(IO)3": [
+      "Sulphides and Other Anions"
+    ],
+    "Li14Zn(GeO4)4": [
+      "Oxides"
+    ],
+    "Li18LaS9IO": [
+      "Sulphides and Other Anions"
+    ],
+    "Li1Ga0.1Ge0.45S1.55": [
+      "Sulphides"
+    ],
+    "Li1P0.9I0.1O2.7": [
+      "Oxides and Other Anions"
+    ],
+    "Li1Sb0.6P0.4S2.4": [
+      "Sulphides"
+    ],
+    "Li1Zr1.5Ti0.5P3O12": [
+      "Oxides"
+    ],
+    "Li2.1H0.9Cl1O1": [
+      "Oxides and Other Anions"
+    ],
+    "Li2.2Zr0.9Zn0.1S3": [
+      "Sulphides"
+    ],
+    "Li2.4H0.6Cl1O1": [
+      "Oxides and Other Anions"
+    ],
+    "Li2.7H0.3Cl1O1": [
+      "Oxides and Other Anions"
+    ],
+    "Li2.9Zr0.1Sc1.9P3O12": [
+      "Sulphides"
+    ],
+    "Li25Al(P12O37)2": [
+      "Oxides"
+    ],
+    "Li25Al2P23O73": [
+      "Oxides"
+    ],
+    "Li2Ca(HN)2": [
+      "Other"
+    ],
+    "Li2Ge7O15": [
+      "Oxides"
+    ],
+    "Li2HClO": [
+      "Oxides and Other Anions"
+    ],
+    "Li2HN": [
+      "Other"
+    ],
+    "Li2LaSIO": [
+      "Sulphides and Other Anions"
+    ],
+    "Li2ZrS3": [
+      "Sulphides"
+    ],
+    "Li3.09B1N0.52O2.53": [
+      "Oxides"
+    ],
+    "Li3.2P1N0.7O3.1": [
+      "Oxides and Other Anions"
+    ],
+    "Li3.5V0.5Ge0.5O4": [
+      "Oxides"
+    ],
+    "Li3.6Ge0.4P0.6S4": [
+      "Sulphides"
+    ],
+    "Li3.9Zn0.05Ge1S4": [
+      "Sulphides"
+    ],
+    "Li33.2Si83.4O183.4": [
+      "Oxides"
+    ],
+    "Li3Br0.5Cl0.5O1": [
+      "Oxides and Other Anions"
+    ],
+    "Li3Fe2(PO4)3": [
+      "Sulphides and Other Anions"
+    ],
+    "Li3Sc1.6Al0.4P3O12": [
+      "Oxides"
+    ],
+    "Li3Sc2(PO4)3": [
+      "Oxides"
+    ],
+    "Li4.275Ga0.25Ge0.61S4": [
+      "Sulphides"
+    ],
+    "Li4.2Ga0.2Ge0.8S4": [
+      "Sulphides"
+    ],
+    "Li4.4Ga0.4Ge0.6S4": [
+      "Sulphides"
+    ],
+    "Li4.4Ga0.4Sn0.6S4": [
+      "Sulphides"
+    ],
+    "Li47.5La47.5Ti95Si5O295": [
+      "Oxides"
+    ],
+    "Li47La47Ti94(SiO49)6": [
+      "Oxides"
+    ],
+    "Li48.5La48.5Ti97Si3O297": [
+      "Oxides"
+    ],
+    "Li4Al0.33Si0.17Ge0.17P0.33O4": [
+      "Oxides"
+    ],
+    "Li4B2SeO7": [
+      "Oxides"
+    ],
+    "Li4BH10N3": [
+      "Other"
+    ],
+    "Li4La5S2(IO)5": [
+      "Sulphides and Other Anions"
+    ],
+    "Li4SiO4": [
+      "Oxides"
+    ],
+    "Li50Al3P47O147": [
+      "Oxides"
+    ],
+    "Li5I2N": [
+      "Halides"
+    ],
+    "Li6.02Si0.02P0.98S5Br1": [
+      "Sulphides and Other Anions"
+    ],
+    "Li6.08Si0.08P0.92S5Br1": [
+      "Sulphides and Other Anions"
+    ],
+    "Li6.12Si0.12P0.9S5Br1": [
+      "Sulphides and Other Anions"
+    ],
+    "Li6.13Si0.13P0.87S5Br1": [
+      "Sulphides and Other Anions"
+    ],
+    "Li6.17Si0.17P0.83S5Br1": [
+      "Sulphides and Other Anions"
+    ],
+    "Li6.1Si0.1P0.9S5Br1": [
+      "Sulphides and Other Anions"
+    ],
+    "Li6.22Si0.22P0.78S5Br1": [
+      "Sulphides and Other Anions"
+    ],
+    "Li6.25P1S5.25Cl0.75": [
+      "Sulphides and Other Anions"
+    ],
+    "Li6.46La3Zr1.95Al0.15O11.86": [
+      "Oxides"
+    ],
+    "Li6.4La3Zr2Ga0.2O12": [
+      "Oxides"
+    ],
+    "Li6.55La3Zr2Ga0.9O12": [
+      "Oxides"
+    ],
+    "Li6CoCl8": [
+      "Halides"
+    ],
+    "Li6FeCl8": [
+      "Halides"
+    ],
+    "Li6La2MgTa2O12": [
+      "Oxides"
+    ],
+    "Li6NiCl8": [
+      "Halides"
+    ],
+    "Li6P3O10F": [
+      "Oxides and Other Anions"
+    ],
+    "Li9AlSiO8": [
+      "Oxides"
+    ],
+    "LiAl(SiO3)2": [
+      "Oxides"
+    ],
+    "LiBH4": [
+      "Other"
+    ],
+    "LiCaTiNbO6": [
+      "Oxides"
+    ],
+    "LiF": [
+      "Halides"
+    ],
+    "LiFePO4": [
+      "Oxides"
+    ],
+    "LiGaSiO4": [
+      "Oxides"
+    ],
+    "LiHfTi(PO4)3": [
+      "Oxides"
+    ],
+    "LiI": [
+      "Halides"
+    ],
+    "LiMgPO4": [
+      "Oxides"
+    ],
+    "LiPO3": [
+      "Oxides"
+    ],
+    "LiSn2(PO4)3": [
+      "Oxides"
+    ],
+    "LiZrTi(PO4)3": [
+      "Oxides"
+    ],
+    "Na0.125Li0.375La0.5Ti1O3": [
+      "Oxides"
+    ],
+    "Na0.1Li0.1La0.6Ti1O3": [
+      "Oxides"
+    ],
+    "Sr0.6Li0.3Ta0.5Ti0.2Fe0.3O3": [
+      "Oxides"
+    ],
+    "Sr0.6Li0.3Ta0.5Ti0.35Fe0.15O3": [
+      "Oxides"
+    ],
+    "Sr0.6Li0.3Ta0.5Ti0.45Fe0.05O3": [
+      "Oxides"
+    ],
+    "Sr0.6Li0.3Ta0.5Ti0.4Fe0.1O3": [
+      "Oxides"
+    ],
+    "Sr0.6Li0.3Ta0.5Ti0.5O3": [
+      "Oxides"
+    ],
+    "Sr0.6Li0.3Ti0.5Nb0.5O3": [
+      "Oxides"
+    ],
+    "Sr0.8Li0.1Ti0.7Nb0.3O3": [
+      "Oxides"
+    ],
+    "Sr1.65Li1Ta1.7Ti1.3O9": [
+      "Oxides"
+    ],
+    "Sr1.65Li1Ti1.3Nb1.7O9": [
+      "Oxides"
+    ],
+    "Sr1.65Li1Zr1.3Ta1.7O9": [
+      "Oxides"
+    ],
+    "Sr2LiTaTi2O9": [
+      "Oxides"
+    ],
+    "Sr2LiTi2NbO9": [
+      "Oxides"
+    ],
+    "SrLiTaTiO6": [
+      "Oxides"
+    ],
+    "SrLiTiNbO6": [
+      "Oxides"
+    ]
+  },
+  "chemical_family_note": "Hargreaves' 'ChemicalFamily' column (Halides/Oxides/Sulphides/Other, a coarse anion-based grouping) is structurally different from OBELiX's structural-family 'Family' column and is NOT used for the seen/unseen classification above -- recorded here only as descriptive secondary metadata.",
+  "per_model_subset_metrics": {
+    "ridge": {
+      "SEEN": {
+        "mae": 1.108193761253568,
+        "rmse": 1.4351999408307277,
+        "r2": 0.1035361444969185,
+        "spearman_rho": 0.5690089973489105,
+        "median_absolute_error": 0.9331843520751615,
+        "n": 138,
+        "mae_bootstrap_ci": {
+          "point": 1.108193761253568,
+          "ci_low": 0.9592083425285604,
+          "ci_high": 1.260287592126483,
+          "ci_level": 0.95,
+          "n_boot": 2000,
+          "n_finite": 2000,
+          "seed": 20260921
+        }
+      },
+      "UNSEEN": {
+        "mae": 1.89308689341666,
+        "rmse": 2.467947909839835,
+        "r2": -0.04341902854137181,
+        "spearman_rho": 0.5558441558441559,
+        "median_absolute_error": 1.1175984488604787,
+        "n": 55,
+        "mae_bootstrap_ci": {
+          "point": 1.89308689341666,
+          "ci_low": 1.4968091917323858,
+          "ci_high": 2.31748542232595,
+          "ci_level": 0.95,
+          "n_boot": 2000,
+          "n_finite": 2000,
+          "seed": 20260921
+        }
+      }
+    },
+    "random_forest": {
+      "SEEN": {
+        "mae": 0.8638424415059154,
+        "rmse": 1.1640523972567123,
+        "r2": 0.4102702630753773,
+        "spearman_rho": 0.6977056939147609,
+        "median_absolute_error": 0.6141052024453098,
+        "n": 138,
+        "mae_bootstrap_ci": {
+          "point": 0.8638424415059154,
+          "ci_low": 0.7436176054228272,
+          "ci_high": 0.9972432530110947,
+          "ci_level": 0.95,
+          "n_boot": 2000,
+          "n_finite": 2000,
+          "seed": 20260921
+        }
+      },
+      "UNSEEN": {
+        "mae": 2.130093092447264,
+        "rmse": 2.700085654511826,
+        "r2": -0.24894081248779654,
+        "spearman_rho": 0.32987012987012987,
+        "median_absolute_error": 1.7030717401824278,
+        "n": 55,
+        "mae_bootstrap_ci": {
+          "point": 2.130093092447264,
+          "ci_low": 1.693644449887076,
+          "ci_high": 2.5668203195740285,
+          "ci_level": 0.95,
+          "n_boot": 2000,
+          "n_finite": 2000,
+          "seed": 20260921
+        }
+      }
+    },
+    "extra_trees": {
+      "SEEN": {
+        "mae": 0.8294806716453098,
+        "rmse": 1.1523399921273705,
+        "r2": 0.4220779868218315,
+        "spearman_rho": 0.7200037448437269,
+        "median_absolute_error": 0.5885884329252691,
+        "n": 138,
+        "mae_bootstrap_ci": {
+          "point": 0.8294806716453098,
+          "ci_low": 0.706325605762643,
+          "ci_high": 0.9667307985077924,
+          "ci_level": 0.95,
+          "n_boot": 2000,
+          "n_finite": 2000,
+          "seed": 20260921
+        }
+      },
+      "UNSEEN": {
+        "mae": 1.9622225778951556,
+        "rmse": 2.5672175882809043,
+        "r2": -0.12904729256400094,
+        "spearman_rho": 0.3976190476190477,
+        "median_absolute_error": 1.721390700124875,
+        "n": 55,
+        "mae_bootstrap_ci": {
+          "point": 1.9622225778951556,
+          "ci_low": 1.5187730482345745,
+          "ci_high": 2.4022126911273896,
+          "ci_level": 0.95,
+          "n_boot": 2000,
+          "n_finite": 2000,
+          "seed": 20260921
+        }
+      }
+    },
+    "xgboost": {
+      "SEEN": {
+        "mae": 0.9183165722849793,
+        "rmse": 1.2658022500783135,
+        "r2": 0.30266783952021314,
+        "spearman_rho": 0.6575740627361563,
+        "median_absolute_error": 0.7167791955567016,
+        "n": 138,
+        "mae_bootstrap_ci": {
+          "point": 0.9183165722849793,
+          "ci_low": 0.7842767766015506,
+          "ci_high": 1.0667488844703514,
+          "ci_level": 0.95,
+          "n_boot": 2000,
+          "n_finite": 2000,
+          "seed": 20260921
+        }
+      },
+      "UNSEEN": {
+        "mae": 2.094756679510405,
+        "rmse": 2.734450221716324,
+        "r2": -0.2809341916843189,
+        "spearman_rho": 0.34718614718614726,
+        "median_absolute_error": 1.8386479495791015,
+        "n": 55,
+        "mae_bootstrap_ci": {
+          "point": 2.094756679510405,
+          "ci_low": 1.63782758015594,
+          "ci_high": 2.5658972198020558,
+          "ci_level": 0.95,
+          "n_boot": 2000,
+          "n_finite": 2000,
+          "seed": 20260921
+        }
+      }
+    },
+    "catboost": {
+      "SEEN": {
+        "mae": 0.841426472337033,
+        "rmse": 1.1530764627904901,
+        "r2": 0.4213390406414179,
+        "spearman_rho": 0.6879753413613412,
+        "median_absolute_error": 0.6123810252800665,
+        "n": 138,
+        "mae_bootstrap_ci": {
+          "point": 0.841426472337033,
+          "ci_low": 0.7189456951820191,
+          "ci_high": 0.9704261054536165,
+          "ci_level": 0.95,
+          "n_boot": 2000,
+          "n_finite": 2000,
+          "seed": 20260921
+        }
+      },
+      "UNSEEN": {
+        "mae": 2.1780038448510206,
+        "rmse": 2.7524607862638315,
+        "r2": -0.29786360925882827,
+        "spearman_rho": 0.3405483405483406,
+        "median_absolute_error": 1.7167036585793198,
+        "n": 55,
+        "mae_bootstrap_ci": {
+          "point": 2.1780038448510206,
+          "ci_low": 1.7237779463892473,
+          "ci_high": 2.6463183946894784,
+          "ci_level": 0.95,
+          "n_boot": 2000,
+          "n_finite": 2000,
+          "seed": 20260921
+        }
+      }
+    },
+    "shallow_mlp": {
+      "SEEN": {
+        "mae": 1.0006011143887297,
+        "rmse": 1.3914525772984874,
+        "r2": 0.15735472975085574,
+        "spearman_rho": 0.6392115543746034,
+        "median_absolute_error": 0.701939951039734,
+        "n": 138,
+        "mae_bootstrap_ci": {
+          "point": 1.0006011143887297,
+          "ci_low": 0.8411898242104101,
+          "ci_high": 1.1596377902192256,
+          "ci_level": 0.95,
+          "n_boot": 2000,
+          "n_finite": 2000,
+          "seed": 20260921
+        }
+      },
+      "UNSEEN": {
+        "mae": 2.569715094057014,
+        "rmse": 2.9730105957147983,
+        "r2": -0.5141876117648749,
+        "spearman_rho": 0.38845598845598855,
+        "median_absolute_error": 2.328743946555054,
+        "n": 55,
+        "mae_bootstrap_ci": {
+          "point": 2.569715094057014,
+          "ci_low": 2.184754413859277,
+          "ci_high": 2.9621200110658528,
+          "ci_level": 0.95,
+          "n_boot": 2000,
+          "n_finite": 2000,
+          "seed": 20260921
+        }
+      }
+    },
+    "pretrained_element_embedding": {
+      "SEEN": {
+        "mae": 1.118582551751199,
+        "rmse": 1.604743073490591,
+        "r2": -0.12077642709957725,
+        "spearman_rho": 0.40357280277998925,
+        "median_absolute_error": 0.702199472571228,
+        "n": 138,
+        "mae_bootstrap_ci": {
+          "point": 1.118582551751199,
+          "ci_low": 0.9345469729182209,
+          "ci_high": 1.313518771991527,
+          "ci_level": 0.95,
+          "n_boot": 2000,
+          "n_finite": 2000,
+          "seed": 20260921
+        }
+      },
+      "UNSEEN": {
+        "mae": 3.117875666380295,
+        "rmse": 3.6442279401549094,
+        "r2": -1.2750861243616418,
+        "spearman_rho": 0.49862914862914876,
+        "median_absolute_error": 3.223162211345703,
+        "n": 55,
+        "mae_bootstrap_ci": {
+          "point": 3.117875666380295,
+          "ci_low": 2.590594266450538,
+          "ci_high": 3.631748831941649,
+          "ci_level": 0.95,
+          "n_boot": 2000,
+          "n_finite": 2000,
+          "seed": 20260921
+        }
+      }
+    },
+    "composition_attention": {
+      "SEEN": {
+        "mae": 0.8924365245089068,
+        "rmse": 1.2482278496088703,
+        "r2": 0.3218969396054234,
+        "spearman_rho": 0.6391133753668269,
+        "median_absolute_error": 0.669135532666687,
+        "n": 138,
+        "mae_bootstrap_ci": {
+          "point": 0.8924365245089068,
+          "ci_low": 0.7560490759417497,
+          "ci_high": 1.0393327361247373,
+          "ci_level": 0.95,
+          "n_boot": 2000,
+          "n_finite": 2000,
+          "seed": 20260921
+        }
+      },
+      "UNSEEN": {
+        "mae": 2.1061379332093595,
+        "rmse": 2.5619491621957,
+        "r2": -0.12441800153508087,
+        "spearman_rho": 0.44264069264069267,
+        "median_absolute_error": 2.116731757513917,
+        "n": 55,
+        "mae_bootstrap_ci": {
+          "point": 2.1061379332093595,
+          "ci_low": 1.7160620946123362,
+          "ci_high": 2.4853227877065525,
+          "ci_level": 0.95,
+          "n_boot": 2000,
+          "n_finite": 2000,
+          "seed": 20260921
+        }
+      }
+    }
+  },
+  "regime_anticipation_of_subset_external_mae": {
+    "SEEN": {
+      "A_random_5fold_cv": {
+        "median_abs_mae_gap": 0.09305665500374288,
+        "spearman_rho": 0.880952380952381,
+        "kendall_tau": 0.7857142857142856,
+        "top_model_selection_regret": 0.0,
+        "n_models": 8
+      },
+      "B_family_group_kfold": {
+        "median_abs_mae_gap": 1.0784496805172572,
+        "spearman_rho": 0.6190476190476191,
+        "kendall_tau": 0.3571428571428571,
+        "top_model_selection_regret": 0.08883590063966951,
+        "n_models": 8
+      },
+      "C_lomfo": {
+        "median_abs_mae_gap": 1.051375667516306,
+        "spearman_rho": 0.5952380952380953,
+        "kendall_tau": 0.42857142857142855,
+        "top_model_selection_regret": 0.06295585286359695,
+        "n_models": 8
+      }
+    },
+    "UNSEEN": {
+      "A_random_5fold_cv": {
+        "median_abs_mae_gap": 1.2936594128386179,
+        "spearman_rho": 0.261904761904762,
+        "kendall_tau": 0.21428571428571427,
+        "top_model_selection_regret": 0.06913568447849561,
+        "n_models": 8
+      },
+      "B_family_group_kfold": {
+        "median_abs_mae_gap": 0.5277372394193411,
+        "spearman_rho": 0.261904761904762,
+        "kendall_tau": 0.21428571428571427,
+        "top_model_selection_regret": 0.20166978609374508,
+        "n_models": 8
+      },
+      "C_lomfo": {
+        "median_abs_mae_gap": 0.544887870877532,
+        "spearman_rho": 0.0,
+        "kendall_tau": 0.0,
+        "top_model_selection_regret": 0.21305103979269946,
+        "n_models": 8
+      }
+    }
+  },
+  "regime_anticipation_method": "sse_transfer.evaluation.regime_utility.regime_summary (N7/N7b's own median_abs_mae_gap / spearman_rho / kendall_tau / top_model_selection_regret), applied to N4b's (post-leakage-fix) internal-CV MAE per regime against the seen-family and unseen-family external-MAE subsets separately, instead of the full 204-row external cohort N7b used."
+}

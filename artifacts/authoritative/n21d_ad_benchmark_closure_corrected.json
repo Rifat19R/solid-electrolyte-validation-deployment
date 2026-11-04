@@ -1,0 +1,1195 @@
+{
+  "phase": "N21_section_d_ad_benchmark_closure",
+  "git_commit": "534da7af653407d764d3636e34fca3db1b068817",
+  "git_branch": "acs-jcim-finalization",
+  "n6_source": "artifacts/corrective01_pretrained_element_embedding/n6_external_transfer_corrected.json",
+  "n6_rerun": false,
+  "family_audit_source": "artifacts/reviewer_family_audit.json",
+  "retained_fractions": [
+    1.0,
+    0.75,
+    0.5,
+    0.25
+  ],
+  "bootstrap_seed": 20260921,
+  "n_boot": 2000,
+  "kde_bandwidth_method": "scott (scipy default)",
+  "kde_zero_variance_dims_dropped": 22,
+  "kde_pca_n_components_95pct_variance": 16,
+  "cross_model_dispersion_note": "Substitute for literal five-seed dispersion: N6's per-seed predictions were averaged before being persisted and per-row 5-seed std was never saved; recomputing it would require re-fitting N6's 40 external fits, forbidden this pass. std of the 8 already-frozen model predictions per row is used instead.",
+  "per_model": {
+    "ridge": {
+      "ad_nn_distance": {
+        "risk_coverage_mae": [
+          {
+            "retained_fraction": 1.0,
+            "n_retained": 204,
+            "mae": 1.3819534011084926
+          },
+          {
+            "retained_fraction": 0.75,
+            "n_retained": 153,
+            "mae": 1.1684177692655158
+          },
+          {
+            "retained_fraction": 0.5,
+            "n_retained": 102,
+            "mae": 1.0333283730307632
+          },
+          {
+            "retained_fraction": 0.25,
+            "n_retained": 51,
+            "mae": 0.9080260431958159
+          }
+        ],
+        "aurc": 1.115578621482811,
+        "spearman_r": 0.24160547313963432,
+        "spearman_p": 0.0004989298183246616
+      },
+      "kde_novelty": {
+        "risk_coverage_mae": [
+          {
+            "retained_fraction": 1.0,
+            "n_retained": 204,
+            "mae": 1.3819534011084926
+          },
+          {
+            "retained_fraction": 0.75,
+            "n_retained": 153,
+            "mae": 1.1713180287208054
+          },
+          {
+            "retained_fraction": 0.5,
+            "n_retained": 102,
+            "mae": 1.0431766239195073
+          },
+          {
+            "retained_fraction": 0.25,
+            "n_retained": 51,
+            "mae": 1.0697281124453482
+          }
+        ],
+        "aurc": 1.1467784698057444,
+        "spearman_r": 0.19846350651278175,
+        "spearman_p": 0.004433224604475742
+      },
+      "family_novelty": {
+        "risk_coverage_mae": [
+          {
+            "retained_fraction": 1.0,
+            "n_retained": 204,
+            "mae": 1.3819534011084926
+          },
+          {
+            "retained_fraction": 0.75,
+            "n_retained": 153,
+            "mae": 1.2116367411437328
+          },
+          {
+            "retained_fraction": 0.5,
+            "n_retained": 102,
+            "mae": 1.198297949268883
+          },
+          {
+            "retained_fraction": 0.25,
+            "n_retained": 51,
+            "mae": 1.1127064932671547
+          }
+        ],
+        "aurc": 1.2190882125334799,
+        "spearman_r": 0.25070093867101395,
+        "spearman_p": 0.0002984375555746122
+      },
+      "cross_model_dispersion": {
+        "risk_coverage_mae": [
+          {
+            "retained_fraction": 1.0,
+            "n_retained": 204,
+            "mae": 1.3819534011084926
+          },
+          {
+            "retained_fraction": 0.75,
+            "n_retained": 153,
+            "mae": 1.160424603639748
+          },
+          {
+            "retained_fraction": 0.5,
+            "n_retained": 102,
+            "mae": 0.8806112426602715
+          },
+          {
+            "retained_fraction": 0.25,
+            "n_retained": 51,
+            "mae": 0.6633304636899119
+          }
+        ],
+        "aurc": 1.0212259262330738,
+        "spearman_r": 0.4433384455548409,
+        "spearman_p": 3.1230816761913565e-11
+      },
+      "random_rejection": {
+        "risk_coverage_mae_bootstrap": [
+          {
+            "retained_fraction": 1.0,
+            "n_retained": 204,
+            "mae_mean": 1.3819534011084929,
+            "mae_ci_low": 1.3819534011084926,
+            "mae_ci_high": 1.3819534011084929
+          },
+          {
+            "retained_fraction": 0.75,
+            "n_retained": 153,
+            "mae_mean": 1.3827474377353624,
+            "mae_ci_low": 1.2781759837375046,
+            "mae_ci_high": 1.4807357824756966
+          },
+          {
+            "retained_fraction": 0.5,
+            "n_retained": 102,
+            "mae_mean": 1.381733431494832,
+            "mae_ci_low": 1.2059941826093366,
+            "mae_ci_high": 1.5526501574994325
+          },
+          {
+            "retained_fraction": 0.25,
+            "n_retained": 51,
+            "mae_mean": 1.3828878195897687,
+            "mae_ci_low": 1.102570480883641,
+            "mae_ci_high": 1.6913779239941367
+          }
+        ],
+        "aurc": 1.3823004931931084
+      }
+    },
+    "random_forest": {
+      "ad_nn_distance": {
+        "risk_coverage_mae": [
+          {
+            "retained_fraction": 1.0,
+            "n_retained": 204,
+            "mae": 1.2861310710168572
+          },
+          {
+            "retained_fraction": 0.75,
+            "n_retained": 153,
+            "mae": 1.0892229499555774
+          },
+          {
+            "retained_fraction": 0.5,
+            "n_retained": 102,
+            "mae": 0.8636057007437776
+          },
+          {
+            "retained_fraction": 0.25,
+            "n_retained": 51,
+            "mae": 0.7188693199049166
+          }
+        ],
+        "aurc": 0.9851096153867474,
+        "spearman_r": 0.3663045706087313,
+        "spearman_p": 7.117427953419183e-08
+      },
+      "kde_novelty": {
+        "risk_coverage_mae": [
+          {
+            "retained_fraction": 1.0,
+            "n_retained": 204,
+            "mae": 1.2861310710168572
+          },
+          {
+            "retained_fraction": 0.75,
+            "n_retained": 153,
+            "mae": 1.1960876825016924
+          },
+          {
+            "retained_fraction": 0.5,
+            "n_retained": 102,
+            "mae": 0.8613744147295234
+          },
+          {
+            "retained_fraction": 0.25,
+            "n_retained": 51,
+            "mae": 0.7748754838503418
+          }
+        ],
+        "aurc": 1.0293217915549384,
+        "spearman_r": 0.3119944024708285,
+        "spearman_p": 5.553918502599337e-06
+      },
+      "family_novelty": {
+        "risk_coverage_mae": [
+          {
+            "retained_fraction": 1.0,
+            "n_retained": 204,
+            "mae": 1.2861310710168572
+          },
+          {
+            "retained_fraction": 0.75,
+            "n_retained": 153,
+            "mae": 0.9949048793884834
+          },
+          {
+            "retained_fraction": 0.5,
+            "n_retained": 102,
+            "mae": 0.8847919652254066
+          },
+          {
+            "retained_fraction": 0.25,
+            "n_retained": 51,
+            "mae": 0.7243915958454258
+          }
+        ],
+        "aurc": 0.9616527260150104,
+        "spearman_r": 0.40120072455081557,
+        "spearman_p": 2.7342506654268832e-09
+      },
+      "cross_model_dispersion": {
+        "risk_coverage_mae": [
+          {
+            "retained_fraction": 1.0,
+            "n_retained": 204,
+            "mae": 1.2861310710168574
+          },
+          {
+            "retained_fraction": 0.75,
+            "n_retained": 153,
+            "mae": 1.0859411975250253
+          },
+          {
+            "retained_fraction": 0.5,
+            "n_retained": 102,
+            "mae": 0.7673524399914617
+          },
+          {
+            "retained_fraction": 0.25,
+            "n_retained": 51,
+            "mae": 0.4922532205970774
+          }
+        ],
+        "aurc": 0.9141619277744848,
+        "spearman_r": 0.4845396526987582,
+        "spearman_p": 2.0854853184627226e-13
+      },
+      "random_rejection": {
+        "risk_coverage_mae_bootstrap": [
+          {
+            "retained_fraction": 1.0,
+            "n_retained": 204,
+            "mae_mean": 1.2861310710168572,
+            "mae_ci_low": 1.2861310710168572,
+            "mae_ci_high": 1.2861310710168579
+          },
+          {
+            "retained_fraction": 0.75,
+            "n_retained": 153,
+            "mae_mean": 1.288906022047026,
+            "mae_ci_low": 1.1774955560899771,
+            "mae_ci_high": 1.387774607169745
+          },
+          {
+            "retained_fraction": 0.5,
+            "n_retained": 102,
+            "mae_mean": 1.2854587703086668,
+            "mae_ci_low": 1.1113761802399629,
+            "mae_ci_high": 1.472237671224216
+          },
+          {
+            "retained_fraction": 0.25,
+            "n_retained": 51,
+            "mae_mean": 1.2823644457349739,
+            "mae_ci_low": 0.9726787455372475,
+            "mae_ci_high": 1.6197427672690936
+          }
+        ],
+        "aurc": 1.286204183577203
+      }
+    },
+    "extra_trees": {
+      "ad_nn_distance": {
+        "risk_coverage_mae": [
+          {
+            "retained_fraction": 1.0,
+            "n_retained": 204,
+            "mae": 1.2021821244387563
+          },
+          {
+            "retained_fraction": 0.75,
+            "n_retained": 153,
+            "mae": 1.0045498609631955
+          },
+          {
+            "retained_fraction": 0.5,
+            "n_retained": 102,
+            "mae": 0.8458836004690207
+          },
+          {
+            "retained_fraction": 0.25,
+            "n_retained": 51,
+            "mae": 0.665145833963734
+          }
+        ],
+        "aurc": 0.9280324802111538,
+        "spearman_r": 0.3080407941141133,
+        "spearman_p": 7.389781876885743e-06
+      },
+      "kde_novelty": {
+        "risk_coverage_mae": [
+          {
+            "retained_fraction": 1.0,
+            "n_retained": 204,
+            "mae": 1.2021821244387565
+          },
+          {
+            "retained_fraction": 0.75,
+            "n_retained": 153,
+            "mae": 1.0598470514347058
+          },
+          {
+            "retained_fraction": 0.5,
+            "n_retained": 102,
+            "mae": 0.8117979184421943
+          },
+          {
+            "retained_fraction": 0.25,
+            "n_retained": 51,
+            "mae": 0.6766548641896256
+          }
+        ],
+        "aurc": 0.9370211547303637,
+        "spearman_r": 0.2969248927493622,
+        "spearman_p": 1.6139253947145656e-05
+      },
+      "family_novelty": {
+        "risk_coverage_mae": [
+          {
+            "retained_fraction": 1.0,
+            "n_retained": 204,
+            "mae": 1.2021821244387565
+          },
+          {
+            "retained_fraction": 0.75,
+            "n_retained": 153,
+            "mae": 0.9347196279928854
+          },
+          {
+            "retained_fraction": 0.5,
+            "n_retained": 102,
+            "mae": 0.8744614513608944
+          },
+          {
+            "retained_fraction": 0.25,
+            "n_retained": 51,
+            "mae": 0.726200867983552
+          }
+        ],
+        "aurc": 0.9244575251883113,
+        "spearman_r": 0.3518686426436692,
+        "spearman_p": 2.4589302000788935e-07
+      },
+      "cross_model_dispersion": {
+        "risk_coverage_mae": [
+          {
+            "retained_fraction": 1.0,
+            "n_retained": 204,
+            "mae": 1.2021821244387565
+          },
+          {
+            "retained_fraction": 0.75,
+            "n_retained": 153,
+            "mae": 1.0242865041339175
+          },
+          {
+            "retained_fraction": 0.5,
+            "n_retained": 102,
+            "mae": 0.7178507855822724
+          },
+          {
+            "retained_fraction": 0.25,
+            "n_retained": 51,
+            "mae": 0.5149086815532183
+          }
+        ],
+        "aurc": 0.8668942309040591,
+        "spearman_r": 0.4146299057890608,
+        "spearman_p": 7.02685941769485e-10
+      },
+      "random_rejection": {
+        "risk_coverage_mae_bootstrap": [
+          {
+            "retained_fraction": 1.0,
+            "n_retained": 204,
+            "mae_mean": 1.2021821244387565,
+            "mae_ci_low": 1.2021821244387563,
+            "mae_ci_high": 1.2021821244387565
+          },
+          {
+            "retained_fraction": 0.75,
+            "n_retained": 153,
+            "mae_mean": 1.2052239439358463,
+            "mae_ci_low": 1.0951687991115198,
+            "mae_ci_high": 1.3023479265798525
+          },
+          {
+            "retained_fraction": 0.5,
+            "n_retained": 102,
+            "mae_mean": 1.2022202083046598,
+            "mae_ci_low": 1.0200351760880197,
+            "mae_ci_high": 1.3791264912411445
+          },
+          {
+            "retained_fraction": 0.25,
+            "n_retained": 51,
+            "mae_mean": 1.2000119536470601,
+            "mae_ci_low": 0.9092384590420751,
+            "mae_ci_high": 1.5180690036737936
+          }
+        ],
+        "aurc": 1.2028470637611381
+      }
+    },
+    "xgboost": {
+      "ad_nn_distance": {
+        "risk_coverage_mae": [
+          {
+            "retained_fraction": 1.0,
+            "n_retained": 204,
+            "mae": 1.3492430698048161
+          },
+          {
+            "retained_fraction": 0.75,
+            "n_retained": 153,
+            "mae": 1.1594507332018722
+          },
+          {
+            "retained_fraction": 0.5,
+            "n_retained": 102,
+            "mae": 0.9586948386160791
+          },
+          {
+            "retained_fraction": 0.25,
+            "n_retained": 51,
+            "mae": 0.7333246738422013
+          }
+        ],
+        "aurc": 1.0531431478804867,
+        "spearman_r": 0.3506210114498708,
+        "spearman_p": 2.729217054477242e-07
+      },
+      "kde_novelty": {
+        "risk_coverage_mae": [
+          {
+            "retained_fraction": 1.0,
+            "n_retained": 204,
+            "mae": 1.3492430698048161
+          },
+          {
+            "retained_fraction": 0.75,
+            "n_retained": 153,
+            "mae": 1.2660977496303503
+          },
+          {
+            "retained_fraction": 0.5,
+            "n_retained": 102,
+            "mae": 0.979192308800877
+          },
+          {
+            "retained_fraction": 0.25,
+            "n_retained": 51,
+            "mae": 0.8690266390178174
+          }
+        ],
+        "aurc": 1.1181416376141813,
+        "spearman_r": 0.28263079723475243,
+        "spearman_p": 4.207323684521136e-05
+      },
+      "family_novelty": {
+        "risk_coverage_mae": [
+          {
+            "retained_fraction": 1.0,
+            "n_retained": 204,
+            "mae": 1.349243069804816
+          },
+          {
+            "retained_fraction": 0.75,
+            "n_retained": 153,
+            "mae": 1.0969883951584112
+          },
+          {
+            "retained_fraction": 0.5,
+            "n_retained": 102,
+            "mae": 0.9720768571269173
+          },
+          {
+            "retained_fraction": 0.25,
+            "n_retained": 51,
+            "mae": 0.8035921998989208
+          }
+        ],
+        "aurc": 1.048494295712399,
+        "spearman_r": 0.3632930607917687,
+        "spearman_p": 9.265101780914014e-08
+      },
+      "cross_model_dispersion": {
+        "risk_coverage_mae": [
+          {
+            "retained_fraction": 1.0,
+            "n_retained": 204,
+            "mae": 1.3492430698048161
+          },
+          {
+            "retained_fraction": 0.75,
+            "n_retained": 153,
+            "mae": 1.1738347627865546
+          },
+          {
+            "retained_fraction": 0.5,
+            "n_retained": 102,
+            "mae": 0.8484613531588411
+          },
+          {
+            "retained_fraction": 0.25,
+            "n_retained": 51,
+            "mae": 0.5179214023574602
+          }
+        ],
+        "aurc": 0.9852927840088447,
+        "spearman_r": 0.4313032034911336,
+        "spearman_p": 1.193803223097085e-10
+      },
+      "random_rejection": {
+        "risk_coverage_mae_bootstrap": [
+          {
+            "retained_fraction": 1.0,
+            "n_retained": 204,
+            "mae_mean": 1.3492430698048163,
+            "mae_ci_low": 1.349243069804816,
+            "mae_ci_high": 1.3492430698048163
+          },
+          {
+            "retained_fraction": 0.75,
+            "n_retained": 153,
+            "mae_mean": 1.3520470855693338,
+            "mae_ci_low": 1.2304791518400542,
+            "mae_ci_high": 1.4607584156790998
+          },
+          {
+            "retained_fraction": 0.5,
+            "n_retained": 102,
+            "mae_mean": 1.3491962356112772,
+            "mae_ci_low": 1.159183987542537,
+            "mae_ci_high": 1.5416778346891638
+          },
+          {
+            "retained_fraction": 0.25,
+            "n_retained": 51,
+            "mae_mean": 1.3473893908574082,
+            "mae_ci_low": 1.0195826647662505,
+            "mae_ci_high": 1.7073155843709529
+          }
+        ],
+        "aurc": 1.3498531838372412
+      }
+    },
+    "catboost": {
+      "ad_nn_distance": {
+        "risk_coverage_mae": [
+          {
+            "retained_fraction": 1.0,
+            "n_retained": 204,
+            "mae": 1.2916494141597106
+          },
+          {
+            "retained_fraction": 0.75,
+            "n_retained": 153,
+            "mae": 1.1080936542021878
+          },
+          {
+            "retained_fraction": 0.5,
+            "n_retained": 102,
+            "mae": 0.9291589441740079
+          },
+          {
+            "retained_fraction": 0.25,
+            "n_retained": 51,
+            "mae": 0.7014186324741357
+          }
+        ],
+        "aurc": 1.0112622072310395,
+        "spearman_r": 0.3011931151780567,
+        "spearman_p": 1.2002175087984907e-05
+      },
+      "kde_novelty": {
+        "risk_coverage_mae": [
+          {
+            "retained_fraction": 1.0,
+            "n_retained": 204,
+            "mae": 1.291649414159711
+          },
+          {
+            "retained_fraction": 0.75,
+            "n_retained": 153,
+            "mae": 1.2012170802714033
+          },
+          {
+            "retained_fraction": 0.5,
+            "n_retained": 102,
+            "mae": 0.917886920076371
+          },
+          {
+            "retained_fraction": 0.25,
+            "n_retained": 51,
+            "mae": 0.7973759837552068
+          }
+        ],
+        "aurc": 1.054538899768411,
+        "spearman_r": 0.24457889356175896,
+        "spearman_p": 0.00042265943417287797
+      },
+      "family_novelty": {
+        "risk_coverage_mae": [
+          {
+            "retained_fraction": 1.0,
+            "n_retained": 204,
+            "mae": 1.291649414159711
+          },
+          {
+            "retained_fraction": 0.75,
+            "n_retained": 153,
+            "mae": 0.9805800023730759
+          },
+          {
+            "retained_fraction": 0.5,
+            "n_retained": 102,
+            "mae": 0.9254296638958891
+          },
+          {
+            "retained_fraction": 0.25,
+            "n_retained": 51,
+            "mae": 0.7743622810052332
+          }
+        ],
+        "aurc": 0.9796718379504791,
+        "spearman_r": 0.4447828470976115,
+        "spearman_p": 2.649386298645352e-11
+      },
+      "cross_model_dispersion": {
+        "risk_coverage_mae": [
+          {
+            "retained_fraction": 1.0,
+            "n_retained": 204,
+            "mae": 1.291649414159711
+          },
+          {
+            "retained_fraction": 0.75,
+            "n_retained": 153,
+            "mae": 1.0993522807825613
+          },
+          {
+            "retained_fraction": 0.5,
+            "n_retained": 102,
+            "mae": 0.7852132250329218
+          },
+          {
+            "retained_fraction": 0.25,
+            "n_retained": 51,
+            "mae": 0.5422410733043812
+          }
+        ],
+        "aurc": 0.9338369165158431,
+        "spearman_r": 0.44448567205184447,
+        "spearman_p": 2.7407574637246548e-11
+      },
+      "random_rejection": {
+        "risk_coverage_mae_bootstrap": [
+          {
+            "retained_fraction": 1.0,
+            "n_retained": 204,
+            "mae_mean": 1.2916494141597106,
+            "mae_ci_low": 1.2916494141597104,
+            "mae_ci_high": 1.291649414159711
+          },
+          {
+            "retained_fraction": 0.75,
+            "n_retained": 153,
+            "mae_mean": 1.2948323783168014,
+            "mae_ci_low": 1.179335721719362,
+            "mae_ci_high": 1.3983289486018127
+          },
+          {
+            "retained_fraction": 0.5,
+            "n_retained": 102,
+            "mae_mean": 1.2903894046739899,
+            "mae_ci_low": 1.103110413460528,
+            "mae_ci_high": 1.4825961932730172
+          },
+          {
+            "retained_fraction": 0.25,
+            "n_retained": 51,
+            "mae_mean": 1.2897085058758484,
+            "mae_ci_low": 0.9771239188494576,
+            "mae_ci_high": 1.6398916998679482
+          }
+        ],
+        "aurc": 1.2919669143361903
+      }
+    },
+    "shallow_mlp": {
+      "ad_nn_distance": {
+        "risk_coverage_mae": [
+          {
+            "retained_fraction": 1.0,
+            "n_retained": 204,
+            "mae": 1.4830644672960682
+          },
+          {
+            "retained_fraction": 0.75,
+            "n_retained": 153,
+            "mae": 1.241495391674229
+          },
+          {
+            "retained_fraction": 0.5,
+            "n_retained": 102,
+            "mae": 1.0145590678806529
+          },
+          {
+            "retained_fraction": 0.25,
+            "n_retained": 51,
+            "mae": 0.8715703808784409
+          }
+        ],
+        "aurc": 1.1444572945473788,
+        "spearman_r": 0.3868076414754295,
+        "spearman_p": 1.0984478494082747e-08
+      },
+      "kde_novelty": {
+        "risk_coverage_mae": [
+          {
+            "retained_fraction": 1.0,
+            "n_retained": 204,
+            "mae": 1.4830644672960682
+          },
+          {
+            "retained_fraction": 0.75,
+            "n_retained": 153,
+            "mae": 1.2962956803091386
+          },
+          {
+            "retained_fraction": 0.5,
+            "n_retained": 102,
+            "mae": 1.0333569769390707
+          },
+          {
+            "retained_fraction": 0.25,
+            "n_retained": 51,
+            "mae": 0.8645365736497481
+          }
+        ],
+        "aurc": 1.167817725907039,
+        "spearman_r": 0.3487020375854295,
+        "spearman_p": 3.2012609700674373e-07
+      },
+      "family_novelty": {
+        "risk_coverage_mae": [
+          {
+            "retained_fraction": 1.0,
+            "n_retained": 204,
+            "mae": 1.483064467296068
+          },
+          {
+            "retained_fraction": 0.75,
+            "n_retained": 153,
+            "mae": 1.1246138511112551
+          },
+          {
+            "retained_fraction": 0.5,
+            "n_retained": 102,
+            "mae": 1.0066467214028005
+          },
+          {
+            "retained_fraction": 0.25,
+            "n_retained": 51,
+            "mae": 0.8606346232251335
+          }
+        ],
+        "aurc": 1.1010367059248856,
+        "spearman_r": 0.5286931403437702,
+        "spearman_p": 4.3674634784886907e-16
+      },
+      "cross_model_dispersion": {
+        "risk_coverage_mae": [
+          {
+            "retained_fraction": 1.0,
+            "n_retained": 204,
+            "mae": 1.483064467296068
+          },
+          {
+            "retained_fraction": 0.75,
+            "n_retained": 153,
+            "mae": 1.170341671806167
+          },
+          {
+            "retained_fraction": 0.5,
+            "n_retained": 102,
+            "mae": 0.77002168972837
+          },
+          {
+            "retained_fraction": 0.25,
+            "n_retained": 51,
+            "mae": 0.5562015644972798
+          }
+        ],
+        "aurc": 0.986665459143737,
+        "spearman_r": 0.6091171876656466,
+        "spearman_p": 4.1932173808330923e-22
+      },
+      "random_rejection": {
+        "risk_coverage_mae_bootstrap": [
+          {
+            "retained_fraction": 1.0,
+            "n_retained": 204,
+            "mae_mean": 1.483064467296068,
+            "mae_ci_low": 1.483064467296068,
+            "mae_ci_high": 1.4830644672960682
+          },
+          {
+            "retained_fraction": 0.75,
+            "n_retained": 153,
+            "mae_mean": 1.4839971442297502,
+            "mae_ci_low": 1.3752600316295414,
+            "mae_ci_high": 1.5900917159230992
+          },
+          {
+            "retained_fraction": 0.5,
+            "n_retained": 102,
+            "mae_mean": 1.482954638819965,
+            "mae_ci_low": 1.2884105473131142,
+            "mae_ci_high": 1.6682386054071296
+          },
+          {
+            "retained_fraction": 0.25,
+            "n_retained": 51,
+            "mae_mean": 1.4818641867703237,
+            "mae_ci_low": 1.176360382356593,
+            "mae_ci_high": 1.8114603241328926
+          }
+        ],
+        "aurc": 1.4831387033609704
+      }
+    },
+    "pretrained_element_embedding": {
+      "ad_nn_distance": {
+        "risk_coverage_mae": [
+          {
+            "retained_fraction": 1.0,
+            "n_retained": 204,
+            "mae": 1.716321513819882
+          },
+          {
+            "retained_fraction": 0.75,
+            "n_retained": 153,
+            "mae": 1.370576626082114
+          },
+          {
+            "retained_fraction": 0.5,
+            "n_retained": 102,
+            "mae": 1.0400060683777022
+          },
+          {
+            "retained_fraction": 0.25,
+            "n_retained": 51,
+            "mae": 0.8782517521688374
+          }
+        ],
+        "aurc": 1.2359564424847251,
+        "spearman_r": 0.4322409199171679,
+        "spearman_p": 1.077398661329499e-10
+      },
+      "kde_novelty": {
+        "risk_coverage_mae": [
+          {
+            "retained_fraction": 1.0,
+            "n_retained": 204,
+            "mae": 1.7163215138198815
+          },
+          {
+            "retained_fraction": 0.75,
+            "n_retained": 153,
+            "mae": 1.4288202295653345
+          },
+          {
+            "retained_fraction": 0.5,
+            "n_retained": 102,
+            "mae": 1.1509351396610275
+          },
+          {
+            "retained_fraction": 0.25,
+            "n_retained": 51,
+            "mae": 0.9799876084860792
+          }
+        ],
+        "aurc": 1.3093033101264475,
+        "spearman_r": 0.39438833565385784,
+        "spearman_p": 5.3247235393611794e-09
+      },
+      "family_novelty": {
+        "risk_coverage_mae": [
+          {
+            "retained_fraction": 1.0,
+            "n_retained": 204,
+            "mae": 1.7163215138198815
+          },
+          {
+            "retained_fraction": 0.75,
+            "n_retained": 153,
+            "mae": 1.2672300858064247
+          },
+          {
+            "retained_fraction": 0.5,
+            "n_retained": 102,
+            "mae": 1.0925732911765853
+          },
+          {
+            "retained_fraction": 0.25,
+            "n_retained": 51,
+            "mae": 1.0794436784605257
+          }
+        ],
+        "aurc": 1.2525619910410712,
+        "spearman_r": 0.49866187734106243,
+        "spearman_p": 3.191404122814631e-14
+      },
+      "cross_model_dispersion": {
+        "risk_coverage_mae": [
+          {
+            "retained_fraction": 1.0,
+            "n_retained": 204,
+            "mae": 1.7163215138198813
+          },
+          {
+            "retained_fraction": 0.75,
+            "n_retained": 153,
+            "mae": 1.3095652737331869
+          },
+          {
+            "retained_fraction": 0.5,
+            "n_retained": 102,
+            "mae": 0.8077119799064044
+          },
+          {
+            "retained_fraction": 0.25,
+            "n_retained": 51,
+            "mae": 0.5911813555527702
+          }
+        ],
+        "aurc": 1.090342896108639,
+        "spearman_r": 0.6032553307277495,
+        "spearman_p": 1.3166593815988215e-21
+      },
+      "random_rejection": {
+        "risk_coverage_mae_bootstrap": [
+          {
+            "retained_fraction": 1.0,
+            "n_retained": 204,
+            "mae_mean": 1.7163215138198815,
+            "mae_ci_low": 1.7163215138198813,
+            "mae_ci_high": 1.716321513819882
+          },
+          {
+            "retained_fraction": 0.75,
+            "n_retained": 153,
+            "mae_mean": 1.7156119630453108,
+            "mae_ci_low": 1.576597740853551,
+            "mae_ci_high": 1.8439499071513854
+          },
+          {
+            "retained_fraction": 0.5,
+            "n_retained": 102,
+            "mae_mean": 1.715336933006864,
+            "mae_ci_low": 1.4826927295762562,
+            "mae_ci_high": 1.9539849308566846
+          },
+          {
+            "retained_fraction": 0.25,
+            "n_retained": 51,
+            "mae_mean": 1.7189122422751444,
+            "mae_ci_low": 1.3377134058531817,
+            "mae_ci_high": 2.1322591350686446
+          }
+        ],
+        "aurc": 1.7161885913665624
+      }
+    },
+    "composition_attention": {
+      "ad_nn_distance": {
+        "risk_coverage_mae": [
+          {
+            "retained_fraction": 1.0,
+            "n_retained": 204,
+            "mae": 1.2823679106846348
+          },
+          {
+            "retained_fraction": 0.75,
+            "n_retained": 153,
+            "mae": 1.0213661905620364
+          },
+          {
+            "retained_fraction": 0.5,
+            "n_retained": 102,
+            "mae": 0.8507691955695839
+          },
+          {
+            "retained_fraction": 0.25,
+            "n_retained": 51,
+            "mae": 0.7408144934276483
+          }
+        ],
+        "aurc": 0.9612421960625873,
+        "spearman_r": 0.35925111844569624,
+        "spearman_p": 1.3143949085490344e-07
+      },
+      "kde_novelty": {
+        "risk_coverage_mae": [
+          {
+            "retained_fraction": 1.0,
+            "n_retained": 204,
+            "mae": 1.2823679106846348
+          },
+          {
+            "retained_fraction": 0.75,
+            "n_retained": 153,
+            "mae": 1.0894858038960584
+          },
+          {
+            "retained_fraction": 0.5,
+            "n_retained": 102,
+            "mae": 0.8601613003956873
+          },
+          {
+            "retained_fraction": 0.25,
+            "n_retained": 51,
+            "mae": 0.822165468942883
+          }
+        ],
+        "aurc": 1.0006379313685014,
+        "spearman_r": 0.32488709529228005,
+        "spearman_p": 2.12616455308029e-06
+      },
+      "family_novelty": {
+        "risk_coverage_mae": [
+          {
+            "retained_fraction": 1.0,
+            "n_retained": 204,
+            "mae": 1.2823679106846348
+          },
+          {
+            "retained_fraction": 0.75,
+            "n_retained": 153,
+            "mae": 0.9903831348994723
+          },
+          {
+            "retained_fraction": 0.5,
+            "n_retained": 102,
+            "mae": 0.868038423719783
+          },
+          {
+            "retained_fraction": 0.25,
+            "n_retained": 51,
+            "mae": 0.76870472694767
+          }
+        ],
+        "aurc": 0.9613192924784691,
+        "spearman_r": 0.41119589935748707,
+        "spearman_p": 1.0003402419141786e-09
+      },
+      "cross_model_dispersion": {
+        "risk_coverage_mae": [
+          {
+            "retained_fraction": 1.0,
+            "n_retained": 204,
+            "mae": 1.2823679106846348
+          },
+          {
+            "retained_fraction": 0.75,
+            "n_retained": 153,
+            "mae": 1.0672820709033042
+          },
+          {
+            "retained_fraction": 0.5,
+            "n_retained": 102,
+            "mae": 0.7719736630120622
+          },
+          {
+            "retained_fraction": 0.25,
+            "n_retained": 51,
+            "mae": 0.6004393566079748
+          }
+        ],
+        "aurc": 0.9268864558538904,
+        "spearman_r": 0.4480299100296132,
+        "spearman_p": 1.8252343707171634e-11
+      },
+      "random_rejection": {
+        "risk_coverage_mae_bootstrap": [
+          {
+            "retained_fraction": 1.0,
+            "n_retained": 204,
+            "mae_mean": 1.2823679106846348,
+            "mae_ci_low": 1.2823679106846348,
+            "mae_ci_high": 1.282367910684635
+          },
+          {
+            "retained_fraction": 0.75,
+            "n_retained": 153,
+            "mae_mean": 1.2822170439363658,
+            "mae_ci_low": 1.1802760159993426,
+            "mae_ci_high": 1.3785073782978494
+          },
+          {
+            "retained_fraction": 0.5,
+            "n_retained": 102,
+            "mae_mean": 1.2811774329929393,
+            "mae_ci_low": 1.1047062440536686,
+            "mae_ci_high": 1.4632428764584406
+          },
+          {
+            "retained_fraction": 0.25,
+            "n_retained": 51,
+            "mae_mean": 1.2810260211398503,
+            "mae_ci_low": 0.9917424633258696,
+            "mae_ci_high": 1.5869533251890333
+          }
+        ],
+        "aurc": 1.2816971476138492
+      }
+    }
+  },
+  "summary": {
+    "ad_nn_distance": {
+      "mean_aurc_across_8_models": 1.0543477506608663,
+      "n_models_beating_random_rejection_aurc": 8,
+      "n_models_beating_family_novelty_aurc": 3,
+      "n_models_positive_spearman": 8
+    },
+    "kde_novelty": {
+      "mean_aurc_across_8_models": 1.0954451151094533,
+      "n_models_beating_random_rejection_aurc": 8,
+      "n_models_beating_family_novelty_aurc": 1,
+      "n_models_positive_spearman": 8
+    },
+    "cross_model_dispersion": {
+      "mean_aurc_across_8_models": 0.9656633245678214,
+      "n_models_beating_random_rejection_aurc": 8,
+      "n_models_beating_family_novelty_aurc": 8,
+      "n_models_positive_spearman": 8
+    },
+    "family_novelty": {
+      "mean_aurc_across_8_models": 1.056035323355513,
+      "n_seen": 138,
+      "n_unseen": 55,
+      "n_ambiguous": 11
+    },
+    "random_rejection": {
+      "mean_aurc_across_8_models": 1.3742745351307828
+    }
+  }
+}

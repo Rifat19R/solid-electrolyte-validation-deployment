@@ -1,0 +1,46 @@
+{
+  "schema_version": "1.0",
+  "derived_from": "data/raw/hargreaves_conductivity/LiIonDatabase.csv (sha256 805e157decb613e9d1ed651f4218c2ea69ed7d6fa2aa24b7b860485894570606) + data/raw/obelix/all.csv",
+  "build_module": "src/sse_transfer/data/hargreaves_cohort.py::build_cohorts",
+  "rt_window_c": [
+    15.0,
+    35.0
+  ],
+  "aggregation_rule": "median_log10_conductivity_across_RT_window_rows_per_reduced_formula",
+  "stage_counts": {
+    "raw_rows": 820,
+    "rt_window_rows": 465,
+    "rt_window_and_valid_target_rows": 465,
+    "rt_window_and_parseable_composition_rows": 465,
+    "strict_pre_aggregation_rows": 213,
+    "relaxed_pre_aggregation_rows": 263,
+    "strict_independent_rows": 204,
+    "relaxed_independent_rows": 239
+  },
+  "files": [
+    {
+      "filename": "hargreaves_strict.csv",
+      "path": "data/processed/npj_external_cohort/hargreaves_strict.csv",
+      "rows": 204,
+      "sha256": "1bda972d893c3cf546b3638ea8935e59b345e1d14d9c607be5b1c59437b237c9"
+    },
+    {
+      "filename": "hargreaves_relaxed.csv",
+      "path": "data/processed/npj_external_cohort/hargreaves_relaxed.csv",
+      "rows": 239,
+      "sha256": "dac166ee16be91d76a255a30ec7f6af8cc47bc6d569db3ad74d2212209e99da8"
+    },
+    {
+      "filename": "hargreaves_overlap_ledger.csv",
+      "path": "data/processed/npj_external_cohort/hargreaves_overlap_ledger.csv",
+      "rows": 820,
+      "sha256": "a1b4d0f425fc3048a03cdf4a82321292cbc80b9590ba7e309f7f353788098683",
+      "notes": "row-level ledger over all 820 raw Hargreaves rows with exclusion_reason and overlap_classification"
+    }
+  ],
+  "gate_n2": {
+    "threshold": 100,
+    "strict_independent_rows": 204,
+    "result": "PASS"
+  }
+}

@@ -1,0 +1,112 @@
+{
+ "description": "Scientific state frozen after four-layer validation (Phase 11). Any later change to these files must be explained in the final report.",
+ "date": "2026-11-01",
+ "git_head": "4348ef6b37722605feb0213189ba414c10e6bd56",
+ "working_tree": "uncommitted finalization changes on top of git_head",
+ "environment": {
+  "python": "3.12.3",
+  "platform": "Linux-6.6.114.1-microsoft-standard-WSL2-x86_64-with-glibc2.39"
+ },
+ "protected_anchor_check": "29/29 PASS",
+ "files": {
+  "artifacts_authoritative": {
+   "artifacts/authoritative/issue03_common_support_lomfo_corrected.json": "30abb7742c353ddf79fb0fff582515873dc93632a2bf3836fabc257ced3aff68",
+   "artifacts/authoritative/issue04_size_matched_control_corrected.json": "6a1fd9846527f32b4f990d701102cbec2ee6ad21d7ab37177a142282c755a987",
+   "artifacts/authoritative/issue05_fold_local_shift_distance.json": "5622b488854ffbf7eedaca6656a844bd6f15cc36b811cbcd1cb016733003be96",
+   "artifacts/authoritative/issue06_doi_cluster_bootstrap_corrected.json": "4c723d75fdda9b70c3f07dea819ae20ee8bf6979275dbf0f9e442147a21e80a7",
+   "artifacts/authoritative/issue08b_chemical_system_groupkfold_corrected.json": "24f880b870f60ccb7c10b5f117658721080abd6ac9f4139a907a04557eb24aec",
+   "artifacts/authoritative/issue08b_regime_utility_corrected.json": "461309c6f69670c5c332955679358d110e3f46e9fc0b3f482f9b355507a32941",
+   "artifacts/authoritative/issue09a_missing_family_excluded_corrected.json": "ee455191c1b36e46e99df7d3a3eaccf6157524419ab5d4baabce04b1e8ddcffb",
+   "artifacts/authoritative/issue09b_missing_singleton_groupkfold_corrected.json": "973e90f0fb14bde7db90d8440c65a19f4b4f75d5fb4b6e87bc27d69f2afb60a3",
+   "artifacts/authoritative/issue09b_regime_utility_corrected.json": "c62b410dfce13b8a0c2b793601cdd90e9c16862c19dc674adb288d5e93edd39e",
+   "artifacts/authoritative/issue10_formula_balanced_sensitivity_corrected.json": "5e729363f2c3d577d109d569d2659c0e49274e89b4deb7b201cc4037e46ec29e",
+   "artifacts/authoritative/model_ladder_corrected.json": "c1152eabc3a908836afff1a4b49569e9beb4a7f39c1baf83bb7f6d85821485d1",
+   "artifacts/authoritative/n15_artifacts/n15_ad_aurc.json": "43c130e897600eeb14d149aa086b709755142bfad18566eb16816222465de55e",
+   "artifacts/authoritative/n15_artifacts/n15_baseline_variability.json": "4d4528e724707ef6674e18d12efd4f1a100ec77a2135d4ea01a7fc416a3195d1",
+   "artifacts/authoritative/n15_artifacts/n15_deployment_shift.json": "e0ecc953df640bc53c14a4650e8bee149772da53c3bb49c15e9bd1e02e2bd52b",
+   "artifacts/authoritative/n15_artifacts/n15_external_uncertainty.json": "62a759c960b4d39d65156394e8709757280d53955ac3ef3321913eaf2e79be89",
+   "artifacts/authoritative/n15_artifacts/n15_source_disjoint.json": "322d14c9e9bc92338813b5738baa9332c2bc92b0d5870043ffe1c0dfe6e9fa6a",
+   "artifacts/authoritative/n15_artifacts/n15_stable_model_sensitivity.json": "e66968a9f3a6b0d4af1a862a8fac417f1feee314b1ca4a10195f58c74e1f5180",
+   "artifacts/authoritative/n15_artifacts/n15_summary.json": "44894a19eb3ac5e5fc4ec122f30f9afaede775c7648560b7f1b45778e2e062c3",
+   "artifacts/authoritative/n15_artifacts/n15_temperature_sensitivity.json": "60da378bbe938a06e89942cc8e4631b7eda20278171f859165d5c676a05edfd0",
+   "artifacts/authoritative/n15_tables/n15_ad_aurc.csv": "8a5ad7e9c3f5a2296cd037fa909162cd1398c1bde7c5a6633f3e010c0e67acb0",
+   "artifacts/authoritative/n15_tables/n15_baseline_variability.csv": "18acbd79ca37774de4cbcf3afd2d489fa14b80835e9eb32903b135ac1417f898",
+   "artifacts/authoritative/n15_tables/n15_deployment_shift.csv": "ff279279df940e659f5ccdc345eba785f0f4d08da48edeae94b50adcfff7c124",
+   "artifacts/authoritative/n15_tables/n15_external_uncertainty.csv": "97e668a95268bd9afbae1a1a1196aa4d179ed98dafffc964852ba0a06f57fedd",
+   "artifacts/authoritative/n15_tables/n15_source_disjoint.csv": "cb3b7159f9b3c76f1e84e7315ec4379f02220a261773599ef0c14578bda88022",
+   "artifacts/authoritative/n15_tables/n15_stable_model_sensitivity.csv": "251449de11441b9e777543194f78853e294ca4a97d25e3068ee1db993b97b891",
+   "artifacts/authoritative/n15_tables/n15_temperature_sensitivity.csv": "92210ac718789a16cd9e0d865631348530f20ccfcb24d1e17e90dca2a8594eef",
+   "artifacts/authoritative/n18_nn_distance_forensic.json": "7ba7d8a694572fa75ae39390c30f8b034e22c850e4a8b918b87b8a4000131905",
+   "artifacts/authoritative/n20_artifacts/reviewer_family_audit.json": "51867c493998091d1b725bca0da83e61b8bb41063143d1bbdb83374f8bcf7e9b",
+   "artifacts/authoritative/n20_artifacts/reviewer_formula_duplicate_audit.json": "05e267317effdb46ffd8a3d2cebea417be213b6d1414159d0795763a777a0b86",
+   "artifacts/authoritative/n20_artifacts/reviewer_label_compatibility.json": "997f83755e34833705acdd724e16dfa0d239c8f9b45a1b1f16cffa71e03a2c9f",
+   "artifacts/authoritative/n20_artifacts/reviewer_provenance_timeline.json": "1fa377a5cca50e0200a2cafac50fe0a62f941355ef69af7d084eb2c17ea71ead",
+   "artifacts/authoritative/n20b_formula_group_kfold_corrected.json": "0b57838f11f3df66cb3eea07a25d96b3652ad652b36f544d8cec9e444339ada2",
+   "artifacts/authoritative/n21_repeated_cv_sensitivity_corrected.json": "8e066638a4335cc4ec21d6a942a76f0f2d1d3d937dadd132c5b8e98de71ab641",
+   "artifacts/authoritative/n21c_primary_external_context_corrected.json": "16200fe400ae25251807d511f1c40f8d45252a83edd2b5ceb55fde33d8674e30",
+   "artifacts/authoritative/n21d_ad_benchmark_closure_corrected.json": "f2efe44f59d1e2ec16d4eb4f6962cfdeca3a095cde0f7151285fae65d394dfb3",
+   "artifacts/authoritative/n21e_robust_shift_distance.json": "33041560cdf1c31dcae62a832dfde579a3ec87c9e0fce29d83f64e5248be0f32",
+   "artifacts/authoritative/n4b_nested_internal_validation_corrected.json": "653779c925494e9cb366f79de2947eabd5bccb1324b107f3677c14920f8ff8ad",
+   "artifacts/authoritative/n6_external_transfer_corrected.json": "dbfde79d72f3cd2021d861380d9e80b8d40e2d774a295240353cd34dd7f6fe3f",
+   "artifacts/authoritative/n7b_regime_utility_nested_corrected.json": "2788885a8776ef5912198fa2736cd7774c0a4492ad185e0b13f0402944ae4e53",
+   "artifacts/authoritative/n8_applicability_domain_corrected.json": "264fd5753eb99b7fd94e5bb36464ac7ff46809ddc07f90571e8132f34e224b1b",
+   "artifacts/authoritative/n9b_relaxed_sensitivity_nested_corrected.json": "f63fd086b6b8752f822636e2f569704e4de25b8b62adfff85048a2d86f25622b",
+   "artifacts/authoritative/phase1_factual_fixes_corrected.json": "0fde679269443f3de976164efdb61a829522eeddb5c46315361ebfacc85da265",
+   "artifacts/authoritative/phase1_glass_split_corrected.json": "b0271c476849aef1167d4c6583f1178d1f5203450bd449efc537aa090f986bc9",
+   "artifacts/authoritative/phase1_predeclared_corrected.json": "4ed0be9a3edd66cb7ee6491d685e7f32fd28aa797469f6c39b96252556c5fdef",
+   "artifacts/authoritative/phase2_glass_subset_regime_cis_corrected.json": "478c750e5c8934aac03213eabc1971893d4fe018504073b8bf063f31ccc033d9",
+   "artifacts/authoritative/phase2_label_compat_dev_only_full.json": "641268193ae8da2750656c68603227db7bbd05c4f5be9b811a399037eb6e8eb5"
+  },
+  "artifacts_frozen": {
+   "artifacts/frozen/external_transfer_lock.json": "76510b372bca29624e597aa8f9cffdd7ee32bb33962dff40bb85b41cfa519b98",
+   "artifacts/frozen/model_ladder_frozen.json": "bc38eabf6c3936c75ca967c7c24a35e7343f1bf94b1810a4eec98d6d9c5ba0b3",
+   "artifacts/frozen/n15_remediation_spec.json": "c448d97590eb1d0ee283166d5b7805dbba0c4612c1811c212ab9c4eac8a42733",
+   "artifacts/frozen/n4_internal_validation.json": "09508ba010f96f9a8311dcfa0b2d311482a42941e13261caa4ee229bbdc0745d",
+   "artifacts/frozen/n6_external_transfer_primary.json": "def43a59623aedc69662f47670037300de76a644b092d696cf318e652f439e43",
+   "artifacts/frozen/remediation_spec.json": "54aa1a37edfb6956d6487a8a18691615166fe93df132cdd4ff87e70725c4ce87"
+  },
+  "external_cohorts": {
+   "data/processed/external_cohort/hargreaves_strict.csv": "1bda972d893c3cf546b3638ea8935e59b345e1d14d9c607be5b1c59437b237c9",
+   "data/processed/external_cohort/hargreaves_relaxed.csv": "dac166ee16be91d76a255a30ec7f6af8cc47bc6d569db3ad74d2212209e99da8",
+   "data/processed/external_cohort/hargreaves_overlap_ledger.csv": "a1b4d0f425fc3048a03cdf4a82321292cbc80b9590ba7e309f7f353788098683"
+  },
+  "processed_obelix": {
+   "data/processed/v1/obelix_index.json": "13692a31839e295dd88bd45ca527d869990e02d799a6878c5ded6c43d3b94d3e",
+   "data/processed/v1/obelix_index.json.sha256.json": "9657b059c50f13f6862d1a46b8e81a556e8f081582225d5f668a2a72cd4a4c13",
+   "data/processed/v1/obelix_target_censoring_aware.json": "969c9b29de0abf7990563fda8f162700a7eb6e23eb7d68250eaed27669f75bf3",
+   "data/processed/v1/obelix_target_primary_exact.json": "32f45d4740fe847be33bef4544c69a4f2e7664e8b53245c282691caa2b50cfad"
+  },
+  "manuscript_sources": {
+   "manuscript/source/00_main.md": "8faf611dbc26d04d489b37c2b20d8e5beec9937a4f0ac6f6e01cac91306d6907",
+   "manuscript/source/01_si.md": "7ed1a802e1ae488c2e2b532bccffbd8f490754c632bbf5a7f6049942ad36fc97",
+   "manuscript/source/02_cover_letter.md": "46485c3f757adff01c1dec762f52831614547b3d6370ac9a7dcef9eed42f9722",
+   "manuscript/source/03_data_and_code_availability.md": "932b15fbde95e186c2e36a35d18b2ab407fed13a48b13db484545b5c1cafc729"
+  },
+  "manuscript_figures": {
+   "manuscript/figures/fig1_schematic.pdf": "b49d224b5393243d614b6d19a7e093f13e243ec0f9001af9adfac48587203b18",
+   "manuscript/figures/fig1_schematic.png": "c61e84b4532bec5a3bd8d6090e95386f21563eefbcb352b6b94b93dbcd37ba9b",
+   "manuscript/figures/fig2_external_performance.pdf": "a8c8691078a1c7a120fd9f6c02f6aab79a5cfeb2c152bdab71e522809b5b533d",
+   "manuscript/figures/fig2_external_performance.png": "5edcfe44fece12ba606a8af2e6c68aa0c24fa47f101e7b9347c4ed05fbf86ef0",
+   "manuscript/figures/fig3_regime_utility.pdf": "f37f73216cbbf8266f3b5a7d3a5798e1c895cbd32567c7705e2c6aa09aa7b5f3",
+   "manuscript/figures/fig3_regime_utility.png": "3555a5a9ec1c4f12913cc64f1de937faa8128729c2a3c8bfc33166ada9000dd9",
+   "manuscript/figures/fig4_seen_glass_crystalline.pdf": "82486d7c45a62cba81617011f1e300784db12b554fff703ace31f8c047c2e271",
+   "manuscript/figures/fig4_seen_glass_crystalline.png": "35d24085de048072a6af433540325f89943a3bbf22db68f2b5f7924d002babae",
+   "manuscript/figures/fig5_extrapolation_failure.pdf": "ac9ced78ded0bd6f41505508023b48f60f27ce04f9cb06c7947885a51acca215",
+   "manuscript/figures/fig5_extrapolation_failure.png": "5312ca68afa86448cc4bbeebedf992c0ebce604d681ced62925662169b2afc99",
+   "manuscript/figures/fig6_risk_coverage_comparison.pdf": "1ec148cb4435ecbc485166f14ece5561b47c85008aa578d42781bfcba14b4342",
+   "manuscript/figures/fig6_risk_coverage_comparison.png": "23f34a5fdfd261c9ff52ca95cf6b05e5bcf435dd01897ddec6136c8f8c3b712c",
+   "manuscript/figures/si/si_fig1_shift_alignment.pdf": "6fa0d591f40e05aa477f6cb52d5f463a2c4b2cebb321d8347fc134b4e2c70677",
+   "manuscript/figures/si/si_fig1_shift_alignment.png": "818e51ef5c768fb251971dd5d6d67a6786613a14c1fe32ba18deba34f9b86bec",
+   "manuscript/figures/si/si_fig2_parity.pdf": "fc94ed6f4746d564f084c4043c3446e342372827102dd0713d2feccc276deae1",
+   "manuscript/figures/si/si_fig2_parity.png": "d73c07fb04f3daad983889f745f9ecff47c4144db39e984ec37a09ca515daafd"
+  },
+  "manuscript_tables": {
+   "manuscript/tables/si_table1_robustness_summary.csv": "89c143eb060b7c791d0a492f0d88f5b9972c4ca1a4aaf0e5599b7a46973170b2",
+   "manuscript/tables/table1_cohorts.csv": "b94b10c742cfbf704769b5ebf6dfbd93fcd83a196c14d8dae22e2a06b6b74b68",
+   "manuscript/tables/table2_regime_utility.csv": "0b653b5cb4c04fef52fb7e4f3accf656afe690f4bc083825405597e3a737fb0a",
+   "manuscript/tables/table3_pairwise_deltas.csv": "5803be796e378d445564dbac892173ff6517bebe0af345a04474335c0d40a06e",
+   "manuscript/tables/table4_deployment_subset_mae.csv": "cc2d82aa18f1e230ed42695089d5f2675016c1c0b073ddeb3a09f3c2edd8ee2d"
+  }
+ },
+ "rerun_comparison": "182 EXACT, 1 EQUAL_WITHIN_1e-9 (8.9e-16), 0 drift; 18 logged warnings all match the audited policy, 0 unexpected"
+}
