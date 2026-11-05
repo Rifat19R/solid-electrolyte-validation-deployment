@@ -54,7 +54,11 @@ terms selected by the authors and the publisher.
 
 ## Public archival release
 
-The code/reproducibility archive is to be deposited publicly before
-manuscript submission, with a permanent archival DOI. The final DOI and
-repository URL must be inserted into the submission materials before
-submission.
+Public repository: https://github.com/Rifat19R/solid-electrolyte-validation-deployment
+(curated reproducibility package; Hargreaves-derived files withheld or
+redacted as described above).
+
+Archival deposit: version 1.0.0 is to be deposited on Zenodo under the
+reserved DOI 10.5281/zenodo.23987392. The DOI resolves only after the deposit is
+published; until then it must not be described as published or
+accessible.

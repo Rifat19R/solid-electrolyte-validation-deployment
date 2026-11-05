@@ -1,5 +1,5 @@
 cff-version: 1.2.0
-message: "If you use this software or its results, please cite the associated manuscript and this repository."
+message: "If you use this research software or its results, please cite this archived software release and the associated manuscript when available."
 type: software
 title: "sse-transport-transfer: Validation–Deployment Alignment Shapes How Internal Evaluation Predicts External Generalization in Lithium Solid-Electrolyte Machine Learning"
 version: 1.0.0
@@ -13,13 +13,5 @@ authors:
     affiliation: "Department of Mechanical Engineering, Dhaka University of Engineering & Technology (DUET), Gazipur-1700, Bangladesh"
 license: MIT
 license-url: "https://opensource.org/licenses/MIT"
-preferred-citation:
-  type: article
-  title: "Validation–Deployment Alignment Shapes How Internal Evaluation Predicts External Generalization in Lithium Solid-Electrolyte Machine Learning"
-  authors:
-    - family-names: Khandaker
-      given-names: "Md. Rifat"
-    - family-names: Chowdhury
-      given-names: "Mohammad Asaduzzaman"
-  status: "in-preparation"
-  notes: "Manuscript not yet published. No repository URL or DOI is listed because none has been created yet; add `repository-code`, `doi` and `date-released` only when the public repository and archival deposit actually exist, and update `status`, `journal`, `year`, `volume` and `doi` on acceptance."
+repository-code: "https://github.com/Rifat19R/solid-electrolyte-validation-deployment"
+doi: "10.5281/zenodo.23987392"

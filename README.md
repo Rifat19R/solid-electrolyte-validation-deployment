@@ -128,5 +128,6 @@ models are coarse. The unseen-crystalline subset (n = 19) is too small for
 inference. Two implementation corrections made before submission (nested-CV
 retuning; the pooled elemental-property model's feature-lookup bug, with one
 corrective external refit) are documented in the Supporting Information and
-in `provenance/`. The public repository URL and archival DOI are added on
-deposit; none is claimed here.
+in `provenance/`. Public repository: https://github.com/Rifat19R/solid-electrolyte-validation-deployment.
+Version 1.0.0 is to be archived on Zenodo under the reserved DOI
+10.5281/zenodo.23987392, which resolves once the deposit is published.

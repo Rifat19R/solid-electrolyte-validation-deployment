@@ -32,6 +32,7 @@ import shutil
 import socket
 import subprocess
 import sys
+import tomllib
 import zipfile
 from pathlib import Path
 
@@ -253,12 +254,16 @@ def stage(selected: dict[str, str]) -> None:
     )
     head = git("rev-parse", "HEAD").strip()
     dirty = bool(git("status", "--porcelain").strip())
+    version = tomllib.loads((ROOT / "pyproject.toml").read_text("utf-8"))["project"]["version"]
     (STAGE / "VERSION.txt").write_text(
         "SSE reproducibility package\n"
         f"source commit: {head}"
         f"{' (DEVELOPMENT BUILD from an uncommitted tree; not archival)' if dirty else ''}\n"
         "Hargreaves-derived files: withheld or redacted (provenance/restricted_data.json)\n"
-        "public repository URL and archival DOI: added on deposit (not yet created)\n",
+        f"version: {version}\n"
+        "public repository: https://github.com/Rifat19R/solid-electrolyte-validation-deployment\n"
+        "archival DOI (reserved, resolves once the Zenodo deposit is published): "
+        "10.5281/zenodo.23987392\n",
         encoding="utf-8",
     )
 
