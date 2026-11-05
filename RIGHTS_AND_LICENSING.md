@@ -2,8 +2,13 @@
 
 ## Code
 
-The source code in this repository is released under the MIT License.
-See `LICENSE` at the repository root.
+The original software written for this project (`src/`, `scripts/`,
+`tests/`, `configs/`) is released under the MIT License; the full licence
+text is in `LICENSE` at the repository root. The MIT License covers this
+software only. It grants no right over third-party datasets referenced or
+used by this project (see below), and it does not cover the manuscript,
+Supplementary Information text or journal-published figures (see
+"Manuscript and Supplementary Information").
 
 ## Third-party datasets
 
@@ -41,8 +46,15 @@ file and of every original and redacted record. After obtaining the raw
 database under its terms, `python scripts/release/restricted_data.py restore`
 rebuilds the withheld files, restores the redacted fields, and accepts a
 file only if it matches its recorded hash (`data/RECONSTRUCTION.md`).
-The git repository itself holds these files for provenance; a public
-repository must be published without them (see the release notes).
+Two repositories exist and must not be confused:
+
+- the authors' internal development repository (not public) keeps the
+  unredacted records under version control for provenance and the
+  withheld files in its local working copy only (they are not committed);
+  it is never pushed or published;
+- the public GitHub repository listed below is created only from the
+  curated, redacted reproducibility package and contains none of the
+  withheld files or redacted values.
 
 ## Manuscript and Supplementary Information
 

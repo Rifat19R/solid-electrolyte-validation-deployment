@@ -14,4 +14,5 @@ authors:
 license: MIT
 license-url: "https://opensource.org/licenses/MIT"
 repository-code: "https://github.com/Rifat19R/solid-electrolyte-validation-deployment"
+# Reserved Zenodo DOI for version 1.0.0; it resolves only after the deposit is published.
 doi: "10.5281/zenodo.23987392"
